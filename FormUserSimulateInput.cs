@@ -2352,45 +2352,37 @@ namespace KIWI
 
 
 
-        private string NUMBER = "0123456789";
-
         private string setTxtInput_TextChanged(object sender)
         {
             TextBox _TextBox = (sender as TextBox);
 
-            bool notNumber = false;
-
-            if (_TextBox.SelectionStart > 0)
+            try
             {
-                string _Char = _TextBox.Text.Substring(_TextBox.SelectionStart - 1, 1);
+                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
 
-                if (NUMBER.IndexOf(_Char) == -1)
-                    notNumber = true;
+                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 2)
+                {
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                    //if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", num);
+
+                    if (_TextBox.Text.Length < saveCursor)
+                        _TextBox.SelectionStart = 0;
+                    else
+                        _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (_TextBox.Text.Length > 23)
+                {
+                    int saveCursor = _TextBox.SelectionStart - 1;
+                    _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                    _TextBox.SelectionStart = saveCursor;
+                }
             }
-
-            if (notNumber)
+            catch
             {
-                int saveCursor = _TextBox.SelectionStart - 1;
-                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
-                _TextBox.SelectionStart = saveCursor;
-            }
-            else if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 0)
-            {
-                int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
-
-                if (_TextBox.Text.Length > 3)
-                    _TextBox.Text = String.Format("{0:#,###}", Convert.ToInt64(_TextBox.Text.Replace(",", "")));
-
-                if (_TextBox.Text.Length < saveCursor)
-                    _TextBox.SelectionStart = 0;
-                else
-                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
-            }
-            else if (_TextBox.Text.Length > 23)
-            {
-                int saveCursor = _TextBox.SelectionStart - 1;
-                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
-                _TextBox.SelectionStart = saveCursor;
+                _TextBox.Text = "0";
+                _TextBox.SelectionStart = 1;
             }
 
             return _TextBox.Text;
@@ -2415,6 +2407,32 @@ namespace KIWI
             {
                 _TextBox.Text = "0";
             }
+        }
+
+        private void txtDetail37_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != 8)
+            {
+                if (e.KeyChar == '-')
+                {
+                    TextBox _TextBox = (sender as TextBox);
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+                    if (_TextBox.Text.IndexOf('-') == -1)
+                        _TextBox.Text = "-" + _TextBox.Text;
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (e.KeyChar == '+')
+                {
+
+                    TextBox _TextBox = (sender as TextBox);
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+                    if (_TextBox.Text.IndexOf('-') > -1)
+                        _TextBox.Text = _TextBox.Text.Replace("-", "");
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                e.Handled = true;
+            }
+ 
         }
     }
 }
