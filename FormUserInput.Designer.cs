@@ -1165,12 +1165,12 @@
             // 
             // txtDetail24
             // 
-            this.txtDetail24.BackColor = System.Drawing.Color.Wheat;
-            this.txtDetail24.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetail24.BackColor = System.Drawing.Color.White;
+            this.txtDetail24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail24.ForeColor = System.Drawing.Color.Black;
             this.txtDetail24.Location = new System.Drawing.Point(316, 671);
             this.txtDetail24.Name = "txtDetail24";
-            this.txtDetail24.Size = new System.Drawing.Size(108, 14);
+            this.txtDetail24.Size = new System.Drawing.Size(108, 21);
             this.txtDetail24.TabIndex = 23;
             this.txtDetail24.Text = "0";
             this.txtDetail24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1178,12 +1178,12 @@
             // 
             // txtDetail23
             // 
-            this.txtDetail23.BackColor = System.Drawing.Color.Wheat;
-            this.txtDetail23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetail23.BackColor = System.Drawing.Color.White;
+            this.txtDetail23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail23.ForeColor = System.Drawing.Color.Black;
             this.txtDetail23.Location = new System.Drawing.Point(316, 646);
             this.txtDetail23.Name = "txtDetail23";
-            this.txtDetail23.Size = new System.Drawing.Size(108, 14);
+            this.txtDetail23.Size = new System.Drawing.Size(108, 21);
             this.txtDetail23.TabIndex = 22;
             this.txtDetail23.Text = "0";
             this.txtDetail23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1293,13 +1293,12 @@
             // 
             // txtDetail12
             // 
-            this.txtDetail12.BackColor = System.Drawing.Color.Wheat;
-            this.txtDetail12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetail12.BackColor = System.Drawing.Color.White;
+            this.txtDetail12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail12.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail12.Location = new System.Drawing.Point(316, 329);
+            this.txtDetail12.Location = new System.Drawing.Point(316, 326);
             this.txtDetail12.Name = "txtDetail12";
-            this.txtDetail12.ReadOnly = true;
-            this.txtDetail12.Size = new System.Drawing.Size(108, 14);
+            this.txtDetail12.Size = new System.Drawing.Size(108, 21);
             this.txtDetail12.TabIndex = 11;
             this.txtDetail12.Text = "0";
             this.txtDetail12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1307,13 +1306,12 @@
             // 
             // txtDetail11
             // 
-            this.txtDetail11.BackColor = System.Drawing.Color.Wheat;
-            this.txtDetail11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetail11.BackColor = System.Drawing.Color.White;
+            this.txtDetail11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail11.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail11.Location = new System.Drawing.Point(316, 304);
+            this.txtDetail11.Location = new System.Drawing.Point(316, 302);
             this.txtDetail11.Name = "txtDetail11";
-            this.txtDetail11.ReadOnly = true;
-            this.txtDetail11.Size = new System.Drawing.Size(108, 14);
+            this.txtDetail11.Size = new System.Drawing.Size(108, 21);
             this.txtDetail11.TabIndex = 10;
             this.txtDetail11.Text = "0";
             this.txtDetail11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1347,7 +1345,7 @@
             // 
             this.txtDetail8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail8.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail8.Location = new System.Drawing.Point(316, 224);
+            this.txtDetail8.Location = new System.Drawing.Point(316, 222);
             this.txtDetail8.Name = "txtDetail8";
             this.txtDetail8.Size = new System.Drawing.Size(108, 21);
             this.txtDetail8.TabIndex = 7;
@@ -1359,7 +1357,7 @@
             // 
             this.txtDetail13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail13.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail13.Location = new System.Drawing.Point(316, 353);
+            this.txtDetail13.Location = new System.Drawing.Point(316, 354);
             this.txtDetail13.Name = "txtDetail13";
             this.txtDetail13.Size = new System.Drawing.Size(108, 21);
             this.txtDetail13.TabIndex = 12;
@@ -1383,7 +1381,7 @@
             // 
             this.txtDetail15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail15.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail15.Location = new System.Drawing.Point(316, 416);
+            this.txtDetail15.Location = new System.Drawing.Point(316, 415);
             this.txtDetail15.Name = "txtDetail15";
             this.txtDetail15.Size = new System.Drawing.Size(108, 21);
             this.txtDetail15.TabIndex = 14;
@@ -1407,7 +1405,7 @@
             // 
             this.txtDetail7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail7.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail7.Location = new System.Drawing.Point(316, 199);
+            this.txtDetail7.Location = new System.Drawing.Point(316, 198);
             this.txtDetail7.Name = "txtDetail7";
             this.txtDetail7.Size = new System.Drawing.Size(108, 21);
             this.txtDetail7.TabIndex = 6;
@@ -1428,12 +1426,11 @@
             // 
             // txtDetail2
             // 
-            this.txtDetail2.BackColor = System.Drawing.Color.Wheat;
-            this.txtDetail2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDetail2.Location = new System.Drawing.Point(316, 61);
+            this.txtDetail2.BackColor = System.Drawing.Color.White;
+            this.txtDetail2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDetail2.Location = new System.Drawing.Point(316, 59);
             this.txtDetail2.Name = "txtDetail2";
-            this.txtDetail2.ReadOnly = true;
-            this.txtDetail2.Size = new System.Drawing.Size(108, 14);
+            this.txtDetail2.Size = new System.Drawing.Size(108, 21);
             this.txtDetail2.TabIndex = 1;
             this.txtDetail2.Text = "0";
             this.txtDetail2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1478,7 +1475,7 @@
             // 
             this.txtDetail1.BackColor = System.Drawing.Color.White;
             this.txtDetail1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDetail1.Location = new System.Drawing.Point(316, 29);
+            this.txtDetail1.Location = new System.Drawing.Point(316, 30);
             this.txtDetail1.Name = "txtDetail1";
             this.txtDetail1.Size = new System.Drawing.Size(108, 21);
             this.txtDetail1.TabIndex = 0;
@@ -3217,6 +3214,7 @@
             // 
             // textBox9
             // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox9.Location = new System.Drawing.Point(628, 20);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(120, 21);
@@ -3224,6 +3222,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Location = new System.Drawing.Point(441, 20);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(120, 21);
@@ -3374,7 +3373,7 @@
             // 
             // txtInput35
             // 
-            this.txtInput35.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput35.BackColor = System.Drawing.Color.White;
             this.txtInput35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput35.ForeColor = System.Drawing.Color.Black;
             this.txtInput35.Location = new System.Drawing.Point(592, 497);
@@ -3388,7 +3387,7 @@
             // 
             // txtInput32
             // 
-            this.txtInput32.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput32.BackColor = System.Drawing.Color.White;
             this.txtInput32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput32.ForeColor = System.Drawing.Color.Black;
             this.txtInput32.Location = new System.Drawing.Point(592, 407);
@@ -3402,7 +3401,7 @@
             // 
             // txtInput31
             // 
-            this.txtInput31.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput31.BackColor = System.Drawing.Color.White;
             this.txtInput31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput31.ForeColor = System.Drawing.Color.Black;
             this.txtInput31.Location = new System.Drawing.Point(592, 382);
@@ -3415,7 +3414,7 @@
             // 
             // txtInput21
             // 
-            this.txtInput21.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput21.BackColor = System.Drawing.Color.White;
             this.txtInput21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput21.ForeColor = System.Drawing.Color.Black;
             this.txtInput21.Location = new System.Drawing.Point(415, 497);
@@ -3428,7 +3427,7 @@
             // 
             // txtInput28
             // 
-            this.txtInput28.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput28.BackColor = System.Drawing.Color.White;
             this.txtInput28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput28.ForeColor = System.Drawing.Color.Black;
             this.txtInput28.Location = new System.Drawing.Point(592, 292);
@@ -3441,7 +3440,7 @@
             // 
             // txtInput18
             // 
-            this.txtInput18.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput18.BackColor = System.Drawing.Color.White;
             this.txtInput18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput18.ForeColor = System.Drawing.Color.Black;
             this.txtInput18.Location = new System.Drawing.Point(415, 407);
@@ -3454,7 +3453,7 @@
             // 
             // txtInput25
             // 
-            this.txtInput25.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput25.BackColor = System.Drawing.Color.White;
             this.txtInput25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput25.ForeColor = System.Drawing.Color.Black;
             this.txtInput25.Location = new System.Drawing.Point(592, 202);
@@ -3468,7 +3467,7 @@
             // 
             // txtInput13
             // 
-            this.txtInput13.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput13.BackColor = System.Drawing.Color.White;
             this.txtInput13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput13.ForeColor = System.Drawing.Color.Black;
             this.txtInput13.Location = new System.Drawing.Point(238, 497);
@@ -3481,7 +3480,7 @@
             // 
             // txtInput10
             // 
-            this.txtInput10.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput10.BackColor = System.Drawing.Color.White;
             this.txtInput10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput10.ForeColor = System.Drawing.Color.Black;
             this.txtInput10.Location = new System.Drawing.Point(238, 407);
@@ -3505,7 +3504,7 @@
             // 
             // txtInput16
             // 
-            this.txtInput16.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtInput16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput16.ForeColor = System.Drawing.Color.Black;
             this.txtInput16.Location = new System.Drawing.Point(415, 202);
@@ -3518,7 +3517,7 @@
             // 
             // txtInput34
             // 
-            this.txtInput34.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput34.BackColor = System.Drawing.Color.White;
             this.txtInput34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput34.ForeColor = System.Drawing.Color.Black;
             this.txtInput34.Location = new System.Drawing.Point(592, 472);
@@ -3532,7 +3531,7 @@
             // 
             // txtInput7
             // 
-            this.txtInput7.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput7.BackColor = System.Drawing.Color.White;
             this.txtInput7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput7.ForeColor = System.Drawing.Color.Black;
             this.txtInput7.Location = new System.Drawing.Point(238, 292);
@@ -3545,7 +3544,7 @@
             // 
             // txtInput30
             // 
-            this.txtInput30.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput30.BackColor = System.Drawing.Color.White;
             this.txtInput30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput30.ForeColor = System.Drawing.Color.Black;
             this.txtInput30.Location = new System.Drawing.Point(592, 357);
@@ -3558,7 +3557,7 @@
             // 
             // txtInput4
             // 
-            this.txtInput4.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput4.BackColor = System.Drawing.Color.White;
             this.txtInput4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput4.ForeColor = System.Drawing.Color.Black;
             this.txtInput4.Location = new System.Drawing.Point(238, 202);
@@ -3582,7 +3581,7 @@
             // 
             // txtInput27
             // 
-            this.txtInput27.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput27.BackColor = System.Drawing.Color.White;
             this.txtInput27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput27.ForeColor = System.Drawing.Color.Black;
             this.txtInput27.Location = new System.Drawing.Point(592, 267);
@@ -3606,7 +3605,7 @@
             // 
             // txtInput24
             // 
-            this.txtInput24.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput24.BackColor = System.Drawing.Color.White;
             this.txtInput24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput24.ForeColor = System.Drawing.Color.Black;
             this.txtInput24.Location = new System.Drawing.Point(592, 177);
@@ -3642,7 +3641,7 @@
             // 
             // txtInput33
             // 
-            this.txtInput33.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput33.BackColor = System.Drawing.Color.White;
             this.txtInput33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput33.ForeColor = System.Drawing.Color.Black;
             this.txtInput33.Location = new System.Drawing.Point(592, 447);
@@ -3667,7 +3666,7 @@
             // 
             // txtInput29
             // 
-            this.txtInput29.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput29.BackColor = System.Drawing.Color.White;
             this.txtInput29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput29.ForeColor = System.Drawing.Color.Black;
             this.txtInput29.Location = new System.Drawing.Point(592, 332);
@@ -3702,7 +3701,7 @@
             // 
             // txtInput26
             // 
-            this.txtInput26.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput26.BackColor = System.Drawing.Color.White;
             this.txtInput26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput26.ForeColor = System.Drawing.Color.Black;
             this.txtInput26.Location = new System.Drawing.Point(592, 242);
@@ -3726,7 +3725,7 @@
             // 
             // txtInput22
             // 
-            this.txtInput22.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput22.BackColor = System.Drawing.Color.White;
             this.txtInput22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput22.ForeColor = System.Drawing.Color.Black;
             this.txtInput22.Location = new System.Drawing.Point(592, 110);
@@ -3750,7 +3749,7 @@
             // 
             // txtInput23
             // 
-            this.txtInput23.BackColor = System.Drawing.Color.Wheat;
+            this.txtInput23.BackColor = System.Drawing.Color.White;
             this.txtInput23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput23.ForeColor = System.Drawing.Color.Black;
             this.txtInput23.Location = new System.Drawing.Point(592, 152);

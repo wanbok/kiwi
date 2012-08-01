@@ -72,17 +72,20 @@ namespace KIWI
             {
 
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.Silver;
+                txtOut[i].BackColor = Color.White;
+                txtOut[i].BorderStyle = BorderStyle.None;
 
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.Silver;
+                    txtWOut[i].BackColor = Color.White;
+                    txtWOut[i].BorderStyle = BorderStyle.None;
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.Silver;
+                    txtROut[i].BackColor = Color.White;
+                    txtROut[i].BorderStyle = BorderStyle.None;
                 }
             }
 
@@ -440,6 +443,11 @@ namespace KIWI
                 txtROut[i + currentIndex * 24].Text = "0";
             }
             currentIndex++;
+        }
+
+        private void lblTitle1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
