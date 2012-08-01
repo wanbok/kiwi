@@ -85,7 +85,7 @@ namespace KIWI
                 return;
 
             long 가입자당ARPU = 0;
-            if(Convert.ToInt64(CDataControl.g_BasicInput.getstr누적가입자수_합계())==0)
+            if(CDataControl.g_BasicInput.get누적가입자수_합계()==0)
             {
                 가입자당ARPU = 0;
             }

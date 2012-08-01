@@ -86,31 +86,22 @@ namespace KIWI
                 }
             }
             pnlChart.Visible = false;
-            //기본입력의 월평균 판매대수 취득
-            if (CommonUtil.openAsName != null)
-            {
-                excel.Worksheet _WorkSheet = CommonUtil.GetExcelWorksheet(CommonUtil.openAsName, 1);
-                txtInput4 = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnNameInput4, Type.Missing).Value2);
-                txtInput16 = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnNameInput16, Type.Missing).Value2);
-                txtInput25 = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnName_Input25, Type.Missing).Value2);
-                
-                // 결과 취득 클래스
+            // 결과 취득 클래스
 
-                //전체, 단위당
-                setOut(CDataControl.g_ResultBusinessTotal.getArrayOutput전체(), CDataControl.g_ResultBusiness.getArrayOutput전체());
-                setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
-                setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
+            //전체, 단위당
+            setOut(CDataControl.g_ResultBusinessTotal.getArrayOutput전체(), CDataControl.g_ResultBusiness.getArrayOutput전체());
+            setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
+            setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
 
-                List<long[]> 전체 = new List<long[]>();
+            List<long[]> 전체 = new List<long[]>();
  
-                전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
-                전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());
-                전체.Add(CDataControl.g_ResultFuture.getArrayOutput전체());
+            전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
+            전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());
+            전체.Add(CDataControl.g_ResultFuture.getArrayOutput전체());
                 
-                OpenChart(chart1, 전체);
-                OpenChart(chart2, 전체);
-                OpenChart(chart3, 전체);
-            }
+            OpenChart(chart1, 전체);
+            OpenChart(chart2, 전체);
+            OpenChart(chart3, 전체);
 
         }
 

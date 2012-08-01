@@ -620,7 +620,7 @@ namespace KIWI
 
             int i = 0;
             //******전체 수익
-            arrvalue[i] = 도매_수익_가입자관리수수료;
+            arrvalue[i++] = 도매_수익_가입자관리수수료;
             arrvalue[i++] = 도매_수익_CS관리수수료;
             arrvalue[i++] = 소매_수익_업무취급수수료;
             arrvalue[i++] = 도매_수익_사업자모델매입에따른추가수익;
@@ -660,7 +660,7 @@ namespace KIWI
 
             int i = 0;
             //******전체 수익
-            arrvalue[i] = 도매_수익_가입자관리수수료;
+            arrvalue[i++] = 도매_수익_가입자관리수수료;
             arrvalue[i++] = 도매_수익_CS관리수수료;
             arrvalue[i++] = 도매_수익_사업자모델매입에따른추가수익;
             arrvalue[i++] = 도매_수익_유통모델매입에따른추가수익_현금_Volume;
@@ -693,11 +693,11 @@ namespace KIWI
 
         public Int64[] getArr소매_수익_비용_및_계산포함()
         {
-            Int64[] arrvalue = new Int64[11];
+            Int64[] arrvalue = new Int64[12];
 
             int i = 0;
             //******전체 수익
-            arrvalue[i] = 소매_수익_업무취급수수료;
+            arrvalue[i++] = 소매_수익_업무취급수수료;
             arrvalue[i++] = 소매_수익_직영매장판매수익;
 
             // 소계
@@ -740,7 +740,7 @@ namespace KIWI
             int i = 0;
 
             //******전체 수익
-            arrvalue[i] = 전체_수익_가입자수수료;
+            arrvalue[i++] = 전체_수익_가입자수수료;
             arrvalue[i++] = 전체_수익_CS관리수수료;
             arrvalue[i++] = 전체_수익_업무취급수수료;
             arrvalue[i++] = 전체_수익_사업자모델매입에따른추가수익;
@@ -803,7 +803,7 @@ namespace KIWI
             int i = 0;
 
             //******전체 수익
-            전체_수익_가입자수수료= arrvalue[i];
+            전체_수익_가입자수수료= arrvalue[i++];
             전체_수익_CS관리수수료= arrvalue[i++];
             전체_수익_업무취급수수료= arrvalue[i++];
             전체_수익_사업자모델매입에따른추가수익= arrvalue[i++];

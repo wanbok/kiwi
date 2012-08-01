@@ -1076,6 +1076,9 @@ namespace KIWI
                         txtDetail2.BackColor = Color.White;
                         txtDetail3.BackColor = Color.Wheat;
 
+                        txtDetail2.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail3.BorderStyle = BorderStyle.None;
+
                         //txtDetail3.Text = (CommonUtil.StringToIntVal(txtDetail2.Text) * CommonUtil.QUARTER).ToString();
                     }
                 }
@@ -1095,6 +1098,9 @@ namespace KIWI
 
                         txtDetail2.BackColor = Color.Wheat;
                         txtDetail3.BackColor = Color.White;
+
+                        txtDetail2.BorderStyle = BorderStyle.None;
+                        txtDetail3.BorderStyle = BorderStyle.FixedSingle;
 
                         //txtDetail2.Text = CommonUtil.Division(txtDetail3.Text, CommonUtil.QUARTER.ToString());
                     }
@@ -1119,6 +1125,11 @@ namespace KIWI
                         txtDetail10.BackColor = Color.White;
                         txtDetail11.BackColor = Color.Wheat;
                         txtDetail12.BackColor = Color.Wheat;
+
+                        txtDetail9.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail10.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail11.BorderStyle = BorderStyle.None;
+                        txtDetail12.BorderStyle = BorderStyle.None;
 
                         //txtDetail11.Text = CommonUtil.Division(txtDetail9.Text, txtInput11.Text);
                         //txtDetail12.Text = CommonUtil.Division(txtDetail10.Text, txtInput12.Text);
@@ -1146,6 +1157,11 @@ namespace KIWI
                         txtDetail11.BackColor = Color.White;
                         txtDetail12.BackColor = Color.White;
 
+                        txtDetail9.BorderStyle = BorderStyle.None;
+                        txtDetail10.BorderStyle = BorderStyle.None;
+                        txtDetail11.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail12.BorderStyle = BorderStyle.FixedSingle;
+
                         //txtDetail9.Text = (CommonUtil.StringToIntVal(txtDetail9.Text) * CommonUtil.StringToIntVal(txtInput11.Text)).ToString();
                         //txtDetail10.Text = (CommonUtil.StringToIntVal(txtDetail10.Text) * CommonUtil.StringToIntVal(txtInput12.Text)).ToString();
                     }
@@ -1172,6 +1188,11 @@ namespace KIWI
                         txtDetail23.BackColor = Color.Wheat;
                         txtDetail24.BackColor = Color.Wheat;
 
+                        txtDetail21.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail22.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail23.BorderStyle = BorderStyle.None;
+                        txtDetail24.BorderStyle = BorderStyle.None;
+
                         //txtDetail23.Text = CommonUtil.Division(txtDetail21.Text, txtInput19.Text);
                         //txtDetail24.Text = CommonUtil.Division(txtDetail22.Text, txtInput20.Text);
                     }
@@ -1197,6 +1218,11 @@ namespace KIWI
                         txtDetail22.BackColor = Color.Wheat;
                         txtDetail23.BackColor = Color.White;
                         txtDetail24.BackColor = Color.White;
+
+                        txtDetail21.BorderStyle = BorderStyle.None;
+                        txtDetail22.BorderStyle = BorderStyle.None;
+                        txtDetail23.BorderStyle = BorderStyle.FixedSingle;
+                        txtDetail24.BorderStyle = BorderStyle.FixedSingle;
 
                         //txtDetail21.Text = (CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)).ToString();
                         //txtDetail22.Text = (CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)).ToString();
@@ -1514,8 +1540,6 @@ namespace KIWI
                 _TextBox.Text = "0";
             }
         }
-
-
         
     }
 }

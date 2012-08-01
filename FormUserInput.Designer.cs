@@ -1170,6 +1170,7 @@
             this.txtDetail24.ForeColor = System.Drawing.Color.Black;
             this.txtDetail24.Location = new System.Drawing.Point(316, 669);
             this.txtDetail24.Name = "txtDetail24";
+            this.txtDetail24.ReadOnly = true;
             this.txtDetail24.Size = new System.Drawing.Size(108, 14);
             this.txtDetail24.TabIndex = 23;
             this.txtDetail24.Text = "0";
@@ -1183,6 +1184,7 @@
             this.txtDetail23.ForeColor = System.Drawing.Color.Black;
             this.txtDetail23.Location = new System.Drawing.Point(316, 644);
             this.txtDetail23.Name = "txtDetail23";
+            this.txtDetail23.ReadOnly = true;
             this.txtDetail23.Size = new System.Drawing.Size(108, 14);
             this.txtDetail23.TabIndex = 22;
             this.txtDetail23.Text = "0";
