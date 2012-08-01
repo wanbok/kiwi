@@ -2887,10 +2887,11 @@
             // txtAOut2
             // 
             this.txtAOut2.BackColor = System.Drawing.Color.Silver;
+            this.txtAOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut2.Enabled = false;
             this.txtAOut2.Location = new System.Drawing.Point(939, 239);
             this.txtAOut2.Name = "txtAOut2";
-            this.txtAOut2.Size = new System.Drawing.Size(108, 21);
+            this.txtAOut2.Size = new System.Drawing.Size(108, 14);
             this.txtAOut2.TabIndex = 433;
             this.txtAOut2.Text = "0";
             this.txtAOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
