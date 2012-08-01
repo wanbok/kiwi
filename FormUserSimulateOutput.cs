@@ -71,19 +71,23 @@ namespace KIWI
             for (int i = 0; i < txtOut.Length; i++)
             {
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.Silver;
-                txtOut[i].TextChanged += addComma_TextChanged;
+                txtOut[i].BackColor = Color.White;
+                txtOut[i].BorderStyle = BorderStyle.None;
+                txtOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
+
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.Silver;
-                    txtWOut[i].TextChanged += addComma_TextChanged;
+                    txtWOut[i].BackColor = Color.White;
+                    txtWOut[i].BorderStyle = BorderStyle.None;
+                    txtWOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.Silver;
-                    txtROut[i].TextChanged += addComma_TextChanged;
+                    txtROut[i].BackColor = Color.White;
+                    txtROut[i].BorderStyle = BorderStyle.None;
+                    txtROut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
             }
 

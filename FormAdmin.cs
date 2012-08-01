@@ -291,9 +291,10 @@ namespace KIWI
                 }
             }
 
+            Int64 분모 = adminDC.getDataLength() > 0 ? adminDC.getDataLength() : 1;
             for (int i = 0; i < nIAOut.Length; i++)
             {
-                txtIAOut[i].Text = (nIAOut[i] / adminDC.getDataLength()).ToString();
+                txtIAOut[i].Text = (nIAOut[i] / 분모).ToString();
             }
 
         }

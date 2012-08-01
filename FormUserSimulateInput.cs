@@ -137,19 +137,13 @@ namespace KIWI
             this.txtDetail70.TextChanged += new System.EventHandler(this.txtDetail70_TextChanged);
             this.txtDetail71.TextChanged += new System.EventHandler(this.txtDetail71_TextChanged);
 
+            CommonUtil.clearTextBox(this.tabPage1);
+            CommonUtil.clearTextBox(this.tabPage5);
 
-            if (!string.IsNullOrEmpty(CommonUtil.openAsName))
-            {
-
-                CommonUtil.ReadExcelFileToData();
-                getInput();
-                getDetail();
-            }
-            else
-            {
-                CommonUtil.clearTextBox(this.tabPage1);
-                CommonUtil.clearTextBox(this.tabPage5);
-            }
+            getInput();
+            getDetail();
+            
+            
         }
         //상세입력
         private void getDetail()
@@ -1906,11 +1900,7 @@ namespace KIWI
             // If the file name is not an empty string open it for saving.
             if (saveFileDialog1.FileName != "")
             {
-                string filename = CommonUtil.openAsName;
-                if (filename == null)
-                    filename = CommonUtil.defaultName;
-
-                FileInfo fi2 = new FileInfo(filename);
+                FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
                 fi2.CopyTo(saveFileDialog1.FileName, true);
                 CommonUtil.saveAsSimulName = saveFileDialog1.FileName;
                 excel.Workbook _Workbook = CommonUtil.GetExcel_WorkBookForSimul(saveFileDialog1.FileName);

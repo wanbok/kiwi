@@ -467,12 +467,13 @@
             // 
             // txtInput23
             // 
-            this.txtInput23.BackColor = System.Drawing.Color.Silver;
+            this.txtInput23.BackColor = System.Drawing.Color.White;
             this.txtInput23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput23.Enabled = false;
             this.txtInput23.ForeColor = System.Drawing.Color.Black;
             this.txtInput23.Location = new System.Drawing.Point(571, 391);
             this.txtInput23.Name = "txtInput23";
+            this.txtInput23.ReadOnly = true;
             this.txtInput23.Size = new System.Drawing.Size(146, 14);
             this.txtInput23.TabIndex = 43;
             this.txtInput23.Text = "0";
@@ -492,12 +493,13 @@
             // 
             // txtInput9
             // 
-            this.txtInput9.BackColor = System.Drawing.Color.Silver;
+            this.txtInput9.BackColor = System.Drawing.Color.White;
             this.txtInput9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput9.Enabled = false;
             this.txtInput9.ForeColor = System.Drawing.Color.Black;
             this.txtInput9.Location = new System.Drawing.Point(237, 391);
             this.txtInput9.Name = "txtInput9";
+            this.txtInput9.ReadOnly = true;
             this.txtInput9.Size = new System.Drawing.Size(146, 14);
             this.txtInput9.TabIndex = 42;
             this.txtInput9.Text = "0";
@@ -517,12 +519,13 @@
             // 
             // txtInput22
             // 
-            this.txtInput22.BackColor = System.Drawing.Color.Silver;
+            this.txtInput22.BackColor = System.Drawing.Color.White;
             this.txtInput22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput22.Enabled = false;
             this.txtInput22.ForeColor = System.Drawing.Color.Black;
             this.txtInput22.Location = new System.Drawing.Point(571, 361);
             this.txtInput22.Name = "txtInput22";
+            this.txtInput22.ReadOnly = true;
             this.txtInput22.Size = new System.Drawing.Size(146, 14);
             this.txtInput22.TabIndex = 41;
             this.txtInput22.Text = "0";
@@ -542,12 +545,13 @@
             // 
             // txtInput8
             // 
-            this.txtInput8.BackColor = System.Drawing.Color.Silver;
+            this.txtInput8.BackColor = System.Drawing.Color.White;
             this.txtInput8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput8.Enabled = false;
             this.txtInput8.ForeColor = System.Drawing.Color.Black;
             this.txtInput8.Location = new System.Drawing.Point(237, 361);
             this.txtInput8.Name = "txtInput8";
+            this.txtInput8.ReadOnly = true;
             this.txtInput8.Size = new System.Drawing.Size(146, 14);
             this.txtInput8.TabIndex = 40;
             this.txtInput8.Text = "0";
@@ -567,12 +571,13 @@
             // 
             // txtInput7
             // 
-            this.txtInput7.BackColor = System.Drawing.Color.Silver;
+            this.txtInput7.BackColor = System.Drawing.Color.White;
             this.txtInput7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput7.Enabled = false;
             this.txtInput7.ForeColor = System.Drawing.Color.Black;
             this.txtInput7.Location = new System.Drawing.Point(237, 316);
             this.txtInput7.Name = "txtInput7";
+            this.txtInput7.ReadOnly = true;
             this.txtInput7.Size = new System.Drawing.Size(146, 14);
             this.txtInput7.TabIndex = 32;
             this.txtInput7.Text = "0";
@@ -592,12 +597,13 @@
             // 
             // txtInput21
             // 
-            this.txtInput21.BackColor = System.Drawing.Color.Silver;
+            this.txtInput21.BackColor = System.Drawing.Color.White;
             this.txtInput21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput21.Enabled = false;
             this.txtInput21.ForeColor = System.Drawing.Color.Black;
             this.txtInput21.Location = new System.Drawing.Point(571, 291);
             this.txtInput21.Name = "txtInput21";
+            this.txtInput21.ReadOnly = true;
             this.txtInput21.Size = new System.Drawing.Size(146, 14);
             this.txtInput21.TabIndex = 31;
             this.txtInput21.Text = "0";
@@ -617,12 +623,13 @@
             // 
             // txtInput6
             // 
-            this.txtInput6.BackColor = System.Drawing.Color.Silver;
+            this.txtInput6.BackColor = System.Drawing.Color.White;
             this.txtInput6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput6.Enabled = false;
             this.txtInput6.ForeColor = System.Drawing.Color.Black;
             this.txtInput6.Location = new System.Drawing.Point(237, 266);
             this.txtInput6.Name = "txtInput6";
+            this.txtInput6.ReadOnly = true;
             this.txtInput6.Size = new System.Drawing.Size(146, 14);
             this.txtInput6.TabIndex = 30;
             this.txtInput6.Text = "0";
@@ -642,12 +649,13 @@
             // 
             // txtInput5
             // 
-            this.txtInput5.BackColor = System.Drawing.Color.Silver;
+            this.txtInput5.BackColor = System.Drawing.Color.White;
             this.txtInput5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput5.Enabled = false;
             this.txtInput5.ForeColor = System.Drawing.Color.Black;
             this.txtInput5.Location = new System.Drawing.Point(237, 226);
             this.txtInput5.Name = "txtInput5";
+            this.txtInput5.ReadOnly = true;
             this.txtInput5.Size = new System.Drawing.Size(146, 14);
             this.txtInput5.TabIndex = 29;
             this.txtInput5.Text = "0";
@@ -667,12 +675,13 @@
             // 
             // txtInput4
             // 
-            this.txtInput4.BackColor = System.Drawing.Color.Silver;
+            this.txtInput4.BackColor = System.Drawing.Color.White;
             this.txtInput4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput4.Enabled = false;
             this.txtInput4.ForeColor = System.Drawing.Color.Black;
             this.txtInput4.Location = new System.Drawing.Point(237, 196);
             this.txtInput4.Name = "txtInput4";
+            this.txtInput4.ReadOnly = true;
             this.txtInput4.Size = new System.Drawing.Size(146, 14);
             this.txtInput4.TabIndex = 28;
             this.txtInput4.Text = "0";
@@ -692,12 +701,13 @@
             // 
             // txtInput20
             // 
-            this.txtInput20.BackColor = System.Drawing.Color.Silver;
+            this.txtInput20.BackColor = System.Drawing.Color.White;
             this.txtInput20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput20.Enabled = false;
             this.txtInput20.ForeColor = System.Drawing.Color.Black;
             this.txtInput20.Location = new System.Drawing.Point(571, 156);
             this.txtInput20.Name = "txtInput20";
+            this.txtInput20.ReadOnly = true;
             this.txtInput20.Size = new System.Drawing.Size(146, 14);
             this.txtInput20.TabIndex = 27;
             this.txtInput20.Text = "0";
@@ -717,12 +727,13 @@
             // 
             // txtInput3
             // 
-            this.txtInput3.BackColor = System.Drawing.Color.Silver;
+            this.txtInput3.BackColor = System.Drawing.Color.White;
             this.txtInput3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput3.Enabled = false;
             this.txtInput3.ForeColor = System.Drawing.Color.Black;
             this.txtInput3.Location = new System.Drawing.Point(237, 156);
             this.txtInput3.Name = "txtInput3";
+            this.txtInput3.ReadOnly = true;
             this.txtInput3.Size = new System.Drawing.Size(146, 14);
             this.txtInput3.TabIndex = 26;
             this.txtInput3.Text = "0";
@@ -742,12 +753,13 @@
             // 
             // txtInput19
             // 
-            this.txtInput19.BackColor = System.Drawing.Color.Silver;
+            this.txtInput19.BackColor = System.Drawing.Color.White;
             this.txtInput19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput19.Enabled = false;
             this.txtInput19.ForeColor = System.Drawing.Color.Black;
             this.txtInput19.Location = new System.Drawing.Point(571, 126);
             this.txtInput19.Name = "txtInput19";
+            this.txtInput19.ReadOnly = true;
             this.txtInput19.Size = new System.Drawing.Size(146, 14);
             this.txtInput19.TabIndex = 25;
             this.txtInput19.Text = "0";
@@ -767,12 +779,13 @@
             // 
             // txtInput2
             // 
-            this.txtInput2.BackColor = System.Drawing.Color.Silver;
+            this.txtInput2.BackColor = System.Drawing.Color.White;
             this.txtInput2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput2.Enabled = false;
             this.txtInput2.ForeColor = System.Drawing.Color.Black;
             this.txtInput2.Location = new System.Drawing.Point(237, 126);
             this.txtInput2.Name = "txtInput2";
+            this.txtInput2.ReadOnly = true;
             this.txtInput2.Size = new System.Drawing.Size(146, 14);
             this.txtInput2.TabIndex = 11;
             this.txtInput2.Text = "0";
@@ -792,12 +805,13 @@
             // 
             // txtInput1
             // 
-            this.txtInput1.BackColor = System.Drawing.Color.Silver;
+            this.txtInput1.BackColor = System.Drawing.Color.White;
             this.txtInput1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput1.Enabled = false;
             this.txtInput1.ForeColor = System.Drawing.Color.Black;
             this.txtInput1.Location = new System.Drawing.Point(237, 86);
             this.txtInput1.Name = "txtInput1";
+            this.txtInput1.ReadOnly = true;
             this.txtInput1.Size = new System.Drawing.Size(146, 14);
             this.txtInput1.TabIndex = 11;
             this.txtInput1.Text = "0";
@@ -1377,7 +1391,7 @@
             // 
             // txtDetail36
             // 
-            this.txtDetail36.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail36.BackColor = System.Drawing.Color.White;
             this.txtDetail36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail36.Enabled = false;
             this.txtDetail36.ForeColor = System.Drawing.Color.Black;
@@ -1404,7 +1418,7 @@
             // 
             // txtDetail27
             // 
-            this.txtDetail27.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail27.BackColor = System.Drawing.Color.White;
             this.txtDetail27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail27.Enabled = false;
             this.txtDetail27.ForeColor = System.Drawing.Color.Black;
@@ -1431,7 +1445,7 @@
             // 
             // txtDetail20
             // 
-            this.txtDetail20.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail20.BackColor = System.Drawing.Color.White;
             this.txtDetail20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail20.Enabled = false;
             this.txtDetail20.ForeColor = System.Drawing.Color.Black;
@@ -1457,7 +1471,7 @@
             // 
             // txtDetail17
             // 
-            this.txtDetail17.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail17.BackColor = System.Drawing.Color.White;
             this.txtDetail17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail17.Enabled = false;
             this.txtDetail17.ForeColor = System.Drawing.Color.Black;
@@ -1483,7 +1497,7 @@
             // 
             // txtDetail6
             // 
-            this.txtDetail6.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail6.BackColor = System.Drawing.Color.White;
             this.txtDetail6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail6.Enabled = false;
             this.txtDetail6.ForeColor = System.Drawing.Color.Black;
@@ -1772,7 +1786,7 @@
             // 
             // txtDetail34
             // 
-            this.txtDetail34.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail34.BackColor = System.Drawing.Color.White;
             this.txtDetail34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail34.Enabled = false;
             this.txtDetail34.ForeColor = System.Drawing.Color.Black;
@@ -1798,7 +1812,7 @@
             // 
             // txtDetail33
             // 
-            this.txtDetail33.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail33.BackColor = System.Drawing.Color.White;
             this.txtDetail33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail33.Enabled = false;
             this.txtDetail33.ForeColor = System.Drawing.Color.Black;
@@ -1824,7 +1838,7 @@
             // 
             // txtDetail32
             // 
-            this.txtDetail32.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail32.BackColor = System.Drawing.Color.White;
             this.txtDetail32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail32.Enabled = false;
             this.txtDetail32.ForeColor = System.Drawing.Color.Black;
@@ -1850,7 +1864,7 @@
             // 
             // txtDetail31
             // 
-            this.txtDetail31.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail31.BackColor = System.Drawing.Color.White;
             this.txtDetail31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail31.Enabled = false;
             this.txtDetail31.ForeColor = System.Drawing.Color.Black;
@@ -1876,7 +1890,7 @@
             // 
             // txtDetail35
             // 
-            this.txtDetail35.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail35.BackColor = System.Drawing.Color.White;
             this.txtDetail35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail35.Enabled = false;
             this.txtDetail35.ForeColor = System.Drawing.Color.Black;
@@ -1902,7 +1916,7 @@
             // 
             // txtDetail30
             // 
-            this.txtDetail30.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail30.BackColor = System.Drawing.Color.White;
             this.txtDetail30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail30.Enabled = false;
             this.txtDetail30.ForeColor = System.Drawing.Color.Black;
@@ -1928,7 +1942,7 @@
             // 
             // txtDetail29
             // 
-            this.txtDetail29.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail29.BackColor = System.Drawing.Color.White;
             this.txtDetail29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail29.Enabled = false;
             this.txtDetail29.ForeColor = System.Drawing.Color.Black;
@@ -1954,7 +1968,7 @@
             // 
             // txtDetail28
             // 
-            this.txtDetail28.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail28.BackColor = System.Drawing.Color.White;
             this.txtDetail28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail28.Enabled = false;
             this.txtDetail28.ForeColor = System.Drawing.Color.Black;
@@ -1980,7 +1994,7 @@
             // 
             // txtDetail26
             // 
-            this.txtDetail26.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail26.BackColor = System.Drawing.Color.White;
             this.txtDetail26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail26.Enabled = false;
             this.txtDetail26.ForeColor = System.Drawing.Color.Black;
@@ -2006,7 +2020,7 @@
             // 
             // txtDetail25
             // 
-            this.txtDetail25.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail25.BackColor = System.Drawing.Color.White;
             this.txtDetail25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail25.Enabled = false;
             this.txtDetail25.ForeColor = System.Drawing.Color.Black;
@@ -2033,7 +2047,7 @@
             // 
             // txtDetail24
             // 
-            this.txtDetail24.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail24.BackColor = System.Drawing.Color.White;
             this.txtDetail24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail24.Enabled = false;
             this.txtDetail24.ForeColor = System.Drawing.Color.Black;
@@ -2059,7 +2073,7 @@
             // 
             // txtDetail23
             // 
-            this.txtDetail23.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail23.BackColor = System.Drawing.Color.White;
             this.txtDetail23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail23.Enabled = false;
             this.txtDetail23.ForeColor = System.Drawing.Color.Black;
@@ -2085,7 +2099,7 @@
             // 
             // txtDetail22
             // 
-            this.txtDetail22.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail22.BackColor = System.Drawing.Color.White;
             this.txtDetail22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail22.Enabled = false;
             this.txtDetail22.ForeColor = System.Drawing.Color.Black;
@@ -2111,7 +2125,7 @@
             // 
             // txtDetail21
             // 
-            this.txtDetail21.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail21.BackColor = System.Drawing.Color.White;
             this.txtDetail21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail21.Enabled = false;
             this.txtDetail21.ForeColor = System.Drawing.Color.Black;
@@ -2137,7 +2151,7 @@
             // 
             // txtDetail19
             // 
-            this.txtDetail19.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail19.BackColor = System.Drawing.Color.White;
             this.txtDetail19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail19.Enabled = false;
             this.txtDetail19.ForeColor = System.Drawing.Color.Black;
@@ -2163,7 +2177,7 @@
             // 
             // txtDetail18
             // 
-            this.txtDetail18.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail18.BackColor = System.Drawing.Color.White;
             this.txtDetail18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail18.Enabled = false;
             this.txtDetail18.ForeColor = System.Drawing.Color.Black;
@@ -2188,7 +2202,7 @@
             // 
             // txtDetail16
             // 
-            this.txtDetail16.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail16.BackColor = System.Drawing.Color.White;
             this.txtDetail16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail16.Enabled = false;
             this.txtDetail16.ForeColor = System.Drawing.Color.Black;
@@ -2213,7 +2227,7 @@
             // 
             // txtDetail15
             // 
-            this.txtDetail15.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail15.BackColor = System.Drawing.Color.White;
             this.txtDetail15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail15.Enabled = false;
             this.txtDetail15.ForeColor = System.Drawing.Color.Black;
@@ -2238,7 +2252,7 @@
             // 
             // txtDetail10
             // 
-            this.txtDetail10.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail10.BackColor = System.Drawing.Color.White;
             this.txtDetail10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail10.Enabled = false;
             this.txtDetail10.ForeColor = System.Drawing.Color.Black;
@@ -2263,7 +2277,7 @@
             // 
             // txtDetail9
             // 
-            this.txtDetail9.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail9.BackColor = System.Drawing.Color.White;
             this.txtDetail9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail9.Enabled = false;
             this.txtDetail9.ForeColor = System.Drawing.Color.Black;
@@ -2288,7 +2302,7 @@
             // 
             // txtDetail8
             // 
-            this.txtDetail8.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail8.BackColor = System.Drawing.Color.White;
             this.txtDetail8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail8.Enabled = false;
             this.txtDetail8.ForeColor = System.Drawing.Color.Black;
@@ -2313,7 +2327,7 @@
             // 
             // txtDetail11
             // 
-            this.txtDetail11.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail11.BackColor = System.Drawing.Color.White;
             this.txtDetail11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail11.Enabled = false;
             this.txtDetail11.ForeColor = System.Drawing.Color.Black;
@@ -2338,7 +2352,7 @@
             // 
             // txtDetail12
             // 
-            this.txtDetail12.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail12.BackColor = System.Drawing.Color.White;
             this.txtDetail12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail12.Enabled = false;
             this.txtDetail12.ForeColor = System.Drawing.Color.Black;
@@ -2363,7 +2377,7 @@
             // 
             // txtDetail13
             // 
-            this.txtDetail13.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail13.BackColor = System.Drawing.Color.White;
             this.txtDetail13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail13.Enabled = false;
             this.txtDetail13.ForeColor = System.Drawing.Color.Black;
@@ -2388,7 +2402,7 @@
             // 
             // txtDetail14
             // 
-            this.txtDetail14.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail14.BackColor = System.Drawing.Color.White;
             this.txtDetail14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail14.Enabled = false;
             this.txtDetail14.ForeColor = System.Drawing.Color.Black;
@@ -2413,7 +2427,7 @@
             // 
             // txtDetail7
             // 
-            this.txtDetail7.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail7.BackColor = System.Drawing.Color.White;
             this.txtDetail7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail7.Enabled = false;
             this.txtDetail7.ForeColor = System.Drawing.Color.Black;
@@ -2437,7 +2451,7 @@
             // 
             // txtDetail2
             // 
-            this.txtDetail2.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail2.BackColor = System.Drawing.Color.White;
             this.txtDetail2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail2.Enabled = false;
             this.txtDetail2.Location = new System.Drawing.Point(465, 77);
@@ -2461,7 +2475,7 @@
             // 
             // txtDetail5
             // 
-            this.txtDetail5.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail5.BackColor = System.Drawing.Color.White;
             this.txtDetail5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail5.Enabled = false;
             this.txtDetail5.ForeColor = System.Drawing.Color.Black;
@@ -2486,7 +2500,7 @@
             // 
             // txtDetail4
             // 
-            this.txtDetail4.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail4.BackColor = System.Drawing.Color.White;
             this.txtDetail4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail4.Enabled = false;
             this.txtDetail4.ForeColor = System.Drawing.Color.Black;
@@ -2510,7 +2524,7 @@
             // 
             // txtDetail3
             // 
-            this.txtDetail3.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail3.BackColor = System.Drawing.Color.White;
             this.txtDetail3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail3.Enabled = false;
             this.txtDetail3.Location = new System.Drawing.Point(465, 107);
@@ -2534,7 +2548,7 @@
             // 
             // txtDetail1
             // 
-            this.txtDetail1.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail1.BackColor = System.Drawing.Color.White;
             this.txtDetail1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail1.Enabled = false;
             this.txtDetail1.Location = new System.Drawing.Point(465, 47);

@@ -91,8 +91,8 @@ namespace KIWI
             }
             else
             {
-                가입자당ARPU = Convert.ToInt64(CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료()
-                                   / Convert.ToInt64(CDataControl.g_BasicInput.getstr누적가입자수_합계()));
+                가입자당ARPU = CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료()
+                                   / CDataControl.g_BasicInput.get누적가입자수_합계();
             }
 
             long 월평균인건비 = 0;
@@ -124,9 +124,9 @@ namespace KIWI
             }
             else
             {
-                인당판매수량 = (Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_월평균판매대수_신규())
-                                    + Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_월평균판매대수_기변()))
-                                    / Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_직원수_소계());
+                인당판매수량 = (CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
+                                    + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
+                                    / CDataControl.g_BasicInput.get도매_직원수_소계();
             }
 
             textBox69.Text = 가입자당ARPU.ToString();
@@ -154,8 +154,8 @@ namespace KIWI
         private void setBaseData(CBasicInput _basicInput)
         {
             if (_basicInput == null) return;
-            int i = 0;
 
+            int i = 0;
             txtBaseData[i++].Text = _basicInput.getstr도매_누적가입자수();
             txtBaseData[i++].Text = _basicInput.getstr도매_월평균판매대수_신규();
             txtBaseData[i++].Text = _basicInput.getstr소매_월평균판매대수_신규();
@@ -269,7 +269,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())         
                                         };
             }
-            else if (chart.Name == "chart4")
+            else if (chart.Name == "chart5")
             {
                 xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
 
@@ -291,7 +291,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())
                                         };
             }
-            else if (chart.Name == "chart5")
+            else if (chart.Name == "chart6")
             {
                 xValues = new string[4] { "X1", "X2", "X3", "X4" };
 
@@ -309,7 +309,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())                                               
                                         };
             }
-            else if (chart.Name == "chart6")
+            else if (chart.Name == "chart7")
             {
                 xValues = new string[2] { "X1", "X2" };
 
@@ -336,6 +336,11 @@ namespace KIWI
             FormChartViewer viewer = new FormChartViewer();
             viewer.MakeChart(sender as Chart);
             viewer.ShowDialog();
+        }
+
+        private void txtOut28_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
