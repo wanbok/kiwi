@@ -492,6 +492,8 @@ namespace KIWI
 
         private void txtOut_TextChanged(object sender, EventArgs e)
         {
+            setTxtInput_TextChanged(sender);
+
             int index = -1;
             index = Array.IndexOf(txtIAOut, (sender as TextBox));
             if (index < 0)
@@ -504,7 +506,7 @@ namespace KIWI
             Int64 result;
             try
             {
-                convertedA = Convert.ToInt64(txtIAOut[index].Text);
+                convertedA = Convert.ToInt64(txtIAOut[index].Text.Replace(",", ""));
             }
             catch (FormatException eFormat)
             {
@@ -514,7 +516,7 @@ namespace KIWI
             }
             try
             {
-                convertedB = Convert.ToInt64(txtInput[index].Text);
+                convertedB = Convert.ToInt64(txtInput[index].Text.Replace(",", ""));
             }
             catch (FormatException eFormat)
             {
@@ -527,7 +529,53 @@ namespace KIWI
                 result = convertedB;//(convertedA + convertedB) / 2;
             }
             txtAOut[index].Text = result.ToString();
+            setTxtInput_TextChanged(txtAOut[index]);
         }
+
+        private string NUMBER = "0123456789";
+
+        private string setTxtInput_TextChanged(object sender)
+        {
+            TextBox _TextBox = (sender as TextBox);
+
+            bool notNumber = false;
+
+            if (_TextBox.SelectionStart > 0)
+            {
+                string _Char = _TextBox.Text.Substring(_TextBox.SelectionStart - 1, 1);
+
+                if (NUMBER.IndexOf(_Char) == -1)
+                    notNumber = true;
+            }
+
+            if (notNumber)
+            {
+                int saveCursor = _TextBox.SelectionStart - 1;
+                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                _TextBox.SelectionStart = saveCursor;
+            }
+            else if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 0)
+            {
+                int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", Convert.ToInt64(_TextBox.Text.Replace(",", "")));
+
+                if (_TextBox.Text.Length < saveCursor)
+                    _TextBox.SelectionStart = 0;
+                else
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+            }
+            else if (_TextBox.Text.Length > 23)
+            {
+                int saveCursor = _TextBox.SelectionStart - 1;
+                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                _TextBox.SelectionStart = saveCursor;
+            }
+
+            return _TextBox.Text;
+        }
+
 
         private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
         {
@@ -553,6 +601,16 @@ namespace KIWI
 
             // Perform the sort with these new sort options.
             this.listView1.Sort();
+        }
+
+        private void txtInput1_Click(object sender, EventArgs e)
+        {
+            TextBox _TextBox = (sender as TextBox);
+            if (_TextBox.Text == "0")
+            {
+                _TextBox.SelectAll();
+            }
+
         }
 
     }

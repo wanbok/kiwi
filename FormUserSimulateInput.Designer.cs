@@ -426,10 +426,10 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(942, 458);
+            this.tabPage1.Size = new System.Drawing.Size(942, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
@@ -463,7 +463,9 @@
             this.txtInput28.TabIndex = 13;
             this.txtInput28.Text = "0";
             this.txtInput28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput28.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput28.TextChanged += new System.EventHandler(this.txtInput28_TextChanged);
+            this.txtInput28.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput23
             // 
@@ -489,7 +491,9 @@
             this.txtInput18.TabIndex = 8;
             this.txtInput18.Text = "0";
             this.txtInput18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput18.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput18.TextChanged += new System.EventHandler(this.txtInput18_TextChanged);
+            this.txtInput18.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput9
             // 
@@ -515,7 +519,9 @@
             this.txtInput27.TabIndex = 12;
             this.txtInput27.Text = "0";
             this.txtInput27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput27.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput27.TextChanged += new System.EventHandler(this.txtInput27_TextChanged);
+            this.txtInput27.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput22
             // 
@@ -541,7 +547,9 @@
             this.txtInput17.TabIndex = 7;
             this.txtInput17.Text = "0";
             this.txtInput17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput17.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput17.TextChanged += new System.EventHandler(this.txtInput17_TextChanged);
+            this.txtInput17.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput8
             // 
@@ -567,7 +575,9 @@
             this.txtInput16.TabIndex = 6;
             this.txtInput16.Text = "0";
             this.txtInput16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput16.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput16.TextChanged += new System.EventHandler(this.txtInput16_TextChanged);
+            this.txtInput16.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput7
             // 
@@ -593,7 +603,9 @@
             this.txtInput26.TabIndex = 11;
             this.txtInput26.Text = "0";
             this.txtInput26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput26.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput26.TextChanged += new System.EventHandler(this.txtInput26_TextChanged);
+            this.txtInput26.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput21
             // 
@@ -619,7 +631,9 @@
             this.txtInput15.TabIndex = 5;
             this.txtInput15.Text = "0";
             this.txtInput15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput15.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput15.TextChanged += new System.EventHandler(this.txtInput15_TextChanged);
+            this.txtInput15.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput6
             // 
@@ -645,7 +659,9 @@
             this.txtInput14.TabIndex = 4;
             this.txtInput14.Text = "0";
             this.txtInput14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput14.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput14.TextChanged += new System.EventHandler(this.txtInput14_TextChanged);
+            this.txtInput14.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput5
             // 
@@ -671,7 +687,9 @@
             this.txtInput13.TabIndex = 3;
             this.txtInput13.Text = "0";
             this.txtInput13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput13.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput13.TextChanged += new System.EventHandler(this.txtInput13_TextChanged);
+            this.txtInput13.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput4
             // 
@@ -697,7 +715,9 @@
             this.txtInput25.TabIndex = 10;
             this.txtInput25.Text = "0";
             this.txtInput25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput25.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput25.TextChanged += new System.EventHandler(this.txtInput25_TextChanged);
+            this.txtInput25.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput20
             // 
@@ -723,7 +743,9 @@
             this.txtInput12.TabIndex = 2;
             this.txtInput12.Text = "0";
             this.txtInput12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput12.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput12.TextChanged += new System.EventHandler(this.txtInput12_TextChanged);
+            this.txtInput12.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput3
             // 
@@ -749,7 +771,9 @@
             this.txtInput24.TabIndex = 9;
             this.txtInput24.Text = "0";
             this.txtInput24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput24.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput24.TextChanged += new System.EventHandler(this.txtInput24_TextChanged);
+            this.txtInput24.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput19
             // 
@@ -775,7 +799,9 @@
             this.txtInput11.TabIndex = 1;
             this.txtInput11.Text = "0";
             this.txtInput11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput11.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput11.TextChanged += new System.EventHandler(this.txtInput11_TextChanged);
+            this.txtInput11.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput2
             // 
@@ -801,7 +827,9 @@
             this.txtInput10.TabIndex = 0;
             this.txtInput10.Text = "0";
             this.txtInput10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput10.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput10.TextChanged += new System.EventHandler(this.txtInput10_TextChanged);
+            this.txtInput10.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput1
             // 
@@ -1369,9 +1397,9 @@
             this.tabPage5.Controls.Add(this.panel103);
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel107);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(942, 458);
+            this.tabPage5.Size = new System.Drawing.Size(942, 459);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1441,7 +1469,9 @@
             this.txtDetail56.TabIndex = 19;
             this.txtDetail56.Text = "0";
             this.txtDetail56.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail56.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtDetail56.TextChanged += new System.EventHandler(this.txtDetail56_TextChanged);
+            this.txtDetail56.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail20
             // 
@@ -1783,6 +1813,8 @@
             this.txtDetail70.TabIndex = 33;
             this.txtDetail70.Text = "0";
             this.txtDetail70.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail70.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail70.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail34
             // 
@@ -1809,6 +1841,8 @@
             this.txtDetail69.TabIndex = 32;
             this.txtDetail69.Text = "0";
             this.txtDetail69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail69.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail69.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail33
             // 
@@ -1835,6 +1869,8 @@
             this.txtDetail68.TabIndex = 31;
             this.txtDetail68.Text = "0";
             this.txtDetail68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail68.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail68.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail32
             // 
@@ -1861,6 +1897,8 @@
             this.txtDetail67.TabIndex = 30;
             this.txtDetail67.Text = "0";
             this.txtDetail67.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail67.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail67.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail31
             // 
@@ -1887,6 +1925,8 @@
             this.txtDetail71.TabIndex = 34;
             this.txtDetail71.Text = "0";
             this.txtDetail71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail71.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail71.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail35
             // 
@@ -1913,6 +1953,8 @@
             this.txtDetail66.TabIndex = 29;
             this.txtDetail66.Text = "0";
             this.txtDetail66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail66.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail66.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail30
             // 
@@ -1939,6 +1981,8 @@
             this.txtDetail65.TabIndex = 28;
             this.txtDetail65.Text = "0";
             this.txtDetail65.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail65.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail65.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail29
             // 
@@ -1965,6 +2009,8 @@
             this.txtDetail64.TabIndex = 27;
             this.txtDetail64.Text = "0";
             this.txtDetail64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail64.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail64.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail28
             // 
@@ -1991,6 +2037,8 @@
             this.txtDetail62.TabIndex = 25;
             this.txtDetail62.Text = "0";
             this.txtDetail62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail62.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail62.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail26
             // 
@@ -2017,6 +2065,8 @@
             this.txtDetail61.TabIndex = 24;
             this.txtDetail61.Text = "0";
             this.txtDetail61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail61.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail61.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail25
             // 
@@ -2044,6 +2094,8 @@
             this.txtDetail60.TabIndex = 23;
             this.txtDetail60.Text = "0";
             this.txtDetail60.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail60.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail60.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail24
             // 
@@ -2070,6 +2122,8 @@
             this.txtDetail59.TabIndex = 22;
             this.txtDetail59.Text = "0";
             this.txtDetail59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail59.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail59.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail23
             // 
@@ -2096,6 +2150,8 @@
             this.txtDetail58.TabIndex = 21;
             this.txtDetail58.Text = "0";
             this.txtDetail58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail58.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail58.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail22
             // 
@@ -2122,6 +2178,8 @@
             this.txtDetail57.TabIndex = 20;
             this.txtDetail57.Text = "0";
             this.txtDetail57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail57.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail57.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail21
             // 
@@ -2148,6 +2206,8 @@
             this.txtDetail55.TabIndex = 18;
             this.txtDetail55.Text = "0";
             this.txtDetail55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail55.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail55.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail19
             // 
@@ -2174,6 +2234,8 @@
             this.txtDetail54.TabIndex = 17;
             this.txtDetail54.Text = "0";
             this.txtDetail54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail54.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail54.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail18
             // 
@@ -2199,6 +2261,8 @@
             this.txtDetail52.TabIndex = 15;
             this.txtDetail52.Text = "0";
             this.txtDetail52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail52.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail52.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail16
             // 
@@ -2224,6 +2288,8 @@
             this.txtDetail51.TabIndex = 14;
             this.txtDetail51.Text = "0";
             this.txtDetail51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail51.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail51.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail15
             // 
@@ -2249,6 +2315,8 @@
             this.txtDetail46.TabIndex = 9;
             this.txtDetail46.Text = "0";
             this.txtDetail46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail46.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail46.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail10
             // 
@@ -2274,6 +2342,8 @@
             this.txtDetail45.TabIndex = 8;
             this.txtDetail45.Text = "0";
             this.txtDetail45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail45.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail45.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail9
             // 
@@ -2299,6 +2369,8 @@
             this.txtDetail44.TabIndex = 7;
             this.txtDetail44.Text = "0";
             this.txtDetail44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail44.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail44.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail8
             // 
@@ -2324,6 +2396,8 @@
             this.txtDetail47.TabIndex = 10;
             this.txtDetail47.Text = "0";
             this.txtDetail47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail47.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail47.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail11
             // 
@@ -2349,6 +2423,8 @@
             this.txtDetail48.TabIndex = 11;
             this.txtDetail48.Text = "0";
             this.txtDetail48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail48.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail48.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail12
             // 
@@ -2374,6 +2450,8 @@
             this.txtDetail49.TabIndex = 12;
             this.txtDetail49.Text = "0";
             this.txtDetail49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail49.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail49.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail13
             // 
@@ -2399,6 +2477,8 @@
             this.txtDetail50.TabIndex = 13;
             this.txtDetail50.Text = "0";
             this.txtDetail50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail50.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail50.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail14
             // 
@@ -2424,6 +2504,8 @@
             this.txtDetail43.TabIndex = 6;
             this.txtDetail43.Text = "0";
             this.txtDetail43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail43.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail43.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail7
             // 
@@ -2448,6 +2530,8 @@
             this.txtDetail38.TabIndex = 1;
             this.txtDetail38.Text = "0";
             this.txtDetail38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail38.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail38.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail2
             // 
@@ -2472,6 +2556,8 @@
             this.txtDetail41.TabIndex = 4;
             this.txtDetail41.Text = "0";
             this.txtDetail41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail41.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail41.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail5
             // 
@@ -2497,6 +2583,8 @@
             this.txtDetail40.TabIndex = 3;
             this.txtDetail40.Text = "0";
             this.txtDetail40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail40.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail40.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail4
             // 
@@ -2521,6 +2609,8 @@
             this.txtDetail39.TabIndex = 2;
             this.txtDetail39.Text = "0";
             this.txtDetail39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail39.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail39.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail3
             // 
@@ -2545,6 +2635,8 @@
             this.txtDetail37.TabIndex = 0;
             this.txtDetail37.Text = "0";
             this.txtDetail37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail37.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail37.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail1
             // 
