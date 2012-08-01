@@ -1168,7 +1168,7 @@
             this.txtDetail24.BackColor = System.Drawing.Color.Wheat;
             this.txtDetail24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail24.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail24.Location = new System.Drawing.Point(316, 669);
+            this.txtDetail24.Location = new System.Drawing.Point(316, 671);
             this.txtDetail24.Name = "txtDetail24";
             this.txtDetail24.Size = new System.Drawing.Size(108, 14);
             this.txtDetail24.TabIndex = 23;
@@ -1181,7 +1181,7 @@
             this.txtDetail23.BackColor = System.Drawing.Color.Wheat;
             this.txtDetail23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail23.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail23.Location = new System.Drawing.Point(316, 644);
+            this.txtDetail23.Location = new System.Drawing.Point(316, 646);
             this.txtDetail23.Name = "txtDetail23";
             this.txtDetail23.Size = new System.Drawing.Size(108, 14);
             this.txtDetail23.TabIndex = 22;
@@ -1296,7 +1296,7 @@
             this.txtDetail12.BackColor = System.Drawing.Color.Wheat;
             this.txtDetail12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail12.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail12.Location = new System.Drawing.Point(316, 327);
+            this.txtDetail12.Location = new System.Drawing.Point(316, 329);
             this.txtDetail12.Name = "txtDetail12";
             this.txtDetail12.ReadOnly = true;
             this.txtDetail12.Size = new System.Drawing.Size(108, 14);
@@ -1310,7 +1310,7 @@
             this.txtDetail11.BackColor = System.Drawing.Color.Wheat;
             this.txtDetail11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail11.ForeColor = System.Drawing.Color.Black;
-            this.txtDetail11.Location = new System.Drawing.Point(316, 302);
+            this.txtDetail11.Location = new System.Drawing.Point(316, 304);
             this.txtDetail11.Name = "txtDetail11";
             this.txtDetail11.ReadOnly = true;
             this.txtDetail11.Size = new System.Drawing.Size(108, 14);
