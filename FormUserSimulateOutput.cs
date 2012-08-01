@@ -71,18 +71,22 @@ namespace KIWI
             for (int i = 0; i < txtOut.Length; i++)
             {
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.Silver;
+                txtOut[i].BackColor = Color.White;
+                txtOut[i].BorderStyle = BorderStyle.None;
                 txtOut[i].TextChanged += addComma_TextChanged;
+
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.Silver;
+                    txtWOut[i].BackColor = Color.White;
+                    txtWOut[i].BorderStyle = BorderStyle.None;
                     txtWOut[i].TextChanged += addComma_TextChanged;
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.Silver;
+                    txtROut[i].BackColor = Color.White;
+                    txtROut[i].BorderStyle = BorderStyle.None;
                     txtROut[i].TextChanged += addComma_TextChanged;
                 }
             }
@@ -372,6 +376,7 @@ namespace KIWI
             currentIndex++;
         }
 
+<<<<<<< HEAD
         private void addComma_TextChanged(object sender, EventArgs e)
         {
             if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
@@ -379,6 +384,11 @@ namespace KIWI
                 (sender as TextBox).Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
                 (sender as TextBox).SelectionStart = (sender as TextBox).Text.Length;
             }
+=======
+        private void lblTitle1_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> remotes/KIWI_origin/ui-jaehak
         }
     }
 }

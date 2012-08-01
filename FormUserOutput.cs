@@ -72,17 +72,20 @@ namespace KIWI
             {
 
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.Silver;
+                txtOut[i].BackColor = Color.White;
+                txtOut[i].BorderStyle = BorderStyle.None;
 
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.Silver;
+                    txtWOut[i].BackColor = Color.White;
+                    txtWOut[i].BorderStyle = BorderStyle.None;
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.Silver;
+                    txtROut[i].BackColor = Color.White;
+                    txtROut[i].BorderStyle = BorderStyle.None;
                 }
             }
             pnlChart.Visible = false;
@@ -259,6 +262,11 @@ namespace KIWI
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             pnlChart3.Visible = false;
+        }
+
+        private void pnlChart3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 

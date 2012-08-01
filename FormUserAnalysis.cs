@@ -337,5 +337,10 @@ namespace KIWI
             viewer.MakeChart(sender as Chart);
             viewer.ShowDialog();
         }
+
+        private void txtOut28_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -675,9 +675,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(7, 62);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1585,6 +1585,7 @@
             this.lblTitle1.TabIndex = 177;
             this.lblTitle1.Text = "업계평균";
             this.lblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle1.Click += new System.EventHandler(this.lblTitle1_Click);
             // 
             // label31
             // 
