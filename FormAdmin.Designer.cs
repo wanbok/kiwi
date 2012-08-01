@@ -2839,11 +2839,12 @@
             // 
             // txtAOut1
             // 
-            this.txtAOut1.BackColor = System.Drawing.Color.Silver;
+            this.txtAOut1.BackColor = System.Drawing.Color.LightGray;
+            this.txtAOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut1.Enabled = false;
             this.txtAOut1.Location = new System.Drawing.Point(939, 209);
             this.txtAOut1.Name = "txtAOut1";
-            this.txtAOut1.Size = new System.Drawing.Size(108, 21);
+            this.txtAOut1.Size = new System.Drawing.Size(108, 14);
             this.txtAOut1.TabIndex = 419;
             this.txtAOut1.Text = "0";
             this.txtAOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
