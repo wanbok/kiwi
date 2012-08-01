@@ -593,9 +593,9 @@
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel40);
             this.tabPage5.Controls.Add(this.panel42);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage5.Size = new System.Drawing.Size(1262, 641);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             // 
@@ -3197,10 +3197,10 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Font = new System.Drawing.Font("굴림", 9F);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage1.Size = new System.Drawing.Size(1262, 641);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
@@ -3503,6 +3503,7 @@
             this.txtInput9.TabIndex = 11;
             this.txtInput9.Text = "0";
             this.txtInput9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput9.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput16
             // 
@@ -3580,6 +3581,7 @@
             this.txtInput20.TabIndex = 22;
             this.txtInput20.Text = "0";
             this.txtInput20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput20.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput27
             // 
@@ -3604,6 +3606,7 @@
             this.txtInput17.TabIndex = 19;
             this.txtInput17.Text = "0";
             this.txtInput17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput17.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput24
             // 
@@ -3629,6 +3632,7 @@
             this.txtInput12.TabIndex = 14;
             this.txtInput12.Text = "0";
             this.txtInput12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput12.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput15
             // 
@@ -3640,6 +3644,7 @@
             this.txtInput15.TabIndex = 17;
             this.txtInput15.Text = "0";
             this.txtInput15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput15.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput33
             // 
@@ -3665,6 +3670,7 @@
             this.txtInput6.TabIndex = 8;
             this.txtInput6.Text = "0";
             this.txtInput6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput6.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput29
             // 
@@ -3689,6 +3695,7 @@
             this.txtInput19.TabIndex = 21;
             this.txtInput19.Text = "0";
             this.txtInput19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput19.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput3
             // 
@@ -3700,6 +3707,7 @@
             this.txtInput3.TabIndex = 5;
             this.txtInput3.Text = "0";
             this.txtInput3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput3.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput26
             // 
@@ -3724,6 +3732,7 @@
             this.txtInput11.TabIndex = 13;
             this.txtInput11.Text = "0";
             this.txtInput11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput11.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput22
             // 
@@ -3748,6 +3757,7 @@
             this.txtInput8.TabIndex = 10;
             this.txtInput8.Text = "0";
             this.txtInput8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput8.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput23
             // 
@@ -3773,6 +3783,7 @@
             this.txtInput5.TabIndex = 7;
             this.txtInput5.Text = "0";
             this.txtInput5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput5.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput1
             // 
@@ -3784,6 +3795,7 @@
             this.txtInput1.TabIndex = 3;
             this.txtInput1.Text = "0";
             this.txtInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput1.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput1_KeyPress);
             // 
             // txtInput14
@@ -3796,6 +3808,7 @@
             this.txtInput14.TabIndex = 16;
             this.txtInput14.Text = "0";
             this.txtInput14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput14.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // txtInput2
             // 
@@ -3807,6 +3820,7 @@
             this.txtInput2.TabIndex = 4;
             this.txtInput2.Text = "0";
             this.txtInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput2.Click += new System.EventHandler(this.txtInput1_Click);
             // 
             // label24
             // 
