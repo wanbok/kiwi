@@ -1299,7 +1299,6 @@ namespace KIWI
             {
                 string filename = CommonUtil.defaultName;
 
-
                 FileInfo fi2 = new FileInfo(filename);
                     fi2.CopyTo(saveFileDialog1.FileName, true);
 
