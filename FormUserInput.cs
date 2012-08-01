@@ -823,22 +823,41 @@ namespace KIWI
         }
 
 
+        //private long prevValue = 0;
+        //private int prevlength = 0;
+
+        private string NUMBER = "0123456789";
+
         private string setTxtInput_TextChanged(object sender)
         {
             TextBox _TextBox = (sender as TextBox);
 
-            //if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            //if(_TextBox.Text.Length == 0){
-            //    _TextBox.Text = "0";
-            //    _TextBox.SelectionStart = 1;
-            //}
-            //else 
-            if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 0)
+            bool notNumber = false;
+
+            if (_TextBox.SelectionStart > 0)
+            {
+                string _Char = _TextBox.Text.Substring(_TextBox.SelectionStart - 1, 1);
+
+                if (NUMBER.IndexOf(_Char) == -1)
+                    notNumber = true;
+            }
+
+            if(notNumber){
+                int saveCursor = _TextBox.SelectionStart - 1;
+                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                _TextBox.SelectionStart = saveCursor;
+            }
+            else if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 0)
             {
                 int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
 
-                _TextBox.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", Convert.ToInt64(_TextBox.Text.Replace(",", "")));
+
+                if (_TextBox.Text.Length < saveCursor)
+                    _TextBox.SelectionStart = 0;
+                else
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
             }
             else if (_TextBox.Text.Length > 23)
             {
@@ -856,7 +875,6 @@ namespace KIWI
         //누적가입자수
         private void txtInput1_TextChanged(object sender, EventArgs e)
         {
-
             txtInput22.Text = setTxtInput_TextChanged(sender);
         }
         //월평균 판매대수 신규
@@ -1531,7 +1549,7 @@ namespace KIWI
            
         }
 
-        private void txtInput1_Move(object sender, EventArgs e)
+        private void txtInput_focusOut(object sender, EventArgs e)
         {
             TextBox _TextBox = (sender as TextBox);
 
@@ -1540,6 +1558,6 @@ namespace KIWI
                 _TextBox.Text = "0";
             }
         }
-        
+
     }
 }
