@@ -52,10 +52,10 @@ namespace KIWI
                 }
             }
 
-            bool result = text1 == "";
+            bool result = returnValue == "";
             if (text1 is string)
-                result = (text1 as string).Length < 1;
-            return result ? 0 : Convert.ToInt64(Convert.ToDouble(text1));
+                result = returnValue.Length < 1;
+            return result ? 0 : Convert.ToInt64(Convert.ToDouble(returnValue));
         }
 
         /// <summary>
