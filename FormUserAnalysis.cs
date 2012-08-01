@@ -91,8 +91,8 @@ namespace KIWI
             }
             else
             {
-                가입자당ARPU = Convert.ToInt64(CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료()
-                                   / Convert.ToInt64(CDataControl.g_BasicInput.getstr누적가입자수_합계()));
+                가입자당ARPU = CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료()
+                                   / CDataControl.g_BasicInput.get누적가입자수_합계();
             }
 
             long 월평균인건비 = 0;
@@ -124,9 +124,9 @@ namespace KIWI
             }
             else
             {
-                인당판매수량 = (Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_월평균판매대수_신규())
-                                    + Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_월평균판매대수_기변()))
-                                    / Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_직원수_소계());
+                인당판매수량 = (CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
+                                    + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
+                                    / CDataControl.g_BasicInput.get도매_직원수_소계();
             }
 
             textBox69.Text = 가입자당ARPU.ToString();

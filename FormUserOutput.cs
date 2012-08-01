@@ -96,7 +96,7 @@ namespace KIWI
             setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
             setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
 
-            List<long[]> 전체 = new List<long[]>();
+            List<Int64[]> 전체 = new List<Int64[]>();
  
             전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
             전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());

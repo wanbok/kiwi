@@ -138,7 +138,7 @@ namespace KIWI
             CommonUtil.clearTextBox(this.tabPage5);
             
             getInput();
-            getDetail(CDataControl.g_FileBasicInput);
+            getDetail(CDataControl.g_BasicInput);
 
 
 
@@ -147,10 +147,10 @@ namespace KIWI
         //기본입력
         private void getInput()
         {
-            comboBox1.SelectedItem = CDataControl.g_FileBasicInput.get지역();
-            textBox6.Text = CDataControl.g_FileBasicInput.get대리점();
-            textBox9.Text = CDataControl.g_FileBasicInput.get마케터();
-            Int64[] arrvalue = CDataControl.g_FileBasicInput.getArrData_BasicInput();
+            comboBox1.SelectedItem = CDataControl.g_BasicInput.get지역();
+            textBox6.Text = CDataControl.g_BasicInput.get대리점();
+            textBox9.Text = CDataControl.g_BasicInput.get마케터();
+            Int64[] arrvalue = CDataControl.g_BasicInput.getArrData_BasicInput();
             // 셀에서 데이터 가져오기
             for (int i = 0; i < txtBasicInput.Length; i++)
             {
@@ -162,7 +162,7 @@ namespace KIWI
         private void getDetail(CBasicInput g_BasicInput)
         {
             //
-            Int64[] arrvalue = CDataControl.g_FileDetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
+            Int64[] arrvalue = CDataControl.g_DetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
                 , g_BasicInput.get소매_직원수_간부급(), g_BasicInput.get소매_직원수_평사원());
 
             // 셀에서 데이터 가져오기
@@ -172,7 +172,7 @@ namespace KIWI
             }
         }
 
-        public void SaveAsInput()
+        public void saveAsInput()
         {
             CDataControl.g_BasicInput.set지역(comboBox1.SelectedIndex == -1 ? "" : comboBox1.Items[comboBox1.SelectedIndex].ToString());
             CDataControl.g_BasicInput.set대리점(textBox6.Text);
@@ -191,8 +191,8 @@ namespace KIWI
             };
             CDataControl.g_DetailInput.setArrData_DetailInput(txtWrite2);
             CommonUtil.ReadFileManagerToData();
-            txtMangeInput = CDataControl.g_BusinessAvg.getArrData_BusinessAvg();
 
+            txtMangeInput = CDataControl.g_BusinessAvg.getArrData_BusinessAvg();
 
             ////업계 평균적용 결과 단위당 금액
             Int64 sumSubDE = 0;
@@ -537,11 +537,6 @@ namespace KIWI
             CDataControl.g_ResultFutureTotal.전체손익계 =  (SumSubBenefitWillTotal - SumSubCostWillTotal);
             CDataControl.g_ResultFuture.전체손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput25.Text));
 
-
-
-
-
-
             //도매
             //당대리점 결과(세부항목별 값 입력 결과) 수익계정
             SumSubBenefitTotal = 0;
@@ -613,7 +608,6 @@ namespace KIWI
             CDataControl.g_ResultStoreTotal.도매손익계 =  (SumSubBenefitTotal - SumSubCostTotal);
             CDataControl.g_ResultStore.도매손익계 =  CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
 
-
             SumSubBenefitWillTotal = 0;
             CDataControl.g_ResultFutureTotal.set도매_수익_가입자관리수수료( CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text));
             SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
@@ -681,7 +675,6 @@ namespace KIWI
             CDataControl.g_ResultFuture.도매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
             CDataControl.g_ResultFutureTotal.도매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
             CDataControl.g_ResultFuture.도매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
-
 
             //소매 당대리점
             SumSubBenefitTotal = 0;
@@ -1234,7 +1227,9 @@ namespace KIWI
             // If the file name is not an empty string open it for saving.
             if (saveFileDialog1.FileName != "")
             {
-                string filename = CommonUtil.defaultName;
+                string filename = CommonUtil.saveAsName;
+                if (filename == null)
+                    filename = CommonUtil.defaultName;
 
                 FileInfo fi2 = new FileInfo(filename);
                     fi2.CopyTo(saveFileDialog1.FileName, true);
@@ -1244,7 +1239,7 @@ namespace KIWI
                 //excel.Workbook _Workbook = CommonUtil.GetExcel_WorkBook(saveFileDialog1.FileName);
                 //excel.Worksheet _WorkSheet1 = _Workbook.Sheets[1] as excel.Worksheet;
                 //excel.Worksheet _WorkSheet2 = _Workbook.Sheets[2] as excel.Worksheet;
-                SaveAsInput();
+                saveAsInput();
                 CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
             }
         }

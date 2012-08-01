@@ -249,8 +249,6 @@ namespace KIWI
 
         public static void ReadFileManagerToData()
         {
-
-
             //관리자 파일을 읽어 넣는다
             try
             {
@@ -269,7 +267,6 @@ namespace KIWI
                 }
                 CDataControl.g_BusinessAvg.setArrData_DetailInput(txtWrite2);
             }
-
         }
 
 
@@ -375,6 +372,7 @@ namespace KIWI
             CDataControl.g_FileDetailInput.set도소매_비용_부가세(NullToEmpty(_WorkSheet.get_Range("G59", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도소매_비용_법인세(NullToEmpty(_WorkSheet.get_Range("G60", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도소매_비용_기타(NullToEmpty(_WorkSheet.get_Range("G61", Type.Missing).Value2));
+
         }
 
 
@@ -1104,14 +1102,23 @@ namespace KIWI
 
         }
 
-
-
-        public static void ReadExcelFileToDataResult()
+        public static void deepCopyBasicInput(CBasicInput srcBasicInput, CBasicInput dstBasicInput)
         {
-
+            dstBasicInput.set지역(srcBasicInput.get지역());
+            dstBasicInput.set대리점(srcBasicInput.get대리점());
+            dstBasicInput.set마케터(srcBasicInput.get마케터());
+            dstBasicInput.setArrData(srcBasicInput.getArrData());
         }
 
-        //        public void Dispose()     {         for (int i = 1; i <= SheetList.Count; i++)         {             Marshal.FinalReleaseComObject(SheetList[i]);         }         //Marshal.FinalReleaseComObject(WorkSheet);         Marshal.FinalReleaseComObject(SheetList);         Marshal.FinalReleaseComObject(WorkBook);         WorkBooks.Close();         Marshal.FinalReleaseComObject(WorkBooks);         ExcelApplication.Quit();         Marshal.FinalReleaseComObject(ExcelApplication);         WorkSheet = null;         SheetList = null;         WorkBook = null;         WorkBooks = null;         ExcelApplication = null;      } 
+        public static void deepCopyBusinessData(CBusinessData srcBusinessData, CBusinessData dstBusinessData)
+        {
+            dstBusinessData.setArrData(srcBusinessData.getArrData());
+        }
+
+        //public static void ReadExcelFileToDataResult()
+        //{
+
+        //}
 
         public static string Base64Encode(string src)
         {
