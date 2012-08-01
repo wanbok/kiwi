@@ -1540,7 +1540,6 @@ namespace KIWI
         private void txtInput1_Click(object sender, EventArgs e)
         {
             TextBox _TextBox = (sender as TextBox);
-
             if (_TextBox.Text == "0")
             {
                 _TextBox.SelectAll();
