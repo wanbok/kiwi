@@ -1256,6 +1256,7 @@ namespace KIWI
 
                         //txtDetail23.Text = CommonUtil.Division(txtDetail21.Text, txtInput19.Text);
                         //txtDetail24.Text = CommonUtil.Division(txtDetail22.Text, txtInput20.Text);
+
                     }
                 }
             }
