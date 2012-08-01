@@ -823,26 +823,46 @@ namespace KIWI
         }
 
 
+        private string setTxtInput_TextChanged(object sender)
+        {
+            TextBox _TextBox = (sender as TextBox);
+
+            //if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
+            //if(_TextBox.Text.Length == 0){
+            //    _TextBox.Text = "0";
+            //    _TextBox.SelectionStart = 1;
+            //}
+            //else 
+            if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 0)
+            {
+                int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                _TextBox.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
+                _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+            }
+            else if (_TextBox.Text.Length > 23)
+            {
+                int saveCursor = _TextBox.SelectionStart - 1;
+                _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                _TextBox.SelectionStart = saveCursor;
+            }
+
+            return _TextBox.Text;
+        }
+        
+
+
         //도매입력시 합계치 변경
         //누적가입자수
         private void txtInput1_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput1.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput1.SelectionStart = txtInput1.Text.Length;
-            }
-            txtInput22.Text = txtInput1.Text;
+
+            txtInput22.Text = setTxtInput_TextChanged(sender);
         }
         //월평균 판매대수 신규
         private void txtInput2_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput2.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput2.SelectionStart = txtInput2.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
 
             txtInput4.Text = CommonUtil.Sum_Values(txtInput2.Text, txtInput3.Text);
             txtInput23.Text = CommonUtil.Sum_Values(txtInput2.Text, txtInput14.Text);
@@ -850,11 +870,7 @@ namespace KIWI
         //월평균 판매대수 기변
         private void txtInput3_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput3.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput3.SelectionStart = txtInput3.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput4.Text = CommonUtil.Sum_Values(txtInput2.Text, txtInput3.Text);
             txtInput24.Text = CommonUtil.Sum_Values(txtInput3.Text, txtInput15.Text);
@@ -862,23 +878,14 @@ namespace KIWI
         //월평균 판매대수 계
         private void txtInput4_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput4.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput4.SelectionStart = txtInput4.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput25.Text = CommonUtil.Sum_Values(txtInput4.Text, txtInput16.Text);
         }
         //월평균 유통모델 출고대수 LG
         private void txtInput5_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput5.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput5.SelectionStart = txtInput5.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
 
             txtInput7.Text = CommonUtil.Sum_Values(txtInput5.Text, txtInput6.Text);
             txtInput26.Text = txtInput5.Text;
@@ -886,11 +893,7 @@ namespace KIWI
         //월평균 유통모델 출고대수 SS
         private void txtInput6_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput6.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput6.SelectionStart = txtInput6.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput7.Text = CommonUtil.Sum_Values(txtInput5.Text, txtInput6.Text);
             txtInput27.Text = txtInput6.Text;
@@ -898,11 +901,7 @@ namespace KIWI
         //월평균 유통모델 출고대수 계
         private void txtInput7_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput7.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput7.SelectionStart = txtInput7.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput28.Text = txtInput7.Text;
         }
@@ -910,11 +909,7 @@ namespace KIWI
         //거래선 수 개통사무실
         private void txtInput8_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput8.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput8.SelectionStart = txtInput8.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput10.Text = CommonUtil.Sum_Values(txtInput8.Text, txtInput9.Text);
             txtInput29.Text = txtInput8.Text;
@@ -922,11 +917,7 @@ namespace KIWI
         //거래선 수 판매점
         private void txtInput9_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput9.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput9.SelectionStart = txtInput9.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput10.Text = CommonUtil.Sum_Values(txtInput8.Text, txtInput9.Text);
             txtInput31.Text = txtInput9.Text;
@@ -934,11 +925,7 @@ namespace KIWI
         //거래선 수 계
         private void txtInput10_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput10.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput10.SelectionStart = txtInput10.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput32.Text = CommonUtil.Sum_Values(txtInput10.Text, txtInput18.Text);
         }
@@ -946,11 +933,8 @@ namespace KIWI
         //직원수 간부급
         private void txtInput11_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput11.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput11.SelectionStart = txtInput11.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
+
 
             txtInput13.Text = CommonUtil.Sum_Values(txtInput11.Text, txtInput12.Text);
             txtInput33.Text = CommonUtil.Sum_Values(txtInput11.Text, txtInput19.Text);
@@ -958,11 +942,7 @@ namespace KIWI
         //직원수 평사원
         private void txtInput12_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput12.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput12.SelectionStart = txtInput12.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput13.Text = CommonUtil.Sum_Values(txtInput11.Text, txtInput12.Text);
             txtInput34.Text = CommonUtil.Sum_Values(txtInput12.Text, txtInput20.Text);
@@ -970,11 +950,8 @@ namespace KIWI
         //직원수 계
         private void txtInput13_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput13.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput13.SelectionStart = txtInput13.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
+
 
             txtInput35.Text = CommonUtil.Sum_Values(txtInput13.Text, txtInput21.Text);
         }
@@ -983,11 +960,7 @@ namespace KIWI
         //월판매대수 신규
         private void txtInput14_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput14.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput14.SelectionStart = txtInput14.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput16.Text = CommonUtil.Sum_Values(txtInput14.Text, txtInput15.Text);
             txtInput23.Text = CommonUtil.Sum_Values(txtInput2.Text, txtInput14.Text);
@@ -995,11 +968,7 @@ namespace KIWI
         //월판매대수 신규
         private void txtInput15_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput15.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput15.SelectionStart = txtInput15.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput16.Text = CommonUtil.Sum_Values(txtInput14.Text, txtInput15.Text);
             txtInput24.Text = CommonUtil.Sum_Values(txtInput3.Text, txtInput15.Text);
@@ -1007,11 +976,7 @@ namespace KIWI
         //월판매대수 신규
         private void txtInput16_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput16.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput16.SelectionStart = txtInput16.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput25.Text = CommonUtil.Sum_Values(txtInput4.Text, txtInput16.Text);
         }
@@ -1019,11 +984,7 @@ namespace KIWI
         //거래선 수 직영점
         private void txtInput17_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput17.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput17.SelectionStart = txtInput17.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput18.Text = txtInput17.Text;
             txtInput30.Text = txtInput17.Text;
@@ -1031,22 +992,14 @@ namespace KIWI
         //거래선 수 계
         private void txtInput18_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput18.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput18.SelectionStart = txtInput18.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput32.Text = CommonUtil.Sum_Values(txtInput10.Text, txtInput18.Text);
         }
         //직원수 간부급
         private void txtInput19_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput19.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput19.SelectionStart = txtInput19.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput21.Text = CommonUtil.Sum_Values(txtInput19.Text, txtInput20.Text);
             txtInput33.Text = CommonUtil.Sum_Values(txtInput11.Text, txtInput19.Text);
@@ -1054,11 +1007,7 @@ namespace KIWI
         //직원수 평사원
         private void txtInput20_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput20.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput20.SelectionStart = txtInput20.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput21.Text = CommonUtil.Sum_Values(txtInput19.Text, txtInput20.Text);
             txtInput34.Text = CommonUtil.Sum_Values(txtInput12.Text, txtInput20.Text);
@@ -1066,11 +1015,7 @@ namespace KIWI
         //직원수 계
         private void txtInput21_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput21.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput21.SelectionStart = txtInput21.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             txtInput35.Text = CommonUtil.Sum_Values(txtInput13.Text, txtInput21.Text);
         }
@@ -1079,65 +1024,38 @@ namespace KIWI
 
         private void txtInput23_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput23.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput23.SelectionStart = txtInput23.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
+
         }
 
         private void txtInput24_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput24.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput24.SelectionStart = txtInput24.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtInput25_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput25.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput25.SelectionStart = txtInput25.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtInput32_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput32.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput32.SelectionStart = txtInput32.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtInput33_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput33.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput33.SelectionStart = txtInput33.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtInput34_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput34.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput34.SelectionStart = txtInput34.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtInput35_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtInput35.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtInput35.SelectionStart = txtInput35.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
 
@@ -1317,11 +1235,7 @@ namespace KIWI
         //CS 관리 수수료 처리용 시작
         private void txtDetail2_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail2.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail2.SelectionStart = txtDetail2.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton5.Checked)
             {
@@ -1331,11 +1245,7 @@ namespace KIWI
 
         private void txtDetail3_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail3.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail3.SelectionStart = txtDetail3.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton6.Checked)
             {
@@ -1357,11 +1267,7 @@ namespace KIWI
         //도매 직원급여 총액 처리용 시작
         private void txtDetail9_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail9.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail9.SelectionStart = txtDetail9.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton1.Checked)
             {
@@ -1371,11 +1277,7 @@ namespace KIWI
 
         private void txtDetail10_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail10.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail10.SelectionStart = txtDetail10.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton1.Checked)
             {
@@ -1385,11 +1287,7 @@ namespace KIWI
 
         private void txtDetail11_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail11.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail11.SelectionStart = txtDetail11.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton2.Checked)
             {
@@ -1400,11 +1298,7 @@ namespace KIWI
 
         private void txtDetail12_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail12.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail12.SelectionStart = txtDetail12.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton2.Checked)
             {
@@ -1417,11 +1311,7 @@ namespace KIWI
         //소매 직원급여 총액 처리용 시작
         private void txtDetail21_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail21.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail21.SelectionStart = txtDetail21.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
             if (radioButton4.Checked)
             {
@@ -1432,11 +1322,7 @@ namespace KIWI
 
         private void txtDetail22_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail22.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail22.SelectionStart = txtDetail22.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
             
             if (radioButton4.Checked)
             {
@@ -1447,11 +1333,7 @@ namespace KIWI
 
         private void txtDetail23_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail23.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail23.SelectionStart = txtDetail23.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
             
             if (radioButton3.Checked)
             {
@@ -1462,11 +1344,7 @@ namespace KIWI
 
         private void txtDetail24_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail24.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail24.SelectionStart = txtDetail24.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
             
             if (radioButton3.Checked)
             {
@@ -1483,266 +1361,149 @@ namespace KIWI
 
         private void txtDetail1_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail1.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail1.SelectionStart = txtDetail1.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail4_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail4.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail4.SelectionStart = txtDetail4.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail5_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail5.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail5.SelectionStart = txtDetail5.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
         }
 
         private void txtDetail6_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail6.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail6.SelectionStart = txtDetail6.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
         }
 
         private void txtDetail7_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail7.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail7.SelectionStart = txtDetail7.Text.Length;
-            }
+            setTxtInput_TextChanged(sender);
 
         }
 
         private void txtDetail8_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail8.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail8.SelectionStart = txtDetail8.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail13_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail13.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail13.SelectionStart = txtDetail13.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail14_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail14.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail14.SelectionStart = txtDetail14.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail15_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail15.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail15.SelectionStart = txtDetail15.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail16_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail16.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail16.SelectionStart = txtDetail16.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail17_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail17.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail17.SelectionStart = txtDetail17.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail18_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail18.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail18.SelectionStart = txtDetail18.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail19_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail19.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail19.SelectionStart = txtDetail19.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail20_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail20.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail20.SelectionStart = txtDetail20.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail25_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail25.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail25.SelectionStart = txtDetail25.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail26_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail26.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail26.SelectionStart = txtDetail26.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail27_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail27.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail27.SelectionStart = txtDetail27.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail28_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail28.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail28.SelectionStart = txtDetail28.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail29_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail29.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail29.SelectionStart = txtDetail29.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail30_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail30.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail30.SelectionStart = txtDetail30.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail31_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail31.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail31.SelectionStart = txtDetail31.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail32_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail32.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail32.SelectionStart = txtDetail32.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail33_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail33.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail33.SelectionStart = txtDetail33.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail34_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail34.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail34.SelectionStart = txtDetail34.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail35_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail35.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail35.SelectionStart = txtDetail35.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
         private void txtDetail36_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
-            {
-                txtDetail36.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
-                txtDetail36.SelectionStart = txtDetail36.Text.Length;
-            }
-
+            setTxtInput_TextChanged(sender);
         }
 
 
+        private void txtInput1_Click(object sender, EventArgs e)
+        {
+            TextBox _TextBox = (sender as TextBox);
 
+            if (_TextBox.Text == "0")
+            {
+                _TextBox.SelectAll();
+            }
 
+           
+        }
 
 
         
