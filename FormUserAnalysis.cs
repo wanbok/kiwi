@@ -154,8 +154,8 @@ namespace KIWI
         private void setBaseData(CBasicInput _basicInput)
         {
             if (_basicInput == null) return;
-            int i = 0;
 
+            int i = 0;
             txtBaseData[i++].Text = _basicInput.getstr도매_누적가입자수();
             txtBaseData[i++].Text = _basicInput.getstr도매_월평균판매대수_신규();
             txtBaseData[i++].Text = _basicInput.getstr소매_월평균판매대수_신규();
@@ -269,7 +269,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())         
                                         };
             }
-            else if (chart.Name == "chart4")
+            else if (chart.Name == "chart5")
             {
                 xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
 
@@ -291,7 +291,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())
                                         };
             }
-            else if (chart.Name == "chart5")
+            else if (chart.Name == "chart6")
             {
                 xValues = new string[4] { "X1", "X2", "X3", "X4" };
 
@@ -309,7 +309,7 @@ namespace KIWI
                                          Convert.ToDouble(_storeResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())                                               
                                         };
             }
-            else if (chart.Name == "chart6")
+            else if (chart.Name == "chart7")
             {
                 xValues = new string[2] { "X1", "X2" };
 

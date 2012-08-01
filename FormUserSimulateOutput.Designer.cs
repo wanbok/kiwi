@@ -1585,7 +1585,6 @@
             this.lblTitle1.TabIndex = 177;
             this.lblTitle1.Text = "업계평균";
             this.lblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitle1.Click += new System.EventHandler(this.lblTitle1_Click);
             // 
             // label31
             // 

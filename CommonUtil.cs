@@ -18,7 +18,7 @@ namespace KIWI
         private static excel.ApplicationClass applicationForSimul = null;
         private static excel.Workbook workBookForSimul = null;
         public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "default.xlsx";
-        public static string openAsName = null;
+        //public static string openAsName = null;
         public static string saveAsSimulName = null;
         public static string saveAsName = null;
         public static string defaultManagerName = AppDomain.CurrentDomain.BaseDirectory + "manager.csv";
@@ -221,9 +221,9 @@ namespace KIWI
             }
         }
 
-        public static void ReadExcelFileToData()
+        public static void ReadExcelFileToData(string file)
         {
-            GetExcel_WorkBook(openAsName);
+            GetExcel_WorkBook(file);
             excel.Worksheet workSheet1 = workBook.Sheets[1] as excel.Worksheet;
             ReadExcelFileToDataBasicInput(workSheet1);
             ReadExcelFileToDataDetailInput(workSheet1);

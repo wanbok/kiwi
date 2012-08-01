@@ -348,7 +348,7 @@ namespace KIWI
             Int64[] arrvalue = new Int64[10];
 
             int i = 0;
-            arrvalue[i] = 도매_누적가입자수;
+            arrvalue[i++] = 도매_누적가입자수;
             arrvalue[i++] = 도매_월평균판매대수_신규;
             arrvalue[i++] = 소매_월평균판매대수_신규;
             arrvalue[i++] = 도매_월평균판매대수_기변;
@@ -367,7 +367,7 @@ namespace KIWI
             Int64[] arrvalue = new Int64[35];
 
             int i = 0;
-            arrvalue[i] = 도매_누적가입자수;
+            arrvalue[i++] = 도매_누적가입자수;
             arrvalue[i++] = 도매_월평균판매대수_신규;
             arrvalue[i++] = 도매_월평균판매대수_기변;
             arrvalue[i++] = get도매_월평균판매대수_소계();

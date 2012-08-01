@@ -134,34 +134,13 @@ namespace KIWI
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
 
-            if (!string.IsNullOrEmpty(CommonUtil.openAsName))
-            {
-                CommonUtil.ReadExcelFileToData();
-                getInput();
-                getDetail(CDataControl.g_FileBasicInput);
-            }
-            else
-            {
-                CommonUtil.clearTextBox(this.tabPage1);
-                CommonUtil.clearTextBox(this.tabPage5);
-            }
+            CommonUtil.clearTextBox(this.tabPage1);
+            CommonUtil.clearTextBox(this.tabPage5);
+            
+            getInput();
+            getDetail(CDataControl.g_FileBasicInput);
 
 
-
-        }
-
-        //상세입력
-        private void getDetail(CBasicInput g_BasicInput)
-        {
-            //
-            Int64[] arrvalue = CDataControl.g_FileDetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
-                ,g_BasicInput.get소매_직원수_간부급(), g_BasicInput.get소매_직원수_평사원());
-
-            // 셀에서 데이터 가져오기
-            for (int i = 0; i < txtDetailInput.Length; i++)
-            {
-                txtDetailInput[i].Text = arrvalue[i].ToString();
-            }
 
         }
 
@@ -176,6 +155,20 @@ namespace KIWI
             for (int i = 0; i < txtBasicInput.Length; i++)
             {
                 txtBasicInput[i].Text = arrvalue[i].ToString();
+            }
+        }
+
+        //상세입력
+        private void getDetail(CBasicInput g_BasicInput)
+        {
+            //
+            Int64[] arrvalue = CDataControl.g_FileDetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
+                , g_BasicInput.get소매_직원수_간부급(), g_BasicInput.get소매_직원수_평사원());
+
+            // 셀에서 데이터 가져오기
+            for (int i = 0; i < txtDetailInput.Length; i++)
+            {
+                txtDetailInput[i].Text = arrvalue[i].ToString();
             }
         }
 

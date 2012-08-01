@@ -790,7 +790,7 @@ namespace KIWI
             Int64[] arrvalue = new Int64[36];
 
             int i = 0;
-            arrvalue[i] = 도매_수익_월평균관리수수료;
+            arrvalue[i++] = 도매_수익_월평균관리수수료;
             arrvalue[i++] = 도매_수익_CS관리수수료;
             arrvalue[i++] = get도매_수익_CS관리수수료_분기();
             arrvalue[i++] = 도매_수익_사업자모델매입관련추가수익;

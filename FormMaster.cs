@@ -20,11 +20,6 @@ namespace KIWI
             InitializeComponent();
             FormUserInput frm = new FormUserInput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -59,7 +54,7 @@ namespace KIWI
                     // Create a PictureBox.
                     try
                     {
-                        CommonUtil.openAsName = file;
+                        CommonUtil.ReadExcelFileToData(file);
                     }
                     catch (Exception ex)
                     {
@@ -82,11 +77,6 @@ namespace KIWI
         {
             FormUserInput frm = new FormUserInput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -109,11 +99,6 @@ namespace KIWI
 
             FormUserOutput frm = new FormUserOutput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -125,11 +110,6 @@ namespace KIWI
         {
             FormUserAnalysis frm = new FormUserAnalysis();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -141,11 +121,6 @@ namespace KIWI
         {
             FormUserSimulateOutput frm = new FormUserSimulateOutput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -207,11 +182,11 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            if (CommonUtil.openAsName == null)
-            {
-                MessageBox.Show("먼저 파일을 열어주세요.");
-                return;
-            }
+            //if (CommonUtil.openAsName == null)
+            //{
+            //    MessageBox.Show("먼저 파일을 열어주세요.");
+            //    return;
+            //}
             if (this.panel1.Controls.Count > 0)
             {
                 if (this.panel1.Controls[0] is Form)
@@ -268,14 +243,7 @@ namespace KIWI
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            if (CommonUtil.openAsName != null)
-            {
-                new Printer();
-            }
-            else
-            {
-                MessageBox.Show("프린트할 내용이 없습니다.");
-            }
+            new Printer();
         }
 
         private void toolStripButton9_Click(object sender, EventArgs e)
