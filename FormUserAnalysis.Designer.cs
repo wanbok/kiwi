@@ -28,110 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint23 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint24 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint25 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint26 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint27 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint28 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint29 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint30 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint41 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint42 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint43 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint44 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint45 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint46 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint47 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint48 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint49 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint50 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint51 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint52 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint53 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint54 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint55 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint56 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint57 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint58 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint59 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint60 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint61 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint62 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint63 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint64 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint65 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint66 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint67 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint68 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint69 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint70 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint71 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint72 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint73 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint74 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint75 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint76 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint77 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint78 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint79 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint80 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea85 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend85 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series169 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series170 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea86 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend86 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series171 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1121 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1122 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1123 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1124 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1125 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1126 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1127 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1128 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.Series series172 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1129 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1130 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1131 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1132 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1133 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1134 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1135 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1136 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea87 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend87 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series173 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1137 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1138 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1139 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1140 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1141 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1142 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1143 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1144 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.Series series174 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1145 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1146 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1147 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1148 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1149 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1150 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1151 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1152 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea88 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend88 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series175 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1153 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1154 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1155 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1156 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1157 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1158 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1159 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1160 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.Series series176 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1161 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1162 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1163 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1164 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1165 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1166 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1167 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1168 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea89 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend89 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series177 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1169 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1170 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1171 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1172 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1173 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1174 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1175 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1176 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.Series series178 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1177 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1178 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1179 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1180 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1181 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1182 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1183 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1184 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea90 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend90 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series179 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1185 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1186 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1187 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1188 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1189 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1190 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1191 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1192 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.Series series180 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1193 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1194 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1195 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1196 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1197 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1198 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1199 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1200 = new System.Windows.Forms.DataVisualization.Charting.DataPoint();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -742,9 +742,10 @@
             // txtOut62
             // 
             this.txtOut62.BackColor = System.Drawing.Color.White;
-            this.txtOut62.Location = new System.Drawing.Point(624, 457);
+            this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut62.Location = new System.Drawing.Point(623, 457);
             this.txtOut62.Name = "txtOut62";
-            this.txtOut62.Size = new System.Drawing.Size(83, 21);
+            this.txtOut62.Size = new System.Drawing.Size(84, 21);
             this.txtOut62.TabIndex = 820;
             this.txtOut62.Text = "0";
             this.txtOut62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -752,9 +753,10 @@
             // txtOut61
             // 
             this.txtOut61.BackColor = System.Drawing.Color.White;
-            this.txtOut61.Location = new System.Drawing.Point(624, 428);
+            this.txtOut61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut61.Location = new System.Drawing.Point(623, 428);
             this.txtOut61.Name = "txtOut61";
-            this.txtOut61.Size = new System.Drawing.Size(83, 21);
+            this.txtOut61.Size = new System.Drawing.Size(84, 21);
             this.txtOut61.TabIndex = 819;
             this.txtOut61.Text = "0";
             this.txtOut61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -762,6 +764,7 @@
             // txtOut60
             // 
             this.txtOut60.BackColor = System.Drawing.Color.White;
+            this.txtOut60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut60.Location = new System.Drawing.Point(623, 398);
             this.txtOut60.Name = "txtOut60";
             this.txtOut60.Size = new System.Drawing.Size(84, 21);
@@ -772,9 +775,10 @@
             // txtOut59
             // 
             this.txtOut59.BackColor = System.Drawing.Color.White;
-            this.txtOut59.Location = new System.Drawing.Point(624, 368);
+            this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut59.Location = new System.Drawing.Point(623, 368);
             this.txtOut59.Name = "txtOut59";
-            this.txtOut59.Size = new System.Drawing.Size(83, 21);
+            this.txtOut59.Size = new System.Drawing.Size(84, 21);
             this.txtOut59.TabIndex = 817;
             this.txtOut59.Text = "0";
             this.txtOut59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -782,9 +786,10 @@
             // txtOut58
             // 
             this.txtOut58.BackColor = System.Drawing.Color.White;
-            this.txtOut58.Location = new System.Drawing.Point(624, 337);
+            this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut58.Location = new System.Drawing.Point(623, 337);
             this.txtOut58.Name = "txtOut58";
-            this.txtOut58.Size = new System.Drawing.Size(83, 21);
+            this.txtOut58.Size = new System.Drawing.Size(84, 21);
             this.txtOut58.TabIndex = 816;
             this.txtOut58.Text = "0";
             this.txtOut58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -792,9 +797,10 @@
             // txtOut57
             // 
             this.txtOut57.BackColor = System.Drawing.Color.White;
-            this.txtOut57.Location = new System.Drawing.Point(624, 308);
+            this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut57.Location = new System.Drawing.Point(623, 308);
             this.txtOut57.Name = "txtOut57";
-            this.txtOut57.Size = new System.Drawing.Size(83, 21);
+            this.txtOut57.Size = new System.Drawing.Size(84, 21);
             this.txtOut57.TabIndex = 815;
             this.txtOut57.Text = "0";
             this.txtOut57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -802,6 +808,7 @@
             // txtOut56
             // 
             this.txtOut56.BackColor = System.Drawing.Color.White;
+            this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut56.Location = new System.Drawing.Point(623, 277);
             this.txtOut56.Name = "txtOut56";
             this.txtOut56.Size = new System.Drawing.Size(84, 21);
@@ -812,6 +819,7 @@
             // txtOut55
             // 
             this.txtOut55.BackColor = System.Drawing.Color.White;
+            this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut55.Location = new System.Drawing.Point(623, 247);
             this.txtOut55.Name = "txtOut55";
             this.txtOut55.Size = new System.Drawing.Size(84, 21);
@@ -822,6 +830,7 @@
             // txtOut54
             // 
             this.txtOut54.BackColor = System.Drawing.Color.White;
+            this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut54.Location = new System.Drawing.Point(623, 218);
             this.txtOut54.Name = "txtOut54";
             this.txtOut54.Size = new System.Drawing.Size(84, 21);
@@ -832,9 +841,10 @@
             // txtOut53
             // 
             this.txtOut53.BackColor = System.Drawing.Color.White;
-            this.txtOut53.Location = new System.Drawing.Point(622, 188);
+            this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut53.Location = new System.Drawing.Point(623, 188);
             this.txtOut53.Name = "txtOut53";
-            this.txtOut53.Size = new System.Drawing.Size(85, 21);
+            this.txtOut53.Size = new System.Drawing.Size(84, 21);
             this.txtOut53.TabIndex = 811;
             this.txtOut53.Text = "0";
             this.txtOut53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -842,6 +852,7 @@
             // txtOut52
             // 
             this.txtOut52.BackColor = System.Drawing.Color.White;
+            this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut52.Location = new System.Drawing.Point(623, 158);
             this.txtOut52.Name = "txtOut52";
             this.txtOut52.Size = new System.Drawing.Size(84, 21);
@@ -852,6 +863,7 @@
             // txtOut51
             // 
             this.txtOut51.BackColor = System.Drawing.Color.White;
+            this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut51.Location = new System.Drawing.Point(623, 127);
             this.txtOut51.Name = "txtOut51";
             this.txtOut51.Size = new System.Drawing.Size(84, 21);
@@ -862,6 +874,7 @@
             // txtOut50
             // 
             this.txtOut50.BackColor = System.Drawing.Color.White;
+            this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut50.Location = new System.Drawing.Point(623, 98);
             this.txtOut50.Name = "txtOut50";
             this.txtOut50.Size = new System.Drawing.Size(84, 21);
@@ -872,7 +885,8 @@
             // txtOut49
             // 
             this.txtOut49.BackColor = System.Drawing.Color.White;
-            this.txtOut49.Location = new System.Drawing.Point(622, 67);
+            this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut49.Location = new System.Drawing.Point(623, 67);
             this.txtOut49.Name = "txtOut49";
             this.txtOut49.Size = new System.Drawing.Size(85, 21);
             this.txtOut49.TabIndex = 807;
@@ -882,7 +896,8 @@
             // txtOut46
             // 
             this.txtOut46.BackColor = System.Drawing.Color.White;
-            this.txtOut46.Location = new System.Drawing.Point(509, 457);
+            this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut46.Location = new System.Drawing.Point(508, 457);
             this.txtOut46.Name = "txtOut46";
             this.txtOut46.Size = new System.Drawing.Size(105, 21);
             this.txtOut46.TabIndex = 806;
@@ -892,7 +907,8 @@
             // txtOut45
             // 
             this.txtOut45.BackColor = System.Drawing.Color.White;
-            this.txtOut45.Location = new System.Drawing.Point(509, 428);
+            this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut45.Location = new System.Drawing.Point(508, 428);
             this.txtOut45.Name = "txtOut45";
             this.txtOut45.Size = new System.Drawing.Size(105, 21);
             this.txtOut45.TabIndex = 805;
@@ -902,6 +918,7 @@
             // txtOut44
             // 
             this.txtOut44.BackColor = System.Drawing.Color.White;
+            this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut44.Location = new System.Drawing.Point(508, 398);
             this.txtOut44.Name = "txtOut44";
             this.txtOut44.Size = new System.Drawing.Size(105, 21);
@@ -912,7 +929,8 @@
             // txtOut43
             // 
             this.txtOut43.BackColor = System.Drawing.Color.White;
-            this.txtOut43.Location = new System.Drawing.Point(509, 368);
+            this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut43.Location = new System.Drawing.Point(508, 368);
             this.txtOut43.Name = "txtOut43";
             this.txtOut43.Size = new System.Drawing.Size(105, 21);
             this.txtOut43.TabIndex = 803;
@@ -922,7 +940,8 @@
             // txtOut42
             // 
             this.txtOut42.BackColor = System.Drawing.Color.White;
-            this.txtOut42.Location = new System.Drawing.Point(509, 337);
+            this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut42.Location = new System.Drawing.Point(508, 337);
             this.txtOut42.Name = "txtOut42";
             this.txtOut42.Size = new System.Drawing.Size(105, 21);
             this.txtOut42.TabIndex = 802;
@@ -932,7 +951,8 @@
             // txtOut41
             // 
             this.txtOut41.BackColor = System.Drawing.Color.White;
-            this.txtOut41.Location = new System.Drawing.Point(509, 308);
+            this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut41.Location = new System.Drawing.Point(508, 308);
             this.txtOut41.Name = "txtOut41";
             this.txtOut41.Size = new System.Drawing.Size(105, 21);
             this.txtOut41.TabIndex = 801;
@@ -942,6 +962,7 @@
             // txtOut40
             // 
             this.txtOut40.BackColor = System.Drawing.Color.White;
+            this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut40.Location = new System.Drawing.Point(508, 277);
             this.txtOut40.Name = "txtOut40";
             this.txtOut40.Size = new System.Drawing.Size(105, 21);
@@ -952,6 +973,7 @@
             // txtOut39
             // 
             this.txtOut39.BackColor = System.Drawing.Color.White;
+            this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut39.Location = new System.Drawing.Point(508, 247);
             this.txtOut39.Name = "txtOut39";
             this.txtOut39.Size = new System.Drawing.Size(105, 21);
@@ -962,6 +984,7 @@
             // txtOut38
             // 
             this.txtOut38.BackColor = System.Drawing.Color.White;
+            this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut38.Location = new System.Drawing.Point(508, 218);
             this.txtOut38.Name = "txtOut38";
             this.txtOut38.Size = new System.Drawing.Size(105, 21);
@@ -972,7 +995,8 @@
             // txtOut37
             // 
             this.txtOut37.BackColor = System.Drawing.Color.White;
-            this.txtOut37.Location = new System.Drawing.Point(507, 188);
+            this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut37.Location = new System.Drawing.Point(508, 188);
             this.txtOut37.Name = "txtOut37";
             this.txtOut37.Size = new System.Drawing.Size(105, 21);
             this.txtOut37.TabIndex = 797;
@@ -982,6 +1006,7 @@
             // txtOut36
             // 
             this.txtOut36.BackColor = System.Drawing.Color.White;
+            this.txtOut36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut36.Location = new System.Drawing.Point(508, 158);
             this.txtOut36.Name = "txtOut36";
             this.txtOut36.Size = new System.Drawing.Size(105, 21);
@@ -992,6 +1017,7 @@
             // txtOut35
             // 
             this.txtOut35.BackColor = System.Drawing.Color.White;
+            this.txtOut35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut35.Location = new System.Drawing.Point(508, 127);
             this.txtOut35.Name = "txtOut35";
             this.txtOut35.Size = new System.Drawing.Size(105, 21);
@@ -1002,6 +1028,7 @@
             // txtOut34
             // 
             this.txtOut34.BackColor = System.Drawing.Color.White;
+            this.txtOut34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut34.Location = new System.Drawing.Point(508, 98);
             this.txtOut34.Name = "txtOut34";
             this.txtOut34.Size = new System.Drawing.Size(105, 21);
@@ -1012,7 +1039,8 @@
             // txtOut33
             // 
             this.txtOut33.BackColor = System.Drawing.Color.White;
-            this.txtOut33.Location = new System.Drawing.Point(507, 67);
+            this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut33.Location = new System.Drawing.Point(508, 67);
             this.txtOut33.Name = "txtOut33";
             this.txtOut33.Size = new System.Drawing.Size(105, 21);
             this.txtOut33.TabIndex = 793;
@@ -1022,9 +1050,10 @@
             // txtOut63
             // 
             this.txtOut63.BackColor = System.Drawing.Color.White;
-            this.txtOut63.Location = new System.Drawing.Point(624, 487);
+            this.txtOut63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut63.Location = new System.Drawing.Point(623, 487);
             this.txtOut63.Name = "txtOut63";
-            this.txtOut63.Size = new System.Drawing.Size(83, 21);
+            this.txtOut63.Size = new System.Drawing.Size(84, 21);
             this.txtOut63.TabIndex = 791;
             this.txtOut63.Text = "0";
             this.txtOut63.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1032,9 +1061,10 @@
             // txtOut47
             // 
             this.txtOut47.BackColor = System.Drawing.Color.White;
-            this.txtOut47.Location = new System.Drawing.Point(509, 486);
+            this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut47.Location = new System.Drawing.Point(508, 486);
             this.txtOut47.Name = "txtOut47";
-            this.txtOut47.Size = new System.Drawing.Size(108, 21);
+            this.txtOut47.Size = new System.Drawing.Size(105, 21);
             this.txtOut47.TabIndex = 792;
             this.txtOut47.Text = "0";
             this.txtOut47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1042,7 +1072,8 @@
             // txtOut30
             // 
             this.txtOut30.BackColor = System.Drawing.Color.White;
-            this.txtOut30.Location = new System.Drawing.Point(395, 457);
+            this.txtOut30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut30.Location = new System.Drawing.Point(394, 457);
             this.txtOut30.Name = "txtOut30";
             this.txtOut30.Size = new System.Drawing.Size(105, 21);
             this.txtOut30.TabIndex = 790;
@@ -1052,7 +1083,8 @@
             // txtOut29
             // 
             this.txtOut29.BackColor = System.Drawing.Color.White;
-            this.txtOut29.Location = new System.Drawing.Point(395, 428);
+            this.txtOut29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut29.Location = new System.Drawing.Point(394, 428);
             this.txtOut29.Name = "txtOut29";
             this.txtOut29.Size = new System.Drawing.Size(105, 21);
             this.txtOut29.TabIndex = 789;
@@ -1062,17 +1094,20 @@
             // txtOut28
             // 
             this.txtOut28.BackColor = System.Drawing.Color.White;
+            this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut28.Location = new System.Drawing.Point(394, 398);
             this.txtOut28.Name = "txtOut28";
             this.txtOut28.Size = new System.Drawing.Size(105, 21);
             this.txtOut28.TabIndex = 788;
             this.txtOut28.Text = "0";
             this.txtOut28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut28.TextChanged += new System.EventHandler(this.txtOut28_TextChanged);
             // 
             // txtOut27
             // 
             this.txtOut27.BackColor = System.Drawing.Color.White;
-            this.txtOut27.Location = new System.Drawing.Point(395, 368);
+            this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut27.Location = new System.Drawing.Point(394, 368);
             this.txtOut27.Name = "txtOut27";
             this.txtOut27.Size = new System.Drawing.Size(105, 21);
             this.txtOut27.TabIndex = 787;
@@ -1082,7 +1117,8 @@
             // txtOut26
             // 
             this.txtOut26.BackColor = System.Drawing.Color.White;
-            this.txtOut26.Location = new System.Drawing.Point(395, 337);
+            this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut26.Location = new System.Drawing.Point(394, 337);
             this.txtOut26.Name = "txtOut26";
             this.txtOut26.Size = new System.Drawing.Size(105, 21);
             this.txtOut26.TabIndex = 786;
@@ -1092,7 +1128,8 @@
             // txtOut25
             // 
             this.txtOut25.BackColor = System.Drawing.Color.White;
-            this.txtOut25.Location = new System.Drawing.Point(395, 308);
+            this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut25.Location = new System.Drawing.Point(394, 308);
             this.txtOut25.Name = "txtOut25";
             this.txtOut25.Size = new System.Drawing.Size(105, 21);
             this.txtOut25.TabIndex = 785;
@@ -1102,6 +1139,7 @@
             // txtOut24
             // 
             this.txtOut24.BackColor = System.Drawing.Color.White;
+            this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut24.Location = new System.Drawing.Point(394, 277);
             this.txtOut24.Name = "txtOut24";
             this.txtOut24.Size = new System.Drawing.Size(105, 21);
@@ -1112,6 +1150,7 @@
             // txtOut23
             // 
             this.txtOut23.BackColor = System.Drawing.Color.White;
+            this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut23.Location = new System.Drawing.Point(394, 247);
             this.txtOut23.Name = "txtOut23";
             this.txtOut23.Size = new System.Drawing.Size(105, 21);
@@ -1122,6 +1161,7 @@
             // txtOut22
             // 
             this.txtOut22.BackColor = System.Drawing.Color.White;
+            this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut22.Location = new System.Drawing.Point(394, 218);
             this.txtOut22.Name = "txtOut22";
             this.txtOut22.Size = new System.Drawing.Size(105, 21);
@@ -1132,7 +1172,8 @@
             // txtOut21
             // 
             this.txtOut21.BackColor = System.Drawing.Color.White;
-            this.txtOut21.Location = new System.Drawing.Point(393, 188);
+            this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut21.Location = new System.Drawing.Point(394, 188);
             this.txtOut21.Name = "txtOut21";
             this.txtOut21.Size = new System.Drawing.Size(105, 21);
             this.txtOut21.TabIndex = 781;
@@ -1142,6 +1183,7 @@
             // txtOut20
             // 
             this.txtOut20.BackColor = System.Drawing.Color.White;
+            this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut20.Location = new System.Drawing.Point(394, 158);
             this.txtOut20.Name = "txtOut20";
             this.txtOut20.Size = new System.Drawing.Size(105, 21);
@@ -1152,6 +1194,7 @@
             // txtOut19
             // 
             this.txtOut19.BackColor = System.Drawing.Color.White;
+            this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut19.Location = new System.Drawing.Point(394, 127);
             this.txtOut19.Name = "txtOut19";
             this.txtOut19.Size = new System.Drawing.Size(105, 21);
@@ -1162,6 +1205,7 @@
             // txtOut18
             // 
             this.txtOut18.BackColor = System.Drawing.Color.White;
+            this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut18.Location = new System.Drawing.Point(394, 98);
             this.txtOut18.Name = "txtOut18";
             this.txtOut18.Size = new System.Drawing.Size(105, 21);
@@ -1172,7 +1216,8 @@
             // txtOut17
             // 
             this.txtOut17.BackColor = System.Drawing.Color.White;
-            this.txtOut17.Location = new System.Drawing.Point(393, 67);
+            this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut17.Location = new System.Drawing.Point(394, 67);
             this.txtOut17.Name = "txtOut17";
             this.txtOut17.Size = new System.Drawing.Size(105, 21);
             this.txtOut17.TabIndex = 777;
@@ -1182,7 +1227,8 @@
             // txtOut14
             // 
             this.txtOut14.BackColor = System.Drawing.Color.White;
-            this.txtOut14.Location = new System.Drawing.Point(280, 457);
+            this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut14.Location = new System.Drawing.Point(279, 457);
             this.txtOut14.Name = "txtOut14";
             this.txtOut14.Size = new System.Drawing.Size(105, 21);
             this.txtOut14.TabIndex = 776;
@@ -1192,7 +1238,8 @@
             // txtOut13
             // 
             this.txtOut13.BackColor = System.Drawing.Color.White;
-            this.txtOut13.Location = new System.Drawing.Point(280, 428);
+            this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut13.Location = new System.Drawing.Point(279, 428);
             this.txtOut13.Name = "txtOut13";
             this.txtOut13.Size = new System.Drawing.Size(105, 21);
             this.txtOut13.TabIndex = 775;
@@ -1202,6 +1249,7 @@
             // txtOut12
             // 
             this.txtOut12.BackColor = System.Drawing.Color.White;
+            this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut12.Location = new System.Drawing.Point(279, 398);
             this.txtOut12.Name = "txtOut12";
             this.txtOut12.Size = new System.Drawing.Size(105, 21);
@@ -1212,7 +1260,8 @@
             // txtOut11
             // 
             this.txtOut11.BackColor = System.Drawing.Color.White;
-            this.txtOut11.Location = new System.Drawing.Point(280, 368);
+            this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut11.Location = new System.Drawing.Point(279, 368);
             this.txtOut11.Name = "txtOut11";
             this.txtOut11.Size = new System.Drawing.Size(105, 21);
             this.txtOut11.TabIndex = 773;
@@ -1222,7 +1271,8 @@
             // txtOut10
             // 
             this.txtOut10.BackColor = System.Drawing.Color.White;
-            this.txtOut10.Location = new System.Drawing.Point(280, 337);
+            this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut10.Location = new System.Drawing.Point(279, 337);
             this.txtOut10.Name = "txtOut10";
             this.txtOut10.Size = new System.Drawing.Size(105, 21);
             this.txtOut10.TabIndex = 772;
@@ -1232,7 +1282,8 @@
             // txtOut9
             // 
             this.txtOut9.BackColor = System.Drawing.Color.White;
-            this.txtOut9.Location = new System.Drawing.Point(280, 308);
+            this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut9.Location = new System.Drawing.Point(279, 308);
             this.txtOut9.Name = "txtOut9";
             this.txtOut9.Size = new System.Drawing.Size(105, 21);
             this.txtOut9.TabIndex = 771;
@@ -1242,6 +1293,7 @@
             // txtOut8
             // 
             this.txtOut8.BackColor = System.Drawing.Color.White;
+            this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut8.Location = new System.Drawing.Point(279, 277);
             this.txtOut8.Name = "txtOut8";
             this.txtOut8.Size = new System.Drawing.Size(105, 21);
@@ -1252,6 +1304,7 @@
             // txtOut7
             // 
             this.txtOut7.BackColor = System.Drawing.Color.White;
+            this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut7.Location = new System.Drawing.Point(279, 247);
             this.txtOut7.Name = "txtOut7";
             this.txtOut7.Size = new System.Drawing.Size(105, 21);
@@ -1262,6 +1315,7 @@
             // txtOut6
             // 
             this.txtOut6.BackColor = System.Drawing.Color.White;
+            this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut6.Location = new System.Drawing.Point(279, 218);
             this.txtOut6.Name = "txtOut6";
             this.txtOut6.Size = new System.Drawing.Size(105, 21);
@@ -1272,7 +1326,8 @@
             // txtOut5
             // 
             this.txtOut5.BackColor = System.Drawing.Color.White;
-            this.txtOut5.Location = new System.Drawing.Point(278, 188);
+            this.txtOut5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut5.Location = new System.Drawing.Point(279, 188);
             this.txtOut5.Name = "txtOut5";
             this.txtOut5.Size = new System.Drawing.Size(105, 21);
             this.txtOut5.TabIndex = 767;
@@ -1282,6 +1337,7 @@
             // txtOut4
             // 
             this.txtOut4.BackColor = System.Drawing.Color.White;
+            this.txtOut4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut4.Location = new System.Drawing.Point(279, 158);
             this.txtOut4.Name = "txtOut4";
             this.txtOut4.Size = new System.Drawing.Size(105, 21);
@@ -1292,6 +1348,7 @@
             // txtOut3
             // 
             this.txtOut3.BackColor = System.Drawing.Color.White;
+            this.txtOut3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut3.Location = new System.Drawing.Point(279, 127);
             this.txtOut3.Name = "txtOut3";
             this.txtOut3.Size = new System.Drawing.Size(105, 21);
@@ -1302,6 +1359,7 @@
             // txtOut2
             // 
             this.txtOut2.BackColor = System.Drawing.Color.White;
+            this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOut2.Location = new System.Drawing.Point(279, 98);
             this.txtOut2.Name = "txtOut2";
             this.txtOut2.Size = new System.Drawing.Size(105, 21);
@@ -1312,7 +1370,8 @@
             // txtOut1
             // 
             this.txtOut1.BackColor = System.Drawing.Color.White;
-            this.txtOut1.Location = new System.Drawing.Point(278, 67);
+            this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut1.Location = new System.Drawing.Point(279, 67);
             this.txtOut1.Name = "txtOut1";
             this.txtOut1.Size = new System.Drawing.Size(105, 21);
             this.txtOut1.TabIndex = 763;
@@ -1365,22 +1424,22 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea85.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea85);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend85.Name = "Legend1";
+            this.chart1.Legends.Add(legend85);
             this.chart1.Location = new System.Drawing.Point(4, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series169.ChartArea = "ChartArea1";
+            series169.Legend = "Legend1";
+            series169.Name = "Series1";
+            series170.ChartArea = "ChartArea1";
+            series170.Legend = "Legend1";
+            series170.Name = "Series2";
+            this.chart1.Series.Add(series169);
+            this.chart1.Series.Add(series170);
             this.chart1.Size = new System.Drawing.Size(435, 430);
             this.chart1.TabIndex = 339;
             this.chart1.Text = "0";
@@ -1399,38 +1458,38 @@
             // 
             // chart2
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            chartArea86.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea86);
+            legend86.Name = "Legend1";
+            this.chart2.Legends.Add(legend86);
             this.chart2.Location = new System.Drawing.Point(5, 3);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.LegendText = "업계평균";
-            series3.Name = "Series1";
-            series3.Points.Add(dataPoint1);
-            series3.Points.Add(dataPoint2);
-            series3.Points.Add(dataPoint3);
-            series3.Points.Add(dataPoint4);
-            series3.Points.Add(dataPoint5);
-            series3.Points.Add(dataPoint6);
-            series3.Points.Add(dataPoint7);
-            series3.Points.Add(dataPoint8);
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.LegendText = "당대리점";
-            series4.Name = "Series2";
-            series4.Points.Add(dataPoint9);
-            series4.Points.Add(dataPoint10);
-            series4.Points.Add(dataPoint11);
-            series4.Points.Add(dataPoint12);
-            series4.Points.Add(dataPoint13);
-            series4.Points.Add(dataPoint14);
-            series4.Points.Add(dataPoint15);
-            series4.Points.Add(dataPoint16);
-            this.chart2.Series.Add(series3);
-            this.chart2.Series.Add(series4);
+            series171.ChartArea = "ChartArea1";
+            series171.Legend = "Legend1";
+            series171.LegendText = "업계평균";
+            series171.Name = "Series1";
+            series171.Points.Add(dataPoint1121);
+            series171.Points.Add(dataPoint1122);
+            series171.Points.Add(dataPoint1123);
+            series171.Points.Add(dataPoint1124);
+            series171.Points.Add(dataPoint1125);
+            series171.Points.Add(dataPoint1126);
+            series171.Points.Add(dataPoint1127);
+            series171.Points.Add(dataPoint1128);
+            series172.ChartArea = "ChartArea1";
+            series172.Legend = "Legend1";
+            series172.LegendText = "당대리점";
+            series172.Name = "Series2";
+            series172.Points.Add(dataPoint1129);
+            series172.Points.Add(dataPoint1130);
+            series172.Points.Add(dataPoint1131);
+            series172.Points.Add(dataPoint1132);
+            series172.Points.Add(dataPoint1133);
+            series172.Points.Add(dataPoint1134);
+            series172.Points.Add(dataPoint1135);
+            series172.Points.Add(dataPoint1136);
+            this.chart2.Series.Add(series171);
+            this.chart2.Series.Add(series172);
             this.chart2.Size = new System.Drawing.Size(432, 430);
             this.chart2.TabIndex = 340;
             this.chart2.Text = "chart2";
@@ -1447,38 +1506,38 @@
             // 
             // chart3
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
+            chartArea87.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea87);
+            legend87.Name = "Legend1";
+            this.chart3.Legends.Add(legend87);
             this.chart3.Location = new System.Drawing.Point(5, 3);
             this.chart3.Name = "chart3";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.LegendText = "업계평균";
-            series5.Name = "Series1";
-            series5.Points.Add(dataPoint17);
-            series5.Points.Add(dataPoint18);
-            series5.Points.Add(dataPoint19);
-            series5.Points.Add(dataPoint20);
-            series5.Points.Add(dataPoint21);
-            series5.Points.Add(dataPoint22);
-            series5.Points.Add(dataPoint23);
-            series5.Points.Add(dataPoint24);
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.LegendText = "당대리점";
-            series6.Name = "Series2";
-            series6.Points.Add(dataPoint25);
-            series6.Points.Add(dataPoint26);
-            series6.Points.Add(dataPoint27);
-            series6.Points.Add(dataPoint28);
-            series6.Points.Add(dataPoint29);
-            series6.Points.Add(dataPoint30);
-            series6.Points.Add(dataPoint31);
-            series6.Points.Add(dataPoint32);
-            this.chart3.Series.Add(series5);
-            this.chart3.Series.Add(series6);
+            series173.ChartArea = "ChartArea1";
+            series173.Legend = "Legend1";
+            series173.LegendText = "업계평균";
+            series173.Name = "Series1";
+            series173.Points.Add(dataPoint1137);
+            series173.Points.Add(dataPoint1138);
+            series173.Points.Add(dataPoint1139);
+            series173.Points.Add(dataPoint1140);
+            series173.Points.Add(dataPoint1141);
+            series173.Points.Add(dataPoint1142);
+            series173.Points.Add(dataPoint1143);
+            series173.Points.Add(dataPoint1144);
+            series174.ChartArea = "ChartArea1";
+            series174.Legend = "Legend1";
+            series174.LegendText = "당대리점";
+            series174.Name = "Series2";
+            series174.Points.Add(dataPoint1145);
+            series174.Points.Add(dataPoint1146);
+            series174.Points.Add(dataPoint1147);
+            series174.Points.Add(dataPoint1148);
+            series174.Points.Add(dataPoint1149);
+            series174.Points.Add(dataPoint1150);
+            series174.Points.Add(dataPoint1151);
+            series174.Points.Add(dataPoint1152);
+            this.chart3.Series.Add(series173);
+            this.chart3.Series.Add(series174);
             this.chart3.Size = new System.Drawing.Size(432, 430);
             this.chart3.TabIndex = 340;
             this.chart3.Text = "chart3";
@@ -1519,40 +1578,40 @@
             // chart5
             // 
             this.chart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea4.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea4);
+            chartArea88.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea88);
             this.chart5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend4.Name = "Legend1";
-            this.chart5.Legends.Add(legend4);
+            legend88.Name = "Legend1";
+            this.chart5.Legends.Add(legend88);
             this.chart5.Location = new System.Drawing.Point(4, 3);
             this.chart5.Name = "chart5";
             this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.LegendText = "업계평균";
-            series7.Name = "Series1";
-            series7.Points.Add(dataPoint33);
-            series7.Points.Add(dataPoint34);
-            series7.Points.Add(dataPoint35);
-            series7.Points.Add(dataPoint36);
-            series7.Points.Add(dataPoint37);
-            series7.Points.Add(dataPoint38);
-            series7.Points.Add(dataPoint39);
-            series7.Points.Add(dataPoint40);
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.LegendText = "당대리점";
-            series8.Name = "Series2";
-            series8.Points.Add(dataPoint41);
-            series8.Points.Add(dataPoint42);
-            series8.Points.Add(dataPoint43);
-            series8.Points.Add(dataPoint44);
-            series8.Points.Add(dataPoint45);
-            series8.Points.Add(dataPoint46);
-            series8.Points.Add(dataPoint47);
-            series8.Points.Add(dataPoint48);
-            this.chart5.Series.Add(series7);
-            this.chart5.Series.Add(series8);
+            series175.ChartArea = "ChartArea1";
+            series175.Legend = "Legend1";
+            series175.LegendText = "업계평균";
+            series175.Name = "Series1";
+            series175.Points.Add(dataPoint1153);
+            series175.Points.Add(dataPoint1154);
+            series175.Points.Add(dataPoint1155);
+            series175.Points.Add(dataPoint1156);
+            series175.Points.Add(dataPoint1157);
+            series175.Points.Add(dataPoint1158);
+            series175.Points.Add(dataPoint1159);
+            series175.Points.Add(dataPoint1160);
+            series176.ChartArea = "ChartArea1";
+            series176.Legend = "Legend1";
+            series176.LegendText = "당대리점";
+            series176.Name = "Series2";
+            series176.Points.Add(dataPoint1161);
+            series176.Points.Add(dataPoint1162);
+            series176.Points.Add(dataPoint1163);
+            series176.Points.Add(dataPoint1164);
+            series176.Points.Add(dataPoint1165);
+            series176.Points.Add(dataPoint1166);
+            series176.Points.Add(dataPoint1167);
+            series176.Points.Add(dataPoint1168);
+            this.chart5.Series.Add(series175);
+            this.chart5.Series.Add(series176);
             this.chart5.Size = new System.Drawing.Size(435, 430);
             this.chart5.TabIndex = 339;
             this.chart5.Text = "chart5";
@@ -1570,38 +1629,38 @@
             // 
             // chart6
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart6.Legends.Add(legend5);
+            chartArea89.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea89);
+            legend89.Name = "Legend1";
+            this.chart6.Legends.Add(legend89);
             this.chart6.Location = new System.Drawing.Point(5, 3);
             this.chart6.Name = "chart6";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.LegendText = "업계평균";
-            series9.Name = "Series1";
-            series9.Points.Add(dataPoint49);
-            series9.Points.Add(dataPoint50);
-            series9.Points.Add(dataPoint51);
-            series9.Points.Add(dataPoint52);
-            series9.Points.Add(dataPoint53);
-            series9.Points.Add(dataPoint54);
-            series9.Points.Add(dataPoint55);
-            series9.Points.Add(dataPoint56);
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.LegendText = "당대리점";
-            series10.Name = "Series2";
-            series10.Points.Add(dataPoint57);
-            series10.Points.Add(dataPoint58);
-            series10.Points.Add(dataPoint59);
-            series10.Points.Add(dataPoint60);
-            series10.Points.Add(dataPoint61);
-            series10.Points.Add(dataPoint62);
-            series10.Points.Add(dataPoint63);
-            series10.Points.Add(dataPoint64);
-            this.chart6.Series.Add(series9);
-            this.chart6.Series.Add(series10);
+            series177.ChartArea = "ChartArea1";
+            series177.Legend = "Legend1";
+            series177.LegendText = "업계평균";
+            series177.Name = "Series1";
+            series177.Points.Add(dataPoint1169);
+            series177.Points.Add(dataPoint1170);
+            series177.Points.Add(dataPoint1171);
+            series177.Points.Add(dataPoint1172);
+            series177.Points.Add(dataPoint1173);
+            series177.Points.Add(dataPoint1174);
+            series177.Points.Add(dataPoint1175);
+            series177.Points.Add(dataPoint1176);
+            series178.ChartArea = "ChartArea1";
+            series178.Legend = "Legend1";
+            series178.LegendText = "당대리점";
+            series178.Name = "Series2";
+            series178.Points.Add(dataPoint1177);
+            series178.Points.Add(dataPoint1178);
+            series178.Points.Add(dataPoint1179);
+            series178.Points.Add(dataPoint1180);
+            series178.Points.Add(dataPoint1181);
+            series178.Points.Add(dataPoint1182);
+            series178.Points.Add(dataPoint1183);
+            series178.Points.Add(dataPoint1184);
+            this.chart6.Series.Add(series177);
+            this.chart6.Series.Add(series178);
             this.chart6.Size = new System.Drawing.Size(432, 430);
             this.chart6.TabIndex = 340;
             this.chart6.Text = "chart6";
@@ -1618,38 +1677,38 @@
             // 
             // chart7
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart7.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart7.Legends.Add(legend6);
+            chartArea90.Name = "ChartArea1";
+            this.chart7.ChartAreas.Add(chartArea90);
+            legend90.Name = "Legend1";
+            this.chart7.Legends.Add(legend90);
             this.chart7.Location = new System.Drawing.Point(5, 3);
             this.chart7.Name = "chart7";
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.LegendText = "업계평균";
-            series11.Name = "Series1";
-            series11.Points.Add(dataPoint65);
-            series11.Points.Add(dataPoint66);
-            series11.Points.Add(dataPoint67);
-            series11.Points.Add(dataPoint68);
-            series11.Points.Add(dataPoint69);
-            series11.Points.Add(dataPoint70);
-            series11.Points.Add(dataPoint71);
-            series11.Points.Add(dataPoint72);
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.LegendText = "당대리점";
-            series12.Name = "Series2";
-            series12.Points.Add(dataPoint73);
-            series12.Points.Add(dataPoint74);
-            series12.Points.Add(dataPoint75);
-            series12.Points.Add(dataPoint76);
-            series12.Points.Add(dataPoint77);
-            series12.Points.Add(dataPoint78);
-            series12.Points.Add(dataPoint79);
-            series12.Points.Add(dataPoint80);
-            this.chart7.Series.Add(series11);
-            this.chart7.Series.Add(series12);
+            series179.ChartArea = "ChartArea1";
+            series179.Legend = "Legend1";
+            series179.LegendText = "업계평균";
+            series179.Name = "Series1";
+            series179.Points.Add(dataPoint1185);
+            series179.Points.Add(dataPoint1186);
+            series179.Points.Add(dataPoint1187);
+            series179.Points.Add(dataPoint1188);
+            series179.Points.Add(dataPoint1189);
+            series179.Points.Add(dataPoint1190);
+            series179.Points.Add(dataPoint1191);
+            series179.Points.Add(dataPoint1192);
+            series180.ChartArea = "ChartArea1";
+            series180.Legend = "Legend1";
+            series180.LegendText = "당대리점";
+            series180.Name = "Series2";
+            series180.Points.Add(dataPoint1193);
+            series180.Points.Add(dataPoint1194);
+            series180.Points.Add(dataPoint1195);
+            series180.Points.Add(dataPoint1196);
+            series180.Points.Add(dataPoint1197);
+            series180.Points.Add(dataPoint1198);
+            series180.Points.Add(dataPoint1199);
+            series180.Points.Add(dataPoint1200);
+            this.chart7.Series.Add(series179);
+            this.chart7.Series.Add(series180);
             this.chart7.Size = new System.Drawing.Size(432, 430);
             this.chart7.TabIndex = 340;
             this.chart7.Text = "chart7";
@@ -2242,6 +2301,7 @@
             // textBoxBase10
             // 
             this.textBoxBase10.BackColor = System.Drawing.Color.White;
+            this.textBoxBase10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase10.Location = new System.Drawing.Point(1151, 193);
             this.textBoxBase10.Name = "textBoxBase10";
             this.textBoxBase10.Size = new System.Drawing.Size(70, 21);
@@ -2252,7 +2312,8 @@
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(971, 193);
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Location = new System.Drawing.Point(972, 193);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(70, 21);
             this.textBox6.TabIndex = 731;
@@ -2262,6 +2323,7 @@
             // textBoxBase9
             // 
             this.textBoxBase9.BackColor = System.Drawing.Color.White;
+            this.textBoxBase9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase9.Location = new System.Drawing.Point(1062, 193);
             this.textBoxBase9.Name = "textBoxBase9";
             this.textBoxBase9.Size = new System.Drawing.Size(70, 21);
@@ -2272,6 +2334,7 @@
             // textBoxBase8
             // 
             this.textBoxBase8.BackColor = System.Drawing.Color.White;
+            this.textBoxBase8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase8.Location = new System.Drawing.Point(1151, 163);
             this.textBoxBase8.Name = "textBoxBase8";
             this.textBoxBase8.Size = new System.Drawing.Size(70, 21);
@@ -2282,7 +2345,8 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(971, 163);
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(972, 163);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(70, 21);
             this.textBox5.TabIndex = 729;
@@ -2292,6 +2356,7 @@
             // textBoxBase7
             // 
             this.textBoxBase7.BackColor = System.Drawing.Color.White;
+            this.textBoxBase7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase7.Location = new System.Drawing.Point(1062, 163);
             this.textBoxBase7.Name = "textBoxBase7";
             this.textBoxBase7.Size = new System.Drawing.Size(70, 21);
@@ -2302,7 +2367,8 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(971, 133);
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(972, 133);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(70, 21);
             this.textBox4.TabIndex = 727;
@@ -2312,6 +2378,7 @@
             // textBoxBase6
             // 
             this.textBoxBase6.BackColor = System.Drawing.Color.White;
+            this.textBoxBase6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase6.Location = new System.Drawing.Point(1062, 133);
             this.textBoxBase6.Name = "textBoxBase6";
             this.textBoxBase6.Size = new System.Drawing.Size(70, 21);
@@ -2402,6 +2469,7 @@
             // textBoxBase5
             // 
             this.textBoxBase5.BackColor = System.Drawing.Color.White;
+            this.textBoxBase5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase5.Location = new System.Drawing.Point(1151, 103);
             this.textBoxBase5.Name = "textBoxBase5";
             this.textBoxBase5.Size = new System.Drawing.Size(70, 21);
@@ -2412,7 +2480,8 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(971, 103);
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(972, 103);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(70, 21);
             this.textBox3.TabIndex = 724;
@@ -2422,6 +2491,7 @@
             // textBoxBase4
             // 
             this.textBoxBase4.BackColor = System.Drawing.Color.White;
+            this.textBoxBase4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase4.Location = new System.Drawing.Point(1062, 103);
             this.textBoxBase4.Name = "textBoxBase4";
             this.textBoxBase4.Size = new System.Drawing.Size(70, 21);
@@ -2432,6 +2502,7 @@
             // textBoxBase3
             // 
             this.textBoxBase3.BackColor = System.Drawing.Color.White;
+            this.textBoxBase3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase3.Location = new System.Drawing.Point(1151, 73);
             this.textBoxBase3.Name = "textBoxBase3";
             this.textBoxBase3.Size = new System.Drawing.Size(70, 21);
@@ -2442,7 +2513,8 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(971, 72);
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(972, 72);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(70, 21);
             this.textBox2.TabIndex = 722;
@@ -2452,6 +2524,7 @@
             // textBoxBase2
             // 
             this.textBoxBase2.BackColor = System.Drawing.Color.White;
+            this.textBoxBase2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBase2.Location = new System.Drawing.Point(1062, 72);
             this.textBoxBase2.Name = "textBoxBase2";
             this.textBoxBase2.Size = new System.Drawing.Size(70, 21);
@@ -2462,6 +2535,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(972, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(70, 21);
@@ -2472,7 +2546,8 @@
             // textBoxBase1
             // 
             this.textBoxBase1.BackColor = System.Drawing.Color.White;
-            this.textBoxBase1.Location = new System.Drawing.Point(1063, 40);
+            this.textBoxBase1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase1.Location = new System.Drawing.Point(1062, 40);
             this.textBoxBase1.Name = "textBoxBase1";
             this.textBoxBase1.Size = new System.Drawing.Size(70, 21);
             this.textBoxBase1.TabIndex = 720;
@@ -2735,9 +2810,10 @@
             // txtOut64
             // 
             this.txtOut64.BackColor = System.Drawing.Color.White;
-            this.txtOut64.Location = new System.Drawing.Point(624, 517);
+            this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut64.Location = new System.Drawing.Point(623, 517);
             this.txtOut64.Name = "txtOut64";
-            this.txtOut64.Size = new System.Drawing.Size(83, 21);
+            this.txtOut64.Size = new System.Drawing.Size(84, 21);
             this.txtOut64.TabIndex = 707;
             this.txtOut64.Text = "0";
             this.txtOut64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2755,9 +2831,10 @@
             // txtOut48
             // 
             this.txtOut48.BackColor = System.Drawing.Color.White;
-            this.txtOut48.Location = new System.Drawing.Point(511, 517);
+            this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut48.Location = new System.Drawing.Point(508, 517);
             this.txtOut48.Name = "txtOut48";
-            this.txtOut48.Size = new System.Drawing.Size(103, 21);
+            this.txtOut48.Size = new System.Drawing.Size(105, 21);
             this.txtOut48.TabIndex = 709;
             this.txtOut48.Text = "0";
             this.txtOut48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2775,9 +2852,10 @@
             // txtOut32
             // 
             this.txtOut32.BackColor = System.Drawing.Color.White;
-            this.txtOut32.Location = new System.Drawing.Point(395, 516);
+            this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut32.Location = new System.Drawing.Point(394, 516);
             this.txtOut32.Name = "txtOut32";
-            this.txtOut32.Size = new System.Drawing.Size(103, 21);
+            this.txtOut32.Size = new System.Drawing.Size(105, 21);
             this.txtOut32.TabIndex = 679;
             this.txtOut32.Text = "0";
             this.txtOut32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2796,9 +2874,10 @@
             // txtOut16
             // 
             this.txtOut16.BackColor = System.Drawing.Color.White;
-            this.txtOut16.Location = new System.Drawing.Point(280, 517);
+            this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut16.Location = new System.Drawing.Point(279, 517);
             this.txtOut16.Name = "txtOut16";
-            this.txtOut16.Size = new System.Drawing.Size(108, 21);
+            this.txtOut16.Size = new System.Drawing.Size(105, 21);
             this.txtOut16.TabIndex = 681;
             this.txtOut16.Text = "0";
             this.txtOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2806,9 +2885,10 @@
             // txtOut31
             // 
             this.txtOut31.BackColor = System.Drawing.Color.White;
-            this.txtOut31.Location = new System.Drawing.Point(395, 487);
+            this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut31.Location = new System.Drawing.Point(394, 487);
             this.txtOut31.Name = "txtOut31";
-            this.txtOut31.Size = new System.Drawing.Size(103, 21);
+            this.txtOut31.Size = new System.Drawing.Size(105, 21);
             this.txtOut31.TabIndex = 680;
             this.txtOut31.Text = "0";
             this.txtOut31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2816,9 +2896,10 @@
             // txtOut15
             // 
             this.txtOut15.BackColor = System.Drawing.Color.White;
-            this.txtOut15.Location = new System.Drawing.Point(280, 486);
+            this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut15.Location = new System.Drawing.Point(279, 486);
             this.txtOut15.Name = "txtOut15";
-            this.txtOut15.Size = new System.Drawing.Size(108, 21);
+            this.txtOut15.Size = new System.Drawing.Size(105, 21);
             this.txtOut15.TabIndex = 682;
             this.txtOut15.Text = "0";
             this.txtOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
