@@ -31,11 +31,6 @@ namespace KIWI
         public static CResultData g_SimResultFutureTotal = new CResultData();      //시뮬레이션 미래수익 총계
         public static CResultData g_SimResultFuture = new CResultData();           //시뮬레이션 미래수익 단위금액
 
-        
-
-
-
-
         //파일에서 읽은 데이터 저장 용
         //기본입력(g_BasicInput)과 상세입력(g_DetailInput)에 입력하여 현재세팅된 업계평균을 적용하여 결과를 계산할 수 있다
         //계산 없이 결과를 보기위해 g_FileResultBusinessTotal등의 아래값을 출력하면 됨
