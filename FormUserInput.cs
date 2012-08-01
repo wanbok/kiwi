@@ -16,8 +16,8 @@ namespace KIWI
     {
 
 
-        private TextBox[] txtInput = null;     //기본입력
-        private TextBox[] txtDetail = null;    //상세입력
+        private TextBox[] txtBasicInput = null;     //기본입력
+        private TextBox[] txtDetailInput = null;    //상세입력
 
         private string txtMangeInput1 = "";
         private string txtMangeInput2 = "";
@@ -71,13 +71,13 @@ namespace KIWI
             this.SetStyle(ControlStyles.UserPaint, true);
             this.UpdateStyles();
 
-            txtInput = new TextBox[35] { txtInput1, txtInput2, txtInput3, txtInput4, txtInput5, txtInput6, txtInput7, txtInput8, txtInput9, txtInput10,
+            txtBasicInput = new TextBox[35] { txtInput1, txtInput2, txtInput3, txtInput4, txtInput5, txtInput6, txtInput7, txtInput8, txtInput9, txtInput10,
             txtInput11, txtInput12, txtInput13, txtInput14, txtInput15, txtInput16, txtInput17, txtInput18, txtInput19, txtInput20,
             txtInput21, txtInput22, txtInput23, txtInput24, txtInput25, txtInput26, txtInput27, txtInput28, txtInput29, txtInput30,
             txtInput31, txtInput32, txtInput33, txtInput34, txtInput35
             };
 
-            txtDetail = new TextBox[36] { txtDetail1, txtDetail2, txtDetail3, txtDetail4, txtDetail5, txtDetail6, txtDetail7, txtDetail8, txtDetail9, txtDetail10,
+            txtDetailInput = new TextBox[36] { txtDetail1, txtDetail2, txtDetail3, txtDetail4, txtDetail5, txtDetail6, txtDetail7, txtDetail8, txtDetail9, txtDetail10,
             txtDetail11, txtDetail12, txtDetail13, txtDetail14, txtDetail15, txtDetail16, txtDetail17, txtDetail18, txtDetail19, txtDetail20,            
             txtDetail21, txtDetail22, txtDetail23, txtDetail24, txtDetail25, txtDetail26, txtDetail27, txtDetail28, txtDetail29, txtDetail30,            
             txtDetail31, txtDetail32, txtDetail33, txtDetail34, txtDetail35, txtDetail36
@@ -136,7 +136,6 @@ namespace KIWI
 
             if (!string.IsNullOrEmpty(CommonUtil.openAsName))
             {
-
                 CommonUtil.ReadExcelFileToData();
                 getInput();
                 getDetail(CDataControl.g_FileBasicInput);
@@ -159,10 +158,9 @@ namespace KIWI
                 ,g_BasicInput.get소매_직원수_간부급(), g_BasicInput.get소매_직원수_평사원());
 
             // 셀에서 데이터 가져오기
-            for (int i = 0; i < txtDetail.Length; i++)
+            for (int i = 0; i < txtDetailInput.Length; i++)
             {
-
-                txtDetail[i].Text = arrvalue[i].ToString();
+                txtDetailInput[i].Text = arrvalue[i].ToString();
             }
 
         }
@@ -175,14 +173,11 @@ namespace KIWI
             textBox9.Text = CDataControl.g_FileBasicInput.get마케터();
             Int64[] arrvalue = CDataControl.g_FileBasicInput.getArrData_BasicInput();
             // 셀에서 데이터 가져오기
-            for (int i = 0; i < txtInput.Length; i++)
+            for (int i = 0; i < txtBasicInput.Length; i++)
             {
-                txtInput[i].Text = arrvalue[i].ToString();
+                txtBasicInput[i].Text = arrvalue[i].ToString();
             }
-            
         }
-
-
 
         public void SaveAsInput()
         {
@@ -837,10 +832,6 @@ namespace KIWI
                 txtInput1.Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
                 txtInput1.SelectionStart = txtInput1.Text.Length;
             }
-            
-
-
-
             txtInput22.Text = txtInput1.Text;
         }
         //월평균 판매대수 신규

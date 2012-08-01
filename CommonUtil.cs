@@ -222,13 +222,12 @@ namespace KIWI
         {
             GetExcel_WorkBook(openAsName);
             excel.Worksheet workSheet1 = workBook.Sheets[1] as excel.Worksheet;
-            ReadExcelFileToDataDasicInput(workSheet1);
+            ReadExcelFileToDataBasicInput(workSheet1);
             ReadExcelFileToDataDetailInput(workSheet1);
             excel.Worksheet workSheet2 = workBook.Sheets[2] as excel.Worksheet;
             ReadExcelFileToDataResultBusiness(workSheet2);
             ReadExcelFileToDataResultStore(workSheet2);
             ReadExcelFileToDataResultFuture(workSheet2);
-
             GetExcel_WorkBook_CLOSE();
         }
         public static void WriteDataToExcelFile(string fileName, CBasicInput g_BasicInput, CBusinessData g_DetailInput)
@@ -275,7 +274,7 @@ namespace KIWI
         /// 
         /// </summary>
         /// <param name="_WorkSheet"></param>
-        public static void ReadExcelFileToDataDasicInput(excel.Worksheet _WorkSheet)
+        public static void ReadExcelFileToDataBasicInput(excel.Worksheet _WorkSheet)
         {
             CDataControl.g_FileBasicInput.set지역(NullToEmpty(_WorkSheet.get_Range("C63", Type.Missing).Value2));
             CDataControl.g_FileBasicInput.set대리점(NullToEmpty(_WorkSheet.get_Range("E63", Type.Missing).Value2));
