@@ -532,7 +532,7 @@ namespace KIWI
                 convertedB = Convert.ToInt64(txtInput[index].Text);
             }
             result = convertedA;
-            if (convertedB > 0)
+            if (convertedB != 0)
             {
                 result = convertedB;//(convertedA + convertedB) / 2;
             }

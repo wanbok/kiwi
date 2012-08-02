@@ -214,12 +214,12 @@ namespace KIWI
 
             string[] xValues = null;
 
-            for (int j = 0; j < 3 && indexes[j] >= 0; j++)
+            for (int j = 0; j < 3; j++)
             {
                 Chart chart = charts[j];
-                chart.Series[0].Name = indexes[0] < 0 ? "" : names[indexes[0]];
-                chart.Series[1].Name = indexes[1] < 0 ? " " : names[indexes[1]];
-                chart.Series[2].Name = indexes[2] < 0 ? "  " : names[indexes[2]];
+                chart.Series[0].Name = indexes[0] < 0 ? " " : names[indexes[0]];
+                chart.Series[1].Name = indexes[1] < 0 ? "  " : names[indexes[1]];
+                chart.Series[2].Name = indexes[2] < 0 ? "   " : names[indexes[2]];
 
                 if (chart.Name == "chart1")
                 {

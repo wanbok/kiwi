@@ -67,8 +67,7 @@ namespace KIWI
             vtxtWOut = new TextBox[42]{ 
                 txtOut49, txtOut50, txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut59, txtOut60, txtOut61, txtOut62, txtOut63, txtOut64,
                 txtWOut43, txtWOut44, txtWOut45, txtWOut46, txtWOut47, txtWOut48, txtWOut49, txtWOut50, txtWOut51, txtWOut52, txtWOut53, txtWOut54, txtWOut55, txtWOut56,
-                txtROut37, txtROut38, txtROut39, txtROut40,
-                txtROut41, txtROut42, txtROut43, txtROut44, txtROut45, txtROut46, txtROut47, txtROut48
+                txtROut37, txtROut38, txtROut39, txtROut40, txtROut41, txtROut42, txtROut43, txtROut44, txtROut45, txtROut46, txtROut47, txtROut48
             };
 
             vtxtROutTotal = new TextBox[42]{ 

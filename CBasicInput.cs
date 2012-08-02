@@ -562,21 +562,21 @@ namespace KIWI
         //월평균판매대수_신규_합계
         public Int64 get월평균판매대수_신규_합계()
         {
-            return 도매_월평균판매대수_신규 + 도매_월평균판매대수_신규;
+            return 도매_월평균판매대수_신규 + 소매_월평균판매대수_신규;
         }
         public String getstr월평균판매대수_신규_합계()
         {
-            return getFormatString(도매_월평균판매대수_신규 + 도매_월평균판매대수_신규);
+            return getFormatString(도매_월평균판매대수_신규 + 소매_월평균판매대수_신규);
         }
 
         //월평균판매대수_기변_합계
         public Int64 get월평균판매대수_기변_합계()
         {
-            return 도매_월평균판매대수_기변 + 도매_월평균판매대수_기변;
+            return 도매_월평균판매대수_기변 + 소매_월평균판매대수_기변;
         }
         public String getstr월평균판매대수_기변_합계()
         {
-            return getFormatString(도매_월평균판매대수_신규 + 도매_월평균판매대수_신규);
+            return getFormatString(도매_월평균판매대수_신규 + 소매_월평균판매대수_신규);
         }
 
         //월평균유통모델출고대수_LG

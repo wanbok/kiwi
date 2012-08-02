@@ -79,12 +79,24 @@ namespace KIWI
         /// <summary>
         /// 분모가 0이거나, 분자가 0일경우 0을 반환, 이외의 경우 나눈 몫을 반환
         /// </summary>
-        /// <param name="textDenominator">분모값</param>
-        /// <param name="textNumerator">분자값</param>
+        /// <param name="string분자">분모값</param>
+        /// <param name="string분모">분자값</param>
         /// <returns>분모가 0이거나, 분자가 0일경우 0을 반환, 이외의 경우 나눈 몫을 반환</returns>
-        public static string Division(string textDenominator, string textNumerator)
+        public static string Division(string string분자, string string분모)
         {
-            return StringToIntVal(textDenominator) != 0 ? (StringToIntVal(textNumerator) == 0 ? 0.ToString() : (StringToIntVal(textDenominator) / StringToIntVal(textNumerator)).ToString()) : 0.ToString();
+            return Division(StringToIntVal(string분자),StringToIntVal(string분모)).ToString();
+        }
+
+
+        /// <summary>
+        /// 분모가 0이거나, 분자가 0일경우 0을 반환, 이외의 경우 나눈 몫을 반환
+        /// </summary>
+        /// <param name="string분자">분모값</param>
+        /// <param name="string분모">분자값</param>
+        /// <returns>분모가 0이거나, 분자가 0일경우 0을 반환, 이외의 경우 나눈 몫을 반환</returns>
+        public static Int64 Division(Int64 분자, Int64 분모)
+        {
+            return 분자 != 0 ? (분모 == 0 ? 0 : 분자 / 분모) : 0;
         }
 
         /// <summary>
@@ -389,7 +401,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void ReadExcelFileToDataResultBusiness(excel.Worksheet _WorkSheet)
         {
-            CDataControl.g_FileResultBusinessTotal.전체_수익_가입자수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("D7", Type.Missing).Value2));
+            CDataControl.g_FileResultBusinessTotal.전체_수익_가입자관리수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("D7", Type.Missing).Value2));
             CDataControl.g_FileResultBusinessTotal.전체_수익_CS관리수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("D8", Type.Missing).Value2));
             CDataControl.g_FileResultBusinessTotal.전체_수익_업무취급수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("D9", Type.Missing).Value2));
             CDataControl.g_FileResultBusinessTotal.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("D10", Type.Missing).Value2));
@@ -436,7 +448,7 @@ namespace KIWI
 
 
 
-            CDataControl.g_FileResultBusiness.전체_수익_가입자수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("E7", Type.Missing).Value2));
+            CDataControl.g_FileResultBusiness.전체_수익_가입자관리수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("E7", Type.Missing).Value2));
             CDataControl.g_FileResultBusiness.전체_수익_CS관리수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("E8", Type.Missing).Value2));
             CDataControl.g_FileResultBusiness.전체_수익_업무취급수수료 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("E9", Type.Missing).Value2));
             CDataControl.g_FileResultBusiness.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(NullToEmpty(_WorkSheet.get_Range("E10", Type.Missing).Value2));
@@ -490,7 +502,7 @@ namespace KIWI
         public static void ReadExcelFileToDataResultStore(excel.Worksheet _WorkSheet)
         {
             //데이터 저장
-            CDataControl.g_FileResultStoreTotal.전체_수익_가입자수수료 = StringToIntVal(_WorkSheet.get_Range("I7", Type.Missing).Value2);
+            CDataControl.g_FileResultStoreTotal.전체_수익_가입자관리수수료 = StringToIntVal(_WorkSheet.get_Range("I7", Type.Missing).Value2);
             CDataControl.g_FileResultStoreTotal.전체_수익_CS관리수수료 = StringToIntVal(_WorkSheet.get_Range("I8", Type.Missing).Value2);
             CDataControl.g_FileResultStoreTotal.전체_수익_업무취급수수료 = StringToIntVal(_WorkSheet.get_Range("I9", Type.Missing).Value2);
             CDataControl.g_FileResultStoreTotal.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(_WorkSheet.get_Range("I10", Type.Missing).Value2);
@@ -537,7 +549,7 @@ namespace KIWI
 
 
 
-            CDataControl.g_FileResultStore.전체_수익_가입자수수료 = StringToIntVal(_WorkSheet.get_Range("J7", Type.Missing).Value2);
+            CDataControl.g_FileResultStore.전체_수익_가입자관리수수료 = StringToIntVal(_WorkSheet.get_Range("J7", Type.Missing).Value2);
             CDataControl.g_FileResultStore.전체_수익_CS관리수수료 = StringToIntVal(_WorkSheet.get_Range("J8", Type.Missing).Value2);
             CDataControl.g_FileResultStore.전체_수익_업무취급수수료 = StringToIntVal(_WorkSheet.get_Range("J9", Type.Missing).Value2);
             CDataControl.g_FileResultStore.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(_WorkSheet.get_Range("J10", Type.Missing).Value2);
@@ -590,7 +602,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void ReadExcelFileToDataResultFuture(excel.Worksheet _WorkSheet)
         {
-            CDataControl.g_FileResultFutureTotal.전체_수익_가입자수수료 = StringToIntVal(_WorkSheet.get_Range("N7", Type.Missing).Value2);
+            CDataControl.g_FileResultFutureTotal.전체_수익_가입자관리수수료 = StringToIntVal(_WorkSheet.get_Range("N7", Type.Missing).Value2);
             CDataControl.g_FileResultFutureTotal.전체_수익_CS관리수수료 = StringToIntVal(_WorkSheet.get_Range("N8", Type.Missing).Value2);
             CDataControl.g_FileResultFutureTotal.전체_수익_업무취급수수료 = StringToIntVal(_WorkSheet.get_Range("N9", Type.Missing).Value2);
             CDataControl.g_FileResultFutureTotal.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(_WorkSheet.get_Range("N10", Type.Missing).Value2);
@@ -637,7 +649,7 @@ namespace KIWI
 
 
 
-            CDataControl.g_FileResultFuture.전체_수익_가입자수수료 = StringToIntVal(_WorkSheet.get_Range("O7", Type.Missing).Value2.ToString());
+            CDataControl.g_FileResultFuture.전체_수익_가입자관리수수료 = StringToIntVal(_WorkSheet.get_Range("O7", Type.Missing).Value2.ToString());
             CDataControl.g_FileResultFuture.전체_수익_CS관리수수료 = StringToIntVal(_WorkSheet.get_Range("O8", Type.Missing).Value2.ToString());
             CDataControl.g_FileResultFuture.전체_수익_업무취급수수료 = StringToIntVal(_WorkSheet.get_Range("O9", Type.Missing).Value2.ToString());
             CDataControl.g_FileResultFuture.전체_수익_사업자모델매입에따른추가수익 = StringToIntVal(_WorkSheet.get_Range("O10", Type.Missing).Value2.ToString());
@@ -697,7 +709,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void WriteExcelFileToDataResultBusiness(excel.Worksheet _WorkSheet)
         {
-            _WorkSheet.get_Range("D7", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("D7", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("D8", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("D9", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("D10", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_사업자모델매입에따른추가수익;
@@ -744,7 +756,7 @@ namespace KIWI
 
 
 
-            _WorkSheet.get_Range("E7", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("E7", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("E8", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("E9", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("E10", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_사업자모델매입에따른추가수익;
@@ -797,7 +809,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void WriteExcelFileToDataResultStore(excel.Worksheet _WorkSheet)
         {
-            _WorkSheet.get_Range("I7", Type.Missing).Value2 = CDataControl.g_ResultStoreTotal.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("I7", Type.Missing).Value2 = CDataControl.g_ResultStoreTotal.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("I8", Type.Missing).Value2 = CDataControl.g_ResultStoreTotal.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("I9", Type.Missing).Value2 = CDataControl.g_ResultStoreTotal.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("I10", Type.Missing).Value2 = CDataControl.g_ResultStoreTotal.전체_수익_사업자모델매입에따른추가수익;
@@ -844,7 +856,7 @@ namespace KIWI
 
 
 
-            _WorkSheet.get_Range("J7", Type.Missing).Value2 = CDataControl.g_ResultStore.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("J7", Type.Missing).Value2 = CDataControl.g_ResultStore.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("J8", Type.Missing).Value2 = CDataControl.g_ResultStore.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("J9", Type.Missing).Value2 = CDataControl.g_ResultStore.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("J10", Type.Missing).Value2 = CDataControl.g_ResultStore.전체_수익_사업자모델매입에따른추가수익;
@@ -897,7 +909,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void WriteExcelFileToDataResultFuture(excel.Worksheet _WorkSheet)
         {
-            _WorkSheet.get_Range("N7", Type.Missing).Value2 = CDataControl.g_ResultFutureTotal.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("N7", Type.Missing).Value2 = CDataControl.g_ResultFutureTotal.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("N8", Type.Missing).Value2 = CDataControl.g_ResultFutureTotal.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("N9", Type.Missing).Value2 = CDataControl.g_ResultFutureTotal.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("N10", Type.Missing).Value2 = CDataControl.g_ResultFutureTotal.전체_수익_사업자모델매입에따른추가수익;
@@ -944,7 +956,7 @@ namespace KIWI
 
 
 
-            _WorkSheet.get_Range("O7", Type.Missing).Value2 = CDataControl.g_ResultFuture.전체_수익_가입자수수료;
+            _WorkSheet.get_Range("O7", Type.Missing).Value2 = CDataControl.g_ResultFuture.전체_수익_가입자관리수수료;
             _WorkSheet.get_Range("O8", Type.Missing).Value2 = CDataControl.g_ResultFuture.전체_수익_CS관리수수료;
             _WorkSheet.get_Range("O9", Type.Missing).Value2 = CDataControl.g_ResultFuture.전체_수익_업무취급수수료;
             _WorkSheet.get_Range("O10", Type.Missing).Value2 = CDataControl.g_ResultFuture.전체_수익_사업자모델매입에따른추가수익;
