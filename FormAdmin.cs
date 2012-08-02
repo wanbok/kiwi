@@ -157,11 +157,13 @@ namespace KIWI
                 nIAOut[i] = 0;
             }
 
+            int 분모 = 0;
             for (int i = 0; i < adminDC.getDataLength(); i++)
             {
                 adminDC.GetData(i, out key, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
 
                 if (선택여부 == "N") continue;
+                분모++;
                 int k = 0;
 
                 nIAOut[k++] += mDI.get도매_수익_월평균관리수수료() / mBI.get누적가입자수_합계();
@@ -184,14 +186,17 @@ namespace KIWI
                 catch (Exception e) { }
                 finally { nIAOut[k++] += 유통모델매입추가수익볼륨단위금액; }
 
-                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규() / mBI.get도매_월평균판매대수_신규();
-                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변() / mBI.get도매_월평균판매대수_기변();
-                nIAOut[k++] += mDI.get도매_비용_직원급여_간부급_총액(1); // 단위금액
-                nIAOut[k++] += mDI.get도매_비용_직원급여_평사원_총액(1); // 단위금액
+                //nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규() / mBI.get도매_월평균판매대수_신규();
+                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규();// 이미 단위금액임;
+                //nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변() / mBI.get도매_월평균판매대수_기변();
+                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변();// 이미 단위금액임;
+                nIAOut[k++] += mDI.get도매_비용_직원급여_간부급(); // 단위금액
+                nIAOut[k++] += mDI.get도매_비용_직원급여_평사원(); // 단위금액
                 nIAOut[k++] += mDI.get도매_비용_지급임차료() / mBI.get도매_거래선수_개통사무실();
                 nIAOut[k++] += mDI.get도매_비용_운반비() / mBI.get도매_월평균판매대수_소계();
                 nIAOut[k++] += mDI.get도매_비용_차량유지비() / mBI.get도매_직원수_소계();
                 nIAOut[k++] += mDI.get도매_비용_지급수수료() / mBI.get도매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get도매_비용_판매촉진비() / mBI.get도매_월평균판매대수_소계();
                 nIAOut[k++] += mDI.get도매_비용_건물관리비() / mBI.get도매_거래선수_개통사무실();
                 
                 nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료() / mBI.get월평균판매대수_소계_합계();
@@ -207,7 +212,8 @@ namespace KIWI
                 nIAOut[k++] += mDI.get도소매_비용_통신비() / mBI.get직원수_소계_합계();
                 nIAOut[k++] += mDI.get도소매_비용_공과금() / mBI.get직원수_소계_합계();
                 nIAOut[k++] += mDI.get도소매_비용_소모품비() / mBI.get월평균판매대수_소계_합계();
-                nIAOut[k++] += mDI.get도소매_비용_이자비용() / mBI.get월평균판매대수_소계_합계();
+                //nIAOut[k++] += mDI.get도소매_비용_이자비용() / mBI.get월평균판매대수_소계_합계();
+                nIAOut[k++] += mDI.get도소매_비용_이자비용();// 이미 평균금액이라 단위금액으로 판단
                 // 부가세
                 /*  (
                  *      (
@@ -293,7 +299,7 @@ namespace KIWI
                 nIAOut[k++] += mDI.get도소매_비용_기타() / mBI.get월평균판매대수_소계_합계();
             }
 
-            Int64 분모 = adminDC.getDataLength() > 0 ? adminDC.getDataLength() : 1;
+            분모 = 분모 > 0 ? 분모 : 1;
             for (int i = 0; i < nIAOut.Length; i++)
             {
                 txtIAOut[i].Text = (nIAOut[i] / 분모).ToString();
@@ -555,6 +561,20 @@ namespace KIWI
 
             // Perform the sort with these new sort options.
             this.listView1.Sort();
+        }
+
+        private void listView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete) {
+                ListView listView = (ListView)sender;
+                ListView.SelectedListViewItemCollection items = listView.SelectedItems;
+                foreach (ListViewItem item in items)
+                {
+                    adminDC.deleteData((string)item.Tag);
+                }
+
+                refreshList();
+            }
         }
 
     }
