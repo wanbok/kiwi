@@ -111,9 +111,8 @@ namespace KIWI
             pnlChart.Visible = false;
             applyData();
 
-            //OpenChart(chart1, _WorkSheet1);
-            //OpenChart(chart2, _WorkSheet1);
-            //OpenChart(chart3, _WorkSheet1);
+            checkBox5.Checked = true; // 데이터를 적용시키기위한 트리거 용도
+
         }
 
         public void applyData() {
@@ -122,7 +121,6 @@ namespace KIWI
             
             // 시뮬레이터 정보적용
             setSimulatorOut();
-            
         }
 
         private void setOut()
@@ -178,94 +176,99 @@ namespace KIWI
             // 전체
             for (int i = 0, n = 16; i < n; i++)
             {
-                existingData[i] = CDataControl.g_SimResultBusinessTotal.getArr전체_수익_비용_및_계산포함()[i];
-                existingData[i + n] = CDataControl.g_SimResultBusiness.getArr전체_수익_비용_및_계산포함()[i];
-                existingData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr전체_수익_비용_및_계산포함()[i];
-                existingData[i + n * 3] = CDataControl.g_SimResultStore.getArr전체_수익_비용_및_계산포함()[i];
-                existingData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr전체_수익_비용_및_계산포함()[i];
-                existingData[i + n * 5] = CDataControl.g_SimResultFuture.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i] = CDataControl.g_SimResultBusinessTotal.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i + n] = CDataControl.g_SimResultBusiness.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i + n * 3] = CDataControl.g_SimResultStore.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr전체_수익_비용_및_계산포함()[i];
+                simulData[i + n * 5] = CDataControl.g_SimResultFuture.getArr전체_수익_비용_및_계산포함()[i];
             }
             // 도매
             for (int i = 0, n = 14; i < n; i++)
             {
-                existingWData[i] = CDataControl.g_SimResultBusinessTotal.getArr도매_수익_비용_및_계산포함()[i];
-                existingWData[i + n] = CDataControl.g_SimResultBusiness.getArr도매_수익_비용_및_계산포함()[i];
-                existingWData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr도매_수익_비용_및_계산포함()[i];
-                existingWData[i + n * 3] = CDataControl.g_SimResultStore.getArr도매_수익_비용_및_계산포함()[i];
-                existingWData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr도매_수익_비용_및_계산포함()[i];
-                existingWData[i + n * 5] = CDataControl.g_SimResultFuture.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i] = CDataControl.g_SimResultBusinessTotal.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i + n] = CDataControl.g_SimResultBusiness.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i + n * 3] = CDataControl.g_SimResultStore.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr도매_수익_비용_및_계산포함()[i];
+                simulWData[i + n * 5] = CDataControl.g_SimResultFuture.getArr도매_수익_비용_및_계산포함()[i];
             }
             // 소매
             for (int i = 0, n = 12; i < n; i++)
             {
-                existingRData[i] = CDataControl.g_SimResultBusinessTotal.getArr소매_수익_비용_및_계산포함()[i];
-                existingRData[i + n] = CDataControl.g_SimResultBusiness.getArr소매_수익_비용_및_계산포함()[i];
-                existingRData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr소매_수익_비용_및_계산포함()[i];
-                existingRData[i + n * 3] = CDataControl.g_SimResultStore.getArr소매_수익_비용_및_계산포함()[i];
-                existingRData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr소매_수익_비용_및_계산포함()[i];
-                existingRData[i + n * 5] = CDataControl.g_SimResultFuture.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i] = CDataControl.g_SimResultBusinessTotal.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i + n] = CDataControl.g_SimResultBusiness.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i + n * 3] = CDataControl.g_SimResultStore.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr소매_수익_비용_및_계산포함()[i];
+                simulRData[i + n * 5] = CDataControl.g_SimResultFuture.getArr소매_수익_비용_및_계산포함()[i];
             }
         }
 
-        private void OpenChart(Chart chart, excel.Worksheet sheet)
+        private void OpenChart(int[] indexes)
         {
+            Chart[] charts = new Chart[] {chart1, chart2, chart3};
             double[] yValues = null;
             double[] yValues2 = null;
             double[] yValues3 = null;
 
             string[] xValues = null;
 
-            chart.Series[0].Name = "업계평균";
-            chart.Series[1].Name = "당대리점(현재수익)";
-            chart.Series[2].Name = "당대리점(미래수익)";
-
-            if (chart.Name == "chart1")
+            for (int j = 0; j < 3 && indexes[j] >= 0; j++)
             {
-                xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
+                Chart chart = charts[j];
+                chart.Series[0].Name = indexes[0] < 0 ? "" : names[indexes[0]];
+                chart.Series[1].Name = indexes[1] < 0 ? " " : names[indexes[1]];
+                chart.Series[2].Name = indexes[2] < 0 ? "  " : names[indexes[2]];
 
-                yValues = new double[6]{ Convert.ToDouble(txtOut17.Text), Convert.ToDouble(txtOut18.Text), Convert.ToDouble(txtOut19.Text), 
+                if (chart.Name == "chart1")
+                {
+                    xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
+
+                    yValues = new double[6]{ Convert.ToDouble(txtOut17.Text), Convert.ToDouble(txtOut18.Text), Convert.ToDouble(txtOut19.Text), 
                             Convert.ToDouble(txtOut20.Text), Convert.ToDouble(txtOut21.Text), Convert.ToDouble(txtOut22.Text) };
 
-                yValues2 = new double[6]{ Convert.ToDouble(txtOut49.Text), Convert.ToDouble(txtOut50.Text), Convert.ToDouble(txtOut51.Text), 
+                    yValues2 = new double[6]{ Convert.ToDouble(txtOut49.Text), Convert.ToDouble(txtOut50.Text), Convert.ToDouble(txtOut51.Text), 
                             Convert.ToDouble(txtOut52.Text), Convert.ToDouble(txtOut53.Text), Convert.ToDouble(txtOut54.Text) };
 
-                yValues3 = new double[6]{ Convert.ToDouble(txtOut81.Text), Convert.ToDouble(txtOut82.Text), Convert.ToDouble(txtOut83.Text), 
+                    yValues3 = new double[6]{ Convert.ToDouble(txtOut81.Text), Convert.ToDouble(txtOut82.Text), Convert.ToDouble(txtOut83.Text), 
                             Convert.ToDouble(txtOut84.Text), Convert.ToDouble(txtOut85.Text), Convert.ToDouble(txtOut86.Text) };
 
-                chart.Series[0].Points.DataBindXY(xValues, yValues);
-                chart.Series[1].Points.DataBindXY(xValues, yValues2);
-                chart.Series[2].Points.DataBindXY(xValues, yValues3);
-            }
-            else if (chart.Name == "chart2")
-            {
-                xValues = new string[4] { "X1", "X2", "X3", "X4" };
+                    chart.Series[0].Points.DataBindXY(xValues, yValues);
+                    chart.Series[1].Points.DataBindXY(xValues, yValues2);
+                    chart.Series[2].Points.DataBindXY(xValues, yValues3);
+                }
+                else if (chart.Name == "chart2")
+                {
+                    xValues = new string[4] { "X1", "X2", "X3", "X4" };
 
-                yValues = new double[4]{ Convert.ToDouble(txtWOut15.Text), Convert.ToDouble(txtWOut16.Text), Convert.ToDouble(txtWOut17.Text), 
+                    yValues = new double[4]{ Convert.ToDouble(txtWOut15.Text), Convert.ToDouble(txtWOut16.Text), Convert.ToDouble(txtWOut17.Text), 
                             Convert.ToDouble(txtWOut18.Text) };
 
-                yValues2 = new double[4]{ Convert.ToDouble(txtWOut43.Text), Convert.ToDouble(txtWOut44.Text), Convert.ToDouble(txtWOut45.Text), 
+                    yValues2 = new double[4]{ Convert.ToDouble(txtWOut43.Text), Convert.ToDouble(txtWOut44.Text), Convert.ToDouble(txtWOut45.Text), 
                             Convert.ToDouble(txtWOut46.Text) };
 
-                yValues3 = new double[4]{ Convert.ToDouble(txtWOut71.Text), Convert.ToDouble(txtWOut72.Text), Convert.ToDouble(txtWOut73.Text), 
+                    yValues3 = new double[4]{ Convert.ToDouble(txtWOut71.Text), Convert.ToDouble(txtWOut72.Text), Convert.ToDouble(txtWOut73.Text), 
                             Convert.ToDouble(txtWOut74.Text) };
 
-                chart.Series[0].Points.DataBindXY(xValues, yValues);
-                chart.Series[1].Points.DataBindXY(xValues, yValues2);
-                chart.Series[2].Points.DataBindXY(xValues, yValues3);
-            }
-            else if (chart.Name == "chart3")
-            {
-                xValues = new string[2] { "X1", "X2" };
+                    chart.Series[0].Points.DataBindXY(xValues, yValues);
+                    chart.Series[1].Points.DataBindXY(xValues, yValues2);
+                    chart.Series[2].Points.DataBindXY(xValues, yValues3);
+                }
+                else if (chart.Name == "chart3")
+                {
+                    xValues = new string[2] { "X1", "X2" };
 
-                yValues = new double[2] { Convert.ToDouble(txtROut13.Text), Convert.ToDouble(txtROut14.Text) };
+                    yValues = new double[2] { Convert.ToDouble(txtROut13.Text), Convert.ToDouble(txtROut14.Text) };
 
-                yValues2 = new double[2] { Convert.ToDouble(txtROut37.Text), Convert.ToDouble(txtROut38.Text) };
+                    yValues2 = new double[2] { Convert.ToDouble(txtROut37.Text), Convert.ToDouble(txtROut38.Text) };
 
-                yValues3 = new double[2] { Convert.ToDouble(txtROut61.Text), Convert.ToDouble(txtROut62.Text) };
+                    yValues3 = new double[2] { Convert.ToDouble(txtROut61.Text), Convert.ToDouble(txtROut62.Text) };
 
-                chart.Series[0].Points.DataBindXY(xValues, yValues);
-                chart.Series[1].Points.DataBindXY(xValues, yValues2);
-                chart.Series[2].Points.DataBindXY(xValues, yValues3);
+                    chart.Series[0].Points.DataBindXY(xValues, yValues);
+                    chart.Series[1].Points.DataBindXY(xValues, yValues2);
+                    chart.Series[2].Points.DataBindXY(xValues, yValues3);
+                }
             }
 
         }
@@ -281,6 +284,8 @@ namespace KIWI
             CheckBox[] chks = new CheckBox[6] { checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6 };
 
             int cnt = 0;
+            int[] indexes = new int[]{-1, -1, -1};
+            int indexesCounter = 0;
 
             for (int i = 0; i < chks.Length; i++)
             {
@@ -302,11 +307,15 @@ namespace KIWI
                 if (chks[i].Checked)
                 {
                     setDataAtIndex(i);
+                    indexes[indexesCounter++] = i;
                 }
             }
             for (int i = currentIndex; i < 3; i++) {
                 setDataToEmpty();
+                indexes[indexesCounter++] = -1;
             }
+            
+            OpenChart(indexes);
         }
 
         private void setDataAtIndex(int index)
@@ -350,6 +359,7 @@ namespace KIWI
                     txtROut[i + currentIndex * 24].Text = simulRData[i + (index - 3) * 24].ToString();
                 }
             }
+
             currentIndex++;
         }
 
@@ -360,29 +370,61 @@ namespace KIWI
             lblTitle[currentIndex+6].Text = "";
             for (int i = 0; i < 32; i++)
             {
-                txtOut[i + currentIndex * 32].Enabled = false;
                 txtOut[i + currentIndex * 32].Text = "0";
+                txtOut[i + currentIndex * 32].Enabled = false;
             }
             for (int i = 0; i < 28; i++)
             {
-                txtWOut[i + currentIndex * 28].Enabled = false;
                 txtWOut[i + currentIndex * 28].Text = "0";
+                txtWOut[i + currentIndex * 28].Enabled = false;
             }
             for (int i = 0; i < 24; i++)
             {
-                txtROut[i + currentIndex * 24].Enabled = false;
                 txtROut[i + currentIndex * 24].Text = "0";
+                txtROut[i + currentIndex * 24].Enabled = false;
             }
             currentIndex++;
         }
 
         private void addComma_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
+            if ((sender as TextBox).Text.Contains(",") || ((sender as TextBox).Text.Length > 0 && (sender as TextBox).Text != "0"))
             {
                 (sender as TextBox).Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
                 (sender as TextBox).SelectionStart = (sender as TextBox).Text.Length;
+                if ((sender as TextBox).Text == "")
+                    (sender as TextBox).Text = "0";
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pnlChart.Visible = true;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            pnlChart.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pnlChart2.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pnlChart2.Visible = false;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            pnlChart3.Visible = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            pnlChart3.Visible = false;
         }
     }
 }

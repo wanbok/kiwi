@@ -22,7 +22,8 @@ namespace KIWI
         public static string saveAsSimulName = null;
         public static string saveAsName = null;
         public static string defaultManagerName = AppDomain.CurrentDomain.BaseDirectory + "manager.csv";
-        public static string adminName = AppDomain.CurrentDomain.BaseDirectory + "admin.csv";
+        //public static string adminName = AppDomain.CurrentDomain.BaseDirectory + "admin.csv";
+        public static string adminName = AppDomain.CurrentDomain.BaseDirectory + "manager.csv";
 
         /// <summary>
         /// 

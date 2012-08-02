@@ -96,14 +96,14 @@ namespace KIWI
             }
 
             long 월평균인건비 = 0;
-            if (Convert.ToInt64(CDataControl.g_ResultBusinessTotal.getstr전체_비용_인건비_급여_복리후생비())==0)
+            if (CDataControl.g_ResultBusinessTotal.get전체_비용_인건비_급여_복리후생비()==0)
             {
                 월평균인건비 = 0;                                
             }
             else
             {
                 월평균인건비 = CDataControl.g_ResultBusiness.get전체_비용_인건비_급여_복리후생비() 
-                               /Convert.ToInt64(CDataControl.g_ResultBusinessTotal.getstr전체_비용_인건비_급여_복리후생비());
+                               /CDataControl.g_ResultBusinessTotal.get전체_비용_인건비_급여_복리후생비();
             }
 
             long 판촉비비중 = 0;

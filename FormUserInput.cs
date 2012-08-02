@@ -139,9 +139,6 @@ namespace KIWI
             
             getInput();
             getDetail(CDataControl.g_BasicInput);
-
-
-
         }
 
         //기본입력
@@ -182,12 +179,11 @@ namespace KIWI
                 txtInput8.Text, txtInput9.Text, txtInput11.Text, txtInput12.Text, txtInput14.Text, txtInput15.Text, txtInput17.Text, txtInput19.Text, txtInput20.Text};
             CDataControl.g_BasicInput.setArrData_BasicInput(txtWrite);
 
-            String[] txtWrite2 = new String[31]  { txtDetail1.Text, txtDetail2.Text, txtDetail4.Text, txtDetail5.Text, txtDetail6.Text,
-                txtDetail7.Text, txtDetail8.Text, txtDetail9.Text, txtDetail10.Text, txtDetail11.Text,
-                txtDetail12.Text, txtDetail15.Text, txtDetail16.Text, txtDetail17.Text, txtDetail18.Text,
-                txtDetail19.Text, txtDetail20.Text, txtDetail23.Text, txtDetail24.Text, txtDetail25.Text, 
-                txtDetail26.Text, txtDetail27.Text, txtDetail28.Text, txtDetail29.Text, txtDetail30.Text,            
-                txtDetail31.Text, txtDetail32.Text, txtDetail33.Text, txtDetail34.Text, txtDetail35.Text, txtDetail36.Text
+            String[] txtWrite2 = new String[31]  {
+                txtDetail1.Text, txtDetail2.Text, txtDetail4.Text, txtDetail5.Text, txtDetail6.Text, // 도매 수익
+                txtDetail7.Text, txtDetail8.Text, txtDetail11.Text, txtDetail12.Text, txtDetail13.Text, txtDetail14.Text, txtDetail15.Text, txtDetail16.Text, txtDetail17.Text, txtDetail18.Text, // 도매 비용
+                txtDetail19.Text, txtDetail20.Text, txtDetail23.Text, txtDetail24.Text, txtDetail25.Text, txtDetail26.Text, txtDetail27.Text, txtDetail28.Text, // 소매
+                txtDetail29.Text, txtDetail30.Text, txtDetail31.Text, txtDetail32.Text, txtDetail33.Text, txtDetail34.Text, txtDetail35.Text, txtDetail36.Text  // 도소매합산
             };
             CDataControl.g_DetailInput.setArrData_DetailInput(txtWrite2);
             CommonUtil.ReadFileManagerToData();
@@ -348,17 +344,17 @@ namespace KIWI
                     string txtInput = "0";
                     if (i >= 0 && i < 16)
                     {
-                        txtInput = txtInput25.Text;
+                        txtInput = txtInput25.Text; // 전체 월평균 판매대수 계
                         temp = CDataControl.g_ResultBusiness.getArrayOutput전체()[i].ToString();
                     }
                     else if (i >= 16 && i < 30)
                     {
-                        txtInput = txtInput4.Text;
+                        txtInput = txtInput4.Text;  // 도매 월평균 판매대수 계
                         temp = CDataControl.g_ResultBusiness.getArrayOutput전체()[i].ToString();
                     }
                     else if (i >= 30 && i < 41)
                     {
-                        txtInput = txtInput16.Text;
+                        txtInput = txtInput16.Text; // 소매 월평균 판매대수 계
                         temp = CDataControl.g_ResultBusiness.getArrayOutput전체()[i].ToString();
                     }
 
@@ -367,10 +363,10 @@ namespace KIWI
                 else if (i == 41)
                 {
                     Int64 tempStore = CommonUtil.StringToIntVal(CDataControl.g_ResultBusiness.getArrayOutput전체()[i - 1].ToString()) * CommonUtil.StringToIntVal(txtInput16.Text);
-                    tempInt[i] = CommonUtil.StringToIntVal(CommonUtil.Division(tempStore.ToString(), txtInput30.Text));
+                    tempInt[i] = CommonUtil.StringToIntVal(CommonUtil.Division(tempStore.ToString(), txtInput30.Text/*직영점계*/));
                 }
-
             }
+            CDataControl.g_ResultBusinessTotal.setArrayOutput전체(tempInt);
 
             //당대리점 결과(세부항목별 값 입력 결과) 수익계정
             Int64 SumSubBenefitTotal = 0;

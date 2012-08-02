@@ -83,10 +83,6 @@ namespace KIWI
                 txtROut61, txtROut62, txtROut63, txtROut64, txtROut65, txtROut66, txtROut67, txtROut68, txtROut69, txtROut70, txtROut71, txtROut72
             };
 
-
-            //vtxtWOutTotal
-            //vtxtROutTotal
-
             txtOut = new TextBox[96] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
             txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut18, txtOut19, txtOut20,
             txtOut21, txtOut22, txtOut23, txtOut24, txtOut25, txtOut26, txtOut27, txtOut28, txtOut29, txtOut30,
@@ -181,9 +177,14 @@ namespace KIWI
             }
             else
             {
-                setOut(CDataControl.g_ResultBusinessTotal.getArrayOutput전체(), CDataControl.g_ResultBusiness.getArrayOutput전체());
-                setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
-                setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
+                setTexList(vtxtOutTotal, CDataControl.g_ResultBusinessTotal.getArrayOutput전체());
+                setTexList(vtxtOut, CDataControl.g_ResultBusiness.getArrayOutput전체());
+
+                setTexList(vtxtWOutTotal, CDataControl.g_ResultStoreTotal.getArrayOutput전체());
+                setTexList(vtxtWOut, CDataControl.g_ResultStore.getArrayOutput전체());
+
+                setTexList(vtxtROutTotal, CDataControl.g_ResultFutureTotal.getArrayOutput전체());
+                setTexList(vtxtROut, CDataControl.g_ResultFuture.getArrayOutput전체());
 
 
                 전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
@@ -208,41 +209,6 @@ namespace KIWI
                 setTxtInput_TextChanged(_txtList[i]);
             }
         }
-
-
-        private void setOut(long[] arrTotal, long[] arr)
-        {   
-            for (int i = 0; i < 15; i++)
-            {   
-                txtOut[i].Text = CommonUtil.NullToString0(arrTotal[i]);
-                txtOut[i + 16].Text = CommonUtil.NullToString0(arr[i]);
-                setTxtInput_TextChanged(txtOut[i]);
-                setTxtInput_TextChanged(txtOut[i + 16]);
-            }
-        }
-
-        private void setWOut(long[] arrTotal, long[] arr)
-        {
-            for (int i = 16; i < 29; i++)
-            {   
-                txtWOut[i].Text = CommonUtil.NullToString0(arr[i]);
-                txtOut[i + 14].Text = CommonUtil.NullToString0(arr[i]);
-                setTxtInput_TextChanged(txtWOut[i]);
-                setTxtInput_TextChanged(txtOut[i + 14]);
-            }
-        }
-
-        private void setROut(long[] arrTotal, long[] arr)
-        {
-            for (int i = 30; i < 41; i++)
-            {
-                txtROut[i].Text = CommonUtil.NullToString0(arr[i]);
-                txtOut[i + 12].Text = CommonUtil.NullToString0(arr[i]);
-                setTxtInput_TextChanged(txtROut[i]);
-                setTxtInput_TextChanged(txtOut[i + 12]);
-            }
-        }
-
 
 
         private void OpenChart(Chart chart, List<long[]> lists)

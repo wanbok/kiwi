@@ -297,28 +297,22 @@ namespace KIWI
             txtInput[27].Text = CDataControl.g_BasicInput.getstr소매_직원수_평사원();
         }
 
-
-
-
-
-
         private void SaveAsInput()
         {
             CDataControl.g_SimBasicInput.set지역(area);
             CDataControl.g_SimBasicInput.set대리점(beanch);
             CDataControl.g_SimBasicInput.set마케터(name);
 
-            String[] txtWrite = new String[14] { txtInput[9].Text, txtInput[10].Text, txtInput[11].Text, txtInput[12].Text, txtInput[13].Text,  
-                txtInput[14].Text, txtInput[15].Text, txtInput[16].Text, txtInput[17].Text, txtInput[23].Text, txtInput[24].Text, txtInput[25].Text, txtInput[26].Text, txtInput[27].Text};
+            String[] txtWrite = new String[14] { txtInput10.Text, txtInput11.Text, txtInput12.Text, txtInput13.Text, txtInput14.Text,  
+                txtInput15.Text, txtInput16.Text, txtInput17.Text, txtInput18.Text, txtInput24.Text, txtInput25.Text, txtInput26.Text, txtInput27.Text, txtInput28.Text};
             CDataControl.g_SimBasicInput.setArrData_BasicInput(txtWrite);
 
-            String[] txtWrite2 = new String[31]  { txtDetail[36].Text, txtDetail[37].Text, txtDetail[38].Text, txtDetail[39].Text, txtDetail[40].Text,
-                txtDetail[42].Text, txtDetail[43].Text, txtDetail[44].Text, txtDetail[45].Text,
-                txtDetail[46].Text, txtDetail[47].Text, txtDetail[48].Text, txtDetail[49].Text, txtDetail[50].Text,
-                txtDetail[51].Text, txtDetail[53].Text, txtDetail[54].Text, 
-                txtDetail[56].Text, txtDetail[57].Text, txtDetail[58].Text, txtDetail[59].Text, txtDetail[60].Text,            
-                txtDetail[61].Text, txtDetail[63].Text, txtDetail[64].Text, txtDetail[65].Text, txtDetail[66].Text,
-                txtDetail[67].Text, txtDetail[68].Text, txtDetail[69].Text, txtDetail[70].Text
+            String[] txtWrite2 = new String[31]  { txtDetail37.Text, txtDetail38.Text, txtDetail39.Text, txtDetail40.Text, txtDetail41.Text,
+                txtDetail43.Text, txtDetail44.Text, txtDetail45.Text, txtDetail46.Text, txtDetail47.Text,
+                txtDetail12.Text, txtDetail15.Text, txtDetail16.Text, txtDetail17.Text, txtDetail18.Text,
+                txtDetail19.Text, txtDetail20.Text, txtDetail23.Text, txtDetail24.Text, txtDetail25.Text, 
+                txtDetail26.Text, txtDetail27.Text, txtDetail28.Text, txtDetail29.Text, txtDetail30.Text,            
+                txtDetail31.Text, txtDetail32.Text, txtDetail33.Text, txtDetail34.Text, txtDetail35.Text, txtDetail36.Text
             };
             CDataControl.g_SimDetailInput.setArrData_DetailInput(txtWrite2);
             CommonUtil.ReadFileManagerToData();
@@ -476,63 +470,63 @@ namespace KIWI
                 if (i >= 0 && i < 41)
                 {
                     string temp = "0";
-                    string txtInput1 = "0";
+                    string tmpTxtInput = "0";
                     if (i >= 0 && i < 16)
                     {
-                        txtInput1 = txtInput25.Text;
+                        tmpTxtInput = txtInput25.Text;
                         temp = CDataControl.g_SimResultBusiness.getArrayOutput전체()[i].ToString();
                     }
                     else if (i >= 16 && i < 30)
                     {
-                        txtInput1 = txtInput4.Text;
+                        tmpTxtInput = txtInput4.Text;
                         temp = CDataControl.g_SimResultBusiness.getArrayOutput전체()[i].ToString();
                     }
                     else if (i >= 30 && i < 41)
                     {
-                        txtInput1 = txtInput16.Text;
+                        tmpTxtInput = txtInput16.Text;
                         temp = CDataControl.g_SimResultBusiness.getArrayOutput전체()[i].ToString();
                     }
 
-                    tempInt[i] = CommonUtil.StringToIntVal(temp) * CommonUtil.StringToIntVal(txtInput1);
+                    tempInt[i] = CommonUtil.StringToIntVal(temp) * CommonUtil.StringToIntVal(tmpTxtInput);
                 }
                 else if (i == 41)
                 {
                     Int64 tempStore = CommonUtil.StringToIntVal(CDataControl.g_SimResultBusiness.getArrayOutput전체()[i - 1].ToString()) * CommonUtil.StringToIntVal(txtInput16.Text);
                     //tempInt[i] = CommonUtil.StringToIntVal(CommonUtil.Division(tempStore.ToString(), txtInput30.Text));
                 }
-
+                CDataControl.g_SimResultBusinessTotal.setArrayOutput전체(tempInt);
             }
 
             //당대리점 결과(세부항목별 값 입력 결과) 수익계정
             Int64 SumSubBenefitTotal = 0;
-            CDataControl.g_ResultStoreTotal.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(txtDetail1.Text);
+            CDataControl.g_SimResultStoreTotal.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(txtDetail1.Text);
             SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail1.Text);
-            CDataControl.g_ResultStore.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(txtDetail2.Text);
+            CDataControl.g_SimResultStore.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(txtDetail2.Text);
             SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail2.Text);
-            CDataControl.g_ResultStore.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(txtDetail19.Text);
+            CDataControl.g_SimResultStore.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(txtDetail19.Text);
             SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
-            CDataControl.g_ResultStore.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail19.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(txtDetail4.Text);
+            CDataControl.g_SimResultStore.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail19.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(txtDetail4.Text);
             SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
-            CDataControl.g_ResultStore.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail4.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
+            CDataControl.g_SimResultStore.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail4.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
             SumSubBenefitTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
-            CDataControl.g_ResultStore.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(txtDetail20.Text);
+            CDataControl.g_SimResultStore.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(txtDetail20.Text);
             SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
-            CDataControl.g_ResultStore.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail20.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitTotal.ToString());
-            CDataControl.g_ResultStore.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStore.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail20.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitTotal.ToString());
+            CDataControl.g_SimResultStore.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput25.Text));
 
             //당대리점 결과(세부항목별 값 입력 결과) 비용계정
             Int64 SumSubCostTotal = 0;
-            CDataControl.g_ResultStoreTotal.set전체_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
+            CDataControl.g_SimResultStoreTotal.set전체_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
             SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
-            CDataControl.g_ResultStore.set전체_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
+            CDataControl.g_SimResultStore.set전체_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
 
-            CDataControl.g_ResultStoreTotal.set전체_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+            CDataControl.g_SimResultStoreTotal.set전체_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
                 + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
                 + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
                 + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
@@ -542,25 +536,25 @@ namespace KIWI
                 + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
                 + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
                 + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text));
-            CDataControl.g_ResultStore.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+            CDataControl.g_SimResultStore.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
                 + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
                 + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
                 + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
                 + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.set전체_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)));
+            CDataControl.g_SimResultStoreTotal.set전체_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)));
             SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text));
-            CDataControl.g_ResultStore.set전체_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.set전체_비용_이자비용(txtDetail33.Text);
+            CDataControl.g_SimResultStore.set전체_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.set전체_비용_이자비용(txtDetail33.Text);
             SumSubCostTotal += CommonUtil.StringToIntVal(txtDetail33.Text);
-            CDataControl.g_ResultStore.set전체_비용_이자비용(CommonUtil.Division(txtDetail33.Text, txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.set전체_비용_부가세((CommonUtil.StringToIntVal(txtDetail34.Text)));
+            CDataControl.g_SimResultStore.set전체_비용_이자비용(CommonUtil.Division(txtDetail33.Text, txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.set전체_비용_부가세((CommonUtil.StringToIntVal(txtDetail34.Text)));
             SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail34.Text));
-            CDataControl.g_ResultStore.set전체_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.set전체_비용_법인세(txtDetail35.Text);
+            CDataControl.g_SimResultStore.set전체_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.set전체_비용_법인세(txtDetail35.Text);
             SumSubCostTotal += CommonUtil.StringToIntVal(txtDetail35.Text);
-            CDataControl.g_ResultStore.set전체_비용_법인세(CommonUtil.Division(txtDetail35.Text, txtInput25.Text));
+            CDataControl.g_SimResultStore.set전체_비용_법인세(CommonUtil.Division(txtDetail35.Text, txtInput25.Text));
 
-            CDataControl.g_ResultStoreTotal.set전체_비용_기타판매관리비((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+            CDataControl.g_SimResultStoreTotal.set전체_비용_기타판매관리비((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
                 + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
                 + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
                 + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
@@ -574,374 +568,374 @@ namespace KIWI
                 + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
                 + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
                 + CommonUtil.StringToIntVal(txtDetail36.Text));
-            CDataControl.g_ResultStore.set전체_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+            CDataControl.g_SimResultStore.set전체_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
                  + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
                  + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
                  + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
                  + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
                  + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
                  + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체_비용_소계 = SumSubCostTotal;
-            CDataControl.g_ResultStore.전체_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput25.Text));
-            CDataControl.g_ResultStoreTotal.전체손익계 = SumSubBenefitTotal - SumSubCostTotal;
-            CDataControl.g_ResultStore.전체손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체_비용_소계 = SumSubCostTotal;
+            CDataControl.g_SimResultStore.전체_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput25.Text));
+            CDataControl.g_SimResultStoreTotal.전체손익계 = SumSubBenefitTotal - SumSubCostTotal;
+            CDataControl.g_SimResultStore.전체손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput25.Text));
 
 
             Int64 SumSubBenefitWillTotal = 0;
 
-            //CDataControl.g_ResultFuture.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18;
-            //CDataControl.g_ResultFutureTotal.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //CDataControl.g_ResultFuture.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18;
-            //CDataControl.g_ResultFutureTotal.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //CDataControl.g_ResultFutureTotal.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(txtDetail19.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
-            //CDataControl.g_ResultFuture.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail19.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(txtDetail4.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
-            //CDataControl.g_ResultFuture.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail4.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume = (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
-            //SumSubBenefitWillTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
-            //CDataControl.g_ResultFuture.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(txtDetail20.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
-            //CDataControl.g_ResultFuture.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail20.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitWillTotal.ToString());
-            //CDataControl.g_ResultFuture.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFuture.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18;
+            CDataControl.g_SimResultFutureTotal.전체_수익_가입자수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            CDataControl.g_SimResultFuture.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18;
+            CDataControl.g_SimResultFutureTotal.전체_수익_CS관리수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            CDataControl.g_SimResultFutureTotal.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(txtDetail19.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
+            CDataControl.g_SimResultFuture.전체_수익_업무취급수수료 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail19.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(txtDetail4.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
+            CDataControl.g_SimResultFuture.전체_수익_사업자모델매입에따른추가수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail4.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume = (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
+            SumSubBenefitWillTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
+            CDataControl.g_SimResultFuture.전체_수익_유통모델매입에따른추가수익_현금_Volume = CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(txtDetail20.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
+            CDataControl.g_SimResultFuture.전체_수익_직영매장판매수익 = CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail20.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitWillTotal.ToString());
+            CDataControl.g_SimResultFuture.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput25.Text));
 
 
-            //Int64 SumSubCostWillTotal = 0;
-            //CDataControl.g_ResultFutureTotal.set전체_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
-            //CDataControl.g_ResultFuture.set전체_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text));
-            //CDataControl.g_ResultFuture.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text));
-            //CDataControl.g_ResultFuture.set전체_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_이자비용(txtDetail33.Text);
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(txtDetail33.Text);
-            //CDataControl.g_ResultFuture.set전체_비용_이자비용(CommonUtil.Division(txtDetail33.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_부가세((CommonUtil.StringToIntVal(txtDetail34.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail34.Text));
-            //CDataControl.g_ResultFuture.set전체_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_법인세(txtDetail35.Text);
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(txtDetail35.Text);
-            //CDataControl.g_ResultFuture.set전체_비용_법인세(CommonUtil.Division(txtDetail35.Text, txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.set전체_비용_기타판매관리비((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text));
-            //CDataControl.g_ResultFuture.set전체_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체_수익_소계 = SumSubCostWillTotal;
-            //CDataControl.g_ResultFuture.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostWillTotal.ToString(), txtInput25.Text));
-            //CDataControl.g_ResultFutureTotal.전체손익계 = (SumSubBenefitWillTotal - SumSubCostWillTotal);
-            //CDataControl.g_ResultFuture.전체손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput25.Text));
-
-
-
+            Int64 SumSubCostWillTotal = 0;
+            CDataControl.g_SimResultFutureTotal.set전체_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
+            CDataControl.g_SimResultFuture.set전체_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text));
+            CDataControl.g_SimResultFuture.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text));
+            CDataControl.g_SimResultFuture.set전체_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text) + CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_이자비용(txtDetail33.Text);
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(txtDetail33.Text);
+            CDataControl.g_SimResultFuture.set전체_비용_이자비용(CommonUtil.Division(txtDetail33.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_부가세((CommonUtil.StringToIntVal(txtDetail34.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail34.Text));
+            CDataControl.g_SimResultFuture.set전체_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_법인세(txtDetail35.Text);
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(txtDetail35.Text);
+            CDataControl.g_SimResultFuture.set전체_비용_법인세(CommonUtil.Division(txtDetail35.Text, txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.set전체_비용_기타판매관리비((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text));
+            CDataControl.g_SimResultFuture.set전체_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체_수익_소계 = SumSubCostWillTotal;
+            CDataControl.g_SimResultFuture.전체_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostWillTotal.ToString(), txtInput25.Text));
+            CDataControl.g_SimResultFutureTotal.전체손익계 = (SumSubBenefitWillTotal - SumSubCostWillTotal);
+            CDataControl.g_SimResultFuture.전체손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput25.Text));
 
 
 
-            ////도매
-            ////당대리점 결과(세부항목별 값 입력 결과) 수익계정
-            //SumSubBenefitTotal = 0;
-            //CDataControl.g_ResultStoreTotal.set도매_수익_가입자관리수수료(txtDetail1.Text);
-            //SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail1.Text);
-            //CDataControl.g_ResultStore.set도매_수익_가입자관리수수료(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_수익_CS관리수수료(txtDetail2.Text);
-            //SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail2.Text);
-            //CDataControl.g_ResultStore.set도매_수익_CS관리수수료(CommonUtil.Division(txtDetail2.Text, txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_수익_사업자모델매입에따른추가수익(txtDetail4.Text);
-            //SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
-            //CDataControl.g_ResultStore.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(txtDetail4.Text, txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_수익_유통모델매입에따른추가수익_현금_Volume((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
-            //SumSubBenefitTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
-            //CDataControl.g_ResultStore.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.도매_수익_소계 = SumSubBenefitTotal;
-            //CDataControl.g_ResultStore.도매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput4.Text));
-
-            ////당대리점 결과(세부항목별 값 입력 결과) 비용계정
-            //SumSubCostTotal = 0;
-            //CDataControl.g_ResultStoreTotal.set도매_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
-            //CDataControl.g_ResultStore.set도매_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text));
-            //CDataControl.g_ResultStore.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail13.Text));
-            //CDataControl.g_ResultStore.set도매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultStore.set도매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-
-            //CDataControl.g_ResultStoreTotal.set도매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultStore.set도매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultStore.set도매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.set도매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultStore.set도매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.도매_비용_소계 = SumSubCostTotal;
-            //CDataControl.g_ResultStore.도매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.도매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
-            //CDataControl.g_ResultStore.도매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
 
 
-            //SumSubBenefitWillTotal = 0;
-            //CDataControl.g_ResultFutureTotal.set도매_수익_가입자관리수수료(CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text));
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //CDataControl.g_ResultFuture.set도매_수익_가입자관리수수료(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_수익_CS관리수수료(CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text));
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
-            //CDataControl.g_ResultFuture.set도매_수익_CS관리수수료(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_수익_사업자모델매입에따른추가수익(txtDetail4.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
-            //CDataControl.g_ResultFuture.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(txtDetail4.Text, txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_수익_유통모델매입에따른추가수익_현금_Volume((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
-            //SumSubBenefitWillTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
-            //CDataControl.g_ResultFuture.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.도매_수익_소계 = SumSubBenefitWillTotal;
-            //CDataControl.g_ResultFuture.도매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput4.Text));
 
-            //SumSubCostTotal = 0;
-            //CDataControl.g_ResultFutureTotal.set도매_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
-            //CDataControl.g_ResultFuture.set도매_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text));
-            //CDataControl.g_ResultFuture.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail13.Text));
-            //CDataControl.g_ResultFuture.set도매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultFuture.set도매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            //도매
+            //당대리점 결과(세부항목별 값 입력 결과) 수익계정
+            SumSubBenefitTotal = 0;
+            CDataControl.g_SimResultStoreTotal.set도매_수익_가입자관리수수료(txtDetail1.Text);
+            SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail1.Text);
+            CDataControl.g_SimResultStore.set도매_수익_가입자관리수수료(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_수익_CS관리수수료(txtDetail2.Text);
+            SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail2.Text);
+            CDataControl.g_SimResultStore.set도매_수익_CS관리수수료(CommonUtil.Division(txtDetail2.Text, txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_수익_사업자모델매입에따른추가수익(txtDetail4.Text);
+            SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
+            CDataControl.g_SimResultStore.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(txtDetail4.Text, txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_수익_유통모델매입에따른추가수익_현금_Volume((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
+            SumSubBenefitTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
+            CDataControl.g_SimResultStore.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.도매_수익_소계 = SumSubBenefitTotal;
+            CDataControl.g_SimResultStore.도매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput4.Text));
 
-            //CDataControl.g_ResultFutureTotal.set도매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultFuture.set도매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultFuture.set도매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.set도매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
-            //CDataControl.g_ResultFuture.set도매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.도매_비용_소계 = SumSubCostTotal;
-            //CDataControl.g_ResultFuture.도매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.도매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
-            //CDataControl.g_ResultFuture.도매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
+            //당대리점 결과(세부항목별 값 입력 결과) 비용계정
+            SumSubCostTotal = 0;
+            CDataControl.g_SimResultStoreTotal.set도매_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
+            CDataControl.g_SimResultStore.set도매_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text));
+            CDataControl.g_SimResultStore.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail13.Text));
+            CDataControl.g_SimResultStore.set도매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultStore.set도매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
 
-
-            ////소매 당대리점
-            //SumSubBenefitTotal = 0;
-            //CDataControl.g_ResultStoreTotal.set소매_수익_업무취급수수료(txtDetail19.Text);
-            //SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
-            //CDataControl.g_ResultStore.set소매_수익_업무취급수수료(CommonUtil.Division(txtDetail19.Text, txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.set소매_수익_직영매장판매수익(txtDetail20.Text);
-            //SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
-            //CDataControl.g_ResultStore.set소매_수익_직영매장판매수익(CommonUtil.Division(txtDetail20.Text, txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.소매_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitTotal.ToString());
-            //CDataControl.g_ResultStore.소매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput16.Text));
-
-            ////당대리점 결과(세부항목별 값 입력 결과) 비용계정
-            //SumSubCostTotal = 0;
-            //CDataControl.g_ResultStoreTotal.set소매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text));
-            //CDataControl.g_ResultStore.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.set소매_비용_임차료((CommonUtil.StringToIntVal(txtDetail25.Text)));
-            //SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail25.Text));
-            //CDataControl.g_ResultStore.set소매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.set소매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultStore.set소매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-
-            //CDataControl.g_ResultStoreTotal.set소매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultStore.set소매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.set소매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultStore.set소매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.set소매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultStore.set소매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultStoreTotal.소매_비용_소계 = SumSubCostTotal;
-            //CDataControl.g_ResultStore.소매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
-            //CDataControl.g_ResultStoreTotal.소매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
-            //CDataControl.g_ResultStore.소매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
-
-            ////CDataControl.g_ResultStoreTotal.점별손익추정 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput30.Text));
-            ////CDataControl.g_ResultStore.점별손익추정 = CommonUtil.StringToIntVal(txtInput30.Text);
+            CDataControl.g_SimResultStoreTotal.set도매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultStore.set도매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultStore.set도매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.set도매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultStore.set도매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.도매_비용_소계 = SumSubCostTotal;
+            CDataControl.g_SimResultStore.도매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.도매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
+            CDataControl.g_SimResultStore.도매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
 
 
-            ////소매 당대리점미래
-            //SumSubBenefitWillTotal = 0;
-            //CDataControl.g_ResultFutureTotal.set소매_수익_업무취급수수료(txtDetail19.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
-            //CDataControl.g_ResultFuture.set소매_수익_업무취급수수료(CommonUtil.Division(txtDetail19.Text, txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.set소매_수익_직영매장판매수익(txtDetail20.Text);
-            //SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
-            //CDataControl.g_ResultFuture.set소매_수익_직영매장판매수익(CommonUtil.Division(txtDetail20.Text, txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.소매_수익_소계 = SumSubBenefitWillTotal;
-            //CDataControl.g_ResultFuture.소매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput16.Text));
+            SumSubBenefitWillTotal = 0;
+            CDataControl.g_SimResultFutureTotal.set도매_수익_가입자관리수수료(CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text));
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            CDataControl.g_SimResultFuture.set도매_수익_가입자관리수수료(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail1.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_수익_CS관리수수료(CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text));
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text);
+            CDataControl.g_SimResultFuture.set도매_수익_CS관리수수료(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division(txtDetail2.Text, txtInput1.Text)) * 18 * CommonUtil.StringToIntVal(txtInput25.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_수익_사업자모델매입에따른추가수익(txtDetail4.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail4.Text);
+            CDataControl.g_SimResultFuture.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(txtDetail4.Text, txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_수익_유통모델매입에따른추가수익_현금_Volume((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString());
+            SumSubBenefitWillTotal += (CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text));
+            CDataControl.g_SimResultFuture.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail5.Text) + CommonUtil.StringToIntVal(txtDetail6.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.도매_수익_소계 = SumSubBenefitWillTotal;
+            CDataControl.g_SimResultFuture.도매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput4.Text));
 
-            ////당대리점 결과(세부항목별 값 입력 결과) 비용계정
-            //SumSubCostWillTotal = 0;
-            //CDataControl.g_ResultFutureTotal.set소매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text));
-            //CDataControl.g_ResultFuture.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.set소매_비용_임차료((CommonUtil.StringToIntVal(txtDetail25.Text)));
-            //SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail25.Text));
-            //CDataControl.g_ResultFuture.set소매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.set소매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultFuture.set소매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            SumSubCostTotal = 0;
+            CDataControl.g_SimResultFutureTotal.set도매_비용_대리점투자비용((CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text))));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail7.Text) * CommonUtil.StringToIntVal(txtInput2.Text) + (CommonUtil.StringToIntVal(txtDetail8.Text) * CommonUtil.StringToIntVal(txtInput3.Text)));
+            CDataControl.g_SimResultFuture.set도매_비용_대리점투자비용(CommonUtil.Division(txtDetail1.Text, txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text));
+            CDataControl.g_SimResultFuture.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail11.Text) * CommonUtil.StringToIntVal(txtInput11.Text)
+                + CommonUtil.StringToIntVal(txtDetail12.Text) * CommonUtil.StringToIntVal(txtInput12.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput13.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_임차료((CommonUtil.StringToIntVal(txtDetail13.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail13.Text));
+            CDataControl.g_SimResultFuture.set도매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail13.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultFuture.set도매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
 
-            //CDataControl.g_ResultFutureTotal.set소매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultFuture.set소매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.set소매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultFuture.set소매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.set소매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
-            //SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
-            //CDataControl.g_ResultFuture.set소매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
-            //    + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
-            //CDataControl.g_ResultFutureTotal.소매_비용_소계 = SumSubCostWillTotal;
-            //CDataControl.g_ResultFuture.소매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostWillTotal.ToString(), txtInput4.Text));
-            //CDataControl.g_ResultFutureTotal.소매손익계 = (SumSubBenefitWillTotal - SumSubCostWillTotal);
-            //CDataControl.g_ResultFuture.소매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultFuture.set도매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultFuture.set도매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.set도매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text);
+            CDataControl.g_SimResultFuture.set도매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput4.Text)).ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.도매_비용_소계 = SumSubCostTotal;
+            CDataControl.g_SimResultFuture.도매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.도매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
+            CDataControl.g_SimResultFuture.도매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
 
-            //CDataControl.g_ResultFutureTotal.점별손익추정 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput30.Text));
-            //CDataControl.g_ResultFuture.점별손익추정 = CommonUtil.StringToIntVal(txtInput30.Text);
+
+            //소매 당대리점
+            SumSubBenefitTotal = 0;
+            CDataControl.g_SimResultStoreTotal.set소매_수익_업무취급수수료(txtDetail19.Text);
+            SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
+            CDataControl.g_SimResultStore.set소매_수익_업무취급수수료(CommonUtil.Division(txtDetail19.Text, txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.set소매_수익_직영매장판매수익(txtDetail20.Text);
+            SumSubBenefitTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
+            CDataControl.g_SimResultStore.set소매_수익_직영매장판매수익(CommonUtil.Division(txtDetail20.Text, txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.소매_수익_소계 = CommonUtil.StringToIntVal(SumSubBenefitTotal.ToString());
+            CDataControl.g_SimResultStore.소매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitTotal.ToString(), txtInput16.Text));
+
+            //당대리점 결과(세부항목별 값 입력 결과) 비용계정
+            SumSubCostTotal = 0;
+            CDataControl.g_SimResultStoreTotal.set소매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text));
+            CDataControl.g_SimResultStore.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.set소매_비용_임차료((CommonUtil.StringToIntVal(txtDetail25.Text)));
+            SumSubCostTotal += (CommonUtil.StringToIntVal(txtDetail25.Text));
+            CDataControl.g_SimResultStore.set소매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.set소매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultStore.set소매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+
+            CDataControl.g_SimResultStoreTotal.set소매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultStore.set소매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.set소매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultStore.set소매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.set소매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultStore.set소매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultStoreTotal.소매_비용_소계 = SumSubCostTotal;
+            CDataControl.g_SimResultStore.소매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostTotal.ToString(), txtInput4.Text));
+            CDataControl.g_SimResultStoreTotal.소매손익계 = (SumSubBenefitTotal - SumSubCostTotal);
+            CDataControl.g_SimResultStore.소매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput4.Text));
+
+            //CDataControl.g_SimResultStoreTotal.점별손익추정 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitTotal - SumSubCostTotal).ToString(), txtInput30.Text));
+            //CDataControl.g_SimResultStore.점별손익추정 = CommonUtil.StringToIntVal(txtInput30.Text);
+
+
+            //소매 당대리점미래
+            SumSubBenefitWillTotal = 0;
+            CDataControl.g_SimResultFutureTotal.set소매_수익_업무취급수수료(txtDetail19.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail19.Text);
+            CDataControl.g_SimResultFuture.set소매_수익_업무취급수수료(CommonUtil.Division(txtDetail19.Text, txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.set소매_수익_직영매장판매수익(txtDetail20.Text);
+            SumSubBenefitWillTotal += CommonUtil.StringToIntVal(txtDetail20.Text);
+            CDataControl.g_SimResultFuture.set소매_수익_직영매장판매수익(CommonUtil.Division(txtDetail20.Text, txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.소매_수익_소계 = SumSubBenefitWillTotal;
+            CDataControl.g_SimResultFuture.소매_수익_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubBenefitWillTotal.ToString(), txtInput16.Text));
+
+            //당대리점 결과(세부항목별 값 입력 결과) 비용계정
+            SumSubCostWillTotal = 0;
+            CDataControl.g_SimResultFutureTotal.set소매_비용_인건비_급여_복리후생비((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text));
+            CDataControl.g_SimResultFuture.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail23.Text) * CommonUtil.StringToIntVal(txtInput19.Text)
+                + CommonUtil.StringToIntVal(txtDetail24.Text) * CommonUtil.StringToIntVal(txtInput20.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) * CommonUtil.StringToIntVal(txtInput21.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.set소매_비용_임차료((CommonUtil.StringToIntVal(txtDetail25.Text)));
+            SumSubCostWillTotal += (CommonUtil.StringToIntVal(txtDetail25.Text));
+            CDataControl.g_SimResultFuture.set소매_비용_임차료(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail25.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.set소매_비용_이자비용(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultFuture.set소매_비용_이자비용(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail33.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+
+            CDataControl.g_SimResultFutureTotal.set소매_비용_부가세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultFuture.set소매_비용_부가세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail34.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.set소매_비용_법인세(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultFuture.set소매_비용_법인세(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail35.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.set소매_비용_기타판매관리비(CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text));
+            SumSubCostWillTotal += CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text);
+            CDataControl.g_SimResultFuture.set소매_비용_기타판매관리비(CommonUtil.Division((CommonUtil.StringToIntVal(CommonUtil.Division((CommonUtil.StringToIntVal(txtDetail14.Text) + CommonUtil.StringToIntVal(txtDetail15.Text)
+                + CommonUtil.StringToIntVal(txtDetail16.Text) + CommonUtil.StringToIntVal(txtDetail17.Text)
+                + CommonUtil.StringToIntVal(txtDetail18.Text) + CommonUtil.StringToIntVal(txtDetail26.Text)
+                + CommonUtil.StringToIntVal(txtDetail27.Text) + CommonUtil.StringToIntVal(txtDetail28.Text)
+                + CommonUtil.StringToIntVal(txtDetail29.Text) + CommonUtil.StringToIntVal(txtDetail30.Text)
+                + CommonUtil.StringToIntVal(txtDetail31.Text) + CommonUtil.StringToIntVal(txtDetail32.Text)
+                + CommonUtil.StringToIntVal(txtDetail36.Text)).ToString(), txtInput25.Text)) * CommonUtil.StringToIntVal(txtInput16.Text)).ToString(), txtInput16.Text));
+            CDataControl.g_SimResultFutureTotal.소매_비용_소계 = SumSubCostWillTotal;
+            CDataControl.g_SimResultFuture.소매_비용_소계 = CommonUtil.StringToIntVal(CommonUtil.Division(SumSubCostWillTotal.ToString(), txtInput4.Text));
+            CDataControl.g_SimResultFutureTotal.소매손익계 = (SumSubBenefitWillTotal - SumSubCostWillTotal);
+            CDataControl.g_SimResultFuture.소매손익계 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput4.Text));
+
+            //CDataControl.g_SimResultFutureTotal.점별손익추정 = CommonUtil.StringToIntVal(CommonUtil.Division((SumSubBenefitWillTotal - SumSubCostWillTotal).ToString(), txtInput30.Text));
+            //CDataControl.g_SimResultFuture.점별손익추정 = CommonUtil.StringToIntVal(txtInput30.Text);
 
 
         }
@@ -1909,6 +1903,7 @@ namespace KIWI
                 SaveAsInput(_WorkSheet1, _WorkSheet2);
                 CommonUtil.GetExcel_WorkBook_CLOSE();
             }
+            SaveAsInput();
             mFormUserSimulOutput.applyData();
             this.Close();
         }

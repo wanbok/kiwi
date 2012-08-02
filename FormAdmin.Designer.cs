@@ -482,6 +482,7 @@
             this.txtOut31.TabIndex = 567;
             this.txtOut31.Text = "0";
             this.txtOut31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut31.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // label243
             // 
@@ -566,6 +567,7 @@
             this.txtOut30.TabIndex = 558;
             this.txtOut30.Text = "0";
             this.txtOut30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut30.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut60
             // 
@@ -610,6 +612,7 @@
             this.txtOut29.TabIndex = 556;
             this.txtOut29.Text = "0";
             this.txtOut29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut29.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut59
             // 
@@ -654,6 +657,7 @@
             this.txtOut28.TabIndex = 553;
             this.txtOut28.Text = "0";
             this.txtOut28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut28.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut58
             // 
@@ -698,6 +702,7 @@
             this.txtOut27.TabIndex = 549;
             this.txtOut27.Text = "0";
             this.txtOut27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut27.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut57
             // 
@@ -742,6 +747,7 @@
             this.txtOut26.TabIndex = 546;
             this.txtOut26.Text = "0";
             this.txtOut26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut26.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut56
             // 
@@ -786,6 +792,7 @@
             this.txtOut25.TabIndex = 544;
             this.txtOut25.Text = "0";
             this.txtOut25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut25.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut55
             // 
@@ -830,6 +837,7 @@
             this.txtOut24.TabIndex = 530;
             this.txtOut24.Text = "0";
             this.txtOut24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut24.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut54
             // 
@@ -874,6 +882,7 @@
             this.txtOut23.TabIndex = 523;
             this.txtOut23.Text = "0";
             this.txtOut23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut23.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut53
             // 
@@ -918,6 +927,7 @@
             this.txtOut22.TabIndex = 519;
             this.txtOut22.Text = "0";
             this.txtOut22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut22.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut52
             // 
@@ -962,6 +972,7 @@
             this.txtOut21.TabIndex = 518;
             this.txtOut21.Text = "0";
             this.txtOut21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut21.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut51
             // 
@@ -1006,6 +1017,7 @@
             this.txtOut20.TabIndex = 515;
             this.txtOut20.Text = "0";
             this.txtOut20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut20.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut50
             // 
@@ -1050,6 +1062,7 @@
             this.txtOut19.TabIndex = 511;
             this.txtOut19.Text = "0";
             this.txtOut19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut19.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut49
             // 
@@ -1094,6 +1107,7 @@
             this.txtOut18.TabIndex = 509;
             this.txtOut18.Text = "0";
             this.txtOut18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut18.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut48
             // 
@@ -1138,6 +1152,7 @@
             this.txtOut17.TabIndex = 506;
             this.txtOut17.Text = "0";
             this.txtOut17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut17.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtOut47
             // 
@@ -1182,6 +1197,7 @@
             this.txtOut16.TabIndex = 492;
             this.txtOut16.Text = "0";
             this.txtOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut16.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // label238
             // 
@@ -1429,6 +1445,7 @@
             this.txtOut15.TabIndex = 473;
             this.txtOut15.Text = "0";
             this.txtOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut15.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput14
             // 
@@ -1473,6 +1490,7 @@
             this.txtOut14.TabIndex = 470;
             this.txtOut14.Text = "0";
             this.txtOut14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut14.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput9
             // 
@@ -1517,6 +1535,7 @@
             this.txtOut9.TabIndex = 467;
             this.txtOut9.Text = "0";
             this.txtOut9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut9.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput8
             // 
@@ -1561,6 +1580,7 @@
             this.txtOut8.TabIndex = 464;
             this.txtOut8.Text = "0";
             this.txtOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut8.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput7
             // 
@@ -1605,6 +1625,7 @@
             this.txtOut7.TabIndex = 460;
             this.txtOut7.Text = "0";
             this.txtOut7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut7.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput10
             // 
@@ -1649,6 +1670,7 @@
             this.txtOut10.TabIndex = 458;
             this.txtOut10.Text = "0";
             this.txtOut10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut10.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput11
             // 
@@ -1693,6 +1715,7 @@
             this.txtOut11.TabIndex = 454;
             this.txtOut11.Text = "0";
             this.txtOut11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut11.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput12
             // 
@@ -1737,6 +1760,7 @@
             this.txtOut12.TabIndex = 451;
             this.txtOut12.Text = "0";
             this.txtOut12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut12.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput13
             // 
@@ -1781,6 +1805,7 @@
             this.txtOut13.TabIndex = 448;
             this.txtOut13.Text = "0";
             this.txtOut13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut13.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput6
             // 
@@ -1825,6 +1850,7 @@
             this.txtOut6.TabIndex = 446;
             this.txtOut6.Text = "0";
             this.txtOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut6.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput2
             // 
@@ -1866,6 +1892,7 @@
             this.txtOut2.TabIndex = 432;
             this.txtOut2.Text = "0";
             this.txtOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut2.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput5
             // 
@@ -1910,6 +1937,7 @@
             this.txtOut5.TabIndex = 428;
             this.txtOut5.Text = "0";
             this.txtOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut5.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput4
             // 
@@ -1954,6 +1982,7 @@
             this.txtOut4.TabIndex = 425;
             this.txtOut4.Text = "0";
             this.txtOut4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut4.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput3
             // 
@@ -1995,6 +2024,7 @@
             this.txtOut3.TabIndex = 423;
             this.txtOut3.Text = "0";
             this.txtOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut3.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // txtInput1
             // 
@@ -2037,6 +2067,7 @@
             this.txtOut1.TabIndex = 420;
             this.txtOut1.Text = "0";
             this.txtOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut1.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
             // 
             // label25
             // 
@@ -3658,6 +3689,9 @@
             this.유통모델_LG.TabIndex = 589;
             this.유통모델_LG.Text = "0";
             this.유통모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.유통모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
+            this.유통모델_LG.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_LG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_LG
             // 
@@ -3670,6 +3704,9 @@
             this.사업자모델_LG.TabIndex = 590;
             this.사업자모델_LG.Text = "0";
             this.사업자모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.사업자모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
+            this.사업자모델_LG.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_LG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_SS
             // 
@@ -3682,6 +3719,9 @@
             this.사업자모델_SS.TabIndex = 592;
             this.사업자모델_SS.Text = "0";
             this.사업자모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.사업자모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
+            this.사업자모델_SS.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_SS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 유통모델_SS
             // 
@@ -3694,6 +3734,9 @@
             this.유통모델_SS.TabIndex = 591;
             this.유통모델_SS.Text = "0";
             this.유통모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.유통모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
+            this.유통모델_SS.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_SS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 유통모델_팬텍
             // 
@@ -3706,6 +3749,9 @@
             this.유통모델_팬텍.TabIndex = 593;
             this.유통모델_팬텍.Text = "0";
             this.유통모델_팬텍.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.유통모델_팬텍.Click += new System.EventHandler(this.txtInput1_Click);
+            this.유통모델_팬텍.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_팬텍.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_소계
             // 
@@ -3718,6 +3764,9 @@
             this.사업자모델_소계.TabIndex = 596;
             this.사업자모델_소계.Text = "0";
             this.사업자모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.사업자모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
+            this.사업자모델_소계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_소계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 유통모델_소계
             // 
@@ -3730,6 +3779,9 @@
             this.유통모델_소계.TabIndex = 595;
             this.유통모델_소계.Text = "0";
             this.유통모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.유통모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
+            this.유통모델_소계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_소계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // ASP_전체계
             // 
@@ -3742,6 +3794,9 @@
             this.ASP_전체계.TabIndex = 597;
             this.ASP_전체계.Text = "0";
             this.ASP_전체계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ASP_전체계.Click += new System.EventHandler(this.txtInput1_Click);
+            this.ASP_전체계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.ASP_전체계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // label6
             // 
@@ -3840,6 +3895,9 @@
             this.리베이트.TabIndex = 605;
             this.리베이트.Text = "0";
             this.리베이트.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.리베이트.Click += new System.EventHandler(this.txtInput1_Click);
+            this.리베이트.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.리베이트.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // FormAdmin
             // 

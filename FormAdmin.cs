@@ -483,7 +483,7 @@ namespace KIWI
             string csv = "";
             for (int i = 0; i < txtOut.Length; i++)
             {
-                csv += txtBoxes[i].Text + ",";
+                csv += txtBoxes[i].Text.Replace(",", "") + ",";
             }
             System.IO.File.WriteAllText(CommonUtil.adminName, CommonUtil.Base64Encode(csv));
             readFileOfExistedAverage();
