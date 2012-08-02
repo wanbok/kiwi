@@ -90,7 +90,6 @@ namespace KIWI
             for (int j = 0; j < tables.Length; j++)
             {
                 DataTable t = tables[j];
-                int i;
                 DataRow r = t.NewRow();
                 Int64[] totalArr = null;
                 Int64[] agencyArr = null;
@@ -108,7 +107,7 @@ namespace KIWI
                         agencyArr = agency.getArr소매_수익_비용_및_계산포함();
                         break;
                 }
-                for (i = 0; i < totalArr.Length; i++)
+                for (int i = 0; i < totalArr.Length; i++)
                 {
                     r[i * 2] = totalArr[i];
                     r[i * 2 + 1] = agencyArr[i];

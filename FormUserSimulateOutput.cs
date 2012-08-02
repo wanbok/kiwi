@@ -19,13 +19,13 @@ namespace KIWI
 
         private Label[] lblTitle = null;
 
-        private string[] existingData = null;
-        private string[] existingWData = null;
-        private string[] existingRData = null;
+        private Int64[] existingData = null;
+        private Int64[] existingWData = null;
+        private Int64[] existingRData = null;
 
-        private string[] simulData = null;
-        private string[] simulWData = null;
-        private string[] simulRData = null;
+        private Int64[] simulData = null;
+        private Int64[] simulWData = null;
+        private Int64[] simulRData = null;
 
         private string[] names = new string[6] { "업계평균", "당대리점(현재수익)", "당대리점(미래수익)", "시뮬레이션-업계평균", "시뮬레이션-당대리점(현재수익)", "시뮬레이션-당대리점(미래수익)" };
         private List<string[]> selectedData = new List<string[]>();
@@ -70,19 +70,24 @@ namespace KIWI
             // ReadOnly설정
             for (int i = 0; i < txtOut.Length; i++)
             {
-
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.Silver;
+                txtOut[i].BackColor = Color.White;
+                txtOut[i].BorderStyle = BorderStyle.None;
+                txtOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
 
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.Silver;
+                    txtWOut[i].BackColor = Color.White;
+                    txtWOut[i].BorderStyle = BorderStyle.None;
+                    txtWOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.Silver;
+                    txtROut[i].BackColor = Color.White;
+                    txtROut[i].BorderStyle = BorderStyle.None;
+                    txtROut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
             }
 
@@ -95,13 +100,13 @@ namespace KIWI
             checkBox5.CheckedChanged += new EventHandler(checkboxes);
             checkBox6.CheckedChanged += new EventHandler(checkboxes);
 
-            existingData = new string[96];
-            existingWData = new string[84];
-            existingRData = new string[72];
+            existingData = new Int64[96];
+            existingWData = new Int64[84];
+            existingRData = new Int64[72];
 
-            simulData = new string[96];
-            simulWData = new string[84];
-            simulRData = new string[72];
+            simulData = new Int64[96];
+            simulWData = new Int64[84];
+            simulRData = new Int64[72];
 
             pnlChart.Visible = false;
             applyData();
@@ -112,165 +117,94 @@ namespace KIWI
         }
 
         public void applyData() {
-            if (CommonUtil.openAsName != null)
-            {
-                excel.Worksheet _WorkSheet1 = CommonUtil.GetExcelWorksheet(CommonUtil.openAsName, 2);
+            // 정보적용
+            setOut();
+            
+            // 시뮬레이터 정보적용
+            setSimulatorOut();
+            
+        }
 
-                setOut(_WorkSheet1, existingData);
-                setWOut(_WorkSheet1, existingWData);
-                setROut(_WorkSheet1, existingRData);
+        private void setOut()
+        {
+            if (CDataControl.g_ResultBusinessTotal == null ||
+                CDataControl.g_ResultBusiness == null ||
+                CDataControl.g_ResultStoreTotal == null ||
+                CDataControl.g_ResultStore == null ||
+                CDataControl.g_ResultFutureTotal == null ||
+                CDataControl.g_ResultFuture == null) return;
+
+            // 전체
+            for (int i = 0, n = 16; i < n; i++)
+            {
+                existingData[i] = CDataControl.g_ResultBusinessTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n] = CDataControl.g_ResultBusiness.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 2] = CDataControl.g_ResultStoreTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 3] = CDataControl.g_ResultStore.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 4] = CDataControl.g_ResultFutureTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 5] = CDataControl.g_ResultFuture.getArr전체_수익_비용_및_계산포함()[i];
             }
-            if (CommonUtil.saveAsSimulName != null)
+            // 도매
+            for (int i = 0, n = 14; i < n; i++)
             {
-                excel.Worksheet _WorkSheet1 = CommonUtil.GetExcelWorksheet(CommonUtil.saveAsSimulName, 2);
-
-                setOut(_WorkSheet1, simulData);
-                setWOut(_WorkSheet1, simulWData);
-                setROut(_WorkSheet1, simulRData);
+                existingWData[i] = CDataControl.g_ResultBusinessTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n] = CDataControl.g_ResultBusiness.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 2] = CDataControl.g_ResultStoreTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 3] = CDataControl.g_ResultStore.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 4] = CDataControl.g_ResultFutureTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 5] = CDataControl.g_ResultFuture.getArr도매_수익_비용_및_계산포함()[i];
+            }
+            // 소매
+            for (int i = 0, n = 12; i < n; i++)
+            {
+                existingRData[i] = CDataControl.g_ResultBusinessTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n] = CDataControl.g_ResultBusiness.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 2] = CDataControl.g_ResultStoreTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 3] = CDataControl.g_ResultStore.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 4] = CDataControl.g_ResultFutureTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 5] = CDataControl.g_ResultFuture.getArr소매_수익_비용_및_계산포함()[i];
             }
         }
 
-        private void setOut(excel.Worksheet _WorkSheet, string[] data)
+        private void setSimulatorOut()
         {
+            if (CDataControl.g_SimResultBusinessTotal == null ||
+                CDataControl.g_SimResultBusiness == null ||
+                CDataControl.g_SimResultStoreTotal == null ||
+                CDataControl.g_SimResultStore == null ||
+                CDataControl.g_SimResultFutureTotal == null ||
+                CDataControl.g_SimResultFuture == null) return;
 
-            for (int i = 0; i < 96; i++)
+            // 전체
+            for (int i = 0, n = 16; i < n; i++)
             {
-                string ColumnName = "D7";
-                if (i < 32)
-                {
-                    if (i < 16)
-                    {
-                        ColumnName = "D" + (i + 7).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "E" + (i - 9).ToString();
-                    }
-                }
-                else if (i >= 32 && i < 64)
-                {
-                    if (i < 48)
-                    {
-                        ColumnName = "I" + (i - 25).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "J" + (i - 41).ToString();
-                    }
-
-                }
-                else if (i >= 64)
-                {
-                    if (i < 80)
-                    {
-                        ColumnName = "N" + (i - 57).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "O" + (i - 73).ToString();
-                    }
-
-                }
-                data[i] = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnName, Type.Missing).Value2);
+                existingData[i] = CDataControl.g_SimResultBusinessTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n] = CDataControl.g_SimResultBusiness.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 3] = CDataControl.g_SimResultStore.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr전체_수익_비용_및_계산포함()[i];
+                existingData[i + n * 5] = CDataControl.g_SimResultFuture.getArr전체_수익_비용_및_계산포함()[i];
             }
-
-
-        }
-
-        //기본입력
-        private void getWOut()
-        {
-
-        }
-        private void setWOut(excel.Worksheet _WorkSheet, string[] data)
-        {
-
-            for (int i = 0; i < 84; i++)
+            // 도매
+            for (int i = 0, n = 14; i < n; i++)
             {
-                string ColumnName = "D28";
-                if (i < 28)
-                {
-                    if (i < 14)
-                    {
-                        ColumnName = "D" + (i + 28).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "E" + (i + 14).ToString();
-                    }
-                }
-                else if (i >= 28 && i < 56)
-                {
-                    if (i < 42)
-                    {
-                        ColumnName = "I" + (i).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "J" + (i - 14).ToString();
-                    }
-
-                }
-                else if (i >= 56)
-                {
-                    if (i < 70)
-                    {
-                        ColumnName = "N" + (i - 28).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "O" + (i - 42).ToString();
-                    }
-
-                }
-                data[i] = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnName, Type.Missing).Value2);
+                existingWData[i] = CDataControl.g_SimResultBusinessTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n] = CDataControl.g_SimResultBusiness.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 3] = CDataControl.g_SimResultStore.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr도매_수익_비용_및_계산포함()[i];
+                existingWData[i + n * 5] = CDataControl.g_SimResultFuture.getArr도매_수익_비용_및_계산포함()[i];
             }
-
-        }
-
-        private void setROut(excel.Worksheet _WorkSheet, string[] data)
-        {
-            for (int i = 0; i < 72; i++)
+            // 소매
+            for (int i = 0, n = 12; i < n; i++)
             {
-                string ColumnName = "D46";
-                if (i < 24)
-                {
-                    if (i < 12)
-                    {
-                        ColumnName = "D" + (i + 46).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "E" + (i + 34).ToString();
-                    }
-                }
-                else if (i >= 24 && i < 48)
-                {
-                    if (i < 36)
-                    {
-                        ColumnName = "I" + (i + 22).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "J" + (i + 10).ToString();
-                    }
-
-                }
-                else if (i >= 48)
-                {
-                    if (i < 60)
-                    {
-                        ColumnName = "N" + (i - 2).ToString();
-                    }
-                    else
-                    {
-                        ColumnName = "O" + (i - 14).ToString();
-                    }
-
-                }
-                data[i] = CommonUtil.NullToString0(_WorkSheet.get_Range(ColumnName, Type.Missing).Value2);
+                existingRData[i] = CDataControl.g_SimResultBusinessTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n] = CDataControl.g_SimResultBusiness.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 2] = CDataControl.g_SimResultStoreTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 3] = CDataControl.g_SimResultStore.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 4] = CDataControl.g_SimResultFutureTotal.getArr소매_수익_비용_및_계산포함()[i];
+                existingRData[i + n * 5] = CDataControl.g_SimResultFuture.getArr소매_수익_비용_및_계산포함()[i];
             }
-
         }
 
         private void OpenChart(Chart chart, excel.Worksheet sheet)
@@ -385,17 +319,17 @@ namespace KIWI
                 for (int i = 0; i < 32; i++)
                 {
                     txtOut[i + currentIndex * 32].Enabled = true;
-                    txtOut[i + currentIndex * 32].Text = existingData[i + index * 32];
+                    txtOut[i + currentIndex * 32].Text = existingData[i + index * 32].ToString();
                 }
                 for (int i = 0; i < 28; i++)
                 {
                     txtWOut[i + currentIndex * 28].Enabled = true;
-                    txtWOut[i + currentIndex * 28].Text = existingWData[i + index * 28];
+                    txtWOut[i + currentIndex * 28].Text = existingWData[i + index * 28].ToString();
                 }
                 for (int i = 0; i < 24; i++)
                 {
                     txtROut[i + currentIndex * 24].Enabled = true;
-                    txtROut[i + currentIndex * 24].Text = existingRData[i + index * 24];
+                    txtROut[i + currentIndex * 24].Text = existingRData[i + index * 24].ToString();
                 }
             }
             else
@@ -403,17 +337,17 @@ namespace KIWI
                 for (int i = 0; i < 32; i++)
                 {
                     txtOut[i + currentIndex * 32].Enabled = true;
-                    txtOut[i + currentIndex * 32].Text = simulData[i + (index - 3) * 32];
+                    txtOut[i + currentIndex * 32].Text = simulData[i + (index - 3) * 32].ToString();
                 }
                 for (int i = 0; i < 28; i++)
                 {
                     txtWOut[i + currentIndex * 28].Enabled = true;
-                    txtWOut[i + currentIndex * 28].Text = simulWData[i + (index - 3) * 28];
+                    txtWOut[i + currentIndex * 28].Text = simulWData[i + (index - 3) * 28].ToString();
                 }
                 for (int i = 0; i < 24; i++)
                 {
                     txtROut[i + currentIndex * 24].Enabled = true;
-                    txtROut[i + currentIndex * 24].Text = simulRData[i + (index - 3) * 24];
+                    txtROut[i + currentIndex * 24].Text = simulRData[i + (index - 3) * 24].ToString();
                 }
             }
             currentIndex++;
@@ -440,6 +374,15 @@ namespace KIWI
                 txtROut[i + currentIndex * 24].Text = "0";
             }
             currentIndex++;
+        }
+
+        private void addComma_TextChanged(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text.Contains(",") || (sender as TextBox).Text.Length > 0)
+            {
+                (sender as TextBox).Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
+                (sender as TextBox).SelectionStart = (sender as TextBox).Text.Length;
+            }
         }
     }
 }

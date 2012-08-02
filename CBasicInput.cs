@@ -343,12 +343,31 @@ namespace KIWI
             return arrvalue;
         }
 
+        public void setArrData_BasicInput(string[] arrvalue)
+        {
+            도매_누적가입자수 = CommonUtil.StringToIntVal(arrvalue[0]);
+            도매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[1]);
+            도매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[2]);
+            도매_월평균유통모델출고대수_LG = CommonUtil.StringToIntVal(arrvalue[3]);
+            도매_월평균유통모델출고대수_SS = CommonUtil.StringToIntVal(arrvalue[4]);
+            도매_거래선수_개통사무실 = CommonUtil.StringToIntVal(arrvalue[5]);
+            도매_거래선수_판매점 = CommonUtil.StringToIntVal(arrvalue[6]);
+            도매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[7]);
+            도매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[8]);
+
+            소매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[9]);
+            소매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[10]);
+            소매_거래선수_직영점 = CommonUtil.StringToIntVal(arrvalue[11]);
+            소매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[12]);
+            소매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[13]);
+        }
+
         public Int64[] getArrData_리포트용()
         {
             Int64[] arrvalue = new Int64[10];
 
             int i = 0;
-            arrvalue[i] = 도매_누적가입자수;
+            arrvalue[i++] = 도매_누적가입자수;
             arrvalue[i++] = 도매_월평균판매대수_신규;
             arrvalue[i++] = 소매_월평균판매대수_신규;
             arrvalue[i++] = 도매_월평균판매대수_기변;
@@ -367,7 +386,7 @@ namespace KIWI
             Int64[] arrvalue = new Int64[35];
 
             int i = 0;
-            arrvalue[i] = 도매_누적가입자수;
+            arrvalue[i++] = 도매_누적가입자수;
             arrvalue[i++] = 도매_월평균판매대수_신규;
             arrvalue[i++] = 도매_월평균판매대수_기변;
             arrvalue[i++] = get도매_월평균판매대수_소계();
@@ -404,25 +423,6 @@ namespace KIWI
             arrvalue[i++] = get직원수_소계_합계();
 
             return arrvalue;
-        }
-
-        public void setArrData_BasicInput(string[] arrvalue)
-        {
-            도매_누적가입자수 = CommonUtil.StringToIntVal(arrvalue[0]);
-            도매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[1]);
-            도매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[2]);
-            도매_월평균유통모델출고대수_LG = CommonUtil.StringToIntVal(arrvalue[3]);
-            도매_월평균유통모델출고대수_SS = CommonUtil.StringToIntVal(arrvalue[4]);
-            도매_거래선수_개통사무실 = CommonUtil.StringToIntVal(arrvalue[5]);
-            도매_거래선수_판매점 = CommonUtil.StringToIntVal(arrvalue[6]);
-            도매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[7]);
-            도매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[8]);
-
-            소매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[9]);
-            소매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[10]);
-            소매_거래선수_직영점 = CommonUtil.StringToIntVal(arrvalue[11]);
-            소매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[12]);
-            소매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[13]);
         }
 
         private String getFormatString(Int64 value)

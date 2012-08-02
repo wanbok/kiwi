@@ -426,10 +426,10 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(942, 458);
+            this.tabPage1.Size = new System.Drawing.Size(942, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
@@ -463,16 +463,20 @@
             this.txtInput28.TabIndex = 13;
             this.txtInput28.Text = "0";
             this.txtInput28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput28.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput28.TextChanged += new System.EventHandler(this.txtInput28_TextChanged);
+            this.txtInput28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput28.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput23
             // 
-            this.txtInput23.BackColor = System.Drawing.Color.Silver;
+            this.txtInput23.BackColor = System.Drawing.Color.White;
             this.txtInput23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput23.Enabled = false;
             this.txtInput23.ForeColor = System.Drawing.Color.Black;
             this.txtInput23.Location = new System.Drawing.Point(571, 391);
             this.txtInput23.Name = "txtInput23";
+            this.txtInput23.ReadOnly = true;
             this.txtInput23.Size = new System.Drawing.Size(146, 14);
             this.txtInput23.TabIndex = 43;
             this.txtInput23.Text = "0";
@@ -488,16 +492,20 @@
             this.txtInput18.TabIndex = 8;
             this.txtInput18.Text = "0";
             this.txtInput18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput18.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput18.TextChanged += new System.EventHandler(this.txtInput18_TextChanged);
+            this.txtInput18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput18.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput9
             // 
-            this.txtInput9.BackColor = System.Drawing.Color.Silver;
+            this.txtInput9.BackColor = System.Drawing.Color.White;
             this.txtInput9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput9.Enabled = false;
             this.txtInput9.ForeColor = System.Drawing.Color.Black;
             this.txtInput9.Location = new System.Drawing.Point(237, 391);
             this.txtInput9.Name = "txtInput9";
+            this.txtInput9.ReadOnly = true;
             this.txtInput9.Size = new System.Drawing.Size(146, 14);
             this.txtInput9.TabIndex = 42;
             this.txtInput9.Text = "0";
@@ -513,16 +521,20 @@
             this.txtInput27.TabIndex = 12;
             this.txtInput27.Text = "0";
             this.txtInput27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput27.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput27.TextChanged += new System.EventHandler(this.txtInput27_TextChanged);
+            this.txtInput27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput27.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput22
             // 
-            this.txtInput22.BackColor = System.Drawing.Color.Silver;
+            this.txtInput22.BackColor = System.Drawing.Color.White;
             this.txtInput22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput22.Enabled = false;
             this.txtInput22.ForeColor = System.Drawing.Color.Black;
             this.txtInput22.Location = new System.Drawing.Point(571, 361);
             this.txtInput22.Name = "txtInput22";
+            this.txtInput22.ReadOnly = true;
             this.txtInput22.Size = new System.Drawing.Size(146, 14);
             this.txtInput22.TabIndex = 41;
             this.txtInput22.Text = "0";
@@ -538,16 +550,20 @@
             this.txtInput17.TabIndex = 7;
             this.txtInput17.Text = "0";
             this.txtInput17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput17.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput17.TextChanged += new System.EventHandler(this.txtInput17_TextChanged);
+            this.txtInput17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput17.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput8
             // 
-            this.txtInput8.BackColor = System.Drawing.Color.Silver;
+            this.txtInput8.BackColor = System.Drawing.Color.White;
             this.txtInput8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput8.Enabled = false;
             this.txtInput8.ForeColor = System.Drawing.Color.Black;
             this.txtInput8.Location = new System.Drawing.Point(237, 361);
             this.txtInput8.Name = "txtInput8";
+            this.txtInput8.ReadOnly = true;
             this.txtInput8.Size = new System.Drawing.Size(146, 14);
             this.txtInput8.TabIndex = 40;
             this.txtInput8.Text = "0";
@@ -563,16 +579,20 @@
             this.txtInput16.TabIndex = 6;
             this.txtInput16.Text = "0";
             this.txtInput16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput16.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput16.TextChanged += new System.EventHandler(this.txtInput16_TextChanged);
+            this.txtInput16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput16.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput7
             // 
-            this.txtInput7.BackColor = System.Drawing.Color.Silver;
+            this.txtInput7.BackColor = System.Drawing.Color.White;
             this.txtInput7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput7.Enabled = false;
             this.txtInput7.ForeColor = System.Drawing.Color.Black;
             this.txtInput7.Location = new System.Drawing.Point(237, 316);
             this.txtInput7.Name = "txtInput7";
+            this.txtInput7.ReadOnly = true;
             this.txtInput7.Size = new System.Drawing.Size(146, 14);
             this.txtInput7.TabIndex = 32;
             this.txtInput7.Text = "0";
@@ -588,16 +608,20 @@
             this.txtInput26.TabIndex = 11;
             this.txtInput26.Text = "0";
             this.txtInput26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput26.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput26.TextChanged += new System.EventHandler(this.txtInput26_TextChanged);
+            this.txtInput26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput26.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput21
             // 
-            this.txtInput21.BackColor = System.Drawing.Color.Silver;
+            this.txtInput21.BackColor = System.Drawing.Color.White;
             this.txtInput21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput21.Enabled = false;
             this.txtInput21.ForeColor = System.Drawing.Color.Black;
             this.txtInput21.Location = new System.Drawing.Point(571, 291);
             this.txtInput21.Name = "txtInput21";
+            this.txtInput21.ReadOnly = true;
             this.txtInput21.Size = new System.Drawing.Size(146, 14);
             this.txtInput21.TabIndex = 31;
             this.txtInput21.Text = "0";
@@ -613,16 +637,20 @@
             this.txtInput15.TabIndex = 5;
             this.txtInput15.Text = "0";
             this.txtInput15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput15.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput15.TextChanged += new System.EventHandler(this.txtInput15_TextChanged);
+            this.txtInput15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput15.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput6
             // 
-            this.txtInput6.BackColor = System.Drawing.Color.Silver;
+            this.txtInput6.BackColor = System.Drawing.Color.White;
             this.txtInput6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput6.Enabled = false;
             this.txtInput6.ForeColor = System.Drawing.Color.Black;
             this.txtInput6.Location = new System.Drawing.Point(237, 266);
             this.txtInput6.Name = "txtInput6";
+            this.txtInput6.ReadOnly = true;
             this.txtInput6.Size = new System.Drawing.Size(146, 14);
             this.txtInput6.TabIndex = 30;
             this.txtInput6.Text = "0";
@@ -638,16 +666,20 @@
             this.txtInput14.TabIndex = 4;
             this.txtInput14.Text = "0";
             this.txtInput14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput14.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput14.TextChanged += new System.EventHandler(this.txtInput14_TextChanged);
+            this.txtInput14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput14.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput5
             // 
-            this.txtInput5.BackColor = System.Drawing.Color.Silver;
+            this.txtInput5.BackColor = System.Drawing.Color.White;
             this.txtInput5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput5.Enabled = false;
             this.txtInput5.ForeColor = System.Drawing.Color.Black;
             this.txtInput5.Location = new System.Drawing.Point(237, 226);
             this.txtInput5.Name = "txtInput5";
+            this.txtInput5.ReadOnly = true;
             this.txtInput5.Size = new System.Drawing.Size(146, 14);
             this.txtInput5.TabIndex = 29;
             this.txtInput5.Text = "0";
@@ -663,16 +695,20 @@
             this.txtInput13.TabIndex = 3;
             this.txtInput13.Text = "0";
             this.txtInput13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput13.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput13.TextChanged += new System.EventHandler(this.txtInput13_TextChanged);
+            this.txtInput13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput13.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput4
             // 
-            this.txtInput4.BackColor = System.Drawing.Color.Silver;
+            this.txtInput4.BackColor = System.Drawing.Color.White;
             this.txtInput4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput4.Enabled = false;
             this.txtInput4.ForeColor = System.Drawing.Color.Black;
             this.txtInput4.Location = new System.Drawing.Point(237, 196);
             this.txtInput4.Name = "txtInput4";
+            this.txtInput4.ReadOnly = true;
             this.txtInput4.Size = new System.Drawing.Size(146, 14);
             this.txtInput4.TabIndex = 28;
             this.txtInput4.Text = "0";
@@ -688,16 +724,20 @@
             this.txtInput25.TabIndex = 10;
             this.txtInput25.Text = "0";
             this.txtInput25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput25.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput25.TextChanged += new System.EventHandler(this.txtInput25_TextChanged);
+            this.txtInput25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput25.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput20
             // 
-            this.txtInput20.BackColor = System.Drawing.Color.Silver;
+            this.txtInput20.BackColor = System.Drawing.Color.White;
             this.txtInput20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput20.Enabled = false;
             this.txtInput20.ForeColor = System.Drawing.Color.Black;
             this.txtInput20.Location = new System.Drawing.Point(571, 156);
             this.txtInput20.Name = "txtInput20";
+            this.txtInput20.ReadOnly = true;
             this.txtInput20.Size = new System.Drawing.Size(146, 14);
             this.txtInput20.TabIndex = 27;
             this.txtInput20.Text = "0";
@@ -713,16 +753,20 @@
             this.txtInput12.TabIndex = 2;
             this.txtInput12.Text = "0";
             this.txtInput12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput12.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput12.TextChanged += new System.EventHandler(this.txtInput12_TextChanged);
+            this.txtInput12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput12.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput3
             // 
-            this.txtInput3.BackColor = System.Drawing.Color.Silver;
+            this.txtInput3.BackColor = System.Drawing.Color.White;
             this.txtInput3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput3.Enabled = false;
             this.txtInput3.ForeColor = System.Drawing.Color.Black;
             this.txtInput3.Location = new System.Drawing.Point(237, 156);
             this.txtInput3.Name = "txtInput3";
+            this.txtInput3.ReadOnly = true;
             this.txtInput3.Size = new System.Drawing.Size(146, 14);
             this.txtInput3.TabIndex = 26;
             this.txtInput3.Text = "0";
@@ -738,16 +782,20 @@
             this.txtInput24.TabIndex = 9;
             this.txtInput24.Text = "0";
             this.txtInput24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput24.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput24.TextChanged += new System.EventHandler(this.txtInput24_TextChanged);
+            this.txtInput24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput24.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput19
             // 
-            this.txtInput19.BackColor = System.Drawing.Color.Silver;
+            this.txtInput19.BackColor = System.Drawing.Color.White;
             this.txtInput19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput19.Enabled = false;
             this.txtInput19.ForeColor = System.Drawing.Color.Black;
             this.txtInput19.Location = new System.Drawing.Point(571, 126);
             this.txtInput19.Name = "txtInput19";
+            this.txtInput19.ReadOnly = true;
             this.txtInput19.Size = new System.Drawing.Size(146, 14);
             this.txtInput19.TabIndex = 25;
             this.txtInput19.Text = "0";
@@ -763,16 +811,20 @@
             this.txtInput11.TabIndex = 1;
             this.txtInput11.Text = "0";
             this.txtInput11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput11.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput11.TextChanged += new System.EventHandler(this.txtInput11_TextChanged);
+            this.txtInput11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput11.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput2
             // 
-            this.txtInput2.BackColor = System.Drawing.Color.Silver;
+            this.txtInput2.BackColor = System.Drawing.Color.White;
             this.txtInput2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput2.Enabled = false;
             this.txtInput2.ForeColor = System.Drawing.Color.Black;
             this.txtInput2.Location = new System.Drawing.Point(237, 126);
             this.txtInput2.Name = "txtInput2";
+            this.txtInput2.ReadOnly = true;
             this.txtInput2.Size = new System.Drawing.Size(146, 14);
             this.txtInput2.TabIndex = 11;
             this.txtInput2.Text = "0";
@@ -788,16 +840,20 @@
             this.txtInput10.TabIndex = 0;
             this.txtInput10.Text = "0";
             this.txtInput10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput10.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput10.TextChanged += new System.EventHandler(this.txtInput10_TextChanged);
+            this.txtInput10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtInput10.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtInput1
             // 
-            this.txtInput1.BackColor = System.Drawing.Color.Silver;
+            this.txtInput1.BackColor = System.Drawing.Color.White;
             this.txtInput1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput1.Enabled = false;
             this.txtInput1.ForeColor = System.Drawing.Color.Black;
             this.txtInput1.Location = new System.Drawing.Point(237, 86);
             this.txtInput1.Name = "txtInput1";
+            this.txtInput1.ReadOnly = true;
             this.txtInput1.Size = new System.Drawing.Size(146, 14);
             this.txtInput1.TabIndex = 11;
             this.txtInput1.Text = "0";
@@ -1355,9 +1411,9 @@
             this.tabPage5.Controls.Add(this.panel103);
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel107);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(942, 458);
+            this.tabPage5.Size = new System.Drawing.Size(942, 459);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1377,7 +1433,7 @@
             // 
             // txtDetail36
             // 
-            this.txtDetail36.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail36.BackColor = System.Drawing.Color.White;
             this.txtDetail36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail36.Enabled = false;
             this.txtDetail36.ForeColor = System.Drawing.Color.Black;
@@ -1404,7 +1460,7 @@
             // 
             // txtDetail27
             // 
-            this.txtDetail27.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail27.BackColor = System.Drawing.Color.White;
             this.txtDetail27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail27.Enabled = false;
             this.txtDetail27.ForeColor = System.Drawing.Color.Black;
@@ -1427,11 +1483,14 @@
             this.txtDetail56.TabIndex = 19;
             this.txtDetail56.Text = "0";
             this.txtDetail56.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail56.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtDetail56.TextChanged += new System.EventHandler(this.txtDetail56_TextChanged);
+            this.txtDetail56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail56.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail20
             // 
-            this.txtDetail20.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail20.BackColor = System.Drawing.Color.White;
             this.txtDetail20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail20.Enabled = false;
             this.txtDetail20.ForeColor = System.Drawing.Color.Black;
@@ -1457,7 +1516,7 @@
             // 
             // txtDetail17
             // 
-            this.txtDetail17.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail17.BackColor = System.Drawing.Color.White;
             this.txtDetail17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail17.Enabled = false;
             this.txtDetail17.ForeColor = System.Drawing.Color.Black;
@@ -1483,7 +1542,7 @@
             // 
             // txtDetail6
             // 
-            this.txtDetail6.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail6.BackColor = System.Drawing.Color.White;
             this.txtDetail6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail6.Enabled = false;
             this.txtDetail6.ForeColor = System.Drawing.Color.Black;
@@ -1769,10 +1828,13 @@
             this.txtDetail70.TabIndex = 33;
             this.txtDetail70.Text = "0";
             this.txtDetail70.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail70.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail70.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail34
             // 
-            this.txtDetail34.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail34.BackColor = System.Drawing.Color.White;
             this.txtDetail34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail34.Enabled = false;
             this.txtDetail34.ForeColor = System.Drawing.Color.Black;
@@ -1795,10 +1857,13 @@
             this.txtDetail69.TabIndex = 32;
             this.txtDetail69.Text = "0";
             this.txtDetail69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail69.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail69.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail69.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail33
             // 
-            this.txtDetail33.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail33.BackColor = System.Drawing.Color.White;
             this.txtDetail33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail33.Enabled = false;
             this.txtDetail33.ForeColor = System.Drawing.Color.Black;
@@ -1821,10 +1886,13 @@
             this.txtDetail68.TabIndex = 31;
             this.txtDetail68.Text = "0";
             this.txtDetail68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail68.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail68.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail32
             // 
-            this.txtDetail32.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail32.BackColor = System.Drawing.Color.White;
             this.txtDetail32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail32.Enabled = false;
             this.txtDetail32.ForeColor = System.Drawing.Color.Black;
@@ -1847,10 +1915,13 @@
             this.txtDetail67.TabIndex = 30;
             this.txtDetail67.Text = "0";
             this.txtDetail67.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail67.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail67.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail31
             // 
-            this.txtDetail31.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail31.BackColor = System.Drawing.Color.White;
             this.txtDetail31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail31.Enabled = false;
             this.txtDetail31.ForeColor = System.Drawing.Color.Black;
@@ -1873,10 +1944,13 @@
             this.txtDetail71.TabIndex = 34;
             this.txtDetail71.Text = "0";
             this.txtDetail71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail71.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail71.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail35
             // 
-            this.txtDetail35.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail35.BackColor = System.Drawing.Color.White;
             this.txtDetail35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail35.Enabled = false;
             this.txtDetail35.ForeColor = System.Drawing.Color.Black;
@@ -1899,10 +1973,13 @@
             this.txtDetail66.TabIndex = 29;
             this.txtDetail66.Text = "0";
             this.txtDetail66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail66.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail66.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail30
             // 
-            this.txtDetail30.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail30.BackColor = System.Drawing.Color.White;
             this.txtDetail30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail30.Enabled = false;
             this.txtDetail30.ForeColor = System.Drawing.Color.Black;
@@ -1925,10 +2002,13 @@
             this.txtDetail65.TabIndex = 28;
             this.txtDetail65.Text = "0";
             this.txtDetail65.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail65.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail65.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail29
             // 
-            this.txtDetail29.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail29.BackColor = System.Drawing.Color.White;
             this.txtDetail29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail29.Enabled = false;
             this.txtDetail29.ForeColor = System.Drawing.Color.Black;
@@ -1951,10 +2031,13 @@
             this.txtDetail64.TabIndex = 27;
             this.txtDetail64.Text = "0";
             this.txtDetail64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail64.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail64.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail28
             // 
-            this.txtDetail28.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail28.BackColor = System.Drawing.Color.White;
             this.txtDetail28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail28.Enabled = false;
             this.txtDetail28.ForeColor = System.Drawing.Color.Black;
@@ -1977,10 +2060,13 @@
             this.txtDetail62.TabIndex = 25;
             this.txtDetail62.Text = "0";
             this.txtDetail62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail62.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail62.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail26
             // 
-            this.txtDetail26.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail26.BackColor = System.Drawing.Color.White;
             this.txtDetail26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail26.Enabled = false;
             this.txtDetail26.ForeColor = System.Drawing.Color.Black;
@@ -2003,10 +2089,13 @@
             this.txtDetail61.TabIndex = 24;
             this.txtDetail61.Text = "0";
             this.txtDetail61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail61.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail61.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail25
             // 
-            this.txtDetail25.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail25.BackColor = System.Drawing.Color.White;
             this.txtDetail25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail25.Enabled = false;
             this.txtDetail25.ForeColor = System.Drawing.Color.Black;
@@ -2030,10 +2119,13 @@
             this.txtDetail60.TabIndex = 23;
             this.txtDetail60.Text = "0";
             this.txtDetail60.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail60.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail60.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail24
             // 
-            this.txtDetail24.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail24.BackColor = System.Drawing.Color.White;
             this.txtDetail24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail24.Enabled = false;
             this.txtDetail24.ForeColor = System.Drawing.Color.Black;
@@ -2056,10 +2148,13 @@
             this.txtDetail59.TabIndex = 22;
             this.txtDetail59.Text = "0";
             this.txtDetail59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail59.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail59.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail59.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail23
             // 
-            this.txtDetail23.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail23.BackColor = System.Drawing.Color.White;
             this.txtDetail23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail23.Enabled = false;
             this.txtDetail23.ForeColor = System.Drawing.Color.Black;
@@ -2082,10 +2177,13 @@
             this.txtDetail58.TabIndex = 21;
             this.txtDetail58.Text = "0";
             this.txtDetail58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail58.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail58.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail22
             // 
-            this.txtDetail22.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail22.BackColor = System.Drawing.Color.White;
             this.txtDetail22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail22.Enabled = false;
             this.txtDetail22.ForeColor = System.Drawing.Color.Black;
@@ -2108,10 +2206,13 @@
             this.txtDetail57.TabIndex = 20;
             this.txtDetail57.Text = "0";
             this.txtDetail57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail57.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail57.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail21
             // 
-            this.txtDetail21.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail21.BackColor = System.Drawing.Color.White;
             this.txtDetail21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail21.Enabled = false;
             this.txtDetail21.ForeColor = System.Drawing.Color.Black;
@@ -2134,10 +2235,13 @@
             this.txtDetail55.TabIndex = 18;
             this.txtDetail55.Text = "0";
             this.txtDetail55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail55.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail55.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail19
             // 
-            this.txtDetail19.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail19.BackColor = System.Drawing.Color.White;
             this.txtDetail19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail19.Enabled = false;
             this.txtDetail19.ForeColor = System.Drawing.Color.Black;
@@ -2160,10 +2264,13 @@
             this.txtDetail54.TabIndex = 17;
             this.txtDetail54.Text = "0";
             this.txtDetail54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail54.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail54.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail18
             // 
-            this.txtDetail18.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail18.BackColor = System.Drawing.Color.White;
             this.txtDetail18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail18.Enabled = false;
             this.txtDetail18.ForeColor = System.Drawing.Color.Black;
@@ -2185,10 +2292,13 @@
             this.txtDetail52.TabIndex = 15;
             this.txtDetail52.Text = "0";
             this.txtDetail52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail52.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail52.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail16
             // 
-            this.txtDetail16.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail16.BackColor = System.Drawing.Color.White;
             this.txtDetail16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail16.Enabled = false;
             this.txtDetail16.ForeColor = System.Drawing.Color.Black;
@@ -2210,10 +2320,13 @@
             this.txtDetail51.TabIndex = 14;
             this.txtDetail51.Text = "0";
             this.txtDetail51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail51.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail51.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail15
             // 
-            this.txtDetail15.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail15.BackColor = System.Drawing.Color.White;
             this.txtDetail15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail15.Enabled = false;
             this.txtDetail15.ForeColor = System.Drawing.Color.Black;
@@ -2235,10 +2348,13 @@
             this.txtDetail46.TabIndex = 9;
             this.txtDetail46.Text = "0";
             this.txtDetail46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail46.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail46.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail10
             // 
-            this.txtDetail10.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail10.BackColor = System.Drawing.Color.White;
             this.txtDetail10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail10.Enabled = false;
             this.txtDetail10.ForeColor = System.Drawing.Color.Black;
@@ -2260,10 +2376,13 @@
             this.txtDetail45.TabIndex = 8;
             this.txtDetail45.Text = "0";
             this.txtDetail45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail45.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail45.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail9
             // 
-            this.txtDetail9.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail9.BackColor = System.Drawing.Color.White;
             this.txtDetail9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail9.Enabled = false;
             this.txtDetail9.ForeColor = System.Drawing.Color.Black;
@@ -2285,10 +2404,13 @@
             this.txtDetail44.TabIndex = 7;
             this.txtDetail44.Text = "0";
             this.txtDetail44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail44.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail44.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail8
             // 
-            this.txtDetail8.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail8.BackColor = System.Drawing.Color.White;
             this.txtDetail8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail8.Enabled = false;
             this.txtDetail8.ForeColor = System.Drawing.Color.Black;
@@ -2310,10 +2432,13 @@
             this.txtDetail47.TabIndex = 10;
             this.txtDetail47.Text = "0";
             this.txtDetail47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail47.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail47.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail11
             // 
-            this.txtDetail11.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail11.BackColor = System.Drawing.Color.White;
             this.txtDetail11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail11.Enabled = false;
             this.txtDetail11.ForeColor = System.Drawing.Color.Black;
@@ -2335,10 +2460,13 @@
             this.txtDetail48.TabIndex = 11;
             this.txtDetail48.Text = "0";
             this.txtDetail48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail48.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail48.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail12
             // 
-            this.txtDetail12.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail12.BackColor = System.Drawing.Color.White;
             this.txtDetail12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail12.Enabled = false;
             this.txtDetail12.ForeColor = System.Drawing.Color.Black;
@@ -2360,10 +2488,13 @@
             this.txtDetail49.TabIndex = 12;
             this.txtDetail49.Text = "0";
             this.txtDetail49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail49.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail49.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail49.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail13
             // 
-            this.txtDetail13.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail13.BackColor = System.Drawing.Color.White;
             this.txtDetail13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail13.Enabled = false;
             this.txtDetail13.ForeColor = System.Drawing.Color.Black;
@@ -2385,10 +2516,13 @@
             this.txtDetail50.TabIndex = 13;
             this.txtDetail50.Text = "0";
             this.txtDetail50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail50.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail50.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail14
             // 
-            this.txtDetail14.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail14.BackColor = System.Drawing.Color.White;
             this.txtDetail14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail14.Enabled = false;
             this.txtDetail14.ForeColor = System.Drawing.Color.Black;
@@ -2410,10 +2544,13 @@
             this.txtDetail43.TabIndex = 6;
             this.txtDetail43.Text = "0";
             this.txtDetail43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail43.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail43.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail7
             // 
-            this.txtDetail7.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail7.BackColor = System.Drawing.Color.White;
             this.txtDetail7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail7.Enabled = false;
             this.txtDetail7.ForeColor = System.Drawing.Color.Black;
@@ -2434,10 +2571,13 @@
             this.txtDetail38.TabIndex = 1;
             this.txtDetail38.Text = "0";
             this.txtDetail38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail38.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail38.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail2
             // 
-            this.txtDetail2.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail2.BackColor = System.Drawing.Color.White;
             this.txtDetail2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail2.Enabled = false;
             this.txtDetail2.Location = new System.Drawing.Point(465, 77);
@@ -2458,10 +2598,13 @@
             this.txtDetail41.TabIndex = 4;
             this.txtDetail41.Text = "0";
             this.txtDetail41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail41.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail41.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail5
             // 
-            this.txtDetail5.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail5.BackColor = System.Drawing.Color.White;
             this.txtDetail5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail5.Enabled = false;
             this.txtDetail5.ForeColor = System.Drawing.Color.Black;
@@ -2483,10 +2626,13 @@
             this.txtDetail40.TabIndex = 3;
             this.txtDetail40.Text = "0";
             this.txtDetail40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail40.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail40.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail4
             // 
-            this.txtDetail4.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail4.BackColor = System.Drawing.Color.White;
             this.txtDetail4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail4.Enabled = false;
             this.txtDetail4.ForeColor = System.Drawing.Color.Black;
@@ -2507,10 +2653,13 @@
             this.txtDetail39.TabIndex = 2;
             this.txtDetail39.Text = "0";
             this.txtDetail39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail39.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail39.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail39.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail3
             // 
-            this.txtDetail3.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail3.BackColor = System.Drawing.Color.White;
             this.txtDetail3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail3.Enabled = false;
             this.txtDetail3.Location = new System.Drawing.Point(465, 107);
@@ -2531,10 +2680,13 @@
             this.txtDetail37.TabIndex = 0;
             this.txtDetail37.Text = "0";
             this.txtDetail37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetail37.Click += new System.EventHandler(this.txtInput1_Click);
+            this.txtDetail37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDetail37_KeyPress);
+            this.txtDetail37.Leave += new System.EventHandler(this.txtInput_focusOut);
             // 
             // txtDetail1
             // 
-            this.txtDetail1.BackColor = System.Drawing.Color.Silver;
+            this.txtDetail1.BackColor = System.Drawing.Color.White;
             this.txtDetail1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail1.Enabled = false;
             this.txtDetail1.Location = new System.Drawing.Point(465, 47);

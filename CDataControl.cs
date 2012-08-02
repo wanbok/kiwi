@@ -45,9 +45,6 @@ namespace KIWI
         public static CResultData g_FileResultFuture = new CResultData();           //미래수익 단위금액
 
 
-
-
-
         //보고서용 데이터
         public static CReportData g_ReportData = new CReportData();         // 리포트에 추가적으로 들어갈 자료(이름, 코멘트 등)
     }

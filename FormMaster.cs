@@ -20,11 +20,6 @@ namespace KIWI
             InitializeComponent();
             FormUserInput frm = new FormUserInput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -59,7 +54,12 @@ namespace KIWI
                     // Create a PictureBox.
                     try
                     {
-                        CommonUtil.openAsName = file;
+                        CommonUtil.ReadExcelFileToData(file);
+
+                        // CDataControl의 파일정보변수(g_File*)에 담겨있는 데이터를 일반정보변수에 딥카피
+                        // 엑셀내용중 시트 1의 내용만 옮겨짐
+                        CommonUtil.deepCopyBasicInput(CDataControl.g_FileBasicInput, CDataControl.g_BasicInput);
+                        CommonUtil.deepCopyBusinessData(CDataControl.g_FileDetailInput, CDataControl.g_DetailInput);
                     }
                     catch (Exception ex)
                     {
@@ -82,38 +82,17 @@ namespace KIWI
         {
             FormUserInput frm = new FormUserInput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
-        /// 출력
+        /// 결과
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.panel1.Controls.Count; i++)
-            {
-                if (this.panel1.Controls[i] is Form)
-                {
-                    if (this.panel1.Controls[i].Name == "FormUserInput")
-                    {
-                        (this.panel1.Controls[i] as FormUserInput).SaveAsInput();
-                    }
-                }
-            }
-
             FormUserOutput frm = new FormUserOutput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -125,11 +104,6 @@ namespace KIWI
         {
             FormUserAnalysis frm = new FormUserAnalysis();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
         /// <summary>
@@ -141,13 +115,13 @@ namespace KIWI
         {
             FormUserSimulateOutput frm = new FormUserSimulateOutput();
             panelSet(frm);
-            //if (CommonUtil.OpenFileNameList1.Count < 1)
-            if (CommonUtil.openAsName == null)
-            {
-                CommonUtil.clearTextBox(this.panel1);
-            }
         }
 
+        /// <summary>
+        /// 업데이트
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
             // 업데이트
@@ -178,28 +152,6 @@ namespace KIWI
             }
         }
 
-        private void panelSet(Form form)
-        {
-            form.TopLevel = false;
-            if (panel1.Controls.Count > 0)
-            {
-                if (panel1.Controls[0] is Form)
-                {
-                    if ((panel1.Controls[0] as Form).Name == "FormUserInput" ||
-                        (panel1.Controls[0] as Form).Name == "FormUserAnalysis" ||
-                        (panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
-                    {
-
-
-                    }
-                    (panel1.Controls[0] as Form).Close();
-                }
-            }
-
-            panel1.Controls.Add(form);
-            form.Show();
-        }
-
         /// <summary>
         /// 저장
         /// </summary>
@@ -207,11 +159,11 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            if (CommonUtil.openAsName == null)
-            {
-                MessageBox.Show("먼저 파일을 열어주세요.");
-                return;
-            }
+            //if (CommonUtil.openAsName == null)
+            //{
+            //    MessageBox.Show("먼저 파일을 열어주세요.");
+            //    return;
+            //}
             if (this.panel1.Controls.Count > 0)
             {
                 if (this.panel1.Controls[0] is Form)
@@ -250,7 +202,7 @@ namespace KIWI
                             //excel.Workbook _Workbook = CommonUtil.GetExcel_WorkBook(saveFileDialog1.FileName);
                             //excel.Worksheet _WorkSheet1 = _Workbook.Sheets[1] as excel.Worksheet;
                             //excel.Worksheet _WorkSheet2 = _Workbook.Sheets[2] as excel.Worksheet;
-                            (this.panel1.Controls[0] as FormUserInput).SaveAsInput();
+                            (this.panel1.Controls[0] as FormUserInput).saveAsInput();
                             CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
                         }
                     }
@@ -268,14 +220,7 @@ namespace KIWI
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            if (CommonUtil.openAsName != null)
-            {
-                new Printer();
-            }
-            else
-            {
-                MessageBox.Show("프린트할 내용이 없습니다.");
-            }
+            new Printer();
         }
 
         private void toolStripButton9_Click(object sender, EventArgs e)
@@ -284,10 +229,47 @@ namespace KIWI
             panelSet(frm);
         }
 
+        private void outOfFormUserInput_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < this.panel1.Controls.Count; i++)
+            {
+                if (this.panel1.Controls[i] is Form)
+                {
+                    if (this.panel1.Controls[i].Name == "FormUserInput")
+                    {
+                        (this.panel1.Controls[i] as FormUserInput).saveAsInput();
+                    }
+                }
+            }
+        }
+
+        private void panelSet(Form form)
+        {
+            form.TopLevel = false;
+            if (panel1.Controls.Count > 0)
+            {
+                if (panel1.Controls[0] is Form)
+                {
+                    if ((panel1.Controls[0] as Form).Name == "FormUserInput" ||
+                        (panel1.Controls[0] as Form).Name == "FormUserAnalysis" ||
+                        (panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
+                    {
+
+
+                    }
+                    (panel1.Controls[0] as Form).Close();
+                }
+            }
+
+            panel1.Controls.Add(form);
+            form.Show();
+        }
+
         private void FormMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommonUtil.GetExcel_WorkBook_CLOSE();
         }
+
 
 
     }
