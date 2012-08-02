@@ -162,7 +162,7 @@ namespace KIWI
         private void setAllOutFormat(bool isFile)
         {
             List<Int64[]> 전체 = new List<Int64[]>();
-
+            
             if (isFile)
             {
                 setTexList(vtxtOutTotal, CDataControl.g_FileResultBusinessTotal.getArrayOutput전체());
@@ -195,6 +195,9 @@ namespace KIWI
             OpenChart(chart1, 전체);
             OpenChart(chart2, 전체);
             OpenChart(chart3, 전체);
+            OpenChart(chart4, 전체);
+            OpenChart(chart5, 전체);
+            OpenChart(chart6, 전체);
         }
 
         private void setTexList(TextBox[] _txtList, long[] arr)
@@ -292,11 +295,11 @@ namespace KIWI
             }
             else if (chart.Name == "chart4")
             {
-                xValues = new string[6] { "누적가입자 수수료", "CS관리수수료", "월단위 업무취급 수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)", "직영매장 판매수익" };
+                xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세","기타관리비용" };
 
-                yValues = new long[6] { lists[0].ToArray()[0], lists[0].ToArray()[1], lists[0].ToArray()[2], lists[0].ToArray()[3], lists[0].ToArray()[4], lists[0].ToArray()[5] };
-                yValues2 = new long[6] { lists[1].ToArray()[0], lists[1].ToArray()[1], lists[1].ToArray()[2], lists[1].ToArray()[3], lists[1].ToArray()[4], lists[1].ToArray()[5] };
-                yValues3 = new long[6] { lists[2].ToArray()[0], lists[2].ToArray()[1], lists[2].ToArray()[2], lists[2].ToArray()[3], lists[2].ToArray()[4], lists[2].ToArray()[5] };
+                yValues = new long[7] { lists[0].ToArray()[7], lists[0].ToArray()[8], lists[0].ToArray()[9], lists[0].ToArray()[10], lists[0].ToArray()[11], lists[0].ToArray()[12], lists[0].ToArray()[13] };
+                yValues2 = new long[7] { lists[1].ToArray()[7], lists[1].ToArray()[8], lists[1].ToArray()[9], lists[1].ToArray()[10], lists[1].ToArray()[11], lists[1].ToArray()[12], lists[1].ToArray()[13] };
+                yValues3 = new long[7] { lists[2].ToArray()[7], lists[2].ToArray()[8], lists[2].ToArray()[9], lists[2].ToArray()[10], lists[2].ToArray()[11], lists[2].ToArray()[12], lists[2].ToArray()[13] };
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
@@ -304,11 +307,11 @@ namespace KIWI
             }
             else if (chart.Name == "chart5")
             {
-                xValues = new string[4] { "누적가입자 수수료", "CS관리수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)" };
+                xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
-                yValues = new long[4] { lists[0].ToArray()[16], lists[0].ToArray()[17], lists[0].ToArray()[18], lists[0].ToArray()[19] };
-                yValues2 = new long[4] { lists[1].ToArray()[16], lists[1].ToArray()[17], lists[1].ToArray()[18], lists[1].ToArray()[19] };
-                yValues3 = new long[4] { lists[2].ToArray()[16], lists[2].ToArray()[17], lists[2].ToArray()[18], lists[2].ToArray()[19] };
+                yValues = new long[7] { lists[0].ToArray()[21], lists[0].ToArray()[22], lists[0].ToArray()[23], lists[0].ToArray()[24], lists[0].ToArray()[25], lists[0].ToArray()[26], lists[0].ToArray()[27] };
+                yValues2 = new long[7] { lists[1].ToArray()[21], lists[1].ToArray()[22], lists[1].ToArray()[23], lists[1].ToArray()[24], lists[1].ToArray()[25], lists[1].ToArray()[26], lists[1].ToArray()[27] };
+                yValues3 = new long[7] { lists[2].ToArray()[21], lists[2].ToArray()[22], lists[2].ToArray()[23], lists[2].ToArray()[24], lists[2].ToArray()[25], lists[2].ToArray()[26], lists[2].ToArray()[27] };
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
@@ -316,11 +319,11 @@ namespace KIWI
             }
             else if (chart.Name == "chart6")
             {
-                xValues = new string[2] { "월단위 업무취급 수수료", "직영매장 판매수익" };
+                xValues = new string[6] { "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
-                yValues = new long[2] { lists[0].ToArray()[30], lists[0].ToArray()[31] };
-                yValues2 = new long[2] { lists[1].ToArray()[30], lists[1].ToArray()[31] };
-                yValues3 = new long[2] { lists[2].ToArray()[30], lists[2].ToArray()[31] };
+                yValues = new long[6] { lists[0].ToArray()[33], lists[0].ToArray()[34], lists[0].ToArray()[35], lists[0].ToArray()[36], lists[0].ToArray()[37], lists[0].ToArray()[38]};
+                yValues2 = new long[6] { lists[1].ToArray()[33], lists[1].ToArray()[34], lists[1].ToArray()[35], lists[1].ToArray()[36], lists[1].ToArray()[37], lists[1].ToArray()[38]};
+                yValues3 = new long[6] { lists[2].ToArray()[33], lists[2].ToArray()[34], lists[2].ToArray()[35], lists[2].ToArray()[36], lists[2].ToArray()[37], lists[2].ToArray()[38]};
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
