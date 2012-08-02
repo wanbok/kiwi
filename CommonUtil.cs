@@ -488,6 +488,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void ReadExcelFileToDataResultStore(excel.Worksheet _WorkSheet)
         {
+            //데이터 저장
             CDataControl.g_FileResultStoreTotal.전체_수익_가입자수수료 = StringToIntVal(_WorkSheet.get_Range("I7", Type.Missing).Value2);
             CDataControl.g_FileResultStoreTotal.전체_수익_CS관리수수료 = StringToIntVal(_WorkSheet.get_Range("I8", Type.Missing).Value2);
             CDataControl.g_FileResultStoreTotal.전체_수익_업무취급수수료 = StringToIntVal(_WorkSheet.get_Range("I9", Type.Missing).Value2);
