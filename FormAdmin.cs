@@ -71,54 +71,6 @@ namespace KIWI
             refreshList();
         }
 
-
-
-        //기존 업계평균
-        private void getBeforeIndustryAverage()
-        {
-
-        }
-        private void setBeforeIndustryAverage()
-        {
-            for (int i = 0; i < 31; i++)
-                txtOut[i].Text = i.ToString();
-        }
-
-        //업계평균
-        private void getIndustryAverage()
-        {
-
-        }
-        private void setIndustryAverage()
-        {
-            for (int i = 0; i < 31; i++)
-                txtIAOut[i].Text = i.ToString();
-        }
-
-        //보정계수
-        private void getCorrectionFactor()
-        {
-
-        }
-        private void setCorrectionFactor()
-        {
-            for (int i = 0; i < 31; i++)
-                txtInput[i].Text = "";
-        }
-
-        //보정계수 평균
-        private void getCorrectionFactorIndustryAverage()
-        {
-
-        }
-
-        private void setCorrectionFactorIndustryAverage()
-        {
-            for (int i = 0; i < 31; i++)
-                txtAOut[i].Text = (Convert.ToInt32(txtIAOut[i].Text) + Convert.ToInt32(txtInput[i].Text) / 2).ToString();
-        }
-
-
         //업계평균과 보정계수의 평균을 구하고 보정계수 평균에 적용. 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -211,84 +163,134 @@ namespace KIWI
 
                 if (선택여부 == "N") continue;
                 int k = 0;
-                if (mBI.get도매_월평균판매대수_소계() == 0)
+
+                nIAOut[k++] += mDI.get도매_수익_월평균관리수수료() / mBI.get누적가입자수_합계();
+                nIAOut[k++] += mDI.get도매_수익_CS관리수수료() / mBI.get누적가입자수_합계();
+
+                Int64 사업자모델매입추가수익단위금액 = 0;
+                Int64 유통모델매입추가수익현금단위금액 = 0;
+                Int64 유통모델매입추가수익볼륨단위금액 = 0;
+                try { 사업자모델매입추가수익단위금액 = mBI.get월평균판매대수_소계_합계() > 2000 ? Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.01) : Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.005) ; }
+                catch (Exception e) { }
+                finally { nIAOut[k++] += 사업자모델매입추가수익단위금액; }
+
+                try { 유통모델매입추가수익현금단위금액 = Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.006 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.008) / mBI.get월평균유통모델출고대수_소계_합계()); }
+                catch (Exception e) { }
+                finally { nIAOut[k++] += 유통모델매입추가수익현금단위금액; }
+
+                try { 유통모델매입추가수익볼륨단위금액 = mBI.get월평균판매대수_소계_합계() > 2000 ? 
+                    Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.022 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.03) / mBI.get월평균유통모델출고대수_소계_합계()):
+                    Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.01 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.015) / mBI.get월평균유통모델출고대수_소계_합계()); }
+                catch (Exception e) { }
+                finally { nIAOut[k++] += 유통모델매입추가수익볼륨단위금액; }
+
+                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규() / mBI.get도매_월평균판매대수_신규();
+                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변() / mBI.get도매_월평균판매대수_기변();
+                nIAOut[k++] += mDI.get도매_비용_직원급여_간부급_총액(1); // 단위금액
+                nIAOut[k++] += mDI.get도매_비용_직원급여_평사원_총액(1); // 단위금액
+                nIAOut[k++] += mDI.get도매_비용_지급임차료() / mBI.get도매_거래선수_개통사무실();
+                nIAOut[k++] += mDI.get도매_비용_운반비() / mBI.get도매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get도매_비용_차량유지비() / mBI.get도매_직원수_소계();
+                nIAOut[k++] += mDI.get도매_비용_지급수수료() / mBI.get도매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get도매_비용_건물관리비() / mBI.get도매_거래선수_개통사무실();
+                
+                nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료() / mBI.get월평균판매대수_소계_합계();
+                nIAOut[k++] += mDI.get소매_수익_직영매장판매수익() / mBI.get소매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get소매_비용_직원급여_간부급_총액(1); // 단위금액
+                nIAOut[k++] += mDI.get소매_비용_직원급여_평사원_총액(1); // 단위금액
+                nIAOut[k++] += mDI.get소매_비용_지급임차료() / mBI.get소매_거래선수_소계();
+                nIAOut[k++] += mDI.get소매_비용_지급수수료() / mBI.get소매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get소매_비용_판매촉진비() / mBI.get소매_월평균판매대수_소계();
+                nIAOut[k++] += mDI.get소매_비용_건물관리비() / mBI.get소매_거래선수_소계();
+
+                nIAOut[k++] += mDI.get도소매_비용_복리후생비() / mBI.get직원수_소계_합계();
+                nIAOut[k++] += mDI.get도소매_비용_통신비() / mBI.get직원수_소계_합계();
+                nIAOut[k++] += mDI.get도소매_비용_공과금() / mBI.get직원수_소계_합계();
+                nIAOut[k++] += mDI.get도소매_비용_소모품비() / mBI.get월평균판매대수_소계_합계();
+                nIAOut[k++] += mDI.get도소매_비용_이자비용() / mBI.get월평균판매대수_소계_합계();
+                // 부가세
+                /*  (
+                 *      (
+                 *          (
+                 *              월평균관리수수료+
+                 *              (
+                 *                  (ASP전체계-리베이트)*소매월평균판매대수
+                 *              )+소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
+                 *              (
+                 *                  (리베이트-리베이트)*전체월평균판매대수
+                 *              )-(전체월평균판매대수*ASP전체계)
+                 *          )*10%
+                 *      )
+                 *  )/전체월평균판매대수
+                 */
+                //nIAOut[k++] += mDI.get도소매_비용_부가세() / mBI.get월평균판매대수_소계_합계();
+                Int64 int64asp전체계 = 0;
+                Int64 int64리베이트 = 0;
+                Int64 부가세 = 0;
+                try
                 {
-                    nIAOut[k++] += mDI.get도매_수익_월평균관리수수료();
-                    nIAOut[k++] += mDI.get도매_수익_CS관리수수료();
-                    nIAOut[k++] += mDI.get도매_수익_사업자모델매입관련추가수익();
-                    nIAOut[k++] += mDI.get도매_수익_유통모델매입관련추가수익_현금DC();
-                    nIAOut[k++] += mDI.get도매_수익_유통모델매입관련추가수익_VolumeDC();
-                    nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규();
-                    nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변();
-                    nIAOut[k++] += mDI.get도매_비용_직원급여_간부급_총액(mBI.get도매_직원수_간부급());
-                    nIAOut[k++] += mDI.get도매_비용_직원급여_평사원_총액(mBI.get도매_직원수_평사원());
-                    nIAOut[k++] += mDI.get도매_비용_지급임차료();
-                    nIAOut[k++] += mDI.get도매_비용_운반비();
-                    nIAOut[k++] += mDI.get도매_비용_차량유지비();
-                    nIAOut[k++] += mDI.get도매_비용_지급수수료();
-                    nIAOut[k++] += mDI.get도매_비용_건물관리비();
+                    int64asp전체계 = Convert.ToInt64(ASP_전체계.Text);
+                    int64리베이트 = Convert.ToInt64(리베이트.Text);
+                    부가세 = Convert.ToInt64(
+                        (
+                            (
+                                mDI.get도매_수익_월평균관리수수료() +
+                                (
+                                    (int64asp전체계 - int64리베이트) * mBI.get소매_월평균판매대수_소계()
+                                ) + mDI.get소매_수익_월평균업무취급수수료() + mDI.get소매_수익_직영매장판매수익() + int64리베이트 * mBI.get도매_월평균판매대수_소계() +
+                                (
+                                    (int64asp전체계 - int64리베이트) * mBI.get월평균판매대수_소계_합계()
+                                ) -
+                                (
+                                    mBI.get월평균판매대수_소계_합계() * int64asp전체계
+                                )
+                            ) * 0.1
+                        ) / mBI.get월평균판매대수_소계_합계());
                 }
-                else
+                catch (Exception e) { 부가세 = 0; }
+                finally { nIAOut[k++] += 부가세; }
+
+                // 법인세
+                /*  (
+                 *      (
+                 *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
+                 *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)-
+                 *          (
+                 *              (
+                 *                  월평균관리수수료+
+                 *                  (
+                 *                      (ASP전체계-리베이트)*소매월평균판매대수
+                 *                  )+소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
+                 *                  (
+                 *                      (ASP전체계-리베이트)*전체월평균판매대수
+                 *                  )-(전체월평균판매대수*ASP전체계)
+                 *              )*10%
+                 *          )
+                 *      )*22%
+                 *  )/전체월평균판매대수
+                 *  
+                 * 즉, 다음과 같이 변형가능
+                 *  (
+                 *      (
+                 *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
+                 *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)
+                 *      )*22%
+                 *  )/전체월평균판매대수 - 부가세*22%
+                 */
+
+                Int64 수익합계 = 0;
+                Int64 비용합계 = 0;
+                Int64 법인세 = 0;
+                try
                 {
-                    nIAOut[k++] += mDI.get도매_수익_월평균관리수수료() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_수익_CS관리수수료() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_수익_사업자모델매입관련추가수익() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_수익_유통모델매입관련추가수익_현금DC() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_수익_유통모델매입관련추가수익_VolumeDC() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_직원급여_간부급_총액(mBI.get도매_직원수_간부급()) / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_직원급여_평사원_총액(mBI.get도매_직원수_평사원()) / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_지급임차료() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_운반비() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_차량유지비() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_지급수수료() / mBI.get도매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get도매_비용_건물관리비() / mBI.get도매_월평균판매대수_소계();
+                    수익합계 = mDI.get도매_수익_월평균관리수수료() + 사업자모델매입추가수익단위금액 * (mBI.get월평균판매대수_소계_합계() - mBI.get월평균유통모델출고대수_소계_합계()) + 유통모델매입추가수익현금단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + 유통모델매입추가수익볼륨단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + mDI.get소매_수익_월평균업무취급수수료() + mDI.get소매_수익_직영매장판매수익();
+                    비용합계 = mDI.get도매_비용_대리점투자금액_기변()+mDI.get도매_비용_대리점투자금액_신규()+mDI.get도매_비용_직원급여_간부급_총액(mBI.get도매_직원수_간부급()) + mDI.get도매_비용_직원급여_평사원_총액(mBI.get도매_직원수_평사원())+mDI.get도소매_비용_복리후생비()/*소매포함*/+mDI.get도소매_비용_통신비()/*소매포함*/+mDI.get도소매_비용_공과금()/*소매포함*/+mDI.get도매_비용_지급임차료()+mDI.get도매_비용_운반비()+mDI.get도소매_비용_소모품비()+mDI.get도매_비용_지급수수료()+mDI.get도매_비용_판매촉진비()+mDI.get도매_비용_건물관리비()+mDI.get도소매_비용_이자비용()+mDI.get도매_비용_차량유지비()+mDI.get도소매_비용_기타()+mDI.get소매_비용_직원급여_간부급_총액(mBI.get소매_직원수_간부급())+mDI.get소매_비용_직원급여_평사원_총액(mBI.get소매_직원수_평사원())+mDI.get소매_비용_지급임차료()+mDI.get소매_비용_지급수수료()+mDI.get소매_비용_판매촉진비()+mDI.get소매_비용_건물관리비();
+                    법인세 = Convert.ToInt64(((수익합계 - 비용합계) * 0.22) / mBI.get월평균판매대수_소계_합계() - 부가세 * 0.22);
                 }
-                if (mBI.get소매_월평균판매대수_소계() == 0)
-                {
-                    nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료();
-                    nIAOut[k++] += mDI.get소매_수익_직영매장판매수익();
-                    nIAOut[k++] += mDI.get소매_비용_직원급여_간부급_총액(mBI.get소매_직원수_간부급());
-                    nIAOut[k++] += mDI.get소매_비용_직원급여_평사원_총액(mBI.get소매_직원수_평사원());
-                    nIAOut[k++] += mDI.get소매_비용_지급임차료();
-                    nIAOut[k++] += mDI.get소매_비용_지급수수료();
-                    nIAOut[k++] += mDI.get소매_비용_판매촉진비();
-                    nIAOut[k++] += mDI.get소매_비용_건물관리비();
-                }
-                else
-                {
-                    nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료() / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_수익_직영매장판매수익() / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_직원급여_간부급_총액(mBI.get소매_직원수_간부급()) / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_직원급여_평사원_총액(mBI.get소매_직원수_평사원()) / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_지급임차료() / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_지급수수료() / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_판매촉진비() / mBI.get소매_월평균판매대수_소계();
-                    nIAOut[k++] += mDI.get소매_비용_건물관리비() / mBI.get소매_월평균판매대수_소계();
-                }
-                if (mBI.get월평균판매대수_소계_합계() == 0)
-                {
-                    nIAOut[k++] += mDI.get도소매_비용_복리후생비();
-                    nIAOut[k++] += mDI.get도소매_비용_통신비();
-                    nIAOut[k++] += mDI.get도소매_비용_공과금();
-                    nIAOut[k++] += mDI.get도소매_비용_소모품비();
-                    nIAOut[k++] += mDI.get도소매_비용_이자비용();
-                    nIAOut[k++] += mDI.get도소매_비용_부가세();
-                    nIAOut[k++] += mDI.get도소매_비용_법인세();
-                    nIAOut[k++] += mDI.get도소매_비용_기타();
-                }
-                else
-                {
-                    nIAOut[k++] += mDI.get도소매_비용_복리후생비() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_통신비() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_공과금() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_소모품비() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_이자비용() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_부가세() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_법인세() / mBI.get월평균판매대수_소계_합계();
-                    nIAOut[k++] += mDI.get도소매_비용_기타() / mBI.get월평균판매대수_소계_합계();
-                }
+                catch (Exception e) { 법인세 = 0; }
+                finally { nIAOut[k++] += 법인세; }
+
+                nIAOut[k++] += mDI.get도소매_비용_기타() / mBI.get월평균판매대수_소계_합계();
             }
 
             Int64 분모 = adminDC.getDataLength() > 0 ? adminDC.getDataLength() : 1;
@@ -368,9 +370,9 @@ namespace KIWI
             //도매
             mDI.set도매_수익_월평균관리수수료(worksheet1.get_Range("G26", Type.Missing).Value2.ToString());
             mDI.set도매_수익_CS관리수수료(worksheet1.get_Range("G27", Type.Missing).Value2.ToString());//월총액
-            mDI.set도매_수익_사업자모델매입관련추가수익(worksheet1.get_Range("G29", Type.Missing).Value2.ToString());
-            mDI.set도매_수익_유통모델매입관련추가수익_현금DC(worksheet1.get_Range("G30", Type.Missing).Value2.ToString());
-            mDI.set도매_수익_유통모델매입관련추가수익_VolumeDC(worksheet1.get_Range("G31", Type.Missing).Value2.ToString());
+            //mDI.set도매_수익_사업자모델매입관련추가수익(worksheet1.get_Range("G29", Type.Missing).Value2.ToString());
+            //mDI.set도매_수익_유통모델매입관련추가수익_현금DC(worksheet1.get_Range("G30", Type.Missing).Value2.ToString());
+            //mDI.set도매_수익_유통모델매입관련추가수익_VolumeDC(worksheet1.get_Range("G31", Type.Missing).Value2.ToString());
             mDI.set도매_비용_대리점투자금액_신규(worksheet1.get_Range("G32", Type.Missing).Value2.ToString());
             mDI.set도매_비용_대리점투자금액_기변(worksheet1.get_Range("G33", Type.Missing).Value2.ToString());
             mDI.set도매_비용_직원급여_간부급(worksheet1.get_Range("G34", Type.Missing).Value2.ToString());//총액
@@ -396,8 +398,8 @@ namespace KIWI
             mDI.set도소매_비용_공과금(worksheet1.get_Range("G56", Type.Missing).Value2.ToString());
             mDI.set도소매_비용_소모품비(worksheet1.get_Range("G57", Type.Missing).Value2.ToString());
             mDI.set도소매_비용_이자비용(worksheet1.get_Range("G58", Type.Missing).Value2.ToString());
-            mDI.set도소매_비용_부가세(worksheet1.get_Range("G59", Type.Missing).Value2.ToString());
-            mDI.set도소매_비용_법인세(worksheet1.get_Range("G60", Type.Missing).Value2.ToString());
+            //mDI.set도소매_비용_부가세(worksheet1.get_Range("G59", Type.Missing).Value2.ToString());
+            //mDI.set도소매_비용_법인세(worksheet1.get_Range("G60", Type.Missing).Value2.ToString());
             mDI.set도소매_비용_기타(worksheet1.get_Range("G61", Type.Missing).Value2.ToString());
 
             //*******CResultData
