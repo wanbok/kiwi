@@ -500,6 +500,8 @@ namespace KIWI
 
         private void txtOut_TextChanged(object sender, EventArgs e)
         {
+            setTxtInput_TextChanged(sender);
+
             int index = -1;
             index = Array.IndexOf(txtIAOut, (sender as TextBox));
             if (index < 0)
@@ -512,7 +514,7 @@ namespace KIWI
             Int64 result;
             try
             {
-                convertedA = Convert.ToInt64(txtIAOut[index].Text);
+                convertedA = Convert.ToInt64(txtIAOut[index].Text.Replace(",", ""));
             }
             catch (FormatException eFormat)
             {
@@ -522,7 +524,7 @@ namespace KIWI
             }
             try
             {
-                convertedB = Convert.ToInt64(txtInput[index].Text);
+                convertedB = Convert.ToInt64(txtInput[index].Text.Replace(",", ""));
             }
             catch (FormatException eFormat)
             {
@@ -535,7 +537,47 @@ namespace KIWI
                 result = convertedB;//(convertedA + convertedB) / 2;
             }
             txtAOut[index].Text = result.ToString();
+            setTxtInput_TextChanged(txtAOut[index]);
         }
+
+        
+
+        private string setTxtInput_TextChanged(object sender)
+        {
+            TextBox _TextBox = (sender as TextBox);
+
+            try
+            {
+                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+
+                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 2)
+                {
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                    //if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", num);
+
+                    if (_TextBox.Text.Length < saveCursor)
+                        _TextBox.SelectionStart = 0;
+                    else
+                        _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (_TextBox.Text.Length > 23)
+                {
+                    int saveCursor = _TextBox.SelectionStart - 1;
+                    _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                    _TextBox.SelectionStart = saveCursor;
+                }
+            }
+            catch
+            {
+                _TextBox.Text = "0";
+                _TextBox.SelectionStart = 1;
+            }
+
+            return _TextBox.Text;
+        }
+
 
         private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
         {
@@ -574,6 +616,41 @@ namespace KIWI
                 }
 
                 refreshList();
+            }
+        }
+
+        private void txtInput1_Click(object sender, EventArgs e)
+        {
+            TextBox _TextBox = (sender as TextBox);
+            if (_TextBox.Text == "0")
+            {
+                _TextBox.SelectAll();
+            }
+
+        }
+
+        private void txtInput2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != 8)
+            {
+                if (e.KeyChar == '-')
+                {
+                    TextBox _TextBox = (sender as TextBox);
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+                    if (_TextBox.Text.IndexOf('-') == -1)
+                        _TextBox.Text = "-" + _TextBox.Text;
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (e.KeyChar == '+')
+                {
+
+                    TextBox _TextBox = (sender as TextBox);
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+                    if (_TextBox.Text.IndexOf('-') > -1)
+                        _TextBox.Text = _TextBox.Text.Replace("-", "");
+                    _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                e.Handled = true;
             }
         }
 

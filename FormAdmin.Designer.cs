@@ -467,6 +467,7 @@
             this.txtInput31.Text = "0";
             this.txtInput31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput31.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut31
             // 
@@ -548,7 +549,9 @@
             this.txtInput30.TabIndex = 29;
             this.txtInput30.Text = "0";
             this.txtInput30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput30.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput30.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut30
             // 
@@ -590,7 +593,9 @@
             this.txtInput29.TabIndex = 28;
             this.txtInput29.Text = "0";
             this.txtInput29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput29.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput29.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput29.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut29
             // 
@@ -632,7 +637,9 @@
             this.txtInput28.TabIndex = 27;
             this.txtInput28.Text = "0";
             this.txtInput28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput28.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput28.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut28
             // 
@@ -674,7 +681,9 @@
             this.txtInput27.TabIndex = 26;
             this.txtInput27.Text = "0";
             this.txtInput27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput27.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput27.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut27
             // 
@@ -716,7 +725,9 @@
             this.txtInput26.TabIndex = 25;
             this.txtInput26.Text = "0";
             this.txtInput26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput26.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput26.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut26
             // 
@@ -758,7 +769,9 @@
             this.txtInput25.TabIndex = 24;
             this.txtInput25.Text = "0";
             this.txtInput25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput25.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput25.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut25
             // 
@@ -800,7 +813,9 @@
             this.txtInput24.TabIndex = 23;
             this.txtInput24.Text = "0";
             this.txtInput24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput24.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput24.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut24
             // 
@@ -842,7 +857,9 @@
             this.txtInput23.TabIndex = 22;
             this.txtInput23.Text = "0";
             this.txtInput23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput23.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput23.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut23
             // 
@@ -884,7 +901,9 @@
             this.txtInput22.TabIndex = 21;
             this.txtInput22.Text = "0";
             this.txtInput22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput22.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput22.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut22
             // 
@@ -926,7 +945,9 @@
             this.txtInput21.TabIndex = 20;
             this.txtInput21.Text = "0";
             this.txtInput21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput21.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput21.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut21
             // 
@@ -968,7 +989,9 @@
             this.txtInput20.TabIndex = 19;
             this.txtInput20.Text = "0";
             this.txtInput20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput20.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput20.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut20
             // 
@@ -1010,7 +1033,9 @@
             this.txtInput19.TabIndex = 18;
             this.txtInput19.Text = "0";
             this.txtInput19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput19.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput19.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut19
             // 
@@ -1052,7 +1077,9 @@
             this.txtInput18.TabIndex = 17;
             this.txtInput18.Text = "0";
             this.txtInput18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput18.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput18.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut18
             // 
@@ -1094,7 +1121,9 @@
             this.txtInput17.TabIndex = 16;
             this.txtInput17.Text = "0";
             this.txtInput17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput17.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput17.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut17
             // 
@@ -1136,7 +1165,9 @@
             this.txtInput16.TabIndex = 15;
             this.txtInput16.Text = "0";
             this.txtInput16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput16.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput16.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut16
             // 
@@ -1381,7 +1412,9 @@
             this.txtInput15.TabIndex = 14;
             this.txtInput15.Text = "0";
             this.txtInput15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput15.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput15.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut15
             // 
@@ -1408,7 +1441,9 @@
             this.txtInput14.TabIndex = 13;
             this.txtInput14.Text = "0";
             this.txtInput14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput14.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput14.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut45
             // 
@@ -1450,7 +1485,9 @@
             this.txtInput9.TabIndex = 8;
             this.txtInput9.Text = "0";
             this.txtInput9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput9.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput9.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut40
             // 
@@ -1492,7 +1529,9 @@
             this.txtInput8.TabIndex = 7;
             this.txtInput8.Text = "0";
             this.txtInput8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput8.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput8.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut39
             // 
@@ -1534,7 +1573,9 @@
             this.txtInput7.TabIndex = 6;
             this.txtInput7.Text = "0";
             this.txtInput7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput7.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput7.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut38
             // 
@@ -1576,7 +1617,9 @@
             this.txtInput10.TabIndex = 9;
             this.txtInput10.Text = "0";
             this.txtInput10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput10.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput10.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut41
             // 
@@ -1618,7 +1661,9 @@
             this.txtInput11.TabIndex = 10;
             this.txtInput11.Text = "0";
             this.txtInput11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput11.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput11.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut42
             // 
@@ -1660,7 +1705,9 @@
             this.txtInput12.TabIndex = 11;
             this.txtInput12.Text = "0";
             this.txtInput12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput12.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput12.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut43
             // 
@@ -1702,7 +1749,9 @@
             this.txtInput13.TabIndex = 12;
             this.txtInput13.Text = "0";
             this.txtInput13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput13.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput13.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut44
             // 
@@ -1744,7 +1793,9 @@
             this.txtInput6.TabIndex = 5;
             this.txtInput6.Text = "0";
             this.txtInput6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput6.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput6.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut37
             // 
@@ -1785,7 +1836,9 @@
             this.txtInput2.TabIndex = 1;
             this.txtInput2.Text = "0";
             this.txtInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput2.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput2.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut33
             // 
@@ -1825,7 +1878,9 @@
             this.txtInput5.TabIndex = 4;
             this.txtInput5.Text = "0";
             this.txtInput5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput5.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput5.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut36
             // 
@@ -1867,7 +1922,9 @@
             this.txtInput4.TabIndex = 3;
             this.txtInput4.Text = "0";
             this.txtInput4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput4.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput4.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut35
             // 
@@ -1908,7 +1965,9 @@
             this.txtInput3.TabIndex = 2;
             this.txtInput3.Text = "0";
             this.txtInput3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput3.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput3.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut34
             // 
@@ -1948,7 +2007,9 @@
             this.txtInput1.TabIndex = 0;
             this.txtInput1.Text = "0";
             this.txtInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput1.Click += new System.EventHandler(this.txtInput1_Click);
             this.txtInput1.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.txtInput1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // txtOut32
             // 

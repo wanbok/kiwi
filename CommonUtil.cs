@@ -55,7 +55,13 @@ namespace KIWI
             bool result = returnValue == "";
             if (text1 is string)
                 result = returnValue.Length < 1;
-            return result ? 0 : Convert.ToInt64(Convert.ToDouble(returnValue));
+            try{
+                return result ? 0 : Convert.ToInt64(Convert.ToDouble(returnValue));
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         /// <summary>
