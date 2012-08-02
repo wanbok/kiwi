@@ -28,100 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint41 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint42 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint43 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint44 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint45 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint46 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint47 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint48 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint49 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint50 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint51 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint52 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint53 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint54 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint55 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint56 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint57 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint58 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint59 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint60 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint61 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint62 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint63 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint64 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint23 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint24 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint25 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint26 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint27 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint28 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint29 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint30 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint129 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint130 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint131 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint132 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint133 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint134 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint135 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint136 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint137 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint138 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint139 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint140 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint141 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint142 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint143 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint144 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint145 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint146 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint147 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint148 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint149 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint150 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint151 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint152 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint153 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint154 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint155 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint156 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint157 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint158 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint159 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint160 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint161 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint162 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint163 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint164 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint165 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint166 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint167 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint168 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series50 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint169 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint170 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint171 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint172 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint173 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint174 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint175 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint176 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series51 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series52 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint177 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint178 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint179 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint180 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint181 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint182 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint183 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint184 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series53 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint185 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint186 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint187 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint188 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint189 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint190 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint191 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint192 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series54 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pnlChart = new System.Windows.Forms.Panel();
@@ -315,6 +315,183 @@
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pnlChart2 = new System.Windows.Forms.Panel();
+            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel121 = new System.Windows.Forms.Panel();
+            this.panel122 = new System.Windows.Forms.Panel();
+            this.panel123 = new System.Windows.Forms.Panel();
+            this.panel124 = new System.Windows.Forms.Panel();
+            this.label101 = new System.Windows.Forms.Label();
+            this.panel125 = new System.Windows.Forms.Panel();
+            this.panel126 = new System.Windows.Forms.Panel();
+            this.panel127 = new System.Windows.Forms.Panel();
+            this.panel128 = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.panel129 = new System.Windows.Forms.Panel();
+            this.panel130 = new System.Windows.Forms.Panel();
+            this.panel131 = new System.Windows.Forms.Panel();
+            this.panel132 = new System.Windows.Forms.Panel();
+            this.panel133 = new System.Windows.Forms.Panel();
+            this.panel134 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.txtWOut84 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtWOut56 = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.txtWOut28 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtWOut70 = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.txtWOut42 = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txtWOut14 = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.panel136 = new System.Windows.Forms.Panel();
+            this.panel137 = new System.Windows.Forms.Panel();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.txtWOut83 = new System.Windows.Forms.TextBox();
+            this.txtWOut82 = new System.Windows.Forms.TextBox();
+            this.txtWOut81 = new System.Windows.Forms.TextBox();
+            this.txtWOut80 = new System.Windows.Forms.TextBox();
+            this.txtWOut79 = new System.Windows.Forms.TextBox();
+            this.txtWOut78 = new System.Windows.Forms.TextBox();
+            this.txtWOut77 = new System.Windows.Forms.TextBox();
+            this.txtWOut55 = new System.Windows.Forms.TextBox();
+            this.txtWOut54 = new System.Windows.Forms.TextBox();
+            this.txtWOut53 = new System.Windows.Forms.TextBox();
+            this.txtWOut52 = new System.Windows.Forms.TextBox();
+            this.txtWOut51 = new System.Windows.Forms.TextBox();
+            this.txtWOut50 = new System.Windows.Forms.TextBox();
+            this.txtWOut49 = new System.Windows.Forms.TextBox();
+            this.txtWOut27 = new System.Windows.Forms.TextBox();
+            this.txtWOut26 = new System.Windows.Forms.TextBox();
+            this.txtWOut69 = new System.Windows.Forms.TextBox();
+            this.txtWOut68 = new System.Windows.Forms.TextBox();
+            this.txtWOut25 = new System.Windows.Forms.TextBox();
+            this.txtWOut67 = new System.Windows.Forms.TextBox();
+            this.txtWOut24 = new System.Windows.Forms.TextBox();
+            this.txtWOut66 = new System.Windows.Forms.TextBox();
+            this.txtWOut23 = new System.Windows.Forms.TextBox();
+            this.txtWOut65 = new System.Windows.Forms.TextBox();
+            this.txtWOut41 = new System.Windows.Forms.TextBox();
+            this.txtWOut40 = new System.Windows.Forms.TextBox();
+            this.txtWOut22 = new System.Windows.Forms.TextBox();
+            this.txtWOut39 = new System.Windows.Forms.TextBox();
+            this.txtWOut64 = new System.Windows.Forms.TextBox();
+            this.txtWOut38 = new System.Windows.Forms.TextBox();
+            this.txtWOut37 = new System.Windows.Forms.TextBox();
+            this.txtWOut36 = new System.Windows.Forms.TextBox();
+            this.txtWOut21 = new System.Windows.Forms.TextBox();
+            this.txtWOut63 = new System.Windows.Forms.TextBox();
+            this.txtWOut35 = new System.Windows.Forms.TextBox();
+            this.txtWOut75 = new System.Windows.Forms.TextBox();
+            this.txtWOut74 = new System.Windows.Forms.TextBox();
+            this.txtWOut73 = new System.Windows.Forms.TextBox();
+            this.txtWOut72 = new System.Windows.Forms.TextBox();
+            this.txtWOut76 = new System.Windows.Forms.TextBox();
+            this.txtWOut71 = new System.Windows.Forms.TextBox();
+            this.txtWOut47 = new System.Windows.Forms.TextBox();
+            this.txtWOut46 = new System.Windows.Forms.TextBox();
+            this.txtWOut45 = new System.Windows.Forms.TextBox();
+            this.txtWOut44 = new System.Windows.Forms.TextBox();
+            this.txtWOut48 = new System.Windows.Forms.TextBox();
+            this.txtWOut43 = new System.Windows.Forms.TextBox();
+            this.txtWOut61 = new System.Windows.Forms.TextBox();
+            this.txtWOut60 = new System.Windows.Forms.TextBox();
+            this.txtWOut59 = new System.Windows.Forms.TextBox();
+            this.txtWOut33 = new System.Windows.Forms.TextBox();
+            this.txtWOut32 = new System.Windows.Forms.TextBox();
+            this.txtWOut58 = new System.Windows.Forms.TextBox();
+            this.txtWOut31 = new System.Windows.Forms.TextBox();
+            this.txtWOut20 = new System.Windows.Forms.TextBox();
+            this.txtWOut15 = new System.Windows.Forms.TextBox();
+            this.txtWOut30 = new System.Windows.Forms.TextBox();
+            this.txtWOut62 = new System.Windows.Forms.TextBox();
+            this.txtWOut57 = new System.Windows.Forms.TextBox();
+            this.txtWOut34 = new System.Windows.Forms.TextBox();
+            this.txtWOut29 = new System.Windows.Forms.TextBox();
+            this.txtWOut19 = new System.Windows.Forms.TextBox();
+            this.txtWOut18 = new System.Windows.Forms.TextBox();
+            this.txtWOut5 = new System.Windows.Forms.TextBox();
+            this.txtWOut4 = new System.Windows.Forms.TextBox();
+            this.txtWOut17 = new System.Windows.Forms.TextBox();
+            this.txtWOut3 = new System.Windows.Forms.TextBox();
+            this.txtWOut16 = new System.Windows.Forms.TextBox();
+            this.txtWOut2 = new System.Windows.Forms.TextBox();
+            this.txtWOut6 = new System.Windows.Forms.TextBox();
+            this.txtWOut1 = new System.Windows.Forms.TextBox();
+            this.txtWOut13 = new System.Windows.Forms.TextBox();
+            this.txtWOut12 = new System.Windows.Forms.TextBox();
+            this.txtWOut11 = new System.Windows.Forms.TextBox();
+            this.txtWOut10 = new System.Windows.Forms.TextBox();
+            this.txtWOut9 = new System.Windows.Forms.TextBox();
+            this.txtWOut8 = new System.Windows.Forms.TextBox();
+            this.txtWOut7 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel84 = new System.Windows.Forms.Panel();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.panel86 = new System.Windows.Forms.Panel();
+            this.panel87 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.panel61 = new System.Windows.Forms.Panel();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel88 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pnlChart3 = new System.Windows.Forms.Panel();
             this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -657,6 +834,8 @@
             this.panel154 = new System.Windows.Forms.Panel();
             this.panel76 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pnlChart.SuspendLayout();
@@ -680,6 +859,28 @@
             this.panel57.SuspendLayout();
             this.panel75.SuspendLayout();
             this.panel107.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.pnlChart2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.panel121.SuspendLayout();
+            this.panel122.SuspendLayout();
+            this.panel125.SuspendLayout();
+            this.panel126.SuspendLayout();
+            this.panel129.SuspendLayout();
+            this.panel130.SuspendLayout();
+            this.panel133.SuspendLayout();
+            this.panel136.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel84.SuspendLayout();
+            this.panel86.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel61.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel90.SuspendLayout();
+            this.panel88.SuspendLayout();
+            this.panel54.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.pnlChart3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart6)).BeginInit();
@@ -913,10 +1114,10 @@
             this.tabPage1.Controls.Add(this.panel38);
             this.tabPage1.Controls.Add(this.panel9);
             this.tabPage1.Controls.Add(this.panel3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1242, 723);
+            this.tabPage1.Size = new System.Drawing.Size(1242, 724);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          전체          ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -933,26 +1134,26 @@
             // chart4
             // 
             this.chart4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea1.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea1);
+            chartArea13.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea13);
             this.chart4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend1.Name = "Legend1";
-            this.chart4.Legends.Add(legend1);
+            legend13.Name = "Legend1";
+            this.chart4.Legends.Add(legend13);
             this.chart4.Location = new System.Drawing.Point(8, 318);
             this.chart4.Name = "chart4";
             this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series3";
-            this.chart4.Series.Add(series1);
-            this.chart4.Series.Add(series2);
-            this.chart4.Series.Add(series3);
+            series37.ChartArea = "ChartArea1";
+            series37.Legend = "Legend1";
+            series37.Name = "Series1";
+            series38.ChartArea = "ChartArea1";
+            series38.Legend = "Legend1";
+            series38.Name = "Series2";
+            series39.ChartArea = "ChartArea1";
+            series39.Legend = "Legend1";
+            series39.Name = "Series3";
+            this.chart4.Series.Add(series37);
+            this.chart4.Series.Add(series38);
+            this.chart4.Series.Add(series39);
             this.chart4.Size = new System.Drawing.Size(1168, 280);
             this.chart4.TabIndex = 341;
             this.chart4.Text = "0";
@@ -960,26 +1161,26 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea14.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea14);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend14.Name = "Legend1";
+            this.chart1.Legends.Add(legend14);
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series2";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series3";
-            this.chart1.Series.Add(series4);
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
+            series40.ChartArea = "ChartArea1";
+            series40.Legend = "Legend1";
+            series40.Name = "Series1";
+            series41.ChartArea = "ChartArea1";
+            series41.Legend = "Legend1";
+            series41.Name = "Series2";
+            series42.ChartArea = "ChartArea1";
+            series42.Legend = "Legend1";
+            series42.Name = "Series3";
+            this.chart1.Series.Add(series40);
+            this.chart1.Series.Add(series41);
+            this.chart1.Series.Add(series42);
             this.chart1.Size = new System.Drawing.Size(1168, 280);
             this.chart1.TabIndex = 340;
             this.chart1.Text = "0";
@@ -2989,6 +3190,2115 @@
             this.panel3.Size = new System.Drawing.Size(1240, 2);
             this.panel3.TabIndex = 90;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.pnlChart2);
+            this.tabPage2.Controls.Add(this.panel121);
+            this.tabPage2.Controls.Add(this.label101);
+            this.tabPage2.Controls.Add(this.panel125);
+            this.tabPage2.Controls.Add(this.label100);
+            this.tabPage2.Controls.Add(this.panel129);
+            this.tabPage2.Controls.Add(this.panel133);
+            this.tabPage2.Controls.Add(this.label41);
+            this.tabPage2.Controls.Add(this.label88);
+            this.tabPage2.Controls.Add(this.label103);
+            this.tabPage2.Controls.Add(this.label102);
+            this.tabPage2.Controls.Add(this.label76);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.label75);
+            this.tabPage2.Controls.Add(this.txtWOut84);
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.txtWOut56);
+            this.tabPage2.Controls.Add(this.label74);
+            this.tabPage2.Controls.Add(this.txtWOut28);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.txtWOut70);
+            this.tabPage2.Controls.Add(this.label73);
+            this.tabPage2.Controls.Add(this.txtWOut42);
+            this.tabPage2.Controls.Add(this.label67);
+            this.tabPage2.Controls.Add(this.txtWOut14);
+            this.tabPage2.Controls.Add(this.label72);
+            this.tabPage2.Controls.Add(this.label99);
+            this.tabPage2.Controls.Add(this.panel136);
+            this.tabPage2.Controls.Add(this.label68);
+            this.tabPage2.Controls.Add(this.label89);
+            this.tabPage2.Controls.Add(this.label120);
+            this.tabPage2.Controls.Add(this.label71);
+            this.tabPage2.Controls.Add(this.label69);
+            this.tabPage2.Controls.Add(this.label70);
+            this.tabPage2.Controls.Add(this.label90);
+            this.tabPage2.Controls.Add(this.txtWOut83);
+            this.tabPage2.Controls.Add(this.txtWOut82);
+            this.tabPage2.Controls.Add(this.txtWOut81);
+            this.tabPage2.Controls.Add(this.txtWOut80);
+            this.tabPage2.Controls.Add(this.txtWOut79);
+            this.tabPage2.Controls.Add(this.txtWOut78);
+            this.tabPage2.Controls.Add(this.txtWOut77);
+            this.tabPage2.Controls.Add(this.txtWOut55);
+            this.tabPage2.Controls.Add(this.txtWOut54);
+            this.tabPage2.Controls.Add(this.txtWOut53);
+            this.tabPage2.Controls.Add(this.txtWOut52);
+            this.tabPage2.Controls.Add(this.txtWOut51);
+            this.tabPage2.Controls.Add(this.txtWOut50);
+            this.tabPage2.Controls.Add(this.txtWOut49);
+            this.tabPage2.Controls.Add(this.txtWOut27);
+            this.tabPage2.Controls.Add(this.txtWOut26);
+            this.tabPage2.Controls.Add(this.txtWOut69);
+            this.tabPage2.Controls.Add(this.txtWOut68);
+            this.tabPage2.Controls.Add(this.txtWOut25);
+            this.tabPage2.Controls.Add(this.txtWOut67);
+            this.tabPage2.Controls.Add(this.txtWOut24);
+            this.tabPage2.Controls.Add(this.txtWOut66);
+            this.tabPage2.Controls.Add(this.txtWOut23);
+            this.tabPage2.Controls.Add(this.txtWOut65);
+            this.tabPage2.Controls.Add(this.txtWOut41);
+            this.tabPage2.Controls.Add(this.txtWOut40);
+            this.tabPage2.Controls.Add(this.txtWOut22);
+            this.tabPage2.Controls.Add(this.txtWOut39);
+            this.tabPage2.Controls.Add(this.txtWOut64);
+            this.tabPage2.Controls.Add(this.txtWOut38);
+            this.tabPage2.Controls.Add(this.txtWOut37);
+            this.tabPage2.Controls.Add(this.txtWOut36);
+            this.tabPage2.Controls.Add(this.txtWOut21);
+            this.tabPage2.Controls.Add(this.txtWOut63);
+            this.tabPage2.Controls.Add(this.txtWOut35);
+            this.tabPage2.Controls.Add(this.txtWOut75);
+            this.tabPage2.Controls.Add(this.txtWOut74);
+            this.tabPage2.Controls.Add(this.txtWOut73);
+            this.tabPage2.Controls.Add(this.txtWOut72);
+            this.tabPage2.Controls.Add(this.txtWOut76);
+            this.tabPage2.Controls.Add(this.txtWOut71);
+            this.tabPage2.Controls.Add(this.txtWOut47);
+            this.tabPage2.Controls.Add(this.txtWOut46);
+            this.tabPage2.Controls.Add(this.txtWOut45);
+            this.tabPage2.Controls.Add(this.txtWOut44);
+            this.tabPage2.Controls.Add(this.txtWOut48);
+            this.tabPage2.Controls.Add(this.txtWOut43);
+            this.tabPage2.Controls.Add(this.txtWOut61);
+            this.tabPage2.Controls.Add(this.txtWOut60);
+            this.tabPage2.Controls.Add(this.txtWOut59);
+            this.tabPage2.Controls.Add(this.txtWOut33);
+            this.tabPage2.Controls.Add(this.txtWOut32);
+            this.tabPage2.Controls.Add(this.txtWOut58);
+            this.tabPage2.Controls.Add(this.txtWOut31);
+            this.tabPage2.Controls.Add(this.txtWOut20);
+            this.tabPage2.Controls.Add(this.txtWOut15);
+            this.tabPage2.Controls.Add(this.txtWOut30);
+            this.tabPage2.Controls.Add(this.txtWOut62);
+            this.tabPage2.Controls.Add(this.txtWOut57);
+            this.tabPage2.Controls.Add(this.txtWOut34);
+            this.tabPage2.Controls.Add(this.txtWOut29);
+            this.tabPage2.Controls.Add(this.txtWOut19);
+            this.tabPage2.Controls.Add(this.txtWOut18);
+            this.tabPage2.Controls.Add(this.txtWOut5);
+            this.tabPage2.Controls.Add(this.txtWOut4);
+            this.tabPage2.Controls.Add(this.txtWOut17);
+            this.tabPage2.Controls.Add(this.txtWOut3);
+            this.tabPage2.Controls.Add(this.txtWOut16);
+            this.tabPage2.Controls.Add(this.txtWOut2);
+            this.tabPage2.Controls.Add(this.txtWOut6);
+            this.tabPage2.Controls.Add(this.txtWOut1);
+            this.tabPage2.Controls.Add(this.txtWOut13);
+            this.tabPage2.Controls.Add(this.txtWOut12);
+            this.tabPage2.Controls.Add(this.txtWOut11);
+            this.tabPage2.Controls.Add(this.txtWOut10);
+            this.tabPage2.Controls.Add(this.txtWOut9);
+            this.tabPage2.Controls.Add(this.txtWOut8);
+            this.tabPage2.Controls.Add(this.txtWOut7);
+            this.tabPage2.Controls.Add(this.label22);
+            this.tabPage2.Controls.Add(this.label24);
+            this.tabPage2.Controls.Add(this.label27);
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.label32);
+            this.tabPage2.Controls.Add(this.label83);
+            this.tabPage2.Controls.Add(this.label33);
+            this.tabPage2.Controls.Add(this.label34);
+            this.tabPage2.Controls.Add(this.label35);
+            this.tabPage2.Controls.Add(this.label36);
+            this.tabPage2.Controls.Add(this.label37);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.label39);
+            this.tabPage2.Controls.Add(this.label40);
+            this.tabPage2.Controls.Add(this.pictureBox5);
+            this.tabPage2.Controls.Add(this.pictureBox2);
+            this.tabPage2.Controls.Add(this.panel15);
+            this.tabPage2.Controls.Add(this.panel45);
+            this.tabPage2.Controls.Add(this.panel46);
+            this.tabPage2.Controls.Add(this.panel84);
+            this.tabPage2.Controls.Add(this.panel86);
+            this.tabPage2.Controls.Add(this.panel23);
+            this.tabPage2.Controls.Add(this.panel61);
+            this.tabPage2.Controls.Add(this.panel28);
+            this.tabPage2.Controls.Add(this.panel90);
+            this.tabPage2.Controls.Add(this.panel88);
+            this.tabPage2.Controls.Add(this.panel54);
+            this.tabPage2.Controls.Add(this.panel42);
+            this.tabPage2.Controls.Add(this.panel40);
+            this.tabPage2.Controls.Add(this.panel14);
+            this.tabPage2.Controls.Add(this.panel16);
+            this.tabPage2.Controls.Add(this.panel17);
+            this.tabPage2.Controls.Add(this.panel18);
+            this.tabPage2.Controls.Add(this.panel19);
+            this.tabPage2.Controls.Add(this.panel20);
+            this.tabPage2.Controls.Add(this.panel72);
+            this.tabPage2.Controls.Add(this.panel71);
+            this.tabPage2.Controls.Add(this.panel21);
+            this.tabPage2.Controls.Add(this.panel22);
+            this.tabPage2.Controls.Add(this.panel24);
+            this.tabPage2.Controls.Add(this.panel27);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1242, 724);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "          도매          ";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // pnlChart2
+            // 
+            this.pnlChart2.Controls.Add(this.chart5);
+            this.pnlChart2.Controls.Add(this.chart2);
+            this.pnlChart2.Location = new System.Drawing.Point(5, 39);
+            this.pnlChart2.Name = "pnlChart2";
+            this.pnlChart2.Size = new System.Drawing.Size(1232, 678);
+            this.pnlChart2.TabIndex = 253;
+            this.pnlChart2.Visible = false;
+            // 
+            // chart5
+            // 
+            chartArea15.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea15);
+            legend15.Name = "Legend1";
+            this.chart5.Legends.Add(legend15);
+            this.chart5.Location = new System.Drawing.Point(3, 324);
+            this.chart5.Name = "chart5";
+            series43.ChartArea = "ChartArea1";
+            series43.Legend = "Legend1";
+            series43.Name = "Series1";
+            series43.Points.Add(dataPoint129);
+            series43.Points.Add(dataPoint130);
+            series43.Points.Add(dataPoint131);
+            series43.Points.Add(dataPoint132);
+            series43.Points.Add(dataPoint133);
+            series43.Points.Add(dataPoint134);
+            series43.Points.Add(dataPoint135);
+            series43.Points.Add(dataPoint136);
+            series44.ChartArea = "ChartArea1";
+            series44.Legend = "Legend1";
+            series44.Name = "Series2";
+            series44.Points.Add(dataPoint137);
+            series44.Points.Add(dataPoint138);
+            series44.Points.Add(dataPoint139);
+            series44.Points.Add(dataPoint140);
+            series44.Points.Add(dataPoint141);
+            series44.Points.Add(dataPoint142);
+            series44.Points.Add(dataPoint143);
+            series44.Points.Add(dataPoint144);
+            series45.ChartArea = "ChartArea1";
+            series45.Legend = "Legend1";
+            series45.Name = "Series3";
+            this.chart5.Series.Add(series43);
+            this.chart5.Series.Add(series44);
+            this.chart5.Series.Add(series45);
+            this.chart5.Size = new System.Drawing.Size(1151, 280);
+            this.chart5.TabIndex = 342;
+            this.chart5.Text = "chart5";
+            // 
+            // chart2
+            // 
+            chartArea16.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea16);
+            legend16.Name = "Legend1";
+            this.chart2.Legends.Add(legend16);
+            this.chart2.Location = new System.Drawing.Point(3, 3);
+            this.chart2.Name = "chart2";
+            series46.ChartArea = "ChartArea1";
+            series46.Legend = "Legend1";
+            series46.Name = "Series1";
+            series46.Points.Add(dataPoint145);
+            series46.Points.Add(dataPoint146);
+            series46.Points.Add(dataPoint147);
+            series46.Points.Add(dataPoint148);
+            series46.Points.Add(dataPoint149);
+            series46.Points.Add(dataPoint150);
+            series46.Points.Add(dataPoint151);
+            series46.Points.Add(dataPoint152);
+            series47.ChartArea = "ChartArea1";
+            series47.Legend = "Legend1";
+            series47.Name = "Series2";
+            series47.Points.Add(dataPoint153);
+            series47.Points.Add(dataPoint154);
+            series47.Points.Add(dataPoint155);
+            series47.Points.Add(dataPoint156);
+            series47.Points.Add(dataPoint157);
+            series47.Points.Add(dataPoint158);
+            series47.Points.Add(dataPoint159);
+            series47.Points.Add(dataPoint160);
+            series48.ChartArea = "ChartArea1";
+            series48.Legend = "Legend1";
+            series48.Name = "Series3";
+            this.chart2.Series.Add(series46);
+            this.chart2.Series.Add(series47);
+            this.chart2.Series.Add(series48);
+            this.chart2.Size = new System.Drawing.Size(1151, 280);
+            this.chart2.TabIndex = 341;
+            this.chart2.Text = "chart5";
+            // 
+            // panel121
+            // 
+            this.panel121.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel121.Controls.Add(this.panel122);
+            this.panel121.Controls.Add(this.panel124);
+            this.panel121.ForeColor = System.Drawing.Color.Black;
+            this.panel121.Location = new System.Drawing.Point(880, 615);
+            this.panel121.Name = "panel121";
+            this.panel121.Size = new System.Drawing.Size(1, 30);
+            this.panel121.TabIndex = 252;
+            // 
+            // panel122
+            // 
+            this.panel122.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel122.Controls.Add(this.panel123);
+            this.panel122.ForeColor = System.Drawing.Color.Black;
+            this.panel122.Location = new System.Drawing.Point(0, 0);
+            this.panel122.Name = "panel122";
+            this.panel122.Size = new System.Drawing.Size(1, 270);
+            this.panel122.TabIndex = 96;
+            // 
+            // panel123
+            // 
+            this.panel123.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel123.ForeColor = System.Drawing.Color.Black;
+            this.panel123.Location = new System.Drawing.Point(0, 0);
+            this.panel123.Name = "panel123";
+            this.panel123.Size = new System.Drawing.Size(1, 270);
+            this.panel123.TabIndex = 95;
+            // 
+            // panel124
+            // 
+            this.panel124.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel124.ForeColor = System.Drawing.Color.Black;
+            this.panel124.Location = new System.Drawing.Point(0, 0);
+            this.panel124.Name = "panel124";
+            this.panel124.Size = new System.Drawing.Size(1, 270);
+            this.panel124.TabIndex = 95;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label101.ForeColor = System.Drawing.Color.Black;
+            this.label101.Location = new System.Drawing.Point(1000, 312);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(149, 15);
+            this.label101.TabIndex = 226;
+            this.label101.Text = "당대리점(미래수익)";
+            // 
+            // panel125
+            // 
+            this.panel125.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel125.Controls.Add(this.panel126);
+            this.panel125.Controls.Add(this.panel128);
+            this.panel125.ForeColor = System.Drawing.Color.Black;
+            this.panel125.Location = new System.Drawing.Point(530, 615);
+            this.panel125.Name = "panel125";
+            this.panel125.Size = new System.Drawing.Size(1, 30);
+            this.panel125.TabIndex = 236;
+            // 
+            // panel126
+            // 
+            this.panel126.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel126.Controls.Add(this.panel127);
+            this.panel126.ForeColor = System.Drawing.Color.Black;
+            this.panel126.Location = new System.Drawing.Point(0, 0);
+            this.panel126.Name = "panel126";
+            this.panel126.Size = new System.Drawing.Size(1, 270);
+            this.panel126.TabIndex = 96;
+            // 
+            // panel127
+            // 
+            this.panel127.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel127.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel127.ForeColor = System.Drawing.Color.Black;
+            this.panel127.Location = new System.Drawing.Point(0, 0);
+            this.panel127.Name = "panel127";
+            this.panel127.Size = new System.Drawing.Size(1, 270);
+            this.panel127.TabIndex = 95;
+            // 
+            // panel128
+            // 
+            this.panel128.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel128.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel128.ForeColor = System.Drawing.Color.Black;
+            this.panel128.Location = new System.Drawing.Point(0, 0);
+            this.panel128.Name = "panel128";
+            this.panel128.Size = new System.Drawing.Size(1, 270);
+            this.panel128.TabIndex = 95;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label100.ForeColor = System.Drawing.Color.Black;
+            this.label100.Location = new System.Drawing.Point(640, 312);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(149, 15);
+            this.label100.TabIndex = 225;
+            this.label100.Text = "당대리점(현재수익)\r\n";
+            // 
+            // panel129
+            // 
+            this.panel129.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel129.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel129.Controls.Add(this.panel130);
+            this.panel129.Controls.Add(this.panel132);
+            this.panel129.ForeColor = System.Drawing.Color.Black;
+            this.panel129.Location = new System.Drawing.Point(180, 617);
+            this.panel129.Name = "panel129";
+            this.panel129.Size = new System.Drawing.Size(1, 30);
+            this.panel129.TabIndex = 235;
+            // 
+            // panel130
+            // 
+            this.panel130.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel130.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel130.Controls.Add(this.panel131);
+            this.panel130.ForeColor = System.Drawing.Color.Black;
+            this.panel130.Location = new System.Drawing.Point(0, 0);
+            this.panel130.Name = "panel130";
+            this.panel130.Size = new System.Drawing.Size(1, 270);
+            this.panel130.TabIndex = 96;
+            // 
+            // panel131
+            // 
+            this.panel131.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel131.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel131.ForeColor = System.Drawing.Color.Black;
+            this.panel131.Location = new System.Drawing.Point(0, 0);
+            this.panel131.Name = "panel131";
+            this.panel131.Size = new System.Drawing.Size(1, 270);
+            this.panel131.TabIndex = 95;
+            // 
+            // panel132
+            // 
+            this.panel132.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel132.ForeColor = System.Drawing.Color.Black;
+            this.panel132.Location = new System.Drawing.Point(0, 0);
+            this.panel132.Name = "panel132";
+            this.panel132.Size = new System.Drawing.Size(1, 270);
+            this.panel132.TabIndex = 95;
+            // 
+            // panel133
+            // 
+            this.panel133.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel133.Controls.Add(this.panel134);
+            this.panel133.ForeColor = System.Drawing.Color.Black;
+            this.panel133.Location = new System.Drawing.Point(0, 615);
+            this.panel133.Name = "panel133";
+            this.panel133.Size = new System.Drawing.Size(1240, 3);
+            this.panel133.TabIndex = 238;
+            // 
+            // panel134
+            // 
+            this.panel134.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel134.Location = new System.Drawing.Point(0, 20);
+            this.panel134.Name = "panel134";
+            this.panel134.Size = new System.Drawing.Size(698, 5);
+            this.panel134.TabIndex = 18;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label41.ForeColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(1000, 15);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(149, 15);
+            this.label41.TabIndex = 226;
+            this.label41.Text = "당대리점(미래수익)";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label88.ForeColor = System.Drawing.Color.Black;
+            this.label88.Location = new System.Drawing.Point(640, 15);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(149, 15);
+            this.label88.TabIndex = 225;
+            this.label88.Text = "당대리점(현재수익)\r\n";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.ForeColor = System.Drawing.Color.Black;
+            this.label103.Location = new System.Drawing.Point(35, 582);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(29, 12);
+            this.label103.TabIndex = 224;
+            this.label103.Text = "소계";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.ForeColor = System.Drawing.Color.Black;
+            this.label102.Location = new System.Drawing.Point(35, 205);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(29, 12);
+            this.label102.TabIndex = 224;
+            this.label102.Text = "소계";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label76.ForeColor = System.Drawing.Color.Black;
+            this.label76.Location = new System.Drawing.Point(1110, 342);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(70, 12);
+            this.label76.TabIndex = 220;
+            this.label76.Text = "단위당금액";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(1110, 45);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(70, 12);
+            this.label19.TabIndex = 220;
+            this.label19.Text = "단위당금액";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label75.ForeColor = System.Drawing.Color.Black;
+            this.label75.Location = new System.Drawing.Point(970, 342);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(31, 12);
+            this.label75.TabIndex = 223;
+            this.label75.Text = "총액";
+            // 
+            // txtWOut84
+            // 
+            this.txtWOut84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut84.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut84.Location = new System.Drawing.Point(1080, 621);
+            this.txtWOut84.Name = "txtWOut84";
+            this.txtWOut84.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut84.TabIndex = 243;
+            this.txtWOut84.Text = "0";
+            this.txtWOut84.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(970, 45);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 12);
+            this.label20.TabIndex = 223;
+            this.label20.Text = "총액";
+            // 
+            // txtWOut56
+            // 
+            this.txtWOut56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut56.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut56.Location = new System.Drawing.Point(720, 621);
+            this.txtWOut56.Name = "txtWOut56";
+            this.txtWOut56.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut56.TabIndex = 244;
+            this.txtWOut56.Text = "0";
+            this.txtWOut56.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label74.ForeColor = System.Drawing.Color.Black;
+            this.label74.Location = new System.Drawing.Point(750, 342);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(70, 12);
+            this.label74.TabIndex = 221;
+            this.label74.Text = "단위당금액";
+            // 
+            // txtWOut28
+            // 
+            this.txtWOut28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut28.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut28.Location = new System.Drawing.Point(370, 621);
+            this.txtWOut28.Name = "txtWOut28";
+            this.txtWOut28.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut28.TabIndex = 245;
+            this.txtWOut28.Text = "0";
+            this.txtWOut28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(750, 45);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(70, 12);
+            this.label21.TabIndex = 221;
+            this.label21.Text = "단위당금액";
+            // 
+            // txtWOut70
+            // 
+            this.txtWOut70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut70.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut70.Location = new System.Drawing.Point(920, 621);
+            this.txtWOut70.Name = "txtWOut70";
+            this.txtWOut70.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut70.TabIndex = 241;
+            this.txtWOut70.Text = "0";
+            this.txtWOut70.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label73.ForeColor = System.Drawing.Color.Black;
+            this.label73.Location = new System.Drawing.Point(610, 342);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(31, 12);
+            this.label73.TabIndex = 222;
+            this.label73.Text = "총액";
+            // 
+            // txtWOut42
+            // 
+            this.txtWOut42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut42.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut42.Location = new System.Drawing.Point(560, 621);
+            this.txtWOut42.Name = "txtWOut42";
+            this.txtWOut42.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut42.TabIndex = 242;
+            this.txtWOut42.Text = "0";
+            this.txtWOut42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label67.ForeColor = System.Drawing.Color.Black;
+            this.label67.Location = new System.Drawing.Point(610, 45);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(31, 12);
+            this.label67.TabIndex = 222;
+            this.label67.Text = "총액";
+            // 
+            // txtWOut14
+            // 
+            this.txtWOut14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut14.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut14.Location = new System.Drawing.Point(210, 621);
+            this.txtWOut14.Name = "txtWOut14";
+            this.txtWOut14.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut14.TabIndex = 240;
+            this.txtWOut14.Text = "0";
+            this.txtWOut14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label72.ForeColor = System.Drawing.Color.Black;
+            this.label72.Location = new System.Drawing.Point(400, 342);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(70, 12);
+            this.label72.TabIndex = 218;
+            this.label72.Text = "단위당금액";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label99.ForeColor = System.Drawing.Color.Black;
+            this.label99.Location = new System.Drawing.Point(327, 312);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(71, 15);
+            this.label99.TabIndex = 180;
+            this.label99.Text = "업계평균";
+            // 
+            // panel136
+            // 
+            this.panel136.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel136.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel136.Controls.Add(this.panel137);
+            this.panel136.ForeColor = System.Drawing.Color.Black;
+            this.panel136.Location = new System.Drawing.Point(0, 645);
+            this.panel136.Name = "panel136";
+            this.panel136.Size = new System.Drawing.Size(1240, 3);
+            this.panel136.TabIndex = 237;
+            // 
+            // panel137
+            // 
+            this.panel137.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel137.Location = new System.Drawing.Point(0, 20);
+            this.panel137.Name = "panel137";
+            this.panel137.Size = new System.Drawing.Size(698, 5);
+            this.panel137.TabIndex = 18;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label68.ForeColor = System.Drawing.Color.Black;
+            this.label68.Location = new System.Drawing.Point(400, 45);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(70, 12);
+            this.label68.TabIndex = 218;
+            this.label68.Text = "단위당금액";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.label89.ForeColor = System.Drawing.Color.Black;
+            this.label89.Location = new System.Drawing.Point(327, 15);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(71, 15);
+            this.label89.TabIndex = 180;
+            this.label89.Text = "업계평균";
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold);
+            this.label120.ForeColor = System.Drawing.Color.Black;
+            this.label120.Location = new System.Drawing.Point(35, 626);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(58, 14);
+            this.label120.TabIndex = 234;
+            this.label120.Text = "손익 계";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label71.ForeColor = System.Drawing.Color.Black;
+            this.label71.Location = new System.Drawing.Point(260, 342);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(31, 12);
+            this.label71.TabIndex = 219;
+            this.label71.Text = "총액";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label69.ForeColor = System.Drawing.Color.Black;
+            this.label69.Location = new System.Drawing.Point(260, 45);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(31, 12);
+            this.label69.TabIndex = 219;
+            this.label69.Text = "총액";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label70.ForeColor = System.Drawing.Color.Black;
+            this.label70.Location = new System.Drawing.Point(80, 45);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 12);
+            this.label70.TabIndex = 217;
+            this.label70.Text = "항목";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label90.ForeColor = System.Drawing.Color.Black;
+            this.label90.Location = new System.Drawing.Point(25, 15);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(42, 16);
+            this.label90.TabIndex = 178;
+            this.label90.Text = "수익";
+            // 
+            // txtWOut83
+            // 
+            this.txtWOut83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut83.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut83.Location = new System.Drawing.Point(1080, 577);
+            this.txtWOut83.Name = "txtWOut83";
+            this.txtWOut83.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut83.TabIndex = 203;
+            this.txtWOut83.Text = "0";
+            this.txtWOut83.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut82
+            // 
+            this.txtWOut82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut82.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut82.Location = new System.Drawing.Point(1080, 547);
+            this.txtWOut82.Name = "txtWOut82";
+            this.txtWOut82.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut82.TabIndex = 203;
+            this.txtWOut82.Text = "0";
+            this.txtWOut82.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut81
+            // 
+            this.txtWOut81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut81.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut81.Location = new System.Drawing.Point(1080, 517);
+            this.txtWOut81.Name = "txtWOut81";
+            this.txtWOut81.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut81.TabIndex = 203;
+            this.txtWOut81.Text = "0";
+            this.txtWOut81.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut80
+            // 
+            this.txtWOut80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut80.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut80.Location = new System.Drawing.Point(1080, 487);
+            this.txtWOut80.Name = "txtWOut80";
+            this.txtWOut80.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut80.TabIndex = 203;
+            this.txtWOut80.Text = "0";
+            this.txtWOut80.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut79
+            // 
+            this.txtWOut79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut79.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut79.Location = new System.Drawing.Point(1080, 457);
+            this.txtWOut79.Name = "txtWOut79";
+            this.txtWOut79.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut79.TabIndex = 203;
+            this.txtWOut79.Text = "0";
+            this.txtWOut79.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut78
+            // 
+            this.txtWOut78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut78.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut78.Location = new System.Drawing.Point(1080, 427);
+            this.txtWOut78.Name = "txtWOut78";
+            this.txtWOut78.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut78.TabIndex = 203;
+            this.txtWOut78.Text = "0";
+            this.txtWOut78.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut77
+            // 
+            this.txtWOut77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut77.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut77.Location = new System.Drawing.Point(1080, 397);
+            this.txtWOut77.Name = "txtWOut77";
+            this.txtWOut77.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut77.TabIndex = 203;
+            this.txtWOut77.Text = "0";
+            this.txtWOut77.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut55
+            // 
+            this.txtWOut55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut55.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut55.Location = new System.Drawing.Point(720, 577);
+            this.txtWOut55.Name = "txtWOut55";
+            this.txtWOut55.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut55.TabIndex = 204;
+            this.txtWOut55.Text = "0";
+            this.txtWOut55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut54
+            // 
+            this.txtWOut54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut54.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut54.Location = new System.Drawing.Point(720, 547);
+            this.txtWOut54.Name = "txtWOut54";
+            this.txtWOut54.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut54.TabIndex = 204;
+            this.txtWOut54.Text = "0";
+            this.txtWOut54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut53
+            // 
+            this.txtWOut53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut53.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut53.Location = new System.Drawing.Point(720, 517);
+            this.txtWOut53.Name = "txtWOut53";
+            this.txtWOut53.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut53.TabIndex = 204;
+            this.txtWOut53.Text = "0";
+            this.txtWOut53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut52
+            // 
+            this.txtWOut52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut52.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut52.Location = new System.Drawing.Point(720, 487);
+            this.txtWOut52.Name = "txtWOut52";
+            this.txtWOut52.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut52.TabIndex = 204;
+            this.txtWOut52.Text = "0";
+            this.txtWOut52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut51
+            // 
+            this.txtWOut51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut51.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut51.Location = new System.Drawing.Point(720, 457);
+            this.txtWOut51.Name = "txtWOut51";
+            this.txtWOut51.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut51.TabIndex = 204;
+            this.txtWOut51.Text = "0";
+            this.txtWOut51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut50
+            // 
+            this.txtWOut50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut50.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut50.Location = new System.Drawing.Point(720, 427);
+            this.txtWOut50.Name = "txtWOut50";
+            this.txtWOut50.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut50.TabIndex = 204;
+            this.txtWOut50.Text = "0";
+            this.txtWOut50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut49
+            // 
+            this.txtWOut49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut49.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut49.Location = new System.Drawing.Point(720, 397);
+            this.txtWOut49.Name = "txtWOut49";
+            this.txtWOut49.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut49.TabIndex = 204;
+            this.txtWOut49.Text = "0";
+            this.txtWOut49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut27
+            // 
+            this.txtWOut27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut27.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut27.Location = new System.Drawing.Point(370, 577);
+            this.txtWOut27.Name = "txtWOut27";
+            this.txtWOut27.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut27.TabIndex = 205;
+            this.txtWOut27.Text = "0";
+            this.txtWOut27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut26
+            // 
+            this.txtWOut26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut26.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut26.Location = new System.Drawing.Point(370, 547);
+            this.txtWOut26.Name = "txtWOut26";
+            this.txtWOut26.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut26.TabIndex = 205;
+            this.txtWOut26.Text = "0";
+            this.txtWOut26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut69
+            // 
+            this.txtWOut69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut69.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut69.Location = new System.Drawing.Point(920, 577);
+            this.txtWOut69.Name = "txtWOut69";
+            this.txtWOut69.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut69.TabIndex = 200;
+            this.txtWOut69.Text = "0";
+            this.txtWOut69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut68
+            // 
+            this.txtWOut68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut68.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut68.Location = new System.Drawing.Point(920, 547);
+            this.txtWOut68.Name = "txtWOut68";
+            this.txtWOut68.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut68.TabIndex = 200;
+            this.txtWOut68.Text = "0";
+            this.txtWOut68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut25
+            // 
+            this.txtWOut25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut25.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut25.Location = new System.Drawing.Point(370, 517);
+            this.txtWOut25.Name = "txtWOut25";
+            this.txtWOut25.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut25.TabIndex = 205;
+            this.txtWOut25.Text = "0";
+            this.txtWOut25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut67
+            // 
+            this.txtWOut67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut67.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut67.Location = new System.Drawing.Point(920, 517);
+            this.txtWOut67.Name = "txtWOut67";
+            this.txtWOut67.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut67.TabIndex = 200;
+            this.txtWOut67.Text = "0";
+            this.txtWOut67.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut24
+            // 
+            this.txtWOut24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut24.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut24.Location = new System.Drawing.Point(370, 487);
+            this.txtWOut24.Name = "txtWOut24";
+            this.txtWOut24.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut24.TabIndex = 205;
+            this.txtWOut24.Text = "0";
+            this.txtWOut24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut66
+            // 
+            this.txtWOut66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut66.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut66.Location = new System.Drawing.Point(920, 487);
+            this.txtWOut66.Name = "txtWOut66";
+            this.txtWOut66.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut66.TabIndex = 200;
+            this.txtWOut66.Text = "0";
+            this.txtWOut66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut23
+            // 
+            this.txtWOut23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut23.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut23.Location = new System.Drawing.Point(370, 457);
+            this.txtWOut23.Name = "txtWOut23";
+            this.txtWOut23.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut23.TabIndex = 205;
+            this.txtWOut23.Text = "0";
+            this.txtWOut23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut65
+            // 
+            this.txtWOut65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut65.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut65.Location = new System.Drawing.Point(920, 457);
+            this.txtWOut65.Name = "txtWOut65";
+            this.txtWOut65.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut65.TabIndex = 200;
+            this.txtWOut65.Text = "0";
+            this.txtWOut65.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut41
+            // 
+            this.txtWOut41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut41.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut41.Location = new System.Drawing.Point(560, 577);
+            this.txtWOut41.Name = "txtWOut41";
+            this.txtWOut41.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut41.TabIndex = 201;
+            this.txtWOut41.Text = "0";
+            this.txtWOut41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut40
+            // 
+            this.txtWOut40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut40.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut40.Location = new System.Drawing.Point(560, 547);
+            this.txtWOut40.Name = "txtWOut40";
+            this.txtWOut40.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut40.TabIndex = 201;
+            this.txtWOut40.Text = "0";
+            this.txtWOut40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut22
+            // 
+            this.txtWOut22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut22.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut22.Location = new System.Drawing.Point(370, 427);
+            this.txtWOut22.Name = "txtWOut22";
+            this.txtWOut22.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut22.TabIndex = 205;
+            this.txtWOut22.Text = "0";
+            this.txtWOut22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut39
+            // 
+            this.txtWOut39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut39.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut39.Location = new System.Drawing.Point(560, 517);
+            this.txtWOut39.Name = "txtWOut39";
+            this.txtWOut39.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut39.TabIndex = 201;
+            this.txtWOut39.Text = "0";
+            this.txtWOut39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut64
+            // 
+            this.txtWOut64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut64.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut64.Location = new System.Drawing.Point(920, 427);
+            this.txtWOut64.Name = "txtWOut64";
+            this.txtWOut64.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut64.TabIndex = 200;
+            this.txtWOut64.Text = "0";
+            this.txtWOut64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut38
+            // 
+            this.txtWOut38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut38.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut38.Location = new System.Drawing.Point(560, 487);
+            this.txtWOut38.Name = "txtWOut38";
+            this.txtWOut38.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut38.TabIndex = 201;
+            this.txtWOut38.Text = "0";
+            this.txtWOut38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut37
+            // 
+            this.txtWOut37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut37.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut37.Location = new System.Drawing.Point(560, 457);
+            this.txtWOut37.Name = "txtWOut37";
+            this.txtWOut37.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut37.TabIndex = 201;
+            this.txtWOut37.Text = "0";
+            this.txtWOut37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut36
+            // 
+            this.txtWOut36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut36.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut36.Location = new System.Drawing.Point(560, 427);
+            this.txtWOut36.Name = "txtWOut36";
+            this.txtWOut36.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut36.TabIndex = 201;
+            this.txtWOut36.Text = "0";
+            this.txtWOut36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut21
+            // 
+            this.txtWOut21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut21.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut21.Location = new System.Drawing.Point(370, 397);
+            this.txtWOut21.Name = "txtWOut21";
+            this.txtWOut21.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut21.TabIndex = 205;
+            this.txtWOut21.Text = "0";
+            this.txtWOut21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut63
+            // 
+            this.txtWOut63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut63.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut63.Location = new System.Drawing.Point(920, 397);
+            this.txtWOut63.Name = "txtWOut63";
+            this.txtWOut63.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut63.TabIndex = 200;
+            this.txtWOut63.Text = "0";
+            this.txtWOut63.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut35
+            // 
+            this.txtWOut35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut35.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut35.Location = new System.Drawing.Point(560, 397);
+            this.txtWOut35.Name = "txtWOut35";
+            this.txtWOut35.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut35.TabIndex = 201;
+            this.txtWOut35.Text = "0";
+            this.txtWOut35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut75
+            // 
+            this.txtWOut75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut75.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut75.Location = new System.Drawing.Point(1080, 200);
+            this.txtWOut75.Name = "txtWOut75";
+            this.txtWOut75.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut75.TabIndex = 197;
+            this.txtWOut75.Text = "0";
+            this.txtWOut75.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut74
+            // 
+            this.txtWOut74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut74.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut74.Location = new System.Drawing.Point(1080, 168);
+            this.txtWOut74.Name = "txtWOut74";
+            this.txtWOut74.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut74.TabIndex = 197;
+            this.txtWOut74.Text = "0";
+            this.txtWOut74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut73
+            // 
+            this.txtWOut73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut73.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut73.Location = new System.Drawing.Point(1080, 133);
+            this.txtWOut73.Name = "txtWOut73";
+            this.txtWOut73.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut73.TabIndex = 197;
+            this.txtWOut73.Text = "0";
+            this.txtWOut73.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut72
+            // 
+            this.txtWOut72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut72.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut72.Location = new System.Drawing.Point(1080, 100);
+            this.txtWOut72.Name = "txtWOut72";
+            this.txtWOut72.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut72.TabIndex = 197;
+            this.txtWOut72.Text = "0";
+            this.txtWOut72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut76
+            // 
+            this.txtWOut76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut76.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut76.Location = new System.Drawing.Point(1080, 367);
+            this.txtWOut76.Name = "txtWOut76";
+            this.txtWOut76.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut76.TabIndex = 197;
+            this.txtWOut76.Text = "0";
+            this.txtWOut76.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut71
+            // 
+            this.txtWOut71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut71.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut71.Location = new System.Drawing.Point(1080, 70);
+            this.txtWOut71.Name = "txtWOut71";
+            this.txtWOut71.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut71.TabIndex = 197;
+            this.txtWOut71.Text = "0";
+            this.txtWOut71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut47
+            // 
+            this.txtWOut47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut47.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut47.Location = new System.Drawing.Point(720, 200);
+            this.txtWOut47.Name = "txtWOut47";
+            this.txtWOut47.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut47.TabIndex = 198;
+            this.txtWOut47.Text = "0";
+            this.txtWOut47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut46
+            // 
+            this.txtWOut46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut46.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut46.Location = new System.Drawing.Point(720, 168);
+            this.txtWOut46.Name = "txtWOut46";
+            this.txtWOut46.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut46.TabIndex = 198;
+            this.txtWOut46.Text = "0";
+            this.txtWOut46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut45
+            // 
+            this.txtWOut45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut45.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut45.Location = new System.Drawing.Point(720, 133);
+            this.txtWOut45.Name = "txtWOut45";
+            this.txtWOut45.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut45.TabIndex = 198;
+            this.txtWOut45.Text = "0";
+            this.txtWOut45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut44
+            // 
+            this.txtWOut44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut44.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut44.Location = new System.Drawing.Point(720, 100);
+            this.txtWOut44.Name = "txtWOut44";
+            this.txtWOut44.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut44.TabIndex = 198;
+            this.txtWOut44.Text = "0";
+            this.txtWOut44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut48
+            // 
+            this.txtWOut48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut48.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut48.Location = new System.Drawing.Point(720, 367);
+            this.txtWOut48.Name = "txtWOut48";
+            this.txtWOut48.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut48.TabIndex = 198;
+            this.txtWOut48.Text = "0";
+            this.txtWOut48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut43
+            // 
+            this.txtWOut43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut43.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut43.Location = new System.Drawing.Point(720, 70);
+            this.txtWOut43.Name = "txtWOut43";
+            this.txtWOut43.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut43.TabIndex = 198;
+            this.txtWOut43.Text = "0";
+            this.txtWOut43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut61
+            // 
+            this.txtWOut61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut61.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut61.Location = new System.Drawing.Point(920, 200);
+            this.txtWOut61.Name = "txtWOut61";
+            this.txtWOut61.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut61.TabIndex = 194;
+            this.txtWOut61.Text = "0";
+            this.txtWOut61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut60
+            // 
+            this.txtWOut60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut60.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut60.Location = new System.Drawing.Point(920, 168);
+            this.txtWOut60.Name = "txtWOut60";
+            this.txtWOut60.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut60.TabIndex = 194;
+            this.txtWOut60.Text = "0";
+            this.txtWOut60.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut59
+            // 
+            this.txtWOut59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut59.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut59.Location = new System.Drawing.Point(920, 133);
+            this.txtWOut59.Name = "txtWOut59";
+            this.txtWOut59.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut59.TabIndex = 194;
+            this.txtWOut59.Text = "0";
+            this.txtWOut59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut33
+            // 
+            this.txtWOut33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut33.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut33.Location = new System.Drawing.Point(560, 200);
+            this.txtWOut33.Name = "txtWOut33";
+            this.txtWOut33.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut33.TabIndex = 195;
+            this.txtWOut33.Text = "0";
+            this.txtWOut33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut32
+            // 
+            this.txtWOut32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut32.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut32.Location = new System.Drawing.Point(560, 168);
+            this.txtWOut32.Name = "txtWOut32";
+            this.txtWOut32.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut32.TabIndex = 195;
+            this.txtWOut32.Text = "0";
+            this.txtWOut32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut58
+            // 
+            this.txtWOut58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut58.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut58.Location = new System.Drawing.Point(920, 100);
+            this.txtWOut58.Name = "txtWOut58";
+            this.txtWOut58.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut58.TabIndex = 194;
+            this.txtWOut58.Text = "0";
+            this.txtWOut58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut31
+            // 
+            this.txtWOut31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut31.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut31.Location = new System.Drawing.Point(560, 133);
+            this.txtWOut31.Name = "txtWOut31";
+            this.txtWOut31.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut31.TabIndex = 195;
+            this.txtWOut31.Text = "0";
+            this.txtWOut31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut20
+            // 
+            this.txtWOut20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut20.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut20.Location = new System.Drawing.Point(370, 367);
+            this.txtWOut20.Name = "txtWOut20";
+            this.txtWOut20.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut20.TabIndex = 199;
+            this.txtWOut20.Text = "0";
+            this.txtWOut20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut15
+            // 
+            this.txtWOut15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut15.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut15.Location = new System.Drawing.Point(370, 70);
+            this.txtWOut15.Name = "txtWOut15";
+            this.txtWOut15.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut15.TabIndex = 199;
+            this.txtWOut15.Text = "0";
+            this.txtWOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut30
+            // 
+            this.txtWOut30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut30.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut30.Location = new System.Drawing.Point(560, 100);
+            this.txtWOut30.Name = "txtWOut30";
+            this.txtWOut30.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut30.TabIndex = 195;
+            this.txtWOut30.Text = "0";
+            this.txtWOut30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut62
+            // 
+            this.txtWOut62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut62.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut62.Location = new System.Drawing.Point(920, 367);
+            this.txtWOut62.Name = "txtWOut62";
+            this.txtWOut62.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut62.TabIndex = 194;
+            this.txtWOut62.Text = "0";
+            this.txtWOut62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut57
+            // 
+            this.txtWOut57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut57.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut57.Location = new System.Drawing.Point(920, 70);
+            this.txtWOut57.Name = "txtWOut57";
+            this.txtWOut57.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut57.TabIndex = 194;
+            this.txtWOut57.Text = "0";
+            this.txtWOut57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut34
+            // 
+            this.txtWOut34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut34.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut34.Location = new System.Drawing.Point(560, 367);
+            this.txtWOut34.Name = "txtWOut34";
+            this.txtWOut34.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut34.TabIndex = 195;
+            this.txtWOut34.Text = "0";
+            this.txtWOut34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut29
+            // 
+            this.txtWOut29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut29.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut29.Location = new System.Drawing.Point(560, 70);
+            this.txtWOut29.Name = "txtWOut29";
+            this.txtWOut29.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut29.TabIndex = 195;
+            this.txtWOut29.Text = "0";
+            this.txtWOut29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut19
+            // 
+            this.txtWOut19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut19.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut19.Location = new System.Drawing.Point(370, 200);
+            this.txtWOut19.Name = "txtWOut19";
+            this.txtWOut19.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut19.TabIndex = 149;
+            this.txtWOut19.Text = "0";
+            this.txtWOut19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut18
+            // 
+            this.txtWOut18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut18.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut18.Location = new System.Drawing.Point(370, 168);
+            this.txtWOut18.Name = "txtWOut18";
+            this.txtWOut18.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut18.TabIndex = 149;
+            this.txtWOut18.Text = "0";
+            this.txtWOut18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut5
+            // 
+            this.txtWOut5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut5.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut5.Location = new System.Drawing.Point(210, 200);
+            this.txtWOut5.Name = "txtWOut5";
+            this.txtWOut5.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut5.TabIndex = 148;
+            this.txtWOut5.Text = "0";
+            this.txtWOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut4
+            // 
+            this.txtWOut4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut4.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut4.Location = new System.Drawing.Point(210, 168);
+            this.txtWOut4.Name = "txtWOut4";
+            this.txtWOut4.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut4.TabIndex = 148;
+            this.txtWOut4.Text = "0";
+            this.txtWOut4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut17
+            // 
+            this.txtWOut17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut17.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut17.Location = new System.Drawing.Point(370, 133);
+            this.txtWOut17.Name = "txtWOut17";
+            this.txtWOut17.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut17.TabIndex = 153;
+            this.txtWOut17.Text = "0";
+            this.txtWOut17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut3
+            // 
+            this.txtWOut3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut3.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut3.Location = new System.Drawing.Point(210, 133);
+            this.txtWOut3.Name = "txtWOut3";
+            this.txtWOut3.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut3.TabIndex = 152;
+            this.txtWOut3.Text = "0";
+            this.txtWOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut16
+            // 
+            this.txtWOut16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut16.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut16.Location = new System.Drawing.Point(370, 100);
+            this.txtWOut16.Name = "txtWOut16";
+            this.txtWOut16.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut16.TabIndex = 154;
+            this.txtWOut16.Text = "0";
+            this.txtWOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut2
+            // 
+            this.txtWOut2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut2.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut2.Location = new System.Drawing.Point(210, 100);
+            this.txtWOut2.Name = "txtWOut2";
+            this.txtWOut2.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut2.TabIndex = 155;
+            this.txtWOut2.Text = "0";
+            this.txtWOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut6
+            // 
+            this.txtWOut6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut6.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut6.Location = new System.Drawing.Point(210, 367);
+            this.txtWOut6.Name = "txtWOut6";
+            this.txtWOut6.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut6.TabIndex = 151;
+            this.txtWOut6.Text = "0";
+            this.txtWOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut1
+            // 
+            this.txtWOut1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut1.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut1.Location = new System.Drawing.Point(210, 70);
+            this.txtWOut1.Name = "txtWOut1";
+            this.txtWOut1.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut1.TabIndex = 151;
+            this.txtWOut1.Text = "0";
+            this.txtWOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut13
+            // 
+            this.txtWOut13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut13.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut13.Location = new System.Drawing.Point(210, 577);
+            this.txtWOut13.Name = "txtWOut13";
+            this.txtWOut13.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut13.TabIndex = 136;
+            this.txtWOut13.Text = "0";
+            this.txtWOut13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut12
+            // 
+            this.txtWOut12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut12.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut12.Location = new System.Drawing.Point(210, 547);
+            this.txtWOut12.Name = "txtWOut12";
+            this.txtWOut12.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut12.TabIndex = 136;
+            this.txtWOut12.Text = "0";
+            this.txtWOut12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut11
+            // 
+            this.txtWOut11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut11.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut11.Location = new System.Drawing.Point(210, 517);
+            this.txtWOut11.Name = "txtWOut11";
+            this.txtWOut11.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut11.TabIndex = 137;
+            this.txtWOut11.Text = "0";
+            this.txtWOut11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut10
+            // 
+            this.txtWOut10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut10.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut10.Location = new System.Drawing.Point(210, 487);
+            this.txtWOut10.Name = "txtWOut10";
+            this.txtWOut10.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut10.TabIndex = 132;
+            this.txtWOut10.Text = "0";
+            this.txtWOut10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut9
+            // 
+            this.txtWOut9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut9.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut9.Location = new System.Drawing.Point(210, 457);
+            this.txtWOut9.Name = "txtWOut9";
+            this.txtWOut9.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut9.TabIndex = 133;
+            this.txtWOut9.Text = "0";
+            this.txtWOut9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut8
+            // 
+            this.txtWOut8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut8.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut8.Location = new System.Drawing.Point(210, 427);
+            this.txtWOut8.Name = "txtWOut8";
+            this.txtWOut8.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut8.TabIndex = 134;
+            this.txtWOut8.Text = "0";
+            this.txtWOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtWOut7
+            // 
+            this.txtWOut7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWOut7.ForeColor = System.Drawing.Color.Black;
+            this.txtWOut7.Location = new System.Drawing.Point(210, 397);
+            this.txtWOut7.Name = "txtWOut7";
+            this.txtWOut7.Size = new System.Drawing.Size(129, 21);
+            this.txtWOut7.TabIndex = 140;
+            this.txtWOut7.Text = "0";
+            this.txtWOut7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(80, 342);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(31, 12);
+            this.label22.TabIndex = 128;
+            this.label22.Text = "구분";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(35, 179);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(136, 12);
+            this.label24.TabIndex = 121;
+            this.label24.Text = "추가수익(현금+Volume)";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(35, 167);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(121, 12);
+            this.label27.TabIndex = 123;
+            this.label27.Text = "유통모델 매입에 따른";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(35, 144);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(81, 12);
+            this.label28.TabIndex = 125;
+            this.label28.Text = "따른 추가수익";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(35, 132);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(105, 12);
+            this.label29.TabIndex = 124;
+            this.label29.Text = "사업자모델 매입에";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(35, 552);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(93, 12);
+            this.label32.TabIndex = 114;
+            this.label32.Text = "기타 판매관리비";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.ForeColor = System.Drawing.Color.Black;
+            this.label83.Location = new System.Drawing.Point(35, 522);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(41, 12);
+            this.label83.TabIndex = 111;
+            this.label83.Text = "법인세";
+            // 
+            // label33
+            // 
+            this.panel92.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel92.Controls.Add(this.panel93);
+            this.panel92.ForeColor = System.Drawing.Color.Black;
+            this.panel92.Location = new System.Drawing.Point(0, 5);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(1240, 3);
+            this.panel92.TabIndex = 208;
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(35, 492);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(41, 12);
+            this.label33.TabIndex = 111;
+            this.label33.Text = "부가세";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.Black;
+            this.label34.Location = new System.Drawing.Point(35, 462);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(53, 12);
+            this.label34.TabIndex = 112;
+            this.label34.Text = "이자비용";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(35, 432);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(41, 12);
+            this.label35.TabIndex = 115;
+            this.label35.Text = "임차료";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(35, 402);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(143, 12);
+            this.label36.TabIndex = 118;
+            this.label36.Text = "인건비(급여, 복리후생비)";
+            // 
+            // label37
+            // 
+            this.panel44.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel44.Controls.Add(this.panel63);
+            this.panel44.ForeColor = System.Drawing.Color.Black;
+            this.panel44.Location = new System.Drawing.Point(0, 35);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(1240, 3);
+            this.panel44.TabIndex = 225;
+            this.label37.AutoSize = true;
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(35, 372);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(93, 12);
+            this.label37.TabIndex = 119;
+            this.label37.Text = "대리점 투자비용";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(35, 105);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(90, 12);
+            this.label38.TabIndex = 116;
+            this.label38.Text = "CS 관리 수수료";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(35, 75);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(109, 12);
+            this.label39.TabIndex = 117;
+            this.label39.Text = "가입자 관리 수수료";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(25, 312);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(42, 16);
+            this.label40.TabIndex = 109;
+            this.label40.Text = "비용";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::KIWI.Properties.Resources.data1;
+            this.pictureBox5.Location = new System.Drawing.Point(100, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(29, 23);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 218;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::KIWI.Properties.Resources.graph2;
+            this.pictureBox2.Location = new System.Drawing.Point(64, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 218;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // panel15
+            // 
+            this.panel15.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.ForeColor = System.Drawing.Color.Black;
+            this.panel15.Location = new System.Drawing.Point(880, 332);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1, 270);
+            this.panel15.TabIndex = 133;
+            // 
+            // panel45
+            // 
+            this.panel45.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel45.ForeColor = System.Drawing.Color.Black;
+            this.panel45.Location = new System.Drawing.Point(530, 332);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(1, 270);
+            this.panel45.TabIndex = 132;
+            // 
+            // panel46
+            // 
+            this.panel46.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel46.ForeColor = System.Drawing.Color.Black;
+            this.panel46.Location = new System.Drawing.Point(180, 332);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(1, 270);
+            this.panel46.TabIndex = 131;
+            // 
+            // panel84
+            // 
+            this.panel84.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel84.Controls.Add(this.panel85);
+            this.panel84.ForeColor = System.Drawing.Color.Black;
+            this.panel84.Location = new System.Drawing.Point(0, 5);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(1240, 3);
+            this.panel84.TabIndex = 209;
+            // 
+            // panel85
+            // 
+            this.panel85.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel85.Location = new System.Drawing.Point(0, 20);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(698, 5);
+            this.panel85.TabIndex = 18;
+            // 
+            // panel86
+            // 
+            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel86.Controls.Add(this.panel87);
+            this.panel86.ForeColor = System.Drawing.Color.Black;
+            this.panel86.Location = new System.Drawing.Point(0, 302);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(1240, 3);
+            this.panel86.TabIndex = 208;
+            // 
+            // panel87
+            // 
+            this.panel87.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel87.Location = new System.Drawing.Point(0, 20);
+            this.panel87.Name = "panel87";
+            this.panel87.Size = new System.Drawing.Size(698, 5);
+            this.panel87.TabIndex = 18;
+            // 
+            // panel23
+            // 
+            this.panel23.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel23.Controls.Add(this.panel56);
+            this.panel23.ForeColor = System.Drawing.Color.Black;
+            this.panel23.Location = new System.Drawing.Point(0, 332);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(1240, 3);
+            this.panel23.TabIndex = 208;
+            // 
+            // panel56
+            // 
+            this.panel56.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel56.Location = new System.Drawing.Point(0, 20);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(698, 5);
+            this.panel56.TabIndex = 18;
+            // 
+            // panel61
+            // 
+            this.panel61.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel61.Controls.Add(this.panel62);
+            this.panel61.ForeColor = System.Drawing.Color.Black;
+            this.panel61.Location = new System.Drawing.Point(0, 362);
+            this.panel61.Name = "panel61";
+            this.panel61.Size = new System.Drawing.Size(1240, 3);
+            this.panel61.TabIndex = 207;
+            // 
+            // panel62
+            // 
+            this.panel62.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel62.Location = new System.Drawing.Point(0, 20);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(698, 5);
+            this.panel62.TabIndex = 18;
+            // 
+            // panel28
+            // 
+            this.panel28.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel28.Controls.Add(this.panel53);
+            this.panel28.ForeColor = System.Drawing.Color.Black;
+            this.panel28.Location = new System.Drawing.Point(0, 35);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(1240, 3);
+            this.panel28.TabIndex = 208;
+            // 
+            // panel53
+            // 
+            this.panel53.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel53.Location = new System.Drawing.Point(0, 20);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(698, 5);
+            this.panel53.TabIndex = 18;
+            // 
+            // panel90
+            // 
+            this.panel90.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel90.Controls.Add(this.panel91);
+            this.panel90.ForeColor = System.Drawing.Color.Black;
+            this.panel90.Location = new System.Drawing.Point(0, 602);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(1240, 3);
+            this.panel90.TabIndex = 207;
+            // 
+            // panel91
+            // 
+            this.panel91.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel91.Location = new System.Drawing.Point(0, 20);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(698, 5);
+            this.panel91.TabIndex = 18;
+            // 
+            // panel88
+            // 
+            this.panel88.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel88.Controls.Add(this.panel89);
+            this.panel88.ForeColor = System.Drawing.Color.Black;
+            this.panel88.Location = new System.Drawing.Point(0, 225);
+            this.panel88.Name = "panel88";
+            this.panel88.Size = new System.Drawing.Size(1240, 3);
+            this.panel88.TabIndex = 207;
+            // 
+            // panel89
+            // 
+            this.panel89.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel89.Location = new System.Drawing.Point(0, 20);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(698, 5);
+            this.panel89.TabIndex = 18;
+            // 
+            // panel54
+            // 
+            this.panel54.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel54.Controls.Add(this.panel55);
+            this.panel54.ForeColor = System.Drawing.Color.Black;
+            this.panel54.Location = new System.Drawing.Point(0, 65);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(1240, 3);
+            this.panel54.TabIndex = 207;
+            // 
+            // panel55
+            // 
+            this.panel55.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel55.Location = new System.Drawing.Point(0, 20);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(698, 5);
+            this.panel55.TabIndex = 18;
+            // 
+            // panel42
+            // 
+            this.panel42.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel42.ForeColor = System.Drawing.Color.Black;
+            this.panel42.Location = new System.Drawing.Point(880, 35);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(1, 190);
+            this.panel42.TabIndex = 130;
+            // 
+            // panel40
+            // 
+            this.panel40.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel40.ForeColor = System.Drawing.Color.Black;
+            this.panel40.Location = new System.Drawing.Point(530, 35);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(1, 190);
+            this.panel40.TabIndex = 130;
+            // 
+            // panel14
+            // 
+            this.panel14.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel14.ForeColor = System.Drawing.Color.Black;
+            this.panel14.Location = new System.Drawing.Point(180, 35);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1, 190);
+            this.panel14.TabIndex = 130;
+            // 
+            // panel16
+            // 
+            this.panel16.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel16.ForeColor = System.Drawing.Color.Black;
+            this.panel16.Location = new System.Drawing.Point(0, 512);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1240, 2);
+            this.panel16.TabIndex = 99;
+            // 
+            // panel17
+            // 
+            this.panel17.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel17.ForeColor = System.Drawing.Color.Black;
+            this.panel17.Location = new System.Drawing.Point(0, 482);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(1240, 2);
+            this.panel17.TabIndex = 100;
+            // 
+            // panel18
+            // 
+            this.panel18.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel18.ForeColor = System.Drawing.Color.Black;
+            this.panel18.Location = new System.Drawing.Point(0, 452);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(1240, 2);
+            this.panel18.TabIndex = 101;
+            // 
+            // panel19
+            // 
+            this.panel19.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel19.ForeColor = System.Drawing.Color.Black;
+            this.panel19.Location = new System.Drawing.Point(0, 392);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(1240, 2);
+            this.panel19.TabIndex = 96;
+            // 
+            // panel20
+            // 
+            this.panel20.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.ForeColor = System.Drawing.Color.Black;
+            this.panel20.Location = new System.Drawing.Point(0, 422);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(1240, 2);
+            this.panel20.TabIndex = 97;
+            // 
+            // panel72
+            // 
+            this.panel72.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel72.ForeColor = System.Drawing.Color.Black;
+            this.panel72.Location = new System.Drawing.Point(0, 195);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(1240, 2);
+            this.panel72.TabIndex = 98;
+            // 
+            // panel71
+            // 
+            this.panel71.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel71.ForeColor = System.Drawing.Color.Black;
+            this.panel71.Location = new System.Drawing.Point(0, 572);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(1240, 2);
+            this.panel71.TabIndex = 102;
+            // 
+            // panel21
+            // 
+            this.panel21.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel21.ForeColor = System.Drawing.Color.Black;
+            this.panel21.Location = new System.Drawing.Point(0, 160);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(1240, 2);
+            this.panel21.TabIndex = 98;
+            // 
+            // panel22
+            // 
+            this.panel22.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.ForeColor = System.Drawing.Color.Black;
+            this.panel22.Location = new System.Drawing.Point(0, 542);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(1240, 2);
+            this.panel22.TabIndex = 102;
+            // 
+            // panel24
+            // 
+            this.panel24.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel24.ForeColor = System.Drawing.Color.Black;
+            this.panel24.Location = new System.Drawing.Point(0, 125);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(1240, 2);
+            this.panel24.TabIndex = 107;
+            // 
+            // panel27
+            // 
+            this.panel27.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
+            this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel27.ForeColor = System.Drawing.Color.Black;
+            this.panel27.Location = new System.Drawing.Point(0, 95);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(1240, 2);
+            this.panel27.TabIndex = 104;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.pnlChart3);
@@ -3129,9 +5439,9 @@
             this.tabPage3.Controls.Add(this.panel36);
             this.tabPage3.Controls.Add(this.panel37);
             this.tabPage3.Controls.Add(this.panel41);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1242, 723);
+            this.tabPage3.Size = new System.Drawing.Size(1242, 724);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "          소매          ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3149,80 +5459,88 @@
             // 
             // chart6
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart6.Legends.Add(legend5);
+            this.panel28.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel28.Controls.Add(this.panel53);
+            this.panel28.ForeColor = System.Drawing.Color.Black;
+            this.panel28.Location = new System.Drawing.Point(0, 35);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(1240, 3);
+            this.panel28.TabIndex = 208;
+            chartArea17.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea17);
+            legend17.Name = "Legend1";
+            this.chart6.Legends.Add(legend17);
             this.chart6.Location = new System.Drawing.Point(3, 312);
             this.chart6.Name = "chart6";
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            series13.Points.Add(dataPoint33);
-            series13.Points.Add(dataPoint34);
-            series13.Points.Add(dataPoint35);
-            series13.Points.Add(dataPoint36);
-            series13.Points.Add(dataPoint37);
-            series13.Points.Add(dataPoint38);
-            series13.Points.Add(dataPoint39);
-            series13.Points.Add(dataPoint40);
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Series2";
-            series14.Points.Add(dataPoint41);
-            series14.Points.Add(dataPoint42);
-            series14.Points.Add(dataPoint43);
-            series14.Points.Add(dataPoint44);
-            series14.Points.Add(dataPoint45);
-            series14.Points.Add(dataPoint46);
-            series14.Points.Add(dataPoint47);
-            series14.Points.Add(dataPoint48);
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "Series3";
-            this.chart6.Series.Add(series13);
-            this.chart6.Series.Add(series14);
-            this.chart6.Series.Add(series15);
+            series49.ChartArea = "ChartArea1";
+            series49.Legend = "Legend1";
+            series49.Name = "Series1";
+            series49.Points.Add(dataPoint161);
+            series49.Points.Add(dataPoint162);
+            series49.Points.Add(dataPoint163);
+            series49.Points.Add(dataPoint164);
+            series49.Points.Add(dataPoint165);
+            series49.Points.Add(dataPoint166);
+            series49.Points.Add(dataPoint167);
+            series49.Points.Add(dataPoint168);
+            series50.ChartArea = "ChartArea1";
+            series50.Legend = "Legend1";
+            series50.Name = "Series2";
+            series50.Points.Add(dataPoint169);
+            series50.Points.Add(dataPoint170);
+            series50.Points.Add(dataPoint171);
+            series50.Points.Add(dataPoint172);
+            series50.Points.Add(dataPoint173);
+            series50.Points.Add(dataPoint174);
+            series50.Points.Add(dataPoint175);
+            series50.Points.Add(dataPoint176);
+            series51.ChartArea = "ChartArea1";
+            series51.Legend = "Legend1";
+            series51.Name = "Series3";
+            this.chart6.Series.Add(series49);
+            this.chart6.Series.Add(series50);
+            this.chart6.Series.Add(series51);
             this.chart6.Size = new System.Drawing.Size(1142, 280);
             this.chart6.TabIndex = 342;
             this.chart6.Text = "chart6";
             // 
             // chart3
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart3.Legends.Add(legend6);
+            chartArea18.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea18);
+            legend18.Name = "Legend1";
+            this.chart3.Legends.Add(legend18);
             this.chart3.Location = new System.Drawing.Point(3, 3);
             this.chart3.Name = "chart3";
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.Name = "Series1";
-            series16.Points.Add(dataPoint49);
-            series16.Points.Add(dataPoint50);
-            series16.Points.Add(dataPoint51);
-            series16.Points.Add(dataPoint52);
-            series16.Points.Add(dataPoint53);
-            series16.Points.Add(dataPoint54);
-            series16.Points.Add(dataPoint55);
-            series16.Points.Add(dataPoint56);
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "Series2";
-            series17.Points.Add(dataPoint57);
-            series17.Points.Add(dataPoint58);
-            series17.Points.Add(dataPoint59);
-            series17.Points.Add(dataPoint60);
-            series17.Points.Add(dataPoint61);
-            series17.Points.Add(dataPoint62);
-            series17.Points.Add(dataPoint63);
-            series17.Points.Add(dataPoint64);
-            series18.ChartArea = "ChartArea1";
-            series18.Legend = "Legend1";
-            series18.Name = "Series3";
-            this.chart3.Series.Add(series16);
-            this.chart3.Series.Add(series17);
-            this.chart3.Series.Add(series18);
+            series52.ChartArea = "ChartArea1";
+            series52.Legend = "Legend1";
+            series52.Name = "Series1";
+            series52.Points.Add(dataPoint177);
+            series52.Points.Add(dataPoint178);
+            series52.Points.Add(dataPoint179);
+            series52.Points.Add(dataPoint180);
+            series52.Points.Add(dataPoint181);
+            series52.Points.Add(dataPoint182);
+            series52.Points.Add(dataPoint183);
+            series52.Points.Add(dataPoint184);
+            series53.ChartArea = "ChartArea1";
+            series53.Legend = "Legend1";
+            series53.Name = "Series2";
+            series53.Points.Add(dataPoint185);
+            series53.Points.Add(dataPoint186);
+            series53.Points.Add(dataPoint187);
+            series53.Points.Add(dataPoint188);
+            series53.Points.Add(dataPoint189);
+            series53.Points.Add(dataPoint190);
+            series53.Points.Add(dataPoint191);
+            series53.Points.Add(dataPoint192);
+            series54.ChartArea = "ChartArea1";
+            series54.Legend = "Legend1";
+            series54.Name = "Series3";
+            this.chart3.Series.Add(series52);
+            this.chart3.Series.Add(series53);
+            this.chart3.Series.Add(series54);
             this.chart3.Size = new System.Drawing.Size(1142, 280);
             this.chart3.TabIndex = 341;
             this.chart3.Text = "chart6";
@@ -3295,6 +5613,14 @@
             // 
             // panel115
             // 
+            this.panel84.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel84.Controls.Add(this.panel85);
+            this.panel84.ForeColor = System.Drawing.Color.Black;
+            this.panel84.Location = new System.Drawing.Point(0, 5);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(1240, 3);
+            this.panel84.TabIndex = 209;
             this.panel115.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel115.ForeColor = System.Drawing.Color.Black;
@@ -4803,7 +7129,7 @@
             // 
             // panel92
             // 
-            this.panel92.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel92.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
             this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel92.Controls.Add(this.panel93);
             this.panel92.ForeColor = System.Drawing.Color.Black;
@@ -4841,7 +7167,7 @@
             // 
             // panel44
             // 
-            this.panel44.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel44.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
             this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel44.Controls.Add(this.panel63);
             this.panel44.ForeColor = System.Drawing.Color.Black;
@@ -5036,2098 +7362,28 @@
             this.panel41.Size = new System.Drawing.Size(1240, 2);
             this.panel41.TabIndex = 152;
             // 
-            // panel27
-            // 
-            this.panel27.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel27.ForeColor = System.Drawing.Color.Black;
-            this.panel27.Location = new System.Drawing.Point(0, 95);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(1240, 2);
-            this.panel27.TabIndex = 104;
-            // 
-            // panel24
-            // 
-            this.panel24.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel24.ForeColor = System.Drawing.Color.Black;
-            this.panel24.Location = new System.Drawing.Point(0, 125);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(1240, 2);
-            this.panel24.TabIndex = 107;
-            // 
-            // panel22
-            // 
-            this.panel22.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel22.ForeColor = System.Drawing.Color.Black;
-            this.panel22.Location = new System.Drawing.Point(0, 542);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1240, 2);
-            this.panel22.TabIndex = 102;
-            // 
-            // panel21
-            // 
-            this.panel21.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel21.ForeColor = System.Drawing.Color.Black;
-            this.panel21.Location = new System.Drawing.Point(0, 160);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(1240, 2);
-            this.panel21.TabIndex = 98;
-            // 
-            // panel71
-            // 
-            this.panel71.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel71.ForeColor = System.Drawing.Color.Black;
-            this.panel71.Location = new System.Drawing.Point(0, 572);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(1240, 2);
-            this.panel71.TabIndex = 102;
-            // 
-            // panel72
-            // 
-            this.panel72.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel72.ForeColor = System.Drawing.Color.Black;
-            this.panel72.Location = new System.Drawing.Point(0, 195);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(1240, 2);
-            this.panel72.TabIndex = 98;
-            // 
-            // panel20
-            // 
-            this.panel20.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel20.ForeColor = System.Drawing.Color.Black;
-            this.panel20.Location = new System.Drawing.Point(0, 422);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(1240, 2);
-            this.panel20.TabIndex = 97;
-            // 
-            // panel19
-            // 
-            this.panel19.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel19.ForeColor = System.Drawing.Color.Black;
-            this.panel19.Location = new System.Drawing.Point(0, 392);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(1240, 2);
-            this.panel19.TabIndex = 96;
-            // 
-            // panel18
-            // 
-            this.panel18.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel18.ForeColor = System.Drawing.Color.Black;
-            this.panel18.Location = new System.Drawing.Point(0, 452);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(1240, 2);
-            this.panel18.TabIndex = 101;
-            // 
-            // panel17
-            // 
-            this.panel17.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel17.ForeColor = System.Drawing.Color.Black;
-            this.panel17.Location = new System.Drawing.Point(0, 482);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1240, 2);
-            this.panel17.TabIndex = 100;
-            // 
-            // panel16
-            // 
-            this.panel16.BackgroundImage = global::KIWI.Properties.Resources.얇은선;
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel16.ForeColor = System.Drawing.Color.Black;
-            this.panel16.Location = new System.Drawing.Point(0, 512);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1240, 2);
-            this.panel16.TabIndex = 99;
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.ForeColor = System.Drawing.Color.Black;
-            this.panel14.Location = new System.Drawing.Point(180, 35);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1, 190);
-            this.panel14.TabIndex = 130;
-            // 
-            // panel40
-            // 
-            this.panel40.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel40.ForeColor = System.Drawing.Color.Black;
-            this.panel40.Location = new System.Drawing.Point(530, 35);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(1, 190);
-            this.panel40.TabIndex = 130;
-            // 
-            // panel42
-            // 
-            this.panel42.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel42.ForeColor = System.Drawing.Color.Black;
-            this.panel42.Location = new System.Drawing.Point(880, 35);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(1, 190);
-            this.panel42.TabIndex = 130;
-            // 
-            // panel54
-            // 
-            this.panel54.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel54.Controls.Add(this.panel55);
-            this.panel54.ForeColor = System.Drawing.Color.Black;
-            this.panel54.Location = new System.Drawing.Point(0, 65);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(1240, 3);
-            this.panel54.TabIndex = 207;
-            // 
-            // panel55
-            // 
-            this.panel55.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel55.Location = new System.Drawing.Point(0, 20);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(698, 5);
-            this.panel55.TabIndex = 18;
-            // 
-            // panel88
-            // 
-            this.panel88.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel88.Controls.Add(this.panel89);
-            this.panel88.ForeColor = System.Drawing.Color.Black;
-            this.panel88.Location = new System.Drawing.Point(0, 225);
-            this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(1240, 3);
-            this.panel88.TabIndex = 207;
-            // 
-            // panel89
-            // 
-            this.panel89.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel89.Location = new System.Drawing.Point(0, 20);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(698, 5);
-            this.panel89.TabIndex = 18;
-            // 
-            // panel90
-            // 
-            this.panel90.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel90.Controls.Add(this.panel91);
-            this.panel90.ForeColor = System.Drawing.Color.Black;
-            this.panel90.Location = new System.Drawing.Point(0, 602);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(1240, 3);
-            this.panel90.TabIndex = 207;
-            // 
-            // panel91
-            // 
-            this.panel91.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel91.Location = new System.Drawing.Point(0, 20);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(698, 5);
-            this.panel91.TabIndex = 18;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel28.Controls.Add(this.panel53);
-            this.panel28.ForeColor = System.Drawing.Color.Black;
-            this.panel28.Location = new System.Drawing.Point(0, 35);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(1240, 3);
-            this.panel28.TabIndex = 208;
-            // 
-            // panel53
-            // 
-            this.panel53.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel53.Location = new System.Drawing.Point(0, 20);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(698, 5);
-            this.panel53.TabIndex = 18;
-            // 
-            // panel61
-            // 
-            this.panel61.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel61.Controls.Add(this.panel62);
-            this.panel61.ForeColor = System.Drawing.Color.Black;
-            this.panel61.Location = new System.Drawing.Point(0, 362);
-            this.panel61.Name = "panel61";
-            this.panel61.Size = new System.Drawing.Size(1240, 3);
-            this.panel61.TabIndex = 207;
-            // 
-            // panel62
-            // 
-            this.panel62.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel62.Location = new System.Drawing.Point(0, 20);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(698, 5);
-            this.panel62.TabIndex = 18;
-            // 
-            // panel23
-            // 
-            this.panel23.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel23.Controls.Add(this.panel56);
-            this.panel23.ForeColor = System.Drawing.Color.Black;
-            this.panel23.Location = new System.Drawing.Point(0, 332);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(1240, 3);
-            this.panel23.TabIndex = 208;
-            // 
-            // panel56
-            // 
-            this.panel56.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel56.Location = new System.Drawing.Point(0, 20);
-            this.panel56.Name = "panel56";
-            this.panel56.Size = new System.Drawing.Size(698, 5);
-            this.panel56.TabIndex = 18;
-            // 
-            // panel86
-            // 
-            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel86.Controls.Add(this.panel87);
-            this.panel86.ForeColor = System.Drawing.Color.Black;
-            this.panel86.Location = new System.Drawing.Point(0, 302);
-            this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(1240, 3);
-            this.panel86.TabIndex = 208;
-            // 
-            // panel87
-            // 
-            this.panel87.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel87.Location = new System.Drawing.Point(0, 20);
-            this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(698, 5);
-            this.panel87.TabIndex = 18;
-            // 
-            // panel84
-            // 
-            this.panel84.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel84.Controls.Add(this.panel85);
-            this.panel84.ForeColor = System.Drawing.Color.Black;
-            this.panel84.Location = new System.Drawing.Point(0, 5);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(1240, 3);
-            this.panel84.TabIndex = 209;
-            // 
-            // panel85
-            // 
-            this.panel85.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel85.Location = new System.Drawing.Point(0, 20);
-            this.panel85.Name = "panel85";
-            this.panel85.Size = new System.Drawing.Size(698, 5);
-            this.panel85.TabIndex = 18;
-            // 
-            // panel46
-            // 
-            this.panel46.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel46.ForeColor = System.Drawing.Color.Black;
-            this.panel46.Location = new System.Drawing.Point(180, 332);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1, 270);
-            this.panel46.TabIndex = 131;
-            // 
-            // panel45
-            // 
-            this.panel45.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel45.ForeColor = System.Drawing.Color.Black;
-            this.panel45.Location = new System.Drawing.Point(530, 332);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(1, 270);
-            this.panel45.TabIndex = 132;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.ForeColor = System.Drawing.Color.Black;
-            this.panel15.Location = new System.Drawing.Point(880, 332);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1, 270);
-            this.panel15.TabIndex = 133;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::KIWI.Properties.Resources.graph2;
-            this.pictureBox2.Location = new System.Drawing.Point(64, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 218;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::KIWI.Properties.Resources.data1;
-            this.pictureBox5.Location = new System.Drawing.Point(100, 10);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(29, 23);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 218;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(25, 312);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(42, 16);
-            this.label40.TabIndex = 109;
-            this.label40.Text = "비용";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(35, 75);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(109, 12);
-            this.label39.TabIndex = 117;
-            this.label39.Text = "가입자 관리 수수료";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(35, 105);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(90, 12);
-            this.label38.TabIndex = 116;
-            this.label38.Text = "CS 관리 수수료";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(35, 372);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(93, 12);
-            this.label37.TabIndex = 119;
-            this.label37.Text = "대리점 투자비용";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(35, 402);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(143, 12);
-            this.label36.TabIndex = 118;
-            this.label36.Text = "인건비(급여, 복리후생비)";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(35, 432);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(41, 12);
-            this.label35.TabIndex = 115;
-            this.label35.Text = "임차료";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(35, 462);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(53, 12);
-            this.label34.TabIndex = 112;
-            this.label34.Text = "이자비용";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(35, 492);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(41, 12);
-            this.label33.TabIndex = 111;
-            this.label33.Text = "부가세";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.ForeColor = System.Drawing.Color.Black;
-            this.label83.Location = new System.Drawing.Point(35, 522);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 12);
-            this.label83.TabIndex = 111;
-            this.label83.Text = "법인세";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(35, 552);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(93, 12);
-            this.label32.TabIndex = 114;
-            this.label32.Text = "기타 판매관리비";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(35, 132);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(105, 12);
-            this.label29.TabIndex = 124;
-            this.label29.Text = "사업자모델 매입에";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(35, 144);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(81, 12);
-            this.label28.TabIndex = 125;
-            this.label28.Text = "따른 추가수익";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(35, 167);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(121, 12);
-            this.label27.TabIndex = 123;
-            this.label27.Text = "유통모델 매입에 따른";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(35, 179);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(136, 12);
-            this.label24.TabIndex = 121;
-            this.label24.Text = "추가수익(현금+Volume)";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(80, 342);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(31, 12);
-            this.label22.TabIndex = 128;
-            this.label22.Text = "구분";
-            // 
-            // txtWOut7
-            // 
-            this.txtWOut7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut7.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut7.Location = new System.Drawing.Point(210, 397);
-            this.txtWOut7.Name = "txtWOut7";
-            this.txtWOut7.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut7.TabIndex = 140;
-            this.txtWOut7.Text = "0";
-            this.txtWOut7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut8
-            // 
-            this.txtWOut8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut8.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut8.Location = new System.Drawing.Point(210, 427);
-            this.txtWOut8.Name = "txtWOut8";
-            this.txtWOut8.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut8.TabIndex = 134;
-            this.txtWOut8.Text = "0";
-            this.txtWOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut9
-            // 
-            this.txtWOut9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut9.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut9.Location = new System.Drawing.Point(210, 457);
-            this.txtWOut9.Name = "txtWOut9";
-            this.txtWOut9.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut9.TabIndex = 133;
-            this.txtWOut9.Text = "0";
-            this.txtWOut9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut10
-            // 
-            this.txtWOut10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut10.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut10.Location = new System.Drawing.Point(210, 487);
-            this.txtWOut10.Name = "txtWOut10";
-            this.txtWOut10.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut10.TabIndex = 132;
-            this.txtWOut10.Text = "0";
-            this.txtWOut10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut11
-            // 
-            this.txtWOut11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut11.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut11.Location = new System.Drawing.Point(210, 517);
-            this.txtWOut11.Name = "txtWOut11";
-            this.txtWOut11.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut11.TabIndex = 137;
-            this.txtWOut11.Text = "0";
-            this.txtWOut11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut12
-            // 
-            this.txtWOut12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut12.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut12.Location = new System.Drawing.Point(210, 547);
-            this.txtWOut12.Name = "txtWOut12";
-            this.txtWOut12.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut12.TabIndex = 136;
-            this.txtWOut12.Text = "0";
-            this.txtWOut12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut13
-            // 
-            this.txtWOut13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut13.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut13.Location = new System.Drawing.Point(210, 577);
-            this.txtWOut13.Name = "txtWOut13";
-            this.txtWOut13.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut13.TabIndex = 136;
-            this.txtWOut13.Text = "0";
-            this.txtWOut13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut1
-            // 
-            this.txtWOut1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut1.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut1.Location = new System.Drawing.Point(210, 70);
-            this.txtWOut1.Name = "txtWOut1";
-            this.txtWOut1.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut1.TabIndex = 151;
-            this.txtWOut1.Text = "0";
-            this.txtWOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut6
-            // 
-            this.txtWOut6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut6.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut6.Location = new System.Drawing.Point(210, 367);
-            this.txtWOut6.Name = "txtWOut6";
-            this.txtWOut6.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut6.TabIndex = 151;
-            this.txtWOut6.Text = "0";
-            this.txtWOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut2
-            // 
-            this.txtWOut2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut2.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut2.Location = new System.Drawing.Point(210, 100);
-            this.txtWOut2.Name = "txtWOut2";
-            this.txtWOut2.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut2.TabIndex = 155;
-            this.txtWOut2.Text = "0";
-            this.txtWOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut16
-            // 
-            this.txtWOut16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut16.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut16.Location = new System.Drawing.Point(370, 100);
-            this.txtWOut16.Name = "txtWOut16";
-            this.txtWOut16.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut16.TabIndex = 154;
-            this.txtWOut16.Text = "0";
-            this.txtWOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut3
-            // 
-            this.txtWOut3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut3.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut3.Location = new System.Drawing.Point(210, 133);
-            this.txtWOut3.Name = "txtWOut3";
-            this.txtWOut3.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut3.TabIndex = 152;
-            this.txtWOut3.Text = "0";
-            this.txtWOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut17
-            // 
-            this.txtWOut17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut17.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut17.Location = new System.Drawing.Point(370, 133);
-            this.txtWOut17.Name = "txtWOut17";
-            this.txtWOut17.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut17.TabIndex = 153;
-            this.txtWOut17.Text = "0";
-            this.txtWOut17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut4
-            // 
-            this.txtWOut4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut4.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut4.Location = new System.Drawing.Point(210, 168);
-            this.txtWOut4.Name = "txtWOut4";
-            this.txtWOut4.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut4.TabIndex = 148;
-            this.txtWOut4.Text = "0";
-            this.txtWOut4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut5
-            // 
-            this.txtWOut5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut5.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut5.Location = new System.Drawing.Point(210, 200);
-            this.txtWOut5.Name = "txtWOut5";
-            this.txtWOut5.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut5.TabIndex = 148;
-            this.txtWOut5.Text = "0";
-            this.txtWOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut18
-            // 
-            this.txtWOut18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut18.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut18.Location = new System.Drawing.Point(370, 168);
-            this.txtWOut18.Name = "txtWOut18";
-            this.txtWOut18.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut18.TabIndex = 149;
-            this.txtWOut18.Text = "0";
-            this.txtWOut18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut19
-            // 
-            this.txtWOut19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut19.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut19.Location = new System.Drawing.Point(370, 200);
-            this.txtWOut19.Name = "txtWOut19";
-            this.txtWOut19.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut19.TabIndex = 149;
-            this.txtWOut19.Text = "0";
-            this.txtWOut19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut29
-            // 
-            this.txtWOut29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut29.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut29.Location = new System.Drawing.Point(560, 70);
-            this.txtWOut29.Name = "txtWOut29";
-            this.txtWOut29.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut29.TabIndex = 195;
-            this.txtWOut29.Text = "0";
-            this.txtWOut29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut34
-            // 
-            this.txtWOut34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut34.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut34.Location = new System.Drawing.Point(560, 367);
-            this.txtWOut34.Name = "txtWOut34";
-            this.txtWOut34.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut34.TabIndex = 195;
-            this.txtWOut34.Text = "0";
-            this.txtWOut34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut57
-            // 
-            this.txtWOut57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut57.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut57.Location = new System.Drawing.Point(920, 70);
-            this.txtWOut57.Name = "txtWOut57";
-            this.txtWOut57.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut57.TabIndex = 194;
-            this.txtWOut57.Text = "0";
-            this.txtWOut57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut62
-            // 
-            this.txtWOut62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut62.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut62.Location = new System.Drawing.Point(920, 367);
-            this.txtWOut62.Name = "txtWOut62";
-            this.txtWOut62.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut62.TabIndex = 194;
-            this.txtWOut62.Text = "0";
-            this.txtWOut62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut30
-            // 
-            this.txtWOut30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut30.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut30.Location = new System.Drawing.Point(560, 100);
-            this.txtWOut30.Name = "txtWOut30";
-            this.txtWOut30.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut30.TabIndex = 195;
-            this.txtWOut30.Text = "0";
-            this.txtWOut30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut15
-            // 
-            this.txtWOut15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut15.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut15.Location = new System.Drawing.Point(370, 70);
-            this.txtWOut15.Name = "txtWOut15";
-            this.txtWOut15.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut15.TabIndex = 199;
-            this.txtWOut15.Text = "0";
-            this.txtWOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut20
-            // 
-            this.txtWOut20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut20.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut20.Location = new System.Drawing.Point(370, 367);
-            this.txtWOut20.Name = "txtWOut20";
-            this.txtWOut20.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut20.TabIndex = 199;
-            this.txtWOut20.Text = "0";
-            this.txtWOut20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut31
-            // 
-            this.txtWOut31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut31.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut31.Location = new System.Drawing.Point(560, 133);
-            this.txtWOut31.Name = "txtWOut31";
-            this.txtWOut31.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut31.TabIndex = 195;
-            this.txtWOut31.Text = "0";
-            this.txtWOut31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut58
-            // 
-            this.txtWOut58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut58.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut58.Location = new System.Drawing.Point(920, 100);
-            this.txtWOut58.Name = "txtWOut58";
-            this.txtWOut58.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut58.TabIndex = 194;
-            this.txtWOut58.Text = "0";
-            this.txtWOut58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut32
-            // 
-            this.txtWOut32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut32.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut32.Location = new System.Drawing.Point(560, 168);
-            this.txtWOut32.Name = "txtWOut32";
-            this.txtWOut32.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut32.TabIndex = 195;
-            this.txtWOut32.Text = "0";
-            this.txtWOut32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut33
-            // 
-            this.txtWOut33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut33.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut33.Location = new System.Drawing.Point(560, 200);
-            this.txtWOut33.Name = "txtWOut33";
-            this.txtWOut33.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut33.TabIndex = 195;
-            this.txtWOut33.Text = "0";
-            this.txtWOut33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut59
-            // 
-            this.txtWOut59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut59.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut59.Location = new System.Drawing.Point(920, 133);
-            this.txtWOut59.Name = "txtWOut59";
-            this.txtWOut59.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut59.TabIndex = 194;
-            this.txtWOut59.Text = "0";
-            this.txtWOut59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut60
-            // 
-            this.txtWOut60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut60.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut60.Location = new System.Drawing.Point(920, 168);
-            this.txtWOut60.Name = "txtWOut60";
-            this.txtWOut60.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut60.TabIndex = 194;
-            this.txtWOut60.Text = "0";
-            this.txtWOut60.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut61
-            // 
-            this.txtWOut61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut61.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut61.Location = new System.Drawing.Point(920, 200);
-            this.txtWOut61.Name = "txtWOut61";
-            this.txtWOut61.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut61.TabIndex = 194;
-            this.txtWOut61.Text = "0";
-            this.txtWOut61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut43
-            // 
-            this.txtWOut43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut43.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut43.Location = new System.Drawing.Point(720, 70);
-            this.txtWOut43.Name = "txtWOut43";
-            this.txtWOut43.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut43.TabIndex = 198;
-            this.txtWOut43.Text = "0";
-            this.txtWOut43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut48
-            // 
-            this.txtWOut48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut48.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut48.Location = new System.Drawing.Point(720, 367);
-            this.txtWOut48.Name = "txtWOut48";
-            this.txtWOut48.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut48.TabIndex = 198;
-            this.txtWOut48.Text = "0";
-            this.txtWOut48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut44
-            // 
-            this.txtWOut44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut44.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut44.Location = new System.Drawing.Point(720, 100);
-            this.txtWOut44.Name = "txtWOut44";
-            this.txtWOut44.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut44.TabIndex = 198;
-            this.txtWOut44.Text = "0";
-            this.txtWOut44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut45
-            // 
-            this.txtWOut45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut45.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut45.Location = new System.Drawing.Point(720, 133);
-            this.txtWOut45.Name = "txtWOut45";
-            this.txtWOut45.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut45.TabIndex = 198;
-            this.txtWOut45.Text = "0";
-            this.txtWOut45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut46
-            // 
-            this.txtWOut46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut46.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut46.Location = new System.Drawing.Point(720, 168);
-            this.txtWOut46.Name = "txtWOut46";
-            this.txtWOut46.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut46.TabIndex = 198;
-            this.txtWOut46.Text = "0";
-            this.txtWOut46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut47
-            // 
-            this.txtWOut47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut47.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut47.Location = new System.Drawing.Point(720, 200);
-            this.txtWOut47.Name = "txtWOut47";
-            this.txtWOut47.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut47.TabIndex = 198;
-            this.txtWOut47.Text = "0";
-            this.txtWOut47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut71
-            // 
-            this.txtWOut71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut71.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut71.Location = new System.Drawing.Point(1080, 70);
-            this.txtWOut71.Name = "txtWOut71";
-            this.txtWOut71.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut71.TabIndex = 197;
-            this.txtWOut71.Text = "0";
-            this.txtWOut71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut76
-            // 
-            this.txtWOut76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut76.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut76.Location = new System.Drawing.Point(1080, 367);
-            this.txtWOut76.Name = "txtWOut76";
-            this.txtWOut76.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut76.TabIndex = 197;
-            this.txtWOut76.Text = "0";
-            this.txtWOut76.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut72
-            // 
-            this.txtWOut72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut72.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut72.Location = new System.Drawing.Point(1080, 100);
-            this.txtWOut72.Name = "txtWOut72";
-            this.txtWOut72.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut72.TabIndex = 197;
-            this.txtWOut72.Text = "0";
-            this.txtWOut72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut73
-            // 
-            this.txtWOut73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut73.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut73.Location = new System.Drawing.Point(1080, 133);
-            this.txtWOut73.Name = "txtWOut73";
-            this.txtWOut73.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut73.TabIndex = 197;
-            this.txtWOut73.Text = "0";
-            this.txtWOut73.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut74
-            // 
-            this.txtWOut74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut74.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut74.Location = new System.Drawing.Point(1080, 168);
-            this.txtWOut74.Name = "txtWOut74";
-            this.txtWOut74.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut74.TabIndex = 197;
-            this.txtWOut74.Text = "0";
-            this.txtWOut74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut75
-            // 
-            this.txtWOut75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut75.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut75.Location = new System.Drawing.Point(1080, 200);
-            this.txtWOut75.Name = "txtWOut75";
-            this.txtWOut75.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut75.TabIndex = 197;
-            this.txtWOut75.Text = "0";
-            this.txtWOut75.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut35
-            // 
-            this.txtWOut35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut35.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut35.Location = new System.Drawing.Point(560, 397);
-            this.txtWOut35.Name = "txtWOut35";
-            this.txtWOut35.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut35.TabIndex = 201;
-            this.txtWOut35.Text = "0";
-            this.txtWOut35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut63
-            // 
-            this.txtWOut63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut63.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut63.Location = new System.Drawing.Point(920, 397);
-            this.txtWOut63.Name = "txtWOut63";
-            this.txtWOut63.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut63.TabIndex = 200;
-            this.txtWOut63.Text = "0";
-            this.txtWOut63.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut21
-            // 
-            this.txtWOut21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut21.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut21.Location = new System.Drawing.Point(370, 397);
-            this.txtWOut21.Name = "txtWOut21";
-            this.txtWOut21.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut21.TabIndex = 205;
-            this.txtWOut21.Text = "0";
-            this.txtWOut21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut36
-            // 
-            this.txtWOut36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut36.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut36.Location = new System.Drawing.Point(560, 427);
-            this.txtWOut36.Name = "txtWOut36";
-            this.txtWOut36.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut36.TabIndex = 201;
-            this.txtWOut36.Text = "0";
-            this.txtWOut36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut37
-            // 
-            this.txtWOut37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut37.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut37.Location = new System.Drawing.Point(560, 457);
-            this.txtWOut37.Name = "txtWOut37";
-            this.txtWOut37.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut37.TabIndex = 201;
-            this.txtWOut37.Text = "0";
-            this.txtWOut37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut38
-            // 
-            this.txtWOut38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut38.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut38.Location = new System.Drawing.Point(560, 487);
-            this.txtWOut38.Name = "txtWOut38";
-            this.txtWOut38.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut38.TabIndex = 201;
-            this.txtWOut38.Text = "0";
-            this.txtWOut38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut64
-            // 
-            this.txtWOut64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut64.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut64.Location = new System.Drawing.Point(920, 427);
-            this.txtWOut64.Name = "txtWOut64";
-            this.txtWOut64.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut64.TabIndex = 200;
-            this.txtWOut64.Text = "0";
-            this.txtWOut64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut39
-            // 
-            this.txtWOut39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut39.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut39.Location = new System.Drawing.Point(560, 517);
-            this.txtWOut39.Name = "txtWOut39";
-            this.txtWOut39.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut39.TabIndex = 201;
-            this.txtWOut39.Text = "0";
-            this.txtWOut39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut22
-            // 
-            this.txtWOut22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut22.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut22.Location = new System.Drawing.Point(370, 427);
-            this.txtWOut22.Name = "txtWOut22";
-            this.txtWOut22.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut22.TabIndex = 205;
-            this.txtWOut22.Text = "0";
-            this.txtWOut22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut40
-            // 
-            this.txtWOut40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut40.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut40.Location = new System.Drawing.Point(560, 547);
-            this.txtWOut40.Name = "txtWOut40";
-            this.txtWOut40.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut40.TabIndex = 201;
-            this.txtWOut40.Text = "0";
-            this.txtWOut40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut41
-            // 
-            this.txtWOut41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut41.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut41.Location = new System.Drawing.Point(560, 577);
-            this.txtWOut41.Name = "txtWOut41";
-            this.txtWOut41.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut41.TabIndex = 201;
-            this.txtWOut41.Text = "0";
-            this.txtWOut41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut65
-            // 
-            this.txtWOut65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut65.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut65.Location = new System.Drawing.Point(920, 457);
-            this.txtWOut65.Name = "txtWOut65";
-            this.txtWOut65.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut65.TabIndex = 200;
-            this.txtWOut65.Text = "0";
-            this.txtWOut65.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut23
-            // 
-            this.txtWOut23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut23.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut23.Location = new System.Drawing.Point(370, 457);
-            this.txtWOut23.Name = "txtWOut23";
-            this.txtWOut23.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut23.TabIndex = 205;
-            this.txtWOut23.Text = "0";
-            this.txtWOut23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut66
-            // 
-            this.txtWOut66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut66.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut66.Location = new System.Drawing.Point(920, 487);
-            this.txtWOut66.Name = "txtWOut66";
-            this.txtWOut66.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut66.TabIndex = 200;
-            this.txtWOut66.Text = "0";
-            this.txtWOut66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut24
-            // 
-            this.txtWOut24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut24.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut24.Location = new System.Drawing.Point(370, 487);
-            this.txtWOut24.Name = "txtWOut24";
-            this.txtWOut24.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut24.TabIndex = 205;
-            this.txtWOut24.Text = "0";
-            this.txtWOut24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut67
-            // 
-            this.txtWOut67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut67.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut67.Location = new System.Drawing.Point(920, 517);
-            this.txtWOut67.Name = "txtWOut67";
-            this.txtWOut67.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut67.TabIndex = 200;
-            this.txtWOut67.Text = "0";
-            this.txtWOut67.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut25
-            // 
-            this.txtWOut25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut25.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut25.Location = new System.Drawing.Point(370, 517);
-            this.txtWOut25.Name = "txtWOut25";
-            this.txtWOut25.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut25.TabIndex = 205;
-            this.txtWOut25.Text = "0";
-            this.txtWOut25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut68
-            // 
-            this.txtWOut68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut68.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut68.Location = new System.Drawing.Point(920, 547);
-            this.txtWOut68.Name = "txtWOut68";
-            this.txtWOut68.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut68.TabIndex = 200;
-            this.txtWOut68.Text = "0";
-            this.txtWOut68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut69
-            // 
-            this.txtWOut69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut69.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut69.Location = new System.Drawing.Point(920, 577);
-            this.txtWOut69.Name = "txtWOut69";
-            this.txtWOut69.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut69.TabIndex = 200;
-            this.txtWOut69.Text = "0";
-            this.txtWOut69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut26
-            // 
-            this.txtWOut26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut26.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut26.Location = new System.Drawing.Point(370, 547);
-            this.txtWOut26.Name = "txtWOut26";
-            this.txtWOut26.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut26.TabIndex = 205;
-            this.txtWOut26.Text = "0";
-            this.txtWOut26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut27
-            // 
-            this.txtWOut27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut27.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut27.Location = new System.Drawing.Point(370, 577);
-            this.txtWOut27.Name = "txtWOut27";
-            this.txtWOut27.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut27.TabIndex = 205;
-            this.txtWOut27.Text = "0";
-            this.txtWOut27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut49
-            // 
-            this.txtWOut49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut49.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut49.Location = new System.Drawing.Point(720, 397);
-            this.txtWOut49.Name = "txtWOut49";
-            this.txtWOut49.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut49.TabIndex = 204;
-            this.txtWOut49.Text = "0";
-            this.txtWOut49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut50
-            // 
-            this.txtWOut50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut50.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut50.Location = new System.Drawing.Point(720, 427);
-            this.txtWOut50.Name = "txtWOut50";
-            this.txtWOut50.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut50.TabIndex = 204;
-            this.txtWOut50.Text = "0";
-            this.txtWOut50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut51
-            // 
-            this.txtWOut51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut51.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut51.Location = new System.Drawing.Point(720, 457);
-            this.txtWOut51.Name = "txtWOut51";
-            this.txtWOut51.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut51.TabIndex = 204;
-            this.txtWOut51.Text = "0";
-            this.txtWOut51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut52
-            // 
-            this.txtWOut52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut52.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut52.Location = new System.Drawing.Point(720, 487);
-            this.txtWOut52.Name = "txtWOut52";
-            this.txtWOut52.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut52.TabIndex = 204;
-            this.txtWOut52.Text = "0";
-            this.txtWOut52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut53
-            // 
-            this.txtWOut53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut53.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut53.Location = new System.Drawing.Point(720, 517);
-            this.txtWOut53.Name = "txtWOut53";
-            this.txtWOut53.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut53.TabIndex = 204;
-            this.txtWOut53.Text = "0";
-            this.txtWOut53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut54
-            // 
-            this.txtWOut54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut54.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut54.Location = new System.Drawing.Point(720, 547);
-            this.txtWOut54.Name = "txtWOut54";
-            this.txtWOut54.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut54.TabIndex = 204;
-            this.txtWOut54.Text = "0";
-            this.txtWOut54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut55
-            // 
-            this.txtWOut55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut55.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut55.Location = new System.Drawing.Point(720, 577);
-            this.txtWOut55.Name = "txtWOut55";
-            this.txtWOut55.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut55.TabIndex = 204;
-            this.txtWOut55.Text = "0";
-            this.txtWOut55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut77
-            // 
-            this.txtWOut77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut77.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut77.Location = new System.Drawing.Point(1080, 397);
-            this.txtWOut77.Name = "txtWOut77";
-            this.txtWOut77.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut77.TabIndex = 203;
-            this.txtWOut77.Text = "0";
-            this.txtWOut77.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut78
-            // 
-            this.txtWOut78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut78.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut78.Location = new System.Drawing.Point(1080, 427);
-            this.txtWOut78.Name = "txtWOut78";
-            this.txtWOut78.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut78.TabIndex = 203;
-            this.txtWOut78.Text = "0";
-            this.txtWOut78.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut79
-            // 
-            this.txtWOut79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut79.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut79.Location = new System.Drawing.Point(1080, 457);
-            this.txtWOut79.Name = "txtWOut79";
-            this.txtWOut79.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut79.TabIndex = 203;
-            this.txtWOut79.Text = "0";
-            this.txtWOut79.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut80
-            // 
-            this.txtWOut80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut80.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut80.Location = new System.Drawing.Point(1080, 487);
-            this.txtWOut80.Name = "txtWOut80";
-            this.txtWOut80.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut80.TabIndex = 203;
-            this.txtWOut80.Text = "0";
-            this.txtWOut80.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut81
-            // 
-            this.txtWOut81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut81.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut81.Location = new System.Drawing.Point(1080, 517);
-            this.txtWOut81.Name = "txtWOut81";
-            this.txtWOut81.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut81.TabIndex = 203;
-            this.txtWOut81.Text = "0";
-            this.txtWOut81.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut82
-            // 
-            this.txtWOut82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut82.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut82.Location = new System.Drawing.Point(1080, 547);
-            this.txtWOut82.Name = "txtWOut82";
-            this.txtWOut82.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut82.TabIndex = 203;
-            this.txtWOut82.Text = "0";
-            this.txtWOut82.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtWOut83
-            // 
-            this.txtWOut83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut83.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut83.Location = new System.Drawing.Point(1080, 577);
-            this.txtWOut83.Name = "txtWOut83";
-            this.txtWOut83.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut83.TabIndex = 203;
-            this.txtWOut83.Text = "0";
-            this.txtWOut83.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label90.ForeColor = System.Drawing.Color.Black;
-            this.label90.Location = new System.Drawing.Point(25, 15);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(42, 16);
-            this.label90.TabIndex = 178;
-            this.label90.Text = "수익";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.Location = new System.Drawing.Point(80, 45);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 12);
-            this.label70.TabIndex = 217;
-            this.label70.Text = "항목";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(260, 45);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(31, 12);
-            this.label69.TabIndex = 219;
-            this.label69.Text = "총액";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label71.ForeColor = System.Drawing.Color.Black;
-            this.label71.Location = new System.Drawing.Point(260, 342);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(31, 12);
-            this.label71.TabIndex = 219;
-            this.label71.Text = "총액";
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold);
-            this.label120.ForeColor = System.Drawing.Color.Black;
-            this.label120.Location = new System.Drawing.Point(35, 626);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(58, 14);
-            this.label120.TabIndex = 234;
-            this.label120.Text = "손익 계";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label89.ForeColor = System.Drawing.Color.Black;
-            this.label89.Location = new System.Drawing.Point(327, 15);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(71, 15);
-            this.label89.TabIndex = 180;
-            this.label89.Text = "업계평균";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(400, 45);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(70, 12);
-            this.label68.TabIndex = 218;
-            this.label68.Text = "단위당금액";
-            // 
-            // panel136
-            // 
-            this.panel136.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel136.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel136.Controls.Add(this.panel137);
-            this.panel136.ForeColor = System.Drawing.Color.Black;
-            this.panel136.Location = new System.Drawing.Point(0, 645);
-            this.panel136.Name = "panel136";
-            this.panel136.Size = new System.Drawing.Size(1240, 3);
-            this.panel136.TabIndex = 237;
-            // 
-            // panel137
-            // 
-            this.panel137.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel137.Location = new System.Drawing.Point(0, 20);
-            this.panel137.Name = "panel137";
-            this.panel137.Size = new System.Drawing.Size(698, 5);
-            this.panel137.TabIndex = 18;
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label99.ForeColor = System.Drawing.Color.Black;
-            this.label99.Location = new System.Drawing.Point(327, 312);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(71, 15);
-            this.label99.TabIndex = 180;
-            this.label99.Text = "업계평균";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label72.ForeColor = System.Drawing.Color.Black;
-            this.label72.Location = new System.Drawing.Point(400, 342);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(70, 12);
-            this.label72.TabIndex = 218;
-            this.label72.Text = "단위당금액";
-            // 
-            // txtWOut14
-            // 
-            this.txtWOut14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut14.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut14.Location = new System.Drawing.Point(210, 621);
-            this.txtWOut14.Name = "txtWOut14";
-            this.txtWOut14.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut14.TabIndex = 240;
-            this.txtWOut14.Text = "0";
-            this.txtWOut14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(610, 45);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(31, 12);
-            this.label67.TabIndex = 222;
-            this.label67.Text = "총액";
-            // 
-            // txtWOut42
-            // 
-            this.txtWOut42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut42.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut42.Location = new System.Drawing.Point(560, 621);
-            this.txtWOut42.Name = "txtWOut42";
-            this.txtWOut42.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut42.TabIndex = 242;
-            this.txtWOut42.Text = "0";
-            this.txtWOut42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label73.ForeColor = System.Drawing.Color.Black;
-            this.label73.Location = new System.Drawing.Point(610, 342);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(31, 12);
-            this.label73.TabIndex = 222;
-            this.label73.Text = "총액";
-            // 
-            // txtWOut70
-            // 
-            this.txtWOut70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut70.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut70.Location = new System.Drawing.Point(920, 621);
-            this.txtWOut70.Name = "txtWOut70";
-            this.txtWOut70.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut70.TabIndex = 241;
-            this.txtWOut70.Text = "0";
-            this.txtWOut70.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(750, 45);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(70, 12);
-            this.label21.TabIndex = 221;
-            this.label21.Text = "단위당금액";
-            // 
-            // txtWOut28
-            // 
-            this.txtWOut28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut28.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut28.Location = new System.Drawing.Point(370, 621);
-            this.txtWOut28.Name = "txtWOut28";
-            this.txtWOut28.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut28.TabIndex = 245;
-            this.txtWOut28.Text = "0";
-            this.txtWOut28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label74.ForeColor = System.Drawing.Color.Black;
-            this.label74.Location = new System.Drawing.Point(750, 342);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(70, 12);
-            this.label74.TabIndex = 221;
-            this.label74.Text = "단위당금액";
-            // 
-            // txtWOut56
-            // 
-            this.txtWOut56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut56.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut56.Location = new System.Drawing.Point(720, 621);
-            this.txtWOut56.Name = "txtWOut56";
-            this.txtWOut56.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut56.TabIndex = 244;
-            this.txtWOut56.Text = "0";
-            this.txtWOut56.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(970, 45);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 12);
-            this.label20.TabIndex = 223;
-            this.label20.Text = "총액";
-            // 
-            // txtWOut84
-            // 
-            this.txtWOut84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWOut84.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut84.Location = new System.Drawing.Point(1080, 621);
-            this.txtWOut84.Name = "txtWOut84";
-            this.txtWOut84.Size = new System.Drawing.Size(129, 21);
-            this.txtWOut84.TabIndex = 243;
-            this.txtWOut84.Text = "0";
-            this.txtWOut84.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label75.ForeColor = System.Drawing.Color.Black;
-            this.label75.Location = new System.Drawing.Point(970, 342);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(31, 12);
-            this.label75.TabIndex = 223;
-            this.label75.Text = "총액";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(1110, 45);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(70, 12);
-            this.label19.TabIndex = 220;
-            this.label19.Text = "단위당금액";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label76.ForeColor = System.Drawing.Color.Black;
-            this.label76.Location = new System.Drawing.Point(1110, 342);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(70, 12);
-            this.label76.TabIndex = 220;
-            this.label76.Text = "단위당금액";
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.ForeColor = System.Drawing.Color.Black;
-            this.label102.Location = new System.Drawing.Point(35, 205);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(29, 12);
-            this.label102.TabIndex = 224;
-            this.label102.Text = "소계";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.ForeColor = System.Drawing.Color.Black;
-            this.label103.Location = new System.Drawing.Point(35, 582);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(29, 12);
-            this.label103.TabIndex = 224;
-            this.label103.Text = "소계";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label88.ForeColor = System.Drawing.Color.Black;
-            this.label88.Location = new System.Drawing.Point(640, 15);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(149, 15);
-            this.label88.TabIndex = 225;
-            this.label88.Text = "당대리점(현재수익)\r\n";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label41.ForeColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(1000, 15);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(149, 15);
-            this.label41.TabIndex = 226;
-            this.label41.Text = "당대리점(미래수익)";
-            // 
-            // panel133
-            // 
-            this.panel133.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel133.Controls.Add(this.panel134);
-            this.panel133.ForeColor = System.Drawing.Color.Black;
-            this.panel133.Location = new System.Drawing.Point(0, 615);
-            this.panel133.Name = "panel133";
-            this.panel133.Size = new System.Drawing.Size(1240, 3);
-            this.panel133.TabIndex = 238;
-            // 
-            // panel134
-            // 
-            this.panel134.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel134.Location = new System.Drawing.Point(0, 20);
-            this.panel134.Name = "panel134";
-            this.panel134.Size = new System.Drawing.Size(698, 5);
-            this.panel134.TabIndex = 18;
-            // 
-            // panel129
-            // 
-            this.panel129.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel129.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel129.Controls.Add(this.panel130);
-            this.panel129.Controls.Add(this.panel132);
-            this.panel129.ForeColor = System.Drawing.Color.Black;
-            this.panel129.Location = new System.Drawing.Point(180, 617);
-            this.panel129.Name = "panel129";
-            this.panel129.Size = new System.Drawing.Size(1, 30);
-            this.panel129.TabIndex = 235;
-            // 
-            // panel132
-            // 
-            this.panel132.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel132.ForeColor = System.Drawing.Color.Black;
-            this.panel132.Location = new System.Drawing.Point(0, 0);
-            this.panel132.Name = "panel132";
-            this.panel132.Size = new System.Drawing.Size(1, 270);
-            this.panel132.TabIndex = 95;
-            // 
-            // panel130
-            // 
-            this.panel130.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel130.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel130.Controls.Add(this.panel131);
-            this.panel130.ForeColor = System.Drawing.Color.Black;
-            this.panel130.Location = new System.Drawing.Point(0, 0);
-            this.panel130.Name = "panel130";
-            this.panel130.Size = new System.Drawing.Size(1, 270);
-            this.panel130.TabIndex = 96;
-            // 
-            // panel131
-            // 
-            this.panel131.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel131.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel131.ForeColor = System.Drawing.Color.Black;
-            this.panel131.Location = new System.Drawing.Point(0, 0);
-            this.panel131.Name = "panel131";
-            this.panel131.Size = new System.Drawing.Size(1, 270);
-            this.panel131.TabIndex = 95;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label100.ForeColor = System.Drawing.Color.Black;
-            this.label100.Location = new System.Drawing.Point(640, 312);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(149, 15);
-            this.label100.TabIndex = 225;
-            this.label100.Text = "당대리점(현재수익)\r\n";
-            // 
-            // panel125
-            // 
-            this.panel125.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel125.Controls.Add(this.panel126);
-            this.panel125.Controls.Add(this.panel128);
-            this.panel125.ForeColor = System.Drawing.Color.Black;
-            this.panel125.Location = new System.Drawing.Point(530, 615);
-            this.panel125.Name = "panel125";
-            this.panel125.Size = new System.Drawing.Size(1, 30);
-            this.panel125.TabIndex = 236;
-            // 
-            // panel128
-            // 
-            this.panel128.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel128.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel128.ForeColor = System.Drawing.Color.Black;
-            this.panel128.Location = new System.Drawing.Point(0, 0);
-            this.panel128.Name = "panel128";
-            this.panel128.Size = new System.Drawing.Size(1, 270);
-            this.panel128.TabIndex = 95;
-            // 
-            // panel126
-            // 
-            this.panel126.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel126.Controls.Add(this.panel127);
-            this.panel126.ForeColor = System.Drawing.Color.Black;
-            this.panel126.Location = new System.Drawing.Point(0, 0);
-            this.panel126.Name = "panel126";
-            this.panel126.Size = new System.Drawing.Size(1, 270);
-            this.panel126.TabIndex = 96;
-            // 
-            // panel127
-            // 
-            this.panel127.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel127.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel127.ForeColor = System.Drawing.Color.Black;
-            this.panel127.Location = new System.Drawing.Point(0, 0);
-            this.panel127.Name = "panel127";
-            this.panel127.Size = new System.Drawing.Size(1, 270);
-            this.panel127.TabIndex = 95;
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
-            this.label101.ForeColor = System.Drawing.Color.Black;
-            this.label101.Location = new System.Drawing.Point(1000, 312);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(149, 15);
-            this.label101.TabIndex = 226;
-            this.label101.Text = "당대리점(미래수익)";
-            // 
-            // panel121
-            // 
-            this.panel121.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel121.Controls.Add(this.panel122);
-            this.panel121.Controls.Add(this.panel124);
-            this.panel121.ForeColor = System.Drawing.Color.Black;
-            this.panel121.Location = new System.Drawing.Point(880, 615);
-            this.panel121.Name = "panel121";
-            this.panel121.Size = new System.Drawing.Size(1, 30);
-            this.panel121.TabIndex = 252;
-            // 
-            // panel124
-            // 
-            this.panel124.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel124.ForeColor = System.Drawing.Color.Black;
-            this.panel124.Location = new System.Drawing.Point(0, 0);
-            this.panel124.Name = "panel124";
-            this.panel124.Size = new System.Drawing.Size(1, 270);
-            this.panel124.TabIndex = 95;
-            // 
-            // panel122
-            // 
-            this.panel122.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel122.Controls.Add(this.panel123);
-            this.panel122.ForeColor = System.Drawing.Color.Black;
-            this.panel122.Location = new System.Drawing.Point(0, 0);
-            this.panel122.Name = "panel122";
-            this.panel122.Size = new System.Drawing.Size(1, 270);
-            this.panel122.TabIndex = 96;
-            // 
-            // panel123
-            // 
-            this.panel123.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel123.ForeColor = System.Drawing.Color.Black;
-            this.panel123.Location = new System.Drawing.Point(0, 0);
-            this.panel123.Name = "panel123";
-            this.panel123.Size = new System.Drawing.Size(1, 270);
-            this.panel123.TabIndex = 95;
-            // 
-            // pnlChart2
-            // 
-            this.pnlChart2.Controls.Add(this.chart5);
-            this.pnlChart2.Controls.Add(this.chart2);
-            this.pnlChart2.Location = new System.Drawing.Point(5, 39);
-            this.pnlChart2.Name = "pnlChart2";
-            this.pnlChart2.Size = new System.Drawing.Size(1232, 678);
-            this.pnlChart2.TabIndex = 253;
-            this.pnlChart2.Visible = false;
-            // 
-            // chart2
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
-            this.chart2.Location = new System.Drawing.Point(3, 3);
-            this.chart2.Name = "chart2";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            series10.Points.Add(dataPoint17);
-            series10.Points.Add(dataPoint18);
-            series10.Points.Add(dataPoint19);
-            series10.Points.Add(dataPoint20);
-            series10.Points.Add(dataPoint21);
-            series10.Points.Add(dataPoint22);
-            series10.Points.Add(dataPoint23);
-            series10.Points.Add(dataPoint24);
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series2";
-            series11.Points.Add(dataPoint25);
-            series11.Points.Add(dataPoint26);
-            series11.Points.Add(dataPoint27);
-            series11.Points.Add(dataPoint28);
-            series11.Points.Add(dataPoint29);
-            series11.Points.Add(dataPoint30);
-            series11.Points.Add(dataPoint31);
-            series11.Points.Add(dataPoint32);
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series3";
-            this.chart2.Series.Add(series10);
-            this.chart2.Series.Add(series11);
-            this.chart2.Series.Add(series12);
-            this.chart2.Size = new System.Drawing.Size(1151, 280);
-            this.chart2.TabIndex = 341;
-            this.chart2.Text = "chart5";
-            // 
-            // chart5
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart5.Legends.Add(legend3);
-            this.chart5.Location = new System.Drawing.Point(3, 324);
-            this.chart5.Name = "chart5";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            series7.Points.Add(dataPoint1);
-            series7.Points.Add(dataPoint2);
-            series7.Points.Add(dataPoint3);
-            series7.Points.Add(dataPoint4);
-            series7.Points.Add(dataPoint5);
-            series7.Points.Add(dataPoint6);
-            series7.Points.Add(dataPoint7);
-            series7.Points.Add(dataPoint8);
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series2";
-            series8.Points.Add(dataPoint9);
-            series8.Points.Add(dataPoint10);
-            series8.Points.Add(dataPoint11);
-            series8.Points.Add(dataPoint12);
-            series8.Points.Add(dataPoint13);
-            series8.Points.Add(dataPoint14);
-            series8.Points.Add(dataPoint15);
-            series8.Points.Add(dataPoint16);
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series3";
-            this.chart5.Series.Add(series7);
-            this.chart5.Series.Add(series8);
-            this.chart5.Series.Add(series9);
-            this.chart5.Size = new System.Drawing.Size(1151, 280);
-            this.chart5.TabIndex = 342;
-            this.chart5.Text = "chart5";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.pnlChart2);
-            this.tabPage2.Controls.Add(this.panel121);
-            this.tabPage2.Controls.Add(this.label101);
-            this.tabPage2.Controls.Add(this.panel125);
-            this.tabPage2.Controls.Add(this.label100);
-            this.tabPage2.Controls.Add(this.panel129);
-            this.tabPage2.Controls.Add(this.panel133);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.label88);
-            this.tabPage2.Controls.Add(this.label103);
-            this.tabPage2.Controls.Add(this.label102);
-            this.tabPage2.Controls.Add(this.label76);
-            this.tabPage2.Controls.Add(this.label19);
-            this.tabPage2.Controls.Add(this.label75);
-            this.tabPage2.Controls.Add(this.txtWOut84);
-            this.tabPage2.Controls.Add(this.label20);
-            this.tabPage2.Controls.Add(this.txtWOut56);
-            this.tabPage2.Controls.Add(this.label74);
-            this.tabPage2.Controls.Add(this.txtWOut28);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.txtWOut70);
-            this.tabPage2.Controls.Add(this.label73);
-            this.tabPage2.Controls.Add(this.txtWOut42);
-            this.tabPage2.Controls.Add(this.label67);
-            this.tabPage2.Controls.Add(this.txtWOut14);
-            this.tabPage2.Controls.Add(this.label72);
-            this.tabPage2.Controls.Add(this.label99);
-            this.tabPage2.Controls.Add(this.panel136);
-            this.tabPage2.Controls.Add(this.label68);
-            this.tabPage2.Controls.Add(this.label89);
-            this.tabPage2.Controls.Add(this.label120);
-            this.tabPage2.Controls.Add(this.label71);
-            this.tabPage2.Controls.Add(this.label69);
-            this.tabPage2.Controls.Add(this.label70);
-            this.tabPage2.Controls.Add(this.label90);
-            this.tabPage2.Controls.Add(this.txtWOut83);
-            this.tabPage2.Controls.Add(this.txtWOut82);
-            this.tabPage2.Controls.Add(this.txtWOut81);
-            this.tabPage2.Controls.Add(this.txtWOut80);
-            this.tabPage2.Controls.Add(this.txtWOut79);
-            this.tabPage2.Controls.Add(this.txtWOut78);
-            this.tabPage2.Controls.Add(this.txtWOut77);
-            this.tabPage2.Controls.Add(this.txtWOut55);
-            this.tabPage2.Controls.Add(this.txtWOut54);
-            this.tabPage2.Controls.Add(this.txtWOut53);
-            this.tabPage2.Controls.Add(this.txtWOut52);
-            this.tabPage2.Controls.Add(this.txtWOut51);
-            this.tabPage2.Controls.Add(this.txtWOut50);
-            this.tabPage2.Controls.Add(this.txtWOut49);
-            this.tabPage2.Controls.Add(this.txtWOut27);
-            this.tabPage2.Controls.Add(this.txtWOut26);
-            this.tabPage2.Controls.Add(this.txtWOut69);
-            this.tabPage2.Controls.Add(this.txtWOut68);
-            this.tabPage2.Controls.Add(this.txtWOut25);
-            this.tabPage2.Controls.Add(this.txtWOut67);
-            this.tabPage2.Controls.Add(this.txtWOut24);
-            this.tabPage2.Controls.Add(this.txtWOut66);
-            this.tabPage2.Controls.Add(this.txtWOut23);
-            this.tabPage2.Controls.Add(this.txtWOut65);
-            this.tabPage2.Controls.Add(this.txtWOut41);
-            this.tabPage2.Controls.Add(this.txtWOut40);
-            this.tabPage2.Controls.Add(this.txtWOut22);
-            this.tabPage2.Controls.Add(this.txtWOut39);
-            this.tabPage2.Controls.Add(this.txtWOut64);
-            this.tabPage2.Controls.Add(this.txtWOut38);
-            this.tabPage2.Controls.Add(this.txtWOut37);
-            this.tabPage2.Controls.Add(this.txtWOut36);
-            this.tabPage2.Controls.Add(this.txtWOut21);
-            this.tabPage2.Controls.Add(this.txtWOut63);
-            this.tabPage2.Controls.Add(this.txtWOut35);
-            this.tabPage2.Controls.Add(this.txtWOut75);
-            this.tabPage2.Controls.Add(this.txtWOut74);
-            this.tabPage2.Controls.Add(this.txtWOut73);
-            this.tabPage2.Controls.Add(this.txtWOut72);
-            this.tabPage2.Controls.Add(this.txtWOut76);
-            this.tabPage2.Controls.Add(this.txtWOut71);
-            this.tabPage2.Controls.Add(this.txtWOut47);
-            this.tabPage2.Controls.Add(this.txtWOut46);
-            this.tabPage2.Controls.Add(this.txtWOut45);
-            this.tabPage2.Controls.Add(this.txtWOut44);
-            this.tabPage2.Controls.Add(this.txtWOut48);
-            this.tabPage2.Controls.Add(this.txtWOut43);
-            this.tabPage2.Controls.Add(this.txtWOut61);
-            this.tabPage2.Controls.Add(this.txtWOut60);
-            this.tabPage2.Controls.Add(this.txtWOut59);
-            this.tabPage2.Controls.Add(this.txtWOut33);
-            this.tabPage2.Controls.Add(this.txtWOut32);
-            this.tabPage2.Controls.Add(this.txtWOut58);
-            this.tabPage2.Controls.Add(this.txtWOut31);
-            this.tabPage2.Controls.Add(this.txtWOut20);
-            this.tabPage2.Controls.Add(this.txtWOut15);
-            this.tabPage2.Controls.Add(this.txtWOut30);
-            this.tabPage2.Controls.Add(this.txtWOut62);
-            this.tabPage2.Controls.Add(this.txtWOut57);
-            this.tabPage2.Controls.Add(this.txtWOut34);
-            this.tabPage2.Controls.Add(this.txtWOut29);
-            this.tabPage2.Controls.Add(this.txtWOut19);
-            this.tabPage2.Controls.Add(this.txtWOut18);
-            this.tabPage2.Controls.Add(this.txtWOut5);
-            this.tabPage2.Controls.Add(this.txtWOut4);
-            this.tabPage2.Controls.Add(this.txtWOut17);
-            this.tabPage2.Controls.Add(this.txtWOut3);
-            this.tabPage2.Controls.Add(this.txtWOut16);
-            this.tabPage2.Controls.Add(this.txtWOut2);
-            this.tabPage2.Controls.Add(this.txtWOut6);
-            this.tabPage2.Controls.Add(this.txtWOut1);
-            this.tabPage2.Controls.Add(this.txtWOut13);
-            this.tabPage2.Controls.Add(this.txtWOut12);
-            this.tabPage2.Controls.Add(this.txtWOut11);
-            this.tabPage2.Controls.Add(this.txtWOut10);
-            this.tabPage2.Controls.Add(this.txtWOut9);
-            this.tabPage2.Controls.Add(this.txtWOut8);
-            this.tabPage2.Controls.Add(this.txtWOut7);
-            this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.label24);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.label29);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.label83);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.pictureBox5);
-            this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.panel15);
-            this.tabPage2.Controls.Add(this.panel45);
-            this.tabPage2.Controls.Add(this.panel46);
-            this.tabPage2.Controls.Add(this.panel84);
-            this.tabPage2.Controls.Add(this.panel86);
-            this.tabPage2.Controls.Add(this.panel23);
-            this.tabPage2.Controls.Add(this.panel61);
-            this.tabPage2.Controls.Add(this.panel28);
-            this.tabPage2.Controls.Add(this.panel90);
-            this.tabPage2.Controls.Add(this.panel88);
-            this.tabPage2.Controls.Add(this.panel54);
-            this.tabPage2.Controls.Add(this.panel42);
-            this.tabPage2.Controls.Add(this.panel40);
-            this.tabPage2.Controls.Add(this.panel14);
-            this.tabPage2.Controls.Add(this.panel16);
-            this.tabPage2.Controls.Add(this.panel17);
-            this.tabPage2.Controls.Add(this.panel18);
-            this.tabPage2.Controls.Add(this.panel19);
-            this.tabPage2.Controls.Add(this.panel20);
-            this.tabPage2.Controls.Add(this.panel72);
-            this.tabPage2.Controls.Add(this.panel71);
-            this.tabPage2.Controls.Add(this.panel21);
-            this.tabPage2.Controls.Add(this.panel22);
-            this.tabPage2.Controls.Add(this.panel24);
-            this.tabPage2.Controls.Add(this.panel27);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1242, 723);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "          도매          ";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(1160, 9);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(87, 16);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.Text = "파일로 읽기";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Checked = true;
+            this.radioButton2.Location = new System.Drawing.Point(1061, 9);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(87, 16);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "계산식 도입";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // panel153
             // 
@@ -7172,6 +7428,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 765);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserOutput";
@@ -7200,6 +7458,29 @@
             this.panel57.ResumeLayout(false);
             this.panel75.ResumeLayout(false);
             this.panel107.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.pnlChart2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            this.panel121.ResumeLayout(false);
+            this.panel122.ResumeLayout(false);
+            this.panel125.ResumeLayout(false);
+            this.panel126.ResumeLayout(false);
+            this.panel129.ResumeLayout(false);
+            this.panel130.ResumeLayout(false);
+            this.panel133.ResumeLayout(false);
+            this.panel136.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel84.ResumeLayout(false);
+            this.panel86.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
+            this.panel61.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            this.panel88.ResumeLayout(false);
+            this.panel54.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.pnlChart3.ResumeLayout(false);
@@ -7250,6 +7531,7 @@
             this.panel153.ResumeLayout(false);
             this.panel76.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -7790,5 +8072,7 @@
         private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Panel panel153;
         private System.Windows.Forms.Panel panel154;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

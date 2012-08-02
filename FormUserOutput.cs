@@ -19,6 +19,15 @@ namespace KIWI
         private TextBox[] txtWOut = null;    //도매
         private TextBox[] txtROut = null;    //소매
 
+        private TextBox[] vtxtOutTotal = null;     //전체 Total
+        private TextBox[] vtxtOut = null;          //전체
+        private TextBox[] vtxtWOutTotal = null;    //도매 Total
+        private TextBox[] vtxtWOut = null;         //도매
+        private TextBox[] vtxtROutTotal = null;    //소매 Total
+        private TextBox[] vtxtROut = null;         //소매
+
+                
+
         //월평균 판매대수 도매
         private string txtInput4 = "0";
         //월평균 판매대수 계 엑셀 셀 번호
@@ -36,6 +45,47 @@ namespace KIWI
         public FormUserOutput()
         {
             InitializeComponent();
+
+            vtxtOutTotal = new TextBox[42]{ 
+                txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, 
+                txtWOut1, txtWOut2, txtWOut3, txtWOut4, txtWOut5, txtWOut6, txtWOut7, txtWOut8, txtWOut9, txtWOut10,txtWOut11, txtWOut12, txtWOut13, txtWOut14, 
+                txtROut1, txtROut2, txtROut3, txtROut4, txtROut5, txtROut6, txtROut7, txtROut8, txtROut9, txtROut10,txtROut11, txtROut12
+            };
+
+            vtxtOut = new TextBox[42]{ 
+                txtOut17, txtOut18, txtOut19, txtOut20, txtOut21, txtOut22, txtOut23, txtOut24, txtOut25, txtOut26, txtOut27, txtOut28, txtOut29, txtOut30, txtOut31, txtOut32,
+                txtWOut15, txtWOut16, txtWOut17, txtWOut18, txtWOut19, txtWOut20,txtWOut21, txtWOut22, txtWOut23, txtWOut24, txtWOut25, txtWOut26, txtWOut27, txtWOut28,
+                txtROut13, txtROut14, txtROut15, txtROut16, txtROut17, txtROut18, txtROut19, txtROut20, txtROut21, txtROut22, txtROut23, txtROut24
+            };
+
+            vtxtWOutTotal = new TextBox[42]{ 
+                txtOut33, txtOut34, txtOut35, txtOut36, txtOut37, txtOut38, txtOut39, txtOut40, txtOut41, txtOut42, txtOut43, txtOut44, txtOut45, txtOut46, txtOut47, txtOut48,
+                txtWOut29, txtWOut30, txtWOut31, txtWOut32, txtWOut33, txtWOut34, txtWOut35, txtWOut36, txtWOut37, txtWOut38, txtWOut39, txtWOut40, txtWOut41, txtWOut42,
+                txtROut25, txtROut26, txtROut27, txtROut28, txtROut29, txtROut30, txtROut31, txtROut32, txtROut33, txtROut34, txtROut35, txtROut36
+            };
+
+            vtxtWOut = new TextBox[42]{ 
+                txtOut49, txtOut50, txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut59, txtOut60, txtOut61, txtOut62, txtOut63, txtOut64,
+                txtWOut43, txtWOut44, txtWOut45, txtWOut46, txtWOut47, txtWOut48, txtWOut49, txtWOut50, txtWOut51, txtWOut52, txtWOut53, txtWOut54, txtWOut55, txtWOut56,
+                txtROut37, txtROut38, txtROut39, txtROut40,
+                txtROut41, txtROut42, txtROut43, txtROut44, txtROut45, txtROut46, txtROut47, txtROut48
+            };
+
+            vtxtROutTotal = new TextBox[42]{ 
+                txtOut65, txtOut66, txtOut67, txtOut68, txtOut69, txtOut70, txtOut71, txtOut72, txtOut73, txtOut74, txtOut75, txtOut76, txtOut77, txtOut78, txtOut79, txtOut80,
+                txtWOut57, txtWOut58, txtWOut59, txtWOut60, txtWOut61, txtWOut62, txtWOut63, txtWOut64, txtWOut65, txtWOut66, txtWOut67, txtWOut68, txtWOut69, txtWOut70,
+                txtROut49, txtROut50, txtROut51, txtROut52, txtROut53, txtROut54, txtROut55, txtROut56, txtROut57, txtROut58, txtROut59, txtROut60
+            };
+
+            vtxtROut = new TextBox[42]{ 
+                txtOut81, txtOut82, txtOut83, txtOut84, txtOut85, txtOut86, txtOut87, txtOut88, txtOut89, txtOut90, txtOut91, txtOut92, txtOut93, txtOut94, txtOut95, txtOut96,
+                txtWOut71, txtWOut72, txtWOut73, txtWOut74, txtWOut75, txtWOut76, txtWOut77, txtWOut78, txtWOut79, txtWOut80, txtWOut81, txtWOut82, txtWOut83, txtWOut84,
+                txtROut61, txtROut62, txtROut63, txtROut64, txtROut65, txtROut66, txtROut67, txtROut68, txtROut69, txtROut70, txtROut71, txtROut72
+            };
+
+
+            //vtxtWOutTotal
+            //vtxtROutTotal
 
             txtOut = new TextBox[96] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
             txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut18, txtOut19, txtOut20,
@@ -91,22 +141,11 @@ namespace KIWI
             pnlChart.Visible = false;
             // 결과 취득 클래스
 
-            //전체, 단위당
-            setOut(CDataControl.g_ResultBusinessTotal.getArrayOutput전체(), CDataControl.g_ResultBusiness.getArrayOutput전체());
-            setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
-            setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
 
-            List<Int64[]> 전체 = new List<Int64[]>();
- 
-            전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
-            전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());
-            전체.Add(CDataControl.g_ResultFuture.getArrayOutput전체());
-                
-            OpenChart(chart1, 전체);
-            OpenChart(chart2, 전체);
-            OpenChart(chart3, 전체);
-
+            setAllOutFormat(false);
         }
+
+        
 
         public FormUserOutput(FormUserOutput formUserOutput)
         {
@@ -119,12 +158,63 @@ namespace KIWI
             mFormUserOutput = formUserOutput;
         }
 
+
+        private void setAllOutFormat(bool isFile)
+        {
+            List<Int64[]> 전체 = new List<Int64[]>();
+
+            if (isFile)
+            {
+                setTexList(vtxtOutTotal, CDataControl.g_FileResultBusinessTotal.getArrayOutput전체());
+                setTexList(vtxtOut, CDataControl.g_FileResultBusiness.getArrayOutput전체());
+
+                setTexList(vtxtWOutTotal, CDataControl.g_FileResultStoreTotal.getArrayOutput전체());
+                setTexList(vtxtWOut, CDataControl.g_FileResultStore.getArrayOutput전체());
+
+                setTexList(vtxtROutTotal, CDataControl.g_FileResultFutureTotal.getArrayOutput전체());
+                setTexList(vtxtROut, CDataControl.g_FileResultFuture.getArrayOutput전체());
+
+
+                전체.Add(CDataControl.g_FileResultBusiness.getArrayOutput전체());
+                전체.Add(CDataControl.g_FileResultStore.getArrayOutput전체());
+                전체.Add(CDataControl.g_FileResultFuture.getArrayOutput전체());
+            }
+            else
+            {
+                setOut(CDataControl.g_ResultBusinessTotal.getArrayOutput전체(), CDataControl.g_ResultBusiness.getArrayOutput전체());
+                setWOut(CDataControl.g_ResultStoreTotal.getArrayOutput전체(), CDataControl.g_ResultStore.getArrayOutput전체());
+                setROut(CDataControl.g_ResultFutureTotal.getArrayOutput전체(), CDataControl.g_ResultFuture.getArrayOutput전체());
+
+
+                전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
+                전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());
+                전체.Add(CDataControl.g_ResultFuture.getArrayOutput전체());
+
+            }
+
+            OpenChart(chart1, 전체);
+            OpenChart(chart2, 전체);
+            OpenChart(chart3, 전체);
+        }
+
+        private void setTexList(TextBox[] _txtList, long[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                _txtList[i].Text = CommonUtil.NullToString0(arr[i]);
+                setTxtInput_TextChanged(_txtList[i]);
+            }
+        }
+
+
         private void setOut(long[] arrTotal, long[] arr)
         {   
             for (int i = 0; i < 15; i++)
             {   
                 txtOut[i].Text = CommonUtil.NullToString0(arrTotal[i]);
                 txtOut[i + 16].Text = CommonUtil.NullToString0(arr[i]);
+                setTxtInput_TextChanged(txtOut[i]);
+                setTxtInput_TextChanged(txtOut[i + 16]);
             }
         }
 
@@ -134,6 +224,8 @@ namespace KIWI
             {   
                 txtWOut[i].Text = CommonUtil.NullToString0(arr[i]);
                 txtOut[i + 14].Text = CommonUtil.NullToString0(arr[i]);
+                setTxtInput_TextChanged(txtWOut[i]);
+                setTxtInput_TextChanged(txtOut[i + 14]);
             }
         }
 
@@ -143,6 +235,8 @@ namespace KIWI
             {
                 txtROut[i].Text = CommonUtil.NullToString0(arr[i]);
                 txtOut[i + 12].Text = CommonUtil.NullToString0(arr[i]);
+                setTxtInput_TextChanged(txtROut[i]);
+                setTxtInput_TextChanged(txtOut[i + 12]);
             }
         }
 
@@ -269,6 +363,46 @@ namespace KIWI
 
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            setAllOutFormat((sender as RadioButton).Checked);
+        }
+
+        private string setTxtInput_TextChanged(object sender)
+        {
+            TextBox _TextBox = (sender as TextBox);
+
+            try
+            {
+                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+
+                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 2)
+                {
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                    //if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", num);
+
+                    if (_TextBox.Text.Length < saveCursor)
+                        _TextBox.SelectionStart = 0;
+                    else
+                        _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (_TextBox.Text.Length > 23)
+                {
+                    int saveCursor = _TextBox.SelectionStart - 1;
+                    _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                    _TextBox.SelectionStart = saveCursor;
+                }
+            }
+            catch
+            {
+                _TextBox.Text = "0";
+                _TextBox.SelectionStart = 1;
+            }
+
+            return _TextBox.Text;
+        }
 
     }
 }
