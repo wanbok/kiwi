@@ -18,6 +18,7 @@ namespace KIWI
 
         private TextBox[] txtOut = null;     //전체
         private TextBox[] txtBaseData = null;
+        private TextBox[] txtBaseDataSum = null;
         private RichTextBox[] txtComments = null;
         private PictureBox[] picCompare = null;
 
@@ -49,6 +50,8 @@ namespace KIWI
 
             txtBaseData = new TextBox[10] { textBoxBase1, textBoxBase2, textBoxBase3, textBoxBase4, textBoxBase5, 
             textBoxBase6, textBoxBase7, textBoxBase8, textBoxBase9, textBoxBase10};
+
+            txtBaseDataSum = new TextBox[6] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6};
 
             txtComments = new RichTextBox[3] { comments1, comments2, comments3 };
 
@@ -166,7 +169,33 @@ namespace KIWI
             txtBaseData[i++].Text = _basicInput.getstr소매_거래선수_소계();
             txtBaseData[i++].Text = _basicInput.getstr도매_직원수_소계();
             txtBaseData[i++].Text = _basicInput.getstr소매_직원수_소계();
+
+            txtBaseDataSum[0].Text = txtBaseData[0].Text;
+            txtBaseDataSum[1].Text = SumStringNumber(txtBaseData[1].Text,txtBaseData[2].Text);
+            txtBaseDataSum[2].Text = SumStringNumber(txtBaseData[3].Text,txtBaseData[4].Text);
+            txtBaseDataSum[3].Text = txtBaseData[5].Text;
+            txtBaseDataSum[4].Text = SumStringNumber(txtBaseData[6].Text,txtBaseData[7].Text);
+            txtBaseDataSum[5].Text = SumStringNumber(txtBaseData[8].Text,txtBaseData[9].Text);
         }
+
+        private string SumStringNumber(string v0, string v1)
+        {
+            string result = "";
+
+            try
+            {
+                long num = Convert.ToInt64(v0.Replace(",", ""))+Convert.ToInt64(v1.Replace(",", ""));
+
+                result = String.Format("{0:#,###}", num);
+            }
+            catch
+            {
+                result = "0";
+            }
+
+            return result;
+        }
+
 
         private void setComments(CReportData _resultData)
         {
@@ -201,8 +230,8 @@ namespace KIWI
             Int64 convertedB;
 
             for (int i = 0; i < 16; i++) {
-                convertedA = Convert.ToInt64(txtOut[i + 16].Text);
-                convertedB = Convert.ToInt64(txtOut[i + 48].Text);
+                convertedA = Convert.ToInt64(txtOut[i + 16].Text.Replace(",",""));
+                convertedB = Convert.ToInt64(txtOut[i + 48].Text.Replace(",", ""));
                 if (convertedA < convertedB) { picCompare[i].Image = KIWI.Properties.Resources.up5; }
                 else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.down1; }
                 else { picCompare[i].Image = KIWI.Properties.Resources.equal; }
@@ -338,14 +367,50 @@ namespace KIWI
             viewer.ShowDialog();
         }
 
-        private void txtOut28_TextChanged(object sender, EventArgs e)
+        private void panel15_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void panel15_Paint(object sender, PaintEventArgs e)
+        private string setTxtInput_TextChanged(object sender)
         {
+            TextBox _TextBox = (sender as TextBox);
 
+            try
+            {
+                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+
+                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 1)
+                {
+                    int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
+
+                    //if (_TextBox.Text.Length > 3)
+                    _TextBox.Text = String.Format("{0:#,###}", num);
+
+                    if (_TextBox.Text.Length < saveCursor)
+                        _TextBox.SelectionStart = 0;
+                    else
+                        _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
+                }
+                else if (_TextBox.Text.Length > 23)
+                {
+                    int saveCursor = _TextBox.SelectionStart - 1;
+                    _TextBox.Text = _TextBox.Text.Remove(saveCursor, 1);
+                    _TextBox.SelectionStart = saveCursor;
+                }
+            }
+            catch
+            {
+                _TextBox.Text = "0";
+                _TextBox.SelectionStart = 1;
+            }
+
+            return _TextBox.Text;
+        }
+
+        private void setTxtInput_TextChanged(object sender, EventArgs e)
+        {
+            setTxtInput_TextChanged(sender);
         }
     }
 }

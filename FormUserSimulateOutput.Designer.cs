@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint65 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint66 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint67 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint68 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint69 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint70 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint71 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint72 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint73 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint74 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint75 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint76 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint77 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint78 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint79 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint80 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint81 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint82 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint83 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint84 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint85 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint86 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint87 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint88 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint89 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint90 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint91 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint92 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint93 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint94 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint95 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint96 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 4512D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5678D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 8332D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 2345D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 6789D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 6677D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint23 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 2333D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint24 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2334D);
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint25 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2233D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint26 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 3344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint27 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5555D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint28 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 6666D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint29 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 7777D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint30 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2344D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3456D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 2222D);
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnlChart2 = new System.Windows.Forms.Panel();
@@ -838,10 +838,10 @@
             this.tabPage2.Controls.Add(this.panel22);
             this.tabPage2.Controls.Add(this.panel24);
             this.tabPage2.Controls.Add(this.panel27);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1242, 670);
+            this.tabPage2.Size = new System.Drawing.Size(1242, 671);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "          도매          ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -857,40 +857,40 @@
             // 
             // chart2
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart2.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(3, 3);
             this.chart2.Name = "chart2";
-            series19.ChartArea = "ChartArea1";
-            series19.Legend = "Legend1";
-            series19.Name = "Series1";
-            series19.Points.Add(dataPoint65);
-            series19.Points.Add(dataPoint66);
-            series19.Points.Add(dataPoint67);
-            series19.Points.Add(dataPoint68);
-            series19.Points.Add(dataPoint69);
-            series19.Points.Add(dataPoint70);
-            series19.Points.Add(dataPoint71);
-            series19.Points.Add(dataPoint72);
-            series20.ChartArea = "ChartArea1";
-            series20.Legend = "Legend1";
-            series20.Name = "Series2";
-            series20.Points.Add(dataPoint73);
-            series20.Points.Add(dataPoint74);
-            series20.Points.Add(dataPoint75);
-            series20.Points.Add(dataPoint76);
-            series20.Points.Add(dataPoint77);
-            series20.Points.Add(dataPoint78);
-            series20.Points.Add(dataPoint79);
-            series20.Points.Add(dataPoint80);
-            series21.ChartArea = "ChartArea1";
-            series21.Legend = "Legend1";
-            series21.Name = "Series3";
-            this.chart2.Series.Add(series19);
-            this.chart2.Series.Add(series20);
-            this.chart2.Series.Add(series21);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            series1.Points.Add(dataPoint4);
+            series1.Points.Add(dataPoint5);
+            series1.Points.Add(dataPoint6);
+            series1.Points.Add(dataPoint7);
+            series1.Points.Add(dataPoint8);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
+            series2.Points.Add(dataPoint9);
+            series2.Points.Add(dataPoint10);
+            series2.Points.Add(dataPoint11);
+            series2.Points.Add(dataPoint12);
+            series2.Points.Add(dataPoint13);
+            series2.Points.Add(dataPoint14);
+            series2.Points.Add(dataPoint15);
+            series2.Points.Add(dataPoint16);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series3";
+            this.chart2.Series.Add(series1);
+            this.chart2.Series.Add(series2);
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(1151, 611);
             this.chart2.TabIndex = 341;
             this.chart2.Text = "chart5";
@@ -1070,7 +1070,7 @@
             // 
             // panel133
             // 
-            this.panel133.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel133.BackColor = System.Drawing.Color.LightSalmon;
             this.panel133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel133.Controls.Add(this.panel134);
             this.panel133.ForeColor = System.Drawing.Color.Black;
@@ -1219,7 +1219,7 @@
             // 
             // panel136
             // 
-            this.panel136.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel136.BackColor = System.Drawing.Color.LightSalmon;
             this.panel136.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel136.Controls.Add(this.panel137);
             this.panel136.ForeColor = System.Drawing.Color.Black;
@@ -2429,7 +2429,7 @@
             // 
             // panel86
             // 
-            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel86.BackColor = System.Drawing.Color.LightSalmon;
             this.panel86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel86.Controls.Add(this.panel87);
             this.panel86.ForeColor = System.Drawing.Color.Black;
@@ -2448,7 +2448,7 @@
             // 
             // panel23
             // 
-            this.panel23.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel23.BackColor = System.Drawing.Color.LightSalmon;
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel23.Controls.Add(this.panel56);
             this.panel23.ForeColor = System.Drawing.Color.Black;
@@ -2467,7 +2467,7 @@
             // 
             // panel61
             // 
-            this.panel61.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel61.BackColor = System.Drawing.Color.LightSalmon;
             this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel61.Controls.Add(this.panel62);
             this.panel61.ForeColor = System.Drawing.Color.Black;
@@ -2486,7 +2486,7 @@
             // 
             // panel28
             // 
-            this.panel28.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel28.BackColor = System.Drawing.Color.LightSalmon;
             this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel28.Controls.Add(this.panel53);
             this.panel28.ForeColor = System.Drawing.Color.Black;
@@ -2505,7 +2505,7 @@
             // 
             // panel90
             // 
-            this.panel90.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel90.BackColor = System.Drawing.Color.LightSalmon;
             this.panel90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel90.Controls.Add(this.panel91);
             this.panel90.ForeColor = System.Drawing.Color.Black;
@@ -2524,7 +2524,7 @@
             // 
             // panel88
             // 
-            this.panel88.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel88.BackColor = System.Drawing.Color.LightSalmon;
             this.panel88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel88.Controls.Add(this.panel89);
             this.panel88.ForeColor = System.Drawing.Color.Black;
@@ -2543,7 +2543,7 @@
             // 
             // panel54
             // 
-            this.panel54.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel54.BackColor = System.Drawing.Color.LightSalmon;
             this.panel54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel54.Controls.Add(this.panel55);
             this.panel54.ForeColor = System.Drawing.Color.Black;
@@ -2837,9 +2837,9 @@
             this.tabPage3.Controls.Add(this.panel36);
             this.tabPage3.Controls.Add(this.panel37);
             this.tabPage3.Controls.Add(this.panel41);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1242, 670);
+            this.tabPage3.Size = new System.Drawing.Size(1242, 671);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "          소매          ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2855,40 +2855,40 @@
             // 
             // chart3
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart3.Legends.Add(legend9);
+            chartArea2.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart3.Legends.Add(legend2);
             this.chart3.Location = new System.Drawing.Point(3, 3);
             this.chart3.Name = "chart3";
-            series25.ChartArea = "ChartArea1";
-            series25.Legend = "Legend1";
-            series25.Name = "Series1";
-            series25.Points.Add(dataPoint81);
-            series25.Points.Add(dataPoint82);
-            series25.Points.Add(dataPoint83);
-            series25.Points.Add(dataPoint84);
-            series25.Points.Add(dataPoint85);
-            series25.Points.Add(dataPoint86);
-            series25.Points.Add(dataPoint87);
-            series25.Points.Add(dataPoint88);
-            series26.ChartArea = "ChartArea1";
-            series26.Legend = "Legend1";
-            series26.Name = "Series2";
-            series26.Points.Add(dataPoint89);
-            series26.Points.Add(dataPoint90);
-            series26.Points.Add(dataPoint91);
-            series26.Points.Add(dataPoint92);
-            series26.Points.Add(dataPoint93);
-            series26.Points.Add(dataPoint94);
-            series26.Points.Add(dataPoint95);
-            series26.Points.Add(dataPoint96);
-            series27.ChartArea = "ChartArea1";
-            series27.Legend = "Legend1";
-            series27.Name = "Series3";
-            this.chart3.Series.Add(series25);
-            this.chart3.Series.Add(series26);
-            this.chart3.Series.Add(series27);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            series4.Points.Add(dataPoint17);
+            series4.Points.Add(dataPoint18);
+            series4.Points.Add(dataPoint19);
+            series4.Points.Add(dataPoint20);
+            series4.Points.Add(dataPoint21);
+            series4.Points.Add(dataPoint22);
+            series4.Points.Add(dataPoint23);
+            series4.Points.Add(dataPoint24);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series2";
+            series5.Points.Add(dataPoint25);
+            series5.Points.Add(dataPoint26);
+            series5.Points.Add(dataPoint27);
+            series5.Points.Add(dataPoint28);
+            series5.Points.Add(dataPoint29);
+            series5.Points.Add(dataPoint30);
+            series5.Points.Add(dataPoint31);
+            series5.Points.Add(dataPoint32);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series3";
+            this.chart3.Series.Add(series4);
+            this.chart3.Series.Add(series5);
+            this.chart3.Series.Add(series6);
             this.chart3.Size = new System.Drawing.Size(1142, 593);
             this.chart3.TabIndex = 341;
             this.chart3.Text = "chart6";
@@ -3068,7 +3068,7 @@
             // 
             // panel105
             // 
-            this.panel105.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel105.BackColor = System.Drawing.Color.LightSalmon;
             this.panel105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel105.Controls.Add(this.panel106);
             this.panel105.ForeColor = System.Drawing.Color.Black;
@@ -3272,7 +3272,7 @@
             // 
             // panel102
             // 
-            this.panel102.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel102.BackColor = System.Drawing.Color.LightSalmon;
             this.panel102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel102.Controls.Add(this.panel103);
             this.panel102.ForeColor = System.Drawing.Color.Black;
@@ -4217,7 +4217,7 @@
             // 
             // panel100
             // 
-            this.panel100.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel100.BackColor = System.Drawing.Color.LightSalmon;
             this.panel100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel100.Controls.Add(this.panel101);
             this.panel100.ForeColor = System.Drawing.Color.Black;
@@ -4236,7 +4236,7 @@
             // 
             // panel98
             // 
-            this.panel98.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel98.BackColor = System.Drawing.Color.LightSalmon;
             this.panel98.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel98.Controls.Add(this.panel99);
             this.panel98.ForeColor = System.Drawing.Color.Black;
@@ -4255,7 +4255,7 @@
             // 
             // panel96
             // 
-            this.panel96.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel96.BackColor = System.Drawing.Color.LightSalmon;
             this.panel96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel96.Controls.Add(this.panel97);
             this.panel96.ForeColor = System.Drawing.Color.Black;
@@ -4274,7 +4274,7 @@
             // 
             // panel94
             // 
-            this.panel94.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel94.BackColor = System.Drawing.Color.LightSalmon;
             this.panel94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel94.Controls.Add(this.panel95);
             this.panel94.ForeColor = System.Drawing.Color.Black;
@@ -4312,7 +4312,7 @@
             // 
             // panel68
             // 
-            this.panel68.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel68.BackColor = System.Drawing.Color.LightSalmon;
             this.panel68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel68.Controls.Add(this.panel69);
             this.panel68.ForeColor = System.Drawing.Color.Black;
@@ -4331,7 +4331,7 @@
             // 
             // panel44
             // 
-            this.panel44.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel44.BackColor = System.Drawing.Color.LightSalmon;
             this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel44.Controls.Add(this.panel63);
             this.panel44.ForeColor = System.Drawing.Color.Black;
@@ -4350,7 +4350,7 @@
             // 
             // panel66
             // 
-            this.panel66.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel66.BackColor = System.Drawing.Color.LightSalmon;
             this.panel66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel66.Controls.Add(this.panel67);
             this.panel66.ForeColor = System.Drawing.Color.Black;
@@ -4369,7 +4369,7 @@
             // 
             // panel64
             // 
-            this.panel64.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel64.BackColor = System.Drawing.Color.LightSalmon;
             this.panel64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel64.Controls.Add(this.panel65);
             this.panel64.ForeColor = System.Drawing.Color.Black;
@@ -4388,7 +4388,7 @@
             // 
             // panel48
             // 
-            this.panel48.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel48.BackColor = System.Drawing.Color.LightSalmon;
             this.panel48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel48.ForeColor = System.Drawing.Color.Black;
             this.panel48.Location = new System.Drawing.Point(880, 35);
@@ -4418,7 +4418,7 @@
             // 
             // panel50
             // 
-            this.panel50.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel50.BackColor = System.Drawing.Color.LightSalmon;
             this.panel50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel50.ForeColor = System.Drawing.Color.Black;
             this.panel50.Location = new System.Drawing.Point(880, 332);
@@ -4696,10 +4696,10 @@
             this.tabPage1.Controls.Add(this.panel38);
             this.tabPage1.Controls.Add(this.panel9);
             this.tabPage1.Controls.Add(this.panel3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1242, 670);
+            this.tabPage1.Size = new System.Drawing.Size(1242, 671);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          전체          ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -4716,26 +4716,26 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea8.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea8);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend8.Name = "Legend1";
-            this.chart1.Legends.Add(legend8);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series22.ChartArea = "ChartArea1";
-            series22.Legend = "Legend1";
-            series22.Name = "Series1";
-            series23.ChartArea = "ChartArea1";
-            series23.Legend = "Legend1";
-            series23.Name = "Series2";
-            series24.ChartArea = "ChartArea1";
-            series24.Legend = "Legend1";
-            series24.Name = "Series3";
-            this.chart1.Series.Add(series22);
-            this.chart1.Series.Add(series23);
-            this.chart1.Series.Add(series24);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series2";
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series3";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Series.Add(series9);
             this.chart1.Size = new System.Drawing.Size(1168, 602);
             this.chart1.TabIndex = 340;
             this.chart1.Text = "0";
@@ -5220,7 +5220,7 @@
             // 
             // panel51
             // 
-            this.panel51.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel51.BackColor = System.Drawing.Color.LightSalmon;
             this.panel51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel51.Controls.Add(this.panel52);
             this.panel51.ForeColor = System.Drawing.Color.Black;

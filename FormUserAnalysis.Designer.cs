@@ -28,113 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint81 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint82 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint83 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint84 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint85 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint86 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint87 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint88 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint89 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint90 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint91 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint92 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint93 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint94 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint95 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint96 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint97 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint98 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint99 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint100 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint101 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint102 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint103 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint104 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint105 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint106 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint107 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint108 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint109 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint110 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint111 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint112 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint113 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint114 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint115 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint116 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint117 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint118 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint119 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint120 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint121 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint122 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint123 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint124 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint125 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint126 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint127 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint128 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint129 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint130 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint131 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint132 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint133 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint134 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint135 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint136 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint137 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint138 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint139 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint140 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint141 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint142 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint143 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint144 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint145 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint146 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint147 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint148 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint149 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint150 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint151 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint152 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint153 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint154 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint155 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint156 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint157 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint158 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint159 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint160 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint23 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint24 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint25 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint26 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint27 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint28 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint29 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint30 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint41 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint42 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint43 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint44 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint45 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint46 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint47 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint48 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint49 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint50 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint51 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint52 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint53 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint54 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint55 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint56 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint57 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint58 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint59 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint60 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint61 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint62 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint63 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint64 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint65 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint66 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint67 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint68 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint69 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint70 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint71 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint72 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint73 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint74 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint75 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint76 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint77 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint78 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint79 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint80 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -269,6 +270,7 @@
             this.picCompare1 = new System.Windows.Forms.PictureBox();
             this.picCompare3 = new System.Windows.Forms.PictureBox();
             this.panel57 = new System.Windows.Forms.Panel();
+            this.panel59 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -391,8 +393,6 @@
             this.label164 = new System.Windows.Forms.Label();
             this.label166 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -680,13 +680,23 @@
             this.tabPage1.Controls.Add(this.label164);
             this.tabPage1.Controls.Add(this.label166);
             this.tabPage1.Controls.Add(this.label138);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1244, 904);
+            this.tabPage1.Size = new System.Drawing.Size(1244, 905);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.ForeColor = System.Drawing.Color.Black;
+            this.panel15.Location = new System.Drawing.Point(12, 854);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1208, 3);
+            this.panel15.TabIndex = 826;
             // 
             // tabControl3
             // 
@@ -701,10 +711,10 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.tabControl2);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(442, 181);
+            this.tabPage6.Size = new System.Drawing.Size(442, 182);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "수익계정";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -723,10 +733,10 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.chart1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(442, 436);
+            this.tabPage3.Size = new System.Drawing.Size(442, 437);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "전체";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -734,22 +744,22 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(4, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Series2";
-            this.chart1.Series.Add(series13);
-            this.chart1.Series.Add(series14);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(435, 146);
             this.chart1.TabIndex = 339;
             this.chart1.Text = "0";
@@ -758,48 +768,48 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.chart2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(442, 436);
+            this.tabPage4.Size = new System.Drawing.Size(442, 437);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "도매";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // chart2
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart2.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(5, 3);
             this.chart2.Name = "chart2";
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.LegendText = "업계평균";
-            series15.Name = "Series1";
-            series15.Points.Add(dataPoint81);
-            series15.Points.Add(dataPoint82);
-            series15.Points.Add(dataPoint83);
-            series15.Points.Add(dataPoint84);
-            series15.Points.Add(dataPoint85);
-            series15.Points.Add(dataPoint86);
-            series15.Points.Add(dataPoint87);
-            series15.Points.Add(dataPoint88);
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.LegendText = "당대리점";
-            series16.Name = "Series2";
-            series16.Points.Add(dataPoint89);
-            series16.Points.Add(dataPoint90);
-            series16.Points.Add(dataPoint91);
-            series16.Points.Add(dataPoint92);
-            series16.Points.Add(dataPoint93);
-            series16.Points.Add(dataPoint94);
-            series16.Points.Add(dataPoint95);
-            series16.Points.Add(dataPoint96);
-            this.chart2.Series.Add(series15);
-            this.chart2.Series.Add(series16);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.LegendText = "업계평균";
+            series3.Name = "Series1";
+            series3.Points.Add(dataPoint1);
+            series3.Points.Add(dataPoint2);
+            series3.Points.Add(dataPoint3);
+            series3.Points.Add(dataPoint4);
+            series3.Points.Add(dataPoint5);
+            series3.Points.Add(dataPoint6);
+            series3.Points.Add(dataPoint7);
+            series3.Points.Add(dataPoint8);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.LegendText = "당대리점";
+            series4.Name = "Series2";
+            series4.Points.Add(dataPoint9);
+            series4.Points.Add(dataPoint10);
+            series4.Points.Add(dataPoint11);
+            series4.Points.Add(dataPoint12);
+            series4.Points.Add(dataPoint13);
+            series4.Points.Add(dataPoint14);
+            series4.Points.Add(dataPoint15);
+            series4.Points.Add(dataPoint16);
+            this.chart2.Series.Add(series3);
+            this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(432, 155);
             this.chart2.TabIndex = 340;
             this.chart2.Text = "chart2";
@@ -807,47 +817,47 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.chart3);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(442, 436);
+            this.tabPage5.Size = new System.Drawing.Size(442, 437);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "소매";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // chart3
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart3.Legends.Add(legend9);
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(5, 3);
             this.chart3.Name = "chart3";
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.LegendText = "업계평균";
-            series17.Name = "Series1";
-            series17.Points.Add(dataPoint97);
-            series17.Points.Add(dataPoint98);
-            series17.Points.Add(dataPoint99);
-            series17.Points.Add(dataPoint100);
-            series17.Points.Add(dataPoint101);
-            series17.Points.Add(dataPoint102);
-            series17.Points.Add(dataPoint103);
-            series17.Points.Add(dataPoint104);
-            series18.ChartArea = "ChartArea1";
-            series18.Legend = "Legend1";
-            series18.LegendText = "당대리점";
-            series18.Name = "Series2";
-            series18.Points.Add(dataPoint105);
-            series18.Points.Add(dataPoint106);
-            series18.Points.Add(dataPoint107);
-            series18.Points.Add(dataPoint108);
-            series18.Points.Add(dataPoint109);
-            series18.Points.Add(dataPoint110);
-            series18.Points.Add(dataPoint111);
-            series18.Points.Add(dataPoint112);
-            this.chart3.Series.Add(series17);
-            this.chart3.Series.Add(series18);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.LegendText = "업계평균";
+            series5.Name = "Series1";
+            series5.Points.Add(dataPoint17);
+            series5.Points.Add(dataPoint18);
+            series5.Points.Add(dataPoint19);
+            series5.Points.Add(dataPoint20);
+            series5.Points.Add(dataPoint21);
+            series5.Points.Add(dataPoint22);
+            series5.Points.Add(dataPoint23);
+            series5.Points.Add(dataPoint24);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.LegendText = "당대리점";
+            series6.Name = "Series2";
+            series6.Points.Add(dataPoint25);
+            series6.Points.Add(dataPoint26);
+            series6.Points.Add(dataPoint27);
+            series6.Points.Add(dataPoint28);
+            series6.Points.Add(dataPoint29);
+            series6.Points.Add(dataPoint30);
+            series6.Points.Add(dataPoint31);
+            series6.Points.Add(dataPoint32);
+            this.chart3.Series.Add(series5);
+            this.chart3.Series.Add(series6);
             this.chart3.Size = new System.Drawing.Size(432, 154);
             this.chart3.TabIndex = 340;
             this.chart3.Text = "chart3";
@@ -855,10 +865,10 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.tabControl4);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(442, 181);
+            this.tabPage7.Size = new System.Drawing.Size(442, 182);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "비용계정";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -877,10 +887,10 @@
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.chart5);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 21);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(442, 436);
+            this.tabPage8.Size = new System.Drawing.Size(442, 437);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "전체";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -888,40 +898,40 @@
             // chart5
             // 
             this.chart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea10.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea10);
+            chartArea4.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea4);
             this.chart5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend10.Name = "Legend1";
-            this.chart5.Legends.Add(legend10);
+            legend4.Name = "Legend1";
+            this.chart5.Legends.Add(legend4);
             this.chart5.Location = new System.Drawing.Point(4, 3);
             this.chart5.Name = "chart5";
             this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series19.ChartArea = "ChartArea1";
-            series19.Legend = "Legend1";
-            series19.LegendText = "업계평균";
-            series19.Name = "Series1";
-            series19.Points.Add(dataPoint113);
-            series19.Points.Add(dataPoint114);
-            series19.Points.Add(dataPoint115);
-            series19.Points.Add(dataPoint116);
-            series19.Points.Add(dataPoint117);
-            series19.Points.Add(dataPoint118);
-            series19.Points.Add(dataPoint119);
-            series19.Points.Add(dataPoint120);
-            series20.ChartArea = "ChartArea1";
-            series20.Legend = "Legend1";
-            series20.LegendText = "당대리점";
-            series20.Name = "Series2";
-            series20.Points.Add(dataPoint121);
-            series20.Points.Add(dataPoint122);
-            series20.Points.Add(dataPoint123);
-            series20.Points.Add(dataPoint124);
-            series20.Points.Add(dataPoint125);
-            series20.Points.Add(dataPoint126);
-            series20.Points.Add(dataPoint127);
-            series20.Points.Add(dataPoint128);
-            this.chart5.Series.Add(series19);
-            this.chart5.Series.Add(series20);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.LegendText = "업계평균";
+            series7.Name = "Series1";
+            series7.Points.Add(dataPoint33);
+            series7.Points.Add(dataPoint34);
+            series7.Points.Add(dataPoint35);
+            series7.Points.Add(dataPoint36);
+            series7.Points.Add(dataPoint37);
+            series7.Points.Add(dataPoint38);
+            series7.Points.Add(dataPoint39);
+            series7.Points.Add(dataPoint40);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.LegendText = "당대리점";
+            series8.Name = "Series2";
+            series8.Points.Add(dataPoint41);
+            series8.Points.Add(dataPoint42);
+            series8.Points.Add(dataPoint43);
+            series8.Points.Add(dataPoint44);
+            series8.Points.Add(dataPoint45);
+            series8.Points.Add(dataPoint46);
+            series8.Points.Add(dataPoint47);
+            series8.Points.Add(dataPoint48);
+            this.chart5.Series.Add(series7);
+            this.chart5.Series.Add(series8);
             this.chart5.Size = new System.Drawing.Size(435, 154);
             this.chart5.TabIndex = 339;
             this.chart5.Text = "chart5";
@@ -929,48 +939,48 @@
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.chart6);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 21);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(442, 436);
+            this.tabPage9.Size = new System.Drawing.Size(442, 437);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "도매";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // chart6
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart6.Legends.Add(legend11);
+            chartArea5.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart6.Legends.Add(legend5);
             this.chart6.Location = new System.Drawing.Point(5, 3);
             this.chart6.Name = "chart6";
-            series21.ChartArea = "ChartArea1";
-            series21.Legend = "Legend1";
-            series21.LegendText = "업계평균";
-            series21.Name = "Series1";
-            series21.Points.Add(dataPoint129);
-            series21.Points.Add(dataPoint130);
-            series21.Points.Add(dataPoint131);
-            series21.Points.Add(dataPoint132);
-            series21.Points.Add(dataPoint133);
-            series21.Points.Add(dataPoint134);
-            series21.Points.Add(dataPoint135);
-            series21.Points.Add(dataPoint136);
-            series22.ChartArea = "ChartArea1";
-            series22.Legend = "Legend1";
-            series22.LegendText = "당대리점";
-            series22.Name = "Series2";
-            series22.Points.Add(dataPoint137);
-            series22.Points.Add(dataPoint138);
-            series22.Points.Add(dataPoint139);
-            series22.Points.Add(dataPoint140);
-            series22.Points.Add(dataPoint141);
-            series22.Points.Add(dataPoint142);
-            series22.Points.Add(dataPoint143);
-            series22.Points.Add(dataPoint144);
-            this.chart6.Series.Add(series21);
-            this.chart6.Series.Add(series22);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.LegendText = "업계평균";
+            series9.Name = "Series1";
+            series9.Points.Add(dataPoint49);
+            series9.Points.Add(dataPoint50);
+            series9.Points.Add(dataPoint51);
+            series9.Points.Add(dataPoint52);
+            series9.Points.Add(dataPoint53);
+            series9.Points.Add(dataPoint54);
+            series9.Points.Add(dataPoint55);
+            series9.Points.Add(dataPoint56);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.LegendText = "당대리점";
+            series10.Name = "Series2";
+            series10.Points.Add(dataPoint57);
+            series10.Points.Add(dataPoint58);
+            series10.Points.Add(dataPoint59);
+            series10.Points.Add(dataPoint60);
+            series10.Points.Add(dataPoint61);
+            series10.Points.Add(dataPoint62);
+            series10.Points.Add(dataPoint63);
+            series10.Points.Add(dataPoint64);
+            this.chart6.Series.Add(series9);
+            this.chart6.Series.Add(series10);
             this.chart6.Size = new System.Drawing.Size(432, 154);
             this.chart6.TabIndex = 340;
             this.chart6.Text = "chart6";
@@ -978,47 +988,47 @@
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.chart7);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Location = new System.Drawing.Point(4, 21);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(442, 436);
+            this.tabPage10.Size = new System.Drawing.Size(442, 437);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "소매";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // chart7
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart7.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart7.Legends.Add(legend12);
+            chartArea6.Name = "ChartArea1";
+            this.chart7.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart7.Legends.Add(legend6);
             this.chart7.Location = new System.Drawing.Point(5, 3);
             this.chart7.Name = "chart7";
-            series23.ChartArea = "ChartArea1";
-            series23.Legend = "Legend1";
-            series23.LegendText = "업계평균";
-            series23.Name = "Series1";
-            series23.Points.Add(dataPoint145);
-            series23.Points.Add(dataPoint146);
-            series23.Points.Add(dataPoint147);
-            series23.Points.Add(dataPoint148);
-            series23.Points.Add(dataPoint149);
-            series23.Points.Add(dataPoint150);
-            series23.Points.Add(dataPoint151);
-            series23.Points.Add(dataPoint152);
-            series24.ChartArea = "ChartArea1";
-            series24.Legend = "Legend1";
-            series24.LegendText = "당대리점";
-            series24.Name = "Series2";
-            series24.Points.Add(dataPoint153);
-            series24.Points.Add(dataPoint154);
-            series24.Points.Add(dataPoint155);
-            series24.Points.Add(dataPoint156);
-            series24.Points.Add(dataPoint157);
-            series24.Points.Add(dataPoint158);
-            series24.Points.Add(dataPoint159);
-            series24.Points.Add(dataPoint160);
-            this.chart7.Series.Add(series23);
-            this.chart7.Series.Add(series24);
+            series11.ChartArea = "ChartArea1";
+            series11.Legend = "Legend1";
+            series11.LegendText = "업계평균";
+            series11.Name = "Series1";
+            series11.Points.Add(dataPoint65);
+            series11.Points.Add(dataPoint66);
+            series11.Points.Add(dataPoint67);
+            series11.Points.Add(dataPoint68);
+            series11.Points.Add(dataPoint69);
+            series11.Points.Add(dataPoint70);
+            series11.Points.Add(dataPoint71);
+            series11.Points.Add(dataPoint72);
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.LegendText = "당대리점";
+            series12.Name = "Series2";
+            series12.Points.Add(dataPoint73);
+            series12.Points.Add(dataPoint74);
+            series12.Points.Add(dataPoint75);
+            series12.Points.Add(dataPoint76);
+            series12.Points.Add(dataPoint77);
+            series12.Points.Add(dataPoint78);
+            series12.Points.Add(dataPoint79);
+            series12.Points.Add(dataPoint80);
+            this.chart7.Series.Add(series11);
+            this.chart7.Series.Add(series12);
             this.chart7.Size = new System.Drawing.Size(432, 155);
             this.chart7.TabIndex = 340;
             this.chart7.Text = "chart7";
@@ -1075,641 +1085,756 @@
             // txtOut62
             // 
             this.txtOut62.BackColor = System.Drawing.Color.White;
-            this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut62.Location = new System.Drawing.Point(623, 457);
             this.txtOut62.Name = "txtOut62";
-            this.txtOut62.Size = new System.Drawing.Size(84, 21);
+            this.txtOut62.ReadOnly = true;
+            this.txtOut62.Size = new System.Drawing.Size(84, 14);
             this.txtOut62.TabIndex = 820;
             this.txtOut62.Text = "0";
             this.txtOut62.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut62.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut61
             // 
             this.txtOut61.BackColor = System.Drawing.Color.White;
-            this.txtOut61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut61.Location = new System.Drawing.Point(623, 428);
             this.txtOut61.Name = "txtOut61";
-            this.txtOut61.Size = new System.Drawing.Size(84, 21);
+            this.txtOut61.ReadOnly = true;
+            this.txtOut61.Size = new System.Drawing.Size(84, 14);
             this.txtOut61.TabIndex = 819;
             this.txtOut61.Text = "0";
             this.txtOut61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut61.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut60
             // 
             this.txtOut60.BackColor = System.Drawing.Color.White;
-            this.txtOut60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut60.Location = new System.Drawing.Point(623, 398);
             this.txtOut60.Name = "txtOut60";
-            this.txtOut60.Size = new System.Drawing.Size(84, 21);
+            this.txtOut60.ReadOnly = true;
+            this.txtOut60.Size = new System.Drawing.Size(84, 14);
             this.txtOut60.TabIndex = 818;
             this.txtOut60.Text = "0";
             this.txtOut60.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut60.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut59
             // 
             this.txtOut59.BackColor = System.Drawing.Color.White;
-            this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut59.Location = new System.Drawing.Point(623, 368);
             this.txtOut59.Name = "txtOut59";
-            this.txtOut59.Size = new System.Drawing.Size(84, 21);
+            this.txtOut59.ReadOnly = true;
+            this.txtOut59.Size = new System.Drawing.Size(84, 14);
             this.txtOut59.TabIndex = 817;
             this.txtOut59.Text = "0";
             this.txtOut59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut59.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut58
             // 
             this.txtOut58.BackColor = System.Drawing.Color.White;
-            this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut58.Location = new System.Drawing.Point(623, 337);
             this.txtOut58.Name = "txtOut58";
-            this.txtOut58.Size = new System.Drawing.Size(84, 21);
+            this.txtOut58.ReadOnly = true;
+            this.txtOut58.Size = new System.Drawing.Size(84, 14);
             this.txtOut58.TabIndex = 816;
             this.txtOut58.Text = "0";
             this.txtOut58.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut58.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut57
             // 
             this.txtOut57.BackColor = System.Drawing.Color.White;
-            this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut57.Location = new System.Drawing.Point(623, 308);
             this.txtOut57.Name = "txtOut57";
-            this.txtOut57.Size = new System.Drawing.Size(84, 21);
+            this.txtOut57.ReadOnly = true;
+            this.txtOut57.Size = new System.Drawing.Size(84, 14);
             this.txtOut57.TabIndex = 815;
             this.txtOut57.Text = "0";
             this.txtOut57.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut57.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut56
             // 
             this.txtOut56.BackColor = System.Drawing.Color.White;
-            this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut56.Location = new System.Drawing.Point(623, 277);
             this.txtOut56.Name = "txtOut56";
-            this.txtOut56.Size = new System.Drawing.Size(84, 21);
+            this.txtOut56.ReadOnly = true;
+            this.txtOut56.Size = new System.Drawing.Size(84, 14);
             this.txtOut56.TabIndex = 814;
             this.txtOut56.Text = "0";
             this.txtOut56.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut56.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut55
             // 
             this.txtOut55.BackColor = System.Drawing.Color.White;
-            this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut55.Location = new System.Drawing.Point(623, 247);
             this.txtOut55.Name = "txtOut55";
-            this.txtOut55.Size = new System.Drawing.Size(84, 21);
+            this.txtOut55.ReadOnly = true;
+            this.txtOut55.Size = new System.Drawing.Size(84, 14);
             this.txtOut55.TabIndex = 813;
             this.txtOut55.Text = "0";
             this.txtOut55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut55.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut54
             // 
             this.txtOut54.BackColor = System.Drawing.Color.White;
-            this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut54.Location = new System.Drawing.Point(623, 218);
             this.txtOut54.Name = "txtOut54";
-            this.txtOut54.Size = new System.Drawing.Size(84, 21);
+            this.txtOut54.ReadOnly = true;
+            this.txtOut54.Size = new System.Drawing.Size(84, 14);
             this.txtOut54.TabIndex = 812;
             this.txtOut54.Text = "0";
             this.txtOut54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut54.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut53
             // 
             this.txtOut53.BackColor = System.Drawing.Color.White;
-            this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut53.Location = new System.Drawing.Point(623, 188);
             this.txtOut53.Name = "txtOut53";
-            this.txtOut53.Size = new System.Drawing.Size(84, 21);
+            this.txtOut53.ReadOnly = true;
+            this.txtOut53.Size = new System.Drawing.Size(84, 14);
             this.txtOut53.TabIndex = 811;
             this.txtOut53.Text = "0";
             this.txtOut53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut53.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut52
             // 
             this.txtOut52.BackColor = System.Drawing.Color.White;
-            this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut52.Location = new System.Drawing.Point(623, 158);
             this.txtOut52.Name = "txtOut52";
-            this.txtOut52.Size = new System.Drawing.Size(84, 21);
+            this.txtOut52.ReadOnly = true;
+            this.txtOut52.Size = new System.Drawing.Size(84, 14);
             this.txtOut52.TabIndex = 810;
             this.txtOut52.Text = "0";
             this.txtOut52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut52.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut51
             // 
             this.txtOut51.BackColor = System.Drawing.Color.White;
-            this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut51.Location = new System.Drawing.Point(623, 127);
             this.txtOut51.Name = "txtOut51";
-            this.txtOut51.Size = new System.Drawing.Size(84, 21);
+            this.txtOut51.ReadOnly = true;
+            this.txtOut51.Size = new System.Drawing.Size(84, 14);
             this.txtOut51.TabIndex = 809;
             this.txtOut51.Text = "0";
             this.txtOut51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut51.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut50
             // 
             this.txtOut50.BackColor = System.Drawing.Color.White;
-            this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut50.Location = new System.Drawing.Point(623, 98);
             this.txtOut50.Name = "txtOut50";
-            this.txtOut50.Size = new System.Drawing.Size(84, 21);
+            this.txtOut50.ReadOnly = true;
+            this.txtOut50.Size = new System.Drawing.Size(84, 14);
             this.txtOut50.TabIndex = 808;
             this.txtOut50.Text = "0";
             this.txtOut50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut50.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut49
             // 
             this.txtOut49.BackColor = System.Drawing.Color.White;
-            this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut49.Location = new System.Drawing.Point(623, 67);
             this.txtOut49.Name = "txtOut49";
-            this.txtOut49.Size = new System.Drawing.Size(85, 21);
+            this.txtOut49.ReadOnly = true;
+            this.txtOut49.Size = new System.Drawing.Size(85, 14);
             this.txtOut49.TabIndex = 807;
             this.txtOut49.Text = "0";
             this.txtOut49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut49.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut46
             // 
             this.txtOut46.BackColor = System.Drawing.Color.White;
-            this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut46.Location = new System.Drawing.Point(508, 457);
             this.txtOut46.Name = "txtOut46";
-            this.txtOut46.Size = new System.Drawing.Size(105, 21);
+            this.txtOut46.ReadOnly = true;
+            this.txtOut46.Size = new System.Drawing.Size(105, 14);
             this.txtOut46.TabIndex = 806;
             this.txtOut46.Text = "0";
             this.txtOut46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut46.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut45
             // 
             this.txtOut45.BackColor = System.Drawing.Color.White;
-            this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut45.Location = new System.Drawing.Point(508, 428);
             this.txtOut45.Name = "txtOut45";
-            this.txtOut45.Size = new System.Drawing.Size(105, 21);
+            this.txtOut45.ReadOnly = true;
+            this.txtOut45.Size = new System.Drawing.Size(105, 14);
             this.txtOut45.TabIndex = 805;
             this.txtOut45.Text = "0";
             this.txtOut45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut45.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut44
             // 
             this.txtOut44.BackColor = System.Drawing.Color.White;
-            this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut44.Location = new System.Drawing.Point(508, 398);
             this.txtOut44.Name = "txtOut44";
-            this.txtOut44.Size = new System.Drawing.Size(105, 21);
+            this.txtOut44.ReadOnly = true;
+            this.txtOut44.Size = new System.Drawing.Size(105, 14);
             this.txtOut44.TabIndex = 804;
             this.txtOut44.Text = "0";
             this.txtOut44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut44.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut43
             // 
             this.txtOut43.BackColor = System.Drawing.Color.White;
-            this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut43.Location = new System.Drawing.Point(508, 368);
             this.txtOut43.Name = "txtOut43";
-            this.txtOut43.Size = new System.Drawing.Size(105, 21);
+            this.txtOut43.ReadOnly = true;
+            this.txtOut43.Size = new System.Drawing.Size(105, 14);
             this.txtOut43.TabIndex = 803;
             this.txtOut43.Text = "0";
             this.txtOut43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut43.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut42
             // 
             this.txtOut42.BackColor = System.Drawing.Color.White;
-            this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut42.Location = new System.Drawing.Point(508, 337);
             this.txtOut42.Name = "txtOut42";
-            this.txtOut42.Size = new System.Drawing.Size(105, 21);
+            this.txtOut42.ReadOnly = true;
+            this.txtOut42.Size = new System.Drawing.Size(105, 14);
             this.txtOut42.TabIndex = 802;
             this.txtOut42.Text = "0";
             this.txtOut42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut42.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut41
             // 
             this.txtOut41.BackColor = System.Drawing.Color.White;
-            this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut41.Location = new System.Drawing.Point(508, 308);
             this.txtOut41.Name = "txtOut41";
-            this.txtOut41.Size = new System.Drawing.Size(105, 21);
+            this.txtOut41.ReadOnly = true;
+            this.txtOut41.Size = new System.Drawing.Size(105, 14);
             this.txtOut41.TabIndex = 801;
             this.txtOut41.Text = "0";
             this.txtOut41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut41.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut40
             // 
             this.txtOut40.BackColor = System.Drawing.Color.White;
-            this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut40.Location = new System.Drawing.Point(508, 277);
             this.txtOut40.Name = "txtOut40";
-            this.txtOut40.Size = new System.Drawing.Size(105, 21);
+            this.txtOut40.ReadOnly = true;
+            this.txtOut40.Size = new System.Drawing.Size(105, 14);
             this.txtOut40.TabIndex = 800;
             this.txtOut40.Text = "0";
             this.txtOut40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut40.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut39
             // 
             this.txtOut39.BackColor = System.Drawing.Color.White;
-            this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut39.Location = new System.Drawing.Point(508, 247);
             this.txtOut39.Name = "txtOut39";
-            this.txtOut39.Size = new System.Drawing.Size(105, 21);
+            this.txtOut39.ReadOnly = true;
+            this.txtOut39.Size = new System.Drawing.Size(105, 14);
             this.txtOut39.TabIndex = 799;
             this.txtOut39.Text = "0";
             this.txtOut39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut39.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut38
             // 
             this.txtOut38.BackColor = System.Drawing.Color.White;
-            this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut38.Location = new System.Drawing.Point(508, 218);
             this.txtOut38.Name = "txtOut38";
-            this.txtOut38.Size = new System.Drawing.Size(105, 21);
+            this.txtOut38.ReadOnly = true;
+            this.txtOut38.Size = new System.Drawing.Size(105, 14);
             this.txtOut38.TabIndex = 798;
             this.txtOut38.Text = "0";
             this.txtOut38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut38.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut37
             // 
             this.txtOut37.BackColor = System.Drawing.Color.White;
-            this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut37.Location = new System.Drawing.Point(508, 188);
             this.txtOut37.Name = "txtOut37";
-            this.txtOut37.Size = new System.Drawing.Size(105, 21);
+            this.txtOut37.ReadOnly = true;
+            this.txtOut37.Size = new System.Drawing.Size(105, 14);
             this.txtOut37.TabIndex = 797;
             this.txtOut37.Text = "0";
             this.txtOut37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut37.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut36
             // 
             this.txtOut36.BackColor = System.Drawing.Color.White;
-            this.txtOut36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut36.Location = new System.Drawing.Point(508, 158);
             this.txtOut36.Name = "txtOut36";
-            this.txtOut36.Size = new System.Drawing.Size(105, 21);
+            this.txtOut36.ReadOnly = true;
+            this.txtOut36.Size = new System.Drawing.Size(105, 14);
             this.txtOut36.TabIndex = 796;
             this.txtOut36.Text = "0";
             this.txtOut36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut36.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut35
             // 
             this.txtOut35.BackColor = System.Drawing.Color.White;
-            this.txtOut35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut35.Location = new System.Drawing.Point(508, 127);
             this.txtOut35.Name = "txtOut35";
-            this.txtOut35.Size = new System.Drawing.Size(105, 21);
+            this.txtOut35.ReadOnly = true;
+            this.txtOut35.Size = new System.Drawing.Size(105, 14);
             this.txtOut35.TabIndex = 795;
             this.txtOut35.Text = "0";
             this.txtOut35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut35.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut34
             // 
             this.txtOut34.BackColor = System.Drawing.Color.White;
-            this.txtOut34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut34.Location = new System.Drawing.Point(508, 98);
             this.txtOut34.Name = "txtOut34";
-            this.txtOut34.Size = new System.Drawing.Size(105, 21);
+            this.txtOut34.ReadOnly = true;
+            this.txtOut34.Size = new System.Drawing.Size(105, 14);
             this.txtOut34.TabIndex = 794;
             this.txtOut34.Text = "0";
             this.txtOut34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut34.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut33
             // 
             this.txtOut33.BackColor = System.Drawing.Color.White;
-            this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut33.Location = new System.Drawing.Point(508, 67);
             this.txtOut33.Name = "txtOut33";
-            this.txtOut33.Size = new System.Drawing.Size(105, 21);
+            this.txtOut33.ReadOnly = true;
+            this.txtOut33.Size = new System.Drawing.Size(105, 14);
             this.txtOut33.TabIndex = 793;
             this.txtOut33.Text = "0";
             this.txtOut33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut33.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut63
             // 
             this.txtOut63.BackColor = System.Drawing.Color.White;
-            this.txtOut63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut63.Location = new System.Drawing.Point(623, 487);
             this.txtOut63.Name = "txtOut63";
-            this.txtOut63.Size = new System.Drawing.Size(84, 21);
+            this.txtOut63.ReadOnly = true;
+            this.txtOut63.Size = new System.Drawing.Size(84, 14);
             this.txtOut63.TabIndex = 791;
             this.txtOut63.Text = "0";
             this.txtOut63.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut63.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut47
             // 
             this.txtOut47.BackColor = System.Drawing.Color.White;
-            this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut47.Location = new System.Drawing.Point(508, 486);
             this.txtOut47.Name = "txtOut47";
-            this.txtOut47.Size = new System.Drawing.Size(105, 21);
+            this.txtOut47.ReadOnly = true;
+            this.txtOut47.Size = new System.Drawing.Size(105, 14);
             this.txtOut47.TabIndex = 792;
             this.txtOut47.Text = "0";
             this.txtOut47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut47.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut30
             // 
             this.txtOut30.BackColor = System.Drawing.Color.White;
-            this.txtOut30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut30.Location = new System.Drawing.Point(394, 457);
             this.txtOut30.Name = "txtOut30";
-            this.txtOut30.Size = new System.Drawing.Size(105, 21);
+            this.txtOut30.ReadOnly = true;
+            this.txtOut30.Size = new System.Drawing.Size(105, 14);
             this.txtOut30.TabIndex = 790;
             this.txtOut30.Text = "0";
             this.txtOut30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut30.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut29
             // 
             this.txtOut29.BackColor = System.Drawing.Color.White;
-            this.txtOut29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut29.Location = new System.Drawing.Point(394, 428);
             this.txtOut29.Name = "txtOut29";
-            this.txtOut29.Size = new System.Drawing.Size(105, 21);
+            this.txtOut29.ReadOnly = true;
+            this.txtOut29.Size = new System.Drawing.Size(105, 14);
             this.txtOut29.TabIndex = 789;
             this.txtOut29.Text = "0";
             this.txtOut29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut29.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut28
             // 
             this.txtOut28.BackColor = System.Drawing.Color.White;
-            this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut28.Location = new System.Drawing.Point(394, 398);
             this.txtOut28.Name = "txtOut28";
-            this.txtOut28.Size = new System.Drawing.Size(105, 21);
+            this.txtOut28.ReadOnly = true;
+            this.txtOut28.Size = new System.Drawing.Size(105, 14);
             this.txtOut28.TabIndex = 788;
             this.txtOut28.Text = "0";
             this.txtOut28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtOut28.TextChanged += new System.EventHandler(this.txtOut28_TextChanged);
+            this.txtOut28.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut27
             // 
             this.txtOut27.BackColor = System.Drawing.Color.White;
-            this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut27.Location = new System.Drawing.Point(394, 368);
             this.txtOut27.Name = "txtOut27";
-            this.txtOut27.Size = new System.Drawing.Size(105, 21);
+            this.txtOut27.ReadOnly = true;
+            this.txtOut27.Size = new System.Drawing.Size(105, 14);
             this.txtOut27.TabIndex = 787;
             this.txtOut27.Text = "0";
             this.txtOut27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut27.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut26
             // 
             this.txtOut26.BackColor = System.Drawing.Color.White;
-            this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut26.Location = new System.Drawing.Point(394, 337);
             this.txtOut26.Name = "txtOut26";
-            this.txtOut26.Size = new System.Drawing.Size(105, 21);
+            this.txtOut26.ReadOnly = true;
+            this.txtOut26.Size = new System.Drawing.Size(105, 14);
             this.txtOut26.TabIndex = 786;
             this.txtOut26.Text = "0";
             this.txtOut26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut26.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut25
             // 
             this.txtOut25.BackColor = System.Drawing.Color.White;
-            this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut25.Location = new System.Drawing.Point(394, 308);
             this.txtOut25.Name = "txtOut25";
-            this.txtOut25.Size = new System.Drawing.Size(105, 21);
+            this.txtOut25.ReadOnly = true;
+            this.txtOut25.Size = new System.Drawing.Size(105, 14);
             this.txtOut25.TabIndex = 785;
             this.txtOut25.Text = "0";
             this.txtOut25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut25.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut24
             // 
             this.txtOut24.BackColor = System.Drawing.Color.White;
-            this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut24.Location = new System.Drawing.Point(394, 277);
             this.txtOut24.Name = "txtOut24";
-            this.txtOut24.Size = new System.Drawing.Size(105, 21);
+            this.txtOut24.ReadOnly = true;
+            this.txtOut24.Size = new System.Drawing.Size(105, 14);
             this.txtOut24.TabIndex = 784;
             this.txtOut24.Text = "0";
             this.txtOut24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut24.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut23
             // 
             this.txtOut23.BackColor = System.Drawing.Color.White;
-            this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut23.Location = new System.Drawing.Point(394, 247);
             this.txtOut23.Name = "txtOut23";
-            this.txtOut23.Size = new System.Drawing.Size(105, 21);
+            this.txtOut23.ReadOnly = true;
+            this.txtOut23.Size = new System.Drawing.Size(105, 14);
             this.txtOut23.TabIndex = 783;
             this.txtOut23.Text = "0";
             this.txtOut23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut23.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut22
             // 
             this.txtOut22.BackColor = System.Drawing.Color.White;
-            this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut22.Location = new System.Drawing.Point(394, 218);
             this.txtOut22.Name = "txtOut22";
-            this.txtOut22.Size = new System.Drawing.Size(105, 21);
+            this.txtOut22.ReadOnly = true;
+            this.txtOut22.Size = new System.Drawing.Size(105, 14);
             this.txtOut22.TabIndex = 782;
             this.txtOut22.Text = "0";
             this.txtOut22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut22.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut21
             // 
             this.txtOut21.BackColor = System.Drawing.Color.White;
-            this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut21.Location = new System.Drawing.Point(394, 188);
             this.txtOut21.Name = "txtOut21";
-            this.txtOut21.Size = new System.Drawing.Size(105, 21);
+            this.txtOut21.ReadOnly = true;
+            this.txtOut21.Size = new System.Drawing.Size(105, 14);
             this.txtOut21.TabIndex = 781;
             this.txtOut21.Text = "0";
             this.txtOut21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut21.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut20
             // 
             this.txtOut20.BackColor = System.Drawing.Color.White;
-            this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut20.Location = new System.Drawing.Point(394, 158);
             this.txtOut20.Name = "txtOut20";
-            this.txtOut20.Size = new System.Drawing.Size(105, 21);
+            this.txtOut20.ReadOnly = true;
+            this.txtOut20.Size = new System.Drawing.Size(105, 14);
             this.txtOut20.TabIndex = 780;
             this.txtOut20.Text = "0";
             this.txtOut20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut20.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut19
             // 
             this.txtOut19.BackColor = System.Drawing.Color.White;
-            this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut19.Location = new System.Drawing.Point(394, 127);
             this.txtOut19.Name = "txtOut19";
-            this.txtOut19.Size = new System.Drawing.Size(105, 21);
+            this.txtOut19.ReadOnly = true;
+            this.txtOut19.Size = new System.Drawing.Size(105, 14);
             this.txtOut19.TabIndex = 779;
             this.txtOut19.Text = "0";
             this.txtOut19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut19.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut18
             // 
             this.txtOut18.BackColor = System.Drawing.Color.White;
-            this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut18.Location = new System.Drawing.Point(394, 98);
             this.txtOut18.Name = "txtOut18";
-            this.txtOut18.Size = new System.Drawing.Size(105, 21);
+            this.txtOut18.ReadOnly = true;
+            this.txtOut18.Size = new System.Drawing.Size(105, 14);
             this.txtOut18.TabIndex = 778;
             this.txtOut18.Text = "0";
             this.txtOut18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut18.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut17
             // 
             this.txtOut17.BackColor = System.Drawing.Color.White;
-            this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut17.Location = new System.Drawing.Point(394, 67);
             this.txtOut17.Name = "txtOut17";
-            this.txtOut17.Size = new System.Drawing.Size(105, 21);
+            this.txtOut17.ReadOnly = true;
+            this.txtOut17.Size = new System.Drawing.Size(105, 14);
             this.txtOut17.TabIndex = 777;
             this.txtOut17.Text = "0";
             this.txtOut17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut17.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut14
             // 
             this.txtOut14.BackColor = System.Drawing.Color.White;
-            this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut14.Location = new System.Drawing.Point(279, 457);
             this.txtOut14.Name = "txtOut14";
-            this.txtOut14.Size = new System.Drawing.Size(105, 21);
+            this.txtOut14.ReadOnly = true;
+            this.txtOut14.Size = new System.Drawing.Size(105, 14);
             this.txtOut14.TabIndex = 776;
             this.txtOut14.Text = "0";
             this.txtOut14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut14.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut13
             // 
             this.txtOut13.BackColor = System.Drawing.Color.White;
-            this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut13.Location = new System.Drawing.Point(279, 428);
             this.txtOut13.Name = "txtOut13";
-            this.txtOut13.Size = new System.Drawing.Size(105, 21);
+            this.txtOut13.ReadOnly = true;
+            this.txtOut13.Size = new System.Drawing.Size(105, 14);
             this.txtOut13.TabIndex = 775;
             this.txtOut13.Text = "0";
             this.txtOut13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut13.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut12
             // 
             this.txtOut12.BackColor = System.Drawing.Color.White;
-            this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut12.Location = new System.Drawing.Point(279, 398);
             this.txtOut12.Name = "txtOut12";
-            this.txtOut12.Size = new System.Drawing.Size(105, 21);
+            this.txtOut12.ReadOnly = true;
+            this.txtOut12.Size = new System.Drawing.Size(105, 14);
             this.txtOut12.TabIndex = 774;
             this.txtOut12.Text = "0";
             this.txtOut12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut12.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut11
             // 
             this.txtOut11.BackColor = System.Drawing.Color.White;
-            this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut11.Location = new System.Drawing.Point(279, 368);
             this.txtOut11.Name = "txtOut11";
-            this.txtOut11.Size = new System.Drawing.Size(105, 21);
+            this.txtOut11.ReadOnly = true;
+            this.txtOut11.Size = new System.Drawing.Size(105, 14);
             this.txtOut11.TabIndex = 773;
             this.txtOut11.Text = "0";
             this.txtOut11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut11.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut10
             // 
             this.txtOut10.BackColor = System.Drawing.Color.White;
-            this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut10.Location = new System.Drawing.Point(279, 337);
             this.txtOut10.Name = "txtOut10";
-            this.txtOut10.Size = new System.Drawing.Size(105, 21);
+            this.txtOut10.ReadOnly = true;
+            this.txtOut10.Size = new System.Drawing.Size(105, 14);
             this.txtOut10.TabIndex = 772;
             this.txtOut10.Text = "0";
             this.txtOut10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut10.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut9
             // 
             this.txtOut9.BackColor = System.Drawing.Color.White;
-            this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut9.Location = new System.Drawing.Point(279, 308);
             this.txtOut9.Name = "txtOut9";
-            this.txtOut9.Size = new System.Drawing.Size(105, 21);
+            this.txtOut9.ReadOnly = true;
+            this.txtOut9.Size = new System.Drawing.Size(105, 14);
             this.txtOut9.TabIndex = 771;
             this.txtOut9.Text = "0";
             this.txtOut9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut9.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut8
             // 
             this.txtOut8.BackColor = System.Drawing.Color.White;
-            this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut8.Location = new System.Drawing.Point(279, 277);
             this.txtOut8.Name = "txtOut8";
-            this.txtOut8.Size = new System.Drawing.Size(105, 21);
+            this.txtOut8.ReadOnly = true;
+            this.txtOut8.Size = new System.Drawing.Size(105, 14);
             this.txtOut8.TabIndex = 770;
             this.txtOut8.Text = "0";
             this.txtOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut8.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut7
             // 
             this.txtOut7.BackColor = System.Drawing.Color.White;
-            this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut7.Location = new System.Drawing.Point(279, 247);
             this.txtOut7.Name = "txtOut7";
-            this.txtOut7.Size = new System.Drawing.Size(105, 21);
+            this.txtOut7.ReadOnly = true;
+            this.txtOut7.Size = new System.Drawing.Size(105, 14);
             this.txtOut7.TabIndex = 769;
             this.txtOut7.Text = "0";
             this.txtOut7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut7.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut6
             // 
             this.txtOut6.BackColor = System.Drawing.Color.White;
-            this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut6.Location = new System.Drawing.Point(279, 218);
             this.txtOut6.Name = "txtOut6";
-            this.txtOut6.Size = new System.Drawing.Size(105, 21);
+            this.txtOut6.ReadOnly = true;
+            this.txtOut6.Size = new System.Drawing.Size(105, 14);
             this.txtOut6.TabIndex = 768;
             this.txtOut6.Text = "0";
             this.txtOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut6.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut5
             // 
             this.txtOut5.BackColor = System.Drawing.Color.White;
-            this.txtOut5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut5.Location = new System.Drawing.Point(279, 188);
             this.txtOut5.Name = "txtOut5";
-            this.txtOut5.Size = new System.Drawing.Size(105, 21);
+            this.txtOut5.ReadOnly = true;
+            this.txtOut5.Size = new System.Drawing.Size(105, 14);
             this.txtOut5.TabIndex = 767;
             this.txtOut5.Text = "0";
             this.txtOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut5.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut4
             // 
             this.txtOut4.BackColor = System.Drawing.Color.White;
-            this.txtOut4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut4.Location = new System.Drawing.Point(279, 158);
             this.txtOut4.Name = "txtOut4";
-            this.txtOut4.Size = new System.Drawing.Size(105, 21);
+            this.txtOut4.ReadOnly = true;
+            this.txtOut4.Size = new System.Drawing.Size(105, 14);
             this.txtOut4.TabIndex = 766;
             this.txtOut4.Text = "0";
             this.txtOut4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut4.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut3
             // 
             this.txtOut3.BackColor = System.Drawing.Color.White;
-            this.txtOut3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut3.Location = new System.Drawing.Point(279, 127);
             this.txtOut3.Name = "txtOut3";
-            this.txtOut3.Size = new System.Drawing.Size(105, 21);
+            this.txtOut3.ReadOnly = true;
+            this.txtOut3.Size = new System.Drawing.Size(105, 14);
             this.txtOut3.TabIndex = 765;
             this.txtOut3.Text = "0";
             this.txtOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut3.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut2
             // 
             this.txtOut2.BackColor = System.Drawing.Color.White;
-            this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut2.Location = new System.Drawing.Point(279, 98);
             this.txtOut2.Name = "txtOut2";
-            this.txtOut2.Size = new System.Drawing.Size(105, 21);
+            this.txtOut2.ReadOnly = true;
+            this.txtOut2.Size = new System.Drawing.Size(105, 14);
             this.txtOut2.TabIndex = 764;
             this.txtOut2.Text = "0";
             this.txtOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut2.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut1
             // 
             this.txtOut1.BackColor = System.Drawing.Color.White;
-            this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut1.Location = new System.Drawing.Point(279, 67);
             this.txtOut1.Name = "txtOut1";
-            this.txtOut1.Size = new System.Drawing.Size(105, 21);
+            this.txtOut1.ReadOnly = true;
+            this.txtOut1.Size = new System.Drawing.Size(105, 14);
             this.txtOut1.TabIndex = 763;
             this.txtOut1.Text = "0";
             this.txtOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut1.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // picCompare13
             // 
@@ -1789,46 +1914,54 @@
             // textBox74
             // 
             this.textBox74.BackColor = System.Drawing.Color.White;
-            this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox74.Location = new System.Drawing.Point(518, 712);
             this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(237, 21);
+            this.textBox74.ReadOnly = true;
+            this.textBox74.Size = new System.Drawing.Size(237, 14);
             this.textBox74.TabIndex = 759;
             this.textBox74.Text = "0";
             this.textBox74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox74.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox72
             // 
             this.textBox72.BackColor = System.Drawing.Color.White;
-            this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox72.Location = new System.Drawing.Point(518, 682);
             this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(237, 21);
+            this.textBox72.ReadOnly = true;
+            this.textBox72.Size = new System.Drawing.Size(237, 14);
             this.textBox72.TabIndex = 759;
             this.textBox72.Text = "0";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox72.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox71
             // 
             this.textBox71.BackColor = System.Drawing.Color.White;
-            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox71.Location = new System.Drawing.Point(518, 652);
             this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(237, 21);
+            this.textBox71.ReadOnly = true;
+            this.textBox71.Size = new System.Drawing.Size(237, 14);
             this.textBox71.TabIndex = 759;
             this.textBox71.Text = "0";
             this.textBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox71.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox69
             // 
             this.textBox69.BackColor = System.Drawing.Color.White;
-            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox69.Location = new System.Drawing.Point(518, 622);
             this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(237, 21);
+            this.textBox69.ReadOnly = true;
+            this.textBox69.Size = new System.Drawing.Size(237, 14);
             this.textBox69.TabIndex = 757;
             this.textBox69.Text = "0";
             this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox69.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // panel70
             // 
@@ -2228,6 +2361,16 @@
             this.panel57.Size = new System.Drawing.Size(1, 480);
             this.panel57.TabIndex = 638;
             // 
+            // panel59
+            // 
+            this.panel59.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel59.ForeColor = System.Drawing.Color.Black;
+            this.panel59.Location = new System.Drawing.Point(770, 842);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(450, 3);
+            this.panel59.TabIndex = 623;
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -2274,90 +2417,106 @@
             // textBoxBase10
             // 
             this.textBoxBase10.BackColor = System.Drawing.Color.White;
-            this.textBoxBase10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase10.Location = new System.Drawing.Point(321, 776);
             this.textBoxBase10.Name = "textBoxBase10";
-            this.textBoxBase10.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase10.ReadOnly = true;
+            this.textBoxBase10.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase10.TabIndex = 730;
             this.textBoxBase10.Text = "0";
             this.textBoxBase10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase10.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Location = new System.Drawing.Point(184, 776);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(60, 21);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(60, 14);
             this.textBox6.TabIndex = 731;
             this.textBox6.Text = "0";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox6.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase9
             // 
             this.textBoxBase9.BackColor = System.Drawing.Color.White;
-            this.textBoxBase9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase9.Location = new System.Drawing.Point(254, 776);
             this.textBoxBase9.Name = "textBoxBase9";
-            this.textBoxBase9.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase9.ReadOnly = true;
+            this.textBoxBase9.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase9.TabIndex = 731;
             this.textBoxBase9.Text = "0";
             this.textBoxBase9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase9.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase8
             // 
             this.textBoxBase8.BackColor = System.Drawing.Color.White;
-            this.textBoxBase8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase8.Location = new System.Drawing.Point(321, 746);
             this.textBoxBase8.Name = "textBoxBase8";
-            this.textBoxBase8.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase8.ReadOnly = true;
+            this.textBoxBase8.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase8.TabIndex = 728;
             this.textBoxBase8.Text = "0";
             this.textBoxBase8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase8.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Location = new System.Drawing.Point(184, 746);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(60, 21);
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(60, 14);
             this.textBox5.TabIndex = 729;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox5.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase7
             // 
             this.textBoxBase7.BackColor = System.Drawing.Color.White;
-            this.textBoxBase7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase7.Location = new System.Drawing.Point(254, 746);
             this.textBoxBase7.Name = "textBoxBase7";
-            this.textBoxBase7.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase7.ReadOnly = true;
+            this.textBoxBase7.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase7.TabIndex = 729;
             this.textBoxBase7.Text = "0";
             this.textBoxBase7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase7.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Location = new System.Drawing.Point(184, 716);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(60, 21);
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(60, 14);
             this.textBox4.TabIndex = 727;
             this.textBox4.Text = "0";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox4.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase6
             // 
             this.textBoxBase6.BackColor = System.Drawing.Color.White;
-            this.textBoxBase6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase6.Location = new System.Drawing.Point(254, 716);
             this.textBoxBase6.Name = "textBoxBase6";
-            this.textBoxBase6.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase6.ReadOnly = true;
+            this.textBoxBase6.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase6.TabIndex = 727;
             this.textBoxBase6.Text = "0";
             this.textBoxBase6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase6.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // label9
             // 
@@ -2442,90 +2601,106 @@
             // textBoxBase5
             // 
             this.textBoxBase5.BackColor = System.Drawing.Color.White;
-            this.textBoxBase5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase5.Location = new System.Drawing.Point(321, 686);
             this.textBoxBase5.Name = "textBoxBase5";
-            this.textBoxBase5.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase5.ReadOnly = true;
+            this.textBoxBase5.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase5.TabIndex = 723;
             this.textBoxBase5.Text = "0";
             this.textBoxBase5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase5.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Location = new System.Drawing.Point(184, 686);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 21);
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(60, 14);
             this.textBox3.TabIndex = 724;
             this.textBox3.Text = "0";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox3.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase4
             // 
             this.textBoxBase4.BackColor = System.Drawing.Color.White;
-            this.textBoxBase4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase4.Location = new System.Drawing.Point(254, 686);
             this.textBoxBase4.Name = "textBoxBase4";
-            this.textBoxBase4.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase4.ReadOnly = true;
+            this.textBoxBase4.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase4.TabIndex = 724;
             this.textBoxBase4.Text = "0";
             this.textBoxBase4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase4.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase3
             // 
             this.textBoxBase3.BackColor = System.Drawing.Color.White;
-            this.textBoxBase3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase3.Location = new System.Drawing.Point(321, 656);
             this.textBoxBase3.Name = "textBoxBase3";
-            this.textBoxBase3.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase3.ReadOnly = true;
+            this.textBoxBase3.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase3.TabIndex = 721;
             this.textBoxBase3.Text = "0";
             this.textBoxBase3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase3.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(184, 655);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 21);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(60, 14);
             this.textBox2.TabIndex = 722;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase2
             // 
             this.textBoxBase2.BackColor = System.Drawing.Color.White;
-            this.textBoxBase2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase2.Location = new System.Drawing.Point(254, 655);
             this.textBoxBase2.Name = "textBoxBase2";
-            this.textBoxBase2.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase2.ReadOnly = true;
+            this.textBoxBase2.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase2.TabIndex = 722;
             this.textBoxBase2.Text = "0";
             this.textBoxBase2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase2.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(184, 623);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 21);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(60, 14);
             this.textBox1.TabIndex = 720;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBoxBase1
             // 
             this.textBoxBase1.BackColor = System.Drawing.Color.White;
-            this.textBoxBase1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBase1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBase1.Location = new System.Drawing.Point(254, 623);
             this.textBoxBase1.Name = "textBoxBase1";
-            this.textBoxBase1.Size = new System.Drawing.Size(60, 21);
+            this.textBoxBase1.ReadOnly = true;
+            this.textBoxBase1.Size = new System.Drawing.Size(60, 14);
             this.textBoxBase1.TabIndex = 720;
             this.textBoxBase1.Text = "0";
             this.textBoxBase1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxBase1.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // panel43
             // 
@@ -2783,13 +2958,15 @@
             // txtOut64
             // 
             this.txtOut64.BackColor = System.Drawing.Color.White;
-            this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut64.Location = new System.Drawing.Point(623, 517);
             this.txtOut64.Name = "txtOut64";
-            this.txtOut64.Size = new System.Drawing.Size(84, 21);
+            this.txtOut64.ReadOnly = true;
+            this.txtOut64.Size = new System.Drawing.Size(84, 14);
             this.txtOut64.TabIndex = 707;
             this.txtOut64.Text = "0";
             this.txtOut64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut64.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox50
             // 
@@ -2804,13 +2981,15 @@
             // txtOut48
             // 
             this.txtOut48.BackColor = System.Drawing.Color.White;
-            this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut48.Location = new System.Drawing.Point(508, 517);
             this.txtOut48.Name = "txtOut48";
-            this.txtOut48.Size = new System.Drawing.Size(105, 21);
+            this.txtOut48.ReadOnly = true;
+            this.txtOut48.Size = new System.Drawing.Size(105, 14);
             this.txtOut48.TabIndex = 709;
             this.txtOut48.Text = "0";
             this.txtOut48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut48.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox51
             // 
@@ -2825,13 +3004,15 @@
             // txtOut32
             // 
             this.txtOut32.BackColor = System.Drawing.Color.White;
-            this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut32.Location = new System.Drawing.Point(394, 516);
             this.txtOut32.Name = "txtOut32";
-            this.txtOut32.Size = new System.Drawing.Size(105, 21);
+            this.txtOut32.ReadOnly = true;
+            this.txtOut32.Size = new System.Drawing.Size(105, 14);
             this.txtOut32.TabIndex = 679;
             this.txtOut32.Text = "0";
             this.txtOut32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut32.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // label14
             // 
@@ -2847,35 +3028,41 @@
             // txtOut16
             // 
             this.txtOut16.BackColor = System.Drawing.Color.White;
-            this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut16.Location = new System.Drawing.Point(279, 517);
             this.txtOut16.Name = "txtOut16";
-            this.txtOut16.Size = new System.Drawing.Size(105, 21);
+            this.txtOut16.ReadOnly = true;
+            this.txtOut16.Size = new System.Drawing.Size(105, 14);
             this.txtOut16.TabIndex = 681;
             this.txtOut16.Text = "0";
             this.txtOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut16.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut31
             // 
             this.txtOut31.BackColor = System.Drawing.Color.White;
-            this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut31.Location = new System.Drawing.Point(394, 487);
             this.txtOut31.Name = "txtOut31";
-            this.txtOut31.Size = new System.Drawing.Size(105, 21);
+            this.txtOut31.ReadOnly = true;
+            this.txtOut31.Size = new System.Drawing.Size(105, 14);
             this.txtOut31.TabIndex = 680;
             this.txtOut31.Text = "0";
             this.txtOut31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut31.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // txtOut15
             // 
             this.txtOut15.BackColor = System.Drawing.Color.White;
-            this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut15.Location = new System.Drawing.Point(279, 486);
             this.txtOut15.Name = "txtOut15";
-            this.txtOut15.Size = new System.Drawing.Size(105, 21);
+            this.txtOut15.ReadOnly = true;
+            this.txtOut15.Size = new System.Drawing.Size(105, 14);
             this.txtOut15.TabIndex = 682;
             this.txtOut15.Text = "0";
             this.txtOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOut15.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // label13
             // 
@@ -3467,26 +3654,6 @@
             this.label138.Size = new System.Drawing.Size(31, 12);
             this.label138.TabIndex = 593;
             this.label138.Text = "구분";
-            // 
-            // panel59
-            // 
-            this.panel59.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel59.ForeColor = System.Drawing.Color.Black;
-            this.panel59.Location = new System.Drawing.Point(770, 842);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(450, 3);
-            this.panel59.TabIndex = 623;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.ForeColor = System.Drawing.Color.Black;
-            this.panel15.Location = new System.Drawing.Point(12, 854);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1208, 3);
-            this.panel15.TabIndex = 826;
             // 
             // FormUserAnalysis
             // 

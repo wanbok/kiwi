@@ -550,7 +550,7 @@ namespace KIWI
             {
                 long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
 
-                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 2)
+                if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 1)
                 {
                     int saveCursor = _TextBox.Text.Length - _TextBox.SelectionStart;
 
