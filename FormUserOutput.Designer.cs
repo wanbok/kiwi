@@ -146,8 +146,6 @@
             this.panel149 = new System.Windows.Forms.Panel();
             this.panel150 = new System.Windows.Forms.Panel();
             this.txtOut96 = new System.Windows.Forms.TextBox();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
             this.txtOut64 = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
             this.txtOut32 = new System.Windows.Forms.TextBox();
@@ -172,8 +170,6 @@
             this.txtOut72 = new System.Windows.Forms.TextBox();
             this.txtOut40 = new System.Windows.Forms.TextBox();
             this.txtOut8 = new System.Windows.Forms.TextBox();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.panel52 = new System.Windows.Forms.Panel();
             this.panel80 = new System.Windows.Forms.Panel();
             this.panel81 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -657,6 +653,10 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel153 = new System.Windows.Forms.Panel();
+            this.panel154 = new System.Windows.Forms.Panel();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pnlChart.SuspendLayout();
@@ -672,9 +672,7 @@
             this.panel146.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel149.SuspendLayout();
-            this.panel76.SuspendLayout();
             this.panel151.SuspendLayout();
-            this.panel51.SuspendLayout();
             this.panel80.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel59.SuspendLayout();
@@ -727,6 +725,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.panel153.SuspendLayout();
+            this.panel76.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -742,6 +742,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel76);
+            this.tabPage1.Controls.Add(this.panel153);
             this.tabPage1.Controls.Add(this.pnlChart);
             this.tabPage1.Controls.Add(this.panel135);
             this.tabPage1.Controls.Add(this.pictureBox4);
@@ -751,7 +753,6 @@
             this.tabPage1.Controls.Add(this.panel78);
             this.tabPage1.Controls.Add(this.panel149);
             this.tabPage1.Controls.Add(this.txtOut96);
-            this.tabPage1.Controls.Add(this.panel76);
             this.tabPage1.Controls.Add(this.txtOut64);
             this.tabPage1.Controls.Add(this.label82);
             this.tabPage1.Controls.Add(this.txtOut32);
@@ -775,7 +776,6 @@
             this.tabPage1.Controls.Add(this.txtOut72);
             this.tabPage1.Controls.Add(this.txtOut40);
             this.tabPage1.Controls.Add(this.txtOut8);
-            this.tabPage1.Controls.Add(this.panel51);
             this.tabPage1.Controls.Add(this.panel80);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.panel59);
@@ -1184,25 +1184,6 @@
             this.txtOut96.Text = "0";
             this.txtOut96.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // panel76
-            // 
-            this.panel76.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel76.Controls.Add(this.panel77);
-            this.panel76.ForeColor = System.Drawing.Color.Black;
-            this.panel76.Location = new System.Drawing.Point(0, 5);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(1240, 3);
-            this.panel76.TabIndex = 207;
-            // 
-            // panel77
-            // 
-            this.panel77.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel77.Location = new System.Drawing.Point(0, 20);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(698, 5);
-            this.panel77.TabIndex = 18;
-            // 
             // txtOut64
             // 
             this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1461,25 +1442,6 @@
             this.txtOut8.TabIndex = 207;
             this.txtOut8.Text = "0";
             this.txtOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel51
-            // 
-            this.panel51.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
-            this.panel51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.ForeColor = System.Drawing.Color.Black;
-            this.panel51.Location = new System.Drawing.Point(0, 35);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(1240, 3);
-            this.panel51.TabIndex = 206;
-            // 
-            // panel52
-            // 
-            this.panel52.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel52.Location = new System.Drawing.Point(0, 20);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(698, 5);
-            this.panel52.TabIndex = 18;
             // 
             // panel80
             // 
@@ -4841,7 +4803,7 @@
             // 
             // panel92
             // 
-            this.panel92.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel92.BackColor = System.Drawing.Color.LightSalmon;
             this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel92.Controls.Add(this.panel93);
             this.panel92.ForeColor = System.Drawing.Color.Black;
@@ -4879,7 +4841,7 @@
             // 
             // panel44
             // 
-            this.panel44.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel44.BackColor = System.Drawing.Color.LightSalmon;
             this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel44.Controls.Add(this.panel63);
             this.panel44.ForeColor = System.Drawing.Color.Black;
@@ -5273,7 +5235,7 @@
             // 
             // panel28
             // 
-            this.panel28.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel28.BackColor = System.Drawing.Color.LightSalmon;
             this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel28.Controls.Add(this.panel53);
             this.panel28.ForeColor = System.Drawing.Color.Black;
@@ -5349,7 +5311,7 @@
             // 
             // panel84
             // 
-            this.panel84.BackgroundImage = global::KIWI.Properties.Resources.위_아래_선;
+            this.panel84.BackColor = System.Drawing.Color.LightSalmon;
             this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel84.Controls.Add(this.panel85);
             this.panel84.ForeColor = System.Drawing.Color.Black;
@@ -7167,6 +7129,44 @@
             this.tabPage2.Text = "          도매          ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel153
+            // 
+            this.panel153.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel153.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel153.Controls.Add(this.panel154);
+            this.panel153.ForeColor = System.Drawing.Color.Black;
+            this.panel153.Location = new System.Drawing.Point(0, 4);
+            this.panel153.Name = "panel153";
+            this.panel153.Size = new System.Drawing.Size(1240, 3);
+            this.panel153.TabIndex = 101;
+            // 
+            // panel154
+            // 
+            this.panel154.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel154.Location = new System.Drawing.Point(0, 20);
+            this.panel154.Name = "panel154";
+            this.panel154.Size = new System.Drawing.Size(698, 5);
+            this.panel154.TabIndex = 18;
+            // 
+            // panel76
+            // 
+            this.panel76.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel76.Controls.Add(this.panel77);
+            this.panel76.ForeColor = System.Drawing.Color.Black;
+            this.panel76.Location = new System.Drawing.Point(1, 34);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(1240, 3);
+            this.panel76.TabIndex = 102;
+            // 
+            // panel77
+            // 
+            this.panel77.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel77.Location = new System.Drawing.Point(0, 20);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(698, 5);
+            this.panel77.TabIndex = 18;
+            // 
             // FormUserOutput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -7192,9 +7192,7 @@
             this.panel146.ResumeLayout(false);
             this.panel78.ResumeLayout(false);
             this.panel149.ResumeLayout(false);
-            this.panel76.ResumeLayout(false);
             this.panel151.ResumeLayout(false);
-            this.panel51.ResumeLayout(false);
             this.panel80.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel59.ResumeLayout(false);
@@ -7249,6 +7247,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.panel153.ResumeLayout(false);
+            this.panel76.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -7444,8 +7444,6 @@
         private System.Windows.Forms.Panel panel60;
         private System.Windows.Forms.Panel panel57;
         private System.Windows.Forms.Panel panel58;
-        private System.Windows.Forms.Panel panel51;
-        private System.Windows.Forms.Panel panel52;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Panel panel44;
@@ -7493,8 +7491,6 @@
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Panel panel76;
-        private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Panel panel78;
         private System.Windows.Forms.Panel panel79;
@@ -7790,5 +7786,9 @@
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel76;
+        private System.Windows.Forms.Panel panel77;
+        private System.Windows.Forms.Panel panel153;
+        private System.Windows.Forms.Panel panel154;
     }
 }
