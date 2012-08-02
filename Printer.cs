@@ -33,15 +33,19 @@ namespace KIWI
             DataTable name = ds.Name;
             DataTable comments = ds.Comments;
 
+            DataTable[] simBusinessTables = { ds.SimplizedAverageTotal, ds.SimplizedAverageWholesale, ds.SimplizedAverageRetail };
+            DataTable[] simStoreTables = { ds.SimplizedThisTotal, ds.SimplizedThisWholesale, ds.SimplizedThisRetail };
+            DataTable[] simFutureTables = { ds.SimplizedFutureTotal, ds.SimplizedFutureWholesale, ds.SimplizedFutureRetail };
+
             // 본 데이터
             setDataTableForAnalysis(businessTables, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
             setDataTableForAnalysis(storeTables, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultStore);
             setDataTableForAnalysis(futureTables, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture);
 
             // 시뮬레이션 데이터
-            setDataTableForAnalysis(businessTables, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness);
-            setDataTableForAnalysis(storeTables, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultStore);
-            setDataTableForAnalysis(futureTables, CDataControl.g_SimResultFutureTotal, CDataControl.g_SimResultFuture);
+            setDataTableForAnalysis(simBusinessTables, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness);
+            setDataTableForAnalysis(simStoreTables, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultStore);
+            setDataTableForAnalysis(simFutureTables, CDataControl.g_SimResultFutureTotal, CDataControl.g_SimResultFuture);
 
             DataRow r = diffrenceForAnalysis.NewRow();
             for (int i = 0; i < 16; i++)
