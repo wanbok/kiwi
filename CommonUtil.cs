@@ -250,6 +250,8 @@ namespace KIWI
             ReadExcelFileToDataResultBusiness(workSheet2);
             ReadExcelFileToDataResultStore(workSheet2);
             ReadExcelFileToDataResultFuture(workSheet2);
+            excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
+            ReadExcelFileToDataReport(workSheet3);
             GetExcel_WorkBook_CLOSE();
         }
         public static void WriteDataToExcelFile(string fileName, CBasicInput g_BasicInput, CBusinessData g_DetailInput)
@@ -262,6 +264,8 @@ namespace KIWI
             WriteExcelFileToDataResultBusiness(workSheet2);
             WriteExcelFileToDataResultStore(workSheet2);
             WriteExcelFileToDataResultFuture(workSheet2);
+            excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
+            WriteExcelFileToDataReport(workSheet3);
             GetExcel_WorkBook_CLOSE();
 
         }
@@ -298,6 +302,8 @@ namespace KIWI
             CDataControl.g_FileBasicInput.set지역(NullToEmpty(_WorkSheet.get_Range("C63", Type.Missing).Value2));
             CDataControl.g_FileBasicInput.set대리점(NullToEmpty(_WorkSheet.get_Range("E63", Type.Missing).Value2));
             CDataControl.g_FileBasicInput.set마케터(NullToEmpty(_WorkSheet.get_Range("G63", Type.Missing).Value2));
+            CDataControl.g_ReportData.set대리점(NullToEmpty(_WorkSheet.get_Range("E63", Type.Missing).Value2));
+            CDataControl.g_ReportData.set판매자(NullToEmpty(_WorkSheet.get_Range("G63", Type.Missing).Value2));
 
             //도매
             CDataControl.g_FileBasicInput.set도매_누적가입자수(NullToEmpty(_WorkSheet.get_Range("F7", Type.Missing).Value2));
@@ -365,8 +371,8 @@ namespace KIWI
             CDataControl.g_FileDetailInput.set도매_수익_유통모델매입관련추가수익_VolumeDC(NullToEmpty(_WorkSheet.get_Range("G31", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도매_비용_대리점투자금액_신규(NullToEmpty(_WorkSheet.get_Range("G32", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도매_비용_대리점투자금액_기변(NullToEmpty(_WorkSheet.get_Range("G33", Type.Missing).Value2));
-            CDataControl.g_FileDetailInput.set도매_비용_직원급여_간부급(NullToEmpty(_WorkSheet.get_Range("G34", Type.Missing).Value2));//총액
-            CDataControl.g_FileDetailInput.set도매_비용_직원급여_평사원(NullToEmpty(_WorkSheet.get_Range("G35", Type.Missing).Value2));//총액
+            CDataControl.g_FileDetailInput.set도매_비용_직원급여_간부급(NullToEmpty(_WorkSheet.get_Range("G36", Type.Missing).Value2));//월단위
+            CDataControl.g_FileDetailInput.set도매_비용_직원급여_평사원(NullToEmpty(_WorkSheet.get_Range("G37", Type.Missing).Value2));//월단위
             CDataControl.g_FileDetailInput.set도매_비용_지급임차료(NullToEmpty(_WorkSheet.get_Range("G38", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도매_비용_운반비(NullToEmpty(_WorkSheet.get_Range("G39", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set도매_비용_차량유지비(NullToEmpty(_WorkSheet.get_Range("G40", Type.Missing).Value2));
@@ -376,8 +382,8 @@ namespace KIWI
 
             CDataControl.g_FileDetailInput.set소매_수익_월평균업무취급수수료(NullToEmpty(_WorkSheet.get_Range("G44", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set소매_수익_직영매장판매수익(NullToEmpty(_WorkSheet.get_Range("G45", Type.Missing).Value2));
-            CDataControl.g_FileDetailInput.set소매_비용_직원급여_간부급(NullToEmpty(_WorkSheet.get_Range("G46", Type.Missing).Value2));//총액
-            CDataControl.g_FileDetailInput.set소매_비용_직원급여_평사원(NullToEmpty(_WorkSheet.get_Range("G47", Type.Missing).Value2));//총액
+            CDataControl.g_FileDetailInput.set소매_비용_직원급여_간부급(NullToEmpty(_WorkSheet.get_Range("G48", Type.Missing).Value2));//월단위
+            CDataControl.g_FileDetailInput.set소매_비용_직원급여_평사원(NullToEmpty(_WorkSheet.get_Range("G49", Type.Missing).Value2));//월단위
             CDataControl.g_FileDetailInput.set소매_비용_지급임차료(NullToEmpty(_WorkSheet.get_Range("G50", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set소매_비용_지급수수료(NullToEmpty(_WorkSheet.get_Range("G51", Type.Missing).Value2));
             CDataControl.g_FileDetailInput.set소매_비용_판매촉진비(NullToEmpty(_WorkSheet.get_Range("G52", Type.Missing).Value2));
@@ -695,8 +701,15 @@ namespace KIWI
             CDataControl.g_FileResultFuture.점별손익추정 = StringToIntVal(_WorkSheet.get_Range("O57", Type.Missing).Value2.ToString());
 
         }
-
-
+        private static void ReadExcelFileToDataReport(excel.Worksheet workSheet3)
+        {
+            object 분석내용 = workSheet3.get_Range("B4", Type.Missing).Value2;
+            object 지원활동 = workSheet3.get_Range("C4", Type.Missing).Value2;
+            object 배경및이슈 = workSheet3.get_Range("D4", Type.Missing).Value2;
+            CDataControl.g_ReportData.set분석내용_및_대리점_활동방향(분석내용==null?"":분석내용.ToString());
+            CDataControl.g_ReportData.setLG_지원_활동(지원활동 == null ? "" : 지원활동.ToString());
+            CDataControl.g_ReportData.set배경_및_이슈(배경및이슈 == null ? "" : 배경및이슈.ToString());
+        }
 
 
 
@@ -709,97 +722,97 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void WriteExcelFileToDataResultBusiness(excel.Worksheet _WorkSheet)
         {
-            _WorkSheet.get_Range("D7", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_가입자관리수수료;
-            _WorkSheet.get_Range("D8", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_CS관리수수료;
-            _WorkSheet.get_Range("D9", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_업무취급수수료;
-            _WorkSheet.get_Range("D10", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_사업자모델매입에따른추가수익;
-            _WorkSheet.get_Range("D11", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume;
-            _WorkSheet.get_Range("D12", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_직영매장판매수익;
-            _WorkSheet.get_Range("D13", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_수익_소계;
-            _WorkSheet.get_Range("D14", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_대리점투자비용();
-            _WorkSheet.get_Range("D15", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("D16", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_임차료();
-            _WorkSheet.get_Range("D17", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_이자비용();
-            _WorkSheet.get_Range("D18", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_부가세();
-            _WorkSheet.get_Range("D19", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_법인세();
-            _WorkSheet.get_Range("D20", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get전체_비용_기타판매관리비();
-            _WorkSheet.get_Range("D21", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체_비용_소계;
-            _WorkSheet.get_Range("D22", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.전체손익계;
+            _WorkSheet.get_Range("D7", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_가입자관리수수료;
+            _WorkSheet.get_Range("D8", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_CS관리수수료;
+            _WorkSheet.get_Range("D9", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_업무취급수수료;
+            _WorkSheet.get_Range("D10", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_사업자모델매입에따른추가수익;
+            _WorkSheet.get_Range("D11", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_유통모델매입에따른추가수익_현금_Volume;
+            _WorkSheet.get_Range("D12", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_직영매장판매수익;
+            _WorkSheet.get_Range("D13", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_수익_소계;
+            _WorkSheet.get_Range("D14", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_대리점투자비용();
+            _WorkSheet.get_Range("D15", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("D16", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_임차료();
+            _WorkSheet.get_Range("D17", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_이자비용();
+            _WorkSheet.get_Range("D18", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_부가세();
+            _WorkSheet.get_Range("D19", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_법인세();
+            _WorkSheet.get_Range("D20", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get전체_비용_기타판매관리비();
+            _WorkSheet.get_Range("D21", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체_비용_소계;
+            _WorkSheet.get_Range("D22", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.전체손익계;
 
-            _WorkSheet.get_Range("D28", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_수익_가입자관리수수료();
-            _WorkSheet.get_Range("D29", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_수익_CS관리수수료();
-            _WorkSheet.get_Range("D30", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_수익_사업자모델매입에따른추가수익();
-            _WorkSheet.get_Range("D31", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-            _WorkSheet.get_Range("D32", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.도매_수익_소계;
-            _WorkSheet.get_Range("D33", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_대리점투자비용();
-            _WorkSheet.get_Range("D34", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("D35", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_임차료();
-            _WorkSheet.get_Range("D36", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_이자비용();
-            _WorkSheet.get_Range("D37", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_부가세();
-            _WorkSheet.get_Range("D38", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_법인세();
-            _WorkSheet.get_Range("D39", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get도매_비용_기타판매관리비();
-            _WorkSheet.get_Range("D40", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.도매_비용_소계;
-            _WorkSheet.get_Range("D41", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.도매손익계;
+            _WorkSheet.get_Range("D28", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료();
+            _WorkSheet.get_Range("D29", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_수익_CS관리수수료();
+            _WorkSheet.get_Range("D30", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_수익_사업자모델매입에따른추가수익();
+            _WorkSheet.get_Range("D31", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
+            _WorkSheet.get_Range("D32", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.도매_수익_소계;
+            _WorkSheet.get_Range("D33", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_대리점투자비용();
+            _WorkSheet.get_Range("D34", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("D35", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_임차료();
+            _WorkSheet.get_Range("D36", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_이자비용();
+            _WorkSheet.get_Range("D37", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_부가세();
+            _WorkSheet.get_Range("D38", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_법인세();
+            _WorkSheet.get_Range("D39", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get도매_비용_기타판매관리비();
+            _WorkSheet.get_Range("D40", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.도매_비용_소계;
+            _WorkSheet.get_Range("D41", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.도매손익계;
 
-            _WorkSheet.get_Range("D46", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_수익_업무취급수수료();
-            _WorkSheet.get_Range("D47", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_수익_직영매장판매수익();
-            _WorkSheet.get_Range("D48", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.소매_수익_소계;
-            _WorkSheet.get_Range("D49", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("D50", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_임차료();
-            _WorkSheet.get_Range("D51", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_이자비용();
-            _WorkSheet.get_Range("D52", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_부가세();
-            _WorkSheet.get_Range("D53", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_법인세();
-            _WorkSheet.get_Range("D54", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.get소매_비용_기타판매관리비();
-            _WorkSheet.get_Range("D55", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.소매_비용_소계;
-            _WorkSheet.get_Range("D56", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.소매손익계;
-            _WorkSheet.get_Range("D57", Type.Missing).Value2 = CDataControl.g_FileResultBusinessTotal.점별손익추정;
+            _WorkSheet.get_Range("D46", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_수익_업무취급수수료();
+            _WorkSheet.get_Range("D47", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_수익_직영매장판매수익();
+            _WorkSheet.get_Range("D48", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.소매_수익_소계;
+            _WorkSheet.get_Range("D49", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("D50", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_임차료();
+            _WorkSheet.get_Range("D51", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_이자비용();
+            _WorkSheet.get_Range("D52", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_부가세();
+            _WorkSheet.get_Range("D53", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_법인세();
+            _WorkSheet.get_Range("D54", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.get소매_비용_기타판매관리비();
+            _WorkSheet.get_Range("D55", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.소매_비용_소계;
+            _WorkSheet.get_Range("D56", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.소매손익계;
+            _WorkSheet.get_Range("D57", Type.Missing).Value2 = CDataControl.g_ResultBusinessTotal.점별손익추정;
 
 
 
-            _WorkSheet.get_Range("E7", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_가입자관리수수료;
-            _WorkSheet.get_Range("E8", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_CS관리수수료;
-            _WorkSheet.get_Range("E9", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_업무취급수수료;
-            _WorkSheet.get_Range("E10", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_사업자모델매입에따른추가수익;
-            _WorkSheet.get_Range("E11", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_유통모델매입에따른추가수익_현금_Volume;
-            _WorkSheet.get_Range("E12", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_직영매장판매수익;
-            _WorkSheet.get_Range("E13", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_수익_소계;
-            _WorkSheet.get_Range("E14", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_대리점투자비용();
-            _WorkSheet.get_Range("E15", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("E16", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_임차료();
-            _WorkSheet.get_Range("E17", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_이자비용();
-            _WorkSheet.get_Range("E18", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_부가세();
-            _WorkSheet.get_Range("E19", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_법인세();
-            _WorkSheet.get_Range("E20", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get전체_비용_기타판매관리비();
-            _WorkSheet.get_Range("E21", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체_비용_소계;
-            _WorkSheet.get_Range("E22", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.전체손익계;
+            _WorkSheet.get_Range("E7", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_가입자관리수수료;
+            _WorkSheet.get_Range("E8", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_CS관리수수료;
+            _WorkSheet.get_Range("E9", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_업무취급수수료;
+            _WorkSheet.get_Range("E10", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_사업자모델매입에따른추가수익;
+            _WorkSheet.get_Range("E11", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_유통모델매입에따른추가수익_현금_Volume;
+            _WorkSheet.get_Range("E12", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_직영매장판매수익;
+            _WorkSheet.get_Range("E13", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_수익_소계;
+            _WorkSheet.get_Range("E14", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_대리점투자비용();
+            _WorkSheet.get_Range("E15", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("E16", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_임차료();
+            _WorkSheet.get_Range("E17", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_이자비용();
+            _WorkSheet.get_Range("E18", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_부가세();
+            _WorkSheet.get_Range("E19", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_법인세();
+            _WorkSheet.get_Range("E20", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get전체_비용_기타판매관리비();
+            _WorkSheet.get_Range("E21", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체_비용_소계;
+            _WorkSheet.get_Range("E22", Type.Missing).Value2 = CDataControl.g_ResultBusiness.전체손익계;
 
-            _WorkSheet.get_Range("E28", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_수익_가입자관리수수료();
-            _WorkSheet.get_Range("E29", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_수익_CS관리수수료();
-            _WorkSheet.get_Range("E30", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_수익_사업자모델매입에따른추가수익();
-            _WorkSheet.get_Range("E31", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-            _WorkSheet.get_Range("E32", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.도매_수익_소계;
-            _WorkSheet.get_Range("E33", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_대리점투자비용();
-            _WorkSheet.get_Range("E34", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("E35", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_임차료();
-            _WorkSheet.get_Range("E36", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_이자비용();
-            _WorkSheet.get_Range("E37", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_부가세();
-            _WorkSheet.get_Range("E38", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_법인세();
-            _WorkSheet.get_Range("E39", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get도매_비용_기타판매관리비();
-            _WorkSheet.get_Range("E40", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.도매_비용_소계;
-            _WorkSheet.get_Range("E41", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.도매손익계;
+            _WorkSheet.get_Range("E28", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_수익_가입자관리수수료();
+            _WorkSheet.get_Range("E29", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_수익_CS관리수수료();
+            _WorkSheet.get_Range("E30", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_수익_사업자모델매입에따른추가수익();
+            _WorkSheet.get_Range("E31", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
+            _WorkSheet.get_Range("E32", Type.Missing).Value2 = CDataControl.g_ResultBusiness.도매_수익_소계;
+            _WorkSheet.get_Range("E33", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_대리점투자비용();
+            _WorkSheet.get_Range("E34", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("E35", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_임차료();
+            _WorkSheet.get_Range("E36", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_이자비용();
+            _WorkSheet.get_Range("E37", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_부가세();
+            _WorkSheet.get_Range("E38", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_법인세();
+            _WorkSheet.get_Range("E39", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get도매_비용_기타판매관리비();
+            _WorkSheet.get_Range("E40", Type.Missing).Value2 = CDataControl.g_ResultBusiness.도매_비용_소계;
+            _WorkSheet.get_Range("E41", Type.Missing).Value2 = CDataControl.g_ResultBusiness.도매손익계;
 
-            _WorkSheet.get_Range("E46", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_수익_업무취급수수료();
-            _WorkSheet.get_Range("E47", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_수익_직영매장판매수익();
-            _WorkSheet.get_Range("E48", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.소매_수익_소계;
-            _WorkSheet.get_Range("E49", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_인건비_급여_복리후생비();
-            _WorkSheet.get_Range("E50", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_임차료();
-            _WorkSheet.get_Range("E51", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_이자비용();
-            _WorkSheet.get_Range("E52", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_부가세();
-            _WorkSheet.get_Range("E53", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_법인세();
-            _WorkSheet.get_Range("E54", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.get소매_비용_기타판매관리비();
-            _WorkSheet.get_Range("E55", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.소매_비용_소계;
-            _WorkSheet.get_Range("E56", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.소매손익계;
-            _WorkSheet.get_Range("E57", Type.Missing).Value2 = CDataControl.g_FileResultBusiness.점별손익추정;
+            _WorkSheet.get_Range("E46", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_수익_업무취급수수료();
+            _WorkSheet.get_Range("E47", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_수익_직영매장판매수익();
+            _WorkSheet.get_Range("E48", Type.Missing).Value2 = CDataControl.g_ResultBusiness.소매_수익_소계;
+            _WorkSheet.get_Range("E49", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_인건비_급여_복리후생비();
+            _WorkSheet.get_Range("E50", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_임차료();
+            _WorkSheet.get_Range("E51", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_이자비용();
+            _WorkSheet.get_Range("E52", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_부가세();
+            _WorkSheet.get_Range("E53", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_법인세();
+            _WorkSheet.get_Range("E54", Type.Missing).Value2 = CDataControl.g_ResultBusiness.get소매_비용_기타판매관리비();
+            _WorkSheet.get_Range("E55", Type.Missing).Value2 = CDataControl.g_ResultBusiness.소매_비용_소계;
+            _WorkSheet.get_Range("E56", Type.Missing).Value2 = CDataControl.g_ResultBusiness.소매손익계;
+            _WorkSheet.get_Range("E57", Type.Missing).Value2 = CDataControl.g_ResultBusiness.점별손익추정;
 
         }
 
@@ -1120,6 +1133,13 @@ namespace KIWI
             _WorkSheet.get_Range("G60", Type.Missing).Value2 = g_DetailInput.get도소매_비용_법인세();
             _WorkSheet.get_Range("G61", Type.Missing).Value2 = g_DetailInput.get도소매_비용_기타();
 
+        }
+
+        private static void WriteExcelFileToDataReport(excel.Worksheet workSheet3)
+        {
+            workSheet3.get_Range("B4", Type.Missing).Value2 = CDataControl.g_ReportData.get분석내용_및_대리점_활동방향();
+            workSheet3.get_Range("C4", Type.Missing).Value2 = CDataControl.g_ReportData.getLG_지원_활동();
+            workSheet3.get_Range("D4", Type.Missing).Value2 = CDataControl.g_ReportData.get배경_및_이슈();
         }
 
         public static void deepCopyBasicInput(CBasicInput srcBasicInput, CBasicInput dstBasicInput)

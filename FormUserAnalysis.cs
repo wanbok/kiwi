@@ -212,16 +212,6 @@ namespace KIWI
             CDataControl.g_ReportData.set분석내용_및_대리점_활동방향(txtComments[0].Text);
             CDataControl.g_ReportData.setLG_지원_활동(txtComments[1].Text);
             CDataControl.g_ReportData.set배경_및_이슈(txtComments[2].Text);
-            //if (CommonUtil.openAsName != null)
-            //{
-            //    excel.Worksheet _WorkSheet = CommonUtil.GetExcelWorksheet(CommonUtil.openAsName, 3);
-            //    _WorkSheet.get_Range("B4").Value2 = txtComments[0].Text;
-            //    _WorkSheet.get_Range("C4").Value2 = txtComments[1].Text;
-            //    _WorkSheet.SaveAs(CommonUtil.openAsName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            //}
-            //else {
-            //    MessageBox.Show("파일을 열어야 합니다.");
-            //}
         }
 
         private void setCompare() {

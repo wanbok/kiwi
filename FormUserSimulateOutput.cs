@@ -218,8 +218,8 @@ namespace KIWI
             {
                 Chart chart = charts[j];
                 chart.Series[0].Name = indexes[0] < 0 ? " " : names[indexes[0]];
-                chart.Series[1].Name = indexes[1] < 0 ? "  " : names[indexes[1]];
-                chart.Series[2].Name = indexes[2] < 0 ? "   " : names[indexes[2]];
+                chart.Series[1].Name = indexes[1] < 0 ? "   " : names[indexes[1]];
+                chart.Series[2].Name = indexes[2] < 0 ? "     " : names[indexes[2]];
 
                 if (chart.Name == "chart1")
                 {

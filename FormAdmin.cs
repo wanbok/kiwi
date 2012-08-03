@@ -201,8 +201,8 @@ namespace KIWI
                 
                 nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료() / mBI.get월평균판매대수_소계_합계();
                 nIAOut[k++] += mDI.get소매_수익_직영매장판매수익() / mBI.get소매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get소매_비용_직원급여_간부급_총액(1); // 단위금액
-                nIAOut[k++] += mDI.get소매_비용_직원급여_평사원_총액(1); // 단위금액
+                nIAOut[k++] += mDI.get소매_비용_직원급여_간부급(); // 단위금액
+                nIAOut[k++] += mDI.get소매_비용_직원급여_평사원(); // 단위금액
                 nIAOut[k++] += mDI.get소매_비용_지급임차료() / mBI.get소매_거래선수_소계();
                 nIAOut[k++] += mDI.get소매_비용_지급수수료() / mBI.get소매_월평균판매대수_소계();
                 nIAOut[k++] += mDI.get소매_비용_판매촉진비() / mBI.get소매_월평균판매대수_소계();
@@ -381,8 +381,8 @@ namespace KIWI
             //mDI.set도매_수익_유통모델매입관련추가수익_VolumeDC(worksheet1.get_Range("G31", Type.Missing).Value2.ToString());
             mDI.set도매_비용_대리점투자금액_신규(worksheet1.get_Range("G32", Type.Missing).Value2.ToString());
             mDI.set도매_비용_대리점투자금액_기변(worksheet1.get_Range("G33", Type.Missing).Value2.ToString());
-            mDI.set도매_비용_직원급여_간부급(worksheet1.get_Range("G34", Type.Missing).Value2.ToString());//총액
-            mDI.set도매_비용_직원급여_평사원(worksheet1.get_Range("G35", Type.Missing).Value2.ToString());//총액
+            mDI.set도매_비용_직원급여_간부급(worksheet1.get_Range("G36", Type.Missing).Value2.ToString());
+            mDI.set도매_비용_직원급여_평사원(worksheet1.get_Range("G37", Type.Missing).Value2.ToString());
             mDI.set도매_비용_지급임차료(worksheet1.get_Range("G38", Type.Missing).Value2.ToString());
             mDI.set도매_비용_운반비(worksheet1.get_Range("G39", Type.Missing).Value2.ToString());
             mDI.set도매_비용_차량유지비(worksheet1.get_Range("G40", Type.Missing).Value2.ToString());
@@ -392,8 +392,8 @@ namespace KIWI
 
             mDI.set소매_수익_월평균업무취급수수료(worksheet1.get_Range("G44", Type.Missing).Value2.ToString());
             mDI.set소매_수익_직영매장판매수익(worksheet1.get_Range("G45", Type.Missing).Value2.ToString());
-            mDI.set소매_비용_직원급여_간부급(worksheet1.get_Range("G46", Type.Missing).Value2.ToString());//총액
-            mDI.set소매_비용_직원급여_평사원(worksheet1.get_Range("G47", Type.Missing).Value2.ToString());//총액
+            mDI.set소매_비용_직원급여_간부급(worksheet1.get_Range("G48", Type.Missing).Value2.ToString());
+            mDI.set소매_비용_직원급여_평사원(worksheet1.get_Range("G49", Type.Missing).Value2.ToString());
             mDI.set소매_비용_지급임차료(worksheet1.get_Range("G50", Type.Missing).Value2.ToString());
             mDI.set소매_비용_지급수수료(worksheet1.get_Range("G51", Type.Missing).Value2.ToString());
             mDI.set소매_비용_판매촉진비(worksheet1.get_Range("G52", Type.Missing).Value2.ToString());

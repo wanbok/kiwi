@@ -168,20 +168,35 @@ namespace KIWI
             {
                 if (this.panel1.Controls[0] is Form)
                 {
-                    if ((this.panel1.Controls[0] as Form).Name == "FormAdmin")
-                    {
-
-                    }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormReport")
-                    {
-
-                    }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")
+                    if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")
                     {
                         //파일경로명
-                        (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
+                        SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                        saveFileDialog1.Filter = "Excel File|*.xlsx";
+                        saveFileDialog1.Title = "Select a Excel File";
+                        saveFileDialog1.ShowDialog();
+
+                        // If the file name is not an empty string open it for saving.
+                        if (saveFileDialog1.FileName != "")
+                        {
+                            string filename = CommonUtil.defaultName;
+
+
+                            FileInfo fi2 = new FileInfo(filename);
+                            fi2.CopyTo(saveFileDialog1.FileName, true);
+
+                            CommonUtil.saveAsName = saveFileDialog1.FileName;
+
+                            (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
+                            CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
+                        }
                     }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserInput")
+                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserInput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserOutput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormReport" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormAdmin" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
                     {
                         SaveFileDialog saveFileDialog1 = new SaveFileDialog();
                         saveFileDialog1.Filter = "Excel File|*.xlsx";
@@ -199,20 +214,8 @@ namespace KIWI
 
                             CommonUtil.saveAsName = saveFileDialog1.FileName;
 
-                            //excel.Workbook _Workbook = CommonUtil.GetExcel_WorkBook(saveFileDialog1.FileName);
-                            //excel.Worksheet _WorkSheet1 = _Workbook.Sheets[1] as excel.Worksheet;
-                            //excel.Worksheet _WorkSheet2 = _Workbook.Sheets[2] as excel.Worksheet;
-                            (this.panel1.Controls[0] as FormUserInput).saveAsInput();
                             CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
                         }
-                    }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserOutput")
-                    {
-
-                    }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
-                    {
-
                     }
                 }
             }

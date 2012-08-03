@@ -785,7 +785,7 @@ namespace KIWI
         }
 
 
-        public Int64[] getArrData_DetailInput(Int64 도매_간부수, Int64 도매_평사원수, Int64 소매_간부수, Int64 수매_평사원수)
+        public Int64[] getArrData_DetailInput(Int64 도매_간부수, Int64 도매_평사원수, Int64 소매_간부수, Int64 소매_평사원수)
         {
             Int64[] arrvalue = new Int64[36];
 
@@ -814,7 +814,7 @@ namespace KIWI
             arrvalue[i++] = 소매_수익_월평균업무취급수수료;
             arrvalue[i++] = 소매_수익_직영매장판매수익;
             arrvalue[i++] = get소매_비용_직원급여_간부급_총액(소매_간부수);
-            arrvalue[i++] = get소매_비용_직원급여_평사원_총액(수매_평사원수);
+            arrvalue[i++] = get소매_비용_직원급여_평사원_총액(소매_평사원수);
             arrvalue[i++] = 소매_비용_직원급여_간부급;
             arrvalue[i++] = 소매_비용_직원급여_평사원;
 

@@ -161,8 +161,8 @@ namespace KIWI
                 + CommonUtil.StringToIntVal(txtDetail[4].Text) ).ToString();
             txtDetail[6].Text = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_신규();
             txtDetail[7].Text = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_기변();
-            txtDetail[8].Text = CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급_총액(CDataControl.g_BasicInput.get도매_직원수_간부급());
-            txtDetail[9].Text = CDataControl.g_DetailInput.getstr도매_비용_직원급여_평사원_총액(CDataControl.g_BasicInput.get도매_직원수_평사원());
+            txtDetail[8].Text = CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급();
+            txtDetail[9].Text = CDataControl.g_DetailInput.getstr도매_비용_직원급여_평사원();
             txtDetail[10].Text = CDataControl.g_DetailInput.getstr도매_비용_지급임차료();
             txtDetail[11].Text = CDataControl.g_DetailInput.getstr도매_비용_운반비();
             txtDetail[12].Text = CDataControl.g_DetailInput.getstr도매_비용_차량유지비();
@@ -179,8 +179,8 @@ namespace KIWI
             txtDetail[18].Text = CDataControl.g_DetailInput.getstr소매_수익_직영매장판매수익();
             txtDetail[19].Text = (CommonUtil.StringToIntVal(txtDetail[17].Text) + CommonUtil.StringToIntVal(txtDetail[18].Text)).ToString();
 
-            txtDetail[20].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급_총액(CDataControl.g_BasicInput.get소매_직원수_간부급());
-            txtDetail[21].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원_총액(CDataControl.g_BasicInput.get소매_직원수_평사원());
+            txtDetail[20].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급();
+            txtDetail[21].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원();
             txtDetail[22].Text = CDataControl.g_DetailInput.getstr소매_비용_지급임차료();
             txtDetail[23].Text = CDataControl.g_DetailInput.getstr소매_비용_지급수수료();
             txtDetail[24].Text = CDataControl.g_DetailInput.getstr소매_비용_판매촉진비();
@@ -214,8 +214,8 @@ namespace KIWI
                 + CommonUtil.StringToIntVal(txtDetail[4].Text) ).ToString(); 
             txtDetail[42].Text  = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_신규();
             txtDetail[43].Text =  CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_기변();
-            txtDetail[44].Text =  CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급_총액(CDataControl.g_BasicInput.get도매_직원수_간부급());
-            txtDetail[45].Text =  CDataControl.g_DetailInput.getstr도매_비용_직원급여_평사원_총액(CDataControl.g_BasicInput.get도매_직원수_평사원());
+            txtDetail[44].Text =  CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급();
+            txtDetail[45].Text =  CDataControl.g_DetailInput.getstr도매_비용_직원급여_평사원();
             txtDetail[46].Text =   CDataControl.g_DetailInput.getstr도매_비용_지급임차료();
             txtDetail[47].Text =   CDataControl.g_DetailInput.getstr도매_비용_운반비();
             txtDetail[48].Text =   CDataControl.g_DetailInput.getstr도매_비용_차량유지비();
@@ -231,8 +231,8 @@ namespace KIWI
             txtDetail[53].Text  = CDataControl.g_DetailInput.getstr소매_수익_월평균업무취급수수료();
             txtDetail[54].Text =  CDataControl.g_DetailInput.getstr소매_수익_직영매장판매수익();
             txtDetail[55].Text =  (CommonUtil.StringToIntVal(txtDetail[17].Text) + CommonUtil.StringToIntVal(txtDetail[18].Text)).ToString();
-            txtDetail[56].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급_총액(CDataControl.g_BasicInput.get소매_직원수_간부급());
-            txtDetail[57].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원_총액(CDataControl.g_BasicInput.get소매_직원수_평사원());
+            txtDetail[56].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급();
+            txtDetail[57].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원();
             txtDetail[58].Text =  CDataControl.g_DetailInput.getstr소매_비용_지급임차료();
             txtDetail[59].Text =  CDataControl.g_DetailInput.getstr소매_비용_지급수수료();
             txtDetail[60].Text =  CDataControl.g_DetailInput.getstr소매_비용_판매촉진비();
@@ -651,10 +651,10 @@ namespace KIWI
 
             _WorkSheet1.get_Range("G32", Type.Missing).Value2 = txtDetail[42].Text;
             _WorkSheet1.get_Range("G33", Type.Missing).Value2 = txtDetail[43].Text;
-            _WorkSheet1.get_Range("G34", Type.Missing).Value2 = txtDetail[44].Text;
-            _WorkSheet1.get_Range("G35", Type.Missing).Value2 = txtDetail[45].Text;
-            _WorkSheet1.get_Range("G36", Type.Missing).Value2 = CommonUtil.Division(txtDetail[44].Text,txtInput[16].Text);
-            _WorkSheet1.get_Range("G37", Type.Missing).Value2 = CommonUtil.Division(txtDetail[45].Text,txtInput[17].Text);
+            _WorkSheet1.get_Range("G34", Type.Missing).Value2 = (CommonUtil.StringToIntVal(txtDetail[44].Text) * CommonUtil.StringToIntVal(txtInput[16].Text)).ToString();
+            _WorkSheet1.get_Range("G35", Type.Missing).Value2 = (CommonUtil.StringToIntVal(txtDetail[45].Text) * CommonUtil.StringToIntVal(txtInput[17].Text)).ToString();
+            _WorkSheet1.get_Range("G36", Type.Missing).Value2 = txtDetail[44].Text;
+            _WorkSheet1.get_Range("G37", Type.Missing).Value2 = txtDetail[45].Text;
             _WorkSheet1.get_Range("G38", Type.Missing).Value2 = txtDetail[46].Text;
             _WorkSheet1.get_Range("G39", Type.Missing).Value2 = txtDetail[47].Text;
             _WorkSheet1.get_Range("G40", Type.Missing).Value2 = txtDetail[48].Text;
@@ -664,11 +664,11 @@ namespace KIWI
 
             _WorkSheet1.get_Range("G44", Type.Missing).Value2 = txtDetail[53].Text;
             _WorkSheet1.get_Range("G45", Type.Missing).Value2 = txtDetail[54].Text;
-            _WorkSheet1.get_Range("G46", Type.Missing).Value2 = txtDetail[56].Text;
-            _WorkSheet1.get_Range("G47", Type.Missing).Value2 = txtDetail[57].Text;
+            _WorkSheet1.get_Range("G46", Type.Missing).Value2 = (CommonUtil.StringToIntVal(txtDetail[56].Text) * CommonUtil.StringToIntVal(txtInput[26].Text)).ToString();
+            _WorkSheet1.get_Range("G47", Type.Missing).Value2 = (CommonUtil.StringToIntVal(txtDetail[57].Text) * CommonUtil.StringToIntVal(txtInput[27].Text)).ToString();
 
-            _WorkSheet1.get_Range("G48", Type.Missing).Value2 = CommonUtil.Division(txtDetail[56].Text,txtInput[26].Text);
-            _WorkSheet1.get_Range("G49", Type.Missing).Value2 = CommonUtil.Division(txtDetail[57].Text,txtInput[27].Text);
+            _WorkSheet1.get_Range("G48", Type.Missing).Value2 = txtDetail[56].Text;
+            _WorkSheet1.get_Range("G49", Type.Missing).Value2 = txtDetail[57].Text;
 
             _WorkSheet1.get_Range("G50", Type.Missing).Value2 = txtDetail[58].Text;
             _WorkSheet1.get_Range("G51", Type.Missing).Value2 = txtDetail[59].Text;
