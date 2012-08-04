@@ -7,6 +7,17 @@ namespace KIWI
 {
     public class CReportData
     {
+        //지역
+        private String 지역 = "";
+        public void set지역(String value)
+        {
+            지역 = value;
+        }
+        public String get지역()
+        {
+            return 지역;
+        }
+
         //대리점
         private String 대리점 = "";
         public void set대리점(String value)
@@ -60,6 +71,31 @@ namespace KIWI
         public String getLG_지원_활동()
         {
             return LG_지원_활동;
+        }
+
+        public void setArrData(String[] data)
+        {
+            int i = 0;
+            지역 = data[i++];
+            대리점 = data[i++];
+            판매자 = data[i++];
+            배경_및_이슈 = data[i++];
+            분석내용_및_대리점_활동방향 = data[i++];
+            LG_지원_활동 = data[i++];
+        }
+
+        public String[] getArrData()
+        {
+            String[] data = new String[6];
+            int i = 0;
+            data[i++] = 지역;
+            data[i++] = 대리점;
+            data[i++] = 판매자;
+            data[i++] = 배경_및_이슈;
+            data[i++] = 분석내용_및_대리점_활동방향;
+            data[i++] = LG_지원_활동;
+
+            return data;
         }
     }
 }

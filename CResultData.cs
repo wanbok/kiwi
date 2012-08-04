@@ -910,7 +910,16 @@ namespace KIWI
         }
 
 
-        public void setArrayOutput전체(Int64[]  arrvalue)
+        public void setArrayOutput전체(String[] arrvalue)
+        {
+            Int64[] arrInt64 = new Int64[arrvalue.Length];
+            for (int i = 0; i < arrvalue.Length; i++)
+            {
+                arrInt64[i] = Convert.ToInt64(arrvalue[i]);
+            }
+            setArrayOutput전체(arrInt64);
+        }
+        public void setArrayOutput전체(Int64[] arrvalue)
         {
             int i = 0;
 

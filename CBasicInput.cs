@@ -299,6 +299,15 @@ namespace KIWI
 
 
         //배열 IO 
+        public void setArrData(String[] arrvalue)
+        {
+            Int64[] arrInt64 = new Int64[arrvalue.Length];
+            for (int i = 0; i < arrvalue.Length; i++)
+            {
+                arrInt64[i] = Convert.ToInt64(arrvalue[i]);
+            }
+            setArrData(arrInt64);
+        }
         public void setArrData(Int64[] arrvalue)
         {
             도매_누적가입자수 = arrvalue[0];
@@ -316,7 +325,6 @@ namespace KIWI
             소매_거래선수_직영점 = arrvalue[11];
             소매_직원수_간부급 = arrvalue[12];
             소매_직원수_평사원 = arrvalue[13];
-
         }
 
         public Int64[] getArrData()
@@ -470,8 +478,6 @@ namespace KIWI
         {
             return 마케터;
         }
-
-
 
         //소계값
         //도매_월평균판매대수_소계

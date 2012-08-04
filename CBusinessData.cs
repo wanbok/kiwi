@@ -623,6 +623,15 @@ namespace KIWI
 
 
         //배열 IO 
+        public void setArrData(String[] arrvalue)
+        {
+            Int64[] arrInt64 = new Int64[arrvalue.Length];
+            for (int i = 0; i < arrvalue.Length; i++)
+            {
+                arrInt64[i] = Convert.ToInt64(arrvalue[i]);
+            }
+            setArrData(arrInt64);
+        }
         public void setArrData(Int64[] arrvalue)
         {
             도매_수익_월평균관리수수료 = arrvalue[0];

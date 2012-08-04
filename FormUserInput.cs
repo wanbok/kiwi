@@ -148,9 +148,9 @@ namespace KIWI
         //기본입력
         private void getInput()
         {
-            comboBox1.SelectedItem = CDataControl.g_BasicInput.get지역();
-            textBox6.Text = CDataControl.g_BasicInput.get대리점();
-            textBox9.Text = CDataControl.g_BasicInput.get마케터();
+            지역.SelectedItem = CDataControl.g_BasicInput.get지역();
+            대리점명.Text = CDataControl.g_BasicInput.get대리점();
+            마케터.Text = CDataControl.g_BasicInput.get마케터();
             Int64[] arrvalue = CDataControl.g_BasicInput.getArrData_BasicInput();
             // 셀에서 데이터 가져오기
             for (int i = 0; i < txtBasicInput.Length; i++)
@@ -182,9 +182,9 @@ namespace KIWI
             CResultData rdt = null;
             CResultData rd = null;
 
-            bi.set지역(comboBox1.SelectedIndex == -1 ? "" : comboBox1.Items[comboBox1.SelectedIndex].ToString());
-            bi.set대리점(textBox6.Text);
-            bi.set마케터(textBox9.Text);
+            bi.set지역(지역.SelectedIndex == -1 ? "" : 지역.Items[지역.SelectedIndex].ToString());
+            bi.set대리점(대리점명.Text);
+            bi.set마케터(마케터.Text);
 
             String[] txtWrite = new String[14] { txtInput1.Text, txtInput2.Text, txtInput3.Text, txtInput5.Text, txtInput6.Text,  
                 txtInput8.Text, txtInput9.Text, txtInput11.Text, txtInput12.Text, txtInput14.Text, txtInput15.Text, txtInput17.Text, txtInput19.Text, txtInput20.Text};
@@ -219,7 +219,7 @@ namespace KIWI
                 rdt.set도매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
                 rdt.set도매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
                 rdt.set도매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+(CommonUtil.Division((di.get도소매_비용_복리후생비()+di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계()));
+                rdt.set도매_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+(CommonUtil.Division((di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계()));
                 rdt.도매_비용_소계 = rdt.get도매_비용_대리점투자비용() + rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get도매_비용_임차료() + rdt.get도매_비용_이자비용() + rdt.get도매_비용_부가세() + rdt.get도매_비용_법인세() + rdt.get도매_비용_기타판매관리비();
                 rdt.도매손익계 = rdt.도매_수익_소계 - rdt.도매_비용_소계;
                 //          단위당 금액
@@ -251,7 +251,7 @@ namespace KIWI
                 rdt.set소매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
                 rdt.set소매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
                 rdt.set소매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비())+(CommonUtil.Division((di.get도소매_비용_복리후생비()+di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계()));
+                rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비())+(CommonUtil.Division((di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계()));
                 rdt.소매_비용_소계 = rdt.get소매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_임차료() + rdt.get소매_비용_이자비용() + rdt.get소매_비용_부가세() + rdt.get소매_비용_법인세() + rdt.get소매_비용_기타판매관리비();
                 rdt.소매손익계 = rdt.소매_수익_소계 - rdt.소매_비용_소계;
                 rdt.점별손익추정 = CommonUtil.Division(rdt.소매손익계, bi.get거래선수_직영점_합계());
@@ -269,6 +269,7 @@ namespace KIWI
                 rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
                 rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
                 rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
+                rd.점별손익추정 = bi.get거래선수_직영점_합계();
                 //      전체
                 //          총액
                 //              수익
@@ -286,7 +287,7 @@ namespace KIWI
                 rdt.set전체_비용_이자비용(di.get도소매_비용_이자비용());
                 rdt.set전체_비용_부가세(di.get도소매_비용_부가세());
                 rdt.set전체_비용_법인세(di.get도소매_비용_법인세());
-                rdt.set전체_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비()+di.get도소매_비용_복리후생비()+di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타());
+                rdt.set전체_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비()+di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타());
                 rdt.전체_비용_소계 = rdt.get전체_비용_대리점투자비용() + rdt.get전체_비용_인건비_급여_복리후생비() + rdt.get전체_비용_임차료() + rdt.get전체_비용_이자비용() + rdt.get전체_비용_부가세() + rdt.get전체_비용_법인세() + rdt.get전체_비용_기타판매관리비();
                 rdt.전체손익계 = rdt.전체_수익_소계 - rdt.전체_비용_소계;
                 //          단위당 금액
@@ -385,6 +386,7 @@ namespace KIWI
             rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
             rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
             rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
+            rd.점별손익추정 = bi.get거래선수_직영점_합계();
             //      전체
             //          총액
             //              수익
@@ -424,7 +426,6 @@ namespace KIWI
             rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
             rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
             rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
-
         }
 
 
@@ -845,35 +846,6 @@ namespace KIWI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Excel File|*.xlsx";
-            saveFileDialog1.Title = "Select a Excel File";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                string filename = CommonUtil.saveAsName;
-                if (filename == null)
-                    filename = CommonUtil.defaultName;
-
-                FileInfo fi2 = new FileInfo(filename);
-                    fi2.CopyTo(saveFileDialog1.FileName, true);
-
-                CommonUtil.saveAsName = saveFileDialog1.FileName;
-
-                //excel.Workbook _Workbook = CommonUtil.GetExcel_WorkBook(saveFileDialog1.FileName);
-                //excel.Worksheet _WorkSheet1 = _Workbook.Sheets[1] as excel.Worksheet;
-                //excel.Worksheet _WorkSheet2 = _Workbook.Sheets[2] as excel.Worksheet;
-                saveAsInput();
-                CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
-            }
-        }
-
-
-
         //CS 관리 수수료 처리용 시작
         private void txtDetail2_TextChanged(object sender, EventArgs e)
         {
@@ -1167,6 +1139,17 @@ namespace KIWI
             {
                 _TextBox.Text = "0";
             }
+        }
+
+        internal bool validateData()
+        {
+            if (지역.Text == "" || 지역.Text.Length < 1 ||
+                대리점명.Text == "" || 대리점명.Text.Length < 1 ||
+                마케터.Text == "" || 마케터.Text.Length < 1)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

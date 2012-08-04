@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserInput));
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
             this.panel55 = new System.Windows.Forms.Panel();
             this.panel56 = new System.Windows.Forms.Panel();
             this.panel57 = new System.Windows.Forms.Panel();
@@ -180,10 +184,6 @@
             this.label166 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -268,13 +268,12 @@
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.마케터 = new System.Windows.Forms.TextBox();
+            this.대리점명 = new System.Windows.Forms.TextBox();
             this.label156 = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
             this.label132 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.지역 = new System.Windows.Forms.ComboBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
@@ -357,6 +356,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel32.SuspendLayout();
             this.panel55.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel51.SuspendLayout();
@@ -371,8 +372,6 @@
             this.panel93.SuspendLayout();
             this.panel107.SuspendLayout();
             this.panel37.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel32.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -428,6 +427,7 @@
             this.tabPage5.AutoScroll = true;
             this.tabPage5.BackColor = System.Drawing.Color.White;
             this.tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage5.Controls.Add(this.panel31);
             this.tabPage5.Controls.Add(this.panel55);
             this.tabPage5.Controls.Add(this.panel51);
             this.tabPage5.Controls.Add(this.panel47);
@@ -559,7 +559,6 @@
             this.tabPage5.Controls.Add(this.label165);
             this.tabPage5.Controls.Add(this.label166);
             this.tabPage5.Controls.Add(this.panel37);
-            this.tabPage5.Controls.Add(this.panel31);
             this.tabPage5.Controls.Add(this.panel27);
             this.tabPage5.Controls.Add(this.panel9);
             this.tabPage5.Controls.Add(this.panel23);
@@ -593,11 +592,54 @@
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel40);
             this.tabPage5.Controls.Add(this.panel42);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1262, 641);
+            this.tabPage5.Size = new System.Drawing.Size(1262, 640);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
+            // 
+            // panel31
+            // 
+            this.panel31.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel31.Controls.Add(this.panel32);
+            this.panel31.Controls.Add(this.panel34);
+            this.panel31.ForeColor = System.Drawing.Color.Black;
+            this.panel31.Location = new System.Drawing.Point(164, 591);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(1, 105);
+            this.panel31.TabIndex = 168;
+            // 
+            // panel32
+            // 
+            this.panel32.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel32.Controls.Add(this.panel33);
+            this.panel32.ForeColor = System.Drawing.Color.Black;
+            this.panel32.Location = new System.Drawing.Point(-50, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(1, 900);
+            this.panel32.TabIndex = 166;
+            // 
+            // panel33
+            // 
+            this.panel33.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel33.ForeColor = System.Drawing.Color.Black;
+            this.panel33.Location = new System.Drawing.Point(-49, 0);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(1, 900);
+            this.panel33.TabIndex = 165;
+            // 
+            // panel34
+            // 
+            this.panel34.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel34.ForeColor = System.Drawing.Color.Black;
+            this.panel34.Location = new System.Drawing.Point(-49, 0);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(1, 900);
+            this.panel34.TabIndex = 165;
             // 
             // panel55
             // 
@@ -692,7 +734,7 @@
             this.panel47.Controls.Add(this.panel48);
             this.panel47.Controls.Add(this.panel50);
             this.panel47.ForeColor = System.Drawing.Color.Black;
-            this.panel47.Location = new System.Drawing.Point(240, 246);
+            this.panel47.Location = new System.Drawing.Point(251, 245);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(1, 105);
             this.panel47.TabIndex = 168;
@@ -735,7 +777,7 @@
             this.panel43.Controls.Add(this.panel44);
             this.panel43.Controls.Add(this.panel46);
             this.panel43.ForeColor = System.Drawing.Color.Black;
-            this.panel43.Location = new System.Drawing.Point(246, 591);
+            this.panel43.Location = new System.Drawing.Point(251, 591);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(1, 105);
             this.panel43.TabIndex = 168;
@@ -827,7 +869,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(256, 330);
+            this.label27.Location = new System.Drawing.Point(266, 329);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(41, 12);
             this.label27.TabIndex = 132;
@@ -837,7 +879,7 @@
             // 
             this.label145.AutoSize = true;
             this.label145.ForeColor = System.Drawing.Color.Black;
-            this.label145.Location = new System.Drawing.Point(256, 278);
+            this.label145.Location = new System.Drawing.Point(266, 277);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(41, 12);
             this.label145.TabIndex = 132;
@@ -847,7 +889,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(256, 307);
+            this.label26.Location = new System.Drawing.Point(266, 306);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(41, 12);
             this.label26.TabIndex = 129;
@@ -857,7 +899,7 @@
             // 
             this.label148.AutoSize = true;
             this.label148.ForeColor = System.Drawing.Color.Black;
-            this.label148.Location = new System.Drawing.Point(256, 256);
+            this.label148.Location = new System.Drawing.Point(266, 255);
             this.label148.Name = "label148";
             this.label148.Size = new System.Drawing.Size(41, 12);
             this.label148.TabIndex = 129;
@@ -927,9 +969,9 @@
             this.label36.ForeColor = System.Drawing.Color.Black;
             this.label36.Location = new System.Drawing.Point(445, 641);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(371, 11);
+            this.label36.Size = new System.Drawing.Size(382, 11);
             this.label36.TabIndex = 263;
-            this.label36.Text = "평사원(과/부장급 이상) 인당 월평균/총액(선택) 급여로 기입(보너스 포함)";
+            this.label36.Text = "평사원(과/부장급 이상) 인당 월평균/총금액(선택) 급여로 기입(보너스 포함)";
             // 
             // label35
             // 
@@ -938,9 +980,9 @@
             this.label35.ForeColor = System.Drawing.Color.Black;
             this.label35.Location = new System.Drawing.Point(445, 623);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(371, 11);
+            this.label35.Size = new System.Drawing.Size(382, 11);
             this.label35.TabIndex = 262;
-            this.label35.Text = "간부급(과/부장급 이상) 인당 월평균/총액(선택) 급여로 기입(보너스 포함)";
+            this.label35.Text = "간부급(과/부장급 이상) 인당 월평균/총금액(선택) 급여로 기입(보너스 포함)";
             // 
             // label33
             // 
@@ -949,15 +991,15 @@
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(448, 300);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(371, 11);
+            this.label33.Size = new System.Drawing.Size(382, 11);
             this.label33.TabIndex = 261;
-            this.label33.Text = "평사원(과/부장급 이상) 인당 월평균/총액(선택) 급여로 기입(보너스 포함)";
+            this.label33.Text = "평사원(과/부장급 이상) 인당 월평균/총금액(선택) 급여로 기입(보너스 포함)";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(256, 672);
+            this.label28.Location = new System.Drawing.Point(261, 672);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(41, 12);
             this.label28.TabIndex = 258;
@@ -967,7 +1009,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(256, 621);
+            this.label29.Location = new System.Drawing.Point(261, 621);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(41, 12);
             this.label29.TabIndex = 257;
@@ -977,7 +1019,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(256, 650);
+            this.label30.Location = new System.Drawing.Point(261, 650);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(41, 12);
             this.label30.TabIndex = 254;
@@ -987,7 +1029,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(123, 634);
+            this.label31.Location = new System.Drawing.Point(112, 640);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(53, 12);
             this.label31.TabIndex = 256;
@@ -997,7 +1039,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(256, 598);
+            this.label32.Location = new System.Drawing.Point(261, 598);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(41, 12);
             this.label32.TabIndex = 255;
@@ -1600,9 +1642,9 @@
             this.label206.ForeColor = System.Drawing.Color.Black;
             this.label206.Location = new System.Drawing.Point(445, 1005);
             this.label206.Name = "label206";
-            this.label206.Size = new System.Drawing.Size(38, 11);
+            this.label206.Size = new System.Drawing.Size(116, 11);
             this.label206.TabIndex = 241;
-            this.label206.Text = "법인세";
+            this.label206.Text = "년 총액을 월별로 환산";
             // 
             // label207
             // 
@@ -1611,9 +1653,9 @@
             this.label207.ForeColor = System.Drawing.Color.Black;
             this.label207.Location = new System.Drawing.Point(445, 975);
             this.label207.Name = "label207";
-            this.label207.Size = new System.Drawing.Size(38, 11);
+            this.label207.Size = new System.Drawing.Size(127, 11);
             this.label207.TabIndex = 240;
-            this.label207.Text = "부가세";
+            this.label207.Text = "분기 총액을 월별로 환산";
             // 
             // label208
             // 
@@ -1832,22 +1874,22 @@
             this.label177.AutoSize = true;
             this.label177.Font = new System.Drawing.Font("굴림", 8F);
             this.label177.ForeColor = System.Drawing.Color.Black;
-            this.label177.Location = new System.Drawing.Point(822, 641);
+            this.label177.Location = new System.Drawing.Point(831, 641);
             this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(320, 11);
+            this.label177.Size = new System.Drawing.Size(331, 11);
             this.label177.TabIndex = 196;
-            this.label177.Text = "*소매 직영점 기준, 점당 평균이 아닌 보유직영점 총액으로 기입";
+            this.label177.Text = "*소매 직영점 기준, 점당 평균이 아닌 보유직영점 총금액으로 기입";
             // 
             // label179
             // 
             this.label179.AutoSize = true;
             this.label179.Font = new System.Drawing.Font("굴림", 8F);
             this.label179.ForeColor = System.Drawing.Color.Black;
-            this.label179.Location = new System.Drawing.Point(822, 623);
+            this.label179.Location = new System.Drawing.Point(831, 623);
             this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(320, 11);
+            this.label179.Size = new System.Drawing.Size(331, 11);
             this.label179.TabIndex = 194;
-            this.label179.Text = "*소매 직영점 기준, 점당 평균이 아닌 보유직영점 총액으로 기입";
+            this.label179.Text = "*소매 직영점 기준, 점당 평균이 아닌 보유직영점 총금액으로 기입";
             // 
             // label180
             // 
@@ -2036,7 +2078,7 @@
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("굴림", 8F);
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(822, 300);
+            this.label34.Location = new System.Drawing.Point(836, 300);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(180, 11);
             this.label34.TabIndex = 154;
@@ -2047,7 +2089,7 @@
             this.label163.AutoSize = true;
             this.label163.Font = new System.Drawing.Font("굴림", 8F);
             this.label163.ForeColor = System.Drawing.Color.Black;
-            this.label163.Location = new System.Drawing.Point(822, 285);
+            this.label163.Location = new System.Drawing.Point(836, 285);
             this.label163.Name = "label163";
             this.label163.Size = new System.Drawing.Size(313, 11);
             this.label163.TabIndex = 154;
@@ -2060,9 +2102,9 @@
             this.label133.ForeColor = System.Drawing.Color.Black;
             this.label133.Location = new System.Drawing.Point(448, 285);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(371, 11);
+            this.label133.Size = new System.Drawing.Size(382, 11);
             this.label133.TabIndex = 154;
-            this.label133.Text = "간부급(과/부장급 이상) 인당 월평균/총액(선택) 급여로 기입(보너스 포함)";
+            this.label133.Text = "간부급(과/부장급 이상) 인당 월평균/총금액(선택) 급여로 기입(보너스 포함)";
             // 
             // label135
             // 
@@ -2277,21 +2319,21 @@
             // 
             this.label159.AutoSize = true;
             this.label159.ForeColor = System.Drawing.Color.Black;
-            this.label159.Location = new System.Drawing.Point(123, 145);
+            this.label159.Location = new System.Drawing.Point(123, 139);
             this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(161, 12);
+            this.label159.Size = new System.Drawing.Size(161, 24);
             this.label159.TabIndex = 113;
-            this.label159.Text = "유통모델 매입 관련 추가수익";
+            this.label159.Text = "유통모델 매입 관련 추가수익\r\n(현금 DC)";
             // 
             // label161
             // 
             this.label161.AutoSize = true;
             this.label161.ForeColor = System.Drawing.Color.Black;
-            this.label161.Location = new System.Drawing.Point(123, 175);
+            this.label161.Location = new System.Drawing.Point(123, 169);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(161, 12);
+            this.label161.Size = new System.Drawing.Size(161, 24);
             this.label161.TabIndex = 111;
-            this.label161.Text = "유통모델 매입 관련 추가수익";
+            this.label161.Text = "유통모델 매입 관련 추가수익\r\n(Volume DC)";
             // 
             // label162
             // 
@@ -2341,9 +2383,9 @@
             this.panel37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel37.Controls.Add(this.panel38);
             this.panel37.ForeColor = System.Drawing.Color.Black;
-            this.panel37.Location = new System.Drawing.Point(180, 641);
+            this.panel37.Location = new System.Drawing.Point(163, 641);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(255, 1);
+            this.panel37.Size = new System.Drawing.Size(272, 1);
             this.panel37.TabIndex = 100;
             // 
             // panel38
@@ -2353,49 +2395,6 @@
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(698, 5);
             this.panel38.TabIndex = 18;
-            // 
-            // panel31
-            // 
-            this.panel31.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel31.Controls.Add(this.panel32);
-            this.panel31.Controls.Add(this.panel34);
-            this.panel31.ForeColor = System.Drawing.Color.Black;
-            this.panel31.Location = new System.Drawing.Point(180, 590);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(1, 105);
-            this.panel31.TabIndex = 168;
-            // 
-            // panel32
-            // 
-            this.panel32.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel32.Controls.Add(this.panel33);
-            this.panel32.ForeColor = System.Drawing.Color.Black;
-            this.panel32.Location = new System.Drawing.Point(-50, 0);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(1, 900);
-            this.panel32.TabIndex = 166;
-            // 
-            // panel33
-            // 
-            this.panel33.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel33.ForeColor = System.Drawing.Color.Black;
-            this.panel33.Location = new System.Drawing.Point(-49, 0);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(1, 900);
-            this.panel33.TabIndex = 165;
-            // 
-            // panel34
-            // 
-            this.panel34.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel34.ForeColor = System.Drawing.Color.Black;
-            this.panel34.Location = new System.Drawing.Point(-49, 0);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(1, 900);
-            this.panel34.TabIndex = 165;
             // 
             // panel27
             // 
@@ -3147,11 +3146,11 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 57);
+            this.radioButton2.Location = new System.Drawing.Point(7, 48);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 16);
+            this.radioButton2.Size = new System.Drawing.Size(59, 28);
             this.radioButton2.TabIndex = 253;
-            this.radioButton2.Text = "월평균";
+            this.radioButton2.Text = "인당\r\n월평균";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -3171,9 +3170,9 @@
             // 
             this.panel42.Controls.Add(this.radioButton4);
             this.panel42.Controls.Add(this.radioButton3);
-            this.panel42.Location = new System.Drawing.Point(185, 605);
+            this.panel42.Location = new System.Drawing.Point(169, 606);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(64, 86);
+            this.panel42.Size = new System.Drawing.Size(71, 86);
             this.panel42.TabIndex = 270;
             // 
             // radioButton4
@@ -3182,10 +3181,10 @@
             this.radioButton4.Checked = true;
             this.radioButton4.Location = new System.Drawing.Point(3, 7);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(47, 16);
+            this.radioButton4.Size = new System.Drawing.Size(59, 16);
             this.radioButton4.TabIndex = 260;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "총액";
+            this.radioButton4.Text = "총금액";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -3193,9 +3192,9 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(3, 49);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 16);
+            this.radioButton3.Size = new System.Drawing.Size(59, 28);
             this.radioButton3.TabIndex = 259;
-            this.radioButton3.Text = "월평균";
+            this.radioButton3.Text = "인당\r\n월평균";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // label109
@@ -3223,13 +3222,12 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox9);
-            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.마케터);
+            this.tabPage1.Controls.Add(this.대리점명);
             this.tabPage1.Controls.Add(this.label156);
             this.tabPage1.Controls.Add(this.label134);
             this.tabPage1.Controls.Add(this.label132);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.지역);
             this.tabPage1.Controls.Add(this.panel11);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.panel3);
@@ -3305,38 +3303,28 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Font = new System.Drawing.Font("굴림", 9F);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1262, 641);
+            this.tabPage1.Size = new System.Drawing.Size(1262, 640);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
-            // button1
+            // 마케터
             // 
-            this.button1.Location = new System.Drawing.Point(554, 548);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 39);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "저장";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.마케터.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.마케터.Location = new System.Drawing.Point(628, 20);
+            this.마케터.Name = "마케터";
+            this.마케터.Size = new System.Drawing.Size(120, 21);
+            this.마케터.TabIndex = 2;
             // 
-            // textBox9
+            // 대리점명
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(628, 20);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(120, 21);
-            this.textBox9.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(441, 20);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 21);
-            this.textBox6.TabIndex = 1;
+            this.대리점명.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.대리점명.Location = new System.Drawing.Point(441, 20);
+            this.대리점명.Name = "대리점명";
+            this.대리점명.Size = new System.Drawing.Size(120, 21);
+            this.대리점명.TabIndex = 1;
             // 
             // label156
             // 
@@ -3368,10 +3356,10 @@
             this.label132.TabIndex = 92;
             this.label132.Text = "지역";
             // 
-            // comboBox1
+            // 지역
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.지역.FormattingEnabled = true;
+            this.지역.Items.AddRange(new object[] {
             "서울강서",
             "서울중부",
             "서울강북",
@@ -3388,10 +3376,10 @@
             "충남",
             "충북",
             "신유통"});
-            this.comboBox1.Location = new System.Drawing.Point(246, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 20);
-            this.comboBox1.TabIndex = 0;
+            this.지역.Location = new System.Drawing.Point(246, 20);
+            this.지역.Name = "지역";
+            this.지역.Size = new System.Drawing.Size(120, 20);
+            this.지역.TabIndex = 0;
             // 
             // panel11
             // 
@@ -4375,6 +4363,8 @@
             this.Text = "KIWI - 대리점 정보 입력";
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel32.ResumeLayout(false);
             this.panel55.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel51.ResumeLayout(false);
@@ -4390,8 +4380,6 @@
             this.panel93.ResumeLayout(false);
             this.panel107.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
-            this.panel31.ResumeLayout(false);
-            this.panel32.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -4683,12 +4671,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox 마케터;
+        private System.Windows.Forms.TextBox 대리점명;
         private System.Windows.Forms.Label label156;
         private System.Windows.Forms.Label label134;
         private System.Windows.Forms.Label label132;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox 지역;
         private System.Windows.Forms.Label label157;
         private System.Windows.Forms.Label label160;
         private System.Windows.Forms.Label label167;
@@ -4751,7 +4739,6 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox txtDetail3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton5;

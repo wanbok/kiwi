@@ -26,7 +26,7 @@ namespace KIWI
         private TextBox[] vtxtROutTotal = null;    //소매 Total
         private TextBox[] vtxtROut = null;         //소매
 
-                
+
 
         //월평균 판매대수 도매
         private string txtInput4 = "0";
@@ -140,7 +140,7 @@ namespace KIWI
             setAllOutFormat(false);
         }
 
-        
+
 
         public FormUserOutput(FormUserOutput formUserOutput)
         {
@@ -157,7 +157,7 @@ namespace KIWI
         private void setAllOutFormat(bool isFile)
         {
             List<Int64[]> 전체 = new List<Int64[]>();
-            
+
             if (isFile)
             {
                 setTexList(vtxtOutTotal, CDataControl.g_FileResultBusinessTotal.getArrayOutput전체());
@@ -205,6 +205,8 @@ namespace KIWI
             for (int i = 0; i < arr.Length; i++)
             {
                 _txtList[i].Text = CommonUtil.NullToString0(arr[i]);
+                if (_txtList[i] == txtROut24 || _txtList[i] == txtROut48 || _txtList[i] == txtROut72)
+                    continue;
                 setTxtInput_TextChanged(_txtList[i]);
             }
         }
@@ -221,14 +223,14 @@ namespace KIWI
             chart.Series[0].Name = "업계평균";
             chart.Series[1].Name = "당대리점(현재수익)";
             chart.Series[2].Name = "당대리점(미래수익)";
-            
+
             if (chart.Name == "chart1")
             {
                 xValues = new string[6] { "누적가입자 수수료", "CS관리수수료", "월단위 업무취급 수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)", "직영매장 판매수익" };
 
-                yValues = new long[6] {lists[0].ToArray()[0], lists[0].ToArray()[1], lists[0].ToArray()[2], lists[0].ToArray()[3], lists[0].ToArray()[4], lists[0].ToArray()[5]};
-                yValues2 = new long[6] {lists[1].ToArray()[0], lists[1].ToArray()[1], lists[1].ToArray()[2], lists[1].ToArray()[3], lists[1].ToArray()[4], lists[1].ToArray()[5]};
-                yValues3 = new long[6] {lists[2].ToArray()[0], lists[2].ToArray()[1], lists[2].ToArray()[2], lists[2].ToArray()[3], lists[2].ToArray()[4], lists[2].ToArray()[5]};
+                yValues = new long[6] { lists[0].ToArray()[0], lists[0].ToArray()[1], lists[0].ToArray()[2], lists[0].ToArray()[3], lists[0].ToArray()[4], lists[0].ToArray()[5] };
+                yValues2 = new long[6] { lists[1].ToArray()[0], lists[1].ToArray()[1], lists[1].ToArray()[2], lists[1].ToArray()[3], lists[1].ToArray()[4], lists[1].ToArray()[5] };
+                yValues3 = new long[6] { lists[2].ToArray()[0], lists[2].ToArray()[1], lists[2].ToArray()[2], lists[2].ToArray()[3], lists[2].ToArray()[4], lists[2].ToArray()[5] };
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
@@ -238,9 +240,9 @@ namespace KIWI
             {
                 xValues = new string[4] { "누적가입자 수수료", "CS관리수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)" };
 
-                yValues = new long[4] { lists[0].ToArray()[16], lists[0].ToArray()[17], lists[0].ToArray()[18], lists[0].ToArray()[19]};
-                yValues2 = new long[4] { lists[1].ToArray()[16], lists[1].ToArray()[17], lists[1].ToArray()[18], lists[1].ToArray()[19]};
-                yValues3 = new long[4] { lists[2].ToArray()[16], lists[2].ToArray()[17], lists[2].ToArray()[18], lists[2].ToArray()[19]};
+                yValues = new long[4] { lists[0].ToArray()[16], lists[0].ToArray()[17], lists[0].ToArray()[18], lists[0].ToArray()[19] };
+                yValues2 = new long[4] { lists[1].ToArray()[16], lists[1].ToArray()[17], lists[1].ToArray()[18], lists[1].ToArray()[19] };
+                yValues3 = new long[4] { lists[2].ToArray()[16], lists[2].ToArray()[17], lists[2].ToArray()[18], lists[2].ToArray()[19] };
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
@@ -253,14 +255,14 @@ namespace KIWI
                 yValues = new long[2] { lists[0].ToArray()[30], lists[0].ToArray()[31] };
                 yValues2 = new long[2] { lists[1].ToArray()[30], lists[1].ToArray()[31] };
                 yValues3 = new long[2] { lists[2].ToArray()[30], lists[2].ToArray()[31] };
-                
+
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
                 chart.Series[2].Points.DataBindXY(xValues, yValues3);
             }
             else if (chart.Name == "chart4")
             {
-                xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세","기타관리비용" };
+                xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
                 yValues = new long[7] { lists[0].ToArray()[7], lists[0].ToArray()[8], lists[0].ToArray()[9], lists[0].ToArray()[10], lists[0].ToArray()[11], lists[0].ToArray()[12], lists[0].ToArray()[13] };
                 yValues2 = new long[7] { lists[1].ToArray()[7], lists[1].ToArray()[8], lists[1].ToArray()[9], lists[1].ToArray()[10], lists[1].ToArray()[11], lists[1].ToArray()[12], lists[1].ToArray()[13] };
@@ -286,9 +288,9 @@ namespace KIWI
             {
                 xValues = new string[6] { "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
-                yValues = new long[6] { lists[0].ToArray()[33], lists[0].ToArray()[34], lists[0].ToArray()[35], lists[0].ToArray()[36], lists[0].ToArray()[37], lists[0].ToArray()[38]};
-                yValues2 = new long[6] { lists[1].ToArray()[33], lists[1].ToArray()[34], lists[1].ToArray()[35], lists[1].ToArray()[36], lists[1].ToArray()[37], lists[1].ToArray()[38]};
-                yValues3 = new long[6] { lists[2].ToArray()[33], lists[2].ToArray()[34], lists[2].ToArray()[35], lists[2].ToArray()[36], lists[2].ToArray()[37], lists[2].ToArray()[38]};
+                yValues = new long[6] { lists[0].ToArray()[33], lists[0].ToArray()[34], lists[0].ToArray()[35], lists[0].ToArray()[36], lists[0].ToArray()[37], lists[0].ToArray()[38] };
+                yValues2 = new long[6] { lists[1].ToArray()[33], lists[1].ToArray()[34], lists[1].ToArray()[35], lists[1].ToArray()[36], lists[1].ToArray()[37], lists[1].ToArray()[38] };
+                yValues3 = new long[6] { lists[2].ToArray()[33], lists[2].ToArray()[34], lists[2].ToArray()[35], lists[2].ToArray()[36], lists[2].ToArray()[37], lists[2].ToArray()[38] };
 
                 chart.Series[0].Points.DataBindXY(xValues, yValues);
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
@@ -339,7 +341,6 @@ namespace KIWI
         private string setTxtInput_TextChanged(object sender)
         {
             TextBox _TextBox = (sender as TextBox);
-
             try
             {
                 long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
@@ -372,5 +373,11 @@ namespace KIWI
             return _TextBox.Text;
         }
 
+        private void set점별손익추정_TextChanged(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text.EndsWith("점 기준"))
+                return;
+            (sender as TextBox).Text += "점 기준";
+        }
     }
 }

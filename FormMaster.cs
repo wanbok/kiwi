@@ -41,9 +41,19 @@ namespace KIWI
                 }
             }
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Excel File|*.xlsx";
-            openFileDialog1.Title = "Select a Excel File";
+            openFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx|All File|*.*";
+            openFileDialog1.Title = "Select a File";
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            openFileDialog1.DefaultExt = "lge";
+            openFileDialog1.AutoUpgradeEnabled = true;
+            openFileDialog1.AddExtension = true;
             openFileDialog1.RestoreDirectory = true;
+
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists(openFileDialog1.InitialDirectory))
+            {
+                Directory.CreateDirectory(openFileDialog1.InitialDirectory);
+            }
 
             // Show the Dialog.
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -54,7 +64,18 @@ namespace KIWI
                     // Create a PictureBox.
                     try
                     {
-                        CommonUtil.ReadExcelFileToData(file);
+                        if (file.EndsWith("lge")) 
+                        {
+                            CommonUtil.readLGEFile(file, "|");
+                        }
+                        else if (file.EndsWith("xlsx"))
+                        {
+                            CommonUtil.ReadExcelFileToData(file);
+                        }
+                        else
+                        {
+                            throw new Exception("지원하지 않는 확장자");
+                        }
 
                         // CDataControl의 파일정보변수(g_File*)에 담겨있는 데이터를 일반정보변수에 딥카피
                         // 엑셀내용중 시트 1의 내용만 옮겨짐
@@ -71,6 +92,105 @@ namespace KIWI
                 panelSet(frm);
             }
 
+        }
+
+        /// <summary>
+        /// 저장
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if (!outOfFormUserInput_Click(sender, e)) return;
+
+            if ((this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
+            {
+                (this.panel1.Controls[0] as FormUserSimulateOutput).saveSimulateFile();
+                return;
+            }
+
+            if (this.panel1.Controls.Count > 0)
+            {
+                if (this.panel1.Controls[0] is Form)
+                {
+                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                    saveFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx";
+                    saveFileDialog1.Title = "Select a File";
+                    saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+                    saveFileDialog1.DefaultExt = "lge";
+                    saveFileDialog1.AutoUpgradeEnabled = true;
+                    saveFileDialog1.AddExtension = true;
+                    saveFileDialog1.RestoreDirectory = true;
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get판매자() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
+
+                    // If the directory doesn't exist, create it.
+                    if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
+                    {
+                        Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data");
+                    }
+
+                    if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")
+                    {
+                        (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
+                    }
+                    if ((this.panel1.Controls[0] as Form).Name == "FormUserInput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserOutput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserAnalysis" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormReport" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormAdmin" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
+                    {
+                        saveFileDialog1.ShowDialog();
+
+                        if (saveFileDialog1.FileName.EndsWith("lge"))
+                        {
+                            CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|");
+                        }
+                        else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                        {
+                            FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                            fi2.CopyTo(saveFileDialog1.FileName, true);
+
+                            CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false); 
+                        }
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 업데이트
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            if (!outOfFormUserInput_Click(sender, e)) return;
+            // 업데이트
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "Update File|*.lgm";
+            openFileDialog1.Title = "업데이트 파일을 선택하세요.";
+            openFileDialog1.RestoreDirectory = true;
+
+            // Show the Dialog.
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // Read the files
+                foreach (String file in openFileDialog1.FileNames)
+                {
+                    // Create a PictureBox.
+                    try
+                    {
+                        System.IO.File.Copy(file, CommonUtil.defaultManagerFileName, true);
+                        toolStripButton4_Click(sender, e);  // UserInput으로 보내서 Refresh역할을 함
+                    }
+                    catch (Exception ex)
+                    {
+                        // Could not load the image - probably related to Windows file system permissions.
+                        MessageBox.Show("파일을 열 수 없습니다.\n\nReported error: " + ex.Message);
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -91,6 +211,7 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
+            if (!outOfFormUserInput_Click(sender, e)) return;
             FormUserOutput frm = new FormUserOutput();
             panelSet(frm);
         }
@@ -102,137 +223,37 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
+            if (!outOfFormUserInput_Click(sender, e)) return;
             FormUserAnalysis frm = new FormUserAnalysis();
             panelSet(frm);
         }
 
         /// <summary>
-        /// 시뮬레이트입력
+        /// 시뮬레이션입력
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
+            if (!outOfFormUserInput_Click(sender, e)) return;
             FormUserSimulateOutput frm = new FormUserSimulateOutput();
             panelSet(frm);
         }
 
-        /// <summary>
-        /// 업데이트
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void toolStripButton6_Click(object sender, EventArgs e)
-        {
-            // 업데이트
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Update File|manager.csv";
-
-            openFileDialog1.Title = "업데이트 파일을 선택하세요.";
-            openFileDialog1.RestoreDirectory = true;
-
-            // Show the Dialog.
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                // Read the files
-                foreach (String file in openFileDialog1.FileNames)
-                {
-                    // Create a PictureBox.
-                    try
-                    {
-                        String path = Application.StartupPath;
-                        System.IO.File.Copy(file, path+"\\"+"manager.csv", true);
-                    }
-                    catch (Exception ex)
-                    {
-                        // Could not load the image - probably related to Windows file system permissions.
-                        MessageBox.Show("파일을 열 수 없습니다.\n\nReported error: " + ex.Message);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// 저장
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            //if (CommonUtil.openAsName == null)
-            //{
-            //    MessageBox.Show("먼저 파일을 열어주세요.");
-            //    return;
-            //}
-            if (this.panel1.Controls.Count > 0)
-            {
-                if (this.panel1.Controls[0] is Form)
-                {
-                    if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")
-                    {
-                        //파일경로명
-                        SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-                        saveFileDialog1.Filter = "Excel File|*.xlsx";
-                        saveFileDialog1.Title = "Select a Excel File";
-                        saveFileDialog1.ShowDialog();
-
-                        // If the file name is not an empty string open it for saving.
-                        if (saveFileDialog1.FileName != "")
-                        {
-                            string filename = CommonUtil.defaultName;
-
-
-                            FileInfo fi2 = new FileInfo(filename);
-                            fi2.CopyTo(saveFileDialog1.FileName, true);
-
-                            CommonUtil.saveAsName = saveFileDialog1.FileName;
-
-                            (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
-                            CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
-                        }
-                    }
-                    else if ((this.panel1.Controls[0] as Form).Name == "FormUserInput" ||
-                        (this.panel1.Controls[0] as Form).Name == "FormUserOutput" ||
-                        (this.panel1.Controls[0] as Form).Name == "FormReport" ||
-                        (this.panel1.Controls[0] as Form).Name == "FormAdmin" ||
-                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput" ||
-                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
-                    {
-                        SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-                        saveFileDialog1.Filter = "Excel File|*.xlsx";
-                        saveFileDialog1.Title = "Select a Excel File";
-                        saveFileDialog1.ShowDialog();
-
-                        // If the file name is not an empty string open it for saving.
-                        if (saveFileDialog1.FileName != "")
-                        {
-                            string filename = CommonUtil.defaultName;
-
-
-                            FileInfo fi2 = new FileInfo(filename);
-                            fi2.CopyTo(saveFileDialog1.FileName, true);
-
-                            CommonUtil.saveAsName = saveFileDialog1.FileName;
-
-                            CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
-                        }
-                    }
-                }
-            }
-        }
-
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
+            if (!outOfFormUserInput_Click(sender, e)) return;
             new Printer();
         }
 
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
+            if (!outOfFormUserInput_Click(sender, e)) return;
             FormAdmin frm = new FormAdmin();
             panelSet(frm);
         }
 
-        private void outOfFormUserInput_Click(object sender, EventArgs e)
+        private Boolean outOfFormUserInput_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.panel1.Controls.Count; i++)
             {
@@ -240,10 +261,16 @@ namespace KIWI
                 {
                     if (this.panel1.Controls[i].Name == "FormUserInput")
                     {
+                        if (!(this.panel1.Controls[i] as FormUserInput).validateData())
+                        {
+                            MessageBox.Show("지역, 대리점명, 마케터를 반드시 적어야 합니다.");
+                            return false;
+                        }
                         (this.panel1.Controls[i] as FormUserInput).saveAsInput();
                     }
                 }
             }
+            return true;
         }
 
         private void panelSet(Form form)
@@ -272,8 +299,6 @@ namespace KIWI
         {
             CommonUtil.GetExcel_WorkBook_CLOSE();
         }
-
-
 
     }
 }

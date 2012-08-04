@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using excel = Microsoft.Office.Interop.Excel;
+using System.Security.Permissions;
 
 namespace KIWI
 {
@@ -24,6 +24,9 @@ namespace KIWI
         private TextBox[] txtIAOut = null;      // 업계평균
         private TextBox[] txtInput = null;      //보정 계수
         private TextBox[] txtAOut = null;       //보정 계수 업계평균
+
+        private TextBox[] txtExistedAsp = null;        //기존 ASP
+        private TextBox[] txtInputAsp = null;        //ASP 입력창
 
         private Int64[] nOut = null;
         private Int64[] nIAOut = null;
@@ -42,6 +45,10 @@ namespace KIWI
             txtOut21, txtOut22, txtOut23, txtOut24, txtOut25, txtOut26, txtOut27, txtOut28, txtOut29, txtOut30,
             txtOut31
             };
+
+            txtExistedAsp = new TextBox[8] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8 };
+
+            txtInputAsp = new TextBox[8] { 유통모델_LG, 유통모델_SS, 유통모델_소계, 사업자모델_LG, 사업자모델_SS, 사업자모델_소계, ASP_전체계, 리베이트 };
 
             txtIAOut = new TextBox[31] { txtOut32, txtOut33, txtOut34, txtOut35, txtOut36, txtOut37, txtOut38, txtOut39, txtOut40,
             txtOut41, txtOut42, txtOut43, txtOut44, txtOut45, txtOut46, txtOut47, txtOut48, txtOut49, txtOut50,
@@ -74,18 +81,26 @@ namespace KIWI
         //업계평균과 보정계수의 평균을 구하고 보정계수 평균에 적용. 
         private void button2_Click(object sender, EventArgs e)
         {
-            saveFileOfExistedAverage(txtAOut);
+            saveFileOfExistedAverage();
         }
 
         // 파일열기
         public void openFileDialog(object sender, EventArgs e)
         {
-            // Displays an OpenFileDialog so the user can select a Cursor.
-            // OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            //openFileDialog1.InitialDirectory = "c:\\";
-            openFileDialog1.Filter = "Excel File|*.xlsx";
-            openFileDialog1.Title = "Select a Excel File";
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx|All File|*.*";
+            openFileDialog1.Title = "Select a File";
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            openFileDialog1.DefaultExt = "lge";
+            openFileDialog1.AutoUpgradeEnabled = true;
+            openFileDialog1.AddExtension = true;
             openFileDialog1.RestoreDirectory = true;
+
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists(openFileDialog1.InitialDirectory))
+            {
+                Directory.CreateDirectory(openFileDialog1.InitialDirectory);
+            }
 
             // Show the Dialog.
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -95,7 +110,18 @@ namespace KIWI
                 {
                     try
                     {
-                        setExcelFileToXML(file);
+                        if (file.EndsWith("lge"))
+                        {
+                            setLGEFileToXML(file);
+                        }
+                        else if (file.EndsWith("xlsx"))
+                        {
+                            setExcelFileToXML(file);
+                        }
+                        else
+                        {
+                            throw new Exception("지원하지 않는 파일형식입니다.");
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -307,6 +333,29 @@ namespace KIWI
 
         }
 
+        private void setLGEFileToXML(string file)
+        {
+            CBasicInput mBI = null;
+            CBusinessData mDI = null;
+            CResultData mRD = null;
+
+            setDataForUse(file, "|", out mBI, out mDI, out mRD);
+
+            adminDC.AddSaveData(
+                mBI.get지역(),
+                mBI.get대리점(),
+                mBI.get마케터(),
+                mDI.get소매_수익_직영매장판매수익().ToString(),
+                mBI.get월평균판매대수_소계_합계().ToString(),
+                mBI.get누적가입자수_합계().ToString(),
+                mBI.get거래선수_직영점_합계().ToString(),
+                "Y",
+                file,
+                mBI, mDI, mRD
+            );
+
+        }
+
         private void setExcelFileToXML(string file)
         {
             excel.Worksheet worksheet1 = CommonUtil.GetExcelWorksheet(file, 1);
@@ -333,6 +382,56 @@ namespace KIWI
                 mBI, mDI, mRD
             );
 
+        }
+
+        private void setDataForUse(String filepath, String spliter, out CBasicInput mBI, out CBusinessData mDI, out CResultData mRD)
+        {
+            mBI = new CBasicInput();
+            mDI = new CBusinessData();
+            mRD = new CResultData();
+
+            if (filepath == null || mBI == null || mDI == null || mRD == null) return;
+
+            CReportData reportData = new CReportData();
+            String lge = CommonUtil.Base64Decode(System.IO.File.ReadAllText(filepath));
+            String[] splittedLge = lge.Split(spliter.ToCharArray());
+
+            int startIndex = 0;
+            int length = 6;
+            String[] param = splittedLge.Take(length).ToArray<String>();
+            reportData.setArrData(param);
+
+            mBI.set지역(reportData.get지역());
+            mBI.set대리점(reportData.get대리점());
+            mBI.set마케터(reportData.get판매자());
+
+            startIndex += length;
+            length = 14;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            mBI.setArrData(param);
+            startIndex += length;
+            length = 31;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            mDI.setArrData(param);
+            startIndex += length;
+            length = 42;
+            //param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            //CDataControl.g_FileResultBusinessTotal.setArrayOutput전체(param);
+            startIndex += length;
+            //param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            //CDataControl.g_FileResultBusiness.setArrayOutput전체(param);
+            startIndex += length;
+            //param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            //CDataControl.g_FileResultStoreTotal.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            mRD.setArrayOutput전체(param);
+            //startIndex += length;
+            //param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            //CDataControl.g_FileResultFutureTotal.setArrayOutput전체(param);
+            //startIndex += length;
+            //param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            //CDataControl.g_FileResultFuture.setArrayOutput전체(param);
         }
 
         private void setDataForUse(excel.Worksheet worksheet1, excel.Worksheet worksheet2, out CBasicInput mBI, out CBusinessData mDI, out CResultData mRD)
@@ -409,34 +508,34 @@ namespace KIWI
             mDI.set도소매_비용_기타(worksheet1.get_Range("G61", Type.Missing).Value2.ToString());
 
             //*******CResultData
-            mRD.set도매_수익_가입자관리수수료(worksheet2.get_Range("E7", Type.Missing).Value2.ToString());
-            mRD.set도매_수익_CS관리수수료(worksheet2.get_Range("E8", Type.Missing).Value2.ToString());
-            mRD.set소매_수익_업무취급수수료(worksheet2.get_Range("E9", Type.Missing).Value2.ToString());
-            mRD.set도매_수익_사업자모델매입에따른추가수익(worksheet2.get_Range("E10", Type.Missing).Value2.ToString());
-            mRD.set도매_수익_유통모델매입에따른추가수익_현금_Volume(worksheet2.get_Range("E11", Type.Missing).Value2.ToString());
-            mRD.set소매_수익_직영매장판매수익(worksheet2.get_Range("E12", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_대리점투자비용(worksheet2.get_Range("E14", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_인건비_급여_복리후생비(worksheet2.get_Range("E15", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_임차료(worksheet2.get_Range("E16", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_이자비용(worksheet2.get_Range("E17", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_부가세(worksheet2.get_Range("E18", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_법인세(worksheet2.get_Range("E19", Type.Missing).Value2.ToString());
-            mRD.set전체_비용_기타판매관리비(worksheet2.get_Range("E20", Type.Missing).Value2.ToString());
+            mRD.set도매_수익_가입자관리수수료(worksheet2.get_Range("J7", Type.Missing).Value2.ToString());
+            mRD.set도매_수익_CS관리수수료(worksheet2.get_Range("J8", Type.Missing).Value2.ToString());
+            mRD.set소매_수익_업무취급수수료(worksheet2.get_Range("J9", Type.Missing).Value2.ToString());
+            mRD.set도매_수익_사업자모델매입에따른추가수익(worksheet2.get_Range("J10", Type.Missing).Value2.ToString());
+            mRD.set도매_수익_유통모델매입에따른추가수익_현금_Volume(worksheet2.get_Range("J11", Type.Missing).Value2.ToString());
+            mRD.set소매_수익_직영매장판매수익(worksheet2.get_Range("J12", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_대리점투자비용(worksheet2.get_Range("J14", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_인건비_급여_복리후생비(worksheet2.get_Range("J15", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_임차료(worksheet2.get_Range("J16", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_이자비용(worksheet2.get_Range("J17", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_부가세(worksheet2.get_Range("J18", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_법인세(worksheet2.get_Range("J19", Type.Missing).Value2.ToString());
+            mRD.set전체_비용_기타판매관리비(worksheet2.get_Range("J20", Type.Missing).Value2.ToString());
 
-            mRD.set도매_비용_대리점투자비용(worksheet2.get_Range("E33", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_인건비_급여_복리후생비(worksheet2.get_Range("E34", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_임차료(worksheet2.get_Range("E35", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_이자비용(worksheet2.get_Range("E36", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_부가세(worksheet2.get_Range("E37", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_법인세(worksheet2.get_Range("E38", Type.Missing).Value2.ToString());
-            mRD.set도매_비용_기타판매관리비(worksheet2.get_Range("E39", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_대리점투자비용(worksheet2.get_Range("J33", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_인건비_급여_복리후생비(worksheet2.get_Range("J34", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_임차료(worksheet2.get_Range("J35", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_이자비용(worksheet2.get_Range("J36", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_부가세(worksheet2.get_Range("J37", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_법인세(worksheet2.get_Range("J38", Type.Missing).Value2.ToString());
+            mRD.set도매_비용_기타판매관리비(worksheet2.get_Range("J39", Type.Missing).Value2.ToString());
 
-            mRD.set소매_비용_인건비_급여_복리후생비(worksheet2.get_Range("E49", Type.Missing).Value2.ToString());
-            mRD.set소매_비용_임차료(worksheet2.get_Range("E50", Type.Missing).Value2.ToString());
-            mRD.set소매_비용_이자비용(worksheet2.get_Range("E51", Type.Missing).Value2.ToString());
-            mRD.set소매_비용_부가세(worksheet2.get_Range("E52", Type.Missing).Value2.ToString());
-            mRD.set소매_비용_법인세(worksheet2.get_Range("E53", Type.Missing).Value2.ToString());
-            mRD.set소매_비용_기타판매관리비(worksheet2.get_Range("E54", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_인건비_급여_복리후생비(worksheet2.get_Range("J49", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_임차료(worksheet2.get_Range("J50", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_이자비용(worksheet2.get_Range("J51", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_부가세(worksheet2.get_Range("J52", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_법인세(worksheet2.get_Range("J53", Type.Missing).Value2.ToString());
+            mRD.set소매_비용_기타판매관리비(worksheet2.get_Range("J54", Type.Missing).Value2.ToString());
         }
 
         private Int32 getExcelResultAsInt32(excel.Worksheet workSheet, string columnName)
@@ -460,12 +559,16 @@ namespace KIWI
         {
             try
             {
-                string csv = System.IO.File.ReadAllText(CommonUtil.adminName);
+                string csv = System.IO.File.ReadAllText(CommonUtil.defaultManagerFileName);
                 csv = CommonUtil.Base64Decode(csv);
                 string[] splitedCsv = csv.Split(',');
                 for (int i = 0; i < txtOut.Length; i++)
                 {
                     txtOut[i].Text = splitedCsv[i];
+                }
+                for (int i = 0; i < txtExistedAsp.Length; i++)
+                {
+                    txtExistedAsp[i].Text = splitedCsv[txtOut.Length + i];
                 }
             }
             catch (Exception ex)
@@ -475,17 +578,28 @@ namespace KIWI
                 {
                     txtOut[i].Text = 0.ToString();
                 }
+                for (int i = 0; i < txtExistedAsp.Length; i++)
+                {
+                    txtExistedAsp[i].Text = 0.ToString();
+                }
             }
         }
 
-        private void saveFileOfExistedAverage(TextBox[] txtBoxes)
+        private void saveFileOfExistedAverage()
         {
             string csv = "";
-            for (int i = 0; i < txtOut.Length; i++)
+            for (int i = 0; i < txtAOut.Length; i++)
             {
-                csv += txtBoxes[i].Text.Replace(",", "") + ",";
+                csv += txtAOut[i].Text.Replace(",", "") + ",";
             }
-            System.IO.File.WriteAllText(CommonUtil.adminName, CommonUtil.Base64Encode(csv));
+            for (int i = 0; i < txtInputAsp.Length; i++)
+            {
+                csv += txtInputAsp[i].Text.Replace(",", "") + ",";
+            }
+            FileIOPermission permission = new FileIOPermission(FileIOPermissionAccess.AllAccess, CommonUtil.defaultManagerFileName);
+            permission.Demand();
+            System.IO.File.WriteAllText(CommonUtil.defaultManagerFileName, CommonUtil.Base64Encode(csv));
+            System.IO.File.WriteAllText(CommonUtil.datedManagerFileName, CommonUtil.Base64Encode(csv));
             readFileOfExistedAverage();
         }
 
@@ -653,6 +767,5 @@ namespace KIWI
                 e.Handled = true;
             }
         }
-
     }
 }

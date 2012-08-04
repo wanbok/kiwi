@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace KIWI
 {
@@ -47,5 +48,117 @@ namespace KIWI
 
         //보고서용 데이터
         public static CReportData g_ReportData = new CReportData();         // 리포트에 추가적으로 들어갈 자료(이름, 코멘트 등)
+
+        internal static String getSplitedLGEFileFromData(String splitter)
+        {
+            Object[] arrWarp = new Object[]{
+                CDataControl.g_ReportData.getArrData(),
+                CDataControl.g_BasicInput.getArrData(),
+                CDataControl.g_DetailInput.getArrData(),
+                CDataControl.g_ResultBusinessTotal.getArrayOutput전체(),
+                CDataControl.g_ResultBusiness.getArrayOutput전체(),
+                CDataControl.g_ResultStoreTotal.getArrayOutput전체(),
+                CDataControl.g_ResultStore.getArrayOutput전체(),
+                CDataControl.g_ResultFutureTotal.getArrayOutput전체(),
+                CDataControl.g_ResultFuture.getArrayOutput전체()
+            };
+            return getSplitedLGEFileFromArray(arrWarp, splitter);
+        }
+
+        internal static String getSplitedLGEFileFromSimulData(String splitter)
+        {
+            Object[] arrWarp = new Object[]{
+                CDataControl.g_ReportData.getArrData(),
+                CDataControl.g_SimBasicInput.getArrData(),
+                CDataControl.g_SimDetailInput.getArrData(),
+                CDataControl.g_SimResultBusinessTotal.getArrayOutput전체(),
+                CDataControl.g_SimResultBusiness.getArrayOutput전체(),
+                CDataControl.g_SimResultStoreTotal.getArrayOutput전체(),
+                CDataControl.g_SimResultStore.getArrayOutput전체(),
+                CDataControl.g_SimResultFutureTotal.getArrayOutput전체(),
+                CDataControl.g_SimResultFuture.getArrayOutput전체()
+            };
+            return getSplitedLGEFileFromArray(arrWarp, splitter);
+        }
+
+        private static String getSplitedLGEFileFromArray(Object[] arrWarp, String splitter)
+        {
+            string returnLge = "";
+            for (int i = 0; i < arrWarp.Length; i++)
+            {
+                if (arrWarp[i].GetType() == Type.GetType("System.String[]"))
+                {
+                    foreach (String str in (arrWarp[i] as String[]))
+                    {
+                        returnLge += str.Replace(splitter, splitter == "|" ? "l" : "") + splitter; // 파이프를 구분자로 쓰기위해 엘(L)소문자로 고침
+                    }
+                }
+                else if (arrWarp[i].GetType() == Type.GetType("System.Int64[]"))
+                {
+                    foreach (Int64 val in (arrWarp[i] as Int64[]))
+                    {
+                        returnLge += val.ToString() + splitter;
+                    }
+                }
+            }
+            return returnLge;
+        }
+
+        internal static void setDataFromLGEFile(String lge, String spliter)
+        {
+            String[] splittedLge = lge.Split(spliter.ToCharArray());
+
+            int startIndex = 0;
+            int length = 6;
+            String[] param = splittedLge.Take(length).ToArray<String>();
+            CDataControl.g_ReportData.setArrData(param);
+            startIndex += length;
+            length = 14;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileBasicInput.setArrData(param);
+            startIndex += length;
+            length = 31;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileDetailInput.setArrData(param);
+            startIndex += length;
+            length = 42;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultBusinessTotal.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultBusiness.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultStoreTotal.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultStore.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultFutureTotal.setArrayOutput전체(param);
+            startIndex += length;
+            param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
+            CDataControl.g_FileResultFuture.setArrayOutput전체(param);
+
+            CDataControl.g_FileBasicInput.set지역(CDataControl.g_ReportData.get지역());
+            CDataControl.g_FileBasicInput.set대리점(CDataControl.g_ReportData.get대리점());
+            CDataControl.g_FileBasicInput.set마케터(CDataControl.g_ReportData.get판매자());
+        }
+        
+        internal static String getAdminDataBySerialization(String splitter)
+        {
+            string returnLge = "";
+            foreach (Int64 val in g_BusinessAvg.getArrData())
+            {
+                returnLge += val.ToString() + splitter;
+            }
+            return returnLge;
+        }
+
+        internal static void setAdminDataFromLGEFile(String lge, String spliter)
+        {
+            String[] splittedLge = lge.Split(spliter.ToCharArray());
+            CDataControl.g_BusinessAvg.setArrData_DetailInput(splittedLge);
+        }
     }
 }

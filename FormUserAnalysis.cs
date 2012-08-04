@@ -72,11 +72,7 @@ namespace KIWI
 
 
             OpenChart(chart1, BusinessData, StoreData);
-            OpenChart(chart2, BusinessData, StoreData);
-            OpenChart(chart3, BusinessData, StoreData);
             OpenChart(chart5, BusinessData, StoreData);
-            OpenChart(chart6, BusinessData, StoreData);
-            OpenChart(chart7, BusinessData, StoreData);
         }
 
         private void setReferrence()
@@ -209,7 +205,7 @@ namespace KIWI
         public void saveComments()
         {
             if (CDataControl.g_ReportData == null) return;
-            CDataControl.g_ReportData.set분석내용_및_대리점_활동방향(txtComments[0].Text);
+            CDataControl.g_ReportData.set분석내용_및_대리점_활동방향(txtComments[0].Text);        
             CDataControl.g_ReportData.setLG_지원_활동(txtComments[1].Text);
             CDataControl.g_ReportData.set배경_및_이슈(txtComments[2].Text);
         }
@@ -242,7 +238,7 @@ namespace KIWI
 
             if (chart.Name == "chart1")
             {
-                xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
+                xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
 
                 yValues = new double[6]{ 
                                          Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()), 
@@ -258,7 +254,7 @@ namespace KIWI
             }
             else if (chart.Name == "chart2")
             {
-                xValues = new string[4] { "X1", "X2", "X3", "X4" };
+                xValues = new string[4] { "A", "B", "C", "D" };
 
                 yValues = new double[4]{ 
                                          Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()),
@@ -276,7 +272,7 @@ namespace KIWI
             }
             else if (chart.Name == "chart3")
             {
-                xValues = new string[2] { "X1", "X2" };
+                xValues = new string[2] { "A", "B" };
 
                 yValues = new double[2]{ 
                                          Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()),
@@ -290,7 +286,7 @@ namespace KIWI
             }
             else if (chart.Name == "chart5")
             {
-                xValues = new string[6] { "X1", "X2", "X3", "X4", "X5", "X6" };
+                xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
 
                 yValues = new double[6]{ 
                                          Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()), 
@@ -312,7 +308,7 @@ namespace KIWI
             }
             else if (chart.Name == "chart6")
             {
-                xValues = new string[4] { "X1", "X2", "X3", "X4" };
+                xValues = new string[4] { "A", "B", "C", "D" };
 
                 yValues = new double[4]{ 
                                          Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()),
@@ -330,7 +326,7 @@ namespace KIWI
             }
             else if (chart.Name == "chart7")
             {
-                xValues = new string[2] { "X1", "X2" };
+                xValues = new string[2] { "A", "B" };
 
                 yValues = new double[2]{ 
                                          Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()),

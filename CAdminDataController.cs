@@ -9,15 +9,17 @@ namespace KIWI
 {
     class CAdminDataController
     {
-        private String mXmlFileName = "resultdatalist.xml";//xml 파일명
-
-        private Int32 mDataLength = 0;
+        private String mXmlFileName = "files/resultdatalist.xml";//xml 파일명
 
         XmlDataDocument mXmlDoc = null;
         public CAdminDataController()
         {
             mXmlDoc = new XmlDataDocument();
-            //mXmlFileName = "resultdatalist.xml";
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists("files"))
+            {
+                Directory.CreateDirectory("files");
+            }
             FileInfo fi = new FileInfo(mXmlFileName);
             if (fi.Exists)
             {
