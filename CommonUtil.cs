@@ -21,11 +21,11 @@ namespace KIWI
         private static excel.Workbook workBook = null;
         private static excel.ApplicationClass applicationForSimul = null;
         private static excel.Workbook workBookForSimul = null;
-        public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "default.xlsx";
+        public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "files\\default.xlsx";
         //public static string openAsName = null;
         public static string saveAsSimulName = null;
         public static string saveAsName = null;
-        public static string defaultManagerFileName = AppDomain.CurrentDomain.BaseDirectory + "manager.lgm";
+        public static string defaultManagerFileName = AppDomain.CurrentDomain.BaseDirectory + "files\\manager.lgm";
         public static string datedManagerFileName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data\\업계평균_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".lgm";
 
         /// <summary>
