@@ -2198,7 +2198,7 @@
             // 
             this.label145.AutoSize = true;
             this.label145.ForeColor = System.Drawing.Color.Black;
-            this.label145.Location = new System.Drawing.Point(245, 385);
+            this.label145.Location = new System.Drawing.Point(258, 433);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(41, 12);
             this.label145.TabIndex = 439;
@@ -2218,7 +2218,7 @@
             // 
             this.label147.AutoSize = true;
             this.label147.ForeColor = System.Drawing.Color.Black;
-            this.label147.Location = new System.Drawing.Point(150, 521);
+            this.label147.Location = new System.Drawing.Point(145, 421);
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(53, 12);
             this.label147.TabIndex = 437;
@@ -2228,7 +2228,7 @@
             // 
             this.label148.AutoSize = true;
             this.label148.ForeColor = System.Drawing.Color.Black;
-            this.label148.Location = new System.Drawing.Point(245, 360);
+            this.label148.Location = new System.Drawing.Point(258, 408);
             this.label148.Name = "label148";
             this.label148.Size = new System.Drawing.Size(41, 12);
             this.label148.TabIndex = 436;
@@ -2238,7 +2238,7 @@
             // 
             this.label149.AutoSize = true;
             this.label149.ForeColor = System.Drawing.Color.Black;
-            this.label149.Location = new System.Drawing.Point(257, 408);
+            this.label149.Location = new System.Drawing.Point(257, 360);
             this.label149.Name = "label149";
             this.label149.Size = new System.Drawing.Size(29, 12);
             this.label149.TabIndex = 435;
@@ -2248,7 +2248,7 @@
             // 
             this.label150.AutoSize = true;
             this.label150.ForeColor = System.Drawing.Color.Black;
-            this.label150.Location = new System.Drawing.Point(258, 433);
+            this.label150.Location = new System.Drawing.Point(258, 385);
             this.label150.Name = "label150";
             this.label150.Size = new System.Drawing.Size(29, 12);
             this.label150.TabIndex = 434;
@@ -4203,7 +4203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1093, 740);
+            this.ClientSize = new System.Drawing.Size(1110, 740);
             this.ControlBox = false;
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
