@@ -120,6 +120,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -222,6 +224,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -324,6 +328,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -434,6 +440,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -536,6 +544,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -638,6 +648,8 @@
               <xs:element name="DataColumn30" msprop:Generator_ColumnVarNameInTable="columnDataColumn30" msprop:Generator_ColumnPropNameInRow="DataColumn30" msprop:Generator_ColumnPropNameInTable="DataColumn30Column" msprop:Generator_UserColumnName="DataColumn30" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn31" msprop:Generator_ColumnVarNameInTable="columnDataColumn31" msprop:Generator_ColumnPropNameInRow="DataColumn31" msprop:Generator_ColumnPropNameInTable="DataColumn31Column" msprop:Generator_UserColumnName="DataColumn31" type="xs:string" minOccurs="0" />
               <xs:element name="DataColumn32" msprop:Generator_ColumnVarNameInTable="columnDataColumn32" msprop:Generator_ColumnPropNameInRow="DataColumn32" msprop:Generator_ColumnPropNameInTable="DataColumn32Column" msprop:Generator_UserColumnName="DataColumn32" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn33" msprop:Generator_ColumnVarNameInTable="columnDataColumn33" msprop:Generator_ColumnPropNameInRow="DataColumn33" msprop:Generator_ColumnPropNameInTable="DataColumn33Column" msprop:Generator_UserColumnName="DataColumn33" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn34" msprop:Generator_ColumnVarNameInTable="columnDataColumn34" msprop:Generator_ColumnPropNameInRow="DataColumn34" msprop:Generator_ColumnPropNameInTable="DataColumn34Column" msprop:Generator_UserColumnName="DataColumn34" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

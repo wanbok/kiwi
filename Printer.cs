@@ -38,14 +38,14 @@ namespace KIWI
             DataTable[] simFutureTables = { ds.SimplizedFutureTotal, ds.SimplizedFutureWholesale, ds.SimplizedFutureRetail };
 
             // 본 데이터
-            setDataTableForAnalysis(businessTables, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
-            setDataTableForAnalysis(storeTables, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultStore);
-            setDataTableForAnalysis(futureTables, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture);
+            setDataTableForAnalysis(businessTables, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness, CDataControl.g_BusinessAvg);
+            setDataTableForAnalysis(storeTables, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultStore, CDataControl.g_DetailInput);
+            setDataTableForAnalysis(futureTables, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture, CDataControl.g_DetailInput);
 
             // 시뮬레이션 데이터
-            setDataTableForAnalysis(simBusinessTables, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness);
-            setDataTableForAnalysis(simStoreTables, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultStore);
-            setDataTableForAnalysis(simFutureTables, CDataControl.g_SimResultFutureTotal, CDataControl.g_SimResultFuture);
+            setDataTableForAnalysis(simBusinessTables, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness, CDataControl.g_BusinessAvg);
+            setDataTableForAnalysis(simStoreTables, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultStore, CDataControl.g_SimDetailInput);
+            setDataTableForAnalysis(simFutureTables, CDataControl.g_SimResultFutureTotal, CDataControl.g_SimResultFuture, CDataControl.g_SimDetailInput);
 
             DataRow r = diffrenceForAnalysis.NewRow();
             for (int i = 0; i < 16; i++)
@@ -88,7 +88,7 @@ namespace KIWI
             comments.Rows.Add(r);
         }
 
-        private void setDataTableForAnalysis(DataTable[] tables, CResultData total, CResultData agency)
+        private void setDataTableForAnalysis(DataTable[] tables, CResultData total, CResultData agency, CBusinessData bd)
         {
             if (total == null || agency == null) return;
             for (int j = 0; j < tables.Length; j++)
@@ -99,10 +99,12 @@ namespace KIWI
                 Int64[] agencyArr = null;
                 switch (j) {
                     case 0:
-                        totalArr = total.getArr전체_수익_비용_및_계산포함();
-                        agencyArr = agency.getArr전체_수익_비용_및_계산포함();
+                        totalArr = total.getArr전체_리포트용(bd);
+                        agencyArr = agency.getArr전체_리포트용(bd);
                         break;
                     case 1:
+                        //totalArr = total.getArr전체_리포트용(bd);
+                        //agencyArr = agency.getArr전체_리포트용(bd);
                         totalArr = total.getArr도매_수익_비용_및_계산포함();
                         agencyArr = agency.getArr도매_수익_비용_및_계산포함();
                         break;

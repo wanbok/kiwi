@@ -2966,6 +2966,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedResultAverageTotalDataTable() {
@@ -3257,6 +3261,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3324,7 +3344,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedResultAverageTotalRow rowSimplizedResultAverageTotalRow = ((SimplizedResultAverageTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -3358,7 +3380,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedResultAverageTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedResultAverageTotalRow);
                 return rowSimplizedResultAverageTotalRow;
@@ -3413,6 +3437,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3482,6 +3508,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4925,6 +4955,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedResultThisTotalDataTable() {
@@ -5216,6 +5250,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -5283,7 +5333,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedResultThisTotalRow rowSimplizedResultThisTotalRow = ((SimplizedResultThisTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -5317,7 +5369,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedResultThisTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedResultThisTotalRow);
                 return rowSimplizedResultThisTotalRow;
@@ -5372,6 +5426,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5441,6 +5497,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6884,6 +6944,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedResultFutureTotalDataTable() {
@@ -7175,6 +7239,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -7242,7 +7322,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedResultFutureTotalRow rowSimplizedResultFutureTotalRow = ((SimplizedResultFutureTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -7276,7 +7358,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedResultFutureTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedResultFutureTotalRow);
                 return rowSimplizedResultFutureTotalRow;
@@ -7331,6 +7415,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7400,6 +7486,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9104,6 +9194,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedAverageTotalDataTable() {
@@ -9395,6 +9489,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -9462,7 +9572,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedAverageTotalRow rowSimplizedAverageTotalRow = ((SimplizedAverageTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -9496,7 +9608,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedAverageTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedAverageTotalRow);
                 return rowSimplizedAverageTotalRow;
@@ -9551,6 +9665,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9620,6 +9736,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11063,6 +11183,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedThisTotalDataTable() {
@@ -11354,6 +11478,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -11421,7 +11561,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedThisTotalRow rowSimplizedThisTotalRow = ((SimplizedThisTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -11455,7 +11597,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedThisTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedThisTotalRow);
                 return rowSimplizedThisTotalRow;
@@ -11510,6 +11654,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11579,6 +11725,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13022,6 +13172,10 @@ namespace KIWI {
             
             private global::System.Data.DataColumn columnDataColumn32;
             
+            private global::System.Data.DataColumn columnDataColumn33;
+            
+            private global::System.Data.DataColumn columnDataColumn34;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SimplizedFutureTotalDataTable() {
@@ -13313,6 +13467,22 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn33Column {
+                get {
+                    return this.columnDataColumn33;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn34Column {
+                get {
+                    return this.columnDataColumn34;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -13380,7 +13550,9 @@ namespace KIWI {
                         string DataColumn29, 
                         string DataColumn30, 
                         string DataColumn31, 
-                        string DataColumn32) {
+                        string DataColumn32, 
+                        string DataColumn33, 
+                        string DataColumn34) {
                 SimplizedFutureTotalRow rowSimplizedFutureTotalRow = ((SimplizedFutureTotalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DataColumn1,
@@ -13414,7 +13586,9 @@ namespace KIWI {
                         DataColumn29,
                         DataColumn30,
                         DataColumn31,
-                        DataColumn32};
+                        DataColumn32,
+                        DataColumn33,
+                        DataColumn34};
                 rowSimplizedFutureTotalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSimplizedFutureTotalRow);
                 return rowSimplizedFutureTotalRow;
@@ -13469,6 +13643,8 @@ namespace KIWI {
                 this.columnDataColumn30 = base.Columns["DataColumn30"];
                 this.columnDataColumn31 = base.Columns["DataColumn31"];
                 this.columnDataColumn32 = base.Columns["DataColumn32"];
+                this.columnDataColumn33 = base.Columns["DataColumn33"];
+                this.columnDataColumn34 = base.Columns["DataColumn34"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13538,6 +13714,10 @@ namespace KIWI {
                 base.Columns.Add(this.columnDataColumn31);
                 this.columnDataColumn32 = new global::System.Data.DataColumn("DataColumn32", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn32);
+                this.columnDataColumn33 = new global::System.Data.DataColumn("DataColumn33", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn33);
+                this.columnDataColumn34 = new global::System.Data.DataColumn("DataColumn34", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn34);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16964,6 +17144,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultAverageTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultAverageTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultAverageTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultAverageTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultAverageTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultAverageTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedResultAverageTotal.DataColumn1Column);
             }
@@ -17344,6 +17556,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedResultAverageTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedResultAverageTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedResultAverageTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedResultAverageTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedResultAverageTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -19361,6 +19597,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultThisTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultThisTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultThisTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultThisTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultThisTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultThisTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedResultThisTotal.DataColumn1Column);
             }
@@ -19741,6 +20009,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedResultThisTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedResultThisTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedResultThisTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedResultThisTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedResultThisTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -21758,6 +22050,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultFutureTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultFutureTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultFutureTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedResultFutureTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedResultFutureTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedResultFutureTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedResultFutureTotal.DataColumn1Column);
             }
@@ -22138,6 +22462,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedResultFutureTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedResultFutureTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedResultFutureTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedResultFutureTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedResultFutureTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -24226,6 +24574,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedAverageTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedAverageTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedAverageTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedAverageTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedAverageTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedAverageTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedAverageTotal.DataColumn1Column);
             }
@@ -24606,6 +24986,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedAverageTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedAverageTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedAverageTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedAverageTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedAverageTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -26623,6 +27027,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedThisTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedThisTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedThisTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedThisTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedThisTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedThisTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedThisTotal.DataColumn1Column);
             }
@@ -27003,6 +27439,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedThisTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedThisTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedThisTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedThisTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedThisTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -29020,6 +29480,38 @@ namespace KIWI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn33 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedFutureTotal.DataColumn33Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedFutureTotal\' 테이블의 \'DataColumn33\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedFutureTotal.DataColumn33Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DataColumn34 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSimplizedFutureTotal.DataColumn34Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'SimplizedFutureTotal\' 테이블의 \'DataColumn34\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableSimplizedFutureTotal.DataColumn34Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDataColumn1Null() {
                 return this.IsNull(this.tableSimplizedFutureTotal.DataColumn1Column);
             }
@@ -29400,6 +29892,30 @@ namespace KIWI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDataColumn32Null() {
                 this[this.tableSimplizedFutureTotal.DataColumn32Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn33Null() {
+                return this.IsNull(this.tableSimplizedFutureTotal.DataColumn33Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn33Null() {
+                this[this.tableSimplizedFutureTotal.DataColumn33Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataColumn34Null() {
+                return this.IsNull(this.tableSimplizedFutureTotal.DataColumn34Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataColumn34Null() {
+                this[this.tableSimplizedFutureTotal.DataColumn34Column] = global::System.Convert.DBNull;
             }
         }
         

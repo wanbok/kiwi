@@ -979,6 +979,92 @@ namespace KIWI
             점별손익추정= arrvalue[i++];
         }
 
+        // 리포트용
+        public Int64[] getArr전체_리포트용(CBusinessData bd)
+        {
+            Int64[] arrvalue = new Int64[17];
+
+            int i = 0;
+            //******전체 수익
+            arrvalue[i++] = 전체_수익_가입자관리수수료;
+            arrvalue[i++] = 전체_수익_CS관리수수료;
+            arrvalue[i++] = 전체_수익_업무취급수수료;
+            arrvalue[i++] = 전체_수익_사업자모델매입에따른추가수익;
+            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) * 
+                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+            arrvalue[i++] = 전체_수익_직영매장판매수익;
+
+            // 소계
+            Int64 전체_수익_소계 = 전체_수익_가입자관리수수료 + 전체_수익_CS관리수수료 +
+                전체_수익_업무취급수수료 + 전체_수익_사업자모델매입에따른추가수익 +
+                전체_수익_유통모델매입에따른추가수익_현금_Volume + 전체_수익_직영매장판매수익;
+            arrvalue[i++] = 전체_수익_소계;
+
+            //******전체 비용
+            arrvalue[i++] = 전체_비용_대리점투자비용;
+            arrvalue[i++] = 전체_비용_인건비_급여_복리후생비;
+            arrvalue[i++] = 전체_비용_임차료;
+            arrvalue[i++] = 전체_비용_이자비용;
+            arrvalue[i++] = 전체_비용_부가세;
+            arrvalue[i++] = 전체_비용_법인세;
+            arrvalue[i++] = 전체_비용_기타판매관리비;
+
+            // 소계
+            Int64 전체_비용_소계 = 전체_비용_대리점투자비용 + 전체_비용_인건비_급여_복리후생비 +
+                전체_비용_임차료 + 전체_비용_이자비용 + 전체_비용_부가세 +
+                전체_비용_법인세 + 전체_비용_기타판매관리비;
+            arrvalue[i++] = 전체_비용_소계;
+
+            // 손익계
+            arrvalue[i++] = 전체_수익_소계 - 전체_비용_소계;
+
+            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
+                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+
+            return arrvalue;
+        }
+
+        public Int64[] getArr도매_리포트용(CBusinessData bd)
+        {
+            Int64[] arrvalue = new Int64[14];
+
+            int i = 0;
+            //******전체 수익
+            arrvalue[i++] = 도매_수익_가입자관리수수료;
+            arrvalue[i++] = 도매_수익_CS관리수수료;
+            arrvalue[i++] = 도매_수익_사업자모델매입에따른추가수익;
+            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(도매_수익_유통모델매입에따른추가수익_현금_Volume) *
+                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+
+            // 소계
+            Int64 도매_수익_소계 = 도매_수익_가입자관리수수료 + 도매_수익_CS관리수수료 +
+                도매_수익_사업자모델매입에따른추가수익 + 도매_수익_유통모델매입에따른추가수익_현금_Volume;
+            arrvalue[i++] = 도매_수익_소계;
+
+            //******도매 비용
+            arrvalue[i++] = 도매_비용_대리점투자비용;
+            arrvalue[i++] = 도매_비용_인건비_급여_복리후생비;
+            arrvalue[i++] = 도매_비용_임차료;
+            arrvalue[i++] = 도매_비용_이자비용;
+            arrvalue[i++] = 도매_비용_부가세;
+            arrvalue[i++] = 도매_비용_법인세;
+            arrvalue[i++] = 도매_비용_기타판매관리비;
+
+            // 소계
+            Int64 도매_비용_소계 = 도매_비용_대리점투자비용 + 도매_비용_인건비_급여_복리후생비 +
+                도매_비용_임차료 + 도매_비용_이자비용 + 도매_비용_부가세 + 도매_비용_법인세 +
+                도매_비용_기타판매관리비;
+            arrvalue[i++] = 도매_비용_소계;
+
+            // 손익계
+            arrvalue[i++] = 도매_수익_소계 - 도매_비용_소계;
+
+            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
+                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+
+            return arrvalue;
+        }
+
         private String getFormatString(Int64 value)
         {
             CultureInfo cur = new CultureInfo(CultureInfo.InvariantCulture.LCID);
