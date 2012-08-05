@@ -846,65 +846,92 @@ namespace KIWI
         }
 
         // 관리자 데이터 세팅
-        private Int64 _도매_수익_사업자모델매입관련추가수익_2000대미만;
-        public Int64 도매_수익_사업자모델매입관련추가수익_2000대미만
+        private Int64 _ASP_유통_LG;
+        public Int64 ASP_유통_LG
         {
-            get { return _도매_수익_사업자모델매입관련추가수익_2000대미만; }
-            set { _도매_수익_사업자모델매입관련추가수익_2000대미만 = value; }
+            get { return _ASP_유통_LG; }
+            set { _ASP_유통_LG = value; }
         }
-        private Int64 _도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만;
-        public Int64 도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만
+        private Int64 _ASP_유통_SS;
+        public Int64 ASP_유통_SS
         {
-            get { return _도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만; }
-            set { _도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만 = value; }
+            get { return _ASP_유통_SS; }
+            set { _ASP_유통_SS = value; }
         }
-        private Int64 _도소매_비용_법인세_2000대미만;
-        public Int64 도소매_비용_법인세_2000대미만
+        private Int64 _ASP_유통_소계;
+        public Int64 ASP_유통_소계
         {
-            get { return _도소매_비용_법인세_2000대미만; }
-            set { _도소매_비용_법인세_2000대미만 = value; }
+            get { return _ASP_유통_소계; }
+            set { _ASP_유통_소계 = value; }
         }
+        private Int64 _ASP_사업자_LG;
+        public Int64 ASP_사업자_LG
+        {
+            get { return _ASP_사업자_LG; }
+            set { _ASP_사업자_LG = value; }
+        }
+        private Int64 _ASP_사업자_SS;
+        public Int64 ASP_사업자_SS
+        {
+            get { return _ASP_사업자_SS; }
+            set { _ASP_사업자_SS = value; }
+        }
+        private Int64 _ASP_사업자_소계;
+        public Int64 ASP_사업자_소계
+        {
+            get { return _ASP_사업자_소계; }
+            set { _ASP_사업자_소계 = value; }
+        }
+        private Int64 _ASP_총계;
+        public Int64 ASP_총계
+        {
+            get { return _ASP_총계; }
+            set { _ASP_총계 = value; }
+        }
+        private Int64 _Rebate;
+        public Int64 Rebate
+        {
+            get { return _Rebate; }
+            set { _Rebate = value; }
+        }
+
         public void setArrData_관리자데이터(string[] arrvalue)
         {
-            도매_수익_월평균관리수수료 = CommonUtil.StringToIntVal(arrvalue[0]);
-            도매_수익_CS관리수수료 = CommonUtil.StringToIntVal(arrvalue[1]);
-            도매_수익_사업자모델매입관련추가수익 = CommonUtil.StringToIntVal(arrvalue[2]);
-            도매_수익_유통모델매입관련추가수익_현금DC = CommonUtil.StringToIntVal(arrvalue[3]);
-            도매_수익_유통모델매입관련추가수익_VolumeDC = CommonUtil.StringToIntVal(arrvalue[4]);
-
-            도매_비용_대리점투자금액_신규 = CommonUtil.StringToIntVal(arrvalue[5]);
-            도매_비용_대리점투자금액_기변 = CommonUtil.StringToIntVal(arrvalue[6]);
-            도매_비용_직원급여_간부급 = CommonUtil.StringToIntVal(arrvalue[7]);
-            도매_비용_직원급여_평사원 = CommonUtil.StringToIntVal(arrvalue[8]);
-            도매_비용_지급임차료 = CommonUtil.StringToIntVal(arrvalue[9]);
-            도매_비용_운반비 = CommonUtil.StringToIntVal(arrvalue[10]);
-            도매_비용_차량유지비 = CommonUtil.StringToIntVal(arrvalue[11]);
-            도매_비용_지급수수료 = CommonUtil.StringToIntVal(arrvalue[12]);
-            도매_비용_판매촉진비 = CommonUtil.StringToIntVal(arrvalue[13]);
-            도매_비용_건물관리비 = CommonUtil.StringToIntVal(arrvalue[14]);
-
-            소매_수익_월평균업무취급수수료 = CommonUtil.StringToIntVal(arrvalue[15]);
-            소매_수익_직영매장판매수익 = CommonUtil.StringToIntVal(arrvalue[16]);
-
-            소매_비용_직원급여_간부급 = CommonUtil.StringToIntVal(arrvalue[17]);
-            소매_비용_직원급여_평사원 = CommonUtil.StringToIntVal(arrvalue[18]);
-            소매_비용_지급임차료 = CommonUtil.StringToIntVal(arrvalue[19]);
-            소매_비용_지급수수료 = CommonUtil.StringToIntVal(arrvalue[20]);
-            소매_비용_판매촉진비 = CommonUtil.StringToIntVal(arrvalue[21]);
-            소매_비용_건물관리비 = CommonUtil.StringToIntVal(arrvalue[22]);
-
-            도소매_비용_복리후생비 = CommonUtil.StringToIntVal(arrvalue[23]);
-            도소매_비용_통신비 = CommonUtil.StringToIntVal(arrvalue[24]);
-            도소매_비용_공과금 = CommonUtil.StringToIntVal(arrvalue[25]);
-            도소매_비용_소모품비 = CommonUtil.StringToIntVal(arrvalue[26]);
-            도소매_비용_이자비용 = CommonUtil.StringToIntVal(arrvalue[27]);
-            도소매_비용_부가세 = CommonUtil.StringToIntVal(arrvalue[28]);
-            도소매_비용_법인세 = CommonUtil.StringToIntVal(arrvalue[29]);
-            도소매_비용_기타 = CommonUtil.StringToIntVal(arrvalue[30]);
-
-            도매_수익_사업자모델매입관련추가수익_2000대미만 = CommonUtil.StringToIntVal(arrvalue[31]);
-            도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만 = CommonUtil.StringToIntVal(arrvalue[32]);
-            도소매_비용_법인세_2000대미만 = CommonUtil.StringToIntVal(arrvalue[33]);
+            int k = 0;
+            도매_수익_월평균관리수수료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_수익_CS관리수수료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_대리점투자금액_신규 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_대리점투자금액_기변 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_직원급여_간부급 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_직원급여_평사원 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_지급임차료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_운반비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_차량유지비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_지급수수료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_판매촉진비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도매_비용_건물관리비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_수익_월평균업무취급수수료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_수익_직영매장판매수익 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_직원급여_간부급 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_직원급여_평사원 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_지급임차료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_지급수수료 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_판매촉진비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            소매_비용_건물관리비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_복리후생비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_통신비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_공과금 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_소모품비 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_이자비용 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            도소매_비용_기타 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_유통_LG = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_유통_SS = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_유통_소계 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_사업자_LG = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_사업자_SS = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_사업자_소계 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            ASP_총계 = CommonUtil.StringToIntVal(arrvalue[k++]);
+            Rebate = CommonUtil.StringToIntVal(arrvalue[k++]);
         }
 
 

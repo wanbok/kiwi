@@ -29,6 +29,7 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            outOfFormUserAnalysis_Click(sender, e);
             if (this.panel1.Controls.Count > 0)
             {
                 if (this.panel1.Controls[0] is Form)
@@ -102,6 +103,7 @@ namespace KIWI
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
 
             if ((this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
             {
@@ -127,11 +129,6 @@ namespace KIWI
                     if (!Directory.Exists(CommonUtil.dataDirectory))
                     {
                         Directory.CreateDirectory(CommonUtil.dataDirectory);
-                    }
-
-                    if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")
-                    {
-                        (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
                     }
                     if ((this.panel1.Controls[0] as Form).Name == "FormUserInput" ||
                         (this.panel1.Controls[0] as Form).Name == "FormUserOutput" ||
@@ -166,8 +163,8 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            if (!outOfFormUserInput_Click(sender, e)) return;
             // 업데이트
+            outOfFormUserAnalysis_Click(sender, e);
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Update File|*.lgm";
             openFileDialog1.Title = "업데이트 파일을 선택하세요.";
@@ -201,6 +198,7 @@ namespace KIWI
         /// <param name="e"></param>
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
+            outOfFormUserAnalysis_Click(sender, e);
             FormUserInput frm = new FormUserInput();
             panelSet(frm);
         }
@@ -213,6 +211,7 @@ namespace KIWI
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
             FormUserOutput frm = new FormUserOutput();
             panelSet(frm);
         }
@@ -225,6 +224,7 @@ namespace KIWI
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
             FormUserAnalysis frm = new FormUserAnalysis();
             panelSet(frm);
         }
@@ -237,6 +237,7 @@ namespace KIWI
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
             FormUserSimulateOutput frm = new FormUserSimulateOutput();
             panelSet(frm);
         }
@@ -244,6 +245,7 @@ namespace KIWI
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
             new Printer();
         }
 
@@ -271,6 +273,20 @@ namespace KIWI
                 }
             }
             return true;
+        }
+
+        private void outOfFormUserAnalysis_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < this.panel1.Controls.Count; i++)
+            {
+                if (this.panel1.Controls[i] is Form)
+                {
+                    if (this.panel1.Controls[i].Name == "FormUserAnalysis")
+                    {
+                        (this.panel1.Controls[0] as FormUserAnalysis).saveComments();
+                    }
+                }
+            }
         }
 
         private void panelSet(Form form)
