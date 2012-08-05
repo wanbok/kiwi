@@ -43,7 +43,7 @@ namespace KIWI
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx|All File|*.*";
             openFileDialog1.Title = "Select a File";
-            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            openFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
             openFileDialog1.DefaultExt = "lge";
             openFileDialog1.AutoUpgradeEnabled = true;
             openFileDialog1.AddExtension = true;
@@ -116,7 +116,7 @@ namespace KIWI
                     SaveFileDialog saveFileDialog1 = new SaveFileDialog();
                     saveFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx";
                     saveFileDialog1.Title = "Select a File";
-                    saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+                    saveFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
                     saveFileDialog1.DefaultExt = "lge";
                     saveFileDialog1.AutoUpgradeEnabled = true;
                     saveFileDialog1.AddExtension = true;
@@ -124,9 +124,9 @@ namespace KIWI
                     saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
 
                     // If the directory doesn't exist, create it.
-                    if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
+                    if (!Directory.Exists(CommonUtil.dataDirectory))
                     {
-                        Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data");
+                        Directory.CreateDirectory(CommonUtil.dataDirectory);
                     }
 
                     if ((this.panel1.Controls[0] as Form).Name == "FormUserAnalysis")

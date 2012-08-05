@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 using excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Globalization;
 
 namespace KIWI
 {
@@ -40,11 +41,11 @@ namespace KIWI
             InitializeComponent();
 
             txtOut = new TextBox[64] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
-            txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut17, txtOut19, txtOut20,
+            txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut18, txtOut19, txtOut20,
             txtOut21, txtOut22, txtOut23, txtOut24, txtOut25, txtOut26, txtOut27, txtOut28, txtOut29, txtOut30,
             txtOut31, txtOut32, txtOut33, txtOut34, txtOut35, txtOut36, txtOut37, txtOut38, txtOut39, txtOut40,
             txtOut41, txtOut42, txtOut43, txtOut44, txtOut45, txtOut46, txtOut47, txtOut48, txtOut49, txtOut50,
-            txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut58, txtOut60,
+            txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut59, txtOut60,
             txtOut61, txtOut62, txtOut63, txtOut64
             };
 
@@ -59,20 +60,15 @@ namespace KIWI
                 picCompare6, picCompare7, picCompare8, picCompare9, picCompare10,
                 picCompare11, picCompare12, picCompare13, picCompare14, picCompare15, picCompare16};
 
-
-            CResultData BusinessData = CDataControl.g_ResultBusiness as CResultData;
-            CResultData StoreData = CDataControl.g_ResultStore as CResultData;
-            CResultData FutureData = CDataControl.g_ResultFuture as CResultData;
-
             setOut();
             setBaseData(CDataControl.g_BasicInput);
             setComments(CDataControl.g_ReportData);
             setCompare();
             setReferrence();
 
-
-            OpenChart(chart1, BusinessData, StoreData);
-            OpenChart(chart5, BusinessData, StoreData);
+            
+            OpenChart(chart1, CDataControl.g_ResultBusiness, CDataControl.g_ResultStore);
+            OpenChart(chart5, CDataControl.g_ResultBusiness, CDataControl.g_ResultStore);
         }
 
         private void setReferrence()
@@ -83,54 +79,21 @@ namespace KIWI
                 CDataControl.g_ResultStore == null) 
                 return;
 
-            long 가입자당ARPU = 0;
-            if(CDataControl.g_BasicInput.get누적가입자수_합계()==0)
-            {
-                가입자당ARPU = 0;
-            }
-            else
-            {
-                가입자당ARPU = CDataControl.g_ResultBusinessTotal.get도매_수익_가입자관리수수료()
-                                   / CDataControl.g_BasicInput.get누적가입자수_합계();
-            }
+            long 가입자당ARPU = CommonUtil.Division(CDataControl.g_ResultStoreTotal.get도매_수익_가입자관리수수료()
+                                   , CDataControl.g_BasicInput.get누적가입자수_합계());
 
-            long 월평균인건비 = 0;
-            if (CDataControl.g_ResultBusinessTotal.get전체_비용_인건비_급여_복리후생비()==0)
-            {
-                월평균인건비 = 0;                                
-            }
-            else
-            {
-                월평균인건비 = CDataControl.g_ResultBusiness.get전체_비용_인건비_급여_복리후생비() 
-                               /CDataControl.g_ResultBusinessTotal.get전체_비용_인건비_급여_복리후생비();
-            }
+            long 월평균인건비 = CommonUtil.Division((CDataControl.g_ResultStoreTotal.get전체_비용_인건비_급여_복리후생비() - CDataControl.g_DetailInput.get도소매_비용_복리후생비()), CDataControl.g_BasicInput.get직원수_소계_합계());
 
-            long 판촉비비중 = 0;
-            if(Convert.ToInt64(CDataControl.g_ResultBusinessTotal.전체_비용_소계)==0)
-            {
-                판촉비비중 = 0;
-            }
-            else
-            {            
-                판촉비비중 = Convert.ToInt64(CDataControl.g_ResultBusinessTotal.get전체_비용_기타판매관리비()) 
-                             / Convert.ToInt64(CDataControl.g_ResultBusinessTotal.전체_비용_소계);
-            }
+            Double 판촉비비중 = CommonUtil.Division(Convert.ToDouble(CDataControl.g_DetailInput.get도매_비용_판매촉진비() + CDataControl.g_DetailInput.get소매_비용_판매촉진비())
+                             , Convert.ToDouble(CDataControl.g_ResultStoreTotal.전체_비용_소계));
 
-            long 인당판매수량 = 0;
-            if(Convert.ToInt64(CDataControl.g_BasicInput.getstr도매_직원수_소계())==0)
-            {
-                인당판매수량 = 0;
-            }
-            else
-            {
-                인당판매수량 = (CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
+            long 인당판매수량 = CommonUtil.Division((CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
                                     + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
-                                    / CDataControl.g_BasicInput.get도매_직원수_소계();
-            }
+                                    , CDataControl.g_BasicInput.get도매_직원수_소계());
 
             textBox69.Text = 가입자당ARPU.ToString();
             textBox71.Text = 월평균인건비.ToString();
-            textBox72.Text = 판촉비비중.ToString();
+            textBox72.Text = 판촉비비중.ToString("P");
             textBox74.Text = 인당판매수량.ToString();
         }
 
@@ -241,101 +204,45 @@ namespace KIWI
                 xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
 
                 yValues = new double[6]{ 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_CS관리수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_사업자모델매입에따른추가수익()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume()), 
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_직영매장판매수익())
+                                         Convert.ToDouble(_bizResult.get전체_수익_가입자관리수수료()), 
+                                         Convert.ToDouble(_bizResult.get전체_수익_CS관리수수료()), 
+                                         Convert.ToDouble(_bizResult.get전체_수익_업무취급수수료()), 
+                                         Convert.ToDouble(_bizResult.get전체_수익_사업자모델매입에따른추가수익()), 
+                                         Convert.ToDouble(_bizResult.get전체_수익_유통모델매입에따른추가수익_현금_Volume()), 
+                                         Convert.ToDouble(_bizResult.get전체_수익_직영매장판매수익())
                                         };
 
-                yValues2 = new double[6]{ Convert.ToDouble(txtOut49.Text), Convert.ToDouble(txtOut50.Text), Convert.ToDouble(txtOut51.Text), 
-                            Convert.ToDouble(txtOut52.Text), Convert.ToDouble(txtOut53.Text), Convert.ToDouble(txtOut54.Text) };
-            }
-            else if (chart.Name == "chart2")
-            {
-                xValues = new string[4] { "A", "B", "C", "D" };
-
-                yValues = new double[4]{ 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_CS관리수수료()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_사업자모델매입에따른추가수익()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())
-                                        };
-
-                yValues2 = new double[4]{ 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_가입자관리수수료()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_CS관리수수료()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_사업자모델매입에따른추가수익()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())                                   
-                                        };
-            }
-            else if (chart.Name == "chart3")
-            {
-                xValues = new string[2] { "A", "B" };
-
-                yValues = new double[2]{ 
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()),
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_직영매장판매수익()),                                                   
-                                        };
-
-                yValues2 = new double[2]{ 
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_업무취급수수료()),
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())         
+                yValues2 = new double[6]{ 
+                                         Convert.ToDouble(_storeResult.get전체_수익_가입자관리수수료()), 
+                                         Convert.ToDouble(_storeResult.get전체_수익_CS관리수수료()), 
+                                         Convert.ToDouble(_storeResult.get전체_수익_업무취급수수료()), 
+                                         Convert.ToDouble(_storeResult.get전체_수익_사업자모델매입에따른추가수익()), 
+                                         Convert.ToDouble(_storeResult.get전체_수익_유통모델매입에따른추가수익_현금_Volume()), 
+                                         Convert.ToDouble(_storeResult.get전체_수익_직영매장판매수익())
                                         };
             }
             else if (chart.Name == "chart5")
             {
-                xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
+                xValues = new string[7] { "A", "B", "C", "D", "E", "F", "G" };
 
-                yValues = new double[6]{ 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_CS관리수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_사업자모델매입에따른추가수익()), 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume()),
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_직영매장판매수익()) 
+                yValues = new double[7]{ 
+                                         Convert.ToDouble(_bizResult.get전체_비용_대리점투자비용()), 
+                                         Convert.ToDouble(_bizResult.get전체_비용_인건비_급여_복리후생비()), 
+                                         Convert.ToDouble(_bizResult.get전체_비용_임차료()), 
+                                         Convert.ToDouble(_bizResult.get전체_비용_이자비용()), 
+                                         Convert.ToDouble(_bizResult.get전체_비용_부가세()),
+                                         Convert.ToDouble(_bizResult.get전체_비용_법인세()),
+                                         Convert.ToDouble(_bizResult.get전체_비용_기타판매관리비()) 
                                         };
 
-                yValues2 = new double[6]{ 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_가입자관리수수료()), 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_CS관리수수료()), 
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_업무취급수수료()), 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_사업자모델매입에따른추가수익()), 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume()), 
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())
-                                        };
-            }
-            else if (chart.Name == "chart6")
-            {
-                xValues = new string[4] { "A", "B", "C", "D" };
-
-                yValues = new double[4]{ 
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_가입자관리수수료()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_CS관리수수료()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_사업자모델매입에따른추가수익()),
-                                         Convert.ToDouble(_bizResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())
-                                        };
-
-                yValues2 = new double[4]{ 
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_가입자관리수수료()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_CS관리수수료()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_사업자모델매입에따른추가수익()),
-                                         Convert.ToDouble(_storeResult.getstr도매_수익_유통모델매입에따른추가수익_현금_Volume())                                               
-                                        };
-            }
-            else if (chart.Name == "chart7")
-            {
-                xValues = new string[2] { "A", "B" };
-
-                yValues = new double[2]{ 
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_업무취급수수료()),
-                                         Convert.ToDouble(_bizResult.getstr소매_수익_직영매장판매수익())
-                                        };
-
-                yValues2 = new double[2]{ 
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_업무취급수수료()),
-                                         Convert.ToDouble(_storeResult.getstr소매_수익_직영매장판매수익())
+                yValues2 = new double[7]{ 
+                                         Convert.ToDouble(_storeResult.get전체_비용_대리점투자비용()), 
+                                         Convert.ToDouble(_storeResult.get전체_비용_인건비_급여_복리후생비()), 
+                                         Convert.ToDouble(_storeResult.get전체_비용_임차료()), 
+                                         Convert.ToDouble(_storeResult.get전체_비용_이자비용()), 
+                                         Convert.ToDouble(_storeResult.get전체_비용_부가세()),
+                                         Convert.ToDouble(_storeResult.get전체_비용_법인세()),
+                                         Convert.ToDouble(_storeResult.get전체_비용_기타판매관리비()) 
                                         };
             }
             

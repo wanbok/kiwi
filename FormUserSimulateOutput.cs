@@ -537,7 +537,7 @@ namespace KIWI
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx";
             saveFileDialog1.Title = "시뮬레이션 파일 저장";
-            saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            saveFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
             saveFileDialog1.DefaultExt = "lge";
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
@@ -545,9 +545,9 @@ namespace KIWI
             saveFileDialog1.FileName = "시뮬레이션_"+CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
 
             // If the directory doesn't exist, create it.
-            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
+            if (!Directory.Exists(CommonUtil.dataDirectory))
             {
-                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data");
+                Directory.CreateDirectory(CommonUtil.dataDirectory);
             }
 
             saveFileDialog1.ShowDialog();

@@ -23,10 +23,12 @@ namespace KIWI
         private static excel.Workbook workBookForSimul = null;
         public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "files\\default.xlsx";
         //public static string openAsName = null;
+        public static string dataDirectory = AppDomain.CurrentDomain.BaseDirectory + "data\\";
+        public static string 업계평균Directory = AppDomain.CurrentDomain.BaseDirectory + "업계평균\\";
         public static string saveAsSimulName = null;
         public static string saveAsName = null;
         public static string defaultManagerFileName = AppDomain.CurrentDomain.BaseDirectory + "files\\manager.lgm";
-        public static string datedManagerFileName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data\\업계평균_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".lgm";
+        public static string datedManagerFileName = "업계평균_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".lgm";
 
         /// <summary>
         /// 
@@ -304,17 +306,17 @@ namespace KIWI
                 string csv = System.IO.File.ReadAllText(defaultManagerFileName);
                 csv = CommonUtil.Base64Decode(csv);
                 string[] splitedCsv = csv.Split(',');
-                CDataControl.g_BusinessAvg.setArrData_DetailInput(splitedCsv);
+                CDataControl.g_BusinessAvg.setArrData_관리자데이터(splitedCsv);
             }
             catch (Exception ex)
             {
-                String[] txtWrite2 = new String[31];
+                String[] txtWrite2 = new String[34];
                 // 파일이 없음
                 for (int i = 0; i < txtWrite2.Length; i++)
                 {
                     txtWrite2[i] = 0.ToString();
                 }
-                CDataControl.g_BusinessAvg.setArrData_DetailInput(txtWrite2);
+                CDataControl.g_BusinessAvg.setArrData_관리자데이터(txtWrite2);
             }
         }
 
@@ -1395,8 +1397,16 @@ namespace KIWI
             //              수익
             rdt.set도매_수익_가입자관리수수료(di.get도매_수익_월평균관리수수료() * bi.get도매_누적가입자수());
             rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료() * bi.get도매_누적가입자수());
-            rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익() * (bi.get월평균판매대수_소계_합계() - bi.get월평균유통모델출고대수_소계_합계()));
-            rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume((di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC()) * bi.get월평균유통모델출고대수_소계_합계());
+            rdt.set도매_수익_사업자모델매입에따른추가수익(
+                (bi.get월평균판매대수_신규_합계() >= 2000 ? di.get도매_수익_사업자모델매입관련추가수익() : di.도매_수익_사업자모델매입관련추가수익_2000대미만) * // 판매량이 2000대 이상일때는 asp의 1%, 미만일때는 asp의 0.5%
+                (bi.get월평균판매대수_소계_합계() - bi.get월평균유통모델출고대수_소계_합계())
+            );
+            rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume(
+                (
+                    di.get도매_수익_유통모델매입관련추가수익_현금DC() + 
+                    (bi.get월평균판매대수_신규_합계() >= 2000 ? di.get도매_수익_유통모델매입관련추가수익_VolumeDC() : di.도매_수익_유통모델매입관련추가수익_VolumeDC_2000대미만)
+                ) * bi.get월평균유통모델출고대수_소계_합계()
+            );
             rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
             //              비용
             rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
@@ -1404,7 +1414,7 @@ namespace KIWI
             rdt.set도매_비용_임차료(di.get도매_비용_지급임차료() * bi.get도매_거래선수_개통사무실());
             rdt.set도매_비용_이자비용(di.get도소매_비용_이자비용() * bi.get도매_월평균판매대수_소계());
             rdt.set도매_비용_부가세(di.get도소매_비용_부가세() * bi.get도매_월평균판매대수_소계());
-            rdt.set도매_비용_법인세(di.get도소매_비용_법인세() * bi.get도매_월평균판매대수_소계());
+            rdt.set도매_비용_법인세((bi.get월평균판매대수_신규_합계() >= 2000 ? di.get도소매_비용_법인세() : di.도소매_비용_법인세_2000대미만) * bi.get도매_월평균판매대수_소계());
             // '# Detail3. 업계평균vs.해당대리점'!K10+'# Detail3. 업계평균vs.해당대리점'!K11+'# Detail3. 업계평균vs.해당대리점'!K13+'# Detail3. 업계평균vs.해당대리점'!K14+'# Detail3. 업계평균vs.해당대리점'!K15+'# Detail3. 업계평균vs.해당대리점'!K16+'# Detail3. 업계평균vs.해당대리점'!K17+'# Detail3. 업계평균vs.해당대리점'!K18+'# Detail3. 업계평균vs.해당대리점'!K20
             rdt.set도매_비용_기타판매관리비((di.get도매_비용_운반비() + di.get도매_비용_지급수수료() + di.get도매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get도매_월평균판매대수_소계()
                                         + (di.get도매_비용_건물관리비()) * bi.get도매_거래선수_개통사무실()
@@ -1439,7 +1449,7 @@ namespace KIWI
             rdt.set소매_비용_임차료(di.get소매_비용_지급임차료() * bi.get소매_거래선수_소계());
             rdt.set소매_비용_이자비용(di.get도소매_비용_이자비용() * bi.get소매_월평균판매대수_소계());
             rdt.set소매_비용_부가세(di.get도소매_비용_부가세() * bi.get소매_월평균판매대수_소계());
-            rdt.set소매_비용_법인세(di.get도소매_비용_법인세() * bi.get소매_월평균판매대수_소계());
+            rdt.set소매_비용_법인세((bi.get월평균판매대수_신규_합계() >= 2000 ? di.get도소매_비용_법인세() : di.도소매_비용_법인세_2000대미만) * bi.get소매_월평균판매대수_소계());
             // '# Detail3. 업계평균vs.해당대리점'!L10+'# Detail3. 업계평균vs.해당대리점'!L11+'# Detail3. 업계평균vs.해당대리점'!L13+'# Detail3. 업계평균vs.해당대리점'!L14+'# Detail3. 업계평균vs.해당대리점'!L15+'# Detail3. 업계평균vs.해당대리점'!L16+'# Detail3. 업계평균vs.해당대리점'!L17+'# Detail3. 업계평균vs.해당대리점'!L18+'# Detail3. 업계평균vs.해당대리점'!L20
             rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료() + di.get소매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get소매_월평균판매대수_소계()
                                         + (di.get소매_비용_건물관리비()) * bi.get소매_거래선수_소계()

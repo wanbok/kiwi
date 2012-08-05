@@ -300,8 +300,8 @@
             this.label166 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
             this.panel155 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -1594,7 +1594,6 @@
             this.textBox72.TabIndex = 759;
             this.textBox72.Text = "0";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox72.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // textBox71
             // 
@@ -2745,7 +2744,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 16);
             this.label12.TabIndex = 673;
-            this.label12.Text = "기타 판매관리비[F]";
+            this.label12.Text = "기타 판매관리비[G]";
             // 
             // label52
             // 
@@ -3308,14 +3307,6 @@
             this.panel155.Size = new System.Drawing.Size(750, 28);
             this.panel155.TabIndex = 827;
             // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel16.Location = new System.Drawing.Point(54, 243);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(705, 28);
-            this.panel16.TabIndex = 828;
-            // 
             // panel77
             // 
             this.panel77.BackColor = System.Drawing.Color.LemonChiffon;
@@ -3324,11 +3315,19 @@
             this.panel77.Size = new System.Drawing.Size(703, 28);
             this.panel77.TabIndex = 829;
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel16.Location = new System.Drawing.Point(54, 243);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(705, 28);
+            this.panel16.TabIndex = 828;
+            // 
             // FormUserAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 1100);
+            this.ClientSize = new System.Drawing.Size(1267, 1062);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserAnalysis";

@@ -20,16 +20,16 @@ namespace KIWI
         private CAdminDataController adminDC = null;
         private ListViewColumnSorter lvwColumnSorter = null;
 
-        private TextBox[] txtOut = null;        //기존 업계평균
-        private TextBox[] txtIAOut = null;      // 업계평균
+        private TextBox[] txt기존업계평균 = null;        //기존 업계평균
+        private TextBox[] txt업계평균 = null;      // 업계평균
         private TextBox[] txtInput = null;      //보정 계수
         private TextBox[] txtAOut = null;       //보정 계수 업계평균
 
         private TextBox[] txtExistedAsp = null;        //기존 ASP
         private TextBox[] txtInputAsp = null;        //ASP 입력창
 
-        private Int64[] nOut = null;
-        private Int64[] nIAOut = null;
+        private Int64[] 기존업계평균 = null;
+        private Int64[] 업계평균 = null;
         private Int64[] nInput = null;
         private Int64[] nAOut = null;
 
@@ -40,38 +40,41 @@ namespace KIWI
             lvwColumnSorter = new ListViewColumnSorter();
             this.listView1.ListViewItemSorter = lvwColumnSorter;
 
-            txtOut = new TextBox[31] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
+            txt기존업계평균 = new TextBox[34] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
             txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut18, txtOut19, txtOut20,
             txtOut21, txtOut22, txtOut23, txtOut24, txtOut25, txtOut26, txtOut27, txtOut28, txtOut29, txtOut30,
-            txtOut31
+            txtOut31, txtOutLower1, txtOutLower2, txtOutLower3
+            };
+
+            txt업계평균 = new TextBox[34] { txtOut32, txtOut33, txtOut34, txtOut35, txtOut36, txtOut37, txtOut38, txtOut39, txtOut40,
+            txtOut41, txtOut42, txtOut43, txtOut44, txtOut45, txtOut46, txtOut47, txtOut48, txtOut49, txtOut50,
+            txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut59, txtOut60,
+            txtOut61, txtOut62, txtOutLower4, txtOutLower5, txtOutLower6
+            };
+
+            txtInput = new TextBox[34] { 
+                txtInput1, txtInput2, txtInput3, txtInput4, txtInput5, txtInput6, txtInput7, txtInput8, txtInput9, txtInput10,
+                txtInput11, txtInput12, txtInput13, txtInput14, txtInput15, txtInput16, txtInput17, txtInput18, txtInput19, txtInput20,
+                txtInput21, txtInput22, txtInput23, txtInput24, txtInput25, txtInput26, txtInput27, txtInput28, txtInput29, txtInput30,
+                txtInput31, txtInputLower1, txtInputLower2, txtInputLower3
+            };
+
+            txtAOut = new TextBox[34] { txtAOut1, txtAOut2, txtAOut3, txtAOut4, txtAOut5, txtAOut6, txtAOut7, txtAOut8, txtAOut9, txtAOut10,
+            txtAOut11, txtAOut12, txtAOut13, txtAOut14, txtAOut15, txtAOut16, txtAOut17, txtAOut18, txtAOut19, txtAOut20,
+            txtAOut21, txtAOut22, txtAOut23, txtAOut24, txtAOut25, txtAOut26, txtAOut27, txtAOut28, txtAOut29, txtAOut30,
+            txtAOut31, txtAOutLower1, txtAOutLower2, txtAOutLower3
             };
 
             txtExistedAsp = new TextBox[8] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8 };
 
             txtInputAsp = new TextBox[8] { 유통모델_LG, 유통모델_SS, 유통모델_소계, 사업자모델_LG, 사업자모델_SS, 사업자모델_소계, ASP_전체계, 리베이트 };
 
-            txtIAOut = new TextBox[31] { txtOut32, txtOut33, txtOut34, txtOut35, txtOut36, txtOut37, txtOut38, txtOut39, txtOut40,
-            txtOut41, txtOut42, txtOut43, txtOut44, txtOut45, txtOut46, txtOut47, txtOut48, txtOut49, txtOut50,
-            txtOut51, txtOut52, txtOut53, txtOut54, txtOut55, txtOut56, txtOut57, txtOut58, txtOut59, txtOut60,
-            txtOut61, txtOut62 
-            };
 
-            txtInput = new TextBox[31] { txtInput1, txtInput2, txtInput3, txtInput4, txtInput5, txtInput6, txtInput7, txtInput8, txtInput9, txtInput10,
-            txtInput11, txtInput12, txtInput13, txtInput14, txtInput15, txtInput16, txtInput17, txtInput18, txtInput19, txtInput20,
-            txtInput21, txtInput22, txtInput23, txtInput24, txtInput25, txtInput26, txtInput27, txtInput28, txtInput29, txtInput30,
-            txtInput31
-            };
 
-            txtAOut = new TextBox[31] { txtAOut1, txtAOut2, txtAOut3, txtAOut4, txtAOut5, txtAOut6, txtAOut7, txtAOut8, txtAOut9, txtAOut10,
-            txtAOut11, txtAOut12, txtAOut13, txtAOut14, txtAOut15, txtAOut16, txtAOut17, txtAOut18, txtAOut19, txtAOut20,
-            txtAOut21, txtAOut22, txtAOut23, txtAOut24, txtAOut25, txtAOut26, txtAOut27, txtAOut28, txtAOut29, txtAOut30,
-            txtAOut31
-            };
-
-            nOut = new Int64[31];
-            nIAOut = new Int64[31];
-            nInput = new Int64[31];
-            nAOut = new Int64[31];
+            기존업계평균 = new Int64[34];
+            업계평균 = new Int64[34];
+            nInput = new Int64[34];
+            nAOut = new Int64[34];
 
             readFileOfExistedAverage();
 
@@ -90,7 +93,7 @@ namespace KIWI
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx|All File|*.*";
             openFileDialog1.Title = "Select a File";
-            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            openFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
             openFileDialog1.DefaultExt = "lge";
             openFileDialog1.AutoUpgradeEnabled = true;
             openFileDialog1.AddExtension = true;
@@ -178,92 +181,193 @@ namespace KIWI
                 listView1.Items.Add(item);
             }
 
-            for (int i = 0; i < nIAOut.Length; i++)
+            for (int i = 0; i < 업계평균.Length; i++)
             {
-                nIAOut[i] = 0;
+                업계평균[i] = 0;
             }
 
             int 분모 = 0;
+            Int64 사업자모델_SS_Int64 = Convert.ToInt64(사업자모델_SS.Text.Replace(",", ""));
+            Int64 사업자모델_LG_Int64 = Convert.ToInt64(사업자모델_LG.Text.Replace(",", ""));
             for (int i = 0; i < adminDC.getDataLength(); i++)
             {
                 adminDC.GetData(i, out key, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
 
                 if (선택여부 == "N") continue;
                 분모++;
+
                 int k = 0;
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_수익_월평균관리수수료(), mBI.get누적가입자수_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_수익_CS관리수수료(), mBI.get누적가입자수_합계());
 
-                nIAOut[k++] += mDI.get도매_수익_월평균관리수수료() / mBI.get누적가입자수_합계();
-                nIAOut[k++] += mDI.get도매_수익_CS관리수수료() / mBI.get누적가입자수_합계();
+                Int64 사업자모델매입추가수익단위금액2000대이상 = Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.01);
+                Int64 사업자모델매입추가수익단위금액2000대미만 = Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.005);
+                업계평균[k++] += 사업자모델매입추가수익단위금액2000대이상;
 
-                Int64 사업자모델매입추가수익단위금액 = 0;
-                Int64 유통모델매입추가수익현금단위금액 = 0;
-                Int64 유통모델매입추가수익볼륨단위금액 = 0;
-                try { 사업자모델매입추가수익단위금액 = mBI.get월평균판매대수_소계_합계() > 2000 ? Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.01) : Convert.ToInt64(Convert.ToDouble(사업자모델_소계.Text) * 0.005) ; }
-                catch (Exception e) { }
-                finally { nIAOut[k++] += 사업자모델매입추가수익단위금액; }
+                Int64 유통모델매입추가수익현금단위금액 = Convert.ToInt64(CommonUtil.Division((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS_Int64) * 0.006 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG_Int64) * 0.008), mBI.get월평균유통모델출고대수_소계_합계()));
+                업계평균[k++] += 유통모델매입추가수익현금단위금액;
 
-                try { 유통모델매입추가수익현금단위금액 = Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.006 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.008) / mBI.get월평균유통모델출고대수_소계_합계()); }
-                catch (Exception e) { }
-                finally { nIAOut[k++] += 유통모델매입추가수익현금단위금액; }
+                Int64 유통모델매입추가수익볼륨단위금액2000대이상 = Convert.ToInt64(CommonUtil.Division((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS_Int64) * 0.022 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG_Int64) * 0.03), mBI.get월평균유통모델출고대수_소계_합계()));
+                Int64 유통모델매입추가수익볼륨단위금액2000대미만 = Convert.ToInt64(CommonUtil.Division((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS_Int64) * 0.01 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG_Int64) * 0.015), mBI.get월평균유통모델출고대수_소계_합계()));
+                업계평균[k++] += 유통모델매입추가수익볼륨단위금액2000대이상;
 
-                try { 유통모델매입추가수익볼륨단위금액 = mBI.get월평균판매대수_소계_합계() > 2000 ? 
-                    Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.022 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.03) / mBI.get월평균유통모델출고대수_소계_합계()):
-                    Convert.ToInt64((mBI.get월평균유통모델출고대수_SS_합계() * Convert.ToInt64(사업자모델_SS.Text) * 0.01 + mBI.get월평균유통모델출고대수_LG_합계() * Convert.ToInt64(사업자모델_LG.Text) * 0.015) / mBI.get월평균유통모델출고대수_소계_합계()); }
-                catch (Exception e) { }
-                finally { nIAOut[k++] += 유통모델매입추가수익볼륨단위금액; }
+                //nIAOut[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_신규() , mBI.get도매_월평균판매대수_신규());
+                업계평균[k++] += mDI.get도매_비용_대리점투자금액_신규();// 이미 단위금액임;
+                //nIAOut[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_기변() , mBI.get도매_월평균판매대수_기변());
+                업계평균[k++] += mDI.get도매_비용_대리점투자금액_기변();// 이미 단위금액임;
+                업계평균[k++] += mDI.get도매_비용_직원급여_간부급(); // 단위금액
+                업계평균[k++] += mDI.get도매_비용_직원급여_평사원(); // 단위금액
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_지급임차료(), mBI.get도매_거래선수_개통사무실());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_운반비(), mBI.get도매_월평균판매대수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_차량유지비(), mBI.get도매_직원수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_지급수수료(), mBI.get도매_월평균판매대수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_판매촉진비(), mBI.get도매_월평균판매대수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_건물관리비(), mBI.get도매_거래선수_개통사무실());
 
-                //nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규() / mBI.get도매_월평균판매대수_신규();
-                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_신규();// 이미 단위금액임;
-                //nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변() / mBI.get도매_월평균판매대수_기변();
-                nIAOut[k++] += mDI.get도매_비용_대리점투자금액_기변();// 이미 단위금액임;
-                nIAOut[k++] += mDI.get도매_비용_직원급여_간부급(); // 단위금액
-                nIAOut[k++] += mDI.get도매_비용_직원급여_평사원(); // 단위금액
-                nIAOut[k++] += mDI.get도매_비용_지급임차료() / mBI.get도매_거래선수_개통사무실();
-                nIAOut[k++] += mDI.get도매_비용_운반비() / mBI.get도매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get도매_비용_차량유지비() / mBI.get도매_직원수_소계();
-                nIAOut[k++] += mDI.get도매_비용_지급수수료() / mBI.get도매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get도매_비용_판매촉진비() / mBI.get도매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get도매_비용_건물관리비() / mBI.get도매_거래선수_개통사무실();
-                
-                nIAOut[k++] += mDI.get소매_수익_월평균업무취급수수료() / mBI.get월평균판매대수_소계_합계();
-                nIAOut[k++] += mDI.get소매_수익_직영매장판매수익() / mBI.get소매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get소매_비용_직원급여_간부급(); // 단위금액
-                nIAOut[k++] += mDI.get소매_비용_직원급여_평사원(); // 단위금액
-                nIAOut[k++] += mDI.get소매_비용_지급임차료() / mBI.get소매_거래선수_소계();
-                nIAOut[k++] += mDI.get소매_비용_지급수수료() / mBI.get소매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get소매_비용_판매촉진비() / mBI.get소매_월평균판매대수_소계();
-                nIAOut[k++] += mDI.get소매_비용_건물관리비() / mBI.get소매_거래선수_소계();
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_수익_월평균업무취급수수료(), mBI.get월평균판매대수_소계_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_수익_직영매장판매수익(), mBI.get소매_월평균판매대수_소계());
+                업계평균[k++] += mDI.get소매_비용_직원급여_간부급(); // 단위금액
+                업계평균[k++] += mDI.get소매_비용_직원급여_평사원(); // 단위금액
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_비용_지급임차료(), mBI.get소매_거래선수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_비용_지급수수료(), mBI.get소매_월평균판매대수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_비용_판매촉진비(), mBI.get소매_월평균판매대수_소계());
+                업계평균[k++] += CommonUtil.Division(mDI.get소매_비용_건물관리비(), mBI.get소매_거래선수_소계());
 
-                nIAOut[k++] += mDI.get도소매_비용_복리후생비() / mBI.get직원수_소계_합계();
-                nIAOut[k++] += mDI.get도소매_비용_통신비() / mBI.get직원수_소계_합계();
-                nIAOut[k++] += mDI.get도소매_비용_공과금() / mBI.get직원수_소계_합계();
-                nIAOut[k++] += mDI.get도소매_비용_소모품비() / mBI.get월평균판매대수_소계_합계();
-                //nIAOut[k++] += mDI.get도소매_비용_이자비용() / mBI.get월평균판매대수_소계_합계();
-                nIAOut[k++] += mDI.get도소매_비용_이자비용();// 이미 평균금액이라 단위금액으로 판단
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_복리후생비(), mBI.get직원수_소계_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_통신비(), mBI.get직원수_소계_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_공과금(), mBI.get직원수_소계_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_소모품비(), mBI.get월평균판매대수_소계_합계());
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_이자비용(), mBI.get월평균판매대수_소계_합계());
+                //nIAOut[k++] += mDI.get도소매_비용_이자비용();// 이미 평균금액이라 단위금액으로 판단
+
+                /* 부가세 및 법인세 단위금액의 수식
+                    *  (
+                    *      (
+                    *          (
+                    *              월평균관리수수료 * 누적가입자수+
+                    *              (
+                    *                  (
+                    *                      ASP전체계-리베이트
+                    *                  )
+                    *                  *소매_월평균판매대수_계
+                    *              )
+                    *              +
+                    *              월단위취급수수료(단위금액) * 전체_월평균판매대수_계+직영매장수익(단위금액) * 소매_월평균판매대수_계+리베이트*도매_월평균판매대수_계+
+                    *              (
+                    *                  (
+                    *                      ASP전체계-리베이트
+                    *                  )
+                    *                  *전체_월평균판매대수_계
+                    *              )
+                    *              -
+                    *              (
+                    *                  전체_월평균판매대수_계*ASP전체계
+                    *              )
+                    *          )
+                    *          *10%
+                    *      )
+                    *      +
+                    *      (
+                    *          SUM(
+                    *              월평균관리수수료 * 누적가입자수,
+                    *              사업자모델매입관련추가수익(단위금액) * (전체_월평균판매대수_계 - 전체_월평균유통모델출고대수_계),
+                    *              유통모델매입관련추가수익(현금DC)(단위금액) * 전체_월평균유통모델출고대수_계,
+                    *              유통모델매입관련추가수익(VolumeDC)(단위금액) * 전체_월평균유통모델출고대수_계,
+                    *              월단위취급수수료(단위금액) * 전체_월평균판매대수_계,
+                    *              직영매장수익(단위금액) * 소매_월평균판매대수_계
+                    *          )
+                    *          -
+                    *          SUM(
+                    *              '# Detail1. 업계평균(도매Sim)'!F20,
+                    *              '# Detail1. 업계평균(도매Sim)'!F21,
+                    *              '# Detail1. 업계평균(도매Sim)'!F22,
+                    *              '# Detail1. 업계평균(도매Sim)'!F23,
+                    *              '# Detail1. 업계평균(도매Sim)'!F24,
+                    *              '# Detail1. 업계평균(도매Sim)'!F25,
+                    *              '# Detail1. 업계평균(도매Sim)'!F26,
+                    *              '# Detail1. 업계평균(도매Sim)'!F27,
+                    *              '# Detail1. 업계평균(도매Sim)'!F28,
+                    *              '# Detail1. 업계평균(도매Sim)'!F29,
+                    *              '# Detail1. 업계평균(도매Sim)'!F30,
+                    *              '# Detail1. 업계평균(도매Sim)'!F31,
+                    *              '# Detail1. 업계평균(도매Sim)'!F32,
+                    *              '# Detail1. 업계평균(도매Sim)'!F33,
+                    *              '# Detail2. 업계평균(소매Sim)'!F18,
+                    *              '# Detail2. 업계평균(소매Sim)'!F19,
+                    *              '# Detail2. 업계평균(소매Sim)'!F20,
+                    *              '# Detail2. 업계평균(소매Sim)'!F21,
+                    *              '# Detail2. 업계평균(소매Sim)'!F22,
+                    *              '# Detail2. 업계평균(소매Sim)'!F23,
+                    *              '# Detail2. 업계평균(소매Sim)'!F24,
+                    *              '# Detail2. 업계평균(소매Sim)'!F25,
+                    *              '# Detail2. 업계평균(소매Sim)'!F26,
+                    *              '# Detail2. 업계평균(소매Sim)'!F27,
+                    *              '# Detail2. 업계평균(소매Sim)'!F28
+                    *          )
+                    *          -
+                    *          (
+                    *              (
+                    *                  월평균관리수수료 * 누적가입자수+
+                    *                  (
+                    *                      (
+                    *                          ASP전체계-리베이트
+                    *                      )
+                    *                      *
+                    *                      소매_월평균판매대수_계
+                    *                  )
+                    *                  +
+                    *                  월단위취급수수료(단위금액) * 전체_월평균판매대수_계+직영매장수익(단위금액) * 소매_월평균판매대수_계+리베이트*도매_월평균판매대수_계
+                    *                  +
+                    *                  (
+                    *                      (
+                    *                          ASP전체계-리베이트
+                    *                      )
+                    *                      *
+                    *                      전체_월평균판매대수_계
+                    *                  )
+                    *                  -
+                    *                  (
+                    *                      전체_월평균판매대수_계*ASP전체계
+                    *                  )
+                    *              )
+                    *              *
+                    *              10%
+                    *          )
+                    *      )
+                    *      *
+                    *      22%
+                    *  )
+                    *  /
+                    *  전체_월평균판매대수_계
+                    */
+
                 // 부가세
                 /*  (
-                 *      (
-                 *          (
-                 *              월평균관리수수료+
-                 *              (
-                 *                  (ASP전체계-리베이트)*소매월평균판매대수
-                 *              )+소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
-                 *              (
-                 *                  (리베이트-리베이트)*전체월평균판매대수
-                 *              )-(전체월평균판매대수*ASP전체계)
-                 *          )*10%
-                 *      )
-                 *  )/전체월평균판매대수
-                 */
-                //nIAOut[k++] += mDI.get도소매_비용_부가세() / mBI.get월평균판매대수_소계_합계();
+                    *      (
+                    *          (
+                    *              월평균관리수수료 * 누적가입자수+
+                    *              (
+                    *                  (ASP전체계-리베이트)*소매월평균판매대수
+                    *              )
+                    *              +소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
+                    *              (
+                    *                  (ASP전체계-리베이트)*전체월평균판매대수
+                    *              )
+                    *              -(전체월평균판매대수*ASP전체계)
+                    *          )*10%
+                    *      )
+                    *  )/전체월평균판매대수
+                    */
+
+                //nIAOut[k++] += CommonUtil.Division(mDI.get도소매_비용_부가세() , mBI.get월평균판매대수_소계_합계());
                 Int64 int64asp전체계 = 0;
                 Int64 int64리베이트 = 0;
                 Int64 부가세 = 0;
                 try
                 {
-                    int64asp전체계 = Convert.ToInt64(ASP_전체계.Text);
-                    int64리베이트 = Convert.ToInt64(리베이트.Text);
-                    부가세 = Convert.ToInt64(
+                    int64asp전체계 = Convert.ToInt64(ASP_전체계.Text.Replace(",", ""));
+                    int64리베이트 = Convert.ToInt64(리베이트.Text.Replace(",", ""));
+                    부가세 = Convert.ToInt64(CommonUtil.Division(
                         (
                             (
                                 mDI.get도매_수익_월평균관리수수료() +
@@ -277,58 +381,62 @@ namespace KIWI
                                     mBI.get월평균판매대수_소계_합계() * int64asp전체계
                                 )
                             ) * 0.1
-                        ) / mBI.get월평균판매대수_소계_합계());
+                        ), mBI.get월평균판매대수_소계_합계()));
                 }
                 catch (Exception e) { 부가세 = 0; }
-                finally { nIAOut[k++] += 부가세; }
+                finally { 업계평균[k++] += 부가세; }
 
                 // 법인세
                 /*  (
-                 *      (
-                 *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
-                 *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)-
-                 *          (
-                 *              (
-                 *                  월평균관리수수료+
-                 *                  (
-                 *                      (ASP전체계-리베이트)*소매월평균판매대수
-                 *                  )+소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
-                 *                  (
-                 *                      (ASP전체계-리베이트)*전체월평균판매대수
-                 *                  )-(전체월평균판매대수*ASP전체계)
-                 *              )*10%
-                 *          )
-                 *      )*22%
-                 *  )/전체월평균판매대수
-                 *  
-                 * 즉, 다음과 같이 변형가능
-                 *  (
-                 *      (
-                 *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
-                 *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)
-                 *      )*22%
-                 *  )/전체월평균판매대수 - 부가세*22%
-                 */
+                    *      (
+                    *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
+                    *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)-
+                    *          (
+                    *              (
+                    *                  월평균관리수수료+
+                    *                  (
+                    *                      (ASP전체계-리베이트)*소매월평균판매대수
+                    *                  )+소매월단위취급수수료+소매직영매장수익+리베이트*도매월평균판매대수+
+                    *                  (
+                    *                      (ASP전체계-리베이트)*전체월평균판매대수
+                    *                  )-(전체월평균판매대수*ASP전체계)
+                    *              )*10%
+                    *          )
+                    *      )*22%
+                    *  )/전체월평균판매대수
+                    *  
+                    * 즉, 다음과 같이 변형가능
+                    *  (
+                    *      (
+                    *          SUM(월평균관리수수료,사업자모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(현금d/c),유통모델매입관련추가수익(볼륨d/c),소매월단위취급수수료,소매직영매장수익)-
+                    *          SUM(도매대리점투자금액총액,도매직원급여,도매복리후생비,도매통신비,도매세금과공과금,도매지급임차료,도매운반비,도매소모품비,도매지급수수료,도매판매촉진비,도매건물관리비,도매이자비용,도매차량유지비,도매기타비용,소매직원급여,소매복리후생비,소매통신비,소매세금과공과금,소매지급임차료,소매소모품비,소매지급수수료,소매판매촉진비,소매건물관리비,소매이자비용,소매기타)
+                    *      )*22%
+                    *  )/전체월평균판매대수 - 부가세*22%
+                    */
 
                 Int64 수익합계 = 0;
                 Int64 비용합계 = 0;
                 Int64 법인세 = 0;
-                try
-                {
-                    수익합계 = mDI.get도매_수익_월평균관리수수료() + 사업자모델매입추가수익단위금액 * (mBI.get월평균판매대수_소계_합계() - mBI.get월평균유통모델출고대수_소계_합계()) + 유통모델매입추가수익현금단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + 유통모델매입추가수익볼륨단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + mDI.get소매_수익_월평균업무취급수수료() + mDI.get소매_수익_직영매장판매수익();
-                    비용합계 = mDI.get도매_비용_대리점투자금액_기변()+mDI.get도매_비용_대리점투자금액_신규()+mDI.get도매_비용_직원급여_간부급_총액(mBI.get도매_직원수_간부급()) + mDI.get도매_비용_직원급여_평사원_총액(mBI.get도매_직원수_평사원())+mDI.get도소매_비용_복리후생비()/*소매포함*/+mDI.get도소매_비용_통신비()/*소매포함*/+mDI.get도소매_비용_공과금()/*소매포함*/+mDI.get도매_비용_지급임차료()+mDI.get도매_비용_운반비()+mDI.get도소매_비용_소모품비()+mDI.get도매_비용_지급수수료()+mDI.get도매_비용_판매촉진비()+mDI.get도매_비용_건물관리비()+mDI.get도소매_비용_이자비용()+mDI.get도매_비용_차량유지비()+mDI.get도소매_비용_기타()+mDI.get소매_비용_직원급여_간부급_총액(mBI.get소매_직원수_간부급())+mDI.get소매_비용_직원급여_평사원_총액(mBI.get소매_직원수_평사원())+mDI.get소매_비용_지급임차료()+mDI.get소매_비용_지급수수료()+mDI.get소매_비용_판매촉진비()+mDI.get소매_비용_건물관리비();
-                    법인세 = Convert.ToInt64(((수익합계 - 비용합계) * 0.22) / mBI.get월평균판매대수_소계_합계() - 부가세 * 0.22);
-                }
-                catch (Exception e) { 법인세 = 0; }
-                finally { nIAOut[k++] += 법인세; }
+                수익합계 = mDI.get도매_수익_월평균관리수수료() + 사업자모델매입추가수익단위금액2000대이상 * (mBI.get월평균판매대수_소계_합계() - mBI.get월평균유통모델출고대수_소계_합계()) + 유통모델매입추가수익현금단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + 유통모델매입추가수익볼륨단위금액2000대이상 * mBI.get월평균유통모델출고대수_소계_합계() + mDI.get소매_수익_월평균업무취급수수료() + mDI.get소매_수익_직영매장판매수익();
+                비용합계 = mDI.get도매_비용_대리점투자금액_기변() + mDI.get도매_비용_대리점투자금액_신규() + mDI.get도매_비용_직원급여_간부급_총액(mBI.get도매_직원수_간부급()) + mDI.get도매_비용_직원급여_평사원_총액(mBI.get도매_직원수_평사원()) + mDI.get도소매_비용_복리후생비()/*소매포함*/+ mDI.get도소매_비용_통신비()/*소매포함*/+ mDI.get도소매_비용_공과금()/*소매포함*/+ mDI.get도매_비용_지급임차료() + mDI.get도매_비용_운반비() + mDI.get도소매_비용_소모품비() + mDI.get도매_비용_지급수수료() + mDI.get도매_비용_판매촉진비() + mDI.get도매_비용_건물관리비() + mDI.get도소매_비용_이자비용() + mDI.get도매_비용_차량유지비() + mDI.get도소매_비용_기타() + mDI.get소매_비용_직원급여_간부급_총액(mBI.get소매_직원수_간부급()) + mDI.get소매_비용_직원급여_평사원_총액(mBI.get소매_직원수_평사원()) + mDI.get소매_비용_지급임차료() + mDI.get소매_비용_지급수수료() + mDI.get소매_비용_판매촉진비() + mDI.get소매_비용_건물관리비();
+                법인세 = Convert.ToInt64(CommonUtil.Division(((수익합계 - 비용합계) * 0.22), mBI.get월평균판매대수_소계_합계()) - 부가세 * 0.22);
+                
+                업계평균[k++] += 법인세;
 
-                nIAOut[k++] += mDI.get도소매_비용_기타() / mBI.get월평균판매대수_소계_합계();
+                수익합계 = mDI.get도매_수익_월평균관리수수료() + 사업자모델매입추가수익단위금액2000대미만 * (mBI.get월평균판매대수_소계_합계() - mBI.get월평균유통모델출고대수_소계_합계()) + 유통모델매입추가수익현금단위금액 * mBI.get월평균유통모델출고대수_소계_합계() + 유통모델매입추가수익볼륨단위금액2000대미만 * mBI.get월평균유통모델출고대수_소계_합계() + mDI.get소매_수익_월평균업무취급수수료() + mDI.get소매_수익_직영매장판매수익();
+                법인세 = Convert.ToInt64(CommonUtil.Division(((수익합계 - 비용합계) * 0.22), mBI.get월평균판매대수_소계_합계()) - 부가세 * 0.22);
+                
+
+                업계평균[k++] += CommonUtil.Division(mDI.get도소매_비용_기타(), mBI.get월평균판매대수_소계_합계());
+
+                업계평균[k++] += 사업자모델매입추가수익단위금액2000대미만;
+                업계평균[k++] += 유통모델매입추가수익볼륨단위금액2000대미만;
+                업계평균[k++] += 법인세;
             }
 
-            분모 = 분모 > 0 ? 분모 : 1;
-            for (int i = 0; i < nIAOut.Length; i++)
+            for (int i = 0; i < 업계평균.Length; i++)
             {
-                txtIAOut[i].Text = (nIAOut[i] / 분모).ToString();
+                txt업계평균[i].Text = CommonUtil.Division(업계평균[i] , 분모).ToString();
             }
 
         }
@@ -562,21 +670,21 @@ namespace KIWI
                 string csv = System.IO.File.ReadAllText(CommonUtil.defaultManagerFileName);
                 csv = CommonUtil.Base64Decode(csv);
                 string[] splitedCsv = csv.Split(',');
-                for (int i = 0; i < txtOut.Length; i++)
+                for (int i = 0; i < txt기존업계평균.Length; i++)
                 {
-                    txtOut[i].Text = splitedCsv[i];
+                    txt기존업계평균[i].Text = splitedCsv[i];
                 }
                 for (int i = 0; i < txtExistedAsp.Length; i++)
                 {
-                    txtExistedAsp[i].Text = splitedCsv[txtOut.Length + i];
+                    txtExistedAsp[i].Text = splitedCsv[txt기존업계평균.Length + i];
                 }
             }
             catch (Exception ex)
             {
                 // 파일이 없음
-                for (int i = 0; i < txtOut.Length; i++)
+                for (int i = 0; i < txt기존업계평균.Length; i++)
                 {
-                    txtOut[i].Text = 0.ToString();
+                    txt기존업계평균[i].Text = 0.ToString();
                 }
                 for (int i = 0; i < txtExistedAsp.Length; i++)
                 {
@@ -599,7 +707,7 @@ namespace KIWI
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "LGM File|*.lgm";
             saveFileDialog1.Title = "Select a File";
-            saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            saveFileDialog1.InitialDirectory = CommonUtil.업계평균Directory;
             saveFileDialog1.DefaultExt = "lgm";
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
@@ -607,9 +715,9 @@ namespace KIWI
             saveFileDialog1.FileName = CommonUtil.datedManagerFileName;
 
             // If the directory doesn't exist, create it.
-            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
+            if (!Directory.Exists(saveFileDialog1.InitialDirectory))
             {
-                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data");
+                Directory.CreateDirectory(saveFileDialog1.InitialDirectory);
             }
             if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -637,7 +745,7 @@ namespace KIWI
             setTxtInput_TextChanged(sender);
 
             int index = -1;
-            index = Array.IndexOf(txtIAOut, (sender as TextBox));
+            index = Array.IndexOf(txt업계평균, (sender as TextBox));
             if (index < 0)
             {
                 index = Array.IndexOf(txtInput, (sender as TextBox));
@@ -648,12 +756,12 @@ namespace KIWI
             Int64 result;
             try
             {
-                convertedA = Convert.ToInt64(txtIAOut[index].Text.Replace(",", ""));
+                convertedA = Convert.ToInt64(txt업계평균[index].Text.Replace(",", ""));
             }
             catch (FormatException eFormat)
             {
-                txtIAOut[index].Text = "0";
-                convertedA = Convert.ToInt64(txtIAOut[index].Text);
+                txt업계평균[index].Text = "0";
+                convertedA = Convert.ToInt64(txt업계평균[index].Text);
                 MessageBox.Show("문서에 숫자가 아닌 문자가 있습니다.");
             }
             try
@@ -668,7 +776,7 @@ namespace KIWI
             result = convertedA;
             if (convertedB != 0)
             {
-                result = convertedB;//(convertedA + convertedB) / 2;
+                result = convertedB;
             }
             txtAOut[index].Text = result.ToString();
             setTxtInput_TextChanged(txtAOut[index]);

@@ -14,6 +14,7 @@ namespace KIWI
         //설정된 업계평균은 레지스트리 또는 파일에 항상 가지고 있어야 함.
         //파일 실행시 레지스트리 또는 파일에서 읽어 변수에 세팅
         public static CBusinessData g_BusinessAvg = new CBusinessData();  //업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
+        public static CBusinessData g_BusinessAvgLower = new CBusinessData();  //판매량 2000미만인 경우의 업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
 
         public static CResultData g_ResultBusinessTotal = new CResultData();    //업계 총계
         public static CResultData g_ResultBusiness = new CResultData();         //업계 단위금액
