@@ -991,7 +991,7 @@ namespace KIWI
             arrvalue[i++] = 전체_수익_업무취급수수료;
             arrvalue[i++] = 전체_수익_사업자모델매입에따른추가수익;
             arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) * 
-                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+                CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
             arrvalue[i++] = 전체_수익_직영매장판매수익;
 
             // 소계
@@ -1019,7 +1019,7 @@ namespace KIWI
             arrvalue[i++] = 전체_수익_소계 - 전체_비용_소계;
 
             arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
-                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+                CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             return arrvalue;
         }
@@ -1034,7 +1034,7 @@ namespace KIWI
             arrvalue[i++] = 도매_수익_CS관리수수료;
             arrvalue[i++] = 도매_수익_사업자모델매입에따른추가수익;
             arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(도매_수익_유통모델매입에따른추가수익_현금_Volume) *
-                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+                CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             // 소계
             Int64 도매_수익_소계 = 도매_수익_가입자관리수수료 + 도매_수익_CS관리수수료 +
@@ -1060,7 +1060,7 @@ namespace KIWI
             arrvalue[i++] = 도매_수익_소계 - 도매_비용_소계;
 
             arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
-                Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) / Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC())));
+                CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             return arrvalue;
         }

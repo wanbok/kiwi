@@ -312,244 +312,15 @@ namespace KIWI
 
             String[] txtWrite = new String[14] { txtInput10.Text, txtInput11.Text, txtInput12.Text, txtInput13.Text, txtInput14.Text,  
                 txtInput15.Text, txtInput16.Text, txtInput17.Text, txtInput18.Text, txtInput24.Text, txtInput25.Text, txtInput26.Text, txtInput27.Text, txtInput28.Text};
-            CDataControl.g_SimBasicInput.setArrData_BasicInput(txtWrite);
-
-            String[] txtWrite2 = new String[31]  { txtDetail37.Text, txtDetail38.Text, txtDetail39.Text, txtDetail40.Text, txtDetail41.Text,
-                txtDetail43.Text, txtDetail44.Text, txtDetail45.Text, txtDetail46.Text, txtDetail47.Text,
-                txtDetail12.Text, txtDetail15.Text, txtDetail16.Text, txtDetail17.Text, txtDetail18.Text,
-                txtDetail19.Text, txtDetail20.Text, txtDetail23.Text, txtDetail24.Text, txtDetail25.Text, 
-                txtDetail26.Text, txtDetail27.Text, txtDetail28.Text, txtDetail29.Text, txtDetail30.Text,            
-                txtDetail31.Text, txtDetail32.Text, txtDetail33.Text, txtDetail34.Text, txtDetail35.Text, txtDetail36.Text
+            
+            String[] txtWrite2 = new String[31]  { 
+                txtDetail37.Text, txtDetail38.Text, txtDetail39.Text, txtDetail40.Text, txtDetail41.Text,
+                txtDetail43.Text, txtDetail44.Text, txtDetail45.Text, txtDetail46.Text, txtDetail47.Text, txtDetail48.Text, txtDetail49.Text, txtDetail50.Text, txtDetail51.Text, txtDetail52.Text,
+                txtDetail54.Text, txtDetail55.Text,
+                txtDetail57.Text, txtDetail58.Text, txtDetail59.Text, txtDetail60.Text, txtDetail61.Text, txtDetail62.Text,
+                txtDetail64.Text, txtDetail65.Text, txtDetail66.Text, txtDetail67.Text, txtDetail68.Text, txtDetail69.Text, txtDetail70.Text, txtDetail71.Text
             };
-            di.setArrData_DetailInput(txtWrite2);
-            CommonUtil.ReadFileManagerToData();
-
-            for (int i = 0; i < rdts.Length; i++)
-            {
-                //  당대리점 결과(현재:0, 미래:1)
-                rdt = rdts[i];
-                rd = rds[i];
-                //      도매
-                //          총액
-                //              수익
-                rdt.set도매_수익_가입자관리수수료(i == 0 ? di.get도매_수익_월평균관리수수료() : CommonUtil.Division(di.get도매_수익_월평균관리수수료(), bi.get도매_누적가입자수()) * 18 * bi.get월평균판매대수_소계_합계());
-                rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료());
-                rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익());
-                rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume(di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC());
-                rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-                //              비용
-                rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
-                rdt.set도매_비용_인건비_급여_복리후생비(di.get도매_비용_직원급여_간부급() * bi.get도매_직원수_간부급() + bi.get도매_직원수_평사원() * di.get도매_비용_직원급여_평사원());
-                rdt.set도매_비용_임차료(di.get도매_비용_지급임차료());
-                rdt.set도매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(), bi.get월평균판매대수_소계_합계()) * bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(), bi.get월평균판매대수_소계_합계()) * bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(), bi.get월평균판매대수_소계_합계()) * bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_기타판매관리비(di.get도매_비용_운반비() + di.get도매_비용_차량유지비() + di.get도매_비용_지급수수료() + di.get도매_비용_판매촉진비() + di.get도매_비용_건물관리비() + (CommonUtil.Division((di.get도소매_비용_복리후생비() + di.get도소매_비용_통신비() + di.get도소매_비용_공과금() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()), bi.get월평균판매대수_소계_합계()) * bi.get도매_월평균판매대수_소계()));
-                rdt.도매_비용_소계 = rdt.get도매_비용_대리점투자비용() + rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get도매_비용_임차료() + rdt.get도매_비용_이자비용() + rdt.get도매_비용_부가세() + rdt.get도매_비용_법인세() + rdt.get도매_비용_기타판매관리비();
-                rdt.도매손익계 = rdt.도매_수익_소계 - rdt.도매_비용_소계;
-                //          단위당 금액
-                //              수익
-                rd.set도매_수익_가입자관리수수료(CommonUtil.Division(rdt.get도매_수익_가입자관리수수료(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_CS관리수수료(CommonUtil.Division(rdt.get도매_수익_CS관리수수료(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get도매_수익_사업자모델매입에따른추가수익(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get도매_월평균판매대수_소계()));
-                rd.도매_수익_소계 = CommonUtil.Division(rdt.도매_수익_소계, bi.get도매_월평균판매대수_소계());
-                //              비용
-                rd.set도매_비용_대리점투자비용(CommonUtil.Division(rdt.get도매_비용_대리점투자비용(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get도매_비용_인건비_급여_복리후생비(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_임차료(CommonUtil.Division(rdt.get도매_비용_임차료(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_이자비용(CommonUtil.Division(rdt.get도매_비용_이자비용(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_부가세(CommonUtil.Division(rdt.get도매_비용_부가세(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_법인세(CommonUtil.Division(rdt.get도매_비용_법인세(), bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_기타판매관리비(CommonUtil.Division(rdt.get도매_비용_기타판매관리비(), bi.get도매_월평균판매대수_소계()));
-                rd.도매_비용_소계 = CommonUtil.Division(rdt.도매_비용_소계, bi.get도매_월평균판매대수_소계());
-                rd.도매손익계 = CommonUtil.Division(rdt.도매손익계, bi.get도매_월평균판매대수_소계());
-                //      소매
-                //          총액
-                //              수익
-                rdt.set소매_수익_업무취급수수료(di.get소매_수익_월평균업무취급수수료());
-                rdt.set소매_수익_직영매장판매수익(di.get소매_수익_직영매장판매수익());
-                rdt.소매_수익_소계 = rdt.get소매_수익_업무취급수수료() + rdt.get소매_수익_직영매장판매수익();
-                //              비용
-                rdt.set소매_비용_인건비_급여_복리후생비(di.get소매_비용_직원급여_간부급() * bi.get소매_직원수_간부급() + bi.get소매_직원수_평사원() * di.get소매_비용_직원급여_평사원());
-                rdt.set소매_비용_임차료(di.get소매_비용_지급임차료());
-                rdt.set소매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(), bi.get월평균판매대수_소계_합계()) * bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(), bi.get월평균판매대수_소계_합계()) * bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(), bi.get월평균판매대수_소계_합계()) * bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료() + di.get소매_비용_판매촉진비() + di.get소매_비용_건물관리비()) + (CommonUtil.Division((di.get도소매_비용_복리후생비() + di.get도소매_비용_통신비() + di.get도소매_비용_공과금() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()), bi.get월평균판매대수_소계_합계()) * bi.get소매_월평균판매대수_소계()));
-                rdt.소매_비용_소계 = rdt.get소매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_임차료() + rdt.get소매_비용_이자비용() + rdt.get소매_비용_부가세() + rdt.get소매_비용_법인세() + rdt.get소매_비용_기타판매관리비();
-                rdt.소매손익계 = rdt.소매_수익_소계 - rdt.소매_비용_소계;
-                rdt.점별손익추정 = CommonUtil.Division(rdt.소매손익계, bi.get거래선수_직영점_합계());
-                //          단위당 금액
-                //              수익
-                rd.set소매_수익_업무취급수수료(CommonUtil.Division(rdt.get소매_수익_업무취급수수료(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_수익_직영매장판매수익(CommonUtil.Division(rdt.get소매_수익_직영매장판매수익(), bi.get소매_월평균판매대수_소계()));
-                rd.소매_수익_소계 = CommonUtil.Division(rdt.소매_수익_소계, bi.get소매_월평균판매대수_소계());
-                //              비용
-                rd.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get소매_비용_인건비_급여_복리후생비(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_임차료(CommonUtil.Division(rdt.get소매_비용_임차료(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_이자비용(CommonUtil.Division(rdt.get소매_비용_이자비용(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_부가세(CommonUtil.Division(rdt.get소매_비용_부가세(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_법인세(CommonUtil.Division(rdt.get소매_비용_법인세(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
-                rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
-                rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
-                //      전체
-                //          총액
-                //              수익
-                rdt.set전체_수익_가입자관리수수료(rdt.get도매_수익_가입자관리수수료());
-                rdt.set전체_수익_CS관리수수료(rdt.get도매_수익_CS관리수수료());
-                rdt.set전체_수익_업무취급수수료(rdt.get소매_수익_업무취급수수료());
-                rdt.set전체_수익_사업자모델매입에따른추가수익(rdt.get도매_수익_사업자모델매입에따른추가수익());
-                rdt.set전체_수익_유통모델매입에따른추가수익_현금_Volume(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume());
-                rdt.set전체_수익_직영매장판매수익(rdt.get소매_수익_직영매장판매수익());
-                rdt.전체_수익_소계 = rdt.get전체_수익_가입자관리수수료() + rdt.get전체_수익_CS관리수수료() + rdt.get전체_수익_업무취급수수료() + rdt.get전체_수익_사업자모델매입에따른추가수익() + rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume() + rdt.get전체_수익_직영매장판매수익();
-                //              비용
-                rdt.set전체_비용_대리점투자비용(rdt.get도매_비용_대리점투자비용());
-                rdt.set전체_비용_인건비_급여_복리후생비(rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_인건비_급여_복리후생비());
-                rdt.set전체_비용_임차료(rdt.get도매_비용_임차료() + rdt.get소매_비용_임차료());
-                rdt.set전체_비용_이자비용(di.get도소매_비용_이자비용());
-                rdt.set전체_비용_부가세(di.get도소매_비용_부가세());
-                rdt.set전체_비용_법인세(di.get도소매_비용_법인세());
-                rdt.set전체_비용_기타판매관리비(di.get도매_비용_운반비() + di.get도매_비용_차량유지비() + di.get도매_비용_지급수수료() + di.get도매_비용_판매촉진비() + di.get도매_비용_건물관리비() + di.get소매_비용_지급수수료() + di.get소매_비용_판매촉진비() + di.get소매_비용_건물관리비() + di.get도소매_비용_복리후생비() + di.get도소매_비용_통신비() + di.get도소매_비용_공과금() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타());
-                rdt.전체_비용_소계 = rdt.get전체_비용_대리점투자비용() + rdt.get전체_비용_인건비_급여_복리후생비() + rdt.get전체_비용_임차료() + rdt.get전체_비용_이자비용() + rdt.get전체_비용_부가세() + rdt.get전체_비용_법인세() + rdt.get전체_비용_기타판매관리비();
-                rdt.전체손익계 = rdt.전체_수익_소계 - rdt.전체_비용_소계;
-                //          단위당 금액
-                //              수익
-                rd.set전체_수익_가입자관리수수료(CommonUtil.Division(rdt.get전체_수익_가입자관리수수료(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_CS관리수수료(CommonUtil.Division(rdt.get전체_수익_CS관리수수료(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_업무취급수수료(CommonUtil.Division(rdt.get전체_수익_업무취급수수료(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get전체_수익_사업자모델매입에따른추가수익(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_직영매장판매수익(CommonUtil.Division(rdt.get전체_수익_직영매장판매수익(), bi.get월평균판매대수_소계_합계()));
-                rd.전체_수익_소계 = CommonUtil.Division(rdt.전체_수익_소계, bi.get월평균판매대수_소계_합계());
-                //              비용
-                rd.set전체_비용_대리점투자비용(CommonUtil.Division(rdt.get전체_비용_대리점투자비용(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get전체_비용_인건비_급여_복리후생비(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_임차료(CommonUtil.Division(rdt.get전체_비용_임차료(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_이자비용(CommonUtil.Division(rdt.get전체_비용_이자비용(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_부가세(CommonUtil.Division(rdt.get전체_비용_부가세(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_법인세(CommonUtil.Division(rdt.get전체_비용_법인세(), bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
-                rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
-                rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
-            }
-
-            //  업계 평균적용 결과
-            rdt = CDataControl.g_SimResultBusinessTotal;
-            rd = CDataControl.g_SimResultBusiness;
-            di = CDataControl.g_BusinessAvg;     // 관리자가 배포한 업계 단위비용
-            //      도매
-            //          총액
-            //              수익
-            rdt.set도매_수익_가입자관리수수료(di.get도매_수익_월평균관리수수료() * bi.get도매_누적가입자수());
-            rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료() * bi.get도매_누적가입자수());
-            rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익() * (bi.get월평균판매대수_소계_합계() - bi.get월평균유통모델출고대수_소계_합계()));
-            rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume((di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC()) * bi.get월평균유통모델출고대수_소계_합계());
-            rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-            //              비용
-            rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
-            rdt.set도매_비용_인건비_급여_복리후생비(di.get도매_비용_직원급여_간부급() * bi.get도매_직원수_간부급() + di.get도매_비용_직원급여_평사원() * bi.get도매_직원수_평사원() + di.get도소매_비용_복리후생비() * bi.get도매_직원수_소계());
-            rdt.set도매_비용_임차료(di.get도매_비용_지급임차료() * bi.get도매_거래선수_개통사무실());
-            rdt.set도매_비용_이자비용(di.get도소매_비용_이자비용() * bi.get도매_월평균판매대수_소계());
-            rdt.set도매_비용_부가세(di.get도소매_비용_부가세() * bi.get도매_월평균판매대수_소계());
-            rdt.set도매_비용_법인세(di.get도소매_비용_법인세() * bi.get도매_월평균판매대수_소계());
-            // '# Detail3. 업계평균vs.해당대리점'!K10+'# Detail3. 업계평균vs.해당대리점'!K11+'# Detail3. 업계평균vs.해당대리점'!K13+'# Detail3. 업계평균vs.해당대리점'!K14+'# Detail3. 업계평균vs.해당대리점'!K15+'# Detail3. 업계평균vs.해당대리점'!K16+'# Detail3. 업계평균vs.해당대리점'!K17+'# Detail3. 업계평균vs.해당대리점'!K18+'# Detail3. 업계평균vs.해당대리점'!K20
-            rdt.set도매_비용_기타판매관리비((di.get도매_비용_운반비() + di.get도매_비용_지급수수료() + di.get도매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get도매_월평균판매대수_소계()
-                                        + (di.get도매_비용_건물관리비()) * bi.get도매_거래선수_개통사무실()
-                                        + (di.get도매_비용_차량유지비() + di.get도소매_비용_통신비() + di.get도소매_비용_공과금()) * bi.get도매_직원수_소계());
-            rdt.도매_비용_소계 = rdt.get도매_비용_대리점투자비용() + rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get도매_비용_임차료() + rdt.get도매_비용_이자비용() + rdt.get도매_비용_부가세() + rdt.get도매_비용_법인세() + rdt.get도매_비용_기타판매관리비();
-            rdt.도매손익계 = rdt.도매_수익_소계 - rdt.도매_비용_소계;
-            //          단위당 금액
-            //              수익
-            rd.set도매_수익_가입자관리수수료(CommonUtil.Division(rdt.get도매_수익_가입자관리수수료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_CS관리수수료(CommonUtil.Division(rdt.get도매_수익_CS관리수수료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get도매_수익_사업자모델매입에따른추가수익(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get도매_월평균판매대수_소계()));
-            rd.도매_수익_소계 = CommonUtil.Division(rdt.도매_수익_소계, bi.get도매_월평균판매대수_소계());
-            //              비용
-            rd.set도매_비용_대리점투자비용(CommonUtil.Division(rdt.get도매_비용_대리점투자비용(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get도매_비용_인건비_급여_복리후생비(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_임차료(CommonUtil.Division(rdt.get도매_비용_임차료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_이자비용(CommonUtil.Division(rdt.get도매_비용_이자비용(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_부가세(CommonUtil.Division(rdt.get도매_비용_부가세(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_법인세(CommonUtil.Division(rdt.get도매_비용_법인세(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_기타판매관리비(CommonUtil.Division(rdt.get도매_비용_기타판매관리비(), bi.get도매_월평균판매대수_소계()));
-            rd.도매_비용_소계 = CommonUtil.Division(rdt.도매_비용_소계, bi.get도매_월평균판매대수_소계());
-            rd.도매손익계 = CommonUtil.Division(rdt.도매손익계, bi.get도매_월평균판매대수_소계());
-            //      소매
-            //          총액
-            //              수익
-            rdt.set소매_수익_업무취급수수료(di.get소매_수익_월평균업무취급수수료() * bi.get월평균판매대수_소계_합계());
-            rdt.set소매_수익_직영매장판매수익(di.get소매_수익_직영매장판매수익() * bi.get소매_월평균판매대수_소계());
-            rdt.소매_수익_소계 = rdt.get소매_수익_업무취급수수료() + rdt.get소매_수익_직영매장판매수익();
-            //              비용
-            rdt.set소매_비용_인건비_급여_복리후생비(di.get소매_비용_직원급여_간부급() * bi.get소매_직원수_간부급() + di.get소매_비용_직원급여_평사원() * bi.get소매_직원수_평사원() + di.get도소매_비용_복리후생비() * bi.get소매_직원수_소계());
-            rdt.set소매_비용_임차료(di.get소매_비용_지급임차료() * bi.get소매_거래선수_소계());
-            rdt.set소매_비용_이자비용(di.get도소매_비용_이자비용() * bi.get소매_월평균판매대수_소계());
-            rdt.set소매_비용_부가세(di.get도소매_비용_부가세() * bi.get소매_월평균판매대수_소계());
-            rdt.set소매_비용_법인세(di.get도소매_비용_법인세() * bi.get소매_월평균판매대수_소계());
-            // '# Detail3. 업계평균vs.해당대리점'!L10+'# Detail3. 업계평균vs.해당대리점'!L11+'# Detail3. 업계평균vs.해당대리점'!L13+'# Detail3. 업계평균vs.해당대리점'!L14+'# Detail3. 업계평균vs.해당대리점'!L15+'# Detail3. 업계평균vs.해당대리점'!L16+'# Detail3. 업계평균vs.해당대리점'!L17+'# Detail3. 업계평균vs.해당대리점'!L18+'# Detail3. 업계평균vs.해당대리점'!L20
-            rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료() + di.get소매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get소매_월평균판매대수_소계()
-                                        + (di.get소매_비용_건물관리비()) * bi.get소매_거래선수_소계()
-                                        + (di.get도소매_비용_통신비() + di.get도소매_비용_공과금()) * bi.get소매_직원수_소계());
-            rdt.소매_비용_소계 = rdt.get소매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_임차료() + rdt.get소매_비용_이자비용() + rdt.get소매_비용_부가세() + rdt.get소매_비용_법인세() + rdt.get소매_비용_기타판매관리비();
-            rdt.소매손익계 = rdt.소매_수익_소계 - rdt.소매_비용_소계;
-            rdt.점별손익추정 = CommonUtil.Division(rdt.소매손익계, bi.get거래선수_직영점_합계());
-            //          단위당 금액
-            //              수익
-            rd.set소매_수익_업무취급수수료(CommonUtil.Division(rdt.get소매_수익_업무취급수수료(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_수익_직영매장판매수익(CommonUtil.Division(rdt.get소매_수익_직영매장판매수익(), bi.get소매_월평균판매대수_소계()));
-            rd.소매_수익_소계 = CommonUtil.Division(rdt.소매_수익_소계, bi.get소매_월평균판매대수_소계());
-            //              비용
-            rd.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get소매_비용_인건비_급여_복리후생비(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_임차료(CommonUtil.Division(rdt.get소매_비용_임차료(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_이자비용(CommonUtil.Division(rdt.get소매_비용_이자비용(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_부가세(CommonUtil.Division(rdt.get소매_비용_부가세(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_법인세(CommonUtil.Division(rdt.get소매_비용_법인세(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
-            rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
-            rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
-            //      전체
-            //          총액
-            //              수익
-            rdt.set전체_수익_가입자관리수수료(rdt.get도매_수익_가입자관리수수료());
-            rdt.set전체_수익_CS관리수수료(rdt.get도매_수익_CS관리수수료());
-            rdt.set전체_수익_업무취급수수료(rdt.get소매_수익_업무취급수수료());
-            rdt.set전체_수익_사업자모델매입에따른추가수익(rdt.get도매_수익_사업자모델매입에따른추가수익());
-            rdt.set전체_수익_유통모델매입에따른추가수익_현금_Volume(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume());
-            rdt.set전체_수익_직영매장판매수익(rdt.get소매_수익_직영매장판매수익());
-            rdt.전체_수익_소계 = rdt.get전체_수익_가입자관리수수료() + rdt.get전체_수익_CS관리수수료() + rdt.get전체_수익_업무취급수수료() + rdt.get전체_수익_사업자모델매입에따른추가수익() + rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume() + rdt.get전체_수익_직영매장판매수익();
-            //              비용
-            rdt.set전체_비용_대리점투자비용(rdt.get도매_비용_대리점투자비용());
-            rdt.set전체_비용_인건비_급여_복리후생비(rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_인건비_급여_복리후생비());
-            rdt.set전체_비용_임차료(rdt.get도매_비용_임차료() + rdt.get소매_비용_임차료());
-            rdt.set전체_비용_이자비용(rdt.get도매_비용_이자비용() + rdt.get소매_비용_이자비용());
-            rdt.set전체_비용_부가세(rdt.get도매_비용_부가세() + rdt.get소매_비용_부가세());
-            rdt.set전체_비용_법인세(rdt.get도매_비용_법인세() + rdt.get소매_비용_법인세());
-            rdt.set전체_비용_기타판매관리비(rdt.get도매_비용_기타판매관리비() + rdt.get소매_비용_기타판매관리비());
-            rdt.전체_비용_소계 = rdt.get전체_비용_대리점투자비용() + rdt.get전체_비용_인건비_급여_복리후생비() + rdt.get전체_비용_임차료() + rdt.get전체_비용_이자비용() + rdt.get전체_비용_부가세() + rdt.get전체_비용_법인세() + rdt.get전체_비용_기타판매관리비();
-            rdt.전체손익계 = rdt.전체_수익_소계 - rdt.전체_비용_소계;
-            //          단위당 금액
-            //              수익
-            rd.set전체_수익_가입자관리수수료(CommonUtil.Division(rdt.get전체_수익_가입자관리수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_CS관리수수료(CommonUtil.Division(rdt.get전체_수익_CS관리수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_업무취급수수료(CommonUtil.Division(rdt.get전체_수익_업무취급수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get전체_수익_사업자모델매입에따른추가수익(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_직영매장판매수익(CommonUtil.Division(rdt.get전체_수익_직영매장판매수익(), bi.get월평균판매대수_소계_합계()));
-            rd.전체_수익_소계 = CommonUtil.Division(rdt.전체_수익_소계, bi.get월평균판매대수_소계_합계());
-            //              비용
-            rd.set전체_비용_대리점투자비용(CommonUtil.Division(rdt.get전체_비용_대리점투자비용(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get전체_비용_인건비_급여_복리후생비(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_임차료(CommonUtil.Division(rdt.get전체_비용_임차료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_이자비용(CommonUtil.Division(rdt.get전체_비용_이자비용(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_부가세(CommonUtil.Division(rdt.get전체_비용_부가세(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_법인세(CommonUtil.Division(rdt.get전체_비용_법인세(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
-            rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
-            rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
-
+            CommonUtil.setInputData(txtWrite, txtWrite2, bi, di, rdts, rds, rdt, rd, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -560,7 +331,7 @@ namespace KIWI
         }
 
         private void txtDetail37_TextChanged(object sender, EventArgs e) {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
@@ -568,14 +339,14 @@ namespace KIWI
         }
         private void txtDetail38_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
             txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
                  + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
         private void txtDetail39_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
@@ -583,7 +354,7 @@ namespace KIWI
         }
         private void txtDetail40_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
             
             txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
@@ -591,7 +362,7 @@ namespace KIWI
         }
         private void txtDetail41_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
             
             txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
@@ -600,7 +371,7 @@ namespace KIWI
 
         private void txtDetail43_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
             
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -611,7 +382,7 @@ namespace KIWI
         }
         private void txtDetail44_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -622,7 +393,7 @@ namespace KIWI
         }
         private void txtDetail45_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -633,7 +404,7 @@ namespace KIWI
         }
         private void txtDetail46_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -644,7 +415,7 @@ namespace KIWI
         }
         private void txtDetail47_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -655,7 +426,7 @@ namespace KIWI
         }
         private void txtDetail48_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -666,7 +437,7 @@ namespace KIWI
         }
         private void txtDetail49_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -677,7 +448,7 @@ namespace KIWI
         }
         private void txtDetail50_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -688,7 +459,7 @@ namespace KIWI
         }
         private void txtDetail51_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -699,7 +470,7 @@ namespace KIWI
         }
         private void txtDetail52_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
@@ -711,14 +482,14 @@ namespace KIWI
 
         private void txtDetail54_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail56.Text = (CommonUtil.StringToIntVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail55.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail55_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail56.Text = (CommonUtil.StringToIntVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail55.Text.Replace(",", ""))
                  ).ToString();
@@ -726,7 +497,7 @@ namespace KIWI
 
         private void txtDetail57_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -735,7 +506,7 @@ namespace KIWI
         }
         private void txtDetail58_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -745,7 +516,7 @@ namespace KIWI
 
         private void txtDetail59_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -755,7 +526,7 @@ namespace KIWI
 
         private void txtDetail60_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -765,7 +536,7 @@ namespace KIWI
 
         private void txtDetail61_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -775,7 +546,7 @@ namespace KIWI
 
         private void txtDetail62_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
@@ -786,7 +557,7 @@ namespace KIWI
 
         private void txtDetail64_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -797,7 +568,7 @@ namespace KIWI
 
         private void txtDetail65_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -808,7 +579,7 @@ namespace KIWI
 
         private void txtDetail66_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -819,7 +590,7 @@ namespace KIWI
 
         private void txtDetail67_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -830,7 +601,7 @@ namespace KIWI
 
         private void txtDetail68_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -841,7 +612,7 @@ namespace KIWI
 
         private void txtDetail69_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -852,7 +623,7 @@ namespace KIWI
 
         private void txtDetail70_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -863,7 +634,7 @@ namespace KIWI
 
         private void txtDetail71_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
             txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
                 + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
@@ -874,35 +645,35 @@ namespace KIWI
 
         private void txtDetail42_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtDetail53_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtDetail56_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtDetail63_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtDetail72_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
@@ -910,95 +681,98 @@ namespace KIWI
         //시뮬레이션 기본입력
         private void txtInput10_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtInput11_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput12_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput13_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
 
         }
 
         private void txtInput14_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput15_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput16_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput17_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput18_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput24_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput25_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput26_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput27_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
         private void txtInput28_TextChanged(object sender, EventArgs e)
         {
-            setTxtInput_TextChanged(sender);
+            setTxtInput_TextChanged(sender, e);
 
         }
 
 
+        private void setInput_TextChanged(object sender, EventArgs e)
+        {
+            setTxtInput_TextChanged(sender, e);
+        }
 
 
-
-        private string setTxtInput_TextChanged(object sender)
+        private string setTxtInput_TextChanged(object sender, EventArgs e)
         {
             TextBox _TextBox = (sender as TextBox);
 
@@ -1079,6 +853,11 @@ namespace KIWI
                 e.Handled = true;
             }
  
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

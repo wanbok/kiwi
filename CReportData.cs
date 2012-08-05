@@ -30,14 +30,14 @@ namespace KIWI
         }
 
         //판매자
-        private String 판매자 = "";
-        public void set판매자(String value)
+        private String 마케터 = "";
+        public void set마케터(String value)
         {
-            판매자 = value;
+            마케터 = value;
         }
-        public String get판매자()
+        public String get마케터()
         {
-            return 판매자;
+            return 마케터;
         }
 
         //배경_및_이슈
@@ -78,7 +78,7 @@ namespace KIWI
             int i = 0;
             지역 = data[i++];
             대리점 = data[i++];
-            판매자 = data[i++];
+            마케터 = data[i++];
             배경_및_이슈 = data[i++];
             분석내용_및_대리점_활동방향 = data[i++];
             LG_지원_활동 = data[i++];
@@ -90,7 +90,7 @@ namespace KIWI
             int i = 0;
             data[i++] = 지역;
             data[i++] = 대리점;
-            data[i++] = 판매자;
+            data[i++] = 마케터;
             data[i++] = 배경_및_이슈;
             data[i++] = 분석내용_및_대리점_활동방향;
             data[i++] = LG_지원_활동;

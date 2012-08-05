@@ -112,27 +112,27 @@ namespace KIWI
             txtROut61, txtROut62, txtROut63, txtROut64, txtROut65, txtROut66, txtROut67, txtROut68, txtROut69, txtROut70,
             txtROut71, txtROut72
             };
-            // ReadOnly설정
-            for (int i = 0; i < txtOut.Length; i++)
-            {
+            //// ReadOnly설정
+            //for (int i = 0; i < txtOut.Length; i++)
+            //{
 
-                txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.White;
-                txtOut[i].BorderStyle = BorderStyle.None;
+            //    txtOut[i].ReadOnly = true;
+            //    txtOut[i].BackColor = Color.White;
+            //    txtOut[i].BorderStyle = BorderStyle.None;
 
-                if (i < txtWOut.Length)
-                {
-                    txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.White;
-                    txtWOut[i].BorderStyle = BorderStyle.None;
-                }
-                if (i < txtROut.Length)
-                {
-                    txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.White;
-                    txtROut[i].BorderStyle = BorderStyle.None;
-                }
-            }
+            //    if (i < txtWOut.Length)
+            //    {
+            //        txtWOut[i].ReadOnly = true;
+            //        txtWOut[i].BackColor = Color.White;
+            //        txtWOut[i].BorderStyle = BorderStyle.None;
+            //    }
+            //    if (i < txtROut.Length)
+            //    {
+            //        txtROut[i].ReadOnly = true;
+            //        txtROut[i].BackColor = Color.White;
+            //        txtROut[i].BorderStyle = BorderStyle.None;
+            //    }
+            //}
             pnlChart.Visible = false;
             // 결과 취득 클래스
 

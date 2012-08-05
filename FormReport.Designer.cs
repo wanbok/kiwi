@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReport));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.CrystalReport11 = new KIWI.CrystalReport1();
             this.SuspendLayout();
@@ -53,8 +54,9 @@
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1081, 833);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReport";
-            this.Text = "KIWI - 리포트";
+            this.Text = "LGE 대리점 손익관리";
             this.ResumeLayout(false);
 
         }

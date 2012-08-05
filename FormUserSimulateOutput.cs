@@ -73,21 +73,21 @@ namespace KIWI
             for (int i = 0; i < txtOut.Length; i++)
             {
                 txtOut[i].ReadOnly = true;
-                txtOut[i].BackColor = Color.White;
+                //txtOut[i].BackColor = Color.White;
                 txtOut[i].BorderStyle = BorderStyle.None;
                 txtOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
 
                 if (i < txtWOut.Length)
                 {
                     txtWOut[i].ReadOnly = true;
-                    txtWOut[i].BackColor = Color.White;
+                    //txtWOut[i].BackColor = Color.White;
                     txtWOut[i].BorderStyle = BorderStyle.None;
                     txtWOut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
                 if (i < txtROut.Length)
                 {
                     txtROut[i].ReadOnly = true;
-                    txtROut[i].BackColor = Color.White;
+                    //txtROut[i].BackColor = Color.White;
                     txtROut[i].BorderStyle = BorderStyle.None;
                     txtROut[i].TextChanged += new System.EventHandler(addComma_TextChanged);
                 }
@@ -542,7 +542,7 @@ namespace KIWI
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.RestoreDirectory = true;
-            saveFileDialog1.FileName = "시뮬레이션_"+CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get판매자() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
+            saveFileDialog1.FileName = "시뮬레이션_"+CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
 
             // If the directory doesn't exist, create it.
             if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))

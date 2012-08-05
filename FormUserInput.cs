@@ -175,6 +175,7 @@ namespace KIWI
 
         public void saveAsInput()
         {
+            CReportData rptd = CDataControl.g_ReportData;
             CBasicInput bi = CDataControl.g_BasicInput;
             CBusinessData di = CDataControl.g_DetailInput;
             CResultData[] rdts = new CResultData[]{CDataControl.g_ResultStoreTotal, CDataControl.g_ResultFutureTotal};
@@ -182,250 +183,24 @@ namespace KIWI
             CResultData rdt = null;
             CResultData rd = null;
 
+            rptd.set지역(지역.SelectedIndex == -1 ? "" : 지역.Items[지역.SelectedIndex].ToString());
+            rptd.set대리점(대리점명.Text);
+            rptd.set마케터(마케터.Text);
+
             bi.set지역(지역.SelectedIndex == -1 ? "" : 지역.Items[지역.SelectedIndex].ToString());
             bi.set대리점(대리점명.Text);
             bi.set마케터(마케터.Text);
 
             String[] txtWrite = new String[14] { txtInput1.Text, txtInput2.Text, txtInput3.Text, txtInput5.Text, txtInput6.Text,  
                 txtInput8.Text, txtInput9.Text, txtInput11.Text, txtInput12.Text, txtInput14.Text, txtInput15.Text, txtInput17.Text, txtInput19.Text, txtInput20.Text};
-            bi.setArrData_BasicInput(txtWrite);
-
             String[] txtWrite2 = new String[31]  {
                 txtDetail1.Text, txtDetail2.Text, txtDetail4.Text, txtDetail5.Text, txtDetail6.Text, // 도매 수익
                 txtDetail7.Text, txtDetail8.Text, txtDetail11.Text, txtDetail12.Text, txtDetail13.Text, txtDetail14.Text, txtDetail15.Text, txtDetail16.Text, txtDetail17.Text, txtDetail18.Text, // 도매 비용
                 txtDetail19.Text, txtDetail20.Text, txtDetail23.Text, txtDetail24.Text, txtDetail25.Text, txtDetail26.Text, txtDetail27.Text, txtDetail28.Text, // 소매
                 txtDetail29.Text, txtDetail30.Text, txtDetail31.Text, txtDetail32.Text, txtDetail33.Text, txtDetail34.Text, txtDetail35.Text, txtDetail36.Text  // 도소매합산
             };
-            di.setArrData_DetailInput(txtWrite2);
-            CommonUtil.ReadFileManagerToData();
 
-            
-            for (int i = 0; i < rdts.Length; i++) {
-                //  당대리점 결과(현재:0, 미래:1)
-                rdt = rdts[i];
-                rd = rds[i];
-                //      도매
-                //          총액
-                //              수익
-                rdt.set도매_수익_가입자관리수수료(i == 0 ? di.get도매_수익_월평균관리수수료() : CommonUtil.Division(di.get도매_수익_월평균관리수수료(),bi.get도매_누적가입자수())*18*bi.get월평균판매대수_소계_합계());
-                rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료());
-                rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익());
-                rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume(di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC());
-                rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-                //              비용
-                rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
-                rdt.set도매_비용_인건비_급여_복리후생비(di.get도매_비용_직원급여_간부급() * bi.get도매_직원수_간부급() + di.get도매_비용_직원급여_평사원() * bi.get도매_직원수_평사원() + di.get도소매_비용_복리후생비());
-                rdt.set도매_비용_임차료(di.get도매_비용_지급임차료());
-                rdt.set도매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계());
-                rdt.set도매_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+(CommonUtil.Division((di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get도매_월평균판매대수_소계()));
-                rdt.도매_비용_소계 = rdt.get도매_비용_대리점투자비용() + rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get도매_비용_임차료() + rdt.get도매_비용_이자비용() + rdt.get도매_비용_부가세() + rdt.get도매_비용_법인세() + rdt.get도매_비용_기타판매관리비();
-                rdt.도매손익계 = rdt.도매_수익_소계 - rdt.도매_비용_소계;
-                //          단위당 금액
-                //              수익
-                rd.set도매_수익_가입자관리수수료(CommonUtil.Division(rdt.get도매_수익_가입자관리수수료(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_CS관리수수료(CommonUtil.Division(rdt.get도매_수익_CS관리수수료(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get도매_수익_사업자모델매입에따른추가수익(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume(),bi.get도매_월평균판매대수_소계()));
-                rd.도매_수익_소계 = CommonUtil.Division(rdt.도매_수익_소계,bi.get도매_월평균판매대수_소계());
-                //              비용
-                rd.set도매_비용_대리점투자비용(CommonUtil.Division(rdt.get도매_비용_대리점투자비용(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get도매_비용_인건비_급여_복리후생비(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_임차료(CommonUtil.Division(rdt.get도매_비용_임차료(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_이자비용(CommonUtil.Division(rdt.get도매_비용_이자비용(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_부가세(CommonUtil.Division(rdt.get도매_비용_부가세(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_법인세(CommonUtil.Division(rdt.get도매_비용_법인세(),bi.get도매_월평균판매대수_소계()));
-                rd.set도매_비용_기타판매관리비(CommonUtil.Division(rdt.get도매_비용_기타판매관리비(), bi.get도매_월평균판매대수_소계()));
-                rd.도매_비용_소계 = CommonUtil.Division(rdt.도매_비용_소계, bi.get도매_월평균판매대수_소계());
-                rd.도매손익계 = CommonUtil.Division(rdt.도매손익계, bi.get도매_월평균판매대수_소계());
-                //      소매
-                //          총액
-                //              수익
-                rdt.set소매_수익_업무취급수수료(di.get소매_수익_월평균업무취급수수료());
-                rdt.set소매_수익_직영매장판매수익(di.get소매_수익_직영매장판매수익());
-                rdt.소매_수익_소계 = rdt.get소매_수익_업무취급수수료() + rdt.get소매_수익_직영매장판매수익();
-                //              비용
-                rdt.set소매_비용_인건비_급여_복리후생비(di.get소매_비용_직원급여_간부급() * bi.get소매_직원수_간부급() + di.get소매_비용_직원급여_평사원() * bi.get소매_직원수_평사원() + di.get도소매_비용_복리후생비());
-                rdt.set소매_비용_임차료(di.get소매_비용_지급임차료());
-                rdt.set소매_비용_이자비용(CommonUtil.Division(di.get도소매_비용_이자비용(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_부가세(CommonUtil.Division(di.get도소매_비용_부가세(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_법인세(CommonUtil.Division(di.get도소매_비용_법인세(),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계());
-                rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비())+(CommonUtil.Division((di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타()),bi.get월평균판매대수_소계_합계())*bi.get소매_월평균판매대수_소계()));
-                rdt.소매_비용_소계 = rdt.get소매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_임차료() + rdt.get소매_비용_이자비용() + rdt.get소매_비용_부가세() + rdt.get소매_비용_법인세() + rdt.get소매_비용_기타판매관리비();
-                rdt.소매손익계 = rdt.소매_수익_소계 - rdt.소매_비용_소계;
-                rdt.점별손익추정 = CommonUtil.Division(rdt.소매손익계, bi.get거래선수_직영점_합계());
-                //          단위당 금액
-                //              수익
-                rd.set소매_수익_업무취급수수료(CommonUtil.Division(rdt.get소매_수익_업무취급수수료(), bi.get소매_월평균판매대수_소계()));
-                rd.set소매_수익_직영매장판매수익(CommonUtil.Division(rdt.get소매_수익_직영매장판매수익(), bi.get소매_월평균판매대수_소계()));
-                rd.소매_수익_소계 = CommonUtil.Division(rdt.소매_수익_소계, bi.get소매_월평균판매대수_소계());
-                //              비용
-                rd.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get소매_비용_인건비_급여_복리후생비() , bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_임차료(CommonUtil.Division(rdt.get소매_비용_임차료() , bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_이자비용(CommonUtil.Division(rdt.get소매_비용_이자비용() , bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_부가세(CommonUtil.Division(rdt.get소매_비용_부가세() , bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_법인세(CommonUtil.Division(rdt.get소매_비용_법인세() , bi.get소매_월평균판매대수_소계()));
-                rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
-                rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
-                rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
-                rd.점별손익추정 = bi.get거래선수_직영점_합계();
-                //      전체
-                //          총액
-                //              수익
-                rdt.set전체_수익_가입자관리수수료(rdt.get도매_수익_가입자관리수수료());
-                rdt.set전체_수익_CS관리수수료(rdt.get도매_수익_CS관리수수료());
-                rdt.set전체_수익_업무취급수수료(rdt.get소매_수익_업무취급수수료());
-                rdt.set전체_수익_사업자모델매입에따른추가수익(rdt.get도매_수익_사업자모델매입에따른추가수익());
-                rdt.set전체_수익_유통모델매입에따른추가수익_현금_Volume(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume());
-                rdt.set전체_수익_직영매장판매수익(rdt.get소매_수익_직영매장판매수익());
-                rdt.전체_수익_소계 = rdt.get전체_수익_가입자관리수수료() + rdt.get전체_수익_CS관리수수료() + rdt.get전체_수익_업무취급수수료() + rdt.get전체_수익_사업자모델매입에따른추가수익() + rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume() + rdt.get전체_수익_직영매장판매수익();
-                //              비용
-                rdt.set전체_비용_대리점투자비용(rdt.get도매_비용_대리점투자비용());
-                rdt.set전체_비용_인건비_급여_복리후생비(rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_인건비_급여_복리후생비());
-                rdt.set전체_비용_임차료(rdt.get도매_비용_임차료() + rdt.get소매_비용_임차료());
-                rdt.set전체_비용_이자비용(di.get도소매_비용_이자비용());
-                rdt.set전체_비용_부가세(di.get도소매_비용_부가세());
-                rdt.set전체_비용_법인세(di.get도소매_비용_법인세());
-                rdt.set전체_비용_기타판매관리비(di.get도매_비용_운반비()+di.get도매_비용_차량유지비()+di.get도매_비용_지급수수료()+di.get도매_비용_판매촉진비()+di.get도매_비용_건물관리비()+di.get소매_비용_지급수수료()+di.get소매_비용_판매촉진비()+di.get소매_비용_건물관리비()+di.get도소매_비용_통신비()+di.get도소매_비용_공과금()+di.get도소매_비용_소모품비()+di.get도소매_비용_기타());
-                rdt.전체_비용_소계 = rdt.get전체_비용_대리점투자비용() + rdt.get전체_비용_인건비_급여_복리후생비() + rdt.get전체_비용_임차료() + rdt.get전체_비용_이자비용() + rdt.get전체_비용_부가세() + rdt.get전체_비용_법인세() + rdt.get전체_비용_기타판매관리비();
-                rdt.전체손익계 = rdt.전체_수익_소계 - rdt.전체_비용_소계;
-                //          단위당 금액
-                //              수익
-                rd.set전체_수익_가입자관리수수료(CommonUtil.Division(rdt.get전체_수익_가입자관리수수료(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_CS관리수수료(CommonUtil.Division(rdt.get전체_수익_CS관리수수료(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_업무취급수수료(CommonUtil.Division(rdt.get전체_수익_업무취급수수료(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get전체_수익_사업자모델매입에따른추가수익(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_수익_직영매장판매수익(CommonUtil.Division(rdt.get전체_수익_직영매장판매수익(),bi.get월평균판매대수_소계_합계()));
-                rd.전체_수익_소계 = CommonUtil.Division(rdt.전체_수익_소계, bi.get월평균판매대수_소계_합계());
-                //              비용
-                rd.set전체_비용_대리점투자비용(CommonUtil.Division(rdt.get전체_비용_대리점투자비용(),bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get전체_비용_인건비_급여_복리후생비() , bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_임차료(CommonUtil.Division(rdt.get전체_비용_임차료() , bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_이자비용(CommonUtil.Division(rdt.get전체_비용_이자비용() , bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_부가세(CommonUtil.Division(rdt.get전체_비용_부가세() , bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_법인세(CommonUtil.Division(rdt.get전체_비용_법인세() , bi.get월평균판매대수_소계_합계()));
-                rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
-                rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
-                rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
-            }
-            
-            //  업계 평균적용 결과
-            rdt = CDataControl.g_ResultBusinessTotal;
-            rd = CDataControl.g_ResultBusiness;
-            di = CDataControl.g_BusinessAvg;     // 관리자가 배포한 업계 단위비용
-            //      도매
-            //          총액
-            //              수익
-            rdt.set도매_수익_가입자관리수수료(di.get도매_수익_월평균관리수수료() * bi.get도매_누적가입자수());
-            rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료() * bi.get도매_누적가입자수());
-            rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익() * (bi.get월평균판매대수_소계_합계()-bi.get월평균유통모델출고대수_소계_합계()));
-            rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume((di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC()) * bi.get월평균유통모델출고대수_소계_합계());
-            rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
-            //              비용
-            rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
-            rdt.set도매_비용_인건비_급여_복리후생비(di.get도매_비용_직원급여_간부급() * bi.get도매_직원수_간부급() + di.get도매_비용_직원급여_평사원() * bi.get도매_직원수_평사원() + di.get도소매_비용_복리후생비() * bi.get도매_직원수_소계());
-            rdt.set도매_비용_임차료(di.get도매_비용_지급임차료() * bi.get도매_거래선수_개통사무실());
-            rdt.set도매_비용_이자비용(di.get도소매_비용_이자비용() *bi.get도매_월평균판매대수_소계());
-            rdt.set도매_비용_부가세(di.get도소매_비용_부가세() *bi.get도매_월평균판매대수_소계());
-            rdt.set도매_비용_법인세(di.get도소매_비용_법인세() *bi.get도매_월평균판매대수_소계());
-            // '# Detail3. 업계평균vs.해당대리점'!K10+'# Detail3. 업계평균vs.해당대리점'!K11+'# Detail3. 업계평균vs.해당대리점'!K13+'# Detail3. 업계평균vs.해당대리점'!K14+'# Detail3. 업계평균vs.해당대리점'!K15+'# Detail3. 업계평균vs.해당대리점'!K16+'# Detail3. 업계평균vs.해당대리점'!K17+'# Detail3. 업계평균vs.해당대리점'!K18+'# Detail3. 업계평균vs.해당대리점'!K20
-            rdt.set도매_비용_기타판매관리비((di.get도매_비용_운반비() + di.get도매_비용_지급수수료() + di.get도매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get도매_월평균판매대수_소계()
-                                        + (di.get도매_비용_건물관리비()) * bi.get도매_거래선수_개통사무실()
-                                        + (di.get도매_비용_차량유지비() + di.get도소매_비용_통신비() + di.get도소매_비용_공과금()) * bi.get도매_직원수_소계());
-            rdt.도매_비용_소계 = rdt.get도매_비용_대리점투자비용() + rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get도매_비용_임차료() + rdt.get도매_비용_이자비용() + rdt.get도매_비용_부가세() + rdt.get도매_비용_법인세() + rdt.get도매_비용_기타판매관리비();
-            rdt.도매손익계 = rdt.도매_수익_소계 - rdt.도매_비용_소계;
-            //          단위당 금액
-            //              수익
-            rd.set도매_수익_가입자관리수수료(CommonUtil.Division(rdt.get도매_수익_가입자관리수수료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_CS관리수수료(CommonUtil.Division(rdt.get도매_수익_CS관리수수료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get도매_수익_사업자모델매입에따른추가수익(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get도매_월평균판매대수_소계()));
-            rd.도매_수익_소계 = CommonUtil.Division(rdt.도매_수익_소계, bi.get도매_월평균판매대수_소계());
-            //              비용
-            rd.set도매_비용_대리점투자비용(CommonUtil.Division(rdt.get도매_비용_대리점투자비용(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get도매_비용_인건비_급여_복리후생비(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_임차료(CommonUtil.Division(rdt.get도매_비용_임차료(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_이자비용(CommonUtil.Division(rdt.get도매_비용_이자비용(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_부가세(CommonUtil.Division(rdt.get도매_비용_부가세(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_법인세(CommonUtil.Division(rdt.get도매_비용_법인세(), bi.get도매_월평균판매대수_소계()));
-            rd.set도매_비용_기타판매관리비(CommonUtil.Division(rdt.get도매_비용_기타판매관리비(), bi.get도매_월평균판매대수_소계()));
-            rd.도매_비용_소계 = CommonUtil.Division(rdt.도매_비용_소계, bi.get도매_월평균판매대수_소계());
-            rd.도매손익계 = CommonUtil.Division(rdt.도매손익계, bi.get도매_월평균판매대수_소계());
-            //      소매
-            //          총액
-            //              수익
-            rdt.set소매_수익_업무취급수수료(di.get소매_수익_월평균업무취급수수료()*bi.get월평균판매대수_소계_합계());
-            rdt.set소매_수익_직영매장판매수익(di.get소매_수익_직영매장판매수익()*bi.get소매_월평균판매대수_소계());
-            rdt.소매_수익_소계 = rdt.get소매_수익_업무취급수수료() + rdt.get소매_수익_직영매장판매수익();
-            //              비용
-            rdt.set소매_비용_인건비_급여_복리후생비(di.get소매_비용_직원급여_간부급() * bi.get소매_직원수_간부급() + di.get소매_비용_직원급여_평사원() * bi.get소매_직원수_평사원() + di.get도소매_비용_복리후생비() * bi.get소매_직원수_소계());
-            rdt.set소매_비용_임차료(di.get소매_비용_지급임차료()*bi.get소매_거래선수_소계());
-            rdt.set소매_비용_이자비용(di.get도소매_비용_이자비용()*bi.get소매_월평균판매대수_소계());
-            rdt.set소매_비용_부가세(di.get도소매_비용_부가세()*bi.get소매_월평균판매대수_소계());
-            rdt.set소매_비용_법인세(di.get도소매_비용_법인세()*bi.get소매_월평균판매대수_소계());
-            // '# Detail3. 업계평균vs.해당대리점'!L10+'# Detail3. 업계평균vs.해당대리점'!L11+'# Detail3. 업계평균vs.해당대리점'!L13+'# Detail3. 업계평균vs.해당대리점'!L14+'# Detail3. 업계평균vs.해당대리점'!L15+'# Detail3. 업계평균vs.해당대리점'!L16+'# Detail3. 업계평균vs.해당대리점'!L17+'# Detail3. 업계평균vs.해당대리점'!L18+'# Detail3. 업계평균vs.해당대리점'!L20
-            rdt.set소매_비용_기타판매관리비((di.get소매_비용_지급수수료() + di.get소매_비용_판매촉진비() + di.get도소매_비용_소모품비() + di.get도소매_비용_기타()) * bi.get소매_월평균판매대수_소계()
-                                        + (di.get소매_비용_건물관리비()) * bi.get소매_거래선수_소계()
-                                        + (di.get도소매_비용_통신비() + di.get도소매_비용_공과금()) * bi.get소매_직원수_소계());
-            rdt.소매_비용_소계 = rdt.get소매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_임차료() + rdt.get소매_비용_이자비용() + rdt.get소매_비용_부가세() + rdt.get소매_비용_법인세() + rdt.get소매_비용_기타판매관리비();
-            rdt.소매손익계 = rdt.소매_수익_소계 - rdt.소매_비용_소계;
-            rdt.점별손익추정 = CommonUtil.Division(rdt.소매손익계, bi.get거래선수_직영점_합계());
-            //          단위당 금액
-            //              수익
-            rd.set소매_수익_업무취급수수료(CommonUtil.Division(rdt.get소매_수익_업무취급수수료(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_수익_직영매장판매수익(CommonUtil.Division(rdt.get소매_수익_직영매장판매수익(), bi.get소매_월평균판매대수_소계()));
-            rd.소매_수익_소계 = CommonUtil.Division(rdt.소매_수익_소계, bi.get소매_월평균판매대수_소계());
-            //              비용
-            rd.set소매_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get소매_비용_인건비_급여_복리후생비(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_임차료(CommonUtil.Division(rdt.get소매_비용_임차료(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_이자비용(CommonUtil.Division(rdt.get소매_비용_이자비용(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_부가세(CommonUtil.Division(rdt.get소매_비용_부가세(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_법인세(CommonUtil.Division(rdt.get소매_비용_법인세(), bi.get소매_월평균판매대수_소계()));
-            rd.set소매_비용_기타판매관리비(CommonUtil.Division(rdt.get소매_비용_기타판매관리비(), bi.get소매_월평균판매대수_소계()));
-            rd.소매_비용_소계 = CommonUtil.Division(rdt.소매_비용_소계, bi.get소매_월평균판매대수_소계());
-            rd.소매손익계 = CommonUtil.Division(rdt.소매손익계, bi.get소매_월평균판매대수_소계());
-            rd.점별손익추정 = bi.get거래선수_직영점_합계();
-            //      전체
-            //          총액
-            //              수익
-            rdt.set전체_수익_가입자관리수수료(rdt.get도매_수익_가입자관리수수료());
-            rdt.set전체_수익_CS관리수수료(rdt.get도매_수익_CS관리수수료());
-            rdt.set전체_수익_업무취급수수료(rdt.get소매_수익_업무취급수수료());
-            rdt.set전체_수익_사업자모델매입에따른추가수익(rdt.get도매_수익_사업자모델매입에따른추가수익());
-            rdt.set전체_수익_유통모델매입에따른추가수익_현금_Volume(rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume());
-            rdt.set전체_수익_직영매장판매수익(rdt.get소매_수익_직영매장판매수익());
-            rdt.전체_수익_소계 = rdt.get전체_수익_가입자관리수수료() + rdt.get전체_수익_CS관리수수료() + rdt.get전체_수익_업무취급수수료() + rdt.get전체_수익_사업자모델매입에따른추가수익() + rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume() + rdt.get전체_수익_직영매장판매수익();
-            //              비용
-            rdt.set전체_비용_대리점투자비용(rdt.get도매_비용_대리점투자비용());
-            rdt.set전체_비용_인건비_급여_복리후생비(rdt.get도매_비용_인건비_급여_복리후생비() + rdt.get소매_비용_인건비_급여_복리후생비());
-            rdt.set전체_비용_임차료(rdt.get도매_비용_임차료() + rdt.get소매_비용_임차료());
-            rdt.set전체_비용_이자비용(rdt.get도매_비용_이자비용() + rdt.get소매_비용_이자비용());
-            rdt.set전체_비용_부가세(rdt.get도매_비용_부가세() + rdt.get소매_비용_부가세());
-            rdt.set전체_비용_법인세(rdt.get도매_비용_법인세() + rdt.get소매_비용_법인세());
-            rdt.set전체_비용_기타판매관리비(rdt.get도매_비용_기타판매관리비() + rdt.get소매_비용_기타판매관리비());
-            rdt.전체_비용_소계 = rdt.get전체_비용_대리점투자비용() + rdt.get전체_비용_인건비_급여_복리후생비() + rdt.get전체_비용_임차료() + rdt.get전체_비용_이자비용() + rdt.get전체_비용_부가세() + rdt.get전체_비용_법인세() + rdt.get전체_비용_기타판매관리비();
-            rdt.전체손익계 = rdt.전체_수익_소계 - rdt.전체_비용_소계;
-            //          단위당 금액
-            //              수익
-            rd.set전체_수익_가입자관리수수료(CommonUtil.Division(rdt.get전체_수익_가입자관리수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_CS관리수수료(CommonUtil.Division(rdt.get전체_수익_CS관리수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_업무취급수수료(CommonUtil.Division(rdt.get전체_수익_업무취급수수료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_사업자모델매입에따른추가수익(CommonUtil.Division(rdt.get전체_수익_사업자모델매입에따른추가수익(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_유통모델매입에따른추가수익_현금_Volume(CommonUtil.Division(rdt.get전체_수익_유통모델매입에따른추가수익_현금_Volume(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_수익_직영매장판매수익(CommonUtil.Division(rdt.get전체_수익_직영매장판매수익(), bi.get월평균판매대수_소계_합계()));
-            rd.전체_수익_소계 = CommonUtil.Division(rdt.전체_수익_소계, bi.get월평균판매대수_소계_합계());
-            //              비용
-            rd.set전체_비용_대리점투자비용(CommonUtil.Division(rdt.get전체_비용_대리점투자비용(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_인건비_급여_복리후생비(CommonUtil.Division(rdt.get전체_비용_인건비_급여_복리후생비(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_임차료(CommonUtil.Division(rdt.get전체_비용_임차료(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_이자비용(CommonUtil.Division(rdt.get전체_비용_이자비용(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_부가세(CommonUtil.Division(rdt.get전체_비용_부가세(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_법인세(CommonUtil.Division(rdt.get전체_비용_법인세(), bi.get월평균판매대수_소계_합계()));
-            rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
-            rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
-            rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
+            CommonUtil.setInputData(txtWrite, txtWrite2, bi, di, rdts, rds, rdt, rd, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
         }
 
 

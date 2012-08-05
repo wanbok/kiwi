@@ -51,8 +51,8 @@ namespace KIWI
             for (int i = 0; i < 16; i++)
             {
                 String result;
-                Int64 all = CDataControl.g_ResultBusinessTotal.getArr전체_수익_비용_및_계산포함()[i];
-                Int64 agency = CDataControl.g_ResultBusiness.getArr전체_수익_비용_및_계산포함()[i];
+                Int64 all = CDataControl.g_ResultBusiness.getArr전체_리포트용(CDataControl.g_DetailInput)[i];
+                Int64 agency = CDataControl.g_ResultStore.getArr전체_리포트용(CDataControl.g_BusinessAvg)[i];
                 if (all < agency)
                 {
                     result = "+";
@@ -78,7 +78,7 @@ namespace KIWI
 
             r = name.NewRow();
             r[0] = CDataControl.g_ReportData.get대리점();
-            r[1] = CDataControl.g_ReportData.get판매자();
+            r[1] = CDataControl.g_ReportData.get마케터();
             name.Rows.Add(r);
 
             r = comments.NewRow();

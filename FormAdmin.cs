@@ -403,7 +403,7 @@ namespace KIWI
 
             mBI.set지역(reportData.get지역());
             mBI.set대리점(reportData.get대리점());
-            mBI.set마케터(reportData.get판매자());
+            mBI.set마케터(reportData.get마케터());
 
             startIndex += length;
             length = 14;
@@ -596,11 +596,31 @@ namespace KIWI
             {
                 csv += txtInputAsp[i].Text.Replace(",", "") + ",";
             }
-            FileIOPermission permission = new FileIOPermission(FileIOPermissionAccess.AllAccess, CommonUtil.defaultManagerFileName);
-            permission.Demand();
-            System.IO.File.WriteAllText(CommonUtil.defaultManagerFileName, CommonUtil.Base64Encode(csv));
-            System.IO.File.WriteAllText(CommonUtil.datedManagerFileName, CommonUtil.Base64Encode(csv));
-            readFileOfExistedAverage();
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "LGM File|*.lgm";
+            saveFileDialog1.Title = "Select a File";
+            saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data";
+            saveFileDialog1.DefaultExt = "lgm";
+            saveFileDialog1.AutoUpgradeEnabled = true;
+            saveFileDialog1.AddExtension = true;
+            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.FileName = CommonUtil.datedManagerFileName;
+
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
+            {
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data");
+            }
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                FileIOPermission permission = new FileIOPermission(FileIOPermissionAccess.AllAccess, CommonUtil.defaultManagerFileName);
+                permission.Demand();
+                System.IO.File.WriteAllText(CommonUtil.defaultManagerFileName, CommonUtil.Base64Encode(csv));
+                permission = new FileIOPermission(FileIOPermissionAccess.AllAccess, saveFileDialog1.FileName);
+                permission.Demand();
+                System.IO.File.WriteAllText(saveFileDialog1.FileName, CommonUtil.Base64Encode(csv));
+                readFileOfExistedAverage();
+            }
         }
 
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -765,6 +785,18 @@ namespace KIWI
                     _TextBox.SelectionStart = _TextBox.Text.Length - saveCursor;
                 }
                 e.Handled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (TextBox txt in txtInput)
+            {
+                txt.Text = "0";
+            }
+            foreach (TextBox txt in txtInputAsp)
+            {
+                txt.Text = "0";
             }
         }
     }

@@ -142,7 +142,7 @@ namespace KIWI
 
             CDataControl.g_FileBasicInput.set지역(CDataControl.g_ReportData.get지역());
             CDataControl.g_FileBasicInput.set대리점(CDataControl.g_ReportData.get대리점());
-            CDataControl.g_FileBasicInput.set마케터(CDataControl.g_ReportData.get판매자());
+            CDataControl.g_FileBasicInput.set마케터(CDataControl.g_ReportData.get마케터());
         }
         
         internal static String getAdminDataBySerialization(String splitter)

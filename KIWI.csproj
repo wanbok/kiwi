@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KIWI</RootNamespace>
-    <AssemblyName>KIWI</AssemblyName>
+    <AssemblyName>LGE대리점손익관리</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -63,6 +63,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
@@ -337,6 +340,7 @@
     <Content Include="Assembly\CrystalDecisions.Windows.Forms.dll" />
     <Content Include="Assembly\Microsoft.Office.Interop.Excel.dll" />
     <Content Include="Assembly\System.Windows.Forms.DataVisualization.dll" />
+    <Content Include="favicon.ico" />
     <Content Include="Resources\back3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

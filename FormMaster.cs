@@ -121,7 +121,7 @@ namespace KIWI
                     saveFileDialog1.AutoUpgradeEnabled = true;
                     saveFileDialog1.AddExtension = true;
                     saveFileDialog1.RestoreDirectory = true;
-                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get판매자() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
 
                     // If the directory doesn't exist, create it.
                     if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\LGE Data"))
@@ -140,18 +140,19 @@ namespace KIWI
                         (this.panel1.Controls[0] as Form).Name == "FormAdmin" ||
                         (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
                     {
-                        saveFileDialog1.ShowDialog();
-
-                        if (saveFileDialog1.FileName.EndsWith("lge"))
+                        if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                         {
-                            CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|");
-                        }
-                        else if (saveFileDialog1.FileName.EndsWith("xlsx"))
-                        {
-                            FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
-                            fi2.CopyTo(saveFileDialog1.FileName, true);
+                            if (saveFileDialog1.FileName.EndsWith("lge"))
+                            {
+                                CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|");
+                            }
+                            else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                            {
+                                FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                                fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                            CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false); 
+                                CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false);
+                            }
                         }
                     }
                 }
@@ -248,7 +249,6 @@ namespace KIWI
 
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
-            if (!outOfFormUserInput_Click(sender, e)) return;
             FormAdmin frm = new FormAdmin();
             panelSet(frm);
         }
