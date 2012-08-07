@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KIWI", "KIWI.csproj", "{1BE78FCC-B0A6-4A01-A7ED-6D50B01F5931}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Install", "..\Install\Install.vdproj", "{E833C856-6237-4D99-8BD7-CF54AD8DFF5C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Install", "..\Install\Install.vdproj", "{22E43D69-69E0-4974-92A4-8A8B978B0B8A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{2F3F3F2F-2A84-42B0-A86A-E50E9D385B14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,10 @@ Global
 		{1BE78FCC-B0A6-4A01-A7ED-6D50B01F5931}.Debug|x86.Build.0 = Debug|x86
 		{1BE78FCC-B0A6-4A01-A7ED-6D50B01F5931}.Release|x86.ActiveCfg = Release|x86
 		{1BE78FCC-B0A6-4A01-A7ED-6D50B01F5931}.Release|x86.Build.0 = Release|x86
-		{E833C856-6237-4D99-8BD7-CF54AD8DFF5C}.Debug|x86.ActiveCfg = Debug
-		{E833C856-6237-4D99-8BD7-CF54AD8DFF5C}.Release|x86.ActiveCfg = Release
+		{22E43D69-69E0-4974-92A4-8A8B978B0B8A}.Debug|x86.ActiveCfg = Debug
+		{22E43D69-69E0-4974-92A4-8A8B978B0B8A}.Release|x86.ActiveCfg = Release
+		{2F3F3F2F-2A84-42B0-A86A-E50E9D385B14}.Debug|x86.ActiveCfg = Debug
+		{2F3F3F2F-2A84-42B0-A86A-E50E9D385B14}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

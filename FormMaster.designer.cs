@@ -45,7 +45,6 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
@@ -56,11 +55,13 @@
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(30, 30);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
@@ -81,7 +82,8 @@
             this.toolStripButton9});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1284, 37);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 26);
+            this.toolStrip1.Size = new System.Drawing.Size(1284, 63);
             this.toolStrip1.TabIndex = 576;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -210,17 +212,6 @@
             this.toolStripButton6.ToolTipText = " 업데이트";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton9.Image = global::KIWI.Properties.Resources.management;
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(34, 34);
-            this.toolStripButton9.Text = "toolStripButton9";
-            this.toolStripButton9.ToolTipText = "관리";
-            this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
-            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -319,6 +310,17 @@
             this.label1.TabIndex = 609;
             this.label1.Text = "관리";
             // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton9.Image = global::KIWI.Properties.Resources.management;
+            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.Size = new System.Drawing.Size(34, 34);
+            this.toolStripButton9.Text = "toolStripButton9";
+            this.toolStripButton9.ToolTipText = "관리";
+            this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
+            // 
             // FormMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -374,9 +376,9 @@
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.Label label1;
     }
 }

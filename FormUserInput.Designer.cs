@@ -355,6 +355,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
@@ -592,9 +595,9 @@
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel40);
             this.tabPage5.Controls.Add(this.panel42);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage5.Size = new System.Drawing.Size(1262, 641);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             // 
@@ -3222,6 +3225,9 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.label39);
+            this.tabPage1.Controls.Add(this.label38);
+            this.tabPage1.Controls.Add(this.label37);
             this.tabPage1.Controls.Add(this.마케터);
             this.tabPage1.Controls.Add(this.대리점명);
             this.tabPage1.Controls.Add(this.label156);
@@ -3303,10 +3309,10 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Font = new System.Drawing.Font("굴림", 9F);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage1.Size = new System.Drawing.Size(1262, 641);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
@@ -4352,6 +4358,42 @@
             this.tabControl1.Size = new System.Drawing.Size(1270, 666);
             this.tabControl1.TabIndex = 0;
             // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(200, 26);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(31, 12);
+            this.label37.TabIndex = 93;
+            this.label37.Text = "지역";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(376, 26);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(57, 12);
+            this.label38.TabIndex = 94;
+            this.label38.Text = "대리점명";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(579, 26);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(44, 12);
+            this.label39.TabIndex = 95;
+            this.label39.Text = "마케터";
+            // 
             // FormUserInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -4763,5 +4805,8 @@
         private System.Windows.Forms.Panel panel46;
         private System.Windows.Forms.Panel panel60;
         private System.Windows.Forms.Panel panel59;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
     }
 }
