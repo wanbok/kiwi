@@ -79,15 +79,15 @@ namespace KIWI
                 CDataControl.g_ResultStore == null) 
                 return;
 
-            long 가입자당ARPU = CommonUtil.Division(CDataControl.g_ResultStoreTotal.get도매_수익_가입자관리수수료()
+            Double 가입자당ARPU = CommonUtil.Division(CDataControl.g_ResultStoreTotal.get도매_수익_가입자관리수수료()
                                    , CDataControl.g_BasicInput.get누적가입자수_합계());
 
-            long 월평균인건비 = CommonUtil.Division((CDataControl.g_ResultStoreTotal.get전체_비용_인건비_급여_복리후생비() - CDataControl.g_DetailInput.get도소매_비용_복리후생비()), CDataControl.g_BasicInput.get직원수_소계_합계());
+            Double 월평균인건비 = CommonUtil.Division((CDataControl.g_ResultStoreTotal.get전체_비용_인건비_급여_복리후생비() - CDataControl.g_DetailInput.get도소매_비용_복리후생비()), CDataControl.g_BasicInput.get직원수_소계_합계());
 
             Double 판촉비비중 = CommonUtil.Division(Convert.ToDouble(CDataControl.g_DetailInput.get도매_비용_판매촉진비() + CDataControl.g_DetailInput.get소매_비용_판매촉진비())
                              , Convert.ToDouble(CDataControl.g_ResultStoreTotal.전체_비용_소계));
 
-            long 인당판매수량 = CommonUtil.Division((CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
+            Double 인당판매수량 = CommonUtil.Division((CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
                                     + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
                                     , CDataControl.g_BasicInput.get도매_직원수_소계());
 
@@ -143,7 +143,7 @@ namespace KIWI
 
             try
             {
-                long num = Convert.ToInt64(v0.Replace(",", ""))+Convert.ToInt64(v1.Replace(",", ""));
+                Double num = Convert.ToDouble(v0.Replace(",", "")) + Convert.ToDouble(v1.Replace(",", ""));
 
                 result = String.Format("{0:#,###}", num);
             }
@@ -175,12 +175,12 @@ namespace KIWI
 
         private void setCompare() {
             // 17, 49
-            Int64 convertedA;
-            Int64 convertedB;
+            Double convertedA;
+            Double convertedB;
 
             for (int i = 0; i < 16; i++) {
-                convertedA = Convert.ToInt64(txtOut[i + 16].Text.Replace(",",""));
-                convertedB = Convert.ToInt64(txtOut[i + 48].Text.Replace(",", ""));
+                convertedA = Convert.ToDouble(txtOut[i + 16].Text.Replace(",", ""));
+                convertedB = Convert.ToDouble(txtOut[i + 48].Text.Replace(",", ""));
                 if (convertedA < convertedB) { picCompare[i].Image = KIWI.Properties.Resources.up5; }
                 else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.down1; }
                 else { picCompare[i].Image = KIWI.Properties.Resources.equal; }
@@ -271,7 +271,7 @@ namespace KIWI
 
             try
             {
-                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+                Double num = Convert.ToDouble(_TextBox.Text.Replace(",", ""));
 
                 if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 1)
                 {

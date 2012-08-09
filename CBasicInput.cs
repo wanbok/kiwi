@@ -8,18 +8,18 @@ namespace KIWI
     public class CBasicInput
     {
         //도매_누적가입자수
-        private Int64 도매_누적가입자수;
-        public void set도매_누적가입자수(Int64 value)
+        private Double 도매_누적가입자수;
+        public void set도매_누적가입자수(Double value)
         {
             도매_누적가입자수 = value;
         }
-        public Int64 get도매_누적가입자수()
+        public Double get도매_누적가입자수()
         {
             return 도매_누적가입자수;
         }
         public void set도매_누적가입자수(String value)
         {
-            도매_누적가입자수 = getFormatInt64(value);
+            도매_누적가입자수 = getFormatDouble(value);
         }
         public String getstr도매_누적가입자수()
         {
@@ -28,18 +28,18 @@ namespace KIWI
       
 
         //도매_월평균판매대수_신규
-        private Int64 도매_월평균판매대수_신규;
-        public void set도매_월평균판매대수_신규(Int64 value)
+        private Double 도매_월평균판매대수_신규;
+        public void set도매_월평균판매대수_신규(Double value)
         {
             도매_월평균판매대수_신규 = value;
         }
-        public Int64 get도매_월평균판매대수_신규()
+        public Double get도매_월평균판매대수_신규()
         {
             return 도매_월평균판매대수_신규;
         }
         public void set도매_월평균판매대수_신규(String value)
         {
-            도매_월평균판매대수_신규 = getFormatInt64(value);
+            도매_월평균판매대수_신규 = getFormatDouble(value);
         }
         public String getstr도매_월평균판매대수_신규()
         {
@@ -47,18 +47,18 @@ namespace KIWI
         }
 
         //도매_월평균판매대수_기변
-        private Int64 도매_월평균판매대수_기변;
-        public void set도매_월평균판매대수_기변(Int64 value)
+        private Double 도매_월평균판매대수_기변;
+        public void set도매_월평균판매대수_기변(Double value)
         {
             도매_월평균판매대수_기변 = value;
         }
-        public Int64 get도매_월평균판매대수_기변()
+        public Double get도매_월평균판매대수_기변()
         {
             return 도매_월평균판매대수_기변;
         }
         public void set도매_월평균판매대수_기변(String value)
         {
-            도매_월평균판매대수_기변 = getFormatInt64(value);
+            도매_월평균판매대수_기변 = getFormatDouble(value);
         }
         public String getstr도매_월평균판매대수_기변()
         {
@@ -66,18 +66,18 @@ namespace KIWI
         }
 
         //도매_월평균유통모델출고대수_LG
-        private Int64 도매_월평균유통모델출고대수_LG;
-        public void set도매_월평균유통모델출고대수_LG(Int64 value)
+        private Double 도매_월평균유통모델출고대수_LG;
+        public void set도매_월평균유통모델출고대수_LG(Double value)
         {
             도매_월평균유통모델출고대수_LG = value;
         }
-        public Int64 get도매_월평균유통모델출고대수_LG()
+        public Double get도매_월평균유통모델출고대수_LG()
         {
             return 도매_월평균유통모델출고대수_LG;
         }
         public void set도매_월평균유통모델출고대수_LG(String value)
         {
-            도매_월평균유통모델출고대수_LG = getFormatInt64(value);
+            도매_월평균유통모델출고대수_LG = getFormatDouble(value);
         }
         public String getstr도매_월평균유통모델출고대수_LG()
         {
@@ -85,18 +85,18 @@ namespace KIWI
         }
 
         //도매_월평균유통모델출고대수_SS
-        private Int64 도매_월평균유통모델출고대수_SS;
-        public void set도매_월평균유통모델출고대수_SS(Int64 value)
+        private Double 도매_월평균유통모델출고대수_SS;
+        public void set도매_월평균유통모델출고대수_SS(Double value)
         {
             도매_월평균유통모델출고대수_SS = value;
         }
-        public Int64 get도매_월평균유통모델출고대수_SS()
+        public Double get도매_월평균유통모델출고대수_SS()
         {
             return 도매_월평균유통모델출고대수_SS;
         }
         public void set도매_월평균유통모델출고대수_SS(String value)
         {
-            도매_월평균유통모델출고대수_SS = getFormatInt64(value);
+            도매_월평균유통모델출고대수_SS = getFormatDouble(value);
         }
         public String getstr도매_월평균유통모델출고대수_SS()
         {
@@ -104,18 +104,18 @@ namespace KIWI
         }
 
         //도매_거래선수_개통사무실
-        private Int64 도매_거래선수_개통사무실;
-        public void set도매_거래선수_개통사무실(Int64 value)
+        private Double 도매_거래선수_개통사무실;
+        public void set도매_거래선수_개통사무실(Double value)
         {
             도매_거래선수_개통사무실 = value;
         }
-        public Int64 get도매_거래선수_개통사무실()
+        public Double get도매_거래선수_개통사무실()
         {
             return 도매_거래선수_개통사무실;
         }
         public void set도매_거래선수_개통사무실(String value)
         {
-            도매_거래선수_개통사무실 = getFormatInt64(value);
+            도매_거래선수_개통사무실 = getFormatDouble(value);
         }
         public String getstr도매_거래선수_개통사무실()
         {
@@ -123,18 +123,18 @@ namespace KIWI
         }
 
         //도매_거래선수_판매점
-        private Int64 도매_거래선수_판매점;
-        public void set도매_거래선수_판매점(Int64 value)
+        private Double 도매_거래선수_판매점;
+        public void set도매_거래선수_판매점(Double value)
         {
             도매_거래선수_판매점 = value;
         }
-        public Int64 get도매_거래선수_판매점()
+        public Double get도매_거래선수_판매점()
         {
             return 도매_거래선수_판매점;
         }
         public void set도매_거래선수_판매점(String value)
         {
-            도매_거래선수_판매점 = getFormatInt64(value);
+            도매_거래선수_판매점 = getFormatDouble(value);
         }
         public String getstr도매_거래선수_판매점()
         {
@@ -142,18 +142,18 @@ namespace KIWI
         }
 
         //도매_직원수_간부급
-        private Int64 도매_직원수_간부급;
-        public void set도매_직원수_간부급(Int64 value)
+        private Double 도매_직원수_간부급;
+        public void set도매_직원수_간부급(Double value)
         {
             도매_직원수_간부급 = value;
         }
-        public Int64 get도매_직원수_간부급()
+        public Double get도매_직원수_간부급()
         {
             return 도매_직원수_간부급;
         }
         public void set도매_직원수_간부급(String value)
         {
-            도매_직원수_간부급 = getFormatInt64(value);
+            도매_직원수_간부급 = getFormatDouble(value);
         }
         public String getstr도매_직원수_간부급()
         {
@@ -161,18 +161,18 @@ namespace KIWI
         }
 
         //도매_직원수_평사원
-        private Int64 도매_직원수_평사원;
-        public void set도매_직원수_평사원(Int64 value)
+        private Double 도매_직원수_평사원;
+        public void set도매_직원수_평사원(Double value)
         {
             도매_직원수_평사원 = value;
         }
-        public Int64 get도매_직원수_평사원()
+        public Double get도매_직원수_평사원()
         {
             return 도매_직원수_평사원;
         }
         public void set도매_직원수_평사원(String value)
         {
-            도매_직원수_평사원 = getFormatInt64(value);
+            도매_직원수_평사원 = getFormatDouble(value);
         }
         public String getstr도매_직원수_평사원()
         {
@@ -182,18 +182,18 @@ namespace KIWI
 
 
         //소매_월평균판매대수_신규
-        private Int64 소매_월평균판매대수_신규;
-        public void set소매_월평균판매대수_신규(Int64 value)
+        private Double 소매_월평균판매대수_신규;
+        public void set소매_월평균판매대수_신규(Double value)
         {
             소매_월평균판매대수_신규 = value;
         }
-        public Int64 get소매_월평균판매대수_신규()
+        public Double get소매_월평균판매대수_신규()
         {
             return 소매_월평균판매대수_신규;
         }
         public void set소매_월평균판매대수_신규(String value)
         {
-            소매_월평균판매대수_신규 = getFormatInt64(value);
+            소매_월평균판매대수_신규 = getFormatDouble(value);
         }
         public String getstr소매_월평균판매대수_신규()
         {
@@ -201,18 +201,18 @@ namespace KIWI
         }
 
         //소매_월평균판매대수_기변
-        private Int64 소매_월평균판매대수_기변;
-        public void set소매_월평균판매대수_기변(Int64 value)
+        private Double 소매_월평균판매대수_기변;
+        public void set소매_월평균판매대수_기변(Double value)
         {
             소매_월평균판매대수_기변 = value;
         }
-        public Int64 get소매_월평균판매대수_기변()
+        public Double get소매_월평균판매대수_기변()
         {
             return 소매_월평균판매대수_기변;
         }
         public void set소매_월평균판매대수_기변(String value)
         {
-            소매_월평균판매대수_기변 = getFormatInt64(value);
+            소매_월평균판매대수_기변 = getFormatDouble(value);
         }
         public String getstr소매_월평균판매대수_기변()
         {//   ','가 적용된 값 리턴
@@ -220,18 +220,18 @@ namespace KIWI
         }
 
         //소매_거래선수_직영점
-        private Int64 소매_거래선수_직영점;
-        public void set소매_거래선수_직영점(Int64 value)
+        private Double 소매_거래선수_직영점;
+        public void set소매_거래선수_직영점(Double value)
         {
             소매_거래선수_직영점 = value;
         }
-        public Int64 get소매_거래선수_직영점()
+        public Double get소매_거래선수_직영점()
         {
             return 소매_거래선수_직영점;
         }
         public void set소매_거래선수_직영점(String value)
         {
-            소매_거래선수_직영점 = getFormatInt64(value);
+            소매_거래선수_직영점 = getFormatDouble(value);
         }
         public String getstr소매_거래선수_직영점()
         {//   ','가 적용된 값 리턴
@@ -239,18 +239,18 @@ namespace KIWI
         }
 
         //소매_직원수_간부급
-        private Int64 소매_직원수_간부급;
-        public void set소매_직원수_간부급(Int64 value)
+        private Double 소매_직원수_간부급;
+        public void set소매_직원수_간부급(Double value)
         {
             소매_직원수_간부급 = value;
         }
-        public Int64 get소매_직원수_간부급()
+        public Double get소매_직원수_간부급()
         {
             return 소매_직원수_간부급;
         }
         public void set소매_직원수_간부급(String value)
         {
-            소매_직원수_간부급 = getFormatInt64(value);
+            소매_직원수_간부급 = getFormatDouble(value);
         }
         public String getstr소매_직원수_간부급()
         {//   ','가 적용된 값 리턴
@@ -258,18 +258,18 @@ namespace KIWI
         }
 
         //소매_직원수_평사원
-        private Int64 소매_직원수_평사원;
-        public void set소매_직원수_평사원(Int64 value)
+        private Double 소매_직원수_평사원;
+        public void set소매_직원수_평사원(Double value)
         {
             소매_직원수_평사원 = value;
         }
-        public Int64 get소매_직원수_평사원()
+        public Double get소매_직원수_평사원()
         {
             return 소매_직원수_평사원;
         }
         public void set소매_직원수_평사원(String value)
         {
-            소매_직원수_평사원 = getFormatInt64(value);
+            소매_직원수_평사원 = getFormatDouble(value);
         }
         public String getstr소매_직원수_평사원()
         {//   ','가 적용된 값 리턴
@@ -301,14 +301,14 @@ namespace KIWI
         //배열 IO 
         public void setArrData(String[] arrvalue)
         {
-            Int64[] arrInt64 = new Int64[arrvalue.Length];
+            Double[] arrDouble = new Double[arrvalue.Length];
             for (int i = 0; i < arrvalue.Length; i++)
             {
-                arrInt64[i] = Convert.ToInt64(arrvalue[i]);
+                arrDouble[i] = Convert.ToDouble(arrvalue[i]);
             }
-            setArrData(arrInt64);
+            setArrData(arrDouble);
         }
-        public void setArrData(Int64[] arrvalue)
+        public void setArrData(Double[] arrvalue)
         {
             도매_누적가입자수 = arrvalue[0];
             도매_월평균판매대수_신규 = arrvalue[1];
@@ -327,9 +327,9 @@ namespace KIWI
             소매_직원수_평사원 = arrvalue[13];
         }
 
-        public Int64[] getArrData()
+        public Double[] getArrData()
         {
-            Int64[] arrvalue = new Int64[14];
+            Double[] arrvalue = new Double[14];
 
             arrvalue[0] = 도매_누적가입자수;
             arrvalue[1] = 도매_월평균판매대수_신규;
@@ -353,26 +353,26 @@ namespace KIWI
 
         public void setArrData_BasicInput(string[] arrvalue)
         {
-            도매_누적가입자수 = CommonUtil.StringToIntVal(arrvalue[0]);
-            도매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[1]);
-            도매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[2]);
-            도매_월평균유통모델출고대수_LG = CommonUtil.StringToIntVal(arrvalue[3]);
-            도매_월평균유통모델출고대수_SS = CommonUtil.StringToIntVal(arrvalue[4]);
-            도매_거래선수_개통사무실 = CommonUtil.StringToIntVal(arrvalue[5]);
-            도매_거래선수_판매점 = CommonUtil.StringToIntVal(arrvalue[6]);
-            도매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[7]);
-            도매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[8]);
+            도매_누적가입자수 = CommonUtil.StringToDoubleVal(arrvalue[0]);
+            도매_월평균판매대수_신규 = CommonUtil.StringToDoubleVal(arrvalue[1]);
+            도매_월평균판매대수_기변 = CommonUtil.StringToDoubleVal(arrvalue[2]);
+            도매_월평균유통모델출고대수_LG = CommonUtil.StringToDoubleVal(arrvalue[3]);
+            도매_월평균유통모델출고대수_SS = CommonUtil.StringToDoubleVal(arrvalue[4]);
+            도매_거래선수_개통사무실 = CommonUtil.StringToDoubleVal(arrvalue[5]);
+            도매_거래선수_판매점 = CommonUtil.StringToDoubleVal(arrvalue[6]);
+            도매_직원수_간부급 = CommonUtil.StringToDoubleVal(arrvalue[7]);
+            도매_직원수_평사원 = CommonUtil.StringToDoubleVal(arrvalue[8]);
 
-            소매_월평균판매대수_신규 = CommonUtil.StringToIntVal(arrvalue[9]);
-            소매_월평균판매대수_기변 = CommonUtil.StringToIntVal(arrvalue[10]);
-            소매_거래선수_직영점 = CommonUtil.StringToIntVal(arrvalue[11]);
-            소매_직원수_간부급 = CommonUtil.StringToIntVal(arrvalue[12]);
-            소매_직원수_평사원 = CommonUtil.StringToIntVal(arrvalue[13]);
+            소매_월평균판매대수_신규 = CommonUtil.StringToDoubleVal(arrvalue[9]);
+            소매_월평균판매대수_기변 = CommonUtil.StringToDoubleVal(arrvalue[10]);
+            소매_거래선수_직영점 = CommonUtil.StringToDoubleVal(arrvalue[11]);
+            소매_직원수_간부급 = CommonUtil.StringToDoubleVal(arrvalue[12]);
+            소매_직원수_평사원 = CommonUtil.StringToDoubleVal(arrvalue[13]);
         }
 
-        public Int64[] getArrData_리포트용()
+        public Double[] getArrData_리포트용()
         {
-            Int64[] arrvalue = new Int64[10];
+            Double[] arrvalue = new Double[10];
 
             int i = 0;
             arrvalue[i++] = 도매_누적가입자수;
@@ -389,9 +389,9 @@ namespace KIWI
             return arrvalue;
         }
 
-        public Int64[] getArrData_BasicInput()
+        public Double[] getArrData_BasicInput()
         {
-            Int64[] arrvalue = new Int64[35];
+            Double[] arrvalue = new Double[35];
 
             int i = 0;
             arrvalue[i++] = 도매_누적가입자수;
@@ -433,18 +433,18 @@ namespace KIWI
             return arrvalue;
         }
 
-        private String getFormatString(Int64 value)
+        private String getFormatString(Double value)
         {
             CultureInfo cur = new CultureInfo(CultureInfo.InvariantCulture.LCID);
             cur.NumberFormat.NumberDecimalDigits = 0;
             return value.ToString("N", cur);
         }
 
-        private Int64 getFormatInt64(String value)
+        private Double getFormatDouble(String value)
         {
             String temp = "0";
             temp = value.Replace(",", "");
-            return CommonUtil.StringToIntVal(temp);
+            return CommonUtil.StringToDoubleVal(temp);
         }
 
 
@@ -481,7 +481,7 @@ namespace KIWI
 
         //소계값
         //도매_월평균판매대수_소계
-        public Int64 get도매_월평균판매대수_소계()
+        public Double get도매_월평균판매대수_소계()
         {
             return (도매_월평균판매대수_신규 + 도매_월평균판매대수_기변);
         }
@@ -491,7 +491,7 @@ namespace KIWI
         }
 
         //도매_월평균유통모델출고대수_소계
-        public Int64 get도매_월평균유통모델출고대수_소계()
+        public Double get도매_월평균유통모델출고대수_소계()
         {
             return 도매_월평균유통모델출고대수_LG + 도매_월평균유통모델출고대수_SS;
         }
@@ -501,7 +501,7 @@ namespace KIWI
         }
 
         //도매_거래선수_소계
-        public Int64 get도매_거래선수_소계()
+        public Double get도매_거래선수_소계()
         {
             return 도매_거래선수_개통사무실 + 도매_거래선수_판매점;
         }
@@ -511,7 +511,7 @@ namespace KIWI
         }
 
         //도매_직원수_소계
-        public Int64 get도매_직원수_소계()
+        public Double get도매_직원수_소계()
         {
             return 도매_직원수_간부급 + 도매_직원수_평사원;
         }
@@ -522,7 +522,7 @@ namespace KIWI
 
 
         //소매_월평균판매대수_소계
-        public Int64 get소매_월평균판매대수_소계()
+        public Double get소매_월평균판매대수_소계()
         {
             return 소매_월평균판매대수_신규 + 소매_월평균판매대수_기변;
         }
@@ -532,7 +532,7 @@ namespace KIWI
         }
 
         //소매_거래선수_소계
-        public Int64 get소매_거래선수_소계()
+        public Double get소매_거래선수_소계()
         {
             return 소매_거래선수_직영점;
         }
@@ -542,7 +542,7 @@ namespace KIWI
         }
 
         //소매_직원수_소계
-        public Int64 get소매_직원수_소계()
+        public Double get소매_직원수_소계()
         {
             return 소매_직원수_간부급 + 소매_직원수_평사원;
         }
@@ -555,7 +555,7 @@ namespace KIWI
 
         //합계값
         //누적가입자수_합계
-        public Int64 get누적가입자수_합계()
+        public Double get누적가입자수_합계()
         {
             return 도매_누적가입자수;
         }
@@ -566,7 +566,7 @@ namespace KIWI
 
 
         //월평균판매대수_신규_합계
-        public Int64 get월평균판매대수_신규_합계()
+        public Double get월평균판매대수_신규_합계()
         {
             return 도매_월평균판매대수_신규 + 소매_월평균판매대수_신규;
         }
@@ -576,7 +576,7 @@ namespace KIWI
         }
 
         //월평균판매대수_기변_합계
-        public Int64 get월평균판매대수_기변_합계()
+        public Double get월평균판매대수_기변_합계()
         {
             return 도매_월평균판매대수_기변 + 소매_월평균판매대수_기변;
         }
@@ -586,7 +586,7 @@ namespace KIWI
         }
 
         //월평균유통모델출고대수_LG
-        public Int64 get월평균유통모델출고대수_LG_합계()
+        public Double get월평균유통모델출고대수_LG_합계()
         {
             return 도매_월평균유통모델출고대수_LG;
         }
@@ -596,7 +596,7 @@ namespace KIWI
         }
 
         //월평균유통모델출고대수_SS
-        public Int64 get월평균유통모델출고대수_SS_합계()
+        public Double get월평균유통모델출고대수_SS_합계()
         {
             return 도매_월평균유통모델출고대수_SS;
         }
@@ -606,7 +606,7 @@ namespace KIWI
         }
 
         //거래선수_개통사무실
-        public Int64 get거래선수_개통사무실_합계()
+        public Double get거래선수_개통사무실_합계()
         {
             return 도매_거래선수_개통사무실;
         }
@@ -616,7 +616,7 @@ namespace KIWI
         }
 
         //거래선수_판매점
-        public Int64 get거래선수_판매점_합계()
+        public Double get거래선수_판매점_합계()
         {
             return 도매_거래선수_판매점;
         }
@@ -626,7 +626,7 @@ namespace KIWI
         }
 
         //직원수_간부급
-        public Int64 get직원수_간부급_합계()
+        public Double get직원수_간부급_합계()
         {
             return 도매_직원수_간부급 + 소매_직원수_간부급;
         }
@@ -636,7 +636,7 @@ namespace KIWI
         }
 
         //직원수_평사원
-        public Int64 get직원수_평사원_합계()
+        public Double get직원수_평사원_합계()
         {
             return 도매_직원수_평사원 + 소매_직원수_평사원;
         }
@@ -648,7 +648,7 @@ namespace KIWI
 
 
         //거래선수_직영점
-        public Int64 get거래선수_직영점_합계()
+        public Double get거래선수_직영점_합계()
         {
             return 소매_거래선수_직영점;
         }
@@ -660,7 +660,7 @@ namespace KIWI
         //소계의 합계
 
         //월평균판매대수_소계_합계
-        public Int64 get월평균판매대수_소계_합계()
+        public Double get월평균판매대수_소계_합계()
         {
             return get월평균판매대수_신규_합계() + get월평균판매대수_기변_합계();
         }
@@ -670,7 +670,7 @@ namespace KIWI
         }
 
         //월평균유통모델출고대수_소계_합계
-        public Int64 get월평균유통모델출고대수_소계_합계()
+        public Double get월평균유통모델출고대수_소계_합계()
         {
             return get월평균유통모델출고대수_LG_합계() + get월평균유통모델출고대수_SS_합계();
         }
@@ -680,7 +680,7 @@ namespace KIWI
         }
 
         //거래선수_소계_합계
-        public Int64 get거래선수_소계_합계()
+        public Double get거래선수_소계_합계()
         {
             return get거래선수_개통사무실_합계() + get거래선수_직영점_합계() + get거래선수_판매점_합계();
         }
@@ -690,7 +690,7 @@ namespace KIWI
         }
 
         //직원수_소계_합계
-        public Int64 get직원수_소계_합계()
+        public Double get직원수_소계_합계()
         {
             return get직원수_간부급_합계() + get직원수_평사원_합계();
         }

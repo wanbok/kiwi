@@ -13,9 +13,6 @@ namespace KIWI
 
 
 
-
-
-
         //수익은 전체,도매,소매 중복 없음
         //비용은 도매, 소매 일부 중복으로 개별 I/O 생성 ,중복안되는 항목도 개별 I/O 생성
 
@@ -59,108 +56,108 @@ namespace KIWI
 
         //******전체 수익
         //전체_수익_가입자관리수수료
-        public Int64 전체_수익_가입자관리수수료;
-        public void set전체_수익_가입자관리수수료(Int64 value)
+        public Double 전체_수익_가입자관리수수료;
+        public void set전체_수익_가입자관리수수료(Double value)
         {
             전체_수익_가입자관리수수료 = value;
         }
-        public Int64 get전체_수익_가입자관리수수료()
+        public Double get전체_수익_가입자관리수수료()
         {
             return 전체_수익_가입자관리수수료;
         }
         public void set전체_수익_가입자관리수수료(String value)
         {
-            전체_수익_가입자관리수수료 = getFormatInt64(value);
+            전체_수익_가입자관리수수료 = getFormatDouble(value);
         }
         public String getstr전체_수익_가입자관리수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_수익_가입자관리수수료);
         }
         //전체_수익_CS관리수수료                    
-        public Int64 전체_수익_CS관리수수료;
-        public void set전체_수익_CS관리수수료(Int64 value)
+        public Double 전체_수익_CS관리수수료;
+        public void set전체_수익_CS관리수수료(Double value)
         {
             전체_수익_CS관리수수료 = value;
         }
-        public Int64 get전체_수익_CS관리수수료()
+        public Double get전체_수익_CS관리수수료()
         {
             return 전체_수익_CS관리수수료;
         }
         public void set전체_수익_CS관리수수료(String value)
         {
-            전체_수익_CS관리수수료 = getFormatInt64(value);
+            전체_수익_CS관리수수료 = getFormatDouble(value);
         }
         public String getstr전체_수익_CS관리수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_수익_CS관리수수료);
         }
         //소매_수익_업무취급수수료
-        public Int64 전체_수익_업무취급수수료;
-        public void set전체_수익_업무취급수수료(Int64 value)
+        public Double 전체_수익_업무취급수수료;
+        public void set전체_수익_업무취급수수료(Double value)
         {
             전체_수익_업무취급수수료 = value;
         }
-        public Int64 get전체_수익_업무취급수수료()
+        public Double get전체_수익_업무취급수수료()
         {
             return 전체_수익_업무취급수수료;
         }
         public void set전체_수익_업무취급수수료(String value)
         {
-            전체_수익_업무취급수수료 = getFormatInt64(value);
+            전체_수익_업무취급수수료 = getFormatDouble(value);
         }
         public String getstr전체_수익_업무취급수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_수익_업무취급수수료);
         }
         //전체_수익_사업자모델매입에따른추가수익
-        public Int64 전체_수익_사업자모델매입에따른추가수익;
-        public void set전체_수익_사업자모델매입에따른추가수익(Int64 value)
+        public Double 전체_수익_사업자모델매입에따른추가수익;
+        public void set전체_수익_사업자모델매입에따른추가수익(Double value)
         {
             전체_수익_사업자모델매입에따른추가수익 = value;
         }
-        public Int64 get전체_수익_사업자모델매입에따른추가수익()
+        public Double get전체_수익_사업자모델매입에따른추가수익()
         {
             return 전체_수익_사업자모델매입에따른추가수익;
         }
         public void set전체_수익_사업자모델매입에따른추가수익(String value)
         {
-            전체_수익_사업자모델매입에따른추가수익 = getFormatInt64(value);
+            전체_수익_사업자모델매입에따른추가수익 = getFormatDouble(value);
         }
         public String getstr전체_수익_사업자모델매입에따른추가수익()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_수익_사업자모델매입에따른추가수익);
         }
         //전체_수익_유통모델매입에따른추가수익_현금_Volume
-        public Int64 전체_수익_유통모델매입에따른추가수익_현금_Volume;
-        public void set전체_수익_유통모델매입에따른추가수익_현금_Volume(Int64 value)
+        public Double 전체_수익_유통모델매입에따른추가수익_현금_Volume;
+        public void set전체_수익_유통모델매입에따른추가수익_현금_Volume(Double value)
         {
             전체_수익_유통모델매입에따른추가수익_현금_Volume = value;
         }
-        public Int64 get전체_수익_유통모델매입에따른추가수익_현금_Volume()
+        public Double get전체_수익_유통모델매입에따른추가수익_현금_Volume()
         {
             return 전체_수익_유통모델매입에따른추가수익_현금_Volume;
         }
         public void set전체_수익_유통모델매입에따른추가수익_현금_Volume(String value)
         {
-            전체_수익_유통모델매입에따른추가수익_현금_Volume = getFormatInt64(value);
+            전체_수익_유통모델매입에따른추가수익_현금_Volume = getFormatDouble(value);
         }
         public String getstr전체_수익_유통모델매입에따른추가수익_현금_Volume()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_수익_유통모델매입에따른추가수익_현금_Volume);
         }
         //전체_수익_직영매장판매수익
-        public Int64 전체_수익_직영매장판매수익;
-        public void set전체_수익_직영매장판매수익(Int64 value)
+        public Double 전체_수익_직영매장판매수익;
+        public void set전체_수익_직영매장판매수익(Double value)
         {
             전체_수익_직영매장판매수익 = value;
         }
-        public Int64 get전체_수익_직영매장판매수익()
+        public Double get전체_수익_직영매장판매수익()
         {
             return 전체_수익_직영매장판매수익;
         }
         public void set전체_수익_직영매장판매수익(String value)
         {
-            전체_수익_직영매장판매수익 = getFormatInt64(value);
+            전체_수익_직영매장판매수익 = getFormatDouble(value);
         }
         public String getstr전체_수익_직영매장판매수익()
         {//   ','가 적용된 값 리턴
@@ -171,126 +168,126 @@ namespace KIWI
 
         //******전체 비용
         //전체_비용_대리점투자비용
-        private Int64 전체_비용_대리점투자비용;
-        public void set전체_비용_대리점투자비용(Int64 value)
+        private Double 전체_비용_대리점투자비용;
+        public void set전체_비용_대리점투자비용(Double value)
         {
             전체_비용_대리점투자비용 = value;
         }
-        public Int64 get전체_비용_대리점투자비용()
+        public Double get전체_비용_대리점투자비용()
         {
             return 전체_비용_대리점투자비용;
         }
         public void set전체_비용_대리점투자비용(String value)
         {
-            전체_비용_대리점투자비용 = getFormatInt64(value);
+            전체_비용_대리점투자비용 = getFormatDouble(value);
         }
         public String getstr전체_비용_대리점투자비용()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_대리점투자비용);
         }
         //전체_비용_인건비_급여_복리후생비
-        private Int64 전체_비용_인건비_급여_복리후생비;
-        public void set전체_비용_인건비_급여_복리후생비(Int64 value)
+        private Double 전체_비용_인건비_급여_복리후생비;
+        public void set전체_비용_인건비_급여_복리후생비(Double value)
         {
             전체_비용_인건비_급여_복리후생비 = value;
         }
-        public Int64 get전체_비용_인건비_급여_복리후생비()
+        public Double get전체_비용_인건비_급여_복리후생비()
         {
             return 전체_비용_인건비_급여_복리후생비;
         }
         public void set전체_비용_인건비_급여_복리후생비(String value)
         {
-            전체_비용_인건비_급여_복리후생비 = getFormatInt64(value);
+            전체_비용_인건비_급여_복리후생비 = getFormatDouble(value);
         }
         public String getstr전체_비용_인건비_급여_복리후생비()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_인건비_급여_복리후생비);
         }
         //전체_비용_임차료
-        private Int64 전체_비용_임차료;
-        public void set전체_비용_임차료(Int64 value)
+        private Double 전체_비용_임차료;
+        public void set전체_비용_임차료(Double value)
         {
             전체_비용_임차료 = value;
         }
-        public Int64 get전체_비용_임차료()
+        public Double get전체_비용_임차료()
         {
             return 전체_비용_임차료;
         }
         public void set전체_비용_임차료(String value)
         {
-            전체_비용_임차료 = getFormatInt64(value);
+            전체_비용_임차료 = getFormatDouble(value);
         }
         public String getstr전체_비용_임차료()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_임차료);
         }
         //전체_비용_이자비용
-        private Int64 전체_비용_이자비용;
-        public void set전체_비용_이자비용(Int64 value)
+        private Double 전체_비용_이자비용;
+        public void set전체_비용_이자비용(Double value)
         {
             전체_비용_이자비용 = value;
         }
-        public Int64 get전체_비용_이자비용()
+        public Double get전체_비용_이자비용()
         {
             return 전체_비용_이자비용;
         }
         public void set전체_비용_이자비용(String value)
         {
-            전체_비용_이자비용 = getFormatInt64(value);
+            전체_비용_이자비용 = getFormatDouble(value);
         }
         public String getstr전체_비용_이자비용()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_이자비용);
         }
         //전체_비용_부가세
-        private Int64 전체_비용_부가세;
-        public void set전체_비용_부가세(Int64 value)
+        private Double 전체_비용_부가세;
+        public void set전체_비용_부가세(Double value)
         {
             전체_비용_부가세 = value;
         }
-        public Int64 get전체_비용_부가세()
+        public Double get전체_비용_부가세()
         {
             return 전체_비용_부가세;
         }
         public void set전체_비용_부가세(String value)
         {
-            전체_비용_부가세 = getFormatInt64(value);
+            전체_비용_부가세 = getFormatDouble(value);
         }
         public String getstr전체_비용_부가세()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_부가세);
         }
         //전체_비용_법인세
-        private Int64 전체_비용_법인세;
-        public void set전체_비용_법인세(Int64 value)
+        private Double 전체_비용_법인세;
+        public void set전체_비용_법인세(Double value)
         {
             전체_비용_법인세 = value;
         }
-        public Int64 get전체_비용_법인세()
+        public Double get전체_비용_법인세()
         {
             return 전체_비용_법인세;
         }
         public void set전체_비용_법인세(String value)
         {
-            전체_비용_법인세 = getFormatInt64(value);
+            전체_비용_법인세 = getFormatDouble(value);
         }
         public String getstr전체_비용_법인세()
         {//   ','가 적용된 값 리턴
             return getFormatString(전체_비용_법인세);
         }
         //전체_비용_기타판매관리비
-        private Int64 전체_비용_기타판매관리비;
-        public void set전체_비용_기타판매관리비(Int64 value)
+        private Double 전체_비용_기타판매관리비;
+        public void set전체_비용_기타판매관리비(Double value)
         {
             전체_비용_기타판매관리비 = value;
         }
-        public Int64 get전체_비용_기타판매관리비()
+        public Double get전체_비용_기타판매관리비()
         {
             return 전체_비용_기타판매관리비;
         }
         public void set전체_비용_기타판매관리비(String value)
         {
-            전체_비용_기타판매관리비 = getFormatInt64(value);
+            전체_비용_기타판매관리비 = getFormatDouble(value);
         }
         public String getstr전체_비용_기타판매관리비()
         {//   ','가 적용된 값 리턴
@@ -300,72 +297,72 @@ namespace KIWI
 
         //******도매 수익
         //도매_수익_가입자관리수수료
-        private Int64 도매_수익_가입자관리수수료;
-        public void set도매_수익_가입자관리수수료(Int64 value)
+        private Double 도매_수익_가입자관리수수료;
+        public void set도매_수익_가입자관리수수료(Double value)
         {
             도매_수익_가입자관리수수료 = value;
         }
-        public Int64 get도매_수익_가입자관리수수료()
+        public Double get도매_수익_가입자관리수수료()
         {
             return 도매_수익_가입자관리수수료;
         }
         public void set도매_수익_가입자관리수수료(String value)
         {
-            도매_수익_가입자관리수수료 = getFormatInt64(value);
+            도매_수익_가입자관리수수료 = getFormatDouble(value);
         }
         public String getstr도매_수익_가입자관리수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_수익_가입자관리수수료);
         }
         //도매_수익_CS관리수수료                    
-        private Int64 도매_수익_CS관리수수료;
-        public void set도매_수익_CS관리수수료(Int64 value)
+        private Double 도매_수익_CS관리수수료;
+        public void set도매_수익_CS관리수수료(Double value)
         {
             도매_수익_CS관리수수료 = value;
         }
-        public Int64 get도매_수익_CS관리수수료()
+        public Double get도매_수익_CS관리수수료()
         {
             return 도매_수익_CS관리수수료;
         }
         public void set도매_수익_CS관리수수료(String value)
         {
-            도매_수익_CS관리수수료 = getFormatInt64(value);
+            도매_수익_CS관리수수료 = getFormatDouble(value);
         }
         public String getstr도매_수익_CS관리수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_수익_CS관리수수료);
         }
         //도매_수익_사업자모델매입에따른추가수익
-        private Int64 도매_수익_사업자모델매입에따른추가수익;
-        public void set도매_수익_사업자모델매입에따른추가수익(Int64 value)
+        private Double 도매_수익_사업자모델매입에따른추가수익;
+        public void set도매_수익_사업자모델매입에따른추가수익(Double value)
         {
             도매_수익_사업자모델매입에따른추가수익 = value;
         }
-        public Int64 get도매_수익_사업자모델매입에따른추가수익()
+        public Double get도매_수익_사업자모델매입에따른추가수익()
         {
             return 도매_수익_사업자모델매입에따른추가수익;
         }
         public void set도매_수익_사업자모델매입에따른추가수익(String value)
         {
-            도매_수익_사업자모델매입에따른추가수익 = getFormatInt64(value);
+            도매_수익_사업자모델매입에따른추가수익 = getFormatDouble(value);
         }
         public String getstr도매_수익_사업자모델매입에따른추가수익()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_수익_사업자모델매입에따른추가수익);
         }
         //도매_수익_유통모델매입에따른추가수익_현금_Volume
-        private Int64 도매_수익_유통모델매입에따른추가수익_현금_Volume;
-        public void set도매_수익_유통모델매입에따른추가수익_현금_Volume(Int64 value)
+        private Double 도매_수익_유통모델매입에따른추가수익_현금_Volume;
+        public void set도매_수익_유통모델매입에따른추가수익_현금_Volume(Double value)
         {
             도매_수익_유통모델매입에따른추가수익_현금_Volume = value;
         }
-        public Int64 get도매_수익_유통모델매입에따른추가수익_현금_Volume()
+        public Double get도매_수익_유통모델매입에따른추가수익_현금_Volume()
         {
             return 도매_수익_유통모델매입에따른추가수익_현금_Volume;
         }
         public void set도매_수익_유통모델매입에따른추가수익_현금_Volume(String value)
         {
-            도매_수익_유통모델매입에따른추가수익_현금_Volume = getFormatInt64(value);
+            도매_수익_유통모델매입에따른추가수익_현금_Volume = getFormatDouble(value);
         }
         public String getstr도매_수익_유통모델매입에따른추가수익_현금_Volume()
         {//   ','가 적용된 값 리턴
@@ -374,126 +371,126 @@ namespace KIWI
 
         //******도매 비용
         //도매_비용_대리점투자비용
-        private Int64 도매_비용_대리점투자비용;
-        public void set도매_비용_대리점투자비용(Int64 value)
+        private Double 도매_비용_대리점투자비용;
+        public void set도매_비용_대리점투자비용(Double value)
         {
             도매_비용_대리점투자비용 = value;
         }
-        public Int64 get도매_비용_대리점투자비용()
+        public Double get도매_비용_대리점투자비용()
         {
             return 도매_비용_대리점투자비용;
         }
         public void set도매_비용_대리점투자비용(String value)
         {
-            도매_비용_대리점투자비용 = getFormatInt64(value);
+            도매_비용_대리점투자비용 = getFormatDouble(value);
         }
         public String getstr도매_비용_대리점투자비용()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_대리점투자비용);
         }
         //도매_비용_인건비_급여_복리후생비
-        private Int64 도매_비용_인건비_급여_복리후생비;
-        public void set도매_비용_인건비_급여_복리후생비(Int64 value)
+        private Double 도매_비용_인건비_급여_복리후생비;
+        public void set도매_비용_인건비_급여_복리후생비(Double value)
         {
             도매_비용_인건비_급여_복리후생비 = value;
         }
-        public Int64 get도매_비용_인건비_급여_복리후생비()
+        public Double get도매_비용_인건비_급여_복리후생비()
         {
             return 도매_비용_인건비_급여_복리후생비;
         }
         public void set도매_비용_인건비_급여_복리후생비(String value)
         {
-            도매_비용_인건비_급여_복리후생비 = getFormatInt64(value);
+            도매_비용_인건비_급여_복리후생비 = getFormatDouble(value);
         }
         public String getstr도매_비용_인건비_급여_복리후생비()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_인건비_급여_복리후생비);
         }
         //도매_비용_임차료
-        private Int64 도매_비용_임차료;
-        public void set도매_비용_임차료(Int64 value)
+        private Double 도매_비용_임차료;
+        public void set도매_비용_임차료(Double value)
         {
             도매_비용_임차료 = value;
         }
-        public Int64 get도매_비용_임차료()
+        public Double get도매_비용_임차료()
         {
             return 도매_비용_임차료;
         }
         public void set도매_비용_임차료(String value)
         {
-            도매_비용_임차료 = getFormatInt64(value);
+            도매_비용_임차료 = getFormatDouble(value);
         }
         public String getstr도매_비용_임차료()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_임차료);
         }
         //도매_비용_이자비용
-        private Int64 도매_비용_이자비용;
-        public void set도매_비용_이자비용(Int64 value)
+        private Double 도매_비용_이자비용;
+        public void set도매_비용_이자비용(Double value)
         {
             도매_비용_이자비용 = value;
         }
-        public Int64 get도매_비용_이자비용()
+        public Double get도매_비용_이자비용()
         {
             return 도매_비용_이자비용;
         }
         public void set도매_비용_이자비용(String value)
         {
-            도매_비용_이자비용 = getFormatInt64(value);
+            도매_비용_이자비용 = getFormatDouble(value);
         }
         public String getstr도매_비용_이자비용()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_이자비용);
         }
         //도매_비용_부가세
-        private Int64 도매_비용_부가세;
-        public void set도매_비용_부가세(Int64 value)
+        private Double 도매_비용_부가세;
+        public void set도매_비용_부가세(Double value)
         {
             도매_비용_부가세 = value;
         }
-        public Int64 get도매_비용_부가세()
+        public Double get도매_비용_부가세()
         {
             return 도매_비용_부가세;
         }
         public void set도매_비용_부가세(String value)
         {
-            도매_비용_부가세 = getFormatInt64(value);
+            도매_비용_부가세 = getFormatDouble(value);
         }
         public String getstr도매_비용_부가세()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_부가세);
         }
         //도매_비용_법인세
-        private Int64 도매_비용_법인세;
-        public void set도매_비용_법인세(Int64 value)
+        private Double 도매_비용_법인세;
+        public void set도매_비용_법인세(Double value)
         {
             도매_비용_법인세 = value;
         }
-        public Int64 get도매_비용_법인세()
+        public Double get도매_비용_법인세()
         {
             return 도매_비용_법인세;
         }
         public void set도매_비용_법인세(String value)
         {
-            도매_비용_법인세 = getFormatInt64(value);
+            도매_비용_법인세 = getFormatDouble(value);
         }
         public String getstr도매_비용_법인세()
         {//   ','가 적용된 값 리턴
             return getFormatString(도매_비용_법인세);
         }
         //도매_비용_기타판매관리비
-        private Int64 도매_비용_기타판매관리비;
-        public void set도매_비용_기타판매관리비(Int64 value)
+        private Double 도매_비용_기타판매관리비;
+        public void set도매_비용_기타판매관리비(Double value)
         {
             도매_비용_기타판매관리비 = value;
         }
-        public Int64 get도매_비용_기타판매관리비()
+        public Double get도매_비용_기타판매관리비()
         {
             return 도매_비용_기타판매관리비;
         }
         public void set도매_비용_기타판매관리비(String value)
         {
-            도매_비용_기타판매관리비 = getFormatInt64(value);
+            도매_비용_기타판매관리비 = getFormatDouble(value);
         }
         public String getstr도매_비용_기타판매관리비()
         {//   ','가 적용된 값 리턴
@@ -502,36 +499,36 @@ namespace KIWI
 
         //******소매 수익
         //소매_수익_업무취급수수료
-        private Int64 소매_수익_업무취급수수료;
-        public void set소매_수익_업무취급수수료(Int64 value)
+        private Double 소매_수익_업무취급수수료;
+        public void set소매_수익_업무취급수수료(Double value)
         {
             소매_수익_업무취급수수료 = value;
         }
-        public Int64 get소매_수익_업무취급수수료()
+        public Double get소매_수익_업무취급수수료()
         {
             return 소매_수익_업무취급수수료;
         }
         public void set소매_수익_업무취급수수료(String value)
         {
-            소매_수익_업무취급수수료 = getFormatInt64(value);
+            소매_수익_업무취급수수료 = getFormatDouble(value);
         }
         public String getstr소매_수익_업무취급수수료()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_수익_업무취급수수료);
         }
         //소매_수익_직영매장판매수익
-        private Int64 소매_수익_직영매장판매수익;
-        public void set소매_수익_직영매장판매수익(Int64 value)
+        private Double 소매_수익_직영매장판매수익;
+        public void set소매_수익_직영매장판매수익(Double value)
         {
             소매_수익_직영매장판매수익 = value;
         }
-        public Int64 get소매_수익_직영매장판매수익()
+        public Double get소매_수익_직영매장판매수익()
         {
             return 소매_수익_직영매장판매수익;
         }
         public void set소매_수익_직영매장판매수익(String value)
         {
-            소매_수익_직영매장판매수익 = getFormatInt64(value);
+            소매_수익_직영매장판매수익 = getFormatDouble(value);
         }
         public String getstr소매_수익_직영매장판매수익()
         {//   ','가 적용된 값 리턴
@@ -539,116 +536,116 @@ namespace KIWI
         }
         //******소매 비용
         //소매_비용_인건비_급여_복리후생비
-        private Int64 소매_비용_인건비_급여_복리후생비;
-        public void set소매_비용_인건비_급여_복리후생비(Int64 value)
+        private Double 소매_비용_인건비_급여_복리후생비;
+        public void set소매_비용_인건비_급여_복리후생비(Double value)
         {
             소매_비용_인건비_급여_복리후생비 = value;
         }
-        public Int64 get소매_비용_인건비_급여_복리후생비()
+        public Double get소매_비용_인건비_급여_복리후생비()
         {
             return 소매_비용_인건비_급여_복리후생비;
         }
         public void set소매_비용_인건비_급여_복리후생비(String value)
         {
-            소매_비용_인건비_급여_복리후생비 = getFormatInt64(value);
+            소매_비용_인건비_급여_복리후생비 = getFormatDouble(value);
         }
         public String getstr소매_비용_인건비_급여_복리후생비()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_인건비_급여_복리후생비);
         }
         //소매_비용_임차료
-        private Int64 소매_비용_임차료;
-        public void set소매_비용_임차료(Int64 value)
+        private Double 소매_비용_임차료;
+        public void set소매_비용_임차료(Double value)
         {
             소매_비용_임차료 = value;
         }
-        public Int64 get소매_비용_임차료()
+        public Double get소매_비용_임차료()
         {
             return 소매_비용_임차료;
         }
         public void set소매_비용_임차료(String value)
         {
-            소매_비용_임차료 = getFormatInt64(value);
+            소매_비용_임차료 = getFormatDouble(value);
         }
         public String getstr소매_비용_임차료()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_임차료);
         }
         //소매_비용_이자비용
-        private Int64 소매_비용_이자비용;
-        public void set소매_비용_이자비용(Int64 value)
+        private Double 소매_비용_이자비용;
+        public void set소매_비용_이자비용(Double value)
         {
             소매_비용_이자비용 = value;
         }
-        public Int64 get소매_비용_이자비용()
+        public Double get소매_비용_이자비용()
         {
             return 소매_비용_이자비용;
         }
         public void set소매_비용_이자비용(String value)
         {
-            소매_비용_이자비용 = getFormatInt64(value);
+            소매_비용_이자비용 = getFormatDouble(value);
         }
         public String getstr소매_비용_이자비용()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_이자비용);
         }
         //소매_비용_부가세
-        private Int64 소매_비용_부가세;
-        public void set소매_비용_부가세(Int64 value)
+        private Double 소매_비용_부가세;
+        public void set소매_비용_부가세(Double value)
         {
             소매_비용_부가세 = value;
         }
-        public Int64 get소매_비용_부가세()
+        public Double get소매_비용_부가세()
         {
             return 소매_비용_부가세;
         }
         public void set소매_비용_부가세(String value)
         {
-            소매_비용_부가세 = getFormatInt64(value);
+            소매_비용_부가세 = getFormatDouble(value);
         }
         public String getstr소매_비용_부가세()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_부가세);
         }
         //소매_비용_법인세
-        private Int64 소매_비용_법인세;
-        public void set소매_비용_법인세(Int64 value)
+        private Double 소매_비용_법인세;
+        public void set소매_비용_법인세(Double value)
         {
             소매_비용_법인세 = value;
         }
-        public Int64 get소매_비용_법인세()
+        public Double get소매_비용_법인세()
         {
             return 소매_비용_법인세;
         }
         public void set소매_비용_법인세(String value)
         {
-            소매_비용_법인세 = getFormatInt64(value);
+            소매_비용_법인세 = getFormatDouble(value);
         }
         public String getstr소매_비용_법인세()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_법인세);
         }
         //소매_비용_기타판매관리비
-        private Int64 소매_비용_기타판매관리비;
-        public void set소매_비용_기타판매관리비(Int64 value)
+        private Double 소매_비용_기타판매관리비;
+        public void set소매_비용_기타판매관리비(Double value)
         {
             소매_비용_기타판매관리비 = value;
         }
-        public Int64 get소매_비용_기타판매관리비()
+        public Double get소매_비용_기타판매관리비()
         {
             return 소매_비용_기타판매관리비;
         }
         public void set소매_비용_기타판매관리비(String value)
         {
-            소매_비용_기타판매관리비 = getFormatInt64(value);
+            소매_비용_기타판매관리비 = getFormatDouble(value);
         }
         public String getstr소매_비용_기타판매관리비()
         {//   ','가 적용된 값 리턴
             return getFormatString(소매_비용_기타판매관리비);
         }
 
-        
-        public void setArrData(Int64[] arrvalue)
+
+        public void setArrData(Double[] arrvalue)
         {
             //******전체 수익
             도매_수익_가입자관리수수료 = arrvalue[0];
@@ -685,9 +682,9 @@ namespace KIWI
             소매_비용_기타판매관리비 = arrvalue[25];
         }
 
-        public Int64[] getArrData()
+        public Double[] getArrData()
         {
-            Int64[] arrvalue = new Int64[26];
+            Double[] arrvalue = new Double[26];
 
             //******전체 수익
             arrvalue[0] = 도매_수익_가입자관리수수료;
@@ -726,9 +723,9 @@ namespace KIWI
             return arrvalue;
         }
 
-        public Int64[] getArr전체_수익_비용_및_계산포함()
+        public Double[] getArr전체_수익_비용_및_계산포함()
         {
-            Int64[] arrvalue = new Int64[16];
+            Double[] arrvalue = new Double[16];
 
             int i = 0;
             //******전체 수익
@@ -766,9 +763,9 @@ namespace KIWI
             return arrvalue;
         }
 
-        public Int64[] getArr도매_수익_비용_및_계산포함()
+        public Double[] getArr도매_수익_비용_및_계산포함()
         {
-            Int64[] arrvalue = new Int64[14];
+            Double[] arrvalue = new Double[14];
 
             int i = 0;
             //******전체 수익
@@ -803,9 +800,9 @@ namespace KIWI
             return arrvalue;
         }
 
-        public Int64[] getArr소매_수익_비용_및_계산포함()
+        public Double[] getArr소매_수익_비용_및_계산포함()
         {
-            Int64[] arrvalue = new Int64[12];
+            Double[] arrvalue = new Double[12];
 
             int i = 0;
             //******전체 수익
@@ -846,9 +843,9 @@ namespace KIWI
             return arrvalue;
         }
 
-        public Int64[] getArrayOutput전체()
+        public Double[] getArrayOutput전체()
         {
-            Int64[] arrvalue = new Int64[42];
+            Double[] arrvalue = new Double[42];
 
             int i = 0;
 
@@ -913,14 +910,14 @@ namespace KIWI
 
         public void setArrayOutput전체(String[] arrvalue)
         {
-            Int64[] arrInt64 = new Int64[arrvalue.Length];
+            Double[] arrDouble = new Double[arrvalue.Length];
             for (int i = 0; i < arrvalue.Length; i++)
             {
-                arrInt64[i] = Convert.ToInt64(arrvalue[i]);
+                arrDouble[i] = Convert.ToDouble(arrvalue[i]);
             }
-            setArrayOutput전체(arrInt64);
+            setArrayOutput전체(arrDouble);
         }
-        public void setArrayOutput전체(Int64[] arrvalue)
+        public void setArrayOutput전체(Double[] arrvalue)
         {
             int i = 0;
 
@@ -981,9 +978,9 @@ namespace KIWI
         }
 
         // 리포트용
-        public Int64[] getArr전체_리포트용(CBusinessData bd)
+        public Double[] getArr전체_리포트용(CBusinessData bd)
         {
-            Int64[] arrvalue = new Int64[17];
+            Double[] arrvalue = new Double[17];
 
             int i = 0;
             //******전체 수익
@@ -991,12 +988,12 @@ namespace KIWI
             arrvalue[i++] = 전체_수익_CS관리수수료;
             arrvalue[i++] = 전체_수익_업무취급수수료;
             arrvalue[i++] = 전체_수익_사업자모델매입에따른추가수익;
-            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) * 
+            arrvalue[i++] = Convert.ToDouble(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) * 
                 CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
             arrvalue[i++] = 전체_수익_직영매장판매수익;
 
             // 소계
-            Int64 전체_수익_소계 = 전체_수익_가입자관리수수료 + 전체_수익_CS관리수수료 +
+            Double 전체_수익_소계 = 전체_수익_가입자관리수수료 + 전체_수익_CS관리수수료 +
                 전체_수익_업무취급수수료 + 전체_수익_사업자모델매입에따른추가수익 +
                 전체_수익_유통모델매입에따른추가수익_현금_Volume + 전체_수익_직영매장판매수익;
             arrvalue[i++] = 전체_수익_소계;
@@ -1011,7 +1008,7 @@ namespace KIWI
             arrvalue[i++] = 전체_비용_기타판매관리비;
 
             // 소계
-            Int64 전체_비용_소계 = 전체_비용_대리점투자비용 + 전체_비용_인건비_급여_복리후생비 +
+            Double 전체_비용_소계 = 전체_비용_대리점투자비용 + 전체_비용_인건비_급여_복리후생비 +
                 전체_비용_임차료 + 전체_비용_이자비용 + 전체_비용_부가세 +
                 전체_비용_법인세 + 전체_비용_기타판매관리비;
             arrvalue[i++] = 전체_비용_소계;
@@ -1019,26 +1016,26 @@ namespace KIWI
             // 손익계
             arrvalue[i++] = 전체_수익_소계 - 전체_비용_소계;
 
-            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
+            arrvalue[i++] = Convert.ToDouble(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
                 CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             return arrvalue;
         }
 
-        public Int64[] getArr도매_리포트용(CBusinessData bd)
+        public Double[] getArr도매_리포트용(CBusinessData bd)
         {
-            Int64[] arrvalue = new Int64[14];
+            Double[] arrvalue = new Double[14];
 
             int i = 0;
             //******전체 수익
             arrvalue[i++] = 도매_수익_가입자관리수수료;
             arrvalue[i++] = 도매_수익_CS관리수수료;
             arrvalue[i++] = 도매_수익_사업자모델매입에따른추가수익;
-            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(도매_수익_유통모델매입에따른추가수익_현금_Volume) *
+            arrvalue[i++] = Convert.ToDouble(Convert.ToDouble(도매_수익_유통모델매입에따른추가수익_현금_Volume) *
                 CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_현금DC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             // 소계
-            Int64 도매_수익_소계 = 도매_수익_가입자관리수수료 + 도매_수익_CS관리수수료 +
+            Double 도매_수익_소계 = 도매_수익_가입자관리수수료 + 도매_수익_CS관리수수료 +
                 도매_수익_사업자모델매입에따른추가수익 + 도매_수익_유통모델매입에따른추가수익_현금_Volume;
             arrvalue[i++] = 도매_수익_소계;
 
@@ -1052,7 +1049,7 @@ namespace KIWI
             arrvalue[i++] = 도매_비용_기타판매관리비;
 
             // 소계
-            Int64 도매_비용_소계 = 도매_비용_대리점투자비용 + 도매_비용_인건비_급여_복리후생비 +
+            Double 도매_비용_소계 = 도매_비용_대리점투자비용 + 도매_비용_인건비_급여_복리후생비 +
                 도매_비용_임차료 + 도매_비용_이자비용 + 도매_비용_부가세 + 도매_비용_법인세 +
                 도매_비용_기타판매관리비;
             arrvalue[i++] = 도매_비용_소계;
@@ -1060,92 +1057,92 @@ namespace KIWI
             // 손익계
             arrvalue[i++] = 도매_수익_소계 - 도매_비용_소계;
 
-            arrvalue[i++] = Convert.ToInt64(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
+            arrvalue[i++] = Convert.ToDouble(Convert.ToDouble(전체_수익_유통모델매입에따른추가수익_현금_Volume) *
                 CommonUtil.Division(Convert.ToDouble(bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()) , Convert.ToDouble((bd.get도매_수익_유통모델매입관련추가수익_현금DC() + bd.get도매_수익_유통모델매입관련추가수익_VolumeDC()))));
 
             return arrvalue;
         }
 
-        private String getFormatString(Int64 value)
+        private String getFormatString(Double value)
         {
             CultureInfo cur = new CultureInfo(CultureInfo.InvariantCulture.LCID);
             cur.NumberFormat.NumberDecimalDigits = 0;
             return value.ToString("N", cur);
         }
 
-        private Int64 getFormatInt64(String value)
+        private Double getFormatDouble(String value)
         {
             String temp = "0";
             temp = value.Replace(",", "");
-            return CommonUtil.StringToIntVal(temp);
+            return CommonUtil.StringToDoubleVal(temp);
         }
 
-        private Int64 _전체_수익_소계;
-        private Int64 _전체_비용_소계;
-        private Int64 _전체손익계;
-        private Int64 _도매_수익_소계;
-        private Int64 _도매손익계;
-        private Int64 _도매_비용_소계;
-        private Int64 _소매_수익_소계;
-        private Int64 _소매_비용_소계;
-        private Int64 _소매손익계;
-        private Int64 _점별손익추정;
+        private Double _전체_수익_소계;
+        private Double _전체_비용_소계;
+        private Double _전체손익계;
+        private Double _도매_수익_소계;
+        private Double _도매손익계;
+        private Double _도매_비용_소계;
+        private Double _소매_수익_소계;
+        private Double _소매_비용_소계;
+        private Double _소매손익계;
+        private Double _점별손익추정;
 
-        public Int64 전체_수익_소계
+        public Double 전체_수익_소계
         {
             get { return _전체_수익_소계; }
             set { _전체_수익_소계 = value; }
         }
 
-        public Int64 전체_비용_소계
+        public Double 전체_비용_소계
         {
             get { return _전체_비용_소계; }
             set { _전체_비용_소계 = value; }
         }
 
-        public Int64 전체손익계
+        public Double 전체손익계
         {
             get { return _전체손익계; }
             set { _전체손익계 = value; }
         }
 
-        public Int64 도매_수익_소계
+        public Double 도매_수익_소계
         {
             get { return _도매_수익_소계; }
             set { _도매_수익_소계 = value; }
         }
 
-        public Int64 도매_비용_소계
+        public Double 도매_비용_소계
         {
             get { return _도매_비용_소계; }
             set { _도매_비용_소계 = value; }
         }
 
-        public Int64 도매손익계
+        public Double 도매손익계
         {
             get { return _도매손익계; }
             set { _도매손익계 = value; }
         }
 
-        public Int64 소매_수익_소계
+        public Double 소매_수익_소계
         {
             get { return _소매_수익_소계; }
             set { _소매_수익_소계 = value; }
         }
 
-        public Int64 소매_비용_소계
+        public Double 소매_비용_소계
         {
             get { return _소매_비용_소계; }
             set { _소매_비용_소계 = value; }
         }
 
-        public Int64 소매손익계
+        public Double 소매손익계
         {
             get { return _소매손익계; }
             set { _소매손익계 = value; }
         }
 
-        public Int64 점별손익추정
+        public Double 점별손익추정
         {
             get { return _점별손익추정; }
             set { _점별손익추정 = value; }

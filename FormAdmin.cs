@@ -28,10 +28,10 @@ namespace KIWI
         private TextBox[] txtExistedAsp = null;        //기존 ASP
         private TextBox[] txtInputAsp = null;        //ASP 입력창
 
-        private Int64[] 기존업계평균 = null;
-        private Int64[] 업계평균 = null;
-        private Int64[] nInput = null;
-        private Int64[] nAOut = null;
+        private Double[] 기존업계평균 = null;
+        private Double[] 업계평균 = null;
+        private Double[] nInput = null;
+        private Double[] nAOut = null;
 
         public FormAdmin()
         {
@@ -74,10 +74,10 @@ namespace KIWI
 
 
 
-            기존업계평균 = new Int64[26];
-            업계평균 = new Int64[26];
-            nInput = new Int64[26];
-            nAOut = new Int64[26];
+            기존업계평균 = new Double[26];
+            업계평균 = new Double[26];
+            nInput = new Double[26];
+            nAOut = new Double[26];
 
             readFileOfExistedAverage();
 
@@ -588,7 +588,7 @@ namespace KIWI
 
             try
             {
-                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+                Double num = Convert.ToDouble(_TextBox.Text.Replace(",", ""));
 
                 if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 1)
                 {

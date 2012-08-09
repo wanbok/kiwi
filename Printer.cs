@@ -51,8 +51,8 @@ namespace KIWI
             for (int i = 0; i < 16; i++)
             {
                 String result;
-                Int64 all = CDataControl.g_ResultBusiness.getArr전체_리포트용(CDataControl.g_DetailInput)[i];
-                Int64 agency = CDataControl.g_ResultStore.getArr전체_리포트용(CDataControl.g_BusinessAvg)[i];
+                Double all = CDataControl.g_ResultBusiness.getArr전체_리포트용(CDataControl.g_DetailInput)[i];
+                Double agency = CDataControl.g_ResultStore.getArr전체_리포트용(CDataControl.g_BusinessAvg)[i];
                 if (all < agency)
                 {
                     result = "+";
@@ -72,7 +72,7 @@ namespace KIWI
             r = baseData.NewRow();
             for (int i = 0; i < CDataControl.g_BasicInput.getArrData_리포트용().Length; i++)
             {
-                r[i] = CDataControl.g_BasicInput.getArrData_리포트용()[i];
+                r[i] = getAddCommar(CDataControl.g_BasicInput.getArrData_리포트용()[i]);
             }
             baseData.Rows.Add(r);
 
@@ -95,8 +95,8 @@ namespace KIWI
             {
                 DataTable t = tables[j];
                 DataRow r = t.NewRow();
-                Int64[] totalArr = null;
-                Int64[] agencyArr = null;
+                Double[] totalArr = null;
+                Double[] agencyArr = null;
                 switch (j) {
                     case 0:
                         totalArr = total.getArr전체_리포트용(bd);
@@ -115,11 +115,27 @@ namespace KIWI
                 }
                 for (int i = 0; i < totalArr.Length; i++)
                 {
-                    r[i * 2] = totalArr[i];
-                    r[i * 2 + 1] = agencyArr[i];
+                    r[i * 2] = getAddCommar(totalArr[i]);
+                    r[i * 2 + 1] = getAddCommar(agencyArr[i]);
                 }
                 t.Rows.Add(r);
             }
         }
+
+        private string getAddCommar(Double valueLong)
+        {
+            string dataDouble = "";
+            //TextBox _TextBox = (sender as TextBox);
+            try
+            {
+                dataDouble = String.Format("{0:#,###}", valueLong);
+            }
+            catch
+            {
+                dataDouble = "0";
+            }
+            return dataDouble;
+        }
+
     }
 }

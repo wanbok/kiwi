@@ -115,7 +115,6 @@
     <Compile Include="CBasicInput.cs" />
     <Compile Include="CBusinessData.cs" />
     <Compile Include="CDataControl.cs" />
-    <Compile Include="CInputData.cs" />
     <Compile Include="CReportData.cs" />
     <Compile Include="CResultData.cs" />
     <Compile Include="CrystalReport11.cs">

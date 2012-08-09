@@ -151,7 +151,7 @@ namespace KIWI
             지역.SelectedItem = CDataControl.g_BasicInput.get지역();
             대리점명.Text = CDataControl.g_BasicInput.get대리점();
             마케터.Text = CDataControl.g_BasicInput.get마케터();
-            Int64[] arrvalue = CDataControl.g_BasicInput.getArrData_BasicInput();
+            Double[] arrvalue = CDataControl.g_BasicInput.getArrData_BasicInput();
             // 셀에서 데이터 가져오기
             for (int i = 0; i < txtBasicInput.Length; i++)
             {
@@ -163,7 +163,7 @@ namespace KIWI
         private void getDetail(CBasicInput g_BasicInput)
         {
             //
-            Int64[] arrvalue = CDataControl.g_DetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
+            Double[] arrvalue = CDataControl.g_DetailInput.getArrData_DetailInput(g_BasicInput.get도매_직원수_간부급(), g_BasicInput.get도매_직원수_평사원()
                 , g_BasicInput.get소매_직원수_간부급(), g_BasicInput.get소매_직원수_평사원());
 
             // 셀에서 데이터 가져오기
@@ -210,7 +210,7 @@ namespace KIWI
 
             try
             {
-                long num = Convert.ToInt64(_TextBox.Text.Replace(",", ""));
+                Double num = Convert.ToDouble(_TextBox.Text.Replace(",", ""));
 
                 if (_TextBox.Text.Length < 24 && _TextBox.Text.Length > 2)
                 {
@@ -628,7 +628,7 @@ namespace KIWI
 
             if (radioButton5.Checked)
             {
-                txtDetail3.Text = (CommonUtil.StringToIntVal(txtDetail2.Text.Replace(",","")) * CommonUtil.QUARTER).ToString();
+                txtDetail3.Text = (CommonUtil.StringToDoubleVal(txtDetail2.Text.Replace(",","")) * CommonUtil.QUARTER).ToString();
             }
         }
 
@@ -695,7 +695,7 @@ namespace KIWI
 
             if (radioButton2.Checked)
             {
-                txtDetail9.Text = (CommonUtil.StringToIntVal(txtDetail11.Text.Replace(",", "")) * CommonUtil.StringToIntVal(txtInput11.Text.Replace(",", ""))).ToString();
+                txtDetail9.Text = (CommonUtil.StringToDoubleVal(txtDetail11.Text.Replace(",", "")) * CommonUtil.StringToDoubleVal(txtInput11.Text.Replace(",", ""))).ToString();
             }
 
         }
@@ -706,7 +706,7 @@ namespace KIWI
 
             if (radioButton2.Checked)
             {
-                txtDetail10.Text = (CommonUtil.StringToIntVal(txtDetail12.Text.Replace(",", "")) * CommonUtil.StringToIntVal(txtInput12.Text.Replace(",", ""))).ToString();
+                txtDetail10.Text = (CommonUtil.StringToDoubleVal(txtDetail12.Text.Replace(",", "")) * CommonUtil.StringToDoubleVal(txtInput12.Text.Replace(",", ""))).ToString();
             }
 
         }
@@ -741,7 +741,7 @@ namespace KIWI
             
             if (radioButton3.Checked)
             {
-                txtDetail21.Text = (CommonUtil.StringToIntVal(txtDetail23.Text.Replace(",", "")) * CommonUtil.StringToIntVal(txtInput19.Text.Replace(",", ""))).ToString();
+                txtDetail21.Text = (CommonUtil.StringToDoubleVal(txtDetail23.Text.Replace(",", "")) * CommonUtil.StringToDoubleVal(txtInput19.Text.Replace(",", ""))).ToString();
             }
 
         }
@@ -752,7 +752,7 @@ namespace KIWI
             
             if (radioButton3.Checked)
             {
-                txtDetail22.Text = (CommonUtil.StringToIntVal(txtDetail24.Text.Replace(",", "")) * CommonUtil.StringToIntVal(txtInput20.Text.Replace(",", ""))).ToString();
+                txtDetail22.Text = (CommonUtil.StringToDoubleVal(txtDetail24.Text.Replace(",", "")) * CommonUtil.StringToDoubleVal(txtInput20.Text.Replace(",", ""))).ToString();
             }
 
         }

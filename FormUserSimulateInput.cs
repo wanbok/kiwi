@@ -156,9 +156,9 @@ namespace KIWI
             txtDetail[2].Text = CDataControl.g_DetailInput.getstr도매_수익_사업자모델매입관련추가수익();
             txtDetail[3].Text = CDataControl.g_DetailInput.getstr도매_수익_유통모델매입관련추가수익_현금DC();
             txtDetail[4].Text = CDataControl.g_DetailInput.getstr도매_수익_유통모델매입관련추가수익_VolumeDC();
-            txtDetail[5].Text = (CommonUtil.StringToIntVal(txtDetail[0].Text) + CommonUtil.StringToIntVal(txtDetail[1].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[2].Text) + CommonUtil.StringToIntVal(txtDetail[3].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[4].Text) ).ToString();
+            txtDetail[5].Text = (CommonUtil.StringToDoubleVal(txtDetail[0].Text) + CommonUtil.StringToDoubleVal(txtDetail[1].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[2].Text) + CommonUtil.StringToDoubleVal(txtDetail[3].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[4].Text) ).ToString();
             txtDetail[6].Text = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_신규();
             txtDetail[7].Text = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_기변();
             txtDetail[8].Text = CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급();
@@ -169,15 +169,15 @@ namespace KIWI
             txtDetail[13].Text = CDataControl.g_DetailInput.getstr도매_비용_지급수수료();
             txtDetail[14].Text = CDataControl.g_DetailInput.getstr도매_비용_판매촉진비();
             txtDetail[15].Text = CDataControl.g_DetailInput.getstr도매_비용_건물관리비();
-            txtDetail[16].Text = (CommonUtil.StringToIntVal(txtDetail[6].Text) + CommonUtil.StringToIntVal(txtDetail[7].Text)
-               + CommonUtil.StringToIntVal(txtDetail[8].Text) + CommonUtil.StringToIntVal(txtDetail[9].Text)
-               + CommonUtil.StringToIntVal(txtDetail[10].Text) + CommonUtil.StringToIntVal(txtDetail[11].Text)
-               + CommonUtil.StringToIntVal(txtDetail[12].Text) + CommonUtil.StringToIntVal(txtDetail[13].Text)
-               + CommonUtil.StringToIntVal(txtDetail[14].Text) + CommonUtil.StringToIntVal(txtDetail[15].Text)
+            txtDetail[16].Text = (CommonUtil.StringToDoubleVal(txtDetail[6].Text) + CommonUtil.StringToDoubleVal(txtDetail[7].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[8].Text) + CommonUtil.StringToDoubleVal(txtDetail[9].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[10].Text) + CommonUtil.StringToDoubleVal(txtDetail[11].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[12].Text) + CommonUtil.StringToDoubleVal(txtDetail[13].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[14].Text) + CommonUtil.StringToDoubleVal(txtDetail[15].Text)
                ).ToString();
             txtDetail[17].Text = CDataControl.g_DetailInput.getstr소매_수익_월평균업무취급수수료();
             txtDetail[18].Text = CDataControl.g_DetailInput.getstr소매_수익_직영매장판매수익();
-            txtDetail[19].Text = (CommonUtil.StringToIntVal(txtDetail[17].Text) + CommonUtil.StringToIntVal(txtDetail[18].Text)).ToString();
+            txtDetail[19].Text = (CommonUtil.StringToDoubleVal(txtDetail[17].Text) + CommonUtil.StringToDoubleVal(txtDetail[18].Text)).ToString();
 
             txtDetail[20].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급();
             txtDetail[21].Text = CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원();
@@ -185,9 +185,9 @@ namespace KIWI
             txtDetail[23].Text = CDataControl.g_DetailInput.getstr소매_비용_지급수수료();
             txtDetail[24].Text = CDataControl.g_DetailInput.getstr소매_비용_판매촉진비();
             txtDetail[25].Text = CDataControl.g_DetailInput.getstr소매_비용_건물관리비();
-            txtDetail[26].Text = (CommonUtil.StringToIntVal(txtDetail[20].Text) + CommonUtil.StringToIntVal(txtDetail[21].Text)
-                + CommonUtil.StringToIntVal(txtDetail[22].Text) + CommonUtil.StringToIntVal(txtDetail[23].Text)
-                + CommonUtil.StringToIntVal(txtDetail[24].Text) + CommonUtil.StringToIntVal(txtDetail[25].Text)).ToString();
+            txtDetail[26].Text = (CommonUtil.StringToDoubleVal(txtDetail[20].Text) + CommonUtil.StringToDoubleVal(txtDetail[21].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[22].Text) + CommonUtil.StringToDoubleVal(txtDetail[23].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[24].Text) + CommonUtil.StringToDoubleVal(txtDetail[25].Text)).ToString();
 
             txtDetail[27].Text = CDataControl.g_DetailInput.getstr도소매_비용_복리후생비();
             txtDetail[28].Text = CDataControl.g_DetailInput.getstr도소매_비용_통신비();
@@ -197,10 +197,10 @@ namespace KIWI
             txtDetail[32].Text = CDataControl.g_DetailInput.getstr도소매_비용_부가세();
             txtDetail[33].Text = CDataControl.g_DetailInput.getstr도소매_비용_법인세();
             txtDetail[34].Text = CDataControl.g_DetailInput.getstr도소매_비용_기타();
-            txtDetail[35].Text = (CommonUtil.StringToIntVal(txtDetail[27].Text) + CommonUtil.StringToIntVal(txtDetail[28].Text)
-                + CommonUtil.StringToIntVal(txtDetail[29].Text) + CommonUtil.StringToIntVal(txtDetail[30].Text)
-                + CommonUtil.StringToIntVal(txtDetail[31].Text) + CommonUtil.StringToIntVal(txtDetail[32].Text)
-                + CommonUtil.StringToIntVal(txtDetail[33].Text) + CommonUtil.StringToIntVal(txtDetail[34].Text)
+            txtDetail[35].Text = (CommonUtil.StringToDoubleVal(txtDetail[27].Text) + CommonUtil.StringToDoubleVal(txtDetail[28].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[29].Text) + CommonUtil.StringToDoubleVal(txtDetail[30].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[31].Text) + CommonUtil.StringToDoubleVal(txtDetail[32].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[33].Text) + CommonUtil.StringToDoubleVal(txtDetail[34].Text)
                 ).ToString();
 
 
@@ -209,9 +209,9 @@ namespace KIWI
             txtDetail[38].Text =  CDataControl.g_DetailInput.getstr도매_수익_사업자모델매입관련추가수익();
             txtDetail[39].Text =  CDataControl.g_DetailInput.getstr도매_수익_유통모델매입관련추가수익_현금DC();
             txtDetail[40].Text =  CDataControl.g_DetailInput.getstr도매_수익_유통모델매입관련추가수익_VolumeDC();
-            txtDetail[41].Text =  (CommonUtil.StringToIntVal(txtDetail[0].Text) + CommonUtil.StringToIntVal(txtDetail[1].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[2].Text) + CommonUtil.StringToIntVal(txtDetail[3].Text)  
-                + CommonUtil.StringToIntVal(txtDetail[4].Text) ).ToString(); 
+            txtDetail[41].Text =  (CommonUtil.StringToDoubleVal(txtDetail[0].Text) + CommonUtil.StringToDoubleVal(txtDetail[1].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[2].Text) + CommonUtil.StringToDoubleVal(txtDetail[3].Text)  
+                + CommonUtil.StringToDoubleVal(txtDetail[4].Text) ).ToString(); 
             txtDetail[42].Text  = CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_신규();
             txtDetail[43].Text =  CDataControl.g_DetailInput.getstr도매_비용_대리점투자금액_기변();
             txtDetail[44].Text =  CDataControl.g_DetailInput.getstr도매_비용_직원급여_간부급();
@@ -222,24 +222,24 @@ namespace KIWI
             txtDetail[49].Text =   CDataControl.g_DetailInput.getstr도매_비용_지급수수료();
             txtDetail[50].Text =   CDataControl.g_DetailInput.getstr도매_비용_판매촉진비();
             txtDetail[51].Text =   CDataControl.g_DetailInput.getstr도매_비용_건물관리비();
-            txtDetail[52].Text =  (CommonUtil.StringToIntVal(txtDetail[6].Text) + CommonUtil.StringToIntVal(txtDetail[7].Text)
-               + CommonUtil.StringToIntVal(txtDetail[8].Text) + CommonUtil.StringToIntVal(txtDetail[9].Text)  
-               + CommonUtil.StringToIntVal(txtDetail[10].Text) + CommonUtil.StringToIntVal(txtDetail[11].Text)  
-               + CommonUtil.StringToIntVal(txtDetail[12].Text) + CommonUtil.StringToIntVal(txtDetail[13].Text) 
-               + CommonUtil.StringToIntVal(txtDetail[14].Text) + CommonUtil.StringToIntVal(txtDetail[15].Text) 
+            txtDetail[52].Text =  (CommonUtil.StringToDoubleVal(txtDetail[6].Text) + CommonUtil.StringToDoubleVal(txtDetail[7].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[8].Text) + CommonUtil.StringToDoubleVal(txtDetail[9].Text)  
+               + CommonUtil.StringToDoubleVal(txtDetail[10].Text) + CommonUtil.StringToDoubleVal(txtDetail[11].Text)  
+               + CommonUtil.StringToDoubleVal(txtDetail[12].Text) + CommonUtil.StringToDoubleVal(txtDetail[13].Text) 
+               + CommonUtil.StringToDoubleVal(txtDetail[14].Text) + CommonUtil.StringToDoubleVal(txtDetail[15].Text) 
                ).ToString();
             txtDetail[53].Text  = CDataControl.g_DetailInput.getstr소매_수익_월평균업무취급수수료();
             txtDetail[54].Text =  CDataControl.g_DetailInput.getstr소매_수익_직영매장판매수익();
-            txtDetail[55].Text =  (CommonUtil.StringToIntVal(txtDetail[17].Text) + CommonUtil.StringToIntVal(txtDetail[18].Text)).ToString();
+            txtDetail[55].Text =  (CommonUtil.StringToDoubleVal(txtDetail[17].Text) + CommonUtil.StringToDoubleVal(txtDetail[18].Text)).ToString();
             txtDetail[56].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_간부급();
             txtDetail[57].Text =  CDataControl.g_DetailInput.getstr소매_비용_직원급여_평사원();
             txtDetail[58].Text =  CDataControl.g_DetailInput.getstr소매_비용_지급임차료();
             txtDetail[59].Text =  CDataControl.g_DetailInput.getstr소매_비용_지급수수료();
             txtDetail[60].Text =  CDataControl.g_DetailInput.getstr소매_비용_판매촉진비();
             txtDetail[61].Text =  CDataControl.g_DetailInput.getstr소매_비용_건물관리비();
-            txtDetail[62].Text =  (CommonUtil.StringToIntVal(txtDetail[20].Text) + CommonUtil.StringToIntVal(txtDetail[21].Text)
-                + CommonUtil.StringToIntVal(txtDetail[22].Text) + CommonUtil.StringToIntVal(txtDetail[23].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[24].Text) + CommonUtil.StringToIntVal(txtDetail[25].Text)).ToString();
+            txtDetail[62].Text =  (CommonUtil.StringToDoubleVal(txtDetail[20].Text) + CommonUtil.StringToDoubleVal(txtDetail[21].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[22].Text) + CommonUtil.StringToDoubleVal(txtDetail[23].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[24].Text) + CommonUtil.StringToDoubleVal(txtDetail[25].Text)).ToString();
 
             txtDetail[63].Text = CDataControl.g_DetailInput.getstr도소매_비용_복리후생비();
             txtDetail[64].Text = CDataControl.g_DetailInput.getstr도소매_비용_통신비();
@@ -249,10 +249,10 @@ namespace KIWI
             txtDetail[68].Text = CDataControl.g_DetailInput.getstr도소매_비용_부가세();
             txtDetail[69].Text = CDataControl.g_DetailInput.getstr도소매_비용_법인세();
             txtDetail[70].Text = CDataControl.g_DetailInput.getstr도소매_비용_기타();
-            txtDetail[71].Text =  (CommonUtil.StringToIntVal(txtDetail[27].Text) + CommonUtil.StringToIntVal(txtDetail[28].Text)
-                + CommonUtil.StringToIntVal(txtDetail[29].Text) + CommonUtil.StringToIntVal(txtDetail[30].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[31].Text) + CommonUtil.StringToIntVal(txtDetail[32].Text) 
-                + CommonUtil.StringToIntVal(txtDetail[33].Text) + CommonUtil.StringToIntVal(txtDetail[34].Text) 
+            txtDetail[71].Text =  (CommonUtil.StringToDoubleVal(txtDetail[27].Text) + CommonUtil.StringToDoubleVal(txtDetail[28].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[29].Text) + CommonUtil.StringToDoubleVal(txtDetail[30].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[31].Text) + CommonUtil.StringToDoubleVal(txtDetail[32].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[33].Text) + CommonUtil.StringToDoubleVal(txtDetail[34].Text) 
                 ).ToString(); 
 
         }
@@ -333,150 +333,150 @@ namespace KIWI
         private void txtDetail37_TextChanged(object sender, EventArgs e) {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
-                 + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
+            txtDetail42.Text = (CommonUtil.StringToDoubleVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail38.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail40.Text.Replace(",", ""))
+                 + CommonUtil.StringToDoubleVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
         private void txtDetail38_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
-            txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
-                 + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
+            txtDetail42.Text = (CommonUtil.StringToDoubleVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail38.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail40.Text.Replace(",", ""))
+                 + CommonUtil.StringToDoubleVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
         private void txtDetail39_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
-                 + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
+            txtDetail42.Text = (CommonUtil.StringToDoubleVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail38.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail40.Text.Replace(",", ""))
+                 + CommonUtil.StringToDoubleVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
         private void txtDetail40_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
             
-            txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
-                 + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
+            txtDetail42.Text = (CommonUtil.StringToDoubleVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail38.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail40.Text.Replace(",", ""))
+                 + CommonUtil.StringToDoubleVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
         private void txtDetail41_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
             
-            txtDetail42.Text = (CommonUtil.StringToIntVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail38.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail40.Text.Replace(",", ""))
-                 + CommonUtil.StringToIntVal(txtDetail41.Text.Replace(",", ""))).ToString();
+            txtDetail42.Text = (CommonUtil.StringToDoubleVal(txtDetail37.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail38.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail39.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail40.Text.Replace(",", ""))
+                 + CommonUtil.StringToDoubleVal(txtDetail41.Text.Replace(",", ""))).ToString();
         }
 
         private void txtDetail43_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
             
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail44_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail45_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail46_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail47_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail48_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail49_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail50_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail51_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail52_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail53.Text = (CommonUtil.StringToIntVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail44.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail46.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail48.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail50.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail52.Text.Replace(",", ""))
+            txtDetail53.Text = (CommonUtil.StringToDoubleVal(txtDetail43.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail44.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail45.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail46.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail47.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail48.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail49.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail50.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail51.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail52.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -484,14 +484,14 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail56.Text = (CommonUtil.StringToIntVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail55.Text.Replace(",", ""))
+            txtDetail56.Text = (CommonUtil.StringToDoubleVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail55.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail55_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail56.Text = (CommonUtil.StringToIntVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail55.Text.Replace(",", ""))
+            txtDetail56.Text = (CommonUtil.StringToDoubleVal(txtDetail54.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail55.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -499,18 +499,18 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
         private void txtDetail58_TextChanged(object sender, EventArgs e)
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -518,9 +518,9 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -528,9 +528,9 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -538,9 +538,9 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -548,9 +548,9 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail63.Text = (CommonUtil.StringToIntVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail58.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail60.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail62.Text.Replace(",", ""))
+            txtDetail63.Text = (CommonUtil.StringToDoubleVal(txtDetail57.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail58.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail59.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail60.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail61.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail62.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -559,10 +559,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -570,10 +570,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -581,10 +581,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -592,10 +592,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -603,10 +603,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -614,10 +614,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -625,10 +625,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 
@@ -636,10 +636,10 @@ namespace KIWI
         {
             setTxtInput_TextChanged(sender, e);
 
-            txtDetail72.Text = (CommonUtil.StringToIntVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail65.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail67.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail69.Text.Replace(",", ""))
-                + CommonUtil.StringToIntVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToIntVal(txtDetail71.Text.Replace(",", ""))
+            txtDetail72.Text = (CommonUtil.StringToDoubleVal(txtDetail64.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail65.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail66.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail67.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail68.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail69.Text.Replace(",", ""))
+                + CommonUtil.StringToDoubleVal(txtDetail70.Text.Replace(",", "")) + CommonUtil.StringToDoubleVal(txtDetail71.Text.Replace(",", ""))
                  ).ToString();
         }
 

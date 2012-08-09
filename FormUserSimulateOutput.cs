@@ -20,13 +20,13 @@ namespace KIWI
 
         private Label[] lblTitle = null;
 
-        private Int64[] existingData = null;
-        private Int64[] existingWData = null;
-        private Int64[] existingRData = null;
+        private Double[] existingData = null;
+        private Double[] existingWData = null;
+        private Double[] existingRData = null;
 
-        private Int64[] simulData = null;
-        private Int64[] simulWData = null;
-        private Int64[] simulRData = null;
+        private Double[] simulData = null;
+        private Double[] simulWData = null;
+        private Double[] simulRData = null;
 
         private string[] names = new string[6] { "업계평균", "당대리점(현재수익)", "당대리점(미래수익)", "시뮬레이션-업계평균", "시뮬레이션-당대리점(현재수익)", "시뮬레이션-당대리점(미래수익)" };
         private List<string[]> selectedData = new List<string[]>();
@@ -102,13 +102,13 @@ namespace KIWI
             checkBox5.CheckedChanged += new EventHandler(checkboxes);
             checkBox6.CheckedChanged += new EventHandler(checkboxes);
 
-            existingData = new Int64[96];
-            existingWData = new Int64[84];
-            existingRData = new Int64[72];
+            existingData = new Double[96];
+            existingWData = new Double[84];
+            existingRData = new Double[72];
 
-            simulData = new Int64[96];
-            simulWData = new Int64[84];
-            simulRData = new Int64[72];
+            simulData = new Double[96];
+            simulWData = new Double[84];
+            simulRData = new Double[72];
 
             pnlChart.Visible = false;
             applyData(false);
