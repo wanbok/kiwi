@@ -54,6 +54,9 @@
             this.label112 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +79,9 @@
             this.toolStripLabel2,
             this.toolStripSeparator4,
             this.toolStripLabel1,
-            this.toolStripButton6});
+            this.toolStripButton6,
+            this.toolStripSeparator6,
+            this.toolStripButton9});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 26);
@@ -251,7 +256,7 @@
             // 
             this.label115.AutoSize = true;
             this.label115.Font = new System.Drawing.Font("굴림", 9F);
-            this.label115.Location = new System.Drawing.Point(347, 37);
+            this.label115.Location = new System.Drawing.Point(350, 37);
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(53, 12);
             this.label115.TabIndex = 605;
@@ -297,11 +302,37 @@
             this.label114.TabIndex = 601;
             this.label114.Text = "열기";
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 37);
+            // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton9.Image = global::KIWI.Properties.Resources.management;
+            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.Size = new System.Drawing.Size(34, 34);
+            this.toolStripButton9.Text = "toolStripButton9";
+            this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F);
+            this.label1.Location = new System.Drawing.Point(405, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 609;
+            this.label1.Text = "관리";
+            // 
             // FormMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 802);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label109);
             this.Controls.Add(this.label110);
             this.Controls.Add(this.label116);
@@ -353,5 +384,8 @@
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserSimulateInput));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.txtInput28 = new System.Windows.Forms.TextBox();
             this.txtInput23 = new System.Windows.Forms.TextBox();
             this.txtInput18 = new System.Windows.Forms.TextBox();
@@ -60,9 +62,21 @@
             this.txtInput10 = new System.Windows.Forms.TextBox();
             this.txtInput1 = new System.Windows.Forms.TextBox();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -212,30 +226,14 @@
             this.label165 = new System.Windows.Forms.Label();
             this.label166 = new System.Windows.Forms.Label();
             this.panel172 = new System.Windows.Forms.Panel();
-            this.panel117 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel95 = new System.Windows.Forms.Panel();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.panel173 = new System.Windows.Forms.Panel();
+            this.panel117 = new System.Windows.Forms.Panel();
             this.panel118 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.panel95 = new System.Windows.Forms.Panel();
             this.panel96 = new System.Windows.Forms.Panel();
+            this.panel97 = new System.Windows.Forms.Panel();
             this.panel98 = new System.Windows.Forms.Panel();
             this.panel39 = new System.Windows.Forms.Panel();
             this.panel40 = new System.Windows.Forms.Panel();
@@ -304,22 +302,26 @@
             this.panel106 = new System.Windows.Forms.Panel();
             this.panel107 = new System.Windows.Forms.Panel();
             this.panel108 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel17.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel117.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel95.SuspendLayout();
             this.panel97.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel19.SuspendLayout();
             this.panel39.SuspendLayout();
             this.panel37.SuspendLayout();
             this.panel35.SuspendLayout();
@@ -367,6 +369,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.label27);
             this.tabPage1.Controls.Add(this.panel22);
             this.tabPage1.Controls.Add(this.panel13);
             this.tabPage1.Controls.Add(this.txtInput28);
@@ -426,18 +429,38 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(942, 458);
+            this.tabPage1.Size = new System.Drawing.Size(942, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
+            // 
+            // panel22
+            // 
+            this.panel22.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.ForeColor = System.Drawing.Color.Black;
+            this.panel22.Location = new System.Drawing.Point(554, 58);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(1, 375);
+            this.panel22.TabIndex = 91;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel13.ForeColor = System.Drawing.Color.Black;
+            this.panel13.Location = new System.Drawing.Point(214, 58);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1, 375);
+            this.panel13.TabIndex = 90;
             // 
             // txtInput28
             // 
             this.txtInput28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput28.ForeColor = System.Drawing.Color.Black;
-            this.txtInput28.Location = new System.Drawing.Point(726, 389);
+            this.txtInput28.Location = new System.Drawing.Point(726, 402);
             this.txtInput28.Name = "txtInput28";
             this.txtInput28.Size = new System.Drawing.Size(146, 21);
             this.txtInput28.TabIndex = 13;
@@ -454,7 +477,7 @@
             this.txtInput23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput23.Enabled = false;
             this.txtInput23.ForeColor = System.Drawing.Color.Black;
-            this.txtInput23.Location = new System.Drawing.Point(571, 391);
+            this.txtInput23.Location = new System.Drawing.Point(571, 404);
             this.txtInput23.Name = "txtInput23";
             this.txtInput23.ReadOnly = true;
             this.txtInput23.Size = new System.Drawing.Size(146, 14);
@@ -466,7 +489,7 @@
             // 
             this.txtInput18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput18.ForeColor = System.Drawing.Color.Black;
-            this.txtInput18.Location = new System.Drawing.Point(389, 389);
+            this.txtInput18.Location = new System.Drawing.Point(389, 402);
             this.txtInput18.Name = "txtInput18";
             this.txtInput18.Size = new System.Drawing.Size(146, 21);
             this.txtInput18.TabIndex = 8;
@@ -483,7 +506,7 @@
             this.txtInput9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput9.Enabled = false;
             this.txtInput9.ForeColor = System.Drawing.Color.Black;
-            this.txtInput9.Location = new System.Drawing.Point(237, 391);
+            this.txtInput9.Location = new System.Drawing.Point(237, 404);
             this.txtInput9.Name = "txtInput9";
             this.txtInput9.ReadOnly = true;
             this.txtInput9.Size = new System.Drawing.Size(146, 14);
@@ -495,7 +518,7 @@
             // 
             this.txtInput27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput27.ForeColor = System.Drawing.Color.Black;
-            this.txtInput27.Location = new System.Drawing.Point(726, 359);
+            this.txtInput27.Location = new System.Drawing.Point(726, 372);
             this.txtInput27.Name = "txtInput27";
             this.txtInput27.Size = new System.Drawing.Size(146, 21);
             this.txtInput27.TabIndex = 12;
@@ -512,7 +535,7 @@
             this.txtInput22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput22.Enabled = false;
             this.txtInput22.ForeColor = System.Drawing.Color.Black;
-            this.txtInput22.Location = new System.Drawing.Point(571, 361);
+            this.txtInput22.Location = new System.Drawing.Point(571, 374);
             this.txtInput22.Name = "txtInput22";
             this.txtInput22.ReadOnly = true;
             this.txtInput22.Size = new System.Drawing.Size(146, 14);
@@ -524,7 +547,7 @@
             // 
             this.txtInput17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput17.ForeColor = System.Drawing.Color.Black;
-            this.txtInput17.Location = new System.Drawing.Point(389, 359);
+            this.txtInput17.Location = new System.Drawing.Point(389, 372);
             this.txtInput17.Name = "txtInput17";
             this.txtInput17.Size = new System.Drawing.Size(146, 21);
             this.txtInput17.TabIndex = 7;
@@ -541,7 +564,7 @@
             this.txtInput8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput8.Enabled = false;
             this.txtInput8.ForeColor = System.Drawing.Color.Black;
-            this.txtInput8.Location = new System.Drawing.Point(237, 361);
+            this.txtInput8.Location = new System.Drawing.Point(237, 374);
             this.txtInput8.Name = "txtInput8";
             this.txtInput8.ReadOnly = true;
             this.txtInput8.Size = new System.Drawing.Size(146, 14);
@@ -553,7 +576,7 @@
             // 
             this.txtInput16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput16.ForeColor = System.Drawing.Color.Black;
-            this.txtInput16.Location = new System.Drawing.Point(389, 314);
+            this.txtInput16.Location = new System.Drawing.Point(389, 327);
             this.txtInput16.Name = "txtInput16";
             this.txtInput16.Size = new System.Drawing.Size(146, 21);
             this.txtInput16.TabIndex = 6;
@@ -570,7 +593,7 @@
             this.txtInput7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput7.Enabled = false;
             this.txtInput7.ForeColor = System.Drawing.Color.Black;
-            this.txtInput7.Location = new System.Drawing.Point(237, 316);
+            this.txtInput7.Location = new System.Drawing.Point(237, 329);
             this.txtInput7.Name = "txtInput7";
             this.txtInput7.ReadOnly = true;
             this.txtInput7.Size = new System.Drawing.Size(146, 14);
@@ -582,7 +605,7 @@
             // 
             this.txtInput26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput26.ForeColor = System.Drawing.Color.Black;
-            this.txtInput26.Location = new System.Drawing.Point(726, 288);
+            this.txtInput26.Location = new System.Drawing.Point(726, 301);
             this.txtInput26.Name = "txtInput26";
             this.txtInput26.Size = new System.Drawing.Size(146, 21);
             this.txtInput26.TabIndex = 11;
@@ -599,7 +622,7 @@
             this.txtInput21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput21.Enabled = false;
             this.txtInput21.ForeColor = System.Drawing.Color.Black;
-            this.txtInput21.Location = new System.Drawing.Point(571, 291);
+            this.txtInput21.Location = new System.Drawing.Point(571, 304);
             this.txtInput21.Name = "txtInput21";
             this.txtInput21.ReadOnly = true;
             this.txtInput21.Size = new System.Drawing.Size(146, 14);
@@ -611,7 +634,7 @@
             // 
             this.txtInput15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput15.ForeColor = System.Drawing.Color.Black;
-            this.txtInput15.Location = new System.Drawing.Point(389, 262);
+            this.txtInput15.Location = new System.Drawing.Point(389, 275);
             this.txtInput15.Name = "txtInput15";
             this.txtInput15.Size = new System.Drawing.Size(146, 21);
             this.txtInput15.TabIndex = 5;
@@ -628,7 +651,7 @@
             this.txtInput6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput6.Enabled = false;
             this.txtInput6.ForeColor = System.Drawing.Color.Black;
-            this.txtInput6.Location = new System.Drawing.Point(237, 266);
+            this.txtInput6.Location = new System.Drawing.Point(237, 279);
             this.txtInput6.Name = "txtInput6";
             this.txtInput6.ReadOnly = true;
             this.txtInput6.Size = new System.Drawing.Size(146, 14);
@@ -640,7 +663,7 @@
             // 
             this.txtInput14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput14.ForeColor = System.Drawing.Color.Black;
-            this.txtInput14.Location = new System.Drawing.Point(389, 224);
+            this.txtInput14.Location = new System.Drawing.Point(389, 237);
             this.txtInput14.Name = "txtInput14";
             this.txtInput14.Size = new System.Drawing.Size(146, 21);
             this.txtInput14.TabIndex = 4;
@@ -657,7 +680,7 @@
             this.txtInput5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput5.Enabled = false;
             this.txtInput5.ForeColor = System.Drawing.Color.Black;
-            this.txtInput5.Location = new System.Drawing.Point(237, 226);
+            this.txtInput5.Location = new System.Drawing.Point(237, 239);
             this.txtInput5.Name = "txtInput5";
             this.txtInput5.ReadOnly = true;
             this.txtInput5.Size = new System.Drawing.Size(146, 14);
@@ -669,7 +692,7 @@
             // 
             this.txtInput13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput13.ForeColor = System.Drawing.Color.Black;
-            this.txtInput13.Location = new System.Drawing.Point(389, 194);
+            this.txtInput13.Location = new System.Drawing.Point(389, 207);
             this.txtInput13.Name = "txtInput13";
             this.txtInput13.Size = new System.Drawing.Size(146, 21);
             this.txtInput13.TabIndex = 3;
@@ -686,7 +709,7 @@
             this.txtInput4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput4.Enabled = false;
             this.txtInput4.ForeColor = System.Drawing.Color.Black;
-            this.txtInput4.Location = new System.Drawing.Point(237, 196);
+            this.txtInput4.Location = new System.Drawing.Point(237, 209);
             this.txtInput4.Name = "txtInput4";
             this.txtInput4.ReadOnly = true;
             this.txtInput4.Size = new System.Drawing.Size(146, 14);
@@ -698,7 +721,7 @@
             // 
             this.txtInput25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput25.ForeColor = System.Drawing.Color.Black;
-            this.txtInput25.Location = new System.Drawing.Point(726, 154);
+            this.txtInput25.Location = new System.Drawing.Point(726, 167);
             this.txtInput25.Name = "txtInput25";
             this.txtInput25.Size = new System.Drawing.Size(146, 21);
             this.txtInput25.TabIndex = 10;
@@ -715,7 +738,7 @@
             this.txtInput20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput20.Enabled = false;
             this.txtInput20.ForeColor = System.Drawing.Color.Black;
-            this.txtInput20.Location = new System.Drawing.Point(571, 156);
+            this.txtInput20.Location = new System.Drawing.Point(571, 169);
             this.txtInput20.Name = "txtInput20";
             this.txtInput20.ReadOnly = true;
             this.txtInput20.Size = new System.Drawing.Size(146, 14);
@@ -727,7 +750,7 @@
             // 
             this.txtInput12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput12.ForeColor = System.Drawing.Color.Black;
-            this.txtInput12.Location = new System.Drawing.Point(389, 154);
+            this.txtInput12.Location = new System.Drawing.Point(389, 167);
             this.txtInput12.Name = "txtInput12";
             this.txtInput12.Size = new System.Drawing.Size(146, 21);
             this.txtInput12.TabIndex = 2;
@@ -744,7 +767,7 @@
             this.txtInput3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput3.Enabled = false;
             this.txtInput3.ForeColor = System.Drawing.Color.Black;
-            this.txtInput3.Location = new System.Drawing.Point(237, 156);
+            this.txtInput3.Location = new System.Drawing.Point(237, 169);
             this.txtInput3.Name = "txtInput3";
             this.txtInput3.ReadOnly = true;
             this.txtInput3.Size = new System.Drawing.Size(146, 14);
@@ -756,7 +779,7 @@
             // 
             this.txtInput24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput24.ForeColor = System.Drawing.Color.Black;
-            this.txtInput24.Location = new System.Drawing.Point(726, 124);
+            this.txtInput24.Location = new System.Drawing.Point(726, 137);
             this.txtInput24.Name = "txtInput24";
             this.txtInput24.Size = new System.Drawing.Size(146, 21);
             this.txtInput24.TabIndex = 9;
@@ -773,7 +796,7 @@
             this.txtInput19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput19.Enabled = false;
             this.txtInput19.ForeColor = System.Drawing.Color.Black;
-            this.txtInput19.Location = new System.Drawing.Point(571, 126);
+            this.txtInput19.Location = new System.Drawing.Point(571, 139);
             this.txtInput19.Name = "txtInput19";
             this.txtInput19.ReadOnly = true;
             this.txtInput19.Size = new System.Drawing.Size(146, 14);
@@ -785,7 +808,7 @@
             // 
             this.txtInput11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput11.ForeColor = System.Drawing.Color.Black;
-            this.txtInput11.Location = new System.Drawing.Point(389, 124);
+            this.txtInput11.Location = new System.Drawing.Point(389, 137);
             this.txtInput11.Name = "txtInput11";
             this.txtInput11.Size = new System.Drawing.Size(146, 21);
             this.txtInput11.TabIndex = 1;
@@ -802,7 +825,7 @@
             this.txtInput2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput2.Enabled = false;
             this.txtInput2.ForeColor = System.Drawing.Color.Black;
-            this.txtInput2.Location = new System.Drawing.Point(237, 126);
+            this.txtInput2.Location = new System.Drawing.Point(237, 139);
             this.txtInput2.Name = "txtInput2";
             this.txtInput2.ReadOnly = true;
             this.txtInput2.Size = new System.Drawing.Size(146, 14);
@@ -814,7 +837,7 @@
             // 
             this.txtInput10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput10.ForeColor = System.Drawing.Color.Black;
-            this.txtInput10.Location = new System.Drawing.Point(389, 84);
+            this.txtInput10.Location = new System.Drawing.Point(389, 97);
             this.txtInput10.Name = "txtInput10";
             this.txtInput10.Size = new System.Drawing.Size(146, 21);
             this.txtInput10.TabIndex = 0;
@@ -831,7 +854,7 @@
             this.txtInput1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInput1.Enabled = false;
             this.txtInput1.ForeColor = System.Drawing.Color.Black;
-            this.txtInput1.Location = new System.Drawing.Point(237, 86);
+            this.txtInput1.Location = new System.Drawing.Point(237, 99);
             this.txtInput1.Name = "txtInput1";
             this.txtInput1.ReadOnly = true;
             this.txtInput1.Size = new System.Drawing.Size(146, 14);
@@ -844,40 +867,144 @@
             this.panel23.BackColor = System.Drawing.Color.LightSalmon;
             this.panel23.Controls.Add(this.panel24);
             this.panel23.ForeColor = System.Drawing.Color.Black;
-            this.panel23.Location = new System.Drawing.Point(22, 15);
+            this.panel23.Location = new System.Drawing.Point(22, 28);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(900, 3);
             this.panel23.TabIndex = 19;
+            // 
+            // panel24
+            // 
+            this.panel24.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel24.Location = new System.Drawing.Point(0, 20);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(698, 5);
+            this.panel24.TabIndex = 18;
             // 
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.LightSalmon;
             this.panel25.Controls.Add(this.panel26);
             this.panel25.ForeColor = System.Drawing.Color.Black;
-            this.panel25.Location = new System.Drawing.Point(22, 45);
+            this.panel25.Location = new System.Drawing.Point(22, 58);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(900, 3);
             this.panel25.TabIndex = 19;
+            // 
+            // panel26
+            // 
+            this.panel26.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel26.Location = new System.Drawing.Point(0, 20);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(698, 5);
+            this.panel26.TabIndex = 18;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.LightSalmon;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.ForeColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(22, 74);
+            this.panel7.Location = new System.Drawing.Point(22, 87);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(900, 3);
             this.panel7.TabIndex = 19;
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel8.Location = new System.Drawing.Point(0, 20);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(698, 5);
+            this.panel8.TabIndex = 18;
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.LightSalmon;
             this.panel17.Controls.Add(this.panel18);
             this.panel17.ForeColor = System.Drawing.Color.Black;
-            this.panel17.Location = new System.Drawing.Point(22, 418);
+            this.panel17.Location = new System.Drawing.Point(22, 431);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(900, 3);
             this.panel17.TabIndex = 21;
+            // 
+            // panel18
+            // 
+            this.panel18.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel18.Location = new System.Drawing.Point(0, 20);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(698, 5);
+            this.panel18.TabIndex = 18;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.ForeColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(22, 127);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(900, 1);
+            this.panel1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel2.Location = new System.Drawing.Point(0, 20);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(698, 5);
+            this.panel2.TabIndex = 18;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.ForeColor = System.Drawing.Color.Black;
+            this.panel11.Location = new System.Drawing.Point(22, 267);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(900, 1);
+            this.panel11.TabIndex = 20;
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel12.Location = new System.Drawing.Point(0, 20);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(698, 5);
+            this.panel12.TabIndex = 18;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.ForeColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(22, 357);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(900, 1);
+            this.panel3.TabIndex = 20;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel4.Location = new System.Drawing.Point(0, 20);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(698, 5);
+            this.panel4.TabIndex = 18;
+            // 
+            // panel19
+            // 
+            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
+            this.panel19.Controls.Add(this.panel20);
+            this.panel19.ForeColor = System.Drawing.Color.Black;
+            this.panel19.Location = new System.Drawing.Point(22, 197);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(900, 1);
+            this.panel19.TabIndex = 20;
+            // 
+            // panel20
+            // 
+            this.panel20.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel20.Location = new System.Drawing.Point(0, 20);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(698, 5);
+            this.panel20.TabIndex = 18;
             // 
             // label18
             // 
@@ -885,7 +1012,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(784, 54);
+            this.label18.Location = new System.Drawing.Point(784, 67);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(44, 12);
             this.label18.TabIndex = 9;
@@ -897,7 +1024,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(444, 54);
+            this.label8.Location = new System.Drawing.Point(444, 67);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 12);
             this.label8.TabIndex = 10;
@@ -909,7 +1036,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(629, 54);
+            this.label10.Location = new System.Drawing.Point(629, 67);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 12);
             this.label10.TabIndex = 9;
@@ -921,7 +1048,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(706, 24);
+            this.label20.Location = new System.Drawing.Point(706, 37);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(37, 14);
             this.label20.TabIndex = 10;
@@ -933,7 +1060,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(369, 24);
+            this.label19.Location = new System.Drawing.Point(369, 37);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(37, 14);
             this.label19.TabIndex = 10;
@@ -945,7 +1072,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(292, 54);
+            this.label11.Location = new System.Drawing.Point(292, 67);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 12);
             this.label11.TabIndex = 10;
@@ -957,7 +1084,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(28, 206);
+            this.label17.Location = new System.Drawing.Point(28, 219);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(107, 29);
             this.label17.TabIndex = 16;
@@ -969,7 +1096,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(28, 90);
+            this.label1.Location = new System.Drawing.Point(28, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 12);
             this.label1.TabIndex = 0;
@@ -981,7 +1108,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(138, 363);
+            this.label16.Location = new System.Drawing.Point(138, 376);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(44, 12);
             this.label16.TabIndex = 15;
@@ -993,7 +1120,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(138, 297);
+            this.label15.Location = new System.Drawing.Point(138, 310);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(44, 12);
             this.label15.TabIndex = 14;
@@ -1005,7 +1132,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(138, 273);
+            this.label14.Location = new System.Drawing.Point(138, 286);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 12);
             this.label14.TabIndex = 13;
@@ -1017,7 +1144,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(138, 202);
+            this.label13.Location = new System.Drawing.Point(138, 215);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(23, 12);
             this.label13.TabIndex = 12;
@@ -1029,7 +1156,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(138, 156);
+            this.label12.Location = new System.Drawing.Point(138, 169);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(31, 12);
             this.label12.TabIndex = 11;
@@ -1041,7 +1168,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(138, 391);
+            this.label9.Location = new System.Drawing.Point(138, 404);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 12);
             this.label9.TabIndex = 8;
@@ -1053,7 +1180,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(28, 372);
+            this.label7.Location = new System.Drawing.Point(28, 385);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 12);
             this.label7.TabIndex = 6;
@@ -1065,7 +1192,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(138, 320);
+            this.label6.Location = new System.Drawing.Point(138, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 12);
             this.label6.TabIndex = 5;
@@ -1077,7 +1204,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(138, 226);
+            this.label5.Location = new System.Drawing.Point(138, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 12);
             this.label5.TabIndex = 4;
@@ -1089,7 +1216,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(28, 294);
+            this.label4.Location = new System.Drawing.Point(28, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 12);
             this.label4.TabIndex = 3;
@@ -1101,7 +1228,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(138, 130);
+            this.label3.Location = new System.Drawing.Point(138, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 12);
             this.label3.TabIndex = 2;
@@ -1113,7 +1240,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(28, 143);
+            this.label2.Location = new System.Drawing.Point(28, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 1;
@@ -1122,6 +1249,7 @@
             // tabPage5
             // 
             this.tabPage5.AutoScroll = true;
+            this.tabPage5.Controls.Add(this.label28);
             this.tabPage5.Controls.Add(this.txtDetail72);
             this.tabPage5.Controls.Add(this.txtDetail36);
             this.tabPage5.Controls.Add(this.txtDetail63);
@@ -1287,12 +1415,13 @@
             this.tabPage5.Controls.Add(this.panel103);
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel107);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(942, 458);
+            this.tabPage5.Size = new System.Drawing.Size(942, 459);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // txtDetail72
             // 
@@ -2888,6 +3017,14 @@
             this.panel172.Size = new System.Drawing.Size(710, 3);
             this.panel172.TabIndex = 216;
             // 
+            // panel173
+            // 
+            this.panel173.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel173.Location = new System.Drawing.Point(0, 20);
+            this.panel173.Name = "panel173";
+            this.panel173.Size = new System.Drawing.Size(698, 5);
+            this.panel173.TabIndex = 18;
+            // 
             // panel117
             // 
             this.panel117.BackColor = System.Drawing.Color.LightSalmon;
@@ -2899,16 +3036,32 @@
             this.panel117.Size = new System.Drawing.Size(710, 3);
             this.panel117.TabIndex = 170;
             // 
+            // panel118
+            // 
+            this.panel118.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel118.Location = new System.Drawing.Point(0, 20);
+            this.panel118.Name = "panel118";
+            this.panel118.Size = new System.Drawing.Size(698, 5);
+            this.panel118.TabIndex = 18;
+            // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.LightSalmon;
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel16.Controls.Add(this.panel21);
             this.panel16.ForeColor = System.Drawing.Color.Black;
-            this.panel16.Location = new System.Drawing.Point(69, 15);
+            this.panel16.Location = new System.Drawing.Point(69, 18);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(710, 3);
             this.panel16.TabIndex = 100;
+            // 
+            // panel21
+            // 
+            this.panel21.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel21.Location = new System.Drawing.Point(0, 20);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(698, 5);
+            this.panel21.TabIndex = 18;
             // 
             // panel95
             // 
@@ -2921,6 +3074,14 @@
             this.panel95.Size = new System.Drawing.Size(710, 3);
             this.panel95.TabIndex = 100;
             // 
+            // panel96
+            // 
+            this.panel96.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel96.Location = new System.Drawing.Point(0, 20);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(698, 5);
+            this.panel96.TabIndex = 18;
+            // 
             // panel97
             // 
             this.panel97.BackColor = System.Drawing.Color.LightSalmon;
@@ -2932,184 +3093,6 @@
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(710, 3);
             this.panel97.TabIndex = 94;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(395, 509);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "확인";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(476, 509);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "취소";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel22
-            // 
-            this.panel22.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel22.ForeColor = System.Drawing.Color.Black;
-            this.panel22.Location = new System.Drawing.Point(554, 45);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1, 375);
-            this.panel22.TabIndex = 91;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.ForeColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(214, 45);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1, 375);
-            this.panel13.TabIndex = 90;
-            // 
-            // panel24
-            // 
-            this.panel24.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel24.Location = new System.Drawing.Point(0, 20);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(698, 5);
-            this.panel24.TabIndex = 18;
-            // 
-            // panel26
-            // 
-            this.panel26.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel26.Location = new System.Drawing.Point(0, 20);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(698, 5);
-            this.panel26.TabIndex = 18;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel8.Location = new System.Drawing.Point(0, 20);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(698, 5);
-            this.panel8.TabIndex = 18;
-            // 
-            // panel18
-            // 
-            this.panel18.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel18.Location = new System.Drawing.Point(0, 20);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(698, 5);
-            this.panel18.TabIndex = 18;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(22, 114);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 1);
-            this.panel1.TabIndex = 20;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel2.Location = new System.Drawing.Point(0, 20);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(698, 5);
-            this.panel2.TabIndex = 18;
-            // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.ForeColor = System.Drawing.Color.Black;
-            this.panel11.Location = new System.Drawing.Point(22, 254);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(900, 1);
-            this.panel11.TabIndex = 20;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel12.Location = new System.Drawing.Point(0, 20);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(698, 5);
-            this.panel12.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(22, 344);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(900, 1);
-            this.panel3.TabIndex = 20;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel4.Location = new System.Drawing.Point(0, 20);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(698, 5);
-            this.panel4.TabIndex = 18;
-            // 
-            // panel19
-            // 
-            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
-            this.panel19.Controls.Add(this.panel20);
-            this.panel19.ForeColor = System.Drawing.Color.Black;
-            this.panel19.Location = new System.Drawing.Point(22, 184);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(900, 1);
-            this.panel19.TabIndex = 20;
-            // 
-            // panel20
-            // 
-            this.panel20.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel20.Location = new System.Drawing.Point(0, 20);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(698, 5);
-            this.panel20.TabIndex = 18;
-            // 
-            // panel173
-            // 
-            this.panel173.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel173.Location = new System.Drawing.Point(0, 20);
-            this.panel173.Name = "panel173";
-            this.panel173.Size = new System.Drawing.Size(698, 5);
-            this.panel173.TabIndex = 18;
-            // 
-            // panel118
-            // 
-            this.panel118.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel118.Location = new System.Drawing.Point(0, 20);
-            this.panel118.Name = "panel118";
-            this.panel118.Size = new System.Drawing.Size(698, 5);
-            this.panel118.TabIndex = 18;
-            // 
-            // panel21
-            // 
-            this.panel21.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel21.Location = new System.Drawing.Point(0, 20);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(698, 5);
-            this.panel21.TabIndex = 18;
-            // 
-            // panel96
-            // 
-            this.panel96.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel96.Location = new System.Drawing.Point(0, 20);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(698, 5);
-            this.panel96.TabIndex = 18;
             // 
             // panel98
             // 
@@ -3759,6 +3742,48 @@
             this.panel108.Size = new System.Drawing.Size(698, 5);
             this.panel108.TabIndex = 18;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(395, 509);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "확인";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Location = new System.Drawing.Point(476, 509);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 33);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "취소";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(815, 13);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(105, 12);
+            this.label27.TabIndex = 108;
+            this.label27.Text = "[단위 : 명, 대, 점]";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(664, 4);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(119, 12);
+            this.label28.TabIndex = 266;
+            this.label28.Text = "(단위 : 원, VAT포함)";
+            // 
             // FormUserSimulateInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3777,6 +3802,10 @@
             this.panel25.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.panel172.ResumeLayout(false);
@@ -3784,10 +3813,6 @@
             this.panel16.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
             this.panel97.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
             this.panel39.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel35.ResumeLayout(false);
@@ -4101,5 +4126,7 @@
         private System.Windows.Forms.TextBox txtDetail36;
         private System.Windows.Forms.TextBox txtDetail63;
         private System.Windows.Forms.TextBox txtDetail27;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
     }
 }

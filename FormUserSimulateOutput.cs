@@ -28,6 +28,10 @@ namespace KIWI
         private Double[] simulWData = null;
         private Double[] simulRData = null;
 
+        private Label[] labelWon = null;
+        private Label[] labelWon2 = null;
+        private Label[] labelWon3 = null;
+
         private string[] names = new string[6] { "업계평균", "당대리점(현재수익)", "당대리점(미래수익)", "시뮬레이션-업계평균", "시뮬레이션-당대리점(현재수익)", "시뮬레이션-당대리점(미래수익)" };
         private List<string[]> selectedData = new List<string[]>();
 
@@ -37,6 +41,10 @@ namespace KIWI
         public FormUserSimulateOutput()
         {
             InitializeComponent();
+
+            labelWon = new Label[6] { label88, label89, label91, label92, label93, label96 };
+            labelWon2 = new Label[6] { label106, label101, label100, label99, label98, label97 };
+            labelWon3 = new Label[6] { label114, label113, label112, label107, label108, label111 };
 
             txtOut = new TextBox[96] { txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,
             txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, txtOut17, txtOut18, txtOut19, txtOut20,
@@ -485,7 +493,7 @@ namespace KIWI
         {
             if ((sender as TextBox).Text.Contains(",") || ((sender as TextBox).Text.Length > 0 && (sender as TextBox).Text != "0"))
             {
-                (sender as TextBox).Text = String.Format("{0:#,###}", Convert.ToInt64((sender as TextBox).Text.Replace(",", "")));
+                (sender as TextBox).Text = String.Format("{0:#,###}", Convert.ToDouble((sender as TextBox).Text.Replace(",", "")));
                 (sender as TextBox).SelectionStart = (sender as TextBox).Text.Length;
                 if ((sender as TextBox).Text == "")
                     (sender as TextBox).Text = "0";
@@ -495,31 +503,54 @@ namespace KIWI
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             pnlChart.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon[i].Visible = false;
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             pnlChart.Visible = false;
+            for(int i =0; i < labelWon.Length; i++){
+                labelWon[i].Visible = true;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pnlChart2.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon2[i].Visible = false;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             pnlChart2.Visible = false;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon2[i].Visible = true;
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             pnlChart3.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon3[i].Visible = false;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             pnlChart3.Visible = false;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon3[i].Visible = true;
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -563,6 +594,11 @@ namespace KIWI
 
                 CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
             }
+        }
+
+        private void lblTitle1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

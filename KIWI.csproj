@@ -291,7 +291,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\equal.jpg" />
+    <Content Include="Resources\equal.jpg" />
+    <Content Include="Resources\up5.jpg" />
     <None Include="Resources\update.ico" />
     <None Include="Resources\print_pref.ico" />
     <None Include="Resources\Print.ico" />

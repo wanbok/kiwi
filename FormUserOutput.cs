@@ -27,6 +27,11 @@ namespace KIWI
         private TextBox[] vtxtROut = null;         //소매
 
 
+        private Label[] labelWon = null;
+        private Label[] labelWon2 = null;
+        private Label[] labelWon3 = null;
+
+
 
         //월평균 판매대수 도매
         private string txtInput4 = "0";
@@ -46,6 +51,10 @@ namespace KIWI
         {
             InitializeComponent();
 
+            labelWon = new Label[6] { label115, label116, label121, label122, label123, label124};
+            labelWon2 = new Label[6] {label125, label126, label127, label128, label129, label130};
+            labelWon3 = new Label[6] {label131, label132, label133, label134, label135, label136};
+            
             vtxtOutTotal = new TextBox[42]{ 
                 txtOut1, txtOut2, txtOut3, txtOut4, txtOut5, txtOut6, txtOut7, txtOut8, txtOut9, txtOut10,txtOut11, txtOut12, txtOut13, txtOut14, txtOut15, txtOut16, 
                 txtWOut1, txtWOut2, txtWOut3, txtWOut4, txtWOut5, txtWOut6, txtWOut7, txtWOut8, txtWOut9, txtWOut10,txtWOut11, txtWOut12, txtWOut13, txtWOut14, 
@@ -301,31 +310,54 @@ namespace KIWI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             pnlChart.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon[i].Visible = false;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             pnlChart.Visible = false;
+            for(int i =0; i < labelWon.Length; i++){
+                labelWon[i].Visible = true;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pnlChart2.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon2[i].Visible = false;
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             pnlChart2.Visible = false;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon2[i].Visible = true;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             pnlChart3.Visible = true;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon3[i].Visible = false;
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             pnlChart3.Visible = false;
+            for (int i = 0; i < labelWon.Length; i++)
+            {
+                labelWon3[i].Visible = true;
+            }
         }
 
         private void pnlChart3_Paint(object sender, PaintEventArgs e)
@@ -378,6 +410,31 @@ namespace KIWI
             if ((sender as TextBox).Text.EndsWith("점 기준"))
                 return;
             (sender as TextBox).Text += "점 기준";
+        }
+
+        private void label116_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label121_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label123_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label122_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label124_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

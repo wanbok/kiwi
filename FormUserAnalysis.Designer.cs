@@ -28,33 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint41 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint42 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint43 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint44 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint45 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint46 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint47 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint48 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -376,6 +380,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label38);
+            this.tabPage1.Controls.Add(this.label37);
+            this.tabPage1.Controls.Add(this.label36);
+            this.tabPage1.Controls.Add(this.label35);
             this.tabPage1.Controls.Add(this.panel15);
             this.tabPage1.Controls.Add(this.tabControl3);
             this.tabPage1.Controls.Add(this.label33);
@@ -578,13 +586,54 @@
             this.tabPage1.Controls.Add(this.panel155);
             this.tabPage1.Controls.Add(this.panel77);
             this.tabPage1.Controls.Add(this.panel16);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1244, 1062);
+            this.tabPage1.Size = new System.Drawing.Size(1244, 1063);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(1206, 350);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(17, 12);
+            this.label38.TabIndex = 833;
+            this.label38.Text = "대";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(1207, 320);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(15, 12);
+            this.label37.TabIndex = 832;
+            this.label37.Text = "%";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(1206, 290);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(17, 12);
+            this.label36.TabIndex = 831;
+            this.label36.Text = "원";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(1206, 261);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(17, 12);
+            this.label35.TabIndex = 830;
+            this.label35.Text = "원";
             // 
             // panel15
             // 
@@ -609,10 +658,10 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.chart1);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(454, 148);
+            this.tabPage6.Size = new System.Drawing.Size(454, 149);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "수익계정";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -620,22 +669,22 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(1, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Series2";
+            this.chart1.Series.Add(series9);
+            this.chart1.Series.Add(series10);
             this.chart1.Size = new System.Drawing.Size(450, 140);
             this.chart1.TabIndex = 340;
             this.chart1.Text = "0";
@@ -643,10 +692,10 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.chart5);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(454, 148);
+            this.tabPage7.Size = new System.Drawing.Size(454, 149);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "비용계정";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -654,40 +703,40 @@
             // chart5
             // 
             this.chart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea2.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea2);
+            chartArea6.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea6);
             this.chart5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend2.Name = "Legend1";
-            this.chart5.Legends.Add(legend2);
+            legend6.Name = "Legend1";
+            this.chart5.Legends.Add(legend6);
             this.chart5.Location = new System.Drawing.Point(1, 3);
             this.chart5.Name = "chart5";
             this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.LegendText = "업계평균";
-            series3.Name = "Series1";
-            series3.Points.Add(dataPoint1);
-            series3.Points.Add(dataPoint2);
-            series3.Points.Add(dataPoint3);
-            series3.Points.Add(dataPoint4);
-            series3.Points.Add(dataPoint5);
-            series3.Points.Add(dataPoint6);
-            series3.Points.Add(dataPoint7);
-            series3.Points.Add(dataPoint8);
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.LegendText = "당대리점";
-            series4.Name = "Series2";
-            series4.Points.Add(dataPoint9);
-            series4.Points.Add(dataPoint10);
-            series4.Points.Add(dataPoint11);
-            series4.Points.Add(dataPoint12);
-            series4.Points.Add(dataPoint13);
-            series4.Points.Add(dataPoint14);
-            series4.Points.Add(dataPoint15);
-            series4.Points.Add(dataPoint16);
-            this.chart5.Series.Add(series3);
-            this.chart5.Series.Add(series4);
+            series11.ChartArea = "ChartArea1";
+            series11.Legend = "Legend1";
+            series11.LegendText = "업계평균";
+            series11.Name = "Series1";
+            series11.Points.Add(dataPoint33);
+            series11.Points.Add(dataPoint34);
+            series11.Points.Add(dataPoint35);
+            series11.Points.Add(dataPoint36);
+            series11.Points.Add(dataPoint37);
+            series11.Points.Add(dataPoint38);
+            series11.Points.Add(dataPoint39);
+            series11.Points.Add(dataPoint40);
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.LegendText = "당대리점";
+            series12.Name = "Series2";
+            series12.Points.Add(dataPoint41);
+            series12.Points.Add(dataPoint42);
+            series12.Points.Add(dataPoint43);
+            series12.Points.Add(dataPoint44);
+            series12.Points.Add(dataPoint45);
+            series12.Points.Add(dataPoint46);
+            series12.Points.Add(dataPoint47);
+            series12.Points.Add(dataPoint48);
+            this.chart5.Series.Add(series11);
+            this.chart5.Series.Add(series12);
             this.chart5.Size = new System.Drawing.Size(450, 140);
             this.chart5.TabIndex = 340;
             this.chart5.Text = "chart5";
@@ -1498,18 +1547,18 @@
             // picCompare13
             // 
             this.picCompare13.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare13.Location = new System.Drawing.Point(718, 426);
+            this.picCompare13.Location = new System.Drawing.Point(718, 423);
             this.picCompare13.Name = "picCompare13";
-            this.picCompare13.Size = new System.Drawing.Size(32, 26);
+            this.picCompare13.Size = new System.Drawing.Size(29, 28);
             this.picCompare13.TabIndex = 761;
             this.picCompare13.TabStop = false;
             // 
             // picCompare12
             // 
             this.picCompare12.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare12.Location = new System.Drawing.Point(718, 396);
+            this.picCompare12.Location = new System.Drawing.Point(718, 393);
             this.picCompare12.Name = "picCompare12";
-            this.picCompare12.Size = new System.Drawing.Size(32, 26);
+            this.picCompare12.Size = new System.Drawing.Size(29, 28);
             this.picCompare12.TabIndex = 760;
             this.picCompare12.TabStop = false;
             // 
@@ -1574,10 +1623,10 @@
             // 
             this.textBox74.BackColor = System.Drawing.Color.White;
             this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox74.Location = new System.Drawing.Point(901, 349);
+            this.textBox74.Location = new System.Drawing.Point(937, 349);
             this.textBox74.Name = "textBox74";
             this.textBox74.ReadOnly = true;
-            this.textBox74.Size = new System.Drawing.Size(320, 14);
+            this.textBox74.Size = new System.Drawing.Size(263, 14);
             this.textBox74.TabIndex = 759;
             this.textBox74.Text = "0";
             this.textBox74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1587,22 +1636,23 @@
             // 
             this.textBox72.BackColor = System.Drawing.Color.White;
             this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox72.Location = new System.Drawing.Point(901, 319);
+            this.textBox72.Location = new System.Drawing.Point(937, 319);
             this.textBox72.Name = "textBox72";
             this.textBox72.ReadOnly = true;
-            this.textBox72.Size = new System.Drawing.Size(320, 14);
+            this.textBox72.Size = new System.Drawing.Size(263, 14);
             this.textBox72.TabIndex = 759;
             this.textBox72.Text = "0";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox72.TextChanged += new System.EventHandler(this.textBox72_TextChanged);
             // 
             // textBox71
             // 
             this.textBox71.BackColor = System.Drawing.Color.White;
             this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox71.Location = new System.Drawing.Point(901, 289);
+            this.textBox71.Location = new System.Drawing.Point(937, 289);
             this.textBox71.Name = "textBox71";
             this.textBox71.ReadOnly = true;
-            this.textBox71.Size = new System.Drawing.Size(320, 14);
+            this.textBox71.Size = new System.Drawing.Size(263, 14);
             this.textBox71.TabIndex = 759;
             this.textBox71.Text = "0";
             this.textBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1612,10 +1662,10 @@
             // 
             this.textBox69.BackColor = System.Drawing.Color.White;
             this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox69.Location = new System.Drawing.Point(901, 259);
+            this.textBox69.Location = new System.Drawing.Point(937, 260);
             this.textBox69.Name = "textBox69";
             this.textBox69.ReadOnly = true;
-            this.textBox69.Size = new System.Drawing.Size(320, 14);
+            this.textBox69.Size = new System.Drawing.Size(263, 14);
             this.textBox69.TabIndex = 757;
             this.textBox69.Text = "0";
             this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1693,7 +1743,7 @@
             this.panel63.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel63.ForeColor = System.Drawing.Color.Black;
-            this.panel63.Location = new System.Drawing.Point(894, 252);
+            this.panel63.Location = new System.Drawing.Point(934, 252);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(1, 120);
             this.panel63.TabIndex = 643;
@@ -1723,11 +1773,11 @@
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(774, 322);
+            this.label29.Location = new System.Drawing.Point(771, 322);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(69, 12);
+            this.label29.Size = new System.Drawing.Size(125, 12);
             this.label29.TabIndex = 753;
-            this.label29.Text = "판촉비 비중";
+            this.label29.Text = "수익 대비 판촉비 비중";
             // 
             // label28
             // 
@@ -1887,9 +1937,9 @@
             // 
             this.picCompare16.BackColor = System.Drawing.Color.LemonChiffon;
             this.picCompare16.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare16.Location = new System.Drawing.Point(718, 516);
+            this.picCompare16.Location = new System.Drawing.Point(718, 514);
             this.picCompare16.Name = "picCompare16";
-            this.picCompare16.Size = new System.Drawing.Size(32, 26);
+            this.picCompare16.Size = new System.Drawing.Size(29, 28);
             this.picCompare16.TabIndex = 742;
             this.picCompare16.TabStop = false;
             // 
@@ -1897,27 +1947,27 @@
             // 
             this.picCompare15.BackColor = System.Drawing.Color.LemonChiffon;
             this.picCompare15.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare15.Location = new System.Drawing.Point(718, 486);
+            this.picCompare15.Location = new System.Drawing.Point(718, 483);
             this.picCompare15.Name = "picCompare15";
-            this.picCompare15.Size = new System.Drawing.Size(32, 26);
+            this.picCompare15.Size = new System.Drawing.Size(29, 28);
             this.picCompare15.TabIndex = 743;
             this.picCompare15.TabStop = false;
             // 
             // picCompare14
             // 
             this.picCompare14.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare14.Location = new System.Drawing.Point(718, 456);
+            this.picCompare14.Location = new System.Drawing.Point(718, 453);
             this.picCompare14.Name = "picCompare14";
-            this.picCompare14.Size = new System.Drawing.Size(32, 26);
+            this.picCompare14.Size = new System.Drawing.Size(29, 28);
             this.picCompare14.TabIndex = 744;
             this.picCompare14.TabStop = false;
             // 
             // picCompare11
             // 
             this.picCompare11.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare11.Location = new System.Drawing.Point(718, 366);
+            this.picCompare11.Location = new System.Drawing.Point(718, 363);
             this.picCompare11.Name = "picCompare11";
-            this.picCompare11.Size = new System.Drawing.Size(32, 26);
+            this.picCompare11.Size = new System.Drawing.Size(29, 28);
             this.picCompare11.TabIndex = 741;
             this.picCompare11.TabStop = false;
             // 
@@ -1925,90 +1975,91 @@
             // 
             this.picCompare7.BackColor = System.Drawing.Color.LemonChiffon;
             this.picCompare7.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare7.Location = new System.Drawing.Point(718, 246);
+            this.picCompare7.Location = new System.Drawing.Point(718, 243);
             this.picCompare7.Name = "picCompare7";
-            this.picCompare7.Size = new System.Drawing.Size(32, 26);
+            this.picCompare7.Size = new System.Drawing.Size(29, 27);
             this.picCompare7.TabIndex = 738;
             this.picCompare7.TabStop = false;
             // 
             // picCompare6
             // 
             this.picCompare6.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare6.Location = new System.Drawing.Point(718, 216);
+            this.picCompare6.Location = new System.Drawing.Point(718, 213);
             this.picCompare6.Name = "picCompare6";
-            this.picCompare6.Size = new System.Drawing.Size(32, 26);
+            this.picCompare6.Size = new System.Drawing.Size(29, 28);
             this.picCompare6.TabIndex = 739;
             this.picCompare6.TabStop = false;
             // 
             // picCompare4
             // 
             this.picCompare4.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare4.Location = new System.Drawing.Point(718, 156);
+            this.picCompare4.Location = new System.Drawing.Point(718, 153);
             this.picCompare4.Name = "picCompare4";
-            this.picCompare4.Size = new System.Drawing.Size(32, 26);
+            this.picCompare4.Size = new System.Drawing.Size(29, 28);
             this.picCompare4.TabIndex = 740;
             this.picCompare4.TabStop = false;
             // 
             // picCompare10
             // 
             this.picCompare10.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare10.Location = new System.Drawing.Point(718, 336);
+            this.picCompare10.Location = new System.Drawing.Point(718, 333);
             this.picCompare10.Name = "picCompare10";
-            this.picCompare10.Size = new System.Drawing.Size(32, 26);
+            this.picCompare10.Size = new System.Drawing.Size(29, 28);
             this.picCompare10.TabIndex = 749;
             this.picCompare10.TabStop = false;
             // 
             // picCompare9
             // 
             this.picCompare9.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare9.Location = new System.Drawing.Point(718, 306);
+            this.picCompare9.Location = new System.Drawing.Point(718, 303);
             this.picCompare9.Name = "picCompare9";
-            this.picCompare9.Size = new System.Drawing.Size(32, 26);
+            this.picCompare9.Size = new System.Drawing.Size(29, 28);
             this.picCompare9.TabIndex = 750;
             this.picCompare9.TabStop = false;
             // 
             // picCompare8
             // 
             this.picCompare8.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare8.Location = new System.Drawing.Point(718, 276);
+            this.picCompare8.Location = new System.Drawing.Point(718, 273);
             this.picCompare8.Name = "picCompare8";
-            this.picCompare8.Size = new System.Drawing.Size(32, 26);
+            this.picCompare8.Size = new System.Drawing.Size(29, 28);
             this.picCompare8.TabIndex = 751;
             this.picCompare8.TabStop = false;
             // 
             // picCompare5
             // 
             this.picCompare5.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare5.Location = new System.Drawing.Point(718, 186);
+            this.picCompare5.Location = new System.Drawing.Point(718, 183);
             this.picCompare5.Name = "picCompare5";
-            this.picCompare5.Size = new System.Drawing.Size(32, 26);
+            this.picCompare5.Size = new System.Drawing.Size(29, 28);
             this.picCompare5.TabIndex = 748;
             this.picCompare5.TabStop = false;
             // 
             // picCompare2
             // 
             this.picCompare2.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare2.Location = new System.Drawing.Point(718, 96);
+            this.picCompare2.Location = new System.Drawing.Point(718, 93);
             this.picCompare2.Name = "picCompare2";
-            this.picCompare2.Size = new System.Drawing.Size(32, 26);
+            this.picCompare2.Size = new System.Drawing.Size(29, 28);
             this.picCompare2.TabIndex = 745;
             this.picCompare2.TabStop = false;
+            this.picCompare2.Click += new System.EventHandler(this.picCompare2_Click);
             // 
             // picCompare1
             // 
             this.picCompare1.Image = global::KIWI.Properties.Resources.equal;
-            this.picCompare1.Location = new System.Drawing.Point(718, 67);
+            this.picCompare1.Location = new System.Drawing.Point(718, 64);
             this.picCompare1.Name = "picCompare1";
-            this.picCompare1.Size = new System.Drawing.Size(32, 26);
+            this.picCompare1.Size = new System.Drawing.Size(29, 28);
             this.picCompare1.TabIndex = 746;
             this.picCompare1.TabStop = false;
             // 
             // picCompare3
             // 
             this.picCompare3.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare3.Location = new System.Drawing.Point(718, 126);
+            this.picCompare3.Location = new System.Drawing.Point(718, 123);
             this.picCompare3.Name = "picCompare3";
-            this.picCompare3.Size = new System.Drawing.Size(32, 26);
+            this.picCompare3.Size = new System.Drawing.Size(29, 28);
             this.picCompare3.TabIndex = 747;
             this.picCompare3.TabStop = false;
             // 
@@ -3041,7 +3092,7 @@
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.Controls.Add(this.panel10);
             this.panel9.ForeColor = System.Drawing.Color.Black;
-            this.panel9.Location = new System.Drawing.Point(9, 512);
+            this.panel9.Location = new System.Drawing.Point(9, 511);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(750, 3);
             this.panel9.TabIndex = 620;
@@ -3060,7 +3111,7 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.ForeColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(9, 271);
+            this.panel7.Location = new System.Drawing.Point(9, 270);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(750, 3);
             this.panel7.TabIndex = 612;
@@ -3131,7 +3182,7 @@
             this.panel95.BackColor = System.Drawing.Color.LightSalmon;
             this.panel95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel95.ForeColor = System.Drawing.Color.Black;
-            this.panel95.Location = new System.Drawing.Point(9, 62);
+            this.panel95.Location = new System.Drawing.Point(9, 61);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(750, 3);
             this.panel95.TabIndex = 608;
@@ -3648,5 +3699,9 @@
         private System.Windows.Forms.Panel panel155;
         private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
     }
 }
