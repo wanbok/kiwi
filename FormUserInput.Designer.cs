@@ -597,6 +597,7 @@
             this.tabPage5.Size = new System.Drawing.Size(1262, 640);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // panel31
             // 
