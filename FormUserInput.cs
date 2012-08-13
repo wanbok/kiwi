@@ -134,15 +134,24 @@ namespace KIWI
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
 
-            CommonUtil.clearTextBox(this.tabPage1);
-            CommonUtil.clearTextBox(this.tabPage5);
-            
+            clearInputs();
+
             getInput();
             getDetail(CDataControl.g_BasicInput);
 
             radioButton5.Checked = true;
             radioButton2.Checked = true;
             radioButton3.Checked = true;
+        }
+
+        //입력 초기화
+        private void clearInputs()
+        {
+            CommonUtil.clearTextBox(this.tabPage1);
+            CommonUtil.clearTextBox(this.tabPage5);
+            지역.SelectedItem = "";
+            대리점명.Text = "";
+            마케터.Text = "";
         }
 
         //기본입력
@@ -929,7 +938,7 @@ namespace KIWI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            clearInputs();
         }
 
         

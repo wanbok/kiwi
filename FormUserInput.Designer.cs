@@ -887,7 +887,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Checked = true;
-            this.radioButton6.Location = new System.Drawing.Point(6, 5);
+            this.radioButton6.Location = new System.Drawing.Point(6, 25);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(71, 16);
             this.radioButton6.TabIndex = 264;
@@ -898,7 +898,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 25);
+            this.radioButton5.Location = new System.Drawing.Point(6, 5);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(59, 16);
             this.radioButton5.TabIndex = 265;
@@ -1610,7 +1610,7 @@
             // txtDetail3
             // 
             this.txtDetail3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDetail3.Location = new System.Drawing.Point(316, 82);
+            this.txtDetail3.Location = new System.Drawing.Point(316, 106);
             this.txtDetail3.Name = "txtDetail3";
             this.txtDetail3.Size = new System.Drawing.Size(108, 21);
             this.txtDetail3.TabIndex = 2;
@@ -1625,7 +1625,7 @@
             // 
             this.txtDetail2.BackColor = System.Drawing.Color.White;
             this.txtDetail2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDetail2.Location = new System.Drawing.Point(316, 106);
+            this.txtDetail2.Location = new System.Drawing.Point(316, 83);
             this.txtDetail2.Name = "txtDetail2";
             this.txtDetail2.Size = new System.Drawing.Size(108, 21);
             this.txtDetail2.TabIndex = 1;
@@ -3381,7 +3381,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Honeydew;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.Location = new System.Drawing.Point(1123, 18);
             this.button1.Name = "button1";

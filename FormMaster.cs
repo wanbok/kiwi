@@ -82,6 +82,9 @@ namespace KIWI
                         // 엑셀내용중 시트 1의 내용만 옮겨짐
                         CommonUtil.deepCopyBasicInput(CDataControl.g_FileBasicInput, CDataControl.g_BasicInput);
                         CommonUtil.deepCopyBusinessData(CDataControl.g_FileDetailInput, CDataControl.g_DetailInput);
+
+                        // 파일에서 읽음 체크
+                        CommonUtil.isLoadedFromFile = true;
                     }
                     catch (Exception ex)
                     {

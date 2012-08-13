@@ -982,7 +982,6 @@
             this.label124.Size = new System.Drawing.Size(63, 12);
             this.label124.TabIndex = 283;
             this.label124.Text = "(단위 : 원)";
-            this.label124.Click += new System.EventHandler(this.label124_Click);
             // 
             // label123
             // 
@@ -993,7 +992,6 @@
             this.label123.Size = new System.Drawing.Size(63, 12);
             this.label123.TabIndex = 282;
             this.label123.Text = "(단위 : 원)";
-            this.label123.Click += new System.EventHandler(this.label123_Click);
             // 
             // label122
             // 
@@ -1004,7 +1002,6 @@
             this.label122.Size = new System.Drawing.Size(63, 12);
             this.label122.TabIndex = 281;
             this.label122.Text = "(단위 : 원)";
-            this.label122.Click += new System.EventHandler(this.label122_Click);
             // 
             // label121
             // 
@@ -1015,7 +1012,6 @@
             this.label121.Size = new System.Drawing.Size(63, 12);
             this.label121.TabIndex = 280;
             this.label121.Text = "(단위 : 원)";
-            this.label121.Click += new System.EventHandler(this.label121_Click);
             // 
             // label116
             // 
@@ -1026,7 +1022,6 @@
             this.label116.Size = new System.Drawing.Size(63, 12);
             this.label116.TabIndex = 279;
             this.label116.Text = "(단위 : 원)";
-            this.label116.Click += new System.EventHandler(this.label116_Click);
             // 
             // label115
             // 

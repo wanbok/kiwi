@@ -311,9 +311,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
             this.panel162.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel137.SuspendLayout();
@@ -3232,7 +3229,7 @@
             // 
             // 사업자모델_소계
             // 
-            this.사업자모델_소계.BackColor = System.Drawing.Color.LemonChiffon;
+            this.사업자모델_소계.BackColor = System.Drawing.Color.White;
             this.사업자모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.사업자모델_소계.ForeColor = System.Drawing.SystemColors.WindowText;
             this.사업자모델_소계.Location = new System.Drawing.Point(758, 1144);
@@ -3247,7 +3244,7 @@
             // 
             // 유통모델_소계
             // 
-            this.유통모델_소계.BackColor = System.Drawing.Color.LemonChiffon;
+            this.유통모델_소계.BackColor = System.Drawing.Color.White;
             this.유통모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.유통모델_소계.ForeColor = System.Drawing.SystemColors.WindowText;
             this.유통모델_소계.Location = new System.Drawing.Point(757, 1036);
@@ -3262,7 +3259,7 @@
             // 
             // ASP_전체계
             // 
-            this.ASP_전체계.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ASP_전체계.BackColor = System.Drawing.Color.White;
             this.ASP_전체계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ASP_전체계.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ASP_전체계.Location = new System.Drawing.Point(758, 1180);
@@ -3322,7 +3319,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LemonChiffon;
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Enabled = false;
             this.textBox3.ForeColor = System.Drawing.Color.Black;
@@ -3367,7 +3364,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.LemonChiffon;
+            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.ForeColor = System.Drawing.Color.Black;
@@ -3382,7 +3379,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.LemonChiffon;
+            this.textBox7.BackColor = System.Drawing.SystemColors.Control;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Enabled = false;
             this.textBox7.ForeColor = System.Drawing.Color.Black;
@@ -3632,7 +3629,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(197, 1185);
             this.label9.Name = "label9";
@@ -3643,7 +3640,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(197, 1149);
             this.label10.Name = "label10";
@@ -3674,7 +3671,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label15.BackColor = System.Drawing.SystemColors.Control;
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(197, 1041);
             this.label15.Name = "label15";
@@ -3710,30 +3707,6 @@
             this.panel24.Size = new System.Drawing.Size(1051, 24);
             this.panel24.TabIndex = 1000;
             // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel25.Location = new System.Drawing.Point(126, 1026);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(935, 41);
-            this.panel25.TabIndex = 1001;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel26.Location = new System.Drawing.Point(125, 1136);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(936, 38);
-            this.panel26.TabIndex = 1002;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel27.Location = new System.Drawing.Point(125, 1175);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(936, 32);
-            this.panel27.TabIndex = 1003;
-            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3742,6 +3715,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1121, 740);
             this.ControlBox = false;
+            this.Controls.Add(this.panel40);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -3759,7 +3733,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel44);
             this.Controls.Add(this.panel42);
-            this.Controls.Add(this.panel40);
             this.Controls.Add(this.panel38);
             this.Controls.Add(this.panel34);
             this.Controls.Add(this.panel30);
@@ -3968,9 +3941,6 @@
             this.Controls.Add(this.panel107);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel24);
-            this.Controls.Add(this.panel25);
-            this.Controls.Add(this.panel26);
-            this.Controls.Add(this.panel27);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdmin";
             this.ShowInTaskbar = false;
@@ -4306,8 +4276,5 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Panel panel27;
     }
 }

@@ -145,8 +145,8 @@ namespace KIWI
             pnlChart.Visible = false;
             // 결과 취득 클래스
 
-
-            setAllOutFormat(false);
+            radioButton1.Checked = CommonUtil.isLoadedFromFile;
+            setAllOutFormat(CommonUtil.isLoadedFromFile);
         }
 
 
@@ -410,31 +410,6 @@ namespace KIWI
             if ((sender as TextBox).Text.EndsWith("점 기준"))
                 return;
             (sender as TextBox).Text += "점 기준";
-        }
-
-        private void label116_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label121_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label123_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label122_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label124_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -119,7 +119,8 @@ namespace KIWI
             simulRData = new Double[72];
 
             pnlChart.Visible = false;
-            applyData(false);
+            radioButton1.Checked = CommonUtil.isLoadedFromFile;
+            applyData(CommonUtil.isLoadedFromFile);
 
         }
 

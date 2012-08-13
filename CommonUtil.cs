@@ -21,6 +21,7 @@ namespace KIWI
         private static excel.Workbook workBook = null;
         private static excel.ApplicationClass applicationForSimul = null;
         private static excel.Workbook workBookForSimul = null;
+        public static Boolean isLoadedFromFile = false;
         public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "files\\default.xlsx";
         //public static string openAsName = null;
         public static string dataDirectory = AppDomain.CurrentDomain.BaseDirectory + "data\\";
