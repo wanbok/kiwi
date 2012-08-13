@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint41 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint42 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint43 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint44 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint45 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint46 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint47 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint48 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -306,6 +306,9 @@
             this.panel155 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.panel78 = new System.Windows.Forms.Panel();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.panel81 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -586,10 +589,13 @@
             this.tabPage1.Controls.Add(this.panel155);
             this.tabPage1.Controls.Add(this.panel77);
             this.tabPage1.Controls.Add(this.panel16);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Controls.Add(this.panel78);
+            this.tabPage1.Controls.Add(this.panel79);
+            this.tabPage1.Controls.Add(this.panel81);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1244, 1063);
+            this.tabPage1.Size = new System.Drawing.Size(1244, 1062);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -658,10 +664,10 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.chart1);
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(454, 149);
+            this.tabPage6.Size = new System.Drawing.Size(454, 148);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "수익계정";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -669,22 +675,22 @@
             // chart1
             // 
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(1, 3);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series2";
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(450, 140);
             this.chart1.TabIndex = 340;
             this.chart1.Text = "0";
@@ -692,10 +698,10 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.chart5);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(454, 149);
+            this.tabPage7.Size = new System.Drawing.Size(454, 148);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "비용계정";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -703,40 +709,40 @@
             // chart5
             // 
             this.chart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            chartArea6.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea6);
+            chartArea2.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea2);
             this.chart5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend6.Name = "Legend1";
-            this.chart5.Legends.Add(legend6);
+            legend2.Name = "Legend1";
+            this.chart5.Legends.Add(legend2);
             this.chart5.Location = new System.Drawing.Point(1, 3);
             this.chart5.Name = "chart5";
             this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.LegendText = "업계평균";
-            series11.Name = "Series1";
-            series11.Points.Add(dataPoint33);
-            series11.Points.Add(dataPoint34);
-            series11.Points.Add(dataPoint35);
-            series11.Points.Add(dataPoint36);
-            series11.Points.Add(dataPoint37);
-            series11.Points.Add(dataPoint38);
-            series11.Points.Add(dataPoint39);
-            series11.Points.Add(dataPoint40);
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.LegendText = "당대리점";
-            series12.Name = "Series2";
-            series12.Points.Add(dataPoint41);
-            series12.Points.Add(dataPoint42);
-            series12.Points.Add(dataPoint43);
-            series12.Points.Add(dataPoint44);
-            series12.Points.Add(dataPoint45);
-            series12.Points.Add(dataPoint46);
-            series12.Points.Add(dataPoint47);
-            series12.Points.Add(dataPoint48);
-            this.chart5.Series.Add(series11);
-            this.chart5.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.LegendText = "업계평균";
+            series3.Name = "Series1";
+            series3.Points.Add(dataPoint1);
+            series3.Points.Add(dataPoint2);
+            series3.Points.Add(dataPoint3);
+            series3.Points.Add(dataPoint4);
+            series3.Points.Add(dataPoint5);
+            series3.Points.Add(dataPoint6);
+            series3.Points.Add(dataPoint7);
+            series3.Points.Add(dataPoint8);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.LegendText = "당대리점";
+            series4.Name = "Series2";
+            series4.Points.Add(dataPoint9);
+            series4.Points.Add(dataPoint10);
+            series4.Points.Add(dataPoint11);
+            series4.Points.Add(dataPoint12);
+            series4.Points.Add(dataPoint13);
+            series4.Points.Add(dataPoint14);
+            series4.Points.Add(dataPoint15);
+            series4.Points.Add(dataPoint16);
+            this.chart5.Series.Add(series3);
+            this.chart5.Series.Add(series4);
             this.chart5.Size = new System.Drawing.Size(450, 140);
             this.chart5.TabIndex = 340;
             this.chart5.Text = "chart5";
@@ -744,6 +750,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.LemonChiffon;
             this.label33.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(967, 14);
@@ -794,7 +801,7 @@
             // 
             this.txtOut62.BackColor = System.Drawing.Color.White;
             this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut62.Location = new System.Drawing.Point(623, 457);
+            this.txtOut62.Location = new System.Drawing.Point(623, 461);
             this.txtOut62.Name = "txtOut62";
             this.txtOut62.ReadOnly = true;
             this.txtOut62.Size = new System.Drawing.Size(84, 14);
@@ -807,7 +814,7 @@
             // 
             this.txtOut61.BackColor = System.Drawing.Color.White;
             this.txtOut61.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut61.Location = new System.Drawing.Point(623, 428);
+            this.txtOut61.Location = new System.Drawing.Point(623, 432);
             this.txtOut61.Name = "txtOut61";
             this.txtOut61.ReadOnly = true;
             this.txtOut61.Size = new System.Drawing.Size(84, 14);
@@ -820,7 +827,7 @@
             // 
             this.txtOut60.BackColor = System.Drawing.Color.White;
             this.txtOut60.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut60.Location = new System.Drawing.Point(623, 398);
+            this.txtOut60.Location = new System.Drawing.Point(623, 402);
             this.txtOut60.Name = "txtOut60";
             this.txtOut60.ReadOnly = true;
             this.txtOut60.Size = new System.Drawing.Size(84, 14);
@@ -833,7 +840,7 @@
             // 
             this.txtOut59.BackColor = System.Drawing.Color.White;
             this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut59.Location = new System.Drawing.Point(623, 368);
+            this.txtOut59.Location = new System.Drawing.Point(623, 372);
             this.txtOut59.Name = "txtOut59";
             this.txtOut59.ReadOnly = true;
             this.txtOut59.Size = new System.Drawing.Size(84, 14);
@@ -846,7 +853,7 @@
             // 
             this.txtOut58.BackColor = System.Drawing.Color.White;
             this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut58.Location = new System.Drawing.Point(623, 337);
+            this.txtOut58.Location = new System.Drawing.Point(623, 341);
             this.txtOut58.Name = "txtOut58";
             this.txtOut58.ReadOnly = true;
             this.txtOut58.Size = new System.Drawing.Size(84, 14);
@@ -859,7 +866,7 @@
             // 
             this.txtOut57.BackColor = System.Drawing.Color.White;
             this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut57.Location = new System.Drawing.Point(623, 308);
+            this.txtOut57.Location = new System.Drawing.Point(623, 312);
             this.txtOut57.Name = "txtOut57";
             this.txtOut57.ReadOnly = true;
             this.txtOut57.Size = new System.Drawing.Size(84, 14);
@@ -872,7 +879,7 @@
             // 
             this.txtOut56.BackColor = System.Drawing.Color.White;
             this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut56.Location = new System.Drawing.Point(623, 277);
+            this.txtOut56.Location = new System.Drawing.Point(623, 281);
             this.txtOut56.Name = "txtOut56";
             this.txtOut56.ReadOnly = true;
             this.txtOut56.Size = new System.Drawing.Size(84, 14);
@@ -885,7 +892,7 @@
             // 
             this.txtOut55.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut55.Location = new System.Drawing.Point(623, 247);
+            this.txtOut55.Location = new System.Drawing.Point(623, 251);
             this.txtOut55.Name = "txtOut55";
             this.txtOut55.ReadOnly = true;
             this.txtOut55.Size = new System.Drawing.Size(84, 14);
@@ -898,7 +905,7 @@
             // 
             this.txtOut54.BackColor = System.Drawing.Color.White;
             this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut54.Location = new System.Drawing.Point(623, 218);
+            this.txtOut54.Location = new System.Drawing.Point(623, 222);
             this.txtOut54.Name = "txtOut54";
             this.txtOut54.ReadOnly = true;
             this.txtOut54.Size = new System.Drawing.Size(84, 14);
@@ -911,7 +918,7 @@
             // 
             this.txtOut53.BackColor = System.Drawing.Color.White;
             this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut53.Location = new System.Drawing.Point(623, 188);
+            this.txtOut53.Location = new System.Drawing.Point(623, 192);
             this.txtOut53.Name = "txtOut53";
             this.txtOut53.ReadOnly = true;
             this.txtOut53.Size = new System.Drawing.Size(84, 14);
@@ -924,7 +931,7 @@
             // 
             this.txtOut52.BackColor = System.Drawing.Color.White;
             this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut52.Location = new System.Drawing.Point(623, 158);
+            this.txtOut52.Location = new System.Drawing.Point(623, 162);
             this.txtOut52.Name = "txtOut52";
             this.txtOut52.ReadOnly = true;
             this.txtOut52.Size = new System.Drawing.Size(84, 14);
@@ -937,7 +944,7 @@
             // 
             this.txtOut51.BackColor = System.Drawing.Color.White;
             this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut51.Location = new System.Drawing.Point(623, 127);
+            this.txtOut51.Location = new System.Drawing.Point(623, 131);
             this.txtOut51.Name = "txtOut51";
             this.txtOut51.ReadOnly = true;
             this.txtOut51.Size = new System.Drawing.Size(84, 14);
@@ -950,7 +957,7 @@
             // 
             this.txtOut50.BackColor = System.Drawing.Color.White;
             this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut50.Location = new System.Drawing.Point(623, 98);
+            this.txtOut50.Location = new System.Drawing.Point(623, 102);
             this.txtOut50.Name = "txtOut50";
             this.txtOut50.ReadOnly = true;
             this.txtOut50.Size = new System.Drawing.Size(84, 14);
@@ -963,7 +970,7 @@
             // 
             this.txtOut49.BackColor = System.Drawing.Color.White;
             this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut49.Location = new System.Drawing.Point(623, 67);
+            this.txtOut49.Location = new System.Drawing.Point(623, 71);
             this.txtOut49.Name = "txtOut49";
             this.txtOut49.ReadOnly = true;
             this.txtOut49.Size = new System.Drawing.Size(85, 14);
@@ -976,7 +983,7 @@
             // 
             this.txtOut46.BackColor = System.Drawing.Color.White;
             this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut46.Location = new System.Drawing.Point(508, 457);
+            this.txtOut46.Location = new System.Drawing.Point(508, 461);
             this.txtOut46.Name = "txtOut46";
             this.txtOut46.ReadOnly = true;
             this.txtOut46.Size = new System.Drawing.Size(105, 14);
@@ -989,7 +996,7 @@
             // 
             this.txtOut45.BackColor = System.Drawing.Color.White;
             this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut45.Location = new System.Drawing.Point(508, 428);
+            this.txtOut45.Location = new System.Drawing.Point(508, 432);
             this.txtOut45.Name = "txtOut45";
             this.txtOut45.ReadOnly = true;
             this.txtOut45.Size = new System.Drawing.Size(105, 14);
@@ -1002,7 +1009,7 @@
             // 
             this.txtOut44.BackColor = System.Drawing.Color.White;
             this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut44.Location = new System.Drawing.Point(508, 398);
+            this.txtOut44.Location = new System.Drawing.Point(508, 402);
             this.txtOut44.Name = "txtOut44";
             this.txtOut44.ReadOnly = true;
             this.txtOut44.Size = new System.Drawing.Size(105, 14);
@@ -1015,7 +1022,7 @@
             // 
             this.txtOut43.BackColor = System.Drawing.Color.White;
             this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut43.Location = new System.Drawing.Point(508, 368);
+            this.txtOut43.Location = new System.Drawing.Point(508, 372);
             this.txtOut43.Name = "txtOut43";
             this.txtOut43.ReadOnly = true;
             this.txtOut43.Size = new System.Drawing.Size(105, 14);
@@ -1028,7 +1035,7 @@
             // 
             this.txtOut42.BackColor = System.Drawing.Color.White;
             this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut42.Location = new System.Drawing.Point(508, 337);
+            this.txtOut42.Location = new System.Drawing.Point(508, 341);
             this.txtOut42.Name = "txtOut42";
             this.txtOut42.ReadOnly = true;
             this.txtOut42.Size = new System.Drawing.Size(105, 14);
@@ -1041,7 +1048,7 @@
             // 
             this.txtOut41.BackColor = System.Drawing.Color.White;
             this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut41.Location = new System.Drawing.Point(508, 308);
+            this.txtOut41.Location = new System.Drawing.Point(508, 312);
             this.txtOut41.Name = "txtOut41";
             this.txtOut41.ReadOnly = true;
             this.txtOut41.Size = new System.Drawing.Size(105, 14);
@@ -1054,7 +1061,7 @@
             // 
             this.txtOut40.BackColor = System.Drawing.Color.White;
             this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut40.Location = new System.Drawing.Point(508, 277);
+            this.txtOut40.Location = new System.Drawing.Point(508, 281);
             this.txtOut40.Name = "txtOut40";
             this.txtOut40.ReadOnly = true;
             this.txtOut40.Size = new System.Drawing.Size(105, 14);
@@ -1067,7 +1074,7 @@
             // 
             this.txtOut39.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut39.Location = new System.Drawing.Point(508, 247);
+            this.txtOut39.Location = new System.Drawing.Point(508, 251);
             this.txtOut39.Name = "txtOut39";
             this.txtOut39.ReadOnly = true;
             this.txtOut39.Size = new System.Drawing.Size(105, 14);
@@ -1080,7 +1087,7 @@
             // 
             this.txtOut38.BackColor = System.Drawing.Color.White;
             this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut38.Location = new System.Drawing.Point(508, 218);
+            this.txtOut38.Location = new System.Drawing.Point(508, 222);
             this.txtOut38.Name = "txtOut38";
             this.txtOut38.ReadOnly = true;
             this.txtOut38.Size = new System.Drawing.Size(105, 14);
@@ -1093,7 +1100,7 @@
             // 
             this.txtOut37.BackColor = System.Drawing.Color.White;
             this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut37.Location = new System.Drawing.Point(508, 188);
+            this.txtOut37.Location = new System.Drawing.Point(508, 192);
             this.txtOut37.Name = "txtOut37";
             this.txtOut37.ReadOnly = true;
             this.txtOut37.Size = new System.Drawing.Size(105, 14);
@@ -1106,7 +1113,7 @@
             // 
             this.txtOut36.BackColor = System.Drawing.Color.White;
             this.txtOut36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut36.Location = new System.Drawing.Point(508, 158);
+            this.txtOut36.Location = new System.Drawing.Point(508, 162);
             this.txtOut36.Name = "txtOut36";
             this.txtOut36.ReadOnly = true;
             this.txtOut36.Size = new System.Drawing.Size(105, 14);
@@ -1119,7 +1126,7 @@
             // 
             this.txtOut35.BackColor = System.Drawing.Color.White;
             this.txtOut35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut35.Location = new System.Drawing.Point(508, 127);
+            this.txtOut35.Location = new System.Drawing.Point(508, 131);
             this.txtOut35.Name = "txtOut35";
             this.txtOut35.ReadOnly = true;
             this.txtOut35.Size = new System.Drawing.Size(105, 14);
@@ -1132,7 +1139,7 @@
             // 
             this.txtOut34.BackColor = System.Drawing.Color.White;
             this.txtOut34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut34.Location = new System.Drawing.Point(508, 98);
+            this.txtOut34.Location = new System.Drawing.Point(508, 102);
             this.txtOut34.Name = "txtOut34";
             this.txtOut34.ReadOnly = true;
             this.txtOut34.Size = new System.Drawing.Size(105, 14);
@@ -1145,7 +1152,7 @@
             // 
             this.txtOut33.BackColor = System.Drawing.Color.White;
             this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut33.Location = new System.Drawing.Point(508, 67);
+            this.txtOut33.Location = new System.Drawing.Point(508, 71);
             this.txtOut33.Name = "txtOut33";
             this.txtOut33.ReadOnly = true;
             this.txtOut33.Size = new System.Drawing.Size(105, 14);
@@ -1158,7 +1165,7 @@
             // 
             this.txtOut63.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut63.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut63.Location = new System.Drawing.Point(623, 487);
+            this.txtOut63.Location = new System.Drawing.Point(623, 491);
             this.txtOut63.Name = "txtOut63";
             this.txtOut63.ReadOnly = true;
             this.txtOut63.Size = new System.Drawing.Size(84, 14);
@@ -1171,7 +1178,7 @@
             // 
             this.txtOut47.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut47.Location = new System.Drawing.Point(508, 486);
+            this.txtOut47.Location = new System.Drawing.Point(508, 490);
             this.txtOut47.Name = "txtOut47";
             this.txtOut47.ReadOnly = true;
             this.txtOut47.Size = new System.Drawing.Size(105, 14);
@@ -1184,7 +1191,7 @@
             // 
             this.txtOut30.BackColor = System.Drawing.Color.White;
             this.txtOut30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut30.Location = new System.Drawing.Point(394, 457);
+            this.txtOut30.Location = new System.Drawing.Point(394, 461);
             this.txtOut30.Name = "txtOut30";
             this.txtOut30.ReadOnly = true;
             this.txtOut30.Size = new System.Drawing.Size(105, 14);
@@ -1197,7 +1204,7 @@
             // 
             this.txtOut29.BackColor = System.Drawing.Color.White;
             this.txtOut29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut29.Location = new System.Drawing.Point(394, 428);
+            this.txtOut29.Location = new System.Drawing.Point(394, 432);
             this.txtOut29.Name = "txtOut29";
             this.txtOut29.ReadOnly = true;
             this.txtOut29.Size = new System.Drawing.Size(105, 14);
@@ -1210,7 +1217,7 @@
             // 
             this.txtOut28.BackColor = System.Drawing.Color.White;
             this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut28.Location = new System.Drawing.Point(394, 398);
+            this.txtOut28.Location = new System.Drawing.Point(394, 402);
             this.txtOut28.Name = "txtOut28";
             this.txtOut28.ReadOnly = true;
             this.txtOut28.Size = new System.Drawing.Size(105, 14);
@@ -1223,7 +1230,7 @@
             // 
             this.txtOut27.BackColor = System.Drawing.Color.White;
             this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut27.Location = new System.Drawing.Point(394, 368);
+            this.txtOut27.Location = new System.Drawing.Point(394, 372);
             this.txtOut27.Name = "txtOut27";
             this.txtOut27.ReadOnly = true;
             this.txtOut27.Size = new System.Drawing.Size(105, 14);
@@ -1236,7 +1243,7 @@
             // 
             this.txtOut26.BackColor = System.Drawing.Color.White;
             this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut26.Location = new System.Drawing.Point(394, 337);
+            this.txtOut26.Location = new System.Drawing.Point(394, 341);
             this.txtOut26.Name = "txtOut26";
             this.txtOut26.ReadOnly = true;
             this.txtOut26.Size = new System.Drawing.Size(105, 14);
@@ -1249,7 +1256,7 @@
             // 
             this.txtOut25.BackColor = System.Drawing.Color.White;
             this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut25.Location = new System.Drawing.Point(394, 308);
+            this.txtOut25.Location = new System.Drawing.Point(394, 312);
             this.txtOut25.Name = "txtOut25";
             this.txtOut25.ReadOnly = true;
             this.txtOut25.Size = new System.Drawing.Size(105, 14);
@@ -1262,7 +1269,7 @@
             // 
             this.txtOut24.BackColor = System.Drawing.Color.White;
             this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut24.Location = new System.Drawing.Point(394, 277);
+            this.txtOut24.Location = new System.Drawing.Point(394, 281);
             this.txtOut24.Name = "txtOut24";
             this.txtOut24.ReadOnly = true;
             this.txtOut24.Size = new System.Drawing.Size(105, 14);
@@ -1275,7 +1282,7 @@
             // 
             this.txtOut23.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut23.Location = new System.Drawing.Point(394, 247);
+            this.txtOut23.Location = new System.Drawing.Point(394, 251);
             this.txtOut23.Name = "txtOut23";
             this.txtOut23.ReadOnly = true;
             this.txtOut23.Size = new System.Drawing.Size(105, 14);
@@ -1288,7 +1295,7 @@
             // 
             this.txtOut22.BackColor = System.Drawing.Color.White;
             this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut22.Location = new System.Drawing.Point(394, 218);
+            this.txtOut22.Location = new System.Drawing.Point(394, 222);
             this.txtOut22.Name = "txtOut22";
             this.txtOut22.ReadOnly = true;
             this.txtOut22.Size = new System.Drawing.Size(105, 14);
@@ -1301,7 +1308,7 @@
             // 
             this.txtOut21.BackColor = System.Drawing.Color.White;
             this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut21.Location = new System.Drawing.Point(394, 188);
+            this.txtOut21.Location = new System.Drawing.Point(394, 192);
             this.txtOut21.Name = "txtOut21";
             this.txtOut21.ReadOnly = true;
             this.txtOut21.Size = new System.Drawing.Size(105, 14);
@@ -1314,7 +1321,7 @@
             // 
             this.txtOut20.BackColor = System.Drawing.Color.White;
             this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut20.Location = new System.Drawing.Point(394, 158);
+            this.txtOut20.Location = new System.Drawing.Point(394, 162);
             this.txtOut20.Name = "txtOut20";
             this.txtOut20.ReadOnly = true;
             this.txtOut20.Size = new System.Drawing.Size(105, 14);
@@ -1327,7 +1334,7 @@
             // 
             this.txtOut19.BackColor = System.Drawing.Color.White;
             this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut19.Location = new System.Drawing.Point(394, 127);
+            this.txtOut19.Location = new System.Drawing.Point(394, 131);
             this.txtOut19.Name = "txtOut19";
             this.txtOut19.ReadOnly = true;
             this.txtOut19.Size = new System.Drawing.Size(105, 14);
@@ -1340,7 +1347,7 @@
             // 
             this.txtOut18.BackColor = System.Drawing.Color.White;
             this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut18.Location = new System.Drawing.Point(394, 98);
+            this.txtOut18.Location = new System.Drawing.Point(394, 102);
             this.txtOut18.Name = "txtOut18";
             this.txtOut18.ReadOnly = true;
             this.txtOut18.Size = new System.Drawing.Size(105, 14);
@@ -1353,7 +1360,7 @@
             // 
             this.txtOut17.BackColor = System.Drawing.Color.White;
             this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut17.Location = new System.Drawing.Point(394, 67);
+            this.txtOut17.Location = new System.Drawing.Point(394, 71);
             this.txtOut17.Name = "txtOut17";
             this.txtOut17.ReadOnly = true;
             this.txtOut17.Size = new System.Drawing.Size(105, 14);
@@ -1366,7 +1373,7 @@
             // 
             this.txtOut14.BackColor = System.Drawing.Color.White;
             this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut14.Location = new System.Drawing.Point(279, 457);
+            this.txtOut14.Location = new System.Drawing.Point(279, 461);
             this.txtOut14.Name = "txtOut14";
             this.txtOut14.ReadOnly = true;
             this.txtOut14.Size = new System.Drawing.Size(105, 14);
@@ -1379,7 +1386,7 @@
             // 
             this.txtOut13.BackColor = System.Drawing.Color.White;
             this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut13.Location = new System.Drawing.Point(279, 428);
+            this.txtOut13.Location = new System.Drawing.Point(279, 432);
             this.txtOut13.Name = "txtOut13";
             this.txtOut13.ReadOnly = true;
             this.txtOut13.Size = new System.Drawing.Size(105, 14);
@@ -1392,7 +1399,7 @@
             // 
             this.txtOut12.BackColor = System.Drawing.Color.White;
             this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut12.Location = new System.Drawing.Point(279, 398);
+            this.txtOut12.Location = new System.Drawing.Point(279, 402);
             this.txtOut12.Name = "txtOut12";
             this.txtOut12.ReadOnly = true;
             this.txtOut12.Size = new System.Drawing.Size(105, 14);
@@ -1405,7 +1412,7 @@
             // 
             this.txtOut11.BackColor = System.Drawing.Color.White;
             this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut11.Location = new System.Drawing.Point(279, 368);
+            this.txtOut11.Location = new System.Drawing.Point(279, 372);
             this.txtOut11.Name = "txtOut11";
             this.txtOut11.ReadOnly = true;
             this.txtOut11.Size = new System.Drawing.Size(105, 14);
@@ -1418,7 +1425,7 @@
             // 
             this.txtOut10.BackColor = System.Drawing.Color.White;
             this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut10.Location = new System.Drawing.Point(279, 337);
+            this.txtOut10.Location = new System.Drawing.Point(279, 341);
             this.txtOut10.Name = "txtOut10";
             this.txtOut10.ReadOnly = true;
             this.txtOut10.Size = new System.Drawing.Size(105, 14);
@@ -1431,7 +1438,7 @@
             // 
             this.txtOut9.BackColor = System.Drawing.Color.White;
             this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut9.Location = new System.Drawing.Point(279, 308);
+            this.txtOut9.Location = new System.Drawing.Point(279, 312);
             this.txtOut9.Name = "txtOut9";
             this.txtOut9.ReadOnly = true;
             this.txtOut9.Size = new System.Drawing.Size(105, 14);
@@ -1444,7 +1451,7 @@
             // 
             this.txtOut8.BackColor = System.Drawing.Color.White;
             this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut8.Location = new System.Drawing.Point(279, 277);
+            this.txtOut8.Location = new System.Drawing.Point(279, 281);
             this.txtOut8.Name = "txtOut8";
             this.txtOut8.ReadOnly = true;
             this.txtOut8.Size = new System.Drawing.Size(105, 14);
@@ -1457,7 +1464,7 @@
             // 
             this.txtOut7.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut7.Location = new System.Drawing.Point(279, 247);
+            this.txtOut7.Location = new System.Drawing.Point(279, 251);
             this.txtOut7.Name = "txtOut7";
             this.txtOut7.ReadOnly = true;
             this.txtOut7.Size = new System.Drawing.Size(105, 14);
@@ -1470,7 +1477,7 @@
             // 
             this.txtOut6.BackColor = System.Drawing.Color.White;
             this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut6.Location = new System.Drawing.Point(279, 218);
+            this.txtOut6.Location = new System.Drawing.Point(279, 222);
             this.txtOut6.Name = "txtOut6";
             this.txtOut6.ReadOnly = true;
             this.txtOut6.Size = new System.Drawing.Size(105, 14);
@@ -1483,7 +1490,7 @@
             // 
             this.txtOut5.BackColor = System.Drawing.Color.White;
             this.txtOut5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut5.Location = new System.Drawing.Point(279, 188);
+            this.txtOut5.Location = new System.Drawing.Point(279, 192);
             this.txtOut5.Name = "txtOut5";
             this.txtOut5.ReadOnly = true;
             this.txtOut5.Size = new System.Drawing.Size(105, 14);
@@ -1496,7 +1503,7 @@
             // 
             this.txtOut4.BackColor = System.Drawing.Color.White;
             this.txtOut4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut4.Location = new System.Drawing.Point(279, 158);
+            this.txtOut4.Location = new System.Drawing.Point(279, 162);
             this.txtOut4.Name = "txtOut4";
             this.txtOut4.ReadOnly = true;
             this.txtOut4.Size = new System.Drawing.Size(105, 14);
@@ -1509,7 +1516,7 @@
             // 
             this.txtOut3.BackColor = System.Drawing.Color.White;
             this.txtOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut3.Location = new System.Drawing.Point(279, 127);
+            this.txtOut3.Location = new System.Drawing.Point(279, 131);
             this.txtOut3.Name = "txtOut3";
             this.txtOut3.ReadOnly = true;
             this.txtOut3.Size = new System.Drawing.Size(105, 14);
@@ -1522,7 +1529,7 @@
             // 
             this.txtOut2.BackColor = System.Drawing.Color.White;
             this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut2.Location = new System.Drawing.Point(279, 98);
+            this.txtOut2.Location = new System.Drawing.Point(279, 102);
             this.txtOut2.Name = "txtOut2";
             this.txtOut2.ReadOnly = true;
             this.txtOut2.Size = new System.Drawing.Size(105, 14);
@@ -1535,7 +1542,7 @@
             // 
             this.txtOut1.BackColor = System.Drawing.Color.White;
             this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut1.Location = new System.Drawing.Point(279, 67);
+            this.txtOut1.Location = new System.Drawing.Point(279, 71);
             this.txtOut1.Name = "txtOut1";
             this.txtOut1.ReadOnly = true;
             this.txtOut1.Size = new System.Drawing.Size(105, 14);
@@ -1623,7 +1630,7 @@
             // 
             this.textBox74.BackColor = System.Drawing.Color.White;
             this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox74.Location = new System.Drawing.Point(937, 349);
+            this.textBox74.Location = new System.Drawing.Point(937, 350);
             this.textBox74.Name = "textBox74";
             this.textBox74.ReadOnly = true;
             this.textBox74.Size = new System.Drawing.Size(263, 14);
@@ -1636,7 +1643,7 @@
             // 
             this.textBox72.BackColor = System.Drawing.Color.White;
             this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox72.Location = new System.Drawing.Point(937, 319);
+            this.textBox72.Location = new System.Drawing.Point(937, 320);
             this.textBox72.Name = "textBox72";
             this.textBox72.ReadOnly = true;
             this.textBox72.Size = new System.Drawing.Size(263, 14);
@@ -1649,7 +1656,7 @@
             // 
             this.textBox71.BackColor = System.Drawing.Color.White;
             this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox71.Location = new System.Drawing.Point(937, 289);
+            this.textBox71.Location = new System.Drawing.Point(937, 290);
             this.textBox71.Name = "textBox71";
             this.textBox71.ReadOnly = true;
             this.textBox71.Size = new System.Drawing.Size(263, 14);
@@ -1662,7 +1669,7 @@
             // 
             this.textBox69.BackColor = System.Drawing.Color.White;
             this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox69.Location = new System.Drawing.Point(937, 260);
+            this.textBox69.Location = new System.Drawing.Point(937, 261);
             this.textBox69.Name = "textBox69";
             this.textBox69.ReadOnly = true;
             this.textBox69.Size = new System.Drawing.Size(263, 14);
@@ -1751,6 +1758,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.LemonChiffon;
             this.label32.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label32.ForeColor = System.Drawing.Color.Black;
             this.label32.Location = new System.Drawing.Point(773, 233);
@@ -2130,7 +2138,7 @@
             // 
             this.textBoxBase10.BackColor = System.Drawing.Color.White;
             this.textBoxBase10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase10.Location = new System.Drawing.Point(1141, 193);
+            this.textBoxBase10.Location = new System.Drawing.Point(1141, 196);
             this.textBoxBase10.Name = "textBoxBase10";
             this.textBoxBase10.ReadOnly = true;
             this.textBoxBase10.Size = new System.Drawing.Size(80, 14);
@@ -2143,7 +2151,7 @@
             // 
             this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(943, 193);
+            this.textBox6.Location = new System.Drawing.Point(943, 196);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(80, 14);
@@ -2156,7 +2164,7 @@
             // 
             this.textBoxBase9.BackColor = System.Drawing.Color.White;
             this.textBoxBase9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase9.Location = new System.Drawing.Point(1044, 193);
+            this.textBoxBase9.Location = new System.Drawing.Point(1044, 196);
             this.textBoxBase9.Name = "textBoxBase9";
             this.textBoxBase9.ReadOnly = true;
             this.textBoxBase9.Size = new System.Drawing.Size(80, 14);
@@ -2169,7 +2177,7 @@
             // 
             this.textBoxBase8.BackColor = System.Drawing.Color.White;
             this.textBoxBase8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase8.Location = new System.Drawing.Point(1141, 163);
+            this.textBoxBase8.Location = new System.Drawing.Point(1141, 166);
             this.textBoxBase8.Name = "textBoxBase8";
             this.textBoxBase8.ReadOnly = true;
             this.textBoxBase8.Size = new System.Drawing.Size(80, 14);
@@ -2182,7 +2190,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(943, 163);
+            this.textBox5.Location = new System.Drawing.Point(943, 166);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(80, 14);
@@ -2195,7 +2203,7 @@
             // 
             this.textBoxBase7.BackColor = System.Drawing.Color.White;
             this.textBoxBase7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase7.Location = new System.Drawing.Point(1044, 163);
+            this.textBoxBase7.Location = new System.Drawing.Point(1044, 166);
             this.textBoxBase7.Name = "textBoxBase7";
             this.textBoxBase7.ReadOnly = true;
             this.textBoxBase7.Size = new System.Drawing.Size(80, 14);
@@ -2208,7 +2216,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(943, 133);
+            this.textBox4.Location = new System.Drawing.Point(943, 136);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(80, 14);
@@ -2221,7 +2229,7 @@
             // 
             this.textBoxBase6.BackColor = System.Drawing.Color.White;
             this.textBoxBase6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase6.Location = new System.Drawing.Point(1044, 133);
+            this.textBoxBase6.Location = new System.Drawing.Point(1044, 136);
             this.textBoxBase6.Name = "textBoxBase6";
             this.textBoxBase6.ReadOnly = true;
             this.textBoxBase6.Size = new System.Drawing.Size(80, 14);
@@ -2233,6 +2241,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.LemonChiffon;
             this.label9.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(778, 12);
@@ -2314,7 +2323,7 @@
             // 
             this.textBoxBase5.BackColor = System.Drawing.Color.White;
             this.textBoxBase5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase5.Location = new System.Drawing.Point(1141, 103);
+            this.textBoxBase5.Location = new System.Drawing.Point(1141, 105);
             this.textBoxBase5.Name = "textBoxBase5";
             this.textBoxBase5.ReadOnly = true;
             this.textBoxBase5.Size = new System.Drawing.Size(80, 14);
@@ -2327,7 +2336,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(943, 103);
+            this.textBox3.Location = new System.Drawing.Point(943, 106);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(80, 14);
@@ -2340,7 +2349,7 @@
             // 
             this.textBoxBase4.BackColor = System.Drawing.Color.White;
             this.textBoxBase4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase4.Location = new System.Drawing.Point(1044, 103);
+            this.textBoxBase4.Location = new System.Drawing.Point(1044, 106);
             this.textBoxBase4.Name = "textBoxBase4";
             this.textBoxBase4.ReadOnly = true;
             this.textBoxBase4.Size = new System.Drawing.Size(80, 14);
@@ -2353,7 +2362,7 @@
             // 
             this.textBoxBase3.BackColor = System.Drawing.Color.White;
             this.textBoxBase3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase3.Location = new System.Drawing.Point(1141, 73);
+            this.textBoxBase3.Location = new System.Drawing.Point(1141, 75);
             this.textBoxBase3.Name = "textBoxBase3";
             this.textBoxBase3.ReadOnly = true;
             this.textBoxBase3.Size = new System.Drawing.Size(80, 14);
@@ -2366,7 +2375,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(943, 72);
+            this.textBox2.Location = new System.Drawing.Point(943, 75);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(80, 14);
@@ -2379,7 +2388,7 @@
             // 
             this.textBoxBase2.BackColor = System.Drawing.Color.White;
             this.textBoxBase2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase2.Location = new System.Drawing.Point(1044, 72);
+            this.textBoxBase2.Location = new System.Drawing.Point(1044, 75);
             this.textBoxBase2.Name = "textBoxBase2";
             this.textBoxBase2.ReadOnly = true;
             this.textBoxBase2.Size = new System.Drawing.Size(80, 14);
@@ -2392,7 +2401,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(943, 40);
+            this.textBox1.Location = new System.Drawing.Point(943, 43);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(80, 14);
@@ -2405,7 +2414,7 @@
             // 
             this.textBoxBase1.BackColor = System.Drawing.Color.White;
             this.textBoxBase1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase1.Location = new System.Drawing.Point(1044, 40);
+            this.textBoxBase1.Location = new System.Drawing.Point(1044, 43);
             this.textBoxBase1.Name = "textBoxBase1";
             this.textBoxBase1.ReadOnly = true;
             this.textBoxBase1.Size = new System.Drawing.Size(80, 14);
@@ -2544,6 +2553,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.LemonChiffon;
             this.label15.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(1169, 14);
@@ -2555,6 +2565,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.LemonChiffon;
             this.label31.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label31.ForeColor = System.Drawing.Color.Black;
             this.label31.Location = new System.Drawing.Point(1001, 235);
@@ -2566,6 +2577,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.LemonChiffon;
             this.label23.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(1068, 14);
@@ -2672,7 +2684,7 @@
             // 
             this.txtOut64.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut64.Location = new System.Drawing.Point(623, 517);
+            this.txtOut64.Location = new System.Drawing.Point(623, 521);
             this.txtOut64.Name = "txtOut64";
             this.txtOut64.ReadOnly = true;
             this.txtOut64.Size = new System.Drawing.Size(84, 14);
@@ -2685,7 +2697,7 @@
             // 
             this.txtOut48.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut48.Location = new System.Drawing.Point(508, 517);
+            this.txtOut48.Location = new System.Drawing.Point(508, 521);
             this.txtOut48.Name = "txtOut48";
             this.txtOut48.ReadOnly = true;
             this.txtOut48.Size = new System.Drawing.Size(105, 14);
@@ -2698,7 +2710,7 @@
             // 
             this.txtOut32.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut32.Location = new System.Drawing.Point(394, 516);
+            this.txtOut32.Location = new System.Drawing.Point(394, 520);
             this.txtOut32.Name = "txtOut32";
             this.txtOut32.ReadOnly = true;
             this.txtOut32.Size = new System.Drawing.Size(105, 14);
@@ -2710,6 +2722,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.LemonChiffon;
             this.label14.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(627, 43);
@@ -2722,7 +2735,7 @@
             // 
             this.txtOut16.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut16.Location = new System.Drawing.Point(279, 517);
+            this.txtOut16.Location = new System.Drawing.Point(279, 521);
             this.txtOut16.Name = "txtOut16";
             this.txtOut16.ReadOnly = true;
             this.txtOut16.Size = new System.Drawing.Size(105, 14);
@@ -2735,7 +2748,7 @@
             // 
             this.txtOut31.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut31.Location = new System.Drawing.Point(394, 487);
+            this.txtOut31.Location = new System.Drawing.Point(394, 491);
             this.txtOut31.Name = "txtOut31";
             this.txtOut31.ReadOnly = true;
             this.txtOut31.Size = new System.Drawing.Size(105, 14);
@@ -2748,7 +2761,7 @@
             // 
             this.txtOut15.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOut15.Location = new System.Drawing.Point(279, 486);
+            this.txtOut15.Location = new System.Drawing.Point(279, 490);
             this.txtOut15.Name = "txtOut15";
             this.txtOut15.ReadOnly = true;
             this.txtOut15.Size = new System.Drawing.Size(105, 14);
@@ -3190,6 +3203,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.LemonChiffon;
             this.label6.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(545, 43);
@@ -3201,6 +3215,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.LemonChiffon;
             this.label5.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(409, 43);
@@ -3212,6 +3227,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.LemonChiffon;
             this.label4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(314, 43);
@@ -3223,6 +3239,7 @@
             // label137
             // 
             this.label137.AutoSize = true;
+            this.label137.BackColor = System.Drawing.Color.LemonChiffon;
             this.label137.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label137.ForeColor = System.Drawing.Color.Black;
             this.label137.Location = new System.Drawing.Point(113, 43);
@@ -3301,7 +3318,7 @@
             // 
             this.label162.AutoSize = true;
             this.label162.ForeColor = System.Drawing.Color.Black;
-            this.label162.Location = new System.Drawing.Point(60, 162);
+            this.label162.Location = new System.Drawing.Point(60, 164);
             this.label162.Name = "label162";
             this.label162.Size = new System.Drawing.Size(205, 12);
             this.label162.TabIndex = 598;
@@ -3342,6 +3359,7 @@
             // label138
             // 
             this.label138.AutoSize = true;
+            this.label138.BackColor = System.Drawing.Color.LemonChiffon;
             this.label138.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label138.ForeColor = System.Drawing.Color.Black;
             this.label138.Location = new System.Drawing.Point(13, 43);
@@ -3373,6 +3391,30 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(705, 28);
             this.panel16.TabIndex = 828;
+            // 
+            // panel78
+            // 
+            this.panel78.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel78.Location = new System.Drawing.Point(9, 35);
+            this.panel78.Name = "panel78";
+            this.panel78.Size = new System.Drawing.Size(749, 28);
+            this.panel78.TabIndex = 829;
+            // 
+            // panel79
+            // 
+            this.panel79.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel79.Location = new System.Drawing.Point(770, 8);
+            this.panel79.Name = "panel79";
+            this.panel79.Size = new System.Drawing.Size(460, 25);
+            this.panel79.TabIndex = 830;
+            // 
+            // panel81
+            // 
+            this.panel81.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel81.Location = new System.Drawing.Point(768, 228);
+            this.panel81.Name = "panel81";
+            this.panel81.Size = new System.Drawing.Size(460, 24);
+            this.panel81.TabIndex = 831;
             // 
             // FormUserAnalysis
             // 
@@ -3703,5 +3745,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel78;
+        private System.Windows.Forms.Panel panel79;
+        private System.Windows.Forms.Panel panel81;
     }
 }

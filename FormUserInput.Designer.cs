@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserInput));
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label44 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -267,9 +268,11 @@
             this.panel42 = new System.Windows.Forms.Panel();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.panel61 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -360,8 +363,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel78 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label44 = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
@@ -602,12 +605,23 @@
             this.tabPage5.Controls.Add(this.panel105);
             this.tabPage5.Controls.Add(this.panel40);
             this.tabPage5.Controls.Add(this.panel42);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Controls.Add(this.panel61);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1262, 641);
+            this.tabPage5.Size = new System.Drawing.Size(1262, 640);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("굴림", 8F);
+            this.label44.ForeColor = System.Drawing.Color.Black;
+            this.label44.Location = new System.Drawing.Point(1130, 10);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(110, 11);
+            this.label44.TabIndex = 274;
+            this.label44.Text = "(단위 : 원, VAT포함)";
             // 
             // label42
             // 
@@ -631,7 +645,6 @@
             this.label41.TabIndex = 272;
             this.label41.Text = "총액으로 기입, 직영점에서의 고객민원 처리 등 (가입비외 USIM/할부보증료 등 대납 처리 건, 고객사은품, 판촉물 제작 등)\r\n※ 점당 평균 임" +
                 "차료 총액이 아닌 보유 직영점 총액으로 기입 ";
-            this.label41.Click += new System.EventHandler(this.label41_Click);
             // 
             // label40
             // 
@@ -2076,7 +2089,6 @@
             this.label107.TabIndex = 161;
             this.label107.Text = "도매 신규 대당 투자 금액으로 기입, 도매(판매점 공급모델) 신규 투자금액의 평균금액으로 기입 함(모델당 투입금액이 상이하나 평균금액으로 산정 기" +
                 "입) \r\n※ 평균금액 산정 시 판매점 환수금액을 필히 반영하여 산정하여야 함.";
-            this.label107.Click += new System.EventHandler(this.label107_Click);
             // 
             // label129
             // 
@@ -2147,6 +2159,7 @@
             // label135
             // 
             this.label135.AutoSize = true;
+            this.label135.BackColor = System.Drawing.Color.LemonChiffon;
             this.label135.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label135.ForeColor = System.Drawing.Color.Black;
             this.label135.Location = new System.Drawing.Point(566, 32);
@@ -2158,6 +2171,7 @@
             // label136
             // 
             this.label136.AutoSize = true;
+            this.label136.BackColor = System.Drawing.Color.LemonChiffon;
             this.label136.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label136.ForeColor = System.Drawing.Color.Black;
             this.label136.Location = new System.Drawing.Point(347, 32);
@@ -2169,6 +2183,7 @@
             // label137
             // 
             this.label137.AutoSize = true;
+            this.label137.BackColor = System.Drawing.Color.LemonChiffon;
             this.label137.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label137.ForeColor = System.Drawing.Color.Black;
             this.label137.Location = new System.Drawing.Point(204, 33);
@@ -2180,6 +2195,7 @@
             // label138
             // 
             this.label138.AutoSize = true;
+            this.label138.BackColor = System.Drawing.Color.LemonChiffon;
             this.label138.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label138.ForeColor = System.Drawing.Color.Black;
             this.label138.Location = new System.Drawing.Point(49, 32);
@@ -3236,6 +3252,14 @@
             this.radioButton3.Text = "인당\r\n월평균";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
+            // panel61
+            // 
+            this.panel61.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel61.Location = new System.Drawing.Point(0, 27);
+            this.panel61.Name = "panel61";
+            this.panel61.Size = new System.Drawing.Size(1238, 22);
+            this.panel61.TabIndex = 831;
+            // 
             // label109
             // 
             this.label109.AutoSize = true;
@@ -3261,6 +3285,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label43);
             this.tabPage1.Controls.Add(this.label39);
             this.tabPage1.Controls.Add(this.label38);
@@ -3344,14 +3369,27 @@
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.panel78);
             this.tabPage1.Font = new System.Drawing.Font("굴림", 9F);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1262, 641);
+            this.tabPage1.Size = new System.Drawing.Size(1262, 640);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Honeydew;
+            this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(1123, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 29);
+            this.button1.TabIndex = 831;
+            this.button1.Text = "초기화";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label43
             // 
@@ -3363,7 +3401,6 @@
             this.label43.Size = new System.Drawing.Size(105, 12);
             this.label43.TabIndex = 96;
             this.label43.Text = "[단위 : 명, 대, 점]";
-            this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // label39
             // 
@@ -3383,7 +3420,7 @@
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(376, 26);
+            this.label38.Location = new System.Drawing.Point(377, 26);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(57, 12);
             this.label38.TabIndex = 94;
@@ -3395,7 +3432,7 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(200, 26);
+            this.label37.Location = new System.Drawing.Point(206, 26);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(31, 12);
             this.label37.TabIndex = 93;
@@ -4173,7 +4210,7 @@
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.BackColor = System.Drawing.Color.Transparent;
+            this.label102.BackColor = System.Drawing.Color.LemonChiffon;
             this.label102.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label102.ForeColor = System.Drawing.Color.Black;
             this.label102.Location = new System.Drawing.Point(649, 80);
@@ -4185,7 +4222,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.BackColor = System.Drawing.Color.LemonChiffon;
             this.label10.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(471, 80);
@@ -4197,7 +4234,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.BackColor = System.Drawing.Color.LemonChiffon;
             this.label11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(293, 80);
@@ -4348,7 +4385,6 @@
             this.label8.Size = new System.Drawing.Size(189, 12);
             this.label8.TabIndex = 7;
             this.label8.Text = "도매란에 전체 보유가입자 수 입력";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label13
             // 
@@ -4434,6 +4470,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "월평균 판매대수";
             // 
+            // panel78
+            // 
+            this.panel78.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel78.Location = new System.Drawing.Point(2, 73);
+            this.panel78.Name = "panel78";
+            this.panel78.Size = new System.Drawing.Size(1238, 28);
+            this.panel78.TabIndex = 830;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -4444,18 +4488,6 @@
             this.tabControl1.Size = new System.Drawing.Size(1270, 666);
             this.tabControl1.TabIndex = 0;
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("굴림", 8F);
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(1130, 10);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(110, 11);
-            this.label44.TabIndex = 274;
-            this.label44.Text = "(단위 : 원, VAT포함)";
-            this.label44.Click += new System.EventHandler(this.label44_Click);
-            // 
             // FormUserInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -4465,7 +4497,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserInput";
             this.Text = "KIWI - 대리점 정보 입력";
-            this.Load += new System.EventHandler(this.FormUserInput_Load);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.panel31.ResumeLayout(false);
@@ -4875,5 +4906,8 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel78;
+        private System.Windows.Forms.Panel panel61;
+        private System.Windows.Forms.Button button1;
     }
 }

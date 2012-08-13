@@ -27,5 +27,6 @@ namespace KIWI
             report.PrintOptions.PaperOrientation = CrystalDecisions.Shared.PaperOrientation.Landscape;
             crystalReportViewer1.Refresh();
         }
+
     }
 }

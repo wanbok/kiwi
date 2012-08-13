@@ -927,39 +927,11 @@ namespace KIWI
             return true;
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            InitializeComponent();
         }
 
-        private void label107_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label41_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormUserInput_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label43_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label44_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

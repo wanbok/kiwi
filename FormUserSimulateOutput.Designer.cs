@@ -124,6 +124,12 @@
             System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
             this.pnlChart = new System.Windows.Forms.Panel();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label110 = new System.Windows.Forms.Label();
@@ -320,6 +326,12 @@
             this.panel152 = new System.Windows.Forms.Panel();
             this.panel151 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
             this.pnlChart2 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
@@ -504,6 +516,12 @@
             this.label85 = new System.Windows.Forms.Label();
             this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
             this.lblTitle9 = new System.Windows.Forms.Label();
             this.lblTitle8 = new System.Windows.Forms.Label();
             this.lblTitle7 = new System.Windows.Forms.Label();
@@ -672,24 +690,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
+            this.panel161 = new System.Windows.Forms.Panel();
+            this.panel162 = new System.Windows.Forms.Panel();
+            this.panel163 = new System.Windows.Forms.Panel();
+            this.panel164 = new System.Windows.Forms.Panel();
+            this.panel165 = new System.Windows.Forms.Panel();
+            this.panel166 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pnlChart.SuspendLayout();
@@ -952,13 +958,75 @@
             this.tabPage1.Controls.Add(this.panel155);
             this.tabPage1.Controls.Add(this.panel152);
             this.tabPage1.Controls.Add(this.panel151);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Controls.Add(this.panel161);
+            this.tabPage1.Controls.Add(this.panel162);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1242, 671);
+            this.tabPage1.Size = new System.Drawing.Size(1242, 670);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          전체          ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.ForeColor = System.Drawing.Color.Black;
+            this.label96.Location = new System.Drawing.Point(1179, 317);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(63, 12);
+            this.label96.TabIndex = 299;
+            this.label96.Text = "(단위 : 원)";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.ForeColor = System.Drawing.Color.Black;
+            this.label93.Location = new System.Drawing.Point(818, 317);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(63, 12);
+            this.label93.TabIndex = 298;
+            this.label93.Text = "(단위 : 원)";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.ForeColor = System.Drawing.Color.Black;
+            this.label92.Location = new System.Drawing.Point(468, 317);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(63, 12);
+            this.label92.TabIndex = 297;
+            this.label92.Text = "(단위 : 원)";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.ForeColor = System.Drawing.Color.Black;
+            this.label91.Location = new System.Drawing.Point(1176, 20);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(63, 12);
+            this.label91.TabIndex = 296;
+            this.label91.Text = "(단위 : 원)";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.ForeColor = System.Drawing.Color.Black;
+            this.label89.Location = new System.Drawing.Point(818, 20);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(63, 12);
+            this.label89.TabIndex = 295;
+            this.label89.Text = "(단위 : 원)";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.ForeColor = System.Drawing.Color.Black;
+            this.label88.Location = new System.Drawing.Point(468, 20);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(63, 12);
+            this.label88.TabIndex = 294;
+            this.label88.Text = "(단위 : 원)";
             // 
             // pnlChart
             // 
@@ -967,7 +1035,7 @@
             this.pnlChart.Controls.Add(this.label110);
             this.pnlChart.Controls.Add(this.label109);
             this.pnlChart.Controls.Add(this.chart1);
-            this.pnlChart.Location = new System.Drawing.Point(0, 38);
+            this.pnlChart.Location = new System.Drawing.Point(0, 39);
             this.pnlChart.Name = "pnlChart";
             this.pnlChart.Size = new System.Drawing.Size(1242, 637);
             this.pnlChart.TabIndex = 290;
@@ -1242,7 +1310,7 @@
             this.txtOut96.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut96.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut96.ForeColor = System.Drawing.Color.Black;
-            this.txtOut96.Location = new System.Drawing.Point(1080, 621);
+            this.txtOut96.Location = new System.Drawing.Point(1080, 625);
             this.txtOut96.Name = "txtOut96";
             this.txtOut96.ReadOnly = true;
             this.txtOut96.Size = new System.Drawing.Size(129, 14);
@@ -1274,7 +1342,7 @@
             this.txtOut64.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut64.ForeColor = System.Drawing.Color.Black;
-            this.txtOut64.Location = new System.Drawing.Point(720, 621);
+            this.txtOut64.Location = new System.Drawing.Point(720, 625);
             this.txtOut64.Name = "txtOut64";
             this.txtOut64.ReadOnly = true;
             this.txtOut64.Size = new System.Drawing.Size(129, 14);
@@ -1285,6 +1353,7 @@
             // label82
             // 
             this.label82.AutoSize = true;
+            this.label82.BackColor = System.Drawing.Color.LemonChiffon;
             this.label82.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label82.ForeColor = System.Drawing.Color.Black;
             this.label82.Location = new System.Drawing.Point(1110, 342);
@@ -1298,7 +1367,7 @@
             this.txtOut32.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut32.ForeColor = System.Drawing.Color.Black;
-            this.txtOut32.Location = new System.Drawing.Point(370, 621);
+            this.txtOut32.Location = new System.Drawing.Point(370, 625);
             this.txtOut32.Name = "txtOut32";
             this.txtOut32.ReadOnly = true;
             this.txtOut32.Size = new System.Drawing.Size(129, 14);
@@ -1309,6 +1378,7 @@
             // label81
             // 
             this.label81.AutoSize = true;
+            this.label81.BackColor = System.Drawing.Color.LemonChiffon;
             this.label81.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label81.ForeColor = System.Drawing.Color.Black;
             this.label81.Location = new System.Drawing.Point(970, 342);
@@ -1322,7 +1392,7 @@
             this.txtOut80.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut80.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut80.ForeColor = System.Drawing.Color.Black;
-            this.txtOut80.Location = new System.Drawing.Point(920, 621);
+            this.txtOut80.Location = new System.Drawing.Point(920, 625);
             this.txtOut80.Name = "txtOut80";
             this.txtOut80.ReadOnly = true;
             this.txtOut80.Size = new System.Drawing.Size(129, 14);
@@ -1333,6 +1403,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.LemonChiffon;
             this.label30.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label30.ForeColor = System.Drawing.Color.Black;
             this.label30.Location = new System.Drawing.Point(1110, 45);
@@ -1346,7 +1417,7 @@
             this.txtOut48.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut48.ForeColor = System.Drawing.Color.Black;
-            this.txtOut48.Location = new System.Drawing.Point(560, 621);
+            this.txtOut48.Location = new System.Drawing.Point(560, 625);
             this.txtOut48.Name = "txtOut48";
             this.txtOut48.ReadOnly = true;
             this.txtOut48.Size = new System.Drawing.Size(129, 14);
@@ -1357,6 +1428,7 @@
             // label80
             // 
             this.label80.AutoSize = true;
+            this.label80.BackColor = System.Drawing.Color.LemonChiffon;
             this.label80.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label80.ForeColor = System.Drawing.Color.Black;
             this.label80.Location = new System.Drawing.Point(750, 342);
@@ -1370,7 +1442,7 @@
             this.txtOut16.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut16.ForeColor = System.Drawing.Color.Black;
-            this.txtOut16.Location = new System.Drawing.Point(210, 621);
+            this.txtOut16.Location = new System.Drawing.Point(210, 625);
             this.txtOut16.Name = "txtOut16";
             this.txtOut16.ReadOnly = true;
             this.txtOut16.Size = new System.Drawing.Size(129, 14);
@@ -1381,6 +1453,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.LemonChiffon;
             this.label23.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(970, 45);
@@ -1411,6 +1484,7 @@
             // label79
             // 
             this.label79.AutoSize = true;
+            this.label79.BackColor = System.Drawing.Color.LemonChiffon;
             this.label79.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label79.ForeColor = System.Drawing.Color.Black;
             this.label79.Location = new System.Drawing.Point(610, 342);
@@ -1434,6 +1508,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LemonChiffon;
             this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(750, 45);
@@ -1445,6 +1520,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LemonChiffon;
             this.label3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(610, 45);
@@ -1478,7 +1554,7 @@
             this.txtOut88.BackColor = System.Drawing.Color.White;
             this.txtOut88.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut88.ForeColor = System.Drawing.Color.Black;
-            this.txtOut88.Location = new System.Drawing.Point(1080, 367);
+            this.txtOut88.Location = new System.Drawing.Point(1080, 371);
             this.txtOut88.Name = "txtOut88";
             this.txtOut88.ReadOnly = true;
             this.txtOut88.Size = new System.Drawing.Size(129, 14);
@@ -1491,7 +1567,7 @@
             this.txtOut56.BackColor = System.Drawing.Color.White;
             this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut56.ForeColor = System.Drawing.Color.Black;
-            this.txtOut56.Location = new System.Drawing.Point(720, 367);
+            this.txtOut56.Location = new System.Drawing.Point(720, 371);
             this.txtOut56.Name = "txtOut56";
             this.txtOut56.ReadOnly = true;
             this.txtOut56.Size = new System.Drawing.Size(129, 14);
@@ -1504,7 +1580,7 @@
             this.txtOut24.BackColor = System.Drawing.Color.White;
             this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut24.ForeColor = System.Drawing.Color.Black;
-            this.txtOut24.Location = new System.Drawing.Point(370, 367);
+            this.txtOut24.Location = new System.Drawing.Point(370, 371);
             this.txtOut24.Name = "txtOut24";
             this.txtOut24.ReadOnly = true;
             this.txtOut24.Size = new System.Drawing.Size(129, 14);
@@ -1517,7 +1593,7 @@
             this.txtOut72.BackColor = System.Drawing.Color.White;
             this.txtOut72.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut72.ForeColor = System.Drawing.Color.Black;
-            this.txtOut72.Location = new System.Drawing.Point(920, 367);
+            this.txtOut72.Location = new System.Drawing.Point(920, 371);
             this.txtOut72.Name = "txtOut72";
             this.txtOut72.ReadOnly = true;
             this.txtOut72.Size = new System.Drawing.Size(129, 14);
@@ -1530,7 +1606,7 @@
             this.txtOut40.BackColor = System.Drawing.Color.White;
             this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut40.ForeColor = System.Drawing.Color.Black;
-            this.txtOut40.Location = new System.Drawing.Point(560, 367);
+            this.txtOut40.Location = new System.Drawing.Point(560, 371);
             this.txtOut40.Name = "txtOut40";
             this.txtOut40.ReadOnly = true;
             this.txtOut40.Size = new System.Drawing.Size(129, 14);
@@ -1543,7 +1619,7 @@
             this.txtOut8.BackColor = System.Drawing.Color.White;
             this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut8.ForeColor = System.Drawing.Color.Black;
-            this.txtOut8.Location = new System.Drawing.Point(210, 367);
+            this.txtOut8.Location = new System.Drawing.Point(210, 371);
             this.txtOut8.Name = "txtOut8";
             this.txtOut8.ReadOnly = true;
             this.txtOut8.Size = new System.Drawing.Size(129, 14);
@@ -1670,7 +1746,7 @@
             this.txtOut95.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut95.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut95.ForeColor = System.Drawing.Color.Black;
-            this.txtOut95.Location = new System.Drawing.Point(1080, 577);
+            this.txtOut95.Location = new System.Drawing.Point(1080, 581);
             this.txtOut95.Name = "txtOut95";
             this.txtOut95.ReadOnly = true;
             this.txtOut95.Size = new System.Drawing.Size(129, 14);
@@ -1683,7 +1759,7 @@
             this.txtOut94.BackColor = System.Drawing.Color.White;
             this.txtOut94.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut94.ForeColor = System.Drawing.Color.Black;
-            this.txtOut94.Location = new System.Drawing.Point(1080, 547);
+            this.txtOut94.Location = new System.Drawing.Point(1080, 551);
             this.txtOut94.Name = "txtOut94";
             this.txtOut94.ReadOnly = true;
             this.txtOut94.Size = new System.Drawing.Size(129, 14);
@@ -1696,7 +1772,7 @@
             this.txtOut93.BackColor = System.Drawing.Color.White;
             this.txtOut93.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut93.ForeColor = System.Drawing.Color.Black;
-            this.txtOut93.Location = new System.Drawing.Point(1080, 517);
+            this.txtOut93.Location = new System.Drawing.Point(1080, 521);
             this.txtOut93.Name = "txtOut93";
             this.txtOut93.ReadOnly = true;
             this.txtOut93.Size = new System.Drawing.Size(129, 14);
@@ -1709,7 +1785,7 @@
             this.txtOut92.BackColor = System.Drawing.Color.White;
             this.txtOut92.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut92.ForeColor = System.Drawing.Color.Black;
-            this.txtOut92.Location = new System.Drawing.Point(1080, 487);
+            this.txtOut92.Location = new System.Drawing.Point(1080, 491);
             this.txtOut92.Name = "txtOut92";
             this.txtOut92.ReadOnly = true;
             this.txtOut92.Size = new System.Drawing.Size(129, 14);
@@ -1722,7 +1798,7 @@
             this.txtOut91.BackColor = System.Drawing.Color.White;
             this.txtOut91.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut91.ForeColor = System.Drawing.Color.Black;
-            this.txtOut91.Location = new System.Drawing.Point(1080, 457);
+            this.txtOut91.Location = new System.Drawing.Point(1080, 461);
             this.txtOut91.Name = "txtOut91";
             this.txtOut91.ReadOnly = true;
             this.txtOut91.Size = new System.Drawing.Size(129, 14);
@@ -1755,6 +1831,7 @@
             // label78
             // 
             this.label78.AutoSize = true;
+            this.label78.BackColor = System.Drawing.Color.LemonChiffon;
             this.label78.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label78.ForeColor = System.Drawing.Color.Black;
             this.label78.Location = new System.Drawing.Point(400, 342);
@@ -1778,6 +1855,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.LemonChiffon;
             this.label31.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label31.ForeColor = System.Drawing.Color.Black;
             this.label31.Location = new System.Drawing.Point(400, 45);
@@ -1789,6 +1867,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.LemonChiffon;
             this.label48.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label48.ForeColor = System.Drawing.Color.Black;
             this.label48.Location = new System.Drawing.Point(260, 342);
@@ -1802,7 +1881,7 @@
             this.txtOut90.BackColor = System.Drawing.Color.White;
             this.txtOut90.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut90.ForeColor = System.Drawing.Color.Black;
-            this.txtOut90.Location = new System.Drawing.Point(1080, 427);
+            this.txtOut90.Location = new System.Drawing.Point(1080, 431);
             this.txtOut90.Name = "txtOut90";
             this.txtOut90.ReadOnly = true;
             this.txtOut90.Size = new System.Drawing.Size(129, 14);
@@ -1813,6 +1892,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.LemonChiffon;
             this.label47.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label47.ForeColor = System.Drawing.Color.Black;
             this.label47.Location = new System.Drawing.Point(260, 45);
@@ -1826,7 +1906,7 @@
             this.txtOut89.BackColor = System.Drawing.Color.White;
             this.txtOut89.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut89.ForeColor = System.Drawing.Color.Black;
-            this.txtOut89.Location = new System.Drawing.Point(1080, 397);
+            this.txtOut89.Location = new System.Drawing.Point(1080, 401);
             this.txtOut89.Name = "txtOut89";
             this.txtOut89.ReadOnly = true;
             this.txtOut89.Size = new System.Drawing.Size(129, 14);
@@ -1839,7 +1919,7 @@
             this.txtOut63.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut63.ForeColor = System.Drawing.Color.Black;
-            this.txtOut63.Location = new System.Drawing.Point(720, 577);
+            this.txtOut63.Location = new System.Drawing.Point(720, 581);
             this.txtOut63.Name = "txtOut63";
             this.txtOut63.ReadOnly = true;
             this.txtOut63.Size = new System.Drawing.Size(129, 14);
@@ -1852,7 +1932,7 @@
             this.txtOut62.BackColor = System.Drawing.Color.White;
             this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut62.ForeColor = System.Drawing.Color.Black;
-            this.txtOut62.Location = new System.Drawing.Point(720, 547);
+            this.txtOut62.Location = new System.Drawing.Point(720, 551);
             this.txtOut62.Name = "txtOut62";
             this.txtOut62.ReadOnly = true;
             this.txtOut62.Size = new System.Drawing.Size(129, 14);
@@ -1865,7 +1945,7 @@
             this.txtOut61.BackColor = System.Drawing.Color.White;
             this.txtOut61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut61.ForeColor = System.Drawing.Color.Black;
-            this.txtOut61.Location = new System.Drawing.Point(720, 517);
+            this.txtOut61.Location = new System.Drawing.Point(720, 521);
             this.txtOut61.Name = "txtOut61";
             this.txtOut61.ReadOnly = true;
             this.txtOut61.Size = new System.Drawing.Size(129, 14);
@@ -1878,7 +1958,7 @@
             this.txtOut60.BackColor = System.Drawing.Color.White;
             this.txtOut60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut60.ForeColor = System.Drawing.Color.Black;
-            this.txtOut60.Location = new System.Drawing.Point(720, 487);
+            this.txtOut60.Location = new System.Drawing.Point(720, 491);
             this.txtOut60.Name = "txtOut60";
             this.txtOut60.ReadOnly = true;
             this.txtOut60.Size = new System.Drawing.Size(129, 14);
@@ -1891,7 +1971,7 @@
             this.txtOut59.BackColor = System.Drawing.Color.White;
             this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut59.ForeColor = System.Drawing.Color.Black;
-            this.txtOut59.Location = new System.Drawing.Point(720, 457);
+            this.txtOut59.Location = new System.Drawing.Point(720, 461);
             this.txtOut59.Name = "txtOut59";
             this.txtOut59.ReadOnly = true;
             this.txtOut59.Size = new System.Drawing.Size(129, 14);
@@ -1904,7 +1984,7 @@
             this.txtOut58.BackColor = System.Drawing.Color.White;
             this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut58.ForeColor = System.Drawing.Color.Black;
-            this.txtOut58.Location = new System.Drawing.Point(720, 427);
+            this.txtOut58.Location = new System.Drawing.Point(720, 431);
             this.txtOut58.Name = "txtOut58";
             this.txtOut58.ReadOnly = true;
             this.txtOut58.Size = new System.Drawing.Size(129, 14);
@@ -1917,7 +1997,7 @@
             this.txtOut57.BackColor = System.Drawing.Color.White;
             this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut57.ForeColor = System.Drawing.Color.Black;
-            this.txtOut57.Location = new System.Drawing.Point(720, 397);
+            this.txtOut57.Location = new System.Drawing.Point(720, 401);
             this.txtOut57.Name = "txtOut57";
             this.txtOut57.ReadOnly = true;
             this.txtOut57.Size = new System.Drawing.Size(129, 14);
@@ -1930,7 +2010,7 @@
             this.txtOut31.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut31.ForeColor = System.Drawing.Color.Black;
-            this.txtOut31.Location = new System.Drawing.Point(370, 577);
+            this.txtOut31.Location = new System.Drawing.Point(370, 581);
             this.txtOut31.Name = "txtOut31";
             this.txtOut31.ReadOnly = true;
             this.txtOut31.Size = new System.Drawing.Size(129, 14);
@@ -1943,7 +2023,7 @@
             this.txtOut30.BackColor = System.Drawing.Color.White;
             this.txtOut30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut30.ForeColor = System.Drawing.Color.Black;
-            this.txtOut30.Location = new System.Drawing.Point(370, 547);
+            this.txtOut30.Location = new System.Drawing.Point(370, 551);
             this.txtOut30.Name = "txtOut30";
             this.txtOut30.ReadOnly = true;
             this.txtOut30.Size = new System.Drawing.Size(129, 14);
@@ -1956,7 +2036,7 @@
             this.txtOut79.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut79.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut79.ForeColor = System.Drawing.Color.Black;
-            this.txtOut79.Location = new System.Drawing.Point(920, 577);
+            this.txtOut79.Location = new System.Drawing.Point(920, 581);
             this.txtOut79.Name = "txtOut79";
             this.txtOut79.ReadOnly = true;
             this.txtOut79.Size = new System.Drawing.Size(129, 14);
@@ -1969,7 +2049,7 @@
             this.txtOut78.BackColor = System.Drawing.Color.White;
             this.txtOut78.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut78.ForeColor = System.Drawing.Color.Black;
-            this.txtOut78.Location = new System.Drawing.Point(920, 547);
+            this.txtOut78.Location = new System.Drawing.Point(920, 551);
             this.txtOut78.Name = "txtOut78";
             this.txtOut78.ReadOnly = true;
             this.txtOut78.Size = new System.Drawing.Size(129, 14);
@@ -1982,7 +2062,7 @@
             this.txtOut29.BackColor = System.Drawing.Color.White;
             this.txtOut29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut29.ForeColor = System.Drawing.Color.Black;
-            this.txtOut29.Location = new System.Drawing.Point(370, 517);
+            this.txtOut29.Location = new System.Drawing.Point(370, 521);
             this.txtOut29.Name = "txtOut29";
             this.txtOut29.ReadOnly = true;
             this.txtOut29.Size = new System.Drawing.Size(129, 14);
@@ -1995,7 +2075,7 @@
             this.txtOut77.BackColor = System.Drawing.Color.White;
             this.txtOut77.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut77.ForeColor = System.Drawing.Color.Black;
-            this.txtOut77.Location = new System.Drawing.Point(920, 517);
+            this.txtOut77.Location = new System.Drawing.Point(920, 521);
             this.txtOut77.Name = "txtOut77";
             this.txtOut77.ReadOnly = true;
             this.txtOut77.Size = new System.Drawing.Size(129, 14);
@@ -2008,7 +2088,7 @@
             this.txtOut28.BackColor = System.Drawing.Color.White;
             this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut28.ForeColor = System.Drawing.Color.Black;
-            this.txtOut28.Location = new System.Drawing.Point(370, 487);
+            this.txtOut28.Location = new System.Drawing.Point(370, 491);
             this.txtOut28.Name = "txtOut28";
             this.txtOut28.ReadOnly = true;
             this.txtOut28.Size = new System.Drawing.Size(129, 14);
@@ -2021,7 +2101,7 @@
             this.txtOut76.BackColor = System.Drawing.Color.White;
             this.txtOut76.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut76.ForeColor = System.Drawing.Color.Black;
-            this.txtOut76.Location = new System.Drawing.Point(920, 487);
+            this.txtOut76.Location = new System.Drawing.Point(920, 491);
             this.txtOut76.Name = "txtOut76";
             this.txtOut76.ReadOnly = true;
             this.txtOut76.Size = new System.Drawing.Size(129, 14);
@@ -2034,7 +2114,7 @@
             this.txtOut27.BackColor = System.Drawing.Color.White;
             this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut27.ForeColor = System.Drawing.Color.Black;
-            this.txtOut27.Location = new System.Drawing.Point(370, 457);
+            this.txtOut27.Location = new System.Drawing.Point(370, 461);
             this.txtOut27.Name = "txtOut27";
             this.txtOut27.ReadOnly = true;
             this.txtOut27.Size = new System.Drawing.Size(129, 14);
@@ -2047,7 +2127,7 @@
             this.txtOut75.BackColor = System.Drawing.Color.White;
             this.txtOut75.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut75.ForeColor = System.Drawing.Color.Black;
-            this.txtOut75.Location = new System.Drawing.Point(920, 457);
+            this.txtOut75.Location = new System.Drawing.Point(920, 461);
             this.txtOut75.Name = "txtOut75";
             this.txtOut75.ReadOnly = true;
             this.txtOut75.Size = new System.Drawing.Size(129, 14);
@@ -2060,7 +2140,7 @@
             this.txtOut47.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut47.ForeColor = System.Drawing.Color.Black;
-            this.txtOut47.Location = new System.Drawing.Point(560, 577);
+            this.txtOut47.Location = new System.Drawing.Point(560, 581);
             this.txtOut47.Name = "txtOut47";
             this.txtOut47.ReadOnly = true;
             this.txtOut47.Size = new System.Drawing.Size(129, 14);
@@ -2073,7 +2153,7 @@
             this.txtOut46.BackColor = System.Drawing.Color.White;
             this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut46.ForeColor = System.Drawing.Color.Black;
-            this.txtOut46.Location = new System.Drawing.Point(560, 547);
+            this.txtOut46.Location = new System.Drawing.Point(560, 551);
             this.txtOut46.Name = "txtOut46";
             this.txtOut46.ReadOnly = true;
             this.txtOut46.Size = new System.Drawing.Size(129, 14);
@@ -2086,7 +2166,7 @@
             this.txtOut26.BackColor = System.Drawing.Color.White;
             this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut26.ForeColor = System.Drawing.Color.Black;
-            this.txtOut26.Location = new System.Drawing.Point(370, 427);
+            this.txtOut26.Location = new System.Drawing.Point(370, 431);
             this.txtOut26.Name = "txtOut26";
             this.txtOut26.ReadOnly = true;
             this.txtOut26.Size = new System.Drawing.Size(129, 14);
@@ -2099,7 +2179,7 @@
             this.txtOut45.BackColor = System.Drawing.Color.White;
             this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut45.ForeColor = System.Drawing.Color.Black;
-            this.txtOut45.Location = new System.Drawing.Point(560, 517);
+            this.txtOut45.Location = new System.Drawing.Point(560, 521);
             this.txtOut45.Name = "txtOut45";
             this.txtOut45.ReadOnly = true;
             this.txtOut45.Size = new System.Drawing.Size(129, 14);
@@ -2112,7 +2192,7 @@
             this.txtOut74.BackColor = System.Drawing.Color.White;
             this.txtOut74.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut74.ForeColor = System.Drawing.Color.Black;
-            this.txtOut74.Location = new System.Drawing.Point(920, 427);
+            this.txtOut74.Location = new System.Drawing.Point(920, 431);
             this.txtOut74.Name = "txtOut74";
             this.txtOut74.ReadOnly = true;
             this.txtOut74.Size = new System.Drawing.Size(129, 14);
@@ -2125,7 +2205,7 @@
             this.txtOut44.BackColor = System.Drawing.Color.White;
             this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut44.ForeColor = System.Drawing.Color.Black;
-            this.txtOut44.Location = new System.Drawing.Point(560, 487);
+            this.txtOut44.Location = new System.Drawing.Point(560, 491);
             this.txtOut44.Name = "txtOut44";
             this.txtOut44.ReadOnly = true;
             this.txtOut44.Size = new System.Drawing.Size(129, 14);
@@ -2138,7 +2218,7 @@
             this.txtOut25.BackColor = System.Drawing.Color.White;
             this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut25.ForeColor = System.Drawing.Color.Black;
-            this.txtOut25.Location = new System.Drawing.Point(370, 397);
+            this.txtOut25.Location = new System.Drawing.Point(370, 401);
             this.txtOut25.Name = "txtOut25";
             this.txtOut25.ReadOnly = true;
             this.txtOut25.Size = new System.Drawing.Size(129, 14);
@@ -2151,7 +2231,7 @@
             this.txtOut43.BackColor = System.Drawing.Color.White;
             this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut43.ForeColor = System.Drawing.Color.Black;
-            this.txtOut43.Location = new System.Drawing.Point(560, 457);
+            this.txtOut43.Location = new System.Drawing.Point(560, 461);
             this.txtOut43.Name = "txtOut43";
             this.txtOut43.ReadOnly = true;
             this.txtOut43.Size = new System.Drawing.Size(129, 14);
@@ -2164,7 +2244,7 @@
             this.txtOut73.BackColor = System.Drawing.Color.White;
             this.txtOut73.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut73.ForeColor = System.Drawing.Color.Black;
-            this.txtOut73.Location = new System.Drawing.Point(920, 397);
+            this.txtOut73.Location = new System.Drawing.Point(920, 401);
             this.txtOut73.Name = "txtOut73";
             this.txtOut73.ReadOnly = true;
             this.txtOut73.Size = new System.Drawing.Size(129, 14);
@@ -2177,7 +2257,7 @@
             this.txtOut42.BackColor = System.Drawing.Color.White;
             this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut42.ForeColor = System.Drawing.Color.Black;
-            this.txtOut42.Location = new System.Drawing.Point(560, 427);
+            this.txtOut42.Location = new System.Drawing.Point(560, 431);
             this.txtOut42.Name = "txtOut42";
             this.txtOut42.ReadOnly = true;
             this.txtOut42.Size = new System.Drawing.Size(129, 14);
@@ -2190,7 +2270,7 @@
             this.txtOut41.BackColor = System.Drawing.Color.White;
             this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut41.ForeColor = System.Drawing.Color.Black;
-            this.txtOut41.Location = new System.Drawing.Point(560, 397);
+            this.txtOut41.Location = new System.Drawing.Point(560, 401);
             this.txtOut41.Name = "txtOut41";
             this.txtOut41.ReadOnly = true;
             this.txtOut41.Size = new System.Drawing.Size(129, 14);
@@ -2203,7 +2283,7 @@
             this.txtOut87.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut87.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut87.ForeColor = System.Drawing.Color.Black;
-            this.txtOut87.Location = new System.Drawing.Point(1080, 260);
+            this.txtOut87.Location = new System.Drawing.Point(1080, 264);
             this.txtOut87.Name = "txtOut87";
             this.txtOut87.ReadOnly = true;
             this.txtOut87.Size = new System.Drawing.Size(129, 14);
@@ -2216,7 +2296,7 @@
             this.txtOut86.BackColor = System.Drawing.Color.White;
             this.txtOut86.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut86.ForeColor = System.Drawing.Color.Black;
-            this.txtOut86.Location = new System.Drawing.Point(1080, 230);
+            this.txtOut86.Location = new System.Drawing.Point(1080, 234);
             this.txtOut86.Name = "txtOut86";
             this.txtOut86.ReadOnly = true;
             this.txtOut86.Size = new System.Drawing.Size(129, 14);
@@ -2229,7 +2309,7 @@
             this.txtOut85.BackColor = System.Drawing.Color.White;
             this.txtOut85.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut85.ForeColor = System.Drawing.Color.Black;
-            this.txtOut85.Location = new System.Drawing.Point(1080, 198);
+            this.txtOut85.Location = new System.Drawing.Point(1080, 202);
             this.txtOut85.Name = "txtOut85";
             this.txtOut85.ReadOnly = true;
             this.txtOut85.Size = new System.Drawing.Size(129, 14);
@@ -2242,7 +2322,7 @@
             this.txtOut84.BackColor = System.Drawing.Color.White;
             this.txtOut84.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut84.ForeColor = System.Drawing.Color.Black;
-            this.txtOut84.Location = new System.Drawing.Point(1080, 163);
+            this.txtOut84.Location = new System.Drawing.Point(1080, 167);
             this.txtOut84.Name = "txtOut84";
             this.txtOut84.ReadOnly = true;
             this.txtOut84.Size = new System.Drawing.Size(129, 14);
@@ -2255,7 +2335,7 @@
             this.txtOut83.BackColor = System.Drawing.Color.White;
             this.txtOut83.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut83.ForeColor = System.Drawing.Color.Black;
-            this.txtOut83.Location = new System.Drawing.Point(1080, 130);
+            this.txtOut83.Location = new System.Drawing.Point(1080, 134);
             this.txtOut83.Name = "txtOut83";
             this.txtOut83.ReadOnly = true;
             this.txtOut83.Size = new System.Drawing.Size(129, 14);
@@ -2268,7 +2348,7 @@
             this.txtOut82.BackColor = System.Drawing.Color.White;
             this.txtOut82.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut82.ForeColor = System.Drawing.Color.Black;
-            this.txtOut82.Location = new System.Drawing.Point(1080, 100);
+            this.txtOut82.Location = new System.Drawing.Point(1080, 104);
             this.txtOut82.Name = "txtOut82";
             this.txtOut82.ReadOnly = true;
             this.txtOut82.Size = new System.Drawing.Size(129, 14);
@@ -2281,7 +2361,7 @@
             this.txtOut81.BackColor = System.Drawing.Color.White;
             this.txtOut81.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut81.ForeColor = System.Drawing.Color.Black;
-            this.txtOut81.Location = new System.Drawing.Point(1080, 70);
+            this.txtOut81.Location = new System.Drawing.Point(1080, 74);
             this.txtOut81.Name = "txtOut81";
             this.txtOut81.ReadOnly = true;
             this.txtOut81.Size = new System.Drawing.Size(129, 14);
@@ -2294,7 +2374,7 @@
             this.txtOut55.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut55.ForeColor = System.Drawing.Color.Black;
-            this.txtOut55.Location = new System.Drawing.Point(720, 260);
+            this.txtOut55.Location = new System.Drawing.Point(720, 264);
             this.txtOut55.Name = "txtOut55";
             this.txtOut55.ReadOnly = true;
             this.txtOut55.Size = new System.Drawing.Size(129, 14);
@@ -2307,7 +2387,7 @@
             this.txtOut54.BackColor = System.Drawing.Color.White;
             this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut54.ForeColor = System.Drawing.Color.Black;
-            this.txtOut54.Location = new System.Drawing.Point(720, 230);
+            this.txtOut54.Location = new System.Drawing.Point(720, 234);
             this.txtOut54.Name = "txtOut54";
             this.txtOut54.ReadOnly = true;
             this.txtOut54.Size = new System.Drawing.Size(129, 14);
@@ -2320,7 +2400,7 @@
             this.txtOut53.BackColor = System.Drawing.Color.White;
             this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut53.ForeColor = System.Drawing.Color.Black;
-            this.txtOut53.Location = new System.Drawing.Point(720, 198);
+            this.txtOut53.Location = new System.Drawing.Point(720, 202);
             this.txtOut53.Name = "txtOut53";
             this.txtOut53.ReadOnly = true;
             this.txtOut53.Size = new System.Drawing.Size(129, 14);
@@ -2333,7 +2413,7 @@
             this.txtOut52.BackColor = System.Drawing.Color.White;
             this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut52.ForeColor = System.Drawing.Color.Black;
-            this.txtOut52.Location = new System.Drawing.Point(720, 163);
+            this.txtOut52.Location = new System.Drawing.Point(720, 167);
             this.txtOut52.Name = "txtOut52";
             this.txtOut52.ReadOnly = true;
             this.txtOut52.Size = new System.Drawing.Size(129, 14);
@@ -2346,7 +2426,7 @@
             this.txtOut51.BackColor = System.Drawing.Color.White;
             this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut51.ForeColor = System.Drawing.Color.Black;
-            this.txtOut51.Location = new System.Drawing.Point(720, 130);
+            this.txtOut51.Location = new System.Drawing.Point(720, 134);
             this.txtOut51.Name = "txtOut51";
             this.txtOut51.ReadOnly = true;
             this.txtOut51.Size = new System.Drawing.Size(129, 14);
@@ -2359,7 +2439,7 @@
             this.txtOut50.BackColor = System.Drawing.Color.White;
             this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut50.ForeColor = System.Drawing.Color.Black;
-            this.txtOut50.Location = new System.Drawing.Point(720, 100);
+            this.txtOut50.Location = new System.Drawing.Point(720, 104);
             this.txtOut50.Name = "txtOut50";
             this.txtOut50.ReadOnly = true;
             this.txtOut50.Size = new System.Drawing.Size(129, 14);
@@ -2372,7 +2452,7 @@
             this.txtOut49.BackColor = System.Drawing.Color.White;
             this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut49.ForeColor = System.Drawing.Color.Black;
-            this.txtOut49.Location = new System.Drawing.Point(720, 70);
+            this.txtOut49.Location = new System.Drawing.Point(720, 74);
             this.txtOut49.Name = "txtOut49";
             this.txtOut49.ReadOnly = true;
             this.txtOut49.Size = new System.Drawing.Size(129, 14);
@@ -2385,7 +2465,7 @@
             this.txtOut23.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut23.ForeColor = System.Drawing.Color.Black;
-            this.txtOut23.Location = new System.Drawing.Point(370, 260);
+            this.txtOut23.Location = new System.Drawing.Point(370, 264);
             this.txtOut23.Name = "txtOut23";
             this.txtOut23.ReadOnly = true;
             this.txtOut23.Size = new System.Drawing.Size(129, 14);
@@ -2398,7 +2478,7 @@
             this.txtOut22.BackColor = System.Drawing.Color.White;
             this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut22.ForeColor = System.Drawing.Color.Black;
-            this.txtOut22.Location = new System.Drawing.Point(370, 230);
+            this.txtOut22.Location = new System.Drawing.Point(370, 234);
             this.txtOut22.Name = "txtOut22";
             this.txtOut22.ReadOnly = true;
             this.txtOut22.Size = new System.Drawing.Size(129, 14);
@@ -2411,7 +2491,7 @@
             this.txtOut21.BackColor = System.Drawing.Color.White;
             this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut21.ForeColor = System.Drawing.Color.Black;
-            this.txtOut21.Location = new System.Drawing.Point(370, 198);
+            this.txtOut21.Location = new System.Drawing.Point(370, 202);
             this.txtOut21.Name = "txtOut21";
             this.txtOut21.ReadOnly = true;
             this.txtOut21.Size = new System.Drawing.Size(129, 14);
@@ -2424,7 +2504,7 @@
             this.txtOut20.BackColor = System.Drawing.Color.White;
             this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut20.ForeColor = System.Drawing.Color.Black;
-            this.txtOut20.Location = new System.Drawing.Point(370, 163);
+            this.txtOut20.Location = new System.Drawing.Point(370, 167);
             this.txtOut20.Name = "txtOut20";
             this.txtOut20.ReadOnly = true;
             this.txtOut20.Size = new System.Drawing.Size(129, 14);
@@ -2437,7 +2517,7 @@
             this.txtOut19.BackColor = System.Drawing.Color.White;
             this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut19.ForeColor = System.Drawing.Color.Black;
-            this.txtOut19.Location = new System.Drawing.Point(370, 130);
+            this.txtOut19.Location = new System.Drawing.Point(370, 134);
             this.txtOut19.Name = "txtOut19";
             this.txtOut19.ReadOnly = true;
             this.txtOut19.Size = new System.Drawing.Size(129, 14);
@@ -2450,7 +2530,7 @@
             this.txtOut18.BackColor = System.Drawing.Color.White;
             this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut18.ForeColor = System.Drawing.Color.Black;
-            this.txtOut18.Location = new System.Drawing.Point(370, 100);
+            this.txtOut18.Location = new System.Drawing.Point(370, 104);
             this.txtOut18.Name = "txtOut18";
             this.txtOut18.ReadOnly = true;
             this.txtOut18.Size = new System.Drawing.Size(129, 14);
@@ -2463,7 +2543,7 @@
             this.txtOut17.BackColor = System.Drawing.Color.White;
             this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut17.ForeColor = System.Drawing.Color.Black;
-            this.txtOut17.Location = new System.Drawing.Point(370, 70);
+            this.txtOut17.Location = new System.Drawing.Point(370, 74);
             this.txtOut17.Name = "txtOut17";
             this.txtOut17.ReadOnly = true;
             this.txtOut17.Size = new System.Drawing.Size(129, 14);
@@ -2476,7 +2556,7 @@
             this.txtOut71.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut71.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut71.ForeColor = System.Drawing.Color.Black;
-            this.txtOut71.Location = new System.Drawing.Point(920, 260);
+            this.txtOut71.Location = new System.Drawing.Point(920, 264);
             this.txtOut71.Name = "txtOut71";
             this.txtOut71.ReadOnly = true;
             this.txtOut71.Size = new System.Drawing.Size(129, 14);
@@ -2489,7 +2569,7 @@
             this.txtOut70.BackColor = System.Drawing.Color.White;
             this.txtOut70.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut70.ForeColor = System.Drawing.Color.Black;
-            this.txtOut70.Location = new System.Drawing.Point(920, 230);
+            this.txtOut70.Location = new System.Drawing.Point(920, 234);
             this.txtOut70.Name = "txtOut70";
             this.txtOut70.ReadOnly = true;
             this.txtOut70.Size = new System.Drawing.Size(129, 14);
@@ -2502,7 +2582,7 @@
             this.txtOut69.BackColor = System.Drawing.Color.White;
             this.txtOut69.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut69.ForeColor = System.Drawing.Color.Black;
-            this.txtOut69.Location = new System.Drawing.Point(920, 198);
+            this.txtOut69.Location = new System.Drawing.Point(920, 202);
             this.txtOut69.Name = "txtOut69";
             this.txtOut69.ReadOnly = true;
             this.txtOut69.Size = new System.Drawing.Size(129, 14);
@@ -2515,7 +2595,7 @@
             this.txtOut68.BackColor = System.Drawing.Color.White;
             this.txtOut68.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut68.ForeColor = System.Drawing.Color.Black;
-            this.txtOut68.Location = new System.Drawing.Point(920, 163);
+            this.txtOut68.Location = new System.Drawing.Point(920, 167);
             this.txtOut68.Name = "txtOut68";
             this.txtOut68.ReadOnly = true;
             this.txtOut68.Size = new System.Drawing.Size(129, 14);
@@ -2528,7 +2608,7 @@
             this.txtOut67.BackColor = System.Drawing.Color.White;
             this.txtOut67.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut67.ForeColor = System.Drawing.Color.Black;
-            this.txtOut67.Location = new System.Drawing.Point(920, 130);
+            this.txtOut67.Location = new System.Drawing.Point(920, 134);
             this.txtOut67.Name = "txtOut67";
             this.txtOut67.ReadOnly = true;
             this.txtOut67.Size = new System.Drawing.Size(129, 14);
@@ -2541,7 +2621,7 @@
             this.txtOut66.BackColor = System.Drawing.Color.White;
             this.txtOut66.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut66.ForeColor = System.Drawing.Color.Black;
-            this.txtOut66.Location = new System.Drawing.Point(920, 100);
+            this.txtOut66.Location = new System.Drawing.Point(920, 104);
             this.txtOut66.Name = "txtOut66";
             this.txtOut66.ReadOnly = true;
             this.txtOut66.Size = new System.Drawing.Size(129, 14);
@@ -2554,7 +2634,7 @@
             this.txtOut65.BackColor = System.Drawing.Color.White;
             this.txtOut65.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut65.ForeColor = System.Drawing.Color.Black;
-            this.txtOut65.Location = new System.Drawing.Point(920, 70);
+            this.txtOut65.Location = new System.Drawing.Point(920, 74);
             this.txtOut65.Name = "txtOut65";
             this.txtOut65.ReadOnly = true;
             this.txtOut65.Size = new System.Drawing.Size(129, 14);
@@ -2567,7 +2647,7 @@
             this.txtOut39.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut39.ForeColor = System.Drawing.Color.Black;
-            this.txtOut39.Location = new System.Drawing.Point(560, 260);
+            this.txtOut39.Location = new System.Drawing.Point(560, 264);
             this.txtOut39.Name = "txtOut39";
             this.txtOut39.ReadOnly = true;
             this.txtOut39.Size = new System.Drawing.Size(129, 14);
@@ -2580,7 +2660,7 @@
             this.txtOut38.BackColor = System.Drawing.Color.White;
             this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut38.ForeColor = System.Drawing.Color.Black;
-            this.txtOut38.Location = new System.Drawing.Point(560, 230);
+            this.txtOut38.Location = new System.Drawing.Point(560, 234);
             this.txtOut38.Name = "txtOut38";
             this.txtOut38.ReadOnly = true;
             this.txtOut38.Size = new System.Drawing.Size(129, 14);
@@ -2593,7 +2673,7 @@
             this.txtOut37.BackColor = System.Drawing.Color.White;
             this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut37.ForeColor = System.Drawing.Color.Black;
-            this.txtOut37.Location = new System.Drawing.Point(560, 198);
+            this.txtOut37.Location = new System.Drawing.Point(560, 202);
             this.txtOut37.Name = "txtOut37";
             this.txtOut37.ReadOnly = true;
             this.txtOut37.Size = new System.Drawing.Size(129, 14);
@@ -2606,7 +2686,7 @@
             this.txtOut36.BackColor = System.Drawing.Color.White;
             this.txtOut36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut36.ForeColor = System.Drawing.Color.Black;
-            this.txtOut36.Location = new System.Drawing.Point(560, 163);
+            this.txtOut36.Location = new System.Drawing.Point(560, 167);
             this.txtOut36.Name = "txtOut36";
             this.txtOut36.ReadOnly = true;
             this.txtOut36.Size = new System.Drawing.Size(129, 14);
@@ -2619,7 +2699,7 @@
             this.txtOut35.BackColor = System.Drawing.Color.White;
             this.txtOut35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut35.ForeColor = System.Drawing.Color.Black;
-            this.txtOut35.Location = new System.Drawing.Point(560, 130);
+            this.txtOut35.Location = new System.Drawing.Point(560, 134);
             this.txtOut35.Name = "txtOut35";
             this.txtOut35.ReadOnly = true;
             this.txtOut35.Size = new System.Drawing.Size(129, 14);
@@ -2632,7 +2712,7 @@
             this.txtOut34.BackColor = System.Drawing.Color.White;
             this.txtOut34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut34.ForeColor = System.Drawing.Color.Black;
-            this.txtOut34.Location = new System.Drawing.Point(560, 100);
+            this.txtOut34.Location = new System.Drawing.Point(560, 104);
             this.txtOut34.Name = "txtOut34";
             this.txtOut34.ReadOnly = true;
             this.txtOut34.Size = new System.Drawing.Size(129, 14);
@@ -2645,7 +2725,7 @@
             this.txtOut33.BackColor = System.Drawing.Color.White;
             this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut33.ForeColor = System.Drawing.Color.Black;
-            this.txtOut33.Location = new System.Drawing.Point(560, 70);
+            this.txtOut33.Location = new System.Drawing.Point(560, 74);
             this.txtOut33.Name = "txtOut33";
             this.txtOut33.ReadOnly = true;
             this.txtOut33.Size = new System.Drawing.Size(129, 14);
@@ -2718,7 +2798,7 @@
             this.txtOut7.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut7.ForeColor = System.Drawing.Color.Black;
-            this.txtOut7.Location = new System.Drawing.Point(210, 260);
+            this.txtOut7.Location = new System.Drawing.Point(210, 264);
             this.txtOut7.Name = "txtOut7";
             this.txtOut7.ReadOnly = true;
             this.txtOut7.Size = new System.Drawing.Size(129, 14);
@@ -2731,7 +2811,7 @@
             this.txtOut6.BackColor = System.Drawing.Color.White;
             this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut6.ForeColor = System.Drawing.Color.Black;
-            this.txtOut6.Location = new System.Drawing.Point(210, 230);
+            this.txtOut6.Location = new System.Drawing.Point(210, 234);
             this.txtOut6.Name = "txtOut6";
             this.txtOut6.ReadOnly = true;
             this.txtOut6.Size = new System.Drawing.Size(129, 14);
@@ -2744,7 +2824,7 @@
             this.txtOut15.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut15.ForeColor = System.Drawing.Color.Black;
-            this.txtOut15.Location = new System.Drawing.Point(210, 577);
+            this.txtOut15.Location = new System.Drawing.Point(210, 581);
             this.txtOut15.Name = "txtOut15";
             this.txtOut15.ReadOnly = true;
             this.txtOut15.Size = new System.Drawing.Size(129, 14);
@@ -2757,7 +2837,7 @@
             this.txtOut14.BackColor = System.Drawing.Color.White;
             this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut14.ForeColor = System.Drawing.Color.Black;
-            this.txtOut14.Location = new System.Drawing.Point(210, 547);
+            this.txtOut14.Location = new System.Drawing.Point(210, 551);
             this.txtOut14.Name = "txtOut14";
             this.txtOut14.ReadOnly = true;
             this.txtOut14.Size = new System.Drawing.Size(129, 14);
@@ -2770,7 +2850,7 @@
             this.txtOut13.BackColor = System.Drawing.Color.White;
             this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut13.ForeColor = System.Drawing.Color.Black;
-            this.txtOut13.Location = new System.Drawing.Point(210, 517);
+            this.txtOut13.Location = new System.Drawing.Point(210, 521);
             this.txtOut13.Name = "txtOut13";
             this.txtOut13.ReadOnly = true;
             this.txtOut13.Size = new System.Drawing.Size(129, 14);
@@ -2783,7 +2863,7 @@
             this.txtOut12.BackColor = System.Drawing.Color.White;
             this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut12.ForeColor = System.Drawing.Color.Black;
-            this.txtOut12.Location = new System.Drawing.Point(210, 487);
+            this.txtOut12.Location = new System.Drawing.Point(210, 491);
             this.txtOut12.Name = "txtOut12";
             this.txtOut12.ReadOnly = true;
             this.txtOut12.Size = new System.Drawing.Size(129, 14);
@@ -2796,7 +2876,7 @@
             this.txtOut11.BackColor = System.Drawing.Color.White;
             this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut11.ForeColor = System.Drawing.Color.Black;
-            this.txtOut11.Location = new System.Drawing.Point(210, 457);
+            this.txtOut11.Location = new System.Drawing.Point(210, 461);
             this.txtOut11.Name = "txtOut11";
             this.txtOut11.ReadOnly = true;
             this.txtOut11.Size = new System.Drawing.Size(129, 14);
@@ -2809,7 +2889,7 @@
             this.txtOut10.BackColor = System.Drawing.Color.White;
             this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut10.ForeColor = System.Drawing.Color.Black;
-            this.txtOut10.Location = new System.Drawing.Point(210, 427);
+            this.txtOut10.Location = new System.Drawing.Point(210, 431);
             this.txtOut10.Name = "txtOut10";
             this.txtOut10.ReadOnly = true;
             this.txtOut10.Size = new System.Drawing.Size(129, 14);
@@ -2822,7 +2902,7 @@
             this.txtOut5.BackColor = System.Drawing.Color.White;
             this.txtOut5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut5.ForeColor = System.Drawing.Color.Black;
-            this.txtOut5.Location = new System.Drawing.Point(210, 198);
+            this.txtOut5.Location = new System.Drawing.Point(210, 202);
             this.txtOut5.Name = "txtOut5";
             this.txtOut5.ReadOnly = true;
             this.txtOut5.Size = new System.Drawing.Size(129, 14);
@@ -2835,7 +2915,7 @@
             this.txtOut4.BackColor = System.Drawing.Color.White;
             this.txtOut4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut4.ForeColor = System.Drawing.Color.Black;
-            this.txtOut4.Location = new System.Drawing.Point(210, 163);
+            this.txtOut4.Location = new System.Drawing.Point(210, 167);
             this.txtOut4.Name = "txtOut4";
             this.txtOut4.ReadOnly = true;
             this.txtOut4.Size = new System.Drawing.Size(129, 14);
@@ -2848,7 +2928,7 @@
             this.txtOut3.BackColor = System.Drawing.Color.White;
             this.txtOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut3.ForeColor = System.Drawing.Color.Black;
-            this.txtOut3.Location = new System.Drawing.Point(210, 130);
+            this.txtOut3.Location = new System.Drawing.Point(210, 134);
             this.txtOut3.Name = "txtOut3";
             this.txtOut3.ReadOnly = true;
             this.txtOut3.Size = new System.Drawing.Size(129, 14);
@@ -2861,7 +2941,7 @@
             this.txtOut2.BackColor = System.Drawing.Color.White;
             this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut2.ForeColor = System.Drawing.Color.Black;
-            this.txtOut2.Location = new System.Drawing.Point(210, 100);
+            this.txtOut2.Location = new System.Drawing.Point(210, 104);
             this.txtOut2.Name = "txtOut2";
             this.txtOut2.ReadOnly = true;
             this.txtOut2.Size = new System.Drawing.Size(129, 14);
@@ -2874,7 +2954,7 @@
             this.txtOut1.BackColor = System.Drawing.Color.White;
             this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut1.ForeColor = System.Drawing.Color.Black;
-            this.txtOut1.Location = new System.Drawing.Point(210, 70);
+            this.txtOut1.Location = new System.Drawing.Point(210, 74);
             this.txtOut1.Name = "txtOut1";
             this.txtOut1.ReadOnly = true;
             this.txtOut1.Size = new System.Drawing.Size(129, 14);
@@ -2887,7 +2967,7 @@
             this.txtOut9.BackColor = System.Drawing.Color.White;
             this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut9.ForeColor = System.Drawing.Color.Black;
-            this.txtOut9.Location = new System.Drawing.Point(210, 397);
+            this.txtOut9.Location = new System.Drawing.Point(210, 401);
             this.txtOut9.Name = "txtOut9";
             this.txtOut9.ReadOnly = true;
             this.txtOut9.Size = new System.Drawing.Size(129, 14);
@@ -2949,6 +3029,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LemonChiffon;
             this.label1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(80, 45);
@@ -2960,6 +3041,7 @@
             // label53
             // 
             this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.LemonChiffon;
             this.label53.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label53.ForeColor = System.Drawing.Color.Black;
             this.label53.Location = new System.Drawing.Point(80, 342);
@@ -3419,13 +3501,75 @@
             this.tabPage2.Controls.Add(this.panel153);
             this.tabPage2.Controls.Add(this.panel154);
             this.tabPage2.Controls.Add(this.panel156);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Controls.Add(this.panel163);
+            this.tabPage2.Controls.Add(this.panel164);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1242, 671);
+            this.tabPage2.Size = new System.Drawing.Size(1242, 670);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "          도매          ";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.ForeColor = System.Drawing.Color.Black;
+            this.label97.Location = new System.Drawing.Point(1177, 317);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(63, 12);
+            this.label97.TabIndex = 353;
+            this.label97.Text = "(단위 : 원)";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.ForeColor = System.Drawing.Color.Black;
+            this.label98.Location = new System.Drawing.Point(816, 317);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(63, 12);
+            this.label98.TabIndex = 352;
+            this.label98.Text = "(단위 : 원)";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.ForeColor = System.Drawing.Color.Black;
+            this.label99.Location = new System.Drawing.Point(466, 317);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(63, 12);
+            this.label99.TabIndex = 351;
+            this.label99.Text = "(단위 : 원)";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.ForeColor = System.Drawing.Color.Black;
+            this.label100.Location = new System.Drawing.Point(1174, 20);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(63, 12);
+            this.label100.TabIndex = 350;
+            this.label100.Text = "(단위 : 원)";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.ForeColor = System.Drawing.Color.Black;
+            this.label101.Location = new System.Drawing.Point(816, 20);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(63, 12);
+            this.label101.TabIndex = 349;
+            this.label101.Text = "(단위 : 원)";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.ForeColor = System.Drawing.Color.Black;
+            this.label106.Location = new System.Drawing.Point(466, 20);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(63, 12);
+            this.label106.TabIndex = 348;
+            this.label106.Text = "(단위 : 원)";
             // 
             // pnlChart2
             // 
@@ -3433,7 +3577,7 @@
             this.pnlChart2.Controls.Add(this.label87);
             this.pnlChart2.Controls.Add(this.chart5);
             this.pnlChart2.Controls.Add(this.chart2);
-            this.pnlChart2.Location = new System.Drawing.Point(1, 38);
+            this.pnlChart2.Location = new System.Drawing.Point(-1, 39);
             this.pnlChart2.Name = "pnlChart2";
             this.pnlChart2.Size = new System.Drawing.Size(1241, 634);
             this.pnlChart2.TabIndex = 266;
@@ -3738,7 +3882,7 @@
             this.txtWOut84.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut84.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut84.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut84.Location = new System.Drawing.Point(1081, 621);
+            this.txtWOut84.Location = new System.Drawing.Point(1081, 625);
             this.txtWOut84.Name = "txtWOut84";
             this.txtWOut84.ReadOnly = true;
             this.txtWOut84.Size = new System.Drawing.Size(129, 14);
@@ -3762,7 +3906,7 @@
             this.txtWOut56.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut56.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut56.Location = new System.Drawing.Point(721, 621);
+            this.txtWOut56.Location = new System.Drawing.Point(721, 625);
             this.txtWOut56.Name = "txtWOut56";
             this.txtWOut56.ReadOnly = true;
             this.txtWOut56.Size = new System.Drawing.Size(129, 14);
@@ -3786,7 +3930,7 @@
             this.txtWOut28.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut28.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut28.Location = new System.Drawing.Point(371, 621);
+            this.txtWOut28.Location = new System.Drawing.Point(371, 625);
             this.txtWOut28.Name = "txtWOut28";
             this.txtWOut28.ReadOnly = true;
             this.txtWOut28.Size = new System.Drawing.Size(129, 14);
@@ -3797,6 +3941,7 @@
             // label76
             // 
             this.label76.AutoSize = true;
+            this.label76.BackColor = System.Drawing.Color.LemonChiffon;
             this.label76.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label76.ForeColor = System.Drawing.Color.Black;
             this.label76.Location = new System.Drawing.Point(1110, 342);
@@ -3810,7 +3955,7 @@
             this.txtWOut70.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut70.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut70.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut70.Location = new System.Drawing.Point(921, 621);
+            this.txtWOut70.Location = new System.Drawing.Point(921, 625);
             this.txtWOut70.Name = "txtWOut70";
             this.txtWOut70.ReadOnly = true;
             this.txtWOut70.Size = new System.Drawing.Size(129, 14);
@@ -3821,6 +3966,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.LemonChiffon;
             this.label19.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(1110, 45);
@@ -3834,7 +3980,7 @@
             this.txtWOut42.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut42.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut42.Location = new System.Drawing.Point(561, 621);
+            this.txtWOut42.Location = new System.Drawing.Point(561, 625);
             this.txtWOut42.Name = "txtWOut42";
             this.txtWOut42.ReadOnly = true;
             this.txtWOut42.Size = new System.Drawing.Size(129, 14);
@@ -3845,6 +3991,7 @@
             // label75
             // 
             this.label75.AutoSize = true;
+            this.label75.BackColor = System.Drawing.Color.LemonChiffon;
             this.label75.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label75.ForeColor = System.Drawing.Color.Black;
             this.label75.Location = new System.Drawing.Point(970, 342);
@@ -3858,7 +4005,7 @@
             this.txtWOut14.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut14.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut14.Location = new System.Drawing.Point(211, 621);
+            this.txtWOut14.Location = new System.Drawing.Point(211, 625);
             this.txtWOut14.Name = "txtWOut14";
             this.txtWOut14.ReadOnly = true;
             this.txtWOut14.Size = new System.Drawing.Size(129, 14);
@@ -3869,6 +4016,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.LemonChiffon;
             this.label20.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(970, 45);
@@ -3899,6 +4047,7 @@
             // label74
             // 
             this.label74.AutoSize = true;
+            this.label74.BackColor = System.Drawing.Color.LemonChiffon;
             this.label74.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label74.ForeColor = System.Drawing.Color.Black;
             this.label74.Location = new System.Drawing.Point(750, 342);
@@ -3922,6 +4071,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.LemonChiffon;
             this.label21.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(750, 45);
@@ -3933,6 +4083,7 @@
             // label73
             // 
             this.label73.AutoSize = true;
+            this.label73.BackColor = System.Drawing.Color.LemonChiffon;
             this.label73.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label73.ForeColor = System.Drawing.Color.Black;
             this.label73.Location = new System.Drawing.Point(610, 342);
@@ -3944,6 +4095,7 @@
             // label67
             // 
             this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.LemonChiffon;
             this.label67.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label67.ForeColor = System.Drawing.Color.Black;
             this.label67.Location = new System.Drawing.Point(610, 45);
@@ -3955,6 +4107,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
+            this.label72.BackColor = System.Drawing.Color.LemonChiffon;
             this.label72.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label72.ForeColor = System.Drawing.Color.Black;
             this.label72.Location = new System.Drawing.Point(400, 342);
@@ -3966,6 +4119,7 @@
             // label68
             // 
             this.label68.AutoSize = true;
+            this.label68.BackColor = System.Drawing.Color.LemonChiffon;
             this.label68.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label68.ForeColor = System.Drawing.Color.Black;
             this.label68.Location = new System.Drawing.Point(400, 45);
@@ -3977,6 +4131,7 @@
             // label71
             // 
             this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.LemonChiffon;
             this.label71.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label71.ForeColor = System.Drawing.Color.Black;
             this.label71.Location = new System.Drawing.Point(260, 342);
@@ -3988,6 +4143,7 @@
             // label69
             // 
             this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.LemonChiffon;
             this.label69.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label69.ForeColor = System.Drawing.Color.Black;
             this.label69.Location = new System.Drawing.Point(260, 45);
@@ -3999,6 +4155,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.LemonChiffon;
             this.label70.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label70.ForeColor = System.Drawing.Color.Black;
             this.label70.Location = new System.Drawing.Point(80, 45);
@@ -4023,7 +4180,7 @@
             this.txtWOut83.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut83.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut83.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut83.Location = new System.Drawing.Point(1080, 577);
+            this.txtWOut83.Location = new System.Drawing.Point(1080, 581);
             this.txtWOut83.Name = "txtWOut83";
             this.txtWOut83.ReadOnly = true;
             this.txtWOut83.Size = new System.Drawing.Size(129, 14);
@@ -4036,7 +4193,7 @@
             this.txtWOut82.BackColor = System.Drawing.Color.White;
             this.txtWOut82.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut82.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut82.Location = new System.Drawing.Point(1080, 547);
+            this.txtWOut82.Location = new System.Drawing.Point(1080, 551);
             this.txtWOut82.Name = "txtWOut82";
             this.txtWOut82.ReadOnly = true;
             this.txtWOut82.Size = new System.Drawing.Size(129, 14);
@@ -4049,7 +4206,7 @@
             this.txtWOut81.BackColor = System.Drawing.Color.White;
             this.txtWOut81.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut81.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut81.Location = new System.Drawing.Point(1080, 517);
+            this.txtWOut81.Location = new System.Drawing.Point(1080, 521);
             this.txtWOut81.Name = "txtWOut81";
             this.txtWOut81.ReadOnly = true;
             this.txtWOut81.Size = new System.Drawing.Size(129, 14);
@@ -4062,7 +4219,7 @@
             this.txtWOut80.BackColor = System.Drawing.Color.White;
             this.txtWOut80.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut80.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut80.Location = new System.Drawing.Point(1080, 487);
+            this.txtWOut80.Location = new System.Drawing.Point(1080, 491);
             this.txtWOut80.Name = "txtWOut80";
             this.txtWOut80.ReadOnly = true;
             this.txtWOut80.Size = new System.Drawing.Size(129, 14);
@@ -4075,7 +4232,7 @@
             this.txtWOut79.BackColor = System.Drawing.Color.White;
             this.txtWOut79.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut79.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut79.Location = new System.Drawing.Point(1080, 457);
+            this.txtWOut79.Location = new System.Drawing.Point(1080, 461);
             this.txtWOut79.Name = "txtWOut79";
             this.txtWOut79.ReadOnly = true;
             this.txtWOut79.Size = new System.Drawing.Size(129, 14);
@@ -4088,7 +4245,7 @@
             this.txtWOut78.BackColor = System.Drawing.Color.White;
             this.txtWOut78.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut78.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut78.Location = new System.Drawing.Point(1080, 427);
+            this.txtWOut78.Location = new System.Drawing.Point(1080, 431);
             this.txtWOut78.Name = "txtWOut78";
             this.txtWOut78.ReadOnly = true;
             this.txtWOut78.Size = new System.Drawing.Size(129, 14);
@@ -4101,7 +4258,7 @@
             this.txtWOut77.BackColor = System.Drawing.Color.White;
             this.txtWOut77.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut77.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut77.Location = new System.Drawing.Point(1080, 397);
+            this.txtWOut77.Location = new System.Drawing.Point(1080, 401);
             this.txtWOut77.Name = "txtWOut77";
             this.txtWOut77.ReadOnly = true;
             this.txtWOut77.Size = new System.Drawing.Size(129, 14);
@@ -4114,7 +4271,7 @@
             this.txtWOut55.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut55.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut55.Location = new System.Drawing.Point(720, 577);
+            this.txtWOut55.Location = new System.Drawing.Point(720, 581);
             this.txtWOut55.Name = "txtWOut55";
             this.txtWOut55.ReadOnly = true;
             this.txtWOut55.Size = new System.Drawing.Size(129, 14);
@@ -4127,7 +4284,7 @@
             this.txtWOut54.BackColor = System.Drawing.Color.White;
             this.txtWOut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut54.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut54.Location = new System.Drawing.Point(720, 547);
+            this.txtWOut54.Location = new System.Drawing.Point(720, 551);
             this.txtWOut54.Name = "txtWOut54";
             this.txtWOut54.ReadOnly = true;
             this.txtWOut54.Size = new System.Drawing.Size(129, 14);
@@ -4140,7 +4297,7 @@
             this.txtWOut53.BackColor = System.Drawing.Color.White;
             this.txtWOut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut53.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut53.Location = new System.Drawing.Point(720, 517);
+            this.txtWOut53.Location = new System.Drawing.Point(720, 521);
             this.txtWOut53.Name = "txtWOut53";
             this.txtWOut53.ReadOnly = true;
             this.txtWOut53.Size = new System.Drawing.Size(129, 14);
@@ -4153,7 +4310,7 @@
             this.txtWOut52.BackColor = System.Drawing.Color.White;
             this.txtWOut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut52.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut52.Location = new System.Drawing.Point(720, 487);
+            this.txtWOut52.Location = new System.Drawing.Point(720, 491);
             this.txtWOut52.Name = "txtWOut52";
             this.txtWOut52.ReadOnly = true;
             this.txtWOut52.Size = new System.Drawing.Size(129, 14);
@@ -4166,7 +4323,7 @@
             this.txtWOut51.BackColor = System.Drawing.Color.White;
             this.txtWOut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut51.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut51.Location = new System.Drawing.Point(720, 457);
+            this.txtWOut51.Location = new System.Drawing.Point(720, 461);
             this.txtWOut51.Name = "txtWOut51";
             this.txtWOut51.ReadOnly = true;
             this.txtWOut51.Size = new System.Drawing.Size(129, 14);
@@ -4179,7 +4336,7 @@
             this.txtWOut50.BackColor = System.Drawing.Color.White;
             this.txtWOut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut50.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut50.Location = new System.Drawing.Point(720, 427);
+            this.txtWOut50.Location = new System.Drawing.Point(720, 431);
             this.txtWOut50.Name = "txtWOut50";
             this.txtWOut50.ReadOnly = true;
             this.txtWOut50.Size = new System.Drawing.Size(129, 14);
@@ -4192,7 +4349,7 @@
             this.txtWOut49.BackColor = System.Drawing.Color.White;
             this.txtWOut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut49.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut49.Location = new System.Drawing.Point(720, 397);
+            this.txtWOut49.Location = new System.Drawing.Point(720, 401);
             this.txtWOut49.Name = "txtWOut49";
             this.txtWOut49.ReadOnly = true;
             this.txtWOut49.Size = new System.Drawing.Size(129, 14);
@@ -4205,7 +4362,7 @@
             this.txtWOut27.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut27.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut27.Location = new System.Drawing.Point(370, 577);
+            this.txtWOut27.Location = new System.Drawing.Point(370, 581);
             this.txtWOut27.Name = "txtWOut27";
             this.txtWOut27.ReadOnly = true;
             this.txtWOut27.Size = new System.Drawing.Size(129, 14);
@@ -4218,7 +4375,7 @@
             this.txtWOut26.BackColor = System.Drawing.Color.White;
             this.txtWOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut26.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut26.Location = new System.Drawing.Point(370, 547);
+            this.txtWOut26.Location = new System.Drawing.Point(370, 551);
             this.txtWOut26.Name = "txtWOut26";
             this.txtWOut26.ReadOnly = true;
             this.txtWOut26.Size = new System.Drawing.Size(129, 14);
@@ -4231,7 +4388,7 @@
             this.txtWOut69.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut69.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut69.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut69.Location = new System.Drawing.Point(920, 577);
+            this.txtWOut69.Location = new System.Drawing.Point(920, 581);
             this.txtWOut69.Name = "txtWOut69";
             this.txtWOut69.ReadOnly = true;
             this.txtWOut69.Size = new System.Drawing.Size(129, 14);
@@ -4244,7 +4401,7 @@
             this.txtWOut68.BackColor = System.Drawing.Color.White;
             this.txtWOut68.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut68.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut68.Location = new System.Drawing.Point(920, 547);
+            this.txtWOut68.Location = new System.Drawing.Point(920, 551);
             this.txtWOut68.Name = "txtWOut68";
             this.txtWOut68.ReadOnly = true;
             this.txtWOut68.Size = new System.Drawing.Size(129, 14);
@@ -4257,7 +4414,7 @@
             this.txtWOut25.BackColor = System.Drawing.Color.White;
             this.txtWOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut25.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut25.Location = new System.Drawing.Point(370, 517);
+            this.txtWOut25.Location = new System.Drawing.Point(370, 521);
             this.txtWOut25.Name = "txtWOut25";
             this.txtWOut25.ReadOnly = true;
             this.txtWOut25.Size = new System.Drawing.Size(129, 14);
@@ -4270,7 +4427,7 @@
             this.txtWOut67.BackColor = System.Drawing.Color.White;
             this.txtWOut67.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut67.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut67.Location = new System.Drawing.Point(920, 517);
+            this.txtWOut67.Location = new System.Drawing.Point(920, 521);
             this.txtWOut67.Name = "txtWOut67";
             this.txtWOut67.ReadOnly = true;
             this.txtWOut67.Size = new System.Drawing.Size(129, 14);
@@ -4283,7 +4440,7 @@
             this.txtWOut24.BackColor = System.Drawing.Color.White;
             this.txtWOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut24.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut24.Location = new System.Drawing.Point(370, 487);
+            this.txtWOut24.Location = new System.Drawing.Point(370, 491);
             this.txtWOut24.Name = "txtWOut24";
             this.txtWOut24.ReadOnly = true;
             this.txtWOut24.Size = new System.Drawing.Size(129, 14);
@@ -4296,7 +4453,7 @@
             this.txtWOut66.BackColor = System.Drawing.Color.White;
             this.txtWOut66.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut66.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut66.Location = new System.Drawing.Point(920, 487);
+            this.txtWOut66.Location = new System.Drawing.Point(920, 491);
             this.txtWOut66.Name = "txtWOut66";
             this.txtWOut66.ReadOnly = true;
             this.txtWOut66.Size = new System.Drawing.Size(129, 14);
@@ -4309,7 +4466,7 @@
             this.txtWOut23.BackColor = System.Drawing.Color.White;
             this.txtWOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut23.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut23.Location = new System.Drawing.Point(370, 457);
+            this.txtWOut23.Location = new System.Drawing.Point(370, 461);
             this.txtWOut23.Name = "txtWOut23";
             this.txtWOut23.ReadOnly = true;
             this.txtWOut23.Size = new System.Drawing.Size(129, 14);
@@ -4322,7 +4479,7 @@
             this.txtWOut65.BackColor = System.Drawing.Color.White;
             this.txtWOut65.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut65.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut65.Location = new System.Drawing.Point(920, 457);
+            this.txtWOut65.Location = new System.Drawing.Point(920, 461);
             this.txtWOut65.Name = "txtWOut65";
             this.txtWOut65.ReadOnly = true;
             this.txtWOut65.Size = new System.Drawing.Size(129, 14);
@@ -4335,7 +4492,7 @@
             this.txtWOut41.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut41.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut41.Location = new System.Drawing.Point(560, 577);
+            this.txtWOut41.Location = new System.Drawing.Point(560, 581);
             this.txtWOut41.Name = "txtWOut41";
             this.txtWOut41.ReadOnly = true;
             this.txtWOut41.Size = new System.Drawing.Size(129, 14);
@@ -4348,7 +4505,7 @@
             this.txtWOut40.BackColor = System.Drawing.Color.White;
             this.txtWOut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut40.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut40.Location = new System.Drawing.Point(560, 547);
+            this.txtWOut40.Location = new System.Drawing.Point(560, 551);
             this.txtWOut40.Name = "txtWOut40";
             this.txtWOut40.ReadOnly = true;
             this.txtWOut40.Size = new System.Drawing.Size(129, 14);
@@ -4361,7 +4518,7 @@
             this.txtWOut22.BackColor = System.Drawing.Color.White;
             this.txtWOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut22.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut22.Location = new System.Drawing.Point(370, 427);
+            this.txtWOut22.Location = new System.Drawing.Point(370, 431);
             this.txtWOut22.Name = "txtWOut22";
             this.txtWOut22.ReadOnly = true;
             this.txtWOut22.Size = new System.Drawing.Size(129, 14);
@@ -4374,7 +4531,7 @@
             this.txtWOut39.BackColor = System.Drawing.Color.White;
             this.txtWOut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut39.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut39.Location = new System.Drawing.Point(560, 517);
+            this.txtWOut39.Location = new System.Drawing.Point(560, 521);
             this.txtWOut39.Name = "txtWOut39";
             this.txtWOut39.ReadOnly = true;
             this.txtWOut39.Size = new System.Drawing.Size(129, 14);
@@ -4387,7 +4544,7 @@
             this.txtWOut64.BackColor = System.Drawing.Color.White;
             this.txtWOut64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut64.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut64.Location = new System.Drawing.Point(920, 427);
+            this.txtWOut64.Location = new System.Drawing.Point(920, 431);
             this.txtWOut64.Name = "txtWOut64";
             this.txtWOut64.ReadOnly = true;
             this.txtWOut64.Size = new System.Drawing.Size(129, 14);
@@ -4400,7 +4557,7 @@
             this.txtWOut38.BackColor = System.Drawing.Color.White;
             this.txtWOut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut38.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut38.Location = new System.Drawing.Point(560, 487);
+            this.txtWOut38.Location = new System.Drawing.Point(560, 491);
             this.txtWOut38.Name = "txtWOut38";
             this.txtWOut38.ReadOnly = true;
             this.txtWOut38.Size = new System.Drawing.Size(129, 14);
@@ -4413,7 +4570,7 @@
             this.txtWOut37.BackColor = System.Drawing.Color.White;
             this.txtWOut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut37.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut37.Location = new System.Drawing.Point(560, 457);
+            this.txtWOut37.Location = new System.Drawing.Point(560, 461);
             this.txtWOut37.Name = "txtWOut37";
             this.txtWOut37.ReadOnly = true;
             this.txtWOut37.Size = new System.Drawing.Size(129, 14);
@@ -4426,7 +4583,7 @@
             this.txtWOut36.BackColor = System.Drawing.Color.White;
             this.txtWOut36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut36.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut36.Location = new System.Drawing.Point(560, 427);
+            this.txtWOut36.Location = new System.Drawing.Point(560, 431);
             this.txtWOut36.Name = "txtWOut36";
             this.txtWOut36.ReadOnly = true;
             this.txtWOut36.Size = new System.Drawing.Size(129, 14);
@@ -4439,7 +4596,7 @@
             this.txtWOut21.BackColor = System.Drawing.Color.White;
             this.txtWOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut21.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut21.Location = new System.Drawing.Point(370, 397);
+            this.txtWOut21.Location = new System.Drawing.Point(370, 401);
             this.txtWOut21.Name = "txtWOut21";
             this.txtWOut21.ReadOnly = true;
             this.txtWOut21.Size = new System.Drawing.Size(129, 14);
@@ -4452,7 +4609,7 @@
             this.txtWOut63.BackColor = System.Drawing.Color.White;
             this.txtWOut63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut63.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut63.Location = new System.Drawing.Point(920, 397);
+            this.txtWOut63.Location = new System.Drawing.Point(920, 401);
             this.txtWOut63.Name = "txtWOut63";
             this.txtWOut63.ReadOnly = true;
             this.txtWOut63.Size = new System.Drawing.Size(129, 14);
@@ -4465,7 +4622,7 @@
             this.txtWOut35.BackColor = System.Drawing.Color.White;
             this.txtWOut35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut35.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut35.Location = new System.Drawing.Point(560, 397);
+            this.txtWOut35.Location = new System.Drawing.Point(560, 401);
             this.txtWOut35.Name = "txtWOut35";
             this.txtWOut35.ReadOnly = true;
             this.txtWOut35.Size = new System.Drawing.Size(129, 14);
@@ -4478,7 +4635,7 @@
             this.txtWOut75.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut75.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut75.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut75.Location = new System.Drawing.Point(1080, 200);
+            this.txtWOut75.Location = new System.Drawing.Point(1080, 204);
             this.txtWOut75.Name = "txtWOut75";
             this.txtWOut75.ReadOnly = true;
             this.txtWOut75.Size = new System.Drawing.Size(129, 14);
@@ -4491,7 +4648,7 @@
             this.txtWOut74.BackColor = System.Drawing.Color.White;
             this.txtWOut74.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut74.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut74.Location = new System.Drawing.Point(1080, 168);
+            this.txtWOut74.Location = new System.Drawing.Point(1080, 172);
             this.txtWOut74.Name = "txtWOut74";
             this.txtWOut74.ReadOnly = true;
             this.txtWOut74.Size = new System.Drawing.Size(129, 14);
@@ -4504,7 +4661,7 @@
             this.txtWOut73.BackColor = System.Drawing.Color.White;
             this.txtWOut73.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut73.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut73.Location = new System.Drawing.Point(1080, 133);
+            this.txtWOut73.Location = new System.Drawing.Point(1080, 137);
             this.txtWOut73.Name = "txtWOut73";
             this.txtWOut73.ReadOnly = true;
             this.txtWOut73.Size = new System.Drawing.Size(129, 14);
@@ -4517,7 +4674,7 @@
             this.txtWOut72.BackColor = System.Drawing.Color.White;
             this.txtWOut72.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut72.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut72.Location = new System.Drawing.Point(1080, 100);
+            this.txtWOut72.Location = new System.Drawing.Point(1080, 104);
             this.txtWOut72.Name = "txtWOut72";
             this.txtWOut72.ReadOnly = true;
             this.txtWOut72.Size = new System.Drawing.Size(129, 14);
@@ -4530,7 +4687,7 @@
             this.txtWOut76.BackColor = System.Drawing.Color.White;
             this.txtWOut76.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut76.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut76.Location = new System.Drawing.Point(1080, 367);
+            this.txtWOut76.Location = new System.Drawing.Point(1080, 371);
             this.txtWOut76.Name = "txtWOut76";
             this.txtWOut76.ReadOnly = true;
             this.txtWOut76.Size = new System.Drawing.Size(129, 14);
@@ -4543,7 +4700,7 @@
             this.txtWOut71.BackColor = System.Drawing.Color.White;
             this.txtWOut71.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut71.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut71.Location = new System.Drawing.Point(1080, 70);
+            this.txtWOut71.Location = new System.Drawing.Point(1080, 74);
             this.txtWOut71.Name = "txtWOut71";
             this.txtWOut71.ReadOnly = true;
             this.txtWOut71.Size = new System.Drawing.Size(129, 14);
@@ -4556,7 +4713,7 @@
             this.txtWOut47.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut47.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut47.Location = new System.Drawing.Point(720, 200);
+            this.txtWOut47.Location = new System.Drawing.Point(720, 204);
             this.txtWOut47.Name = "txtWOut47";
             this.txtWOut47.ReadOnly = true;
             this.txtWOut47.Size = new System.Drawing.Size(129, 14);
@@ -4569,7 +4726,7 @@
             this.txtWOut46.BackColor = System.Drawing.Color.White;
             this.txtWOut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut46.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut46.Location = new System.Drawing.Point(720, 168);
+            this.txtWOut46.Location = new System.Drawing.Point(720, 172);
             this.txtWOut46.Name = "txtWOut46";
             this.txtWOut46.ReadOnly = true;
             this.txtWOut46.Size = new System.Drawing.Size(129, 14);
@@ -4582,7 +4739,7 @@
             this.txtWOut45.BackColor = System.Drawing.Color.White;
             this.txtWOut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut45.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut45.Location = new System.Drawing.Point(720, 133);
+            this.txtWOut45.Location = new System.Drawing.Point(720, 137);
             this.txtWOut45.Name = "txtWOut45";
             this.txtWOut45.ReadOnly = true;
             this.txtWOut45.Size = new System.Drawing.Size(129, 14);
@@ -4595,7 +4752,7 @@
             this.txtWOut44.BackColor = System.Drawing.Color.White;
             this.txtWOut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut44.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut44.Location = new System.Drawing.Point(720, 100);
+            this.txtWOut44.Location = new System.Drawing.Point(720, 104);
             this.txtWOut44.Name = "txtWOut44";
             this.txtWOut44.ReadOnly = true;
             this.txtWOut44.Size = new System.Drawing.Size(129, 14);
@@ -4608,7 +4765,7 @@
             this.txtWOut48.BackColor = System.Drawing.Color.White;
             this.txtWOut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut48.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut48.Location = new System.Drawing.Point(720, 367);
+            this.txtWOut48.Location = new System.Drawing.Point(720, 371);
             this.txtWOut48.Name = "txtWOut48";
             this.txtWOut48.ReadOnly = true;
             this.txtWOut48.Size = new System.Drawing.Size(129, 14);
@@ -4621,7 +4778,7 @@
             this.txtWOut43.BackColor = System.Drawing.Color.White;
             this.txtWOut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut43.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut43.Location = new System.Drawing.Point(720, 70);
+            this.txtWOut43.Location = new System.Drawing.Point(720, 74);
             this.txtWOut43.Name = "txtWOut43";
             this.txtWOut43.ReadOnly = true;
             this.txtWOut43.Size = new System.Drawing.Size(129, 14);
@@ -4634,7 +4791,7 @@
             this.txtWOut61.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut61.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut61.Location = new System.Drawing.Point(920, 200);
+            this.txtWOut61.Location = new System.Drawing.Point(920, 204);
             this.txtWOut61.Name = "txtWOut61";
             this.txtWOut61.ReadOnly = true;
             this.txtWOut61.Size = new System.Drawing.Size(129, 14);
@@ -4647,7 +4804,7 @@
             this.txtWOut60.BackColor = System.Drawing.Color.White;
             this.txtWOut60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut60.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut60.Location = new System.Drawing.Point(920, 168);
+            this.txtWOut60.Location = new System.Drawing.Point(920, 172);
             this.txtWOut60.Name = "txtWOut60";
             this.txtWOut60.ReadOnly = true;
             this.txtWOut60.Size = new System.Drawing.Size(129, 14);
@@ -4660,7 +4817,7 @@
             this.txtWOut59.BackColor = System.Drawing.Color.White;
             this.txtWOut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut59.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut59.Location = new System.Drawing.Point(920, 133);
+            this.txtWOut59.Location = new System.Drawing.Point(920, 137);
             this.txtWOut59.Name = "txtWOut59";
             this.txtWOut59.ReadOnly = true;
             this.txtWOut59.Size = new System.Drawing.Size(129, 14);
@@ -4673,7 +4830,7 @@
             this.txtWOut33.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut33.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut33.Location = new System.Drawing.Point(560, 200);
+            this.txtWOut33.Location = new System.Drawing.Point(560, 204);
             this.txtWOut33.Name = "txtWOut33";
             this.txtWOut33.ReadOnly = true;
             this.txtWOut33.Size = new System.Drawing.Size(129, 14);
@@ -4686,7 +4843,7 @@
             this.txtWOut32.BackColor = System.Drawing.Color.White;
             this.txtWOut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut32.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut32.Location = new System.Drawing.Point(560, 168);
+            this.txtWOut32.Location = new System.Drawing.Point(560, 172);
             this.txtWOut32.Name = "txtWOut32";
             this.txtWOut32.ReadOnly = true;
             this.txtWOut32.Size = new System.Drawing.Size(129, 14);
@@ -4699,7 +4856,7 @@
             this.txtWOut58.BackColor = System.Drawing.Color.White;
             this.txtWOut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut58.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut58.Location = new System.Drawing.Point(920, 100);
+            this.txtWOut58.Location = new System.Drawing.Point(920, 104);
             this.txtWOut58.Name = "txtWOut58";
             this.txtWOut58.ReadOnly = true;
             this.txtWOut58.Size = new System.Drawing.Size(129, 14);
@@ -4712,7 +4869,7 @@
             this.txtWOut31.BackColor = System.Drawing.Color.White;
             this.txtWOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut31.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut31.Location = new System.Drawing.Point(560, 133);
+            this.txtWOut31.Location = new System.Drawing.Point(560, 137);
             this.txtWOut31.Name = "txtWOut31";
             this.txtWOut31.ReadOnly = true;
             this.txtWOut31.Size = new System.Drawing.Size(129, 14);
@@ -4725,7 +4882,7 @@
             this.txtWOut20.BackColor = System.Drawing.Color.White;
             this.txtWOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut20.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut20.Location = new System.Drawing.Point(370, 367);
+            this.txtWOut20.Location = new System.Drawing.Point(370, 371);
             this.txtWOut20.Name = "txtWOut20";
             this.txtWOut20.ReadOnly = true;
             this.txtWOut20.Size = new System.Drawing.Size(129, 14);
@@ -4738,7 +4895,7 @@
             this.txtWOut15.BackColor = System.Drawing.Color.White;
             this.txtWOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut15.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut15.Location = new System.Drawing.Point(370, 70);
+            this.txtWOut15.Location = new System.Drawing.Point(370, 74);
             this.txtWOut15.Name = "txtWOut15";
             this.txtWOut15.ReadOnly = true;
             this.txtWOut15.Size = new System.Drawing.Size(129, 14);
@@ -4751,7 +4908,7 @@
             this.txtWOut30.BackColor = System.Drawing.Color.White;
             this.txtWOut30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut30.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut30.Location = new System.Drawing.Point(560, 100);
+            this.txtWOut30.Location = new System.Drawing.Point(560, 104);
             this.txtWOut30.Name = "txtWOut30";
             this.txtWOut30.ReadOnly = true;
             this.txtWOut30.Size = new System.Drawing.Size(129, 14);
@@ -4764,7 +4921,7 @@
             this.txtWOut62.BackColor = System.Drawing.Color.White;
             this.txtWOut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut62.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut62.Location = new System.Drawing.Point(920, 367);
+            this.txtWOut62.Location = new System.Drawing.Point(920, 371);
             this.txtWOut62.Name = "txtWOut62";
             this.txtWOut62.ReadOnly = true;
             this.txtWOut62.Size = new System.Drawing.Size(129, 14);
@@ -4777,7 +4934,7 @@
             this.txtWOut57.BackColor = System.Drawing.Color.White;
             this.txtWOut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut57.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut57.Location = new System.Drawing.Point(920, 70);
+            this.txtWOut57.Location = new System.Drawing.Point(920, 74);
             this.txtWOut57.Name = "txtWOut57";
             this.txtWOut57.ReadOnly = true;
             this.txtWOut57.Size = new System.Drawing.Size(129, 14);
@@ -4790,7 +4947,7 @@
             this.txtWOut34.BackColor = System.Drawing.Color.White;
             this.txtWOut34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut34.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut34.Location = new System.Drawing.Point(560, 367);
+            this.txtWOut34.Location = new System.Drawing.Point(560, 371);
             this.txtWOut34.Name = "txtWOut34";
             this.txtWOut34.ReadOnly = true;
             this.txtWOut34.Size = new System.Drawing.Size(129, 14);
@@ -4803,7 +4960,7 @@
             this.txtWOut29.BackColor = System.Drawing.Color.White;
             this.txtWOut29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut29.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut29.Location = new System.Drawing.Point(560, 70);
+            this.txtWOut29.Location = new System.Drawing.Point(560, 74);
             this.txtWOut29.Name = "txtWOut29";
             this.txtWOut29.ReadOnly = true;
             this.txtWOut29.Size = new System.Drawing.Size(129, 14);
@@ -4816,7 +4973,7 @@
             this.txtWOut19.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut19.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut19.Location = new System.Drawing.Point(370, 200);
+            this.txtWOut19.Location = new System.Drawing.Point(370, 204);
             this.txtWOut19.Name = "txtWOut19";
             this.txtWOut19.ReadOnly = true;
             this.txtWOut19.Size = new System.Drawing.Size(129, 14);
@@ -4829,7 +4986,7 @@
             this.txtWOut18.BackColor = System.Drawing.Color.White;
             this.txtWOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut18.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut18.Location = new System.Drawing.Point(370, 168);
+            this.txtWOut18.Location = new System.Drawing.Point(370, 172);
             this.txtWOut18.Name = "txtWOut18";
             this.txtWOut18.ReadOnly = true;
             this.txtWOut18.Size = new System.Drawing.Size(129, 14);
@@ -4842,7 +4999,7 @@
             this.txtWOut5.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut5.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut5.Location = new System.Drawing.Point(210, 200);
+            this.txtWOut5.Location = new System.Drawing.Point(210, 204);
             this.txtWOut5.Name = "txtWOut5";
             this.txtWOut5.ReadOnly = true;
             this.txtWOut5.Size = new System.Drawing.Size(129, 14);
@@ -4855,7 +5012,7 @@
             this.txtWOut4.BackColor = System.Drawing.Color.White;
             this.txtWOut4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut4.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut4.Location = new System.Drawing.Point(210, 168);
+            this.txtWOut4.Location = new System.Drawing.Point(210, 172);
             this.txtWOut4.Name = "txtWOut4";
             this.txtWOut4.ReadOnly = true;
             this.txtWOut4.Size = new System.Drawing.Size(129, 14);
@@ -4868,7 +5025,7 @@
             this.txtWOut17.BackColor = System.Drawing.Color.White;
             this.txtWOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut17.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut17.Location = new System.Drawing.Point(370, 133);
+            this.txtWOut17.Location = new System.Drawing.Point(370, 137);
             this.txtWOut17.Name = "txtWOut17";
             this.txtWOut17.ReadOnly = true;
             this.txtWOut17.Size = new System.Drawing.Size(129, 14);
@@ -4881,7 +5038,7 @@
             this.txtWOut3.BackColor = System.Drawing.Color.White;
             this.txtWOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut3.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut3.Location = new System.Drawing.Point(210, 133);
+            this.txtWOut3.Location = new System.Drawing.Point(210, 137);
             this.txtWOut3.Name = "txtWOut3";
             this.txtWOut3.ReadOnly = true;
             this.txtWOut3.Size = new System.Drawing.Size(129, 14);
@@ -4894,7 +5051,7 @@
             this.txtWOut16.BackColor = System.Drawing.Color.White;
             this.txtWOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut16.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut16.Location = new System.Drawing.Point(370, 100);
+            this.txtWOut16.Location = new System.Drawing.Point(370, 104);
             this.txtWOut16.Name = "txtWOut16";
             this.txtWOut16.ReadOnly = true;
             this.txtWOut16.Size = new System.Drawing.Size(129, 14);
@@ -4907,7 +5064,7 @@
             this.txtWOut2.BackColor = System.Drawing.Color.White;
             this.txtWOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut2.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut2.Location = new System.Drawing.Point(210, 100);
+            this.txtWOut2.Location = new System.Drawing.Point(210, 104);
             this.txtWOut2.Name = "txtWOut2";
             this.txtWOut2.ReadOnly = true;
             this.txtWOut2.Size = new System.Drawing.Size(129, 14);
@@ -4920,7 +5077,7 @@
             this.txtWOut6.BackColor = System.Drawing.Color.White;
             this.txtWOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut6.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut6.Location = new System.Drawing.Point(210, 367);
+            this.txtWOut6.Location = new System.Drawing.Point(210, 371);
             this.txtWOut6.Name = "txtWOut6";
             this.txtWOut6.ReadOnly = true;
             this.txtWOut6.Size = new System.Drawing.Size(129, 14);
@@ -4933,7 +5090,7 @@
             this.txtWOut1.BackColor = System.Drawing.Color.White;
             this.txtWOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut1.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut1.Location = new System.Drawing.Point(210, 70);
+            this.txtWOut1.Location = new System.Drawing.Point(210, 74);
             this.txtWOut1.Name = "txtWOut1";
             this.txtWOut1.ReadOnly = true;
             this.txtWOut1.Size = new System.Drawing.Size(129, 14);
@@ -4946,7 +5103,7 @@
             this.txtWOut13.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtWOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut13.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut13.Location = new System.Drawing.Point(210, 577);
+            this.txtWOut13.Location = new System.Drawing.Point(210, 581);
             this.txtWOut13.Name = "txtWOut13";
             this.txtWOut13.ReadOnly = true;
             this.txtWOut13.Size = new System.Drawing.Size(129, 14);
@@ -4959,7 +5116,7 @@
             this.txtWOut12.BackColor = System.Drawing.Color.White;
             this.txtWOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut12.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut12.Location = new System.Drawing.Point(210, 547);
+            this.txtWOut12.Location = new System.Drawing.Point(210, 551);
             this.txtWOut12.Name = "txtWOut12";
             this.txtWOut12.ReadOnly = true;
             this.txtWOut12.Size = new System.Drawing.Size(129, 14);
@@ -4972,7 +5129,7 @@
             this.txtWOut11.BackColor = System.Drawing.Color.White;
             this.txtWOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut11.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut11.Location = new System.Drawing.Point(210, 517);
+            this.txtWOut11.Location = new System.Drawing.Point(210, 521);
             this.txtWOut11.Name = "txtWOut11";
             this.txtWOut11.ReadOnly = true;
             this.txtWOut11.Size = new System.Drawing.Size(129, 14);
@@ -4985,7 +5142,7 @@
             this.txtWOut10.BackColor = System.Drawing.Color.White;
             this.txtWOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut10.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut10.Location = new System.Drawing.Point(210, 487);
+            this.txtWOut10.Location = new System.Drawing.Point(210, 491);
             this.txtWOut10.Name = "txtWOut10";
             this.txtWOut10.ReadOnly = true;
             this.txtWOut10.Size = new System.Drawing.Size(129, 14);
@@ -4998,7 +5155,7 @@
             this.txtWOut9.BackColor = System.Drawing.Color.White;
             this.txtWOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut9.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut9.Location = new System.Drawing.Point(210, 457);
+            this.txtWOut9.Location = new System.Drawing.Point(210, 461);
             this.txtWOut9.Name = "txtWOut9";
             this.txtWOut9.ReadOnly = true;
             this.txtWOut9.Size = new System.Drawing.Size(129, 14);
@@ -5011,7 +5168,7 @@
             this.txtWOut8.BackColor = System.Drawing.Color.White;
             this.txtWOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut8.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut8.Location = new System.Drawing.Point(210, 427);
+            this.txtWOut8.Location = new System.Drawing.Point(210, 431);
             this.txtWOut8.Name = "txtWOut8";
             this.txtWOut8.ReadOnly = true;
             this.txtWOut8.Size = new System.Drawing.Size(129, 14);
@@ -5024,7 +5181,7 @@
             this.txtWOut7.BackColor = System.Drawing.Color.White;
             this.txtWOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtWOut7.ForeColor = System.Drawing.Color.Black;
-            this.txtWOut7.Location = new System.Drawing.Point(210, 397);
+            this.txtWOut7.Location = new System.Drawing.Point(210, 401);
             this.txtWOut7.Name = "txtWOut7";
             this.txtWOut7.ReadOnly = true;
             this.txtWOut7.Size = new System.Drawing.Size(129, 14);
@@ -5035,6 +5192,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.LemonChiffon;
             this.label22.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(80, 342);
@@ -5543,13 +5701,13 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pnlChart3);
             this.tabPage3.Controls.Add(this.label107);
             this.tabPage3.Controls.Add(this.label108);
             this.tabPage3.Controls.Add(this.label111);
             this.tabPage3.Controls.Add(this.label112);
             this.tabPage3.Controls.Add(this.label113);
             this.tabPage3.Controls.Add(this.label114);
-            this.tabPage3.Controls.Add(this.pnlChart3);
             this.tabPage3.Controls.Add(this.lblTitle9);
             this.tabPage3.Controls.Add(this.lblTitle8);
             this.tabPage3.Controls.Add(this.lblTitle7);
@@ -5688,9 +5846,11 @@
             this.tabPage3.Controls.Add(this.panel157);
             this.tabPage3.Controls.Add(this.panel158);
             this.tabPage3.Controls.Add(this.panel159);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Controls.Add(this.panel165);
+            this.tabPage3.Controls.Add(this.panel166);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1242, 671);
+            this.tabPage3.Size = new System.Drawing.Size(1242, 670);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "          소매          ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -5701,7 +5861,7 @@
             this.pnlChart3.Controls.Add(this.label85);
             this.pnlChart3.Controls.Add(this.chart6);
             this.pnlChart3.Controls.Add(this.chart3);
-            this.pnlChart3.Location = new System.Drawing.Point(0, 40);
+            this.pnlChart3.Location = new System.Drawing.Point(0, 39);
             this.pnlChart3.Name = "pnlChart3";
             this.pnlChart3.Size = new System.Drawing.Size(1240, 634);
             this.pnlChart3.TabIndex = 345;
@@ -5808,6 +5968,66 @@
             this.chart3.Size = new System.Drawing.Size(1142, 299);
             this.chart3.TabIndex = 341;
             this.chart3.Text = "chart6";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.ForeColor = System.Drawing.Color.Black;
+            this.label107.Location = new System.Drawing.Point(1176, 317);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(63, 12);
+            this.label107.TabIndex = 354;
+            this.label107.Text = "(단위 : 원)";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.ForeColor = System.Drawing.Color.Black;
+            this.label108.Location = new System.Drawing.Point(815, 317);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(63, 12);
+            this.label108.TabIndex = 353;
+            this.label108.Text = "(단위 : 원)";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.ForeColor = System.Drawing.Color.Black;
+            this.label111.Location = new System.Drawing.Point(465, 317);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(63, 12);
+            this.label111.TabIndex = 352;
+            this.label111.Text = "(단위 : 원)";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.ForeColor = System.Drawing.Color.Black;
+            this.label112.Location = new System.Drawing.Point(1173, 20);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(63, 12);
+            this.label112.TabIndex = 351;
+            this.label112.Text = "(단위 : 원)";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.ForeColor = System.Drawing.Color.Black;
+            this.label113.Location = new System.Drawing.Point(815, 20);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(63, 12);
+            this.label113.TabIndex = 350;
+            this.label113.Text = "(단위 : 원)";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.ForeColor = System.Drawing.Color.Black;
+            this.label114.Location = new System.Drawing.Point(465, 20);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(63, 12);
+            this.label114.TabIndex = 349;
+            this.label114.Text = "(단위 : 원)";
             // 
             // lblTitle9
             // 
@@ -6006,7 +6226,7 @@
             this.txtROut72.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut72.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut72.ForeColor = System.Drawing.Color.Black;
-            this.txtROut72.Location = new System.Drawing.Point(1080, 621);
+            this.txtROut72.Location = new System.Drawing.Point(1080, 625);
             this.txtROut72.Name = "txtROut72";
             this.txtROut72.ReadOnly = true;
             this.txtROut72.Size = new System.Drawing.Size(129, 14);
@@ -6019,7 +6239,7 @@
             this.txtROut48.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut48.ForeColor = System.Drawing.Color.Black;
-            this.txtROut48.Location = new System.Drawing.Point(720, 621);
+            this.txtROut48.Location = new System.Drawing.Point(720, 625);
             this.txtROut48.Name = "txtROut48";
             this.txtROut48.ReadOnly = true;
             this.txtROut48.Size = new System.Drawing.Size(129, 14);
@@ -6032,7 +6252,7 @@
             this.txtROut24.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut24.ForeColor = System.Drawing.Color.Black;
-            this.txtROut24.Location = new System.Drawing.Point(370, 621);
+            this.txtROut24.Location = new System.Drawing.Point(370, 625);
             this.txtROut24.Name = "txtROut24";
             this.txtROut24.ReadOnly = true;
             this.txtROut24.Size = new System.Drawing.Size(129, 14);
@@ -6045,7 +6265,7 @@
             this.txtROut60.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut60.ForeColor = System.Drawing.Color.Black;
-            this.txtROut60.Location = new System.Drawing.Point(920, 621);
+            this.txtROut60.Location = new System.Drawing.Point(920, 625);
             this.txtROut60.Name = "txtROut60";
             this.txtROut60.ReadOnly = true;
             this.txtROut60.Size = new System.Drawing.Size(129, 14);
@@ -6058,7 +6278,7 @@
             this.txtROut36.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut36.ForeColor = System.Drawing.Color.Black;
-            this.txtROut36.Location = new System.Drawing.Point(560, 621);
+            this.txtROut36.Location = new System.Drawing.Point(560, 625);
             this.txtROut36.Name = "txtROut36";
             this.txtROut36.ReadOnly = true;
             this.txtROut36.Size = new System.Drawing.Size(129, 14);
@@ -6071,7 +6291,7 @@
             this.txtROut12.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut12.ForeColor = System.Drawing.Color.Black;
-            this.txtROut12.Location = new System.Drawing.Point(210, 621);
+            this.txtROut12.Location = new System.Drawing.Point(210, 625);
             this.txtROut12.Name = "txtROut12";
             this.txtROut12.ReadOnly = true;
             this.txtROut12.Size = new System.Drawing.Size(129, 14);
@@ -6082,6 +6302,7 @@
             // label66
             // 
             this.label66.AutoSize = true;
+            this.label66.BackColor = System.Drawing.Color.LemonChiffon;
             this.label66.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label66.ForeColor = System.Drawing.Color.Black;
             this.label66.Location = new System.Drawing.Point(1110, 342);
@@ -6095,7 +6316,7 @@
             this.txtROut71.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut71.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut71.ForeColor = System.Drawing.Color.Black;
-            this.txtROut71.Location = new System.Drawing.Point(1080, 591);
+            this.txtROut71.Location = new System.Drawing.Point(1080, 595);
             this.txtROut71.Name = "txtROut71";
             this.txtROut71.ReadOnly = true;
             this.txtROut71.Size = new System.Drawing.Size(129, 14);
@@ -6108,7 +6329,7 @@
             this.txtROut47.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut47.ForeColor = System.Drawing.Color.Black;
-            this.txtROut47.Location = new System.Drawing.Point(720, 591);
+            this.txtROut47.Location = new System.Drawing.Point(720, 595);
             this.txtROut47.Name = "txtROut47";
             this.txtROut47.ReadOnly = true;
             this.txtROut47.Size = new System.Drawing.Size(129, 14);
@@ -6119,6 +6340,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.LemonChiffon;
             this.label42.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label42.ForeColor = System.Drawing.Color.Black;
             this.label42.Location = new System.Drawing.Point(1110, 45);
@@ -6132,7 +6354,7 @@
             this.txtROut23.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut23.ForeColor = System.Drawing.Color.Black;
-            this.txtROut23.Location = new System.Drawing.Point(370, 591);
+            this.txtROut23.Location = new System.Drawing.Point(370, 595);
             this.txtROut23.Name = "txtROut23";
             this.txtROut23.ReadOnly = true;
             this.txtROut23.Size = new System.Drawing.Size(129, 14);
@@ -6145,7 +6367,7 @@
             this.txtROut59.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut59.ForeColor = System.Drawing.Color.Black;
-            this.txtROut59.Location = new System.Drawing.Point(920, 591);
+            this.txtROut59.Location = new System.Drawing.Point(920, 595);
             this.txtROut59.Name = "txtROut59";
             this.txtROut59.ReadOnly = true;
             this.txtROut59.Size = new System.Drawing.Size(129, 14);
@@ -6169,7 +6391,7 @@
             this.txtROut35.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut35.ForeColor = System.Drawing.Color.Black;
-            this.txtROut35.Location = new System.Drawing.Point(560, 591);
+            this.txtROut35.Location = new System.Drawing.Point(560, 595);
             this.txtROut35.Name = "txtROut35";
             this.txtROut35.ReadOnly = true;
             this.txtROut35.Size = new System.Drawing.Size(129, 14);
@@ -6182,7 +6404,7 @@
             this.txtROut11.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut11.ForeColor = System.Drawing.Color.Black;
-            this.txtROut11.Location = new System.Drawing.Point(210, 591);
+            this.txtROut11.Location = new System.Drawing.Point(210, 595);
             this.txtROut11.Name = "txtROut11";
             this.txtROut11.ReadOnly = true;
             this.txtROut11.Size = new System.Drawing.Size(129, 14);
@@ -6193,6 +6415,7 @@
             // label65
             // 
             this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.Color.LemonChiffon;
             this.label65.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label65.ForeColor = System.Drawing.Color.Black;
             this.label65.Location = new System.Drawing.Point(970, 342);
@@ -6233,6 +6456,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.LemonChiffon;
             this.label43.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label43.ForeColor = System.Drawing.Color.Black;
             this.label43.Location = new System.Drawing.Point(970, 45);
@@ -6268,6 +6492,7 @@
             // label64
             // 
             this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.Color.LemonChiffon;
             this.label64.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label64.ForeColor = System.Drawing.Color.Black;
             this.label64.Location = new System.Drawing.Point(750, 342);
@@ -6279,6 +6504,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.LemonChiffon;
             this.label49.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label49.ForeColor = System.Drawing.Color.Black;
             this.label49.Location = new System.Drawing.Point(750, 45);
@@ -6290,6 +6516,7 @@
             // label61
             // 
             this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.Color.LemonChiffon;
             this.label61.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label61.ForeColor = System.Drawing.Color.Black;
             this.label61.Location = new System.Drawing.Point(610, 342);
@@ -6301,6 +6528,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.LemonChiffon;
             this.label50.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label50.ForeColor = System.Drawing.Color.Black;
             this.label50.Location = new System.Drawing.Point(610, 45);
@@ -6312,6 +6540,7 @@
             // label60
             // 
             this.label60.AutoSize = true;
+            this.label60.BackColor = System.Drawing.Color.LemonChiffon;
             this.label60.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label60.ForeColor = System.Drawing.Color.Black;
             this.label60.Location = new System.Drawing.Point(400, 342);
@@ -6323,6 +6552,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.LemonChiffon;
             this.label51.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label51.ForeColor = System.Drawing.Color.Black;
             this.label51.Location = new System.Drawing.Point(400, 45);
@@ -6334,6 +6564,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.LemonChiffon;
             this.label59.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label59.ForeColor = System.Drawing.Color.Black;
             this.label59.Location = new System.Drawing.Point(260, 342);
@@ -6345,6 +6576,7 @@
             // label77
             // 
             this.label77.AutoSize = true;
+            this.label77.BackColor = System.Drawing.Color.LemonChiffon;
             this.label77.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label77.ForeColor = System.Drawing.Color.Black;
             this.label77.Location = new System.Drawing.Point(260, 45);
@@ -6358,7 +6590,7 @@
             this.txtROut70.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut70.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut70.ForeColor = System.Drawing.Color.Black;
-            this.txtROut70.Location = new System.Drawing.Point(1080, 547);
+            this.txtROut70.Location = new System.Drawing.Point(1080, 551);
             this.txtROut70.Name = "txtROut70";
             this.txtROut70.ReadOnly = true;
             this.txtROut70.Size = new System.Drawing.Size(129, 14);
@@ -6371,7 +6603,7 @@
             this.txtROut69.BackColor = System.Drawing.Color.White;
             this.txtROut69.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut69.ForeColor = System.Drawing.Color.Black;
-            this.txtROut69.Location = new System.Drawing.Point(1080, 517);
+            this.txtROut69.Location = new System.Drawing.Point(1080, 521);
             this.txtROut69.Name = "txtROut69";
             this.txtROut69.ReadOnly = true;
             this.txtROut69.Size = new System.Drawing.Size(129, 14);
@@ -6384,7 +6616,7 @@
             this.txtROut68.BackColor = System.Drawing.Color.White;
             this.txtROut68.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut68.ForeColor = System.Drawing.Color.Black;
-            this.txtROut68.Location = new System.Drawing.Point(1080, 487);
+            this.txtROut68.Location = new System.Drawing.Point(1080, 491);
             this.txtROut68.Name = "txtROut68";
             this.txtROut68.ReadOnly = true;
             this.txtROut68.Size = new System.Drawing.Size(129, 14);
@@ -6397,7 +6629,7 @@
             this.txtROut67.BackColor = System.Drawing.Color.White;
             this.txtROut67.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut67.ForeColor = System.Drawing.Color.Black;
-            this.txtROut67.Location = new System.Drawing.Point(1080, 457);
+            this.txtROut67.Location = new System.Drawing.Point(1080, 461);
             this.txtROut67.Name = "txtROut67";
             this.txtROut67.ReadOnly = true;
             this.txtROut67.Size = new System.Drawing.Size(129, 14);
@@ -6410,7 +6642,7 @@
             this.txtROut66.BackColor = System.Drawing.Color.White;
             this.txtROut66.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut66.ForeColor = System.Drawing.Color.Black;
-            this.txtROut66.Location = new System.Drawing.Point(1080, 427);
+            this.txtROut66.Location = new System.Drawing.Point(1080, 431);
             this.txtROut66.Name = "txtROut66";
             this.txtROut66.ReadOnly = true;
             this.txtROut66.Size = new System.Drawing.Size(129, 14);
@@ -6423,7 +6655,7 @@
             this.txtROut65.BackColor = System.Drawing.Color.White;
             this.txtROut65.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut65.ForeColor = System.Drawing.Color.Black;
-            this.txtROut65.Location = new System.Drawing.Point(1080, 397);
+            this.txtROut65.Location = new System.Drawing.Point(1080, 401);
             this.txtROut65.Name = "txtROut65";
             this.txtROut65.ReadOnly = true;
             this.txtROut65.Size = new System.Drawing.Size(129, 14);
@@ -6436,7 +6668,7 @@
             this.txtROut64.BackColor = System.Drawing.Color.White;
             this.txtROut64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut64.ForeColor = System.Drawing.Color.Black;
-            this.txtROut64.Location = new System.Drawing.Point(1080, 367);
+            this.txtROut64.Location = new System.Drawing.Point(1080, 371);
             this.txtROut64.Name = "txtROut64";
             this.txtROut64.ReadOnly = true;
             this.txtROut64.Size = new System.Drawing.Size(129, 14);
@@ -6449,7 +6681,7 @@
             this.txtROut58.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut58.ForeColor = System.Drawing.Color.Black;
-            this.txtROut58.Location = new System.Drawing.Point(920, 547);
+            this.txtROut58.Location = new System.Drawing.Point(920, 551);
             this.txtROut58.Name = "txtROut58";
             this.txtROut58.ReadOnly = true;
             this.txtROut58.Size = new System.Drawing.Size(129, 14);
@@ -6462,7 +6694,7 @@
             this.txtROut57.BackColor = System.Drawing.Color.White;
             this.txtROut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut57.ForeColor = System.Drawing.Color.Black;
-            this.txtROut57.Location = new System.Drawing.Point(920, 517);
+            this.txtROut57.Location = new System.Drawing.Point(920, 521);
             this.txtROut57.Name = "txtROut57";
             this.txtROut57.ReadOnly = true;
             this.txtROut57.Size = new System.Drawing.Size(129, 14);
@@ -6475,7 +6707,7 @@
             this.txtROut56.BackColor = System.Drawing.Color.White;
             this.txtROut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut56.ForeColor = System.Drawing.Color.Black;
-            this.txtROut56.Location = new System.Drawing.Point(920, 487);
+            this.txtROut56.Location = new System.Drawing.Point(920, 491);
             this.txtROut56.Name = "txtROut56";
             this.txtROut56.ReadOnly = true;
             this.txtROut56.Size = new System.Drawing.Size(129, 14);
@@ -6488,7 +6720,7 @@
             this.txtROut55.BackColor = System.Drawing.Color.White;
             this.txtROut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut55.ForeColor = System.Drawing.Color.Black;
-            this.txtROut55.Location = new System.Drawing.Point(920, 457);
+            this.txtROut55.Location = new System.Drawing.Point(920, 461);
             this.txtROut55.Name = "txtROut55";
             this.txtROut55.ReadOnly = true;
             this.txtROut55.Size = new System.Drawing.Size(129, 14);
@@ -6501,7 +6733,7 @@
             this.txtROut54.BackColor = System.Drawing.Color.White;
             this.txtROut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut54.ForeColor = System.Drawing.Color.Black;
-            this.txtROut54.Location = new System.Drawing.Point(920, 427);
+            this.txtROut54.Location = new System.Drawing.Point(920, 431);
             this.txtROut54.Name = "txtROut54";
             this.txtROut54.ReadOnly = true;
             this.txtROut54.Size = new System.Drawing.Size(129, 14);
@@ -6514,7 +6746,7 @@
             this.txtROut53.BackColor = System.Drawing.Color.White;
             this.txtROut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut53.ForeColor = System.Drawing.Color.Black;
-            this.txtROut53.Location = new System.Drawing.Point(920, 397);
+            this.txtROut53.Location = new System.Drawing.Point(920, 401);
             this.txtROut53.Name = "txtROut53";
             this.txtROut53.ReadOnly = true;
             this.txtROut53.Size = new System.Drawing.Size(129, 14);
@@ -6527,7 +6759,7 @@
             this.txtROut52.BackColor = System.Drawing.Color.White;
             this.txtROut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut52.ForeColor = System.Drawing.Color.Black;
-            this.txtROut52.Location = new System.Drawing.Point(920, 367);
+            this.txtROut52.Location = new System.Drawing.Point(920, 371);
             this.txtROut52.Name = "txtROut52";
             this.txtROut52.ReadOnly = true;
             this.txtROut52.Size = new System.Drawing.Size(129, 14);
@@ -6540,7 +6772,7 @@
             this.txtROut46.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut46.ForeColor = System.Drawing.Color.Black;
-            this.txtROut46.Location = new System.Drawing.Point(720, 547);
+            this.txtROut46.Location = new System.Drawing.Point(720, 551);
             this.txtROut46.Name = "txtROut46";
             this.txtROut46.ReadOnly = true;
             this.txtROut46.Size = new System.Drawing.Size(129, 14);
@@ -6553,7 +6785,7 @@
             this.txtROut45.BackColor = System.Drawing.Color.White;
             this.txtROut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut45.ForeColor = System.Drawing.Color.Black;
-            this.txtROut45.Location = new System.Drawing.Point(720, 517);
+            this.txtROut45.Location = new System.Drawing.Point(720, 521);
             this.txtROut45.Name = "txtROut45";
             this.txtROut45.ReadOnly = true;
             this.txtROut45.Size = new System.Drawing.Size(129, 14);
@@ -6566,7 +6798,7 @@
             this.txtROut44.BackColor = System.Drawing.Color.White;
             this.txtROut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut44.ForeColor = System.Drawing.Color.Black;
-            this.txtROut44.Location = new System.Drawing.Point(720, 487);
+            this.txtROut44.Location = new System.Drawing.Point(720, 491);
             this.txtROut44.Name = "txtROut44";
             this.txtROut44.ReadOnly = true;
             this.txtROut44.Size = new System.Drawing.Size(129, 14);
@@ -6579,7 +6811,7 @@
             this.txtROut43.BackColor = System.Drawing.Color.White;
             this.txtROut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut43.ForeColor = System.Drawing.Color.Black;
-            this.txtROut43.Location = new System.Drawing.Point(720, 457);
+            this.txtROut43.Location = new System.Drawing.Point(720, 461);
             this.txtROut43.Name = "txtROut43";
             this.txtROut43.ReadOnly = true;
             this.txtROut43.Size = new System.Drawing.Size(129, 14);
@@ -6592,7 +6824,7 @@
             this.txtROut42.BackColor = System.Drawing.Color.White;
             this.txtROut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut42.ForeColor = System.Drawing.Color.Black;
-            this.txtROut42.Location = new System.Drawing.Point(720, 427);
+            this.txtROut42.Location = new System.Drawing.Point(720, 431);
             this.txtROut42.Name = "txtROut42";
             this.txtROut42.ReadOnly = true;
             this.txtROut42.Size = new System.Drawing.Size(129, 14);
@@ -6605,7 +6837,7 @@
             this.txtROut41.BackColor = System.Drawing.Color.White;
             this.txtROut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut41.ForeColor = System.Drawing.Color.Black;
-            this.txtROut41.Location = new System.Drawing.Point(720, 397);
+            this.txtROut41.Location = new System.Drawing.Point(720, 401);
             this.txtROut41.Name = "txtROut41";
             this.txtROut41.ReadOnly = true;
             this.txtROut41.Size = new System.Drawing.Size(129, 14);
@@ -6618,7 +6850,7 @@
             this.txtROut40.BackColor = System.Drawing.Color.White;
             this.txtROut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut40.ForeColor = System.Drawing.Color.Black;
-            this.txtROut40.Location = new System.Drawing.Point(720, 367);
+            this.txtROut40.Location = new System.Drawing.Point(720, 371);
             this.txtROut40.Name = "txtROut40";
             this.txtROut40.ReadOnly = true;
             this.txtROut40.Size = new System.Drawing.Size(129, 14);
@@ -6631,7 +6863,7 @@
             this.txtROut34.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut34.ForeColor = System.Drawing.Color.Black;
-            this.txtROut34.Location = new System.Drawing.Point(560, 547);
+            this.txtROut34.Location = new System.Drawing.Point(560, 551);
             this.txtROut34.Name = "txtROut34";
             this.txtROut34.ReadOnly = true;
             this.txtROut34.Size = new System.Drawing.Size(129, 14);
@@ -6644,7 +6876,7 @@
             this.txtROut33.BackColor = System.Drawing.Color.White;
             this.txtROut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut33.ForeColor = System.Drawing.Color.Black;
-            this.txtROut33.Location = new System.Drawing.Point(560, 517);
+            this.txtROut33.Location = new System.Drawing.Point(560, 521);
             this.txtROut33.Name = "txtROut33";
             this.txtROut33.ReadOnly = true;
             this.txtROut33.Size = new System.Drawing.Size(129, 14);
@@ -6657,7 +6889,7 @@
             this.txtROut32.BackColor = System.Drawing.Color.White;
             this.txtROut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut32.ForeColor = System.Drawing.Color.Black;
-            this.txtROut32.Location = new System.Drawing.Point(560, 487);
+            this.txtROut32.Location = new System.Drawing.Point(560, 491);
             this.txtROut32.Name = "txtROut32";
             this.txtROut32.ReadOnly = true;
             this.txtROut32.Size = new System.Drawing.Size(129, 14);
@@ -6670,7 +6902,7 @@
             this.txtROut31.BackColor = System.Drawing.Color.White;
             this.txtROut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut31.ForeColor = System.Drawing.Color.Black;
-            this.txtROut31.Location = new System.Drawing.Point(560, 457);
+            this.txtROut31.Location = new System.Drawing.Point(560, 461);
             this.txtROut31.Name = "txtROut31";
             this.txtROut31.ReadOnly = true;
             this.txtROut31.Size = new System.Drawing.Size(129, 14);
@@ -6683,7 +6915,7 @@
             this.txtROut30.BackColor = System.Drawing.Color.White;
             this.txtROut30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut30.ForeColor = System.Drawing.Color.Black;
-            this.txtROut30.Location = new System.Drawing.Point(560, 427);
+            this.txtROut30.Location = new System.Drawing.Point(560, 431);
             this.txtROut30.Name = "txtROut30";
             this.txtROut30.ReadOnly = true;
             this.txtROut30.Size = new System.Drawing.Size(129, 14);
@@ -6696,7 +6928,7 @@
             this.txtROut29.BackColor = System.Drawing.Color.White;
             this.txtROut29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut29.ForeColor = System.Drawing.Color.Black;
-            this.txtROut29.Location = new System.Drawing.Point(560, 397);
+            this.txtROut29.Location = new System.Drawing.Point(560, 401);
             this.txtROut29.Name = "txtROut29";
             this.txtROut29.ReadOnly = true;
             this.txtROut29.Size = new System.Drawing.Size(129, 14);
@@ -6709,7 +6941,7 @@
             this.txtROut28.BackColor = System.Drawing.Color.White;
             this.txtROut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut28.ForeColor = System.Drawing.Color.Black;
-            this.txtROut28.Location = new System.Drawing.Point(560, 367);
+            this.txtROut28.Location = new System.Drawing.Point(560, 371);
             this.txtROut28.Name = "txtROut28";
             this.txtROut28.ReadOnly = true;
             this.txtROut28.Size = new System.Drawing.Size(129, 14);
@@ -6722,7 +6954,7 @@
             this.txtROut22.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut22.ForeColor = System.Drawing.Color.Black;
-            this.txtROut22.Location = new System.Drawing.Point(370, 547);
+            this.txtROut22.Location = new System.Drawing.Point(370, 551);
             this.txtROut22.Name = "txtROut22";
             this.txtROut22.ReadOnly = true;
             this.txtROut22.Size = new System.Drawing.Size(129, 14);
@@ -6735,7 +6967,7 @@
             this.txtROut21.BackColor = System.Drawing.Color.White;
             this.txtROut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut21.ForeColor = System.Drawing.Color.Black;
-            this.txtROut21.Location = new System.Drawing.Point(370, 517);
+            this.txtROut21.Location = new System.Drawing.Point(370, 521);
             this.txtROut21.Name = "txtROut21";
             this.txtROut21.ReadOnly = true;
             this.txtROut21.Size = new System.Drawing.Size(129, 14);
@@ -6748,7 +6980,7 @@
             this.txtROut20.BackColor = System.Drawing.Color.White;
             this.txtROut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut20.ForeColor = System.Drawing.Color.Black;
-            this.txtROut20.Location = new System.Drawing.Point(370, 487);
+            this.txtROut20.Location = new System.Drawing.Point(370, 491);
             this.txtROut20.Name = "txtROut20";
             this.txtROut20.ReadOnly = true;
             this.txtROut20.Size = new System.Drawing.Size(129, 14);
@@ -6761,7 +6993,7 @@
             this.txtROut19.BackColor = System.Drawing.Color.White;
             this.txtROut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut19.ForeColor = System.Drawing.Color.Black;
-            this.txtROut19.Location = new System.Drawing.Point(370, 457);
+            this.txtROut19.Location = new System.Drawing.Point(370, 461);
             this.txtROut19.Name = "txtROut19";
             this.txtROut19.ReadOnly = true;
             this.txtROut19.Size = new System.Drawing.Size(129, 14);
@@ -6774,7 +7006,7 @@
             this.txtROut18.BackColor = System.Drawing.Color.White;
             this.txtROut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut18.ForeColor = System.Drawing.Color.Black;
-            this.txtROut18.Location = new System.Drawing.Point(370, 427);
+            this.txtROut18.Location = new System.Drawing.Point(370, 431);
             this.txtROut18.Name = "txtROut18";
             this.txtROut18.ReadOnly = true;
             this.txtROut18.Size = new System.Drawing.Size(129, 14);
@@ -6787,7 +7019,7 @@
             this.txtROut17.BackColor = System.Drawing.Color.White;
             this.txtROut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut17.ForeColor = System.Drawing.Color.Black;
-            this.txtROut17.Location = new System.Drawing.Point(370, 397);
+            this.txtROut17.Location = new System.Drawing.Point(370, 401);
             this.txtROut17.Name = "txtROut17";
             this.txtROut17.ReadOnly = true;
             this.txtROut17.Size = new System.Drawing.Size(129, 14);
@@ -6800,7 +7032,7 @@
             this.txtROut16.BackColor = System.Drawing.Color.White;
             this.txtROut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut16.ForeColor = System.Drawing.Color.Black;
-            this.txtROut16.Location = new System.Drawing.Point(370, 367);
+            this.txtROut16.Location = new System.Drawing.Point(370, 371);
             this.txtROut16.Name = "txtROut16";
             this.txtROut16.ReadOnly = true;
             this.txtROut16.Size = new System.Drawing.Size(129, 14);
@@ -6813,7 +7045,7 @@
             this.txtROut63.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut63.ForeColor = System.Drawing.Color.Black;
-            this.txtROut63.Location = new System.Drawing.Point(1080, 130);
+            this.txtROut63.Location = new System.Drawing.Point(1080, 134);
             this.txtROut63.Name = "txtROut63";
             this.txtROut63.ReadOnly = true;
             this.txtROut63.Size = new System.Drawing.Size(129, 14);
@@ -6826,7 +7058,7 @@
             this.txtROut39.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut39.ForeColor = System.Drawing.Color.Black;
-            this.txtROut39.Location = new System.Drawing.Point(720, 130);
+            this.txtROut39.Location = new System.Drawing.Point(720, 134);
             this.txtROut39.Name = "txtROut39";
             this.txtROut39.ReadOnly = true;
             this.txtROut39.Size = new System.Drawing.Size(129, 14);
@@ -6839,7 +7071,7 @@
             this.txtROut15.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut15.ForeColor = System.Drawing.Color.Black;
-            this.txtROut15.Location = new System.Drawing.Point(370, 130);
+            this.txtROut15.Location = new System.Drawing.Point(370, 134);
             this.txtROut15.Name = "txtROut15";
             this.txtROut15.ReadOnly = true;
             this.txtROut15.Size = new System.Drawing.Size(129, 14);
@@ -6852,7 +7084,7 @@
             this.txtROut51.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut51.ForeColor = System.Drawing.Color.Black;
-            this.txtROut51.Location = new System.Drawing.Point(920, 130);
+            this.txtROut51.Location = new System.Drawing.Point(920, 134);
             this.txtROut51.Name = "txtROut51";
             this.txtROut51.ReadOnly = true;
             this.txtROut51.Size = new System.Drawing.Size(129, 14);
@@ -6865,7 +7097,7 @@
             this.txtROut27.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut27.ForeColor = System.Drawing.Color.Black;
-            this.txtROut27.Location = new System.Drawing.Point(560, 130);
+            this.txtROut27.Location = new System.Drawing.Point(560, 134);
             this.txtROut27.Name = "txtROut27";
             this.txtROut27.ReadOnly = true;
             this.txtROut27.Size = new System.Drawing.Size(129, 14);
@@ -6878,7 +7110,7 @@
             this.txtROut3.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut3.ForeColor = System.Drawing.Color.Black;
-            this.txtROut3.Location = new System.Drawing.Point(210, 130);
+            this.txtROut3.Location = new System.Drawing.Point(210, 134);
             this.txtROut3.Name = "txtROut3";
             this.txtROut3.ReadOnly = true;
             this.txtROut3.Size = new System.Drawing.Size(129, 14);
@@ -6891,7 +7123,7 @@
             this.txtROut10.BackColor = System.Drawing.Color.LemonChiffon;
             this.txtROut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut10.ForeColor = System.Drawing.Color.Black;
-            this.txtROut10.Location = new System.Drawing.Point(210, 547);
+            this.txtROut10.Location = new System.Drawing.Point(210, 551);
             this.txtROut10.Name = "txtROut10";
             this.txtROut10.ReadOnly = true;
             this.txtROut10.Size = new System.Drawing.Size(129, 14);
@@ -6904,7 +7136,7 @@
             this.txtROut9.BackColor = System.Drawing.Color.White;
             this.txtROut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut9.ForeColor = System.Drawing.Color.Black;
-            this.txtROut9.Location = new System.Drawing.Point(210, 517);
+            this.txtROut9.Location = new System.Drawing.Point(210, 521);
             this.txtROut9.Name = "txtROut9";
             this.txtROut9.ReadOnly = true;
             this.txtROut9.Size = new System.Drawing.Size(129, 14);
@@ -6917,7 +7149,7 @@
             this.txtROut8.BackColor = System.Drawing.Color.White;
             this.txtROut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut8.ForeColor = System.Drawing.Color.Black;
-            this.txtROut8.Location = new System.Drawing.Point(210, 487);
+            this.txtROut8.Location = new System.Drawing.Point(210, 491);
             this.txtROut8.Name = "txtROut8";
             this.txtROut8.ReadOnly = true;
             this.txtROut8.Size = new System.Drawing.Size(129, 14);
@@ -6930,7 +7162,7 @@
             this.txtROut7.BackColor = System.Drawing.Color.White;
             this.txtROut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut7.ForeColor = System.Drawing.Color.Black;
-            this.txtROut7.Location = new System.Drawing.Point(210, 457);
+            this.txtROut7.Location = new System.Drawing.Point(210, 461);
             this.txtROut7.Name = "txtROut7";
             this.txtROut7.ReadOnly = true;
             this.txtROut7.Size = new System.Drawing.Size(129, 14);
@@ -6943,7 +7175,7 @@
             this.txtROut6.BackColor = System.Drawing.Color.White;
             this.txtROut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut6.ForeColor = System.Drawing.Color.Black;
-            this.txtROut6.Location = new System.Drawing.Point(210, 427);
+            this.txtROut6.Location = new System.Drawing.Point(210, 431);
             this.txtROut6.Name = "txtROut6";
             this.txtROut6.ReadOnly = true;
             this.txtROut6.Size = new System.Drawing.Size(129, 14);
@@ -6956,7 +7188,7 @@
             this.txtROut5.BackColor = System.Drawing.Color.White;
             this.txtROut5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut5.ForeColor = System.Drawing.Color.Black;
-            this.txtROut5.Location = new System.Drawing.Point(210, 397);
+            this.txtROut5.Location = new System.Drawing.Point(210, 401);
             this.txtROut5.Name = "txtROut5";
             this.txtROut5.ReadOnly = true;
             this.txtROut5.Size = new System.Drawing.Size(129, 14);
@@ -6969,7 +7201,7 @@
             this.txtROut62.BackColor = System.Drawing.Color.White;
             this.txtROut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut62.ForeColor = System.Drawing.Color.Black;
-            this.txtROut62.Location = new System.Drawing.Point(1080, 100);
+            this.txtROut62.Location = new System.Drawing.Point(1080, 104);
             this.txtROut62.Name = "txtROut62";
             this.txtROut62.ReadOnly = true;
             this.txtROut62.Size = new System.Drawing.Size(129, 14);
@@ -6982,7 +7214,7 @@
             this.txtROut38.BackColor = System.Drawing.Color.White;
             this.txtROut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut38.ForeColor = System.Drawing.Color.Black;
-            this.txtROut38.Location = new System.Drawing.Point(720, 100);
+            this.txtROut38.Location = new System.Drawing.Point(720, 104);
             this.txtROut38.Name = "txtROut38";
             this.txtROut38.ReadOnly = true;
             this.txtROut38.Size = new System.Drawing.Size(129, 14);
@@ -6995,7 +7227,7 @@
             this.txtROut61.BackColor = System.Drawing.Color.White;
             this.txtROut61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut61.ForeColor = System.Drawing.Color.Black;
-            this.txtROut61.Location = new System.Drawing.Point(1080, 70);
+            this.txtROut61.Location = new System.Drawing.Point(1080, 74);
             this.txtROut61.Name = "txtROut61";
             this.txtROut61.ReadOnly = true;
             this.txtROut61.Size = new System.Drawing.Size(129, 14);
@@ -7008,7 +7240,7 @@
             this.txtROut14.BackColor = System.Drawing.Color.White;
             this.txtROut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut14.ForeColor = System.Drawing.Color.Black;
-            this.txtROut14.Location = new System.Drawing.Point(370, 100);
+            this.txtROut14.Location = new System.Drawing.Point(370, 104);
             this.txtROut14.Name = "txtROut14";
             this.txtROut14.ReadOnly = true;
             this.txtROut14.Size = new System.Drawing.Size(129, 14);
@@ -7021,7 +7253,7 @@
             this.txtROut37.BackColor = System.Drawing.Color.White;
             this.txtROut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut37.ForeColor = System.Drawing.Color.Black;
-            this.txtROut37.Location = new System.Drawing.Point(720, 70);
+            this.txtROut37.Location = new System.Drawing.Point(720, 74);
             this.txtROut37.Name = "txtROut37";
             this.txtROut37.ReadOnly = true;
             this.txtROut37.Size = new System.Drawing.Size(129, 14);
@@ -7034,7 +7266,7 @@
             this.txtROut50.BackColor = System.Drawing.Color.White;
             this.txtROut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut50.ForeColor = System.Drawing.Color.Black;
-            this.txtROut50.Location = new System.Drawing.Point(920, 100);
+            this.txtROut50.Location = new System.Drawing.Point(920, 104);
             this.txtROut50.Name = "txtROut50";
             this.txtROut50.ReadOnly = true;
             this.txtROut50.Size = new System.Drawing.Size(129, 14);
@@ -7047,7 +7279,7 @@
             this.txtROut13.BackColor = System.Drawing.Color.White;
             this.txtROut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut13.ForeColor = System.Drawing.Color.Black;
-            this.txtROut13.Location = new System.Drawing.Point(370, 70);
+            this.txtROut13.Location = new System.Drawing.Point(370, 74);
             this.txtROut13.Name = "txtROut13";
             this.txtROut13.ReadOnly = true;
             this.txtROut13.Size = new System.Drawing.Size(129, 14);
@@ -7060,7 +7292,7 @@
             this.txtROut26.BackColor = System.Drawing.Color.White;
             this.txtROut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut26.ForeColor = System.Drawing.Color.Black;
-            this.txtROut26.Location = new System.Drawing.Point(560, 100);
+            this.txtROut26.Location = new System.Drawing.Point(560, 104);
             this.txtROut26.Name = "txtROut26";
             this.txtROut26.ReadOnly = true;
             this.txtROut26.Size = new System.Drawing.Size(129, 14);
@@ -7073,7 +7305,7 @@
             this.txtROut49.BackColor = System.Drawing.Color.White;
             this.txtROut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut49.ForeColor = System.Drawing.Color.Black;
-            this.txtROut49.Location = new System.Drawing.Point(920, 70);
+            this.txtROut49.Location = new System.Drawing.Point(920, 74);
             this.txtROut49.Name = "txtROut49";
             this.txtROut49.ReadOnly = true;
             this.txtROut49.Size = new System.Drawing.Size(129, 14);
@@ -7086,7 +7318,7 @@
             this.txtROut2.BackColor = System.Drawing.Color.White;
             this.txtROut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut2.ForeColor = System.Drawing.Color.Black;
-            this.txtROut2.Location = new System.Drawing.Point(210, 100);
+            this.txtROut2.Location = new System.Drawing.Point(210, 104);
             this.txtROut2.Name = "txtROut2";
             this.txtROut2.ReadOnly = true;
             this.txtROut2.Size = new System.Drawing.Size(129, 14);
@@ -7099,7 +7331,7 @@
             this.txtROut25.BackColor = System.Drawing.Color.White;
             this.txtROut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut25.ForeColor = System.Drawing.Color.Black;
-            this.txtROut25.Location = new System.Drawing.Point(560, 70);
+            this.txtROut25.Location = new System.Drawing.Point(560, 74);
             this.txtROut25.Name = "txtROut25";
             this.txtROut25.ReadOnly = true;
             this.txtROut25.Size = new System.Drawing.Size(129, 14);
@@ -7112,7 +7344,7 @@
             this.txtROut1.BackColor = System.Drawing.Color.White;
             this.txtROut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut1.ForeColor = System.Drawing.Color.Black;
-            this.txtROut1.Location = new System.Drawing.Point(210, 70);
+            this.txtROut1.Location = new System.Drawing.Point(210, 74);
             this.txtROut1.Name = "txtROut1";
             this.txtROut1.ReadOnly = true;
             this.txtROut1.Size = new System.Drawing.Size(129, 14);
@@ -7125,7 +7357,7 @@
             this.txtROut4.BackColor = System.Drawing.Color.White;
             this.txtROut4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtROut4.ForeColor = System.Drawing.Color.Black;
-            this.txtROut4.Location = new System.Drawing.Point(210, 367);
+            this.txtROut4.Location = new System.Drawing.Point(210, 371);
             this.txtROut4.Name = "txtROut4";
             this.txtROut4.ReadOnly = true;
             this.txtROut4.Size = new System.Drawing.Size(129, 14);
@@ -7136,6 +7368,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.LemonChiffon;
             this.label44.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label44.ForeColor = System.Drawing.Color.Black;
             this.label44.Location = new System.Drawing.Point(80, 45);
@@ -7147,6 +7380,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.LemonChiffon;
             this.label45.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label45.ForeColor = System.Drawing.Color.Black;
             this.label45.Location = new System.Drawing.Point(79, 342);
@@ -7737,185 +7971,53 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // label88
+            // panel161
             // 
-            this.label88.AutoSize = true;
-            this.label88.ForeColor = System.Drawing.Color.Black;
-            this.label88.Location = new System.Drawing.Point(468, 20);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(63, 12);
-            this.label88.TabIndex = 294;
-            this.label88.Text = "(단위 : 원)";
+            this.panel161.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel161.Location = new System.Drawing.Point(2, 38);
+            this.panel161.Name = "panel161";
+            this.panel161.Size = new System.Drawing.Size(1238, 28);
+            this.panel161.TabIndex = 292;
             // 
-            // label89
+            // panel162
             // 
-            this.label89.AutoSize = true;
-            this.label89.ForeColor = System.Drawing.Color.Black;
-            this.label89.Location = new System.Drawing.Point(818, 20);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(63, 12);
-            this.label89.TabIndex = 295;
-            this.label89.Text = "(단위 : 원)";
+            this.panel162.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel162.Location = new System.Drawing.Point(1, 335);
+            this.panel162.Name = "panel162";
+            this.panel162.Size = new System.Drawing.Size(1238, 28);
+            this.panel162.TabIndex = 293;
             // 
-            // label91
+            // panel163
             // 
-            this.label91.AutoSize = true;
-            this.label91.ForeColor = System.Drawing.Color.Black;
-            this.label91.Location = new System.Drawing.Point(1176, 20);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(63, 12);
-            this.label91.TabIndex = 296;
-            this.label91.Text = "(단위 : 원)";
+            this.panel163.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel163.Location = new System.Drawing.Point(1, 335);
+            this.panel163.Name = "panel163";
+            this.panel163.Size = new System.Drawing.Size(1238, 28);
+            this.panel163.TabIndex = 347;
             // 
-            // label92
+            // panel164
             // 
-            this.label92.AutoSize = true;
-            this.label92.ForeColor = System.Drawing.Color.Black;
-            this.label92.Location = new System.Drawing.Point(468, 317);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(63, 12);
-            this.label92.TabIndex = 297;
-            this.label92.Text = "(단위 : 원)";
+            this.panel164.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel164.Location = new System.Drawing.Point(0, 38);
+            this.panel164.Name = "panel164";
+            this.panel164.Size = new System.Drawing.Size(1238, 28);
+            this.panel164.TabIndex = 348;
             // 
-            // label93
+            // panel165
             // 
-            this.label93.AutoSize = true;
-            this.label93.ForeColor = System.Drawing.Color.Black;
-            this.label93.Location = new System.Drawing.Point(818, 317);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(63, 12);
-            this.label93.TabIndex = 298;
-            this.label93.Text = "(단위 : 원)";
+            this.panel165.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel165.Location = new System.Drawing.Point(1, 335);
+            this.panel165.Name = "panel165";
+            this.panel165.Size = new System.Drawing.Size(1238, 27);
+            this.panel165.TabIndex = 347;
             // 
-            // label96
+            // panel166
             // 
-            this.label96.AutoSize = true;
-            this.label96.ForeColor = System.Drawing.Color.Black;
-            this.label96.Location = new System.Drawing.Point(1179, 317);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(63, 12);
-            this.label96.TabIndex = 299;
-            this.label96.Text = "(단위 : 원)";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.ForeColor = System.Drawing.Color.Black;
-            this.label97.Location = new System.Drawing.Point(1177, 317);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(63, 12);
-            this.label97.TabIndex = 353;
-            this.label97.Text = "(단위 : 원)";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.ForeColor = System.Drawing.Color.Black;
-            this.label98.Location = new System.Drawing.Point(816, 317);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(63, 12);
-            this.label98.TabIndex = 352;
-            this.label98.Text = "(단위 : 원)";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.ForeColor = System.Drawing.Color.Black;
-            this.label99.Location = new System.Drawing.Point(466, 317);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(63, 12);
-            this.label99.TabIndex = 351;
-            this.label99.Text = "(단위 : 원)";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.ForeColor = System.Drawing.Color.Black;
-            this.label100.Location = new System.Drawing.Point(1174, 20);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(63, 12);
-            this.label100.TabIndex = 350;
-            this.label100.Text = "(단위 : 원)";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.ForeColor = System.Drawing.Color.Black;
-            this.label101.Location = new System.Drawing.Point(816, 20);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(63, 12);
-            this.label101.TabIndex = 349;
-            this.label101.Text = "(단위 : 원)";
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.ForeColor = System.Drawing.Color.Black;
-            this.label106.Location = new System.Drawing.Point(466, 20);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(63, 12);
-            this.label106.TabIndex = 348;
-            this.label106.Text = "(단위 : 원)";
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.ForeColor = System.Drawing.Color.Black;
-            this.label107.Location = new System.Drawing.Point(1176, 317);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(63, 12);
-            this.label107.TabIndex = 354;
-            this.label107.Text = "(단위 : 원)";
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.ForeColor = System.Drawing.Color.Black;
-            this.label108.Location = new System.Drawing.Point(815, 317);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(63, 12);
-            this.label108.TabIndex = 353;
-            this.label108.Text = "(단위 : 원)";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.ForeColor = System.Drawing.Color.Black;
-            this.label111.Location = new System.Drawing.Point(465, 317);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(63, 12);
-            this.label111.TabIndex = 352;
-            this.label111.Text = "(단위 : 원)";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.ForeColor = System.Drawing.Color.Black;
-            this.label112.Location = new System.Drawing.Point(1173, 20);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(63, 12);
-            this.label112.TabIndex = 351;
-            this.label112.Text = "(단위 : 원)";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.ForeColor = System.Drawing.Color.Black;
-            this.label113.Location = new System.Drawing.Point(815, 20);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(63, 12);
-            this.label113.TabIndex = 350;
-            this.label113.Text = "(단위 : 원)";
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.ForeColor = System.Drawing.Color.Black;
-            this.label114.Location = new System.Drawing.Point(465, 20);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(63, 12);
-            this.label114.TabIndex = 349;
-            this.label114.Text = "(단위 : 원)";
+            this.panel166.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel166.Location = new System.Drawing.Point(2, 38);
+            this.panel166.Name = "panel166";
+            this.panel166.Size = new System.Drawing.Size(1238, 27);
+            this.panel166.TabIndex = 348;
             // 
             // FormUserSimulateOutput
             // 
@@ -8582,6 +8684,12 @@
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Panel panel161;
+        private System.Windows.Forms.Panel panel162;
+        private System.Windows.Forms.Panel panel163;
+        private System.Windows.Forms.Panel panel164;
+        private System.Windows.Forms.Panel panel165;
+        private System.Windows.Forms.Panel panel166;
 
     }
 }
