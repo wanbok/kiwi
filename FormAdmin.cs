@@ -27,6 +27,7 @@ namespace KIWI
 
         private TextBox[] txtExistedAsp = null;        //기존 ASP
         private TextBox[] txtInputAsp = null;        //ASP 입력창
+        private TextBox[] txtAInputAsp = null;        //ASP 출력창
 
         private Double[] 기존업계평균 = null;
         private Double[] 업계평균 = null;
@@ -69,8 +70,8 @@ namespace KIWI
             };
 
             txtExistedAsp = new TextBox[8] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8 };
-
             txtInputAsp = new TextBox[8] { 유통모델_LG, 유통모델_SS, 유통모델_소계, 사업자모델_LG, 사업자모델_SS, 사업자모델_소계, ASP_전체계, 리베이트 };
+            txtAInputAsp = new TextBox[8] { out유통모델_LG, out유통모델_SS, out유통모델_소계, out사업자모델_LG, out사업자모델_SS, out사업자모델_소계, outASP_전체계, out리베이트 };
 
 
 
@@ -201,9 +202,9 @@ namespace KIWI
                 업계평균[k++] += CommonUtil.Division(mDI.get도매_수익_월평균관리수수료(), mBI.get누적가입자수_합계());
                 업계평균[k++] += CommonUtil.Division(mDI.get도매_수익_CS관리수수료(), mBI.get누적가입자수_합계());
 
-                //nIAOut[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_신규() , mBI.get도매_월평균판매대수_신규());
+                //업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_신규() , mBI.get도매_월평균판매대수_신규());
                 업계평균[k++] += mDI.get도매_비용_대리점투자금액_신규();// 이미 단위금액임;
-                //nIAOut[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_기변() , mBI.get도매_월평균판매대수_기변());
+                //업계평균[k++] += CommonUtil.Division(mDI.get도매_비용_대리점투자금액_기변() , mBI.get도매_월평균판매대수_기변());
                 업계평균[k++] += mDI.get도매_비용_대리점투자금액_기변();// 이미 단위금액임;
                 업계평균[k++] += mDI.get도매_비용_직원급여_간부급(); // 단위금액
                 업계평균[k++] += mDI.get도매_비용_직원급여_평사원(); // 단위금액
@@ -580,7 +581,29 @@ namespace KIWI
             setTxtInput_TextChanged(txtAOut[index]);
         }
 
-        
+        private void txtASP_TextChanged(object sender, EventArgs e)
+        {
+            setTxtInput_TextChanged(sender);
+
+            int index = -1;
+            index = Array.IndexOf(txtInputAsp, (sender as TextBox));
+            if (index < 0) return;
+            Int64 convertedA;
+            Int64 result;
+            try
+            {
+                convertedA = Convert.ToInt64(txtInputAsp[index].Text.Replace(",", ""));
+            }
+            catch (FormatException eFormat)
+            {
+                txt업계평균[index].Text = "0";
+                convertedA = Convert.ToInt64(txtInputAsp[index].Text);
+                MessageBox.Show("문서에 숫자가 아닌 문자가 있습니다.");
+            }
+            result = convertedA;
+            txtAInputAsp[index].Text = result.ToString();
+            setTxtInput_TextChanged(txtAInputAsp[index]);
+        }
 
         private string setTxtInput_TextChanged(object sender)
         {
@@ -617,7 +640,6 @@ namespace KIWI
 
             return _TextBox.Text;
         }
-
 
         private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
         {
@@ -704,21 +726,6 @@ namespace KIWI
             {
                 txt.Text = "0";
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
