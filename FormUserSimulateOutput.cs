@@ -275,7 +275,7 @@ namespace KIWI
 
                     if (chart.Name == "chart1")
                     {
-                        xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
+                        xValues = new string[6] { "누적가입자 수수료", "CS관리수수료", "월단위 업무취급 수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)", "직영매장 판매수익" };
 
                         yValues = new double[6]{ Convert.ToDouble(txtOut17.Text), Convert.ToDouble(txtOut18.Text), Convert.ToDouble(txtOut19.Text), 
                             Convert.ToDouble(txtOut20.Text), Convert.ToDouble(txtOut21.Text), Convert.ToDouble(txtOut22.Text) };
@@ -292,7 +292,7 @@ namespace KIWI
                     }
                     else if (chart.Name == "chart2")
                     {
-                        xValues = new string[4] { "A", "B", "C", "D" };
+                        xValues = new string[4] { "누적가입자 수수료", "CS관리수수료", "사업자모델 매입에 따른 추가수익", "유통모델 매입에 따른 추가수익(현금+Volume)" };
 
                         yValues = new double[4]{ Convert.ToDouble(txtWOut15.Text), Convert.ToDouble(txtWOut16.Text), Convert.ToDouble(txtWOut17.Text), 
                             Convert.ToDouble(txtWOut18.Text) };
@@ -309,7 +309,7 @@ namespace KIWI
                     }
                     else if (chart.Name == "chart3")
                     {
-                        xValues = new string[2] { "A", "B" };
+                        xValues = new string[2] { "월단위 업무취급 수수료", "직영매장 판매수익" };
 
                         yValues = new double[2] { Convert.ToDouble(txtROut13.Text), Convert.ToDouble(txtROut14.Text) };
 
@@ -323,7 +323,7 @@ namespace KIWI
                     }
                     else if (chart.Name == "chart4")
                     {
-                        xValues = new string[7] { "A", "B", "C", "D", "E", "F", "G" };
+                        xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
                         yValues = new double[7]{ Convert.ToDouble(txtOut24.Text), Convert.ToDouble(txtOut25.Text), Convert.ToDouble(txtOut26.Text), 
                             Convert.ToDouble(txtOut27.Text), Convert.ToDouble(txtOut28.Text), Convert.ToDouble(txtOut29.Text), Convert.ToDouble(txtOut30.Text) };
@@ -340,7 +340,7 @@ namespace KIWI
                     }
                     else if (chart.Name == "chart5")
                     {
-                        xValues = new string[7] { "A", "B", "C", "D", "E", "F", "G" };
+                        xValues = new string[7] { "대리점 투자비용", "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
                         yValues = new double[7]{ Convert.ToDouble(txtWOut20.Text), Convert.ToDouble(txtWOut21.Text), Convert.ToDouble(txtWOut22.Text),
                         Convert.ToDouble(txtWOut23.Text), Convert.ToDouble(txtWOut24.Text), Convert.ToDouble(txtWOut25.Text), Convert.ToDouble(txtWOut26.Text) };
@@ -357,7 +357,7 @@ namespace KIWI
                     }
                     else if (chart.Name == "chart6")
                     {
-                        xValues = new string[6] { "A", "B", "C", "D", "E", "F" };
+                        xValues = new string[6] { "인건비(급여,복리후생비)", "임차료", "이자비용", "부가세", "법인세", "기타관리비용" };
 
                         yValues = new double[6] { Convert.ToDouble(txtROut16.Text), Convert.ToDouble(txtROut17.Text), Convert.ToDouble(txtROut18.Text),
                         Convert.ToDouble(txtROut19.Text), Convert.ToDouble(txtROut20.Text), Convert.ToDouble(txtROut21.Text) };

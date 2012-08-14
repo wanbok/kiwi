@@ -27,6 +27,7 @@ namespace KIWI
 
         private TextBox[] txtExistedAsp = null;        //기존 ASP
         private TextBox[] txtInputAsp = null;        //ASP 입력창
+        private TextBox[] txtAInputAsp = null;        //ASP 입력창
 
         private Double[] 기존업계평균 = null;
         private Double[] 업계평균 = null;
@@ -71,6 +72,7 @@ namespace KIWI
             txtExistedAsp = new TextBox[8] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8 };
 
             txtInputAsp = new TextBox[8] { 유통모델_LG, 유통모델_SS, 유통모델_소계, 사업자모델_LG, 사업자모델_SS, 사업자모델_소계, ASP_전체계, 리베이트 };
+            txtAInputAsp = new TextBox[8] { out유통모델_LG, out유통모델_SS, out유통모델_소계, out사업자모델_LG, out사업자모델_SS, out사업자모델_소계, outASP_전체계, out리베이트 };
 
 
 
@@ -167,10 +169,10 @@ namespace KIWI
                 item.SubItems.Add(지역);
                 item.SubItems.Add(대리점명);
                 item.SubItems.Add(마케터);
-                item.SubItems.Add(단위당손익);
-                item.SubItems.Add(월capa);
-                item.SubItems.Add(가입자수);
-                item.SubItems.Add(직영점판매수익);
+                item.SubItems.Add(String.Format("{0:#,###}", Convert.ToDouble(단위당손익)));
+                item.SubItems.Add(String.Format("{0:#,###}", Convert.ToDouble(월capa)));
+                item.SubItems.Add(String.Format("{0:#,###}", Convert.ToDouble(가입자수)));
+                item.SubItems.Add(String.Format("{0:#,###}", Convert.ToDouble(직영점판매수익)));
                 if (선택여부 == "Y")
                 {
                     item.SubItems.Add(CHECK);
@@ -251,10 +253,10 @@ namespace KIWI
                 mBI.get지역(),
                 mBI.get대리점(),
                 mBI.get마케터(),
-                mDI.get소매_수익_직영매장판매수익().ToString(),
+                mRD.전체손익계.ToString(),
                 mBI.get월평균판매대수_소계_합계().ToString(),
                 mBI.get누적가입자수_합계().ToString(),
-                mBI.get거래선수_직영점_합계().ToString(),
+                mDI.get소매_수익_직영매장판매수익().ToString(),
                 "Y",
                 file,
                 mBI, mDI, mRD
@@ -279,10 +281,10 @@ namespace KIWI
                 mBI.get지역(),
                 mBI.get대리점(),
                 mBI.get마케터(),
-                mDI.get소매_수익_직영매장판매수익().ToString(),
+                mRD.전체손익계.ToString(),
                 mBI.get월평균판매대수_소계_합계().ToString(),
                 mBI.get누적가입자수_합계().ToString(),
-                mBI.get거래선수_직영점_합계().ToString(),
+                mDI.get소매_수익_직영매장판매수익().ToString(),
                 "Y",
                 file,
                 mBI, mDI, mRD
@@ -580,6 +582,31 @@ namespace KIWI
             setTxtInput_TextChanged(txtAOut[index]);
         }
 
+        private void txtASPOut_TextChanged(object sender, EventArgs e)
+        {
+            setTxtInput_TextChanged(sender);
+
+            int index = -1;
+            index = Array.IndexOf(txtInputAsp, (sender as TextBox));
+            if (index < 0) return;
+
+            Int64 convertedA;
+            Int64 result;
+            try
+            {
+                convertedA = Convert.ToInt64(txtInputAsp[index].Text.Replace(",", ""));
+            }
+            catch (FormatException eFormat)
+            {
+                txtInputAsp[index].Text = "0";
+                convertedA = Convert.ToInt64(txtInputAsp[index].Text);
+                MessageBox.Show("문서에 숫자가 아닌 문자가 있습니다.");
+            }
+            result = convertedA;
+            txtAInputAsp[index].Text = result.ToString();
+            setTxtInput_TextChanged(txtAInputAsp[index]);
+        }
+
         
 
         private string setTxtInput_TextChanged(object sender)
@@ -704,21 +731,6 @@ namespace KIWI
             {
                 txt.Text = "0";
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

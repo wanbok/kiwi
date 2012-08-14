@@ -1464,11 +1464,12 @@
             // 
             // txtDetail72
             // 
-            this.txtDetail72.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail72.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail72.ForeColor = System.Drawing.Color.Black;
             this.txtDetail72.Location = new System.Drawing.Point(600, 1065);
             this.txtDetail72.Name = "txtDetail72";
+            this.txtDetail72.ReadOnly = true;
             this.txtDetail72.Size = new System.Drawing.Size(108, 21);
             this.txtDetail72.TabIndex = 35;
             this.txtDetail72.Text = "0";
@@ -1477,7 +1478,7 @@
             // 
             // txtDetail36
             // 
-            this.txtDetail36.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail36.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail36.Enabled = false;
             this.txtDetail36.ForeColor = System.Drawing.Color.Black;
@@ -1492,11 +1493,12 @@
             // 
             // txtDetail63
             // 
-            this.txtDetail63.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail63.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail63.ForeColor = System.Drawing.Color.Black;
             this.txtDetail63.Location = new System.Drawing.Point(600, 795);
             this.txtDetail63.Name = "txtDetail63";
+            this.txtDetail63.ReadOnly = true;
             this.txtDetail63.Size = new System.Drawing.Size(108, 21);
             this.txtDetail63.TabIndex = 26;
             this.txtDetail63.Text = "0";
@@ -1505,7 +1507,7 @@
             // 
             // txtDetail27
             // 
-            this.txtDetail27.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail27.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail27.Enabled = false;
             this.txtDetail27.ForeColor = System.Drawing.Color.Black;
@@ -1551,11 +1553,12 @@
             // 
             // txtDetail53
             // 
-            this.txtDetail53.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail53.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail53.ForeColor = System.Drawing.Color.Black;
             this.txtDetail53.Location = new System.Drawing.Point(600, 505);
             this.txtDetail53.Name = "txtDetail53";
+            this.txtDetail53.ReadOnly = true;
             this.txtDetail53.Size = new System.Drawing.Size(108, 21);
             this.txtDetail53.TabIndex = 16;
             this.txtDetail53.Text = "0";
@@ -1564,7 +1567,7 @@
             // 
             // txtDetail17
             // 
-            this.txtDetail17.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail17.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail17.Enabled = false;
             this.txtDetail17.ForeColor = System.Drawing.Color.Black;
@@ -1579,11 +1582,12 @@
             // 
             // txtDetail42
             // 
-            this.txtDetail42.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail42.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetail42.ForeColor = System.Drawing.Color.Black;
             this.txtDetail42.Location = new System.Drawing.Point(600, 195);
             this.txtDetail42.Name = "txtDetail42";
+            this.txtDetail42.ReadOnly = true;
             this.txtDetail42.Size = new System.Drawing.Size(108, 21);
             this.txtDetail42.TabIndex = 5;
             this.txtDetail42.Text = "0";
@@ -1592,7 +1596,7 @@
             // 
             // txtDetail6
             // 
-            this.txtDetail6.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtDetail6.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDetail6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDetail6.Enabled = false;
             this.txtDetail6.ForeColor = System.Drawing.Color.Black;
@@ -1608,7 +1612,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label26.BackColor = System.Drawing.Color.Gainsboro;
             this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.Location = new System.Drawing.Point(230, 1070);
             this.label26.Name = "label26";
@@ -1619,7 +1623,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label24.BackColor = System.Drawing.Color.Gainsboro;
             this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Location = new System.Drawing.Point(230, 800);
             this.label24.Name = "label24";
@@ -1640,7 +1644,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label22.BackColor = System.Drawing.Color.Gainsboro;
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(230, 510);
             this.label22.Name = "label22";
@@ -1651,7 +1655,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label21.BackColor = System.Drawing.Color.Gainsboro;
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(200, 200);
             this.label21.Name = "label21";
@@ -3801,7 +3805,7 @@
             // 
             // panel43
             // 
-            this.panel43.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel43.BackColor = System.Drawing.Color.Gainsboro;
             this.panel43.Location = new System.Drawing.Point(181, 190);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(598, 31);
@@ -3809,7 +3813,7 @@
             // 
             // panel44
             // 
-            this.panel44.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel44.BackColor = System.Drawing.Color.Gainsboro;
             this.panel44.Location = new System.Drawing.Point(181, 500);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(598, 30);
@@ -3817,7 +3821,7 @@
             // 
             // panel45
             // 
-            this.panel45.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel45.BackColor = System.Drawing.Color.Gainsboro;
             this.panel45.Location = new System.Drawing.Point(181, 789);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(598, 30);
@@ -3825,7 +3829,7 @@
             // 
             // panel46
             // 
-            this.panel46.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel46.BackColor = System.Drawing.Color.Gainsboro;
             this.panel46.Location = new System.Drawing.Point(181, 1059);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(598, 30);

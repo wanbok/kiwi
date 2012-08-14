@@ -148,7 +148,7 @@ namespace KIWI
         //상세입력
         private void getDetail(Boolean isSimulated)
         {
-            CBusinessData di = isSimulated ? CDataControl.g_SimDetailInput : CDataControl.g_DetailInput;
+            CBusinessData di = CDataControl.g_DetailInput;
             // 셀에서 데이터 가져오기
 
             txtDetail[0].Text = di.getstr도매_수익_월평균관리수수료();
@@ -204,14 +204,15 @@ namespace KIWI
                 ).ToString();
 
 
+            di = isSimulated ? CDataControl.g_SimDetailInput : CDataControl.g_DetailInput;
             txtDetail[36].Text  = di.getstr도매_수익_월평균관리수수료();
             txtDetail[37].Text =  di.getstr도매_수익_CS관리수수료();
             txtDetail[38].Text =  di.getstr도매_수익_사업자모델매입관련추가수익();
             txtDetail[39].Text =  di.getstr도매_수익_유통모델매입관련추가수익_현금DC();
             txtDetail[40].Text =  di.getstr도매_수익_유통모델매입관련추가수익_VolumeDC();
-            txtDetail[41].Text =  (CommonUtil.StringToDoubleVal(txtDetail[0].Text) + CommonUtil.StringToDoubleVal(txtDetail[1].Text) 
-                + CommonUtil.StringToDoubleVal(txtDetail[2].Text) + CommonUtil.StringToDoubleVal(txtDetail[3].Text)  
-                + CommonUtil.StringToDoubleVal(txtDetail[4].Text) ).ToString(); 
+            txtDetail[41].Text =  (CommonUtil.StringToDoubleVal(txtDetail[36].Text) + CommonUtil.StringToDoubleVal(txtDetail[37].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[38].Text) + CommonUtil.StringToDoubleVal(txtDetail[39].Text)  
+                + CommonUtil.StringToDoubleVal(txtDetail[40].Text) ).ToString(); 
             txtDetail[42].Text  = di.getstr도매_비용_대리점투자금액_신규();
             txtDetail[43].Text =  di.getstr도매_비용_대리점투자금액_기변();
             txtDetail[44].Text =  di.getstr도매_비용_직원급여_간부급();
@@ -222,24 +223,24 @@ namespace KIWI
             txtDetail[49].Text =   di.getstr도매_비용_지급수수료();
             txtDetail[50].Text =   di.getstr도매_비용_판매촉진비();
             txtDetail[51].Text =   di.getstr도매_비용_건물관리비();
-            txtDetail[52].Text =  (CommonUtil.StringToDoubleVal(txtDetail[6].Text) + CommonUtil.StringToDoubleVal(txtDetail[7].Text)
-               + CommonUtil.StringToDoubleVal(txtDetail[8].Text) + CommonUtil.StringToDoubleVal(txtDetail[9].Text)  
-               + CommonUtil.StringToDoubleVal(txtDetail[10].Text) + CommonUtil.StringToDoubleVal(txtDetail[11].Text)  
-               + CommonUtil.StringToDoubleVal(txtDetail[12].Text) + CommonUtil.StringToDoubleVal(txtDetail[13].Text) 
-               + CommonUtil.StringToDoubleVal(txtDetail[14].Text) + CommonUtil.StringToDoubleVal(txtDetail[15].Text) 
+            txtDetail[52].Text =  (CommonUtil.StringToDoubleVal(txtDetail[42].Text) + CommonUtil.StringToDoubleVal(txtDetail[43].Text)
+               + CommonUtil.StringToDoubleVal(txtDetail[44].Text) + CommonUtil.StringToDoubleVal(txtDetail[45].Text)  
+               + CommonUtil.StringToDoubleVal(txtDetail[46].Text) + CommonUtil.StringToDoubleVal(txtDetail[47].Text)  
+               + CommonUtil.StringToDoubleVal(txtDetail[48].Text) + CommonUtil.StringToDoubleVal(txtDetail[49].Text) 
+               + CommonUtil.StringToDoubleVal(txtDetail[50].Text) + CommonUtil.StringToDoubleVal(txtDetail[51].Text) 
                ).ToString();
             txtDetail[53].Text  = di.getstr소매_수익_월평균업무취급수수료();
             txtDetail[54].Text =  di.getstr소매_수익_직영매장판매수익();
-            txtDetail[55].Text =  (CommonUtil.StringToDoubleVal(txtDetail[17].Text) + CommonUtil.StringToDoubleVal(txtDetail[18].Text)).ToString();
+            txtDetail[55].Text =  (CommonUtil.StringToDoubleVal(txtDetail[53].Text) + CommonUtil.StringToDoubleVal(txtDetail[54].Text)).ToString();
             txtDetail[56].Text =  di.getstr소매_비용_직원급여_간부급();
             txtDetail[57].Text =  di.getstr소매_비용_직원급여_평사원();
             txtDetail[58].Text =  di.getstr소매_비용_지급임차료();
             txtDetail[59].Text =  di.getstr소매_비용_지급수수료();
             txtDetail[60].Text =  di.getstr소매_비용_판매촉진비();
             txtDetail[61].Text =  di.getstr소매_비용_건물관리비();
-            txtDetail[62].Text =  (CommonUtil.StringToDoubleVal(txtDetail[20].Text) + CommonUtil.StringToDoubleVal(txtDetail[21].Text)
-                + CommonUtil.StringToDoubleVal(txtDetail[22].Text) + CommonUtil.StringToDoubleVal(txtDetail[23].Text) 
-                + CommonUtil.StringToDoubleVal(txtDetail[24].Text) + CommonUtil.StringToDoubleVal(txtDetail[25].Text)).ToString();
+            txtDetail[62].Text =  (CommonUtil.StringToDoubleVal(txtDetail[56].Text) + CommonUtil.StringToDoubleVal(txtDetail[57].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[58].Text) + CommonUtil.StringToDoubleVal(txtDetail[59].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[60].Text) + CommonUtil.StringToDoubleVal(txtDetail[61].Text)).ToString();
 
             txtDetail[63].Text = di.getstr도소매_비용_복리후생비();
             txtDetail[64].Text = di.getstr도소매_비용_통신비();
@@ -249,10 +250,10 @@ namespace KIWI
             txtDetail[68].Text = di.getstr도소매_비용_부가세();
             txtDetail[69].Text = di.getstr도소매_비용_법인세();
             txtDetail[70].Text = di.getstr도소매_비용_기타();
-            txtDetail[71].Text =  (CommonUtil.StringToDoubleVal(txtDetail[27].Text) + CommonUtil.StringToDoubleVal(txtDetail[28].Text)
-                + CommonUtil.StringToDoubleVal(txtDetail[29].Text) + CommonUtil.StringToDoubleVal(txtDetail[30].Text) 
-                + CommonUtil.StringToDoubleVal(txtDetail[31].Text) + CommonUtil.StringToDoubleVal(txtDetail[32].Text) 
-                + CommonUtil.StringToDoubleVal(txtDetail[33].Text) + CommonUtil.StringToDoubleVal(txtDetail[34].Text) 
+            txtDetail[71].Text =  (CommonUtil.StringToDoubleVal(txtDetail[63].Text) + CommonUtil.StringToDoubleVal(txtDetail[64].Text)
+                + CommonUtil.StringToDoubleVal(txtDetail[65].Text) + CommonUtil.StringToDoubleVal(txtDetail[66].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[67].Text) + CommonUtil.StringToDoubleVal(txtDetail[68].Text) 
+                + CommonUtil.StringToDoubleVal(txtDetail[69].Text) + CommonUtil.StringToDoubleVal(txtDetail[70].Text) 
                 ).ToString(); 
 
         }
@@ -264,7 +265,7 @@ namespace KIWI
             beanch = CDataControl.g_BasicInput.get대리점();
             name = CDataControl.g_BasicInput.get마케터();
 
-            CBasicInput bi = isSimulated ? CDataControl.g_SimBasicInput : CDataControl.g_BasicInput;
+            CBasicInput bi = CDataControl.g_BasicInput;
 
             txtInput[0].Text = bi.getstr도매_누적가입자수();
             txtInput[1].Text = bi.getstr도매_월평균판매대수_신규();
@@ -275,6 +276,15 @@ namespace KIWI
             txtInput[6].Text = bi.getstr도매_거래선수_판매점();
             txtInput[7].Text = bi.getstr도매_직원수_간부급();
             txtInput[8].Text = bi.getstr도매_직원수_평사원();
+
+            txtInput[18].Text = bi.getstr소매_월평균판매대수_신규();
+            txtInput[19].Text = bi.getstr소매_월평균판매대수_기변();
+            txtInput[20].Text = bi.getstr소매_거래선수_직영점();
+            txtInput[21].Text = bi.getstr소매_직원수_간부급();
+            txtInput[22].Text = bi.getstr소매_직원수_평사원();
+
+            bi = isSimulated ? CDataControl.g_SimBasicInput : CDataControl.g_BasicInput;
+
             txtInput[9].Text = bi.getstr도매_누적가입자수();
             txtInput[10].Text = bi.getstr도매_월평균판매대수_신규();
             txtInput[11].Text = bi.getstr도매_월평균판매대수_기변();
@@ -284,12 +294,6 @@ namespace KIWI
             txtInput[15].Text = bi.getstr도매_거래선수_판매점();
             txtInput[16].Text = bi.getstr도매_직원수_간부급();
             txtInput[17].Text = bi.getstr도매_직원수_평사원();
-
-            txtInput[18].Text = bi.getstr소매_월평균판매대수_신규();
-            txtInput[19].Text = bi.getstr소매_월평균판매대수_기변();
-            txtInput[20].Text = bi.getstr소매_거래선수_직영점();
-            txtInput[21].Text = bi.getstr소매_직원수_간부급();
-            txtInput[22].Text = bi.getstr소매_직원수_평사원();
 
             txtInput[23].Text = bi.getstr소매_월평균판매대수_신규();
             txtInput[24].Text = bi.getstr소매_월평균판매대수_기변();
@@ -861,8 +865,6 @@ namespace KIWI
         {
             this.Close();
         }
-
-      
 
     }
 }

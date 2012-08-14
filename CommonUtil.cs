@@ -44,6 +44,7 @@ namespace KIWI
 
             return sumManager.ToString();
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -273,6 +274,7 @@ namespace KIWI
             ReadExcelFileToDataReport(workSheet3);
             GetExcel_WorkBook_CLOSE();
         }
+
         public static void WriteDataToExcelFile(string fileName, bool isSimul)
         {
             GetExcel_WorkBook(fileName);
@@ -297,7 +299,6 @@ namespace KIWI
             }
             WriteExcelFileToDataReport(workSheet3);
             GetExcel_WorkBook_CLOSE();
-
         }
 
         public static void ReadFileManagerToData()
@@ -1168,9 +1169,9 @@ namespace KIWI
 
         private static void WriteExcelFileToDataReport(excel.Worksheet workSheet3)
         {
-            workSheet3.get_Range("B4", Type.Missing).Value2 = CDataControl.g_ReportData.get분석내용_및_대리점_활동방향();
-            workSheet3.get_Range("C4", Type.Missing).Value2 = CDataControl.g_ReportData.getLG_지원_활동();
-            workSheet3.get_Range("D4", Type.Missing).Value2 = CDataControl.g_ReportData.get배경_및_이슈();
+            workSheet3.get_Range("B4", Type.Missing).Value2 = CDataControl.g_ReportData.get배경_및_이슈();
+            workSheet3.get_Range("C4", Type.Missing).Value2 = CDataControl.g_ReportData.get분석내용_및_대리점_활동방향();
+            workSheet3.get_Range("D4", Type.Missing).Value2 = CDataControl.g_ReportData.getLG_지원_활동();
         }
 
         public static void writeLGEFile(String filepath, String spliter, int type = 파일종류_기본)
@@ -1287,7 +1288,7 @@ namespace KIWI
                 //          총액
                 //              수익
                 rdt.set도매_수익_가입자관리수수료(i == 0 ? di.get도매_수익_월평균관리수수료() : CommonUtil.Division(di.get도매_수익_월평균관리수수료(), bi.get도매_누적가입자수()) * 18 * bi.get월평균판매대수_소계_합계());
-                rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료());
+                rdt.set도매_수익_CS관리수수료(i == 0 ? di.get도매_수익_CS관리수수료() : CommonUtil.Division(di.get도매_수익_CS관리수수료(), bi.get도매_누적가입자수()) * 18 * bi.get월평균판매대수_소계_합계());
                 rdt.set도매_수익_사업자모델매입에따른추가수익(di.get도매_수익_사업자모델매입관련추가수익());
                 rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume(di.get도매_수익_유통모델매입관련추가수익_현금DC() + di.get도매_수익_유통모델매입관련추가수익_VolumeDC());
                 rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();

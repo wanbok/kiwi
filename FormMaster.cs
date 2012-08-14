@@ -10,7 +10,6 @@ using excel = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
 using System.IO;
 
-
 namespace KIWI
 {
     public partial class FormMaster : Form
@@ -85,6 +84,7 @@ namespace KIWI
 
                         // 파일에서 읽음 체크
                         CommonUtil.isLoadedFromFile = true;
+                        CommonUtil.isSimulatedOnce = false;
                     }
                     catch (Exception ex)
                     {

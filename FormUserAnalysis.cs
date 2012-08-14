@@ -91,23 +91,9 @@ namespace KIWI
                                     + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
                                     , CDataControl.g_BasicInput.get도매_직원수_소계());
             
-            
-            
-            String str = (판촉비비중*100).ToString().Substring(0, 4);
-
-            if (Convert.ToDouble(판촉비비중.ToString().Substring(3, 3)) >= 5)
-            {
-                Double i = Convert.ToDouble(str) + 0.01;
-                textBox72.Text = i.ToString() ;//판촉비비중.ToString("P");
-            }
-            else
-            {
-                textBox72.Text = str;//판촉비비중.ToString("P");
-            }
-            
             textBox69.Text = 가입자당ARPU.ToString();
             textBox71.Text = 월평균인건비.ToString();
-            //textBox72.Text = str;//판촉비비중.ToString("P");
+            textBox72.Text = (판촉비비중 * 100).ToString("0.00");
             textBox74.Text = 인당판매수량.ToString();
         }
 
@@ -199,9 +185,7 @@ namespace KIWI
                 else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.down1; }
                 else { picCompare[i].Image = KIWI.Properties.Resources.equal; }
             }
-
         }
-
 
         // chart1 - 수익계정 전체    CResultData
         //private void OpenChart(Chart chart, excel.Worksheet sheet)

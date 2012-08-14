@@ -311,6 +311,14 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
+            this.out리베이트 = new System.Windows.Forms.TextBox();
+            this.outASP_전체계 = new System.Windows.Forms.TextBox();
+            this.out사업자모델_소계 = new System.Windows.Forms.TextBox();
+            this.out사업자모델_SS = new System.Windows.Forms.TextBox();
+            this.out사업자모델_LG = new System.Windows.Forms.TextBox();
+            this.out유통모델_소계 = new System.Windows.Forms.TextBox();
+            this.out유통모델_SS = new System.Windows.Forms.TextBox();
+            this.out유통모델_LG = new System.Windows.Forms.TextBox();
             this.panel162.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel137.SuspendLayout();
@@ -377,7 +385,6 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             this.listView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listView1_KeyDown);
             this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
@@ -2038,7 +2045,6 @@
             this.label1.Size = new System.Drawing.Size(88, 12);
             this.label1.TabIndex = 477;
             this.label1.Text = "관리자 수정값";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel162
             // 
@@ -3127,7 +3133,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Multiselect = true;
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // panel20
             // 
@@ -3179,7 +3184,7 @@
             this.유통모델_LG.Text = "0";
             this.유통모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
-            this.유통모델_LG.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_LG.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.유통모델_LG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_LG
@@ -3194,7 +3199,7 @@
             this.사업자모델_LG.Text = "0";
             this.사업자모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
-            this.사업자모델_LG.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_LG.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.사업자모델_LG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_SS
@@ -3209,7 +3214,7 @@
             this.사업자모델_SS.Text = "0";
             this.사업자모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
-            this.사업자모델_SS.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_SS.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.사업자모델_SS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 유통모델_SS
@@ -3224,7 +3229,7 @@
             this.유통모델_SS.Text = "0";
             this.유통모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
-            this.유통모델_SS.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_SS.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.유통모델_SS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 사업자모델_소계
@@ -3239,7 +3244,7 @@
             this.사업자모델_소계.Text = "0";
             this.사업자모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
-            this.사업자모델_소계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.사업자모델_소계.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.사업자모델_소계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 유통모델_소계
@@ -3254,7 +3259,7 @@
             this.유통모델_소계.Text = "0";
             this.유통모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
-            this.유통모델_소계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.유통모델_소계.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.유통모델_소계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // ASP_전체계
@@ -3269,7 +3274,7 @@
             this.ASP_전체계.Text = "0";
             this.ASP_전체계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ASP_전체계.Click += new System.EventHandler(this.txtInput1_Click);
-            this.ASP_전체계.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.ASP_전체계.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.ASP_전체계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // 리베이트
@@ -3284,7 +3289,7 @@
             this.리베이트.Text = "0";
             this.리베이트.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.리베이트.Click += new System.EventHandler(this.txtInput1_Click);
-            this.리베이트.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
+            this.리베이트.TextChanged += new System.EventHandler(this.txtASPOut_TextChanged);
             this.리베이트.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput2_KeyPress);
             // 
             // textBox1
@@ -3707,6 +3712,118 @@
             this.panel24.Size = new System.Drawing.Size(1051, 24);
             this.panel24.TabIndex = 1000;
             // 
+            // out리베이트
+            // 
+            this.out리베이트.BackColor = System.Drawing.SystemColors.Control;
+            this.out리베이트.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out리베이트.Enabled = false;
+            this.out리베이트.ForeColor = System.Drawing.Color.Black;
+            this.out리베이트.Location = new System.Drawing.Point(934, 1220);
+            this.out리베이트.Name = "out리베이트";
+            this.out리베이트.ReadOnly = true;
+            this.out리베이트.Size = new System.Drawing.Size(108, 14);
+            this.out리베이트.TabIndex = 1008;
+            this.out리베이트.Text = "0";
+            this.out리베이트.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // outASP_전체계
+            // 
+            this.outASP_전체계.BackColor = System.Drawing.SystemColors.Control;
+            this.outASP_전체계.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.outASP_전체계.Enabled = false;
+            this.outASP_전체계.ForeColor = System.Drawing.Color.Black;
+            this.outASP_전체계.Location = new System.Drawing.Point(934, 1184);
+            this.outASP_전체계.Name = "outASP_전체계";
+            this.outASP_전체계.ReadOnly = true;
+            this.outASP_전체계.Size = new System.Drawing.Size(108, 14);
+            this.outASP_전체계.TabIndex = 1007;
+            this.outASP_전체계.Text = "0";
+            this.outASP_전체계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out사업자모델_소계
+            // 
+            this.out사업자모델_소계.BackColor = System.Drawing.SystemColors.Control;
+            this.out사업자모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out사업자모델_소계.Enabled = false;
+            this.out사업자모델_소계.ForeColor = System.Drawing.Color.Black;
+            this.out사업자모델_소계.Location = new System.Drawing.Point(934, 1148);
+            this.out사업자모델_소계.Name = "out사업자모델_소계";
+            this.out사업자모델_소계.ReadOnly = true;
+            this.out사업자모델_소계.Size = new System.Drawing.Size(108, 14);
+            this.out사업자모델_소계.TabIndex = 1006;
+            this.out사업자모델_소계.Text = "0";
+            this.out사업자모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out사업자모델_SS
+            // 
+            this.out사업자모델_SS.BackColor = System.Drawing.SystemColors.Control;
+            this.out사업자모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out사업자모델_SS.Enabled = false;
+            this.out사업자모델_SS.ForeColor = System.Drawing.Color.Black;
+            this.out사업자모델_SS.Location = new System.Drawing.Point(934, 1112);
+            this.out사업자모델_SS.Name = "out사업자모델_SS";
+            this.out사업자모델_SS.ReadOnly = true;
+            this.out사업자모델_SS.Size = new System.Drawing.Size(108, 14);
+            this.out사업자모델_SS.TabIndex = 1005;
+            this.out사업자모델_SS.Text = "0";
+            this.out사업자모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out사업자모델_LG
+            // 
+            this.out사업자모델_LG.BackColor = System.Drawing.SystemColors.Control;
+            this.out사업자모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out사업자모델_LG.Enabled = false;
+            this.out사업자모델_LG.ForeColor = System.Drawing.Color.Black;
+            this.out사업자모델_LG.Location = new System.Drawing.Point(934, 1076);
+            this.out사업자모델_LG.Name = "out사업자모델_LG";
+            this.out사업자모델_LG.ReadOnly = true;
+            this.out사업자모델_LG.Size = new System.Drawing.Size(108, 14);
+            this.out사업자모델_LG.TabIndex = 1004;
+            this.out사업자모델_LG.Text = "0";
+            this.out사업자모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out유통모델_소계
+            // 
+            this.out유통모델_소계.BackColor = System.Drawing.SystemColors.Control;
+            this.out유통모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out유통모델_소계.Enabled = false;
+            this.out유통모델_소계.ForeColor = System.Drawing.Color.Black;
+            this.out유통모델_소계.Location = new System.Drawing.Point(934, 1040);
+            this.out유통모델_소계.Name = "out유통모델_소계";
+            this.out유통모델_소계.ReadOnly = true;
+            this.out유통모델_소계.Size = new System.Drawing.Size(108, 14);
+            this.out유통모델_소계.TabIndex = 1003;
+            this.out유통모델_소계.Text = "0";
+            this.out유통모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out유통모델_SS
+            // 
+            this.out유통모델_SS.BackColor = System.Drawing.SystemColors.Control;
+            this.out유통모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out유통모델_SS.Enabled = false;
+            this.out유통모델_SS.ForeColor = System.Drawing.Color.Black;
+            this.out유통모델_SS.Location = new System.Drawing.Point(934, 1004);
+            this.out유통모델_SS.Name = "out유통모델_SS";
+            this.out유통모델_SS.ReadOnly = true;
+            this.out유통모델_SS.Size = new System.Drawing.Size(108, 14);
+            this.out유통모델_SS.TabIndex = 1002;
+            this.out유통모델_SS.Text = "0";
+            this.out유통모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // out유통모델_LG
+            // 
+            this.out유통모델_LG.BackColor = System.Drawing.SystemColors.Control;
+            this.out유통모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.out유통모델_LG.Enabled = false;
+            this.out유통모델_LG.ForeColor = System.Drawing.Color.Black;
+            this.out유통모델_LG.Location = new System.Drawing.Point(934, 968);
+            this.out유통모델_LG.Name = "out유통모델_LG";
+            this.out유통모델_LG.ReadOnly = true;
+            this.out유통모델_LG.Size = new System.Drawing.Size(108, 14);
+            this.out유통모델_LG.TabIndex = 1001;
+            this.out유통모델_LG.Text = "0";
+            this.out유통모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3715,6 +3832,14 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1121, 740);
             this.ControlBox = false;
+            this.Controls.Add(this.out리베이트);
+            this.Controls.Add(this.outASP_전체계);
+            this.Controls.Add(this.out사업자모델_소계);
+            this.Controls.Add(this.out사업자모델_SS);
+            this.Controls.Add(this.out사업자모델_LG);
+            this.Controls.Add(this.out유통모델_소계);
+            this.Controls.Add(this.out유통모델_SS);
+            this.Controls.Add(this.out유통모델_LG);
             this.Controls.Add(this.panel40);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -4276,5 +4401,13 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.TextBox out리베이트;
+        private System.Windows.Forms.TextBox outASP_전체계;
+        private System.Windows.Forms.TextBox out사업자모델_소계;
+        private System.Windows.Forms.TextBox out사업자모델_SS;
+        private System.Windows.Forms.TextBox out사업자모델_LG;
+        private System.Windows.Forms.TextBox out유통모델_소계;
+        private System.Windows.Forms.TextBox out유통모델_SS;
+        private System.Windows.Forms.TextBox out유통모델_LG;
     }
 }
