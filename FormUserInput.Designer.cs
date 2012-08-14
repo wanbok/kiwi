@@ -2062,9 +2062,9 @@
             this.label157.ForeColor = System.Drawing.Color.Black;
             this.label157.Location = new System.Drawing.Point(445, 205);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(354, 11);
+            this.label157.Size = new System.Drawing.Size(360, 11);
             this.label157.TabIndex = 162;
-            this.label157.Text = "*단, LG는 6개월, 삼성은 3개월 단위 지급되므로 월기준으로 환산 적용";
+            this.label157.Text = "※단, LG는 6개월, 삼성은 3개월 단위 지급되므로 월기준으로 환산 적용";
             // 
             // label105
             // 
@@ -2130,9 +2130,9 @@
             this.label34.ForeColor = System.Drawing.Color.Black;
             this.label34.Location = new System.Drawing.Point(836, 324);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(180, 11);
+            this.label34.Size = new System.Drawing.Size(186, 11);
             this.label34.TabIndex = 154;
-            this.label34.Text = "*도매거래를 위한 본점 사무실 기준";
+            this.label34.Text = "※도매거래를 위한 본점 사무실 기준";
             // 
             // label163
             // 
@@ -2141,9 +2141,9 @@
             this.label163.ForeColor = System.Drawing.Color.Black;
             this.label163.Location = new System.Drawing.Point(836, 309);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(313, 11);
+            this.label163.Size = new System.Drawing.Size(319, 11);
             this.label163.TabIndex = 154;
-            this.label163.Text = "*도매거래를 위한 본점 사무실 기준, 대표자 월 급여 포함 기입";
+            this.label163.Text = "※도매거래를 위한 본점 사무실 기준, 대표자 월 급여 포함 기입";
             // 
             // label133
             // 
