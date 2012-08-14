@@ -22,6 +22,7 @@ namespace KIWI
         private static excel.ApplicationClass applicationForSimul = null;
         private static excel.Workbook workBookForSimul = null;
         public static Boolean isLoadedFromFile = false;
+        public static Boolean isSimulatedOnce = false;
         public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "files\\default.xlsx";
         //public static string openAsName = null;
         public static string dataDirectory = AppDomain.CurrentDomain.BaseDirectory + "data\\";
@@ -29,7 +30,7 @@ namespace KIWI
         public static string saveAsSimulName = null;
         public static string saveAsName = null;
         public static string defaultManagerFileName = AppDomain.CurrentDomain.BaseDirectory + "files\\manager.lgm";
-        public static string datedManagerFileName = "업계평균_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".lgm";
+        public static string datedManagerFileName = "업계평균_" + DateTime.Now.ToString("yyyyMMdd") + ".lgm";
 
         /// <summary>
         /// 
@@ -1472,6 +1473,7 @@ namespace KIWI
             rdt.set도매_수익_가입자관리수수료(di.get도매_수익_월평균관리수수료() * bi.get도매_누적가입자수());
             rdt.set도매_수익_CS관리수수료(di.get도매_수익_CS관리수수료() * bi.get도매_누적가입자수());
             Double 사업자모델매입에따른추가수익_단위금액 = Convert.ToDouble(Convert.ToDouble(di.ASP_사업자_소계) * (isOver2000 ? 0.01 : 0.005));
+            di.set도매_수익_사업자모델매입관련추가수익(사업자모델매입에따른추가수익_단위금액);       // 프린트용 정보 저장
             rdt.set도매_수익_사업자모델매입에따른추가수익(
                 사업자모델매입에따른추가수익_단위금액 * // 판매량이 2000대 이상일때는 asp의 1%, 미만일때는 asp의 0.5%
                 (bi.get월평균판매대수_소계_합계() - bi.get월평균유통모델출고대수_소계_합계())
@@ -1492,9 +1494,12 @@ namespace KIWI
             Double 유통모델매입에따른추가수익_단위금액 =
                     Convert.ToDouble(CommonUtil.Division((bi.get월평균유통모델출고대수_SS_합계() * Convert.ToDouble(di.ASP_유통_SS) * 0.006 + bi.get월평균유통모델출고대수_LG_합계() * Convert.ToDouble(di.ASP_유통_LG) * 0.008), bi.get월평균유통모델출고대수_소계_합계())) +    // 현금DC
                     Convert.ToDouble(CommonUtil.Division((bi.get월평균유통모델출고대수_SS_합계() * Convert.ToDouble(di.ASP_유통_SS) * (isOver2000 ? 0.022 : 0.01) + bi.get월평균유통모델출고대수_LG_합계() * Convert.ToDouble(di.ASP_유통_LG) * (isOver2000 ? 0.03 : 0.015)), bi.get월평균유통모델출고대수_소계_합계()));    // Volume DC
+            di.set도매_수익_유통모델매입관련추가수익_현금DC(Convert.ToDouble(CommonUtil.Division((bi.get월평균유통모델출고대수_SS_합계() * Convert.ToDouble(di.ASP_유통_SS) * 0.006 + bi.get월평균유통모델출고대수_LG_합계() * Convert.ToDouble(di.ASP_유통_LG) * 0.008), bi.get월평균유통모델출고대수_소계_합계())));
+            di.set도매_수익_유통모델매입관련추가수익_VolumeDC(Convert.ToDouble(CommonUtil.Division((bi.get월평균유통모델출고대수_SS_합계() * Convert.ToDouble(di.ASP_유통_SS) * (isOver2000 ? 0.022 : 0.01) + bi.get월평균유통모델출고대수_LG_합계() * Convert.ToDouble(di.ASP_유통_LG) * (isOver2000 ? 0.03 : 0.015)), bi.get월평균유통모델출고대수_소계_합계())));
             rdt.set도매_수익_유통모델매입에따른추가수익_현금_Volume(
                유통모델매입에따른추가수익_단위금액 * bi.get월평균유통모델출고대수_소계_합계()
             );
+           
             rdt.도매_수익_소계 = rdt.get도매_수익_가입자관리수수료() + rdt.get도매_수익_CS관리수수료() + rdt.get도매_수익_사업자모델매입에따른추가수익() + rdt.get도매_수익_유통모델매입에따른추가수익_현금_Volume();
             //              비용
             rdt.set도매_비용_대리점투자비용(di.get도매_비용_대리점투자금액_신규() * bi.get도매_월평균판매대수_신규() + di.get도매_비용_대리점투자금액_기변() * bi.get도매_월평균판매대수_기변());
@@ -1650,7 +1655,7 @@ namespace KIWI
                         )
                     ) * 0.1 , bi.get월평균판매대수_소계_합계())
                 );
-
+            di.set도소매_비용_부가세(부가세_단위금액);
             rdt.set도매_비용_부가세(부가세_단위금액 * bi.get도매_월평균판매대수_소계());
 
             // 법인세
@@ -1796,6 +1801,7 @@ namespace KIWI
                 di.get소매_비용_판매촉진비() * bi.get소매_월평균판매대수_소계() +
                 di.get소매_비용_건물관리비() * bi.get소매_거래선수_소계();
             Double 법인세_단위금액 = Convert.ToDouble(CommonUtil.Division((수익합계 - 비용합계 - 부가세_단위금액 * bi.get월평균판매대수_소계_합계()) * 0.22, bi.get월평균판매대수_소계_합계()));
+            di.set도소매_비용_법인세(법인세_단위금액);
 
             rdt.set도매_비용_법인세(법인세_단위금액 * bi.get도매_월평균판매대수_소계());
             // '# Detail3. 업계평균vs.해당대리점'!K10+'# Detail3. 업계평균vs.해당대리점'!K11+'# Detail3. 업계평균vs.해당대리점'!K13+'# Detail3. 업계평균vs.해당대리점'!K14+'# Detail3. 업계평균vs.해당대리점'!K15+'# Detail3. 업계평균vs.해당대리점'!K16+'# Detail3. 업계평균vs.해당대리점'!K17+'# Detail3. 업계평균vs.해당대리점'!K18+'# Detail3. 업계평균vs.해당대리점'!K20

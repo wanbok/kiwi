@@ -252,6 +252,8 @@
             this.panel32 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.panel86 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel137 = new System.Windows.Forms.Panel();
@@ -310,8 +312,6 @@
             this.panel46 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel86 = new System.Windows.Forms.Panel();
-            this.panel85 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel23.SuspendLayout();
@@ -335,6 +335,7 @@
             this.panel29.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel14.SuspendLayout();
+            this.panel85.SuspendLayout();
             this.panel137.SuspendLayout();
             this.panel162.SuspendLayout();
             this.panel164.SuspendLayout();
@@ -359,7 +360,6 @@
             this.panel103.SuspendLayout();
             this.panel105.SuspendLayout();
             this.panel107.SuspendLayout();
-            this.panel85.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -3285,6 +3285,25 @@
             this.panel15.Size = new System.Drawing.Size(698, 5);
             this.panel15.TabIndex = 18;
             // 
+            // panel85
+            // 
+            this.panel85.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel85.Controls.Add(this.panel86);
+            this.panel85.ForeColor = System.Drawing.Color.Black;
+            this.panel85.Location = new System.Drawing.Point(125, 220);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(660, 1);
+            this.panel85.TabIndex = 99;
+            // 
+            // panel86
+            // 
+            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.line;
+            this.panel86.Location = new System.Drawing.Point(0, 20);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(698, 5);
+            this.panel86.TabIndex = 18;
+            // 
             // panel10
             // 
             this.panel10.BackgroundImage = global::KIWI.Properties.Resources.세로선;
@@ -3834,25 +3853,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel86
-            // 
-            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel86.Location = new System.Drawing.Point(0, 20);
-            this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(698, 5);
-            this.panel86.TabIndex = 18;
-            // 
-            // panel85
-            // 
-            this.panel85.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel85.Controls.Add(this.panel86);
-            this.panel85.ForeColor = System.Drawing.Color.Black;
-            this.panel85.Location = new System.Drawing.Point(125, 220);
-            this.panel85.Name = "panel85";
-            this.panel85.Size = new System.Drawing.Size(660, 1);
-            this.panel85.TabIndex = 99;
-            // 
             // FormUserSimulateInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3861,8 +3861,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormUserSimulateInput";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "LGE 대리점 손익관리";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -3889,6 +3892,7 @@
             this.panel29.ResumeLayout(false);
             this.panel30.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
+            this.panel85.ResumeLayout(false);
             this.panel137.ResumeLayout(false);
             this.panel162.ResumeLayout(false);
             this.panel164.ResumeLayout(false);
@@ -3913,7 +3917,6 @@
             this.panel103.ResumeLayout(false);
             this.panel105.ResumeLayout(false);
             this.panel107.ResumeLayout(false);
-            this.panel85.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
