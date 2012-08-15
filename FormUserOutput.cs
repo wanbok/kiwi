@@ -299,6 +299,7 @@ namespace KIWI
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
                 chart.Series[2].Points.DataBindXY(xValues, yValues3);
             }
+            chart.ChartAreas[0].AxisX.LabelStyle.Angle = 0;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
