@@ -608,7 +608,7 @@
             this.tabPage5.Controls.Add(this.panel61);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage5.Size = new System.Drawing.Size(1258, 640);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             // 
@@ -2352,12 +2352,11 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("굴림", 8F);
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(445, 89);
+            this.label25.Location = new System.Drawing.Point(445, 93);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(323, 33);
+            this.label25.Size = new System.Drawing.Size(408, 22);
             this.label25.TabIndex = 114;
-            this.label25.Text = "총액으로 기입, 월 평균 CS 관리수수료 총액\r\n총액으로 기입, 분기 CS 관리수수료 총액\r\n※단, CS관리수수료는 분기당 지급이므로 월기준으로 " +
-                "환산 적용";
+            this.label25.Text = "총액으로 기입, 분기당 지급받는 CS관리수수료 총액을 월평균으로 환산하여 적용\r\n총액으로 기입, 분기 CS 관리수수료 총액";
             // 
             // label158
             // 

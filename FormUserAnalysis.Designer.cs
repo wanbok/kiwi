@@ -308,6 +308,10 @@
             this.panel78 = new System.Windows.Forms.Panel();
             this.panel79 = new System.Windows.Forms.Panel();
             this.panel81 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel82 = new System.Windows.Forms.Panel();
+            this.panel83 = new System.Windows.Forms.Panel();
+            this.panel84 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -368,6 +372,9 @@
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel79.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel83.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -382,6 +389,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel83);
             this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Controls.Add(this.label37);
             this.tabPage1.Controls.Add(this.label36);
@@ -597,7 +605,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            
             // 
             // label38
             // 
@@ -1638,7 +1646,7 @@
             this.textBox72.TabIndex = 759;
             this.textBox72.Text = "0";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox72.TextChanged += new System.EventHandler(this.textBox72_TextChanged);
+            
             // 
             // textBox71
             // 
@@ -2039,7 +2047,6 @@
             this.picCompare2.Size = new System.Drawing.Size(29, 28);
             this.picCompare2.TabIndex = 745;
             this.picCompare2.TabStop = false;
-            this.picCompare2.Click += new System.EventHandler(this.picCompare2_Click);
             // 
             // picCompare1
             // 
@@ -2152,7 +2159,7 @@
             // 
             this.textBoxBase9.BackColor = System.Drawing.Color.White;
             this.textBoxBase9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase9.Location = new System.Drawing.Point(1044, 196);
+            this.textBoxBase9.Location = new System.Drawing.Point(1050, 196);
             this.textBoxBase9.Name = "textBoxBase9";
             this.textBoxBase9.ReadOnly = true;
             this.textBoxBase9.Size = new System.Drawing.Size(80, 14);
@@ -2191,7 +2198,7 @@
             // 
             this.textBoxBase7.BackColor = System.Drawing.Color.White;
             this.textBoxBase7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase7.Location = new System.Drawing.Point(1044, 166);
+            this.textBoxBase7.Location = new System.Drawing.Point(1050, 166);
             this.textBoxBase7.Name = "textBoxBase7";
             this.textBoxBase7.ReadOnly = true;
             this.textBoxBase7.Size = new System.Drawing.Size(80, 14);
@@ -2217,7 +2224,7 @@
             // 
             this.textBoxBase6.BackColor = System.Drawing.Color.White;
             this.textBoxBase6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase6.Location = new System.Drawing.Point(1044, 136);
+            this.textBoxBase6.Location = new System.Drawing.Point(1050, 136);
             this.textBoxBase6.Name = "textBoxBase6";
             this.textBoxBase6.ReadOnly = true;
             this.textBoxBase6.Size = new System.Drawing.Size(80, 14);
@@ -2337,7 +2344,7 @@
             // 
             this.textBoxBase4.BackColor = System.Drawing.Color.White;
             this.textBoxBase4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase4.Location = new System.Drawing.Point(1044, 106);
+            this.textBoxBase4.Location = new System.Drawing.Point(1050, 106);
             this.textBoxBase4.Name = "textBoxBase4";
             this.textBoxBase4.ReadOnly = true;
             this.textBoxBase4.Size = new System.Drawing.Size(80, 14);
@@ -2376,7 +2383,7 @@
             // 
             this.textBoxBase2.BackColor = System.Drawing.Color.White;
             this.textBoxBase2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase2.Location = new System.Drawing.Point(1044, 75);
+            this.textBoxBase2.Location = new System.Drawing.Point(1050, 75);
             this.textBoxBase2.Name = "textBoxBase2";
             this.textBoxBase2.ReadOnly = true;
             this.textBoxBase2.Size = new System.Drawing.Size(80, 14);
@@ -2402,7 +2409,7 @@
             // 
             this.textBoxBase1.BackColor = System.Drawing.Color.White;
             this.textBoxBase1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBase1.Location = new System.Drawing.Point(1044, 43);
+            this.textBoxBase1.Location = new System.Drawing.Point(1050, 43);
             this.textBoxBase1.Name = "textBoxBase1";
             this.textBoxBase1.ReadOnly = true;
             this.textBoxBase1.Size = new System.Drawing.Size(80, 14);
@@ -2556,7 +2563,7 @@
             this.label31.BackColor = System.Drawing.Color.LemonChiffon;
             this.label31.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(1001, 235);
+            this.label31.Location = new System.Drawing.Point(1068, 235);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(31, 12);
             this.label31.TabIndex = 711;
@@ -2568,7 +2575,7 @@
             this.label23.BackColor = System.Drawing.Color.LemonChiffon;
             this.label23.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(1068, 14);
+            this.label23.Location = new System.Drawing.Point(1074, 14);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(31, 12);
             this.label23.TabIndex = 711;
@@ -3391,6 +3398,7 @@
             // panel79
             // 
             this.panel79.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel79.Controls.Add(this.panel15);
             this.panel79.Location = new System.Drawing.Point(770, 8);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(460, 25);
@@ -3403,6 +3411,48 @@
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(460, 24);
             this.panel81.TabIndex = 831;
+            // 
+            // panel15
+            // 
+            this.panel15.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.Controls.Add(this.panel82);
+            this.panel15.ForeColor = System.Drawing.Color.Black;
+            this.panel15.Location = new System.Drawing.Point(286, 25);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1, 185);
+            this.panel15.TabIndex = 643;
+            // 
+            // panel82
+            // 
+            this.panel82.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel82.ForeColor = System.Drawing.Color.Black;
+            this.panel82.Location = new System.Drawing.Point(-13, 0);
+            this.panel82.Name = "panel82";
+            this.panel82.Size = new System.Drawing.Size(1, 185);
+            this.panel82.TabIndex = 642;
+            // 
+            // panel83
+            // 
+            this.panel83.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel83.Controls.Add(this.panel84);
+            this.panel83.ForeColor = System.Drawing.Color.Black;
+            this.panel83.Location = new System.Drawing.Point(1039, 36);
+            this.panel83.Name = "panel83";
+            this.panel83.Size = new System.Drawing.Size(1, 185);
+            this.panel83.TabIndex = 643;
+            // 
+            // panel84
+            // 
+            this.panel84.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel84.ForeColor = System.Drawing.Color.Black;
+            this.panel84.Location = new System.Drawing.Point(-13, 0);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(1, 185);
+            this.panel84.TabIndex = 642;
             // 
             // FormUserAnalysis
             // 
@@ -3475,6 +3525,9 @@
             this.panel7.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel79.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel83.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3736,5 +3789,9 @@
         private System.Windows.Forms.Panel panel78;
         private System.Windows.Forms.Panel panel79;
         private System.Windows.Forms.Panel panel81;
+        private System.Windows.Forms.Panel panel83;
+        private System.Windows.Forms.Panel panel84;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel82;
     }
 }

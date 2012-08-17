@@ -93,7 +93,7 @@ namespace KIWI
             
             textBox69.Text = 가입자당ARPU.ToString();
             textBox71.Text = 월평균인건비.ToString();
-            textBox72.Text = (판촉비비중 * 100).ToString("0.00");
+            textBox72.Text = (판촉비비중 * 100).ToString("0.0");
             textBox74.Text = 인당판매수량.ToString();
         }
 
@@ -304,19 +304,7 @@ namespace KIWI
             setTxtInput_TextChanged(sender);
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void picCompare2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox72_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
