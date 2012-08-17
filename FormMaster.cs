@@ -10,7 +10,6 @@ using excel = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
 using System.IO;
 
-
 namespace KIWI
 {
     public partial class FormMaster : Form
@@ -85,6 +84,7 @@ namespace KIWI
 
                         // 파일에서 읽음 체크
                         CommonUtil.isLoadedFromFile = true;
+                        CommonUtil.isSimulatedOnce = false;
                     }
                     catch (Exception ex)
                     {
@@ -126,7 +126,7 @@ namespace KIWI
                     saveFileDialog1.AutoUpgradeEnabled = true;
                     saveFileDialog1.AddExtension = true;
                     saveFileDialog1.RestoreDirectory = true;
-                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMddHHmm");
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
                     // If the directory doesn't exist, create it.
                     if (!Directory.Exists(CommonUtil.dataDirectory))

@@ -8,12 +8,12 @@ using System.Text;
 using System.Windows.Forms;
 using excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms.DataVisualization.Charting;
+
 namespace KIWI
 {
     public partial class FormUserOutput : Form
     {
         private FormUserOutput mFormUserOutput;
-
 
         private TextBox[] txtOut = null;     //전체
         private TextBox[] txtWOut = null;    //도매
@@ -26,12 +26,9 @@ namespace KIWI
         private TextBox[] vtxtROutTotal = null;    //소매 Total
         private TextBox[] vtxtROut = null;         //소매
 
-
         private Label[] labelWon = null;
         private Label[] labelWon2 = null;
         private Label[] labelWon3 = null;
-
-
 
         //월평균 판매대수 도매
         private string txtInput4 = "0";
@@ -45,7 +42,6 @@ namespace KIWI
         private string txtInput25 = "0";
         //월평균 판매대수 계 엑셀 셀 번호
         string ColumnName_Input25 = "H10";
-
 
         public FormUserOutput()
         {
@@ -178,7 +174,6 @@ namespace KIWI
                 setTexList(vtxtROutTotal, CDataControl.g_FileResultFutureTotal.getArrayOutput전체());
                 setTexList(vtxtROut, CDataControl.g_FileResultFuture.getArrayOutput전체());
 
-
                 전체.Add(CDataControl.g_FileResultBusiness.getArrayOutput전체());
                 전체.Add(CDataControl.g_FileResultStore.getArrayOutput전체());
                 전체.Add(CDataControl.g_FileResultFuture.getArrayOutput전체());
@@ -193,7 +188,6 @@ namespace KIWI
 
                 setTexList(vtxtROutTotal, CDataControl.g_ResultFutureTotal.getArrayOutput전체());
                 setTexList(vtxtROut, CDataControl.g_ResultFuture.getArrayOutput전체());
-
 
                 전체.Add(CDataControl.g_ResultBusiness.getArrayOutput전체());
                 전체.Add(CDataControl.g_ResultStore.getArrayOutput전체());
@@ -305,6 +299,7 @@ namespace KIWI
                 chart.Series[1].Points.DataBindXY(xValues, yValues2);
                 chart.Series[2].Points.DataBindXY(xValues, yValues3);
             }
+            chart.ChartAreas[0].AxisX.LabelStyle.Angle = 0;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

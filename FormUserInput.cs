@@ -10,12 +10,11 @@ using excel = Microsoft.Office.Interop.Excel;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.IO;
+
 namespace KIWI
 {
     public partial class FormUserInput : Form
     {
-
-
         private TextBox[] txtBasicInput = null;     //기본입력
         private TextBox[] txtDetailInput = null;    //상세입력
 
@@ -939,6 +938,9 @@ namespace KIWI
         private void button1_Click(object sender, EventArgs e)
         {
             clearInputs();
+            
+            CommonUtil.isLoadedFromFile = false;
+            CommonUtil.isSimulatedOnce = false;
         }
 
         

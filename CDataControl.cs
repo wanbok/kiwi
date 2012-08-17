@@ -94,9 +94,9 @@ namespace KIWI
                         returnLge += str.Replace(splitter, splitter == "|" ? "l" : "") + splitter; // 파이프를 구분자로 쓰기위해 엘(L)소문자로 고침
                     }
                 }
-                else if (arrWarp[i].GetType() == Type.GetType("System.Int64[]"))
+                else if (arrWarp[i].GetType() == Type.GetType("System.Double[]"))
                 {
-                    foreach (Int64 val in (arrWarp[i] as Int64[]))
+                    foreach (Double val in (arrWarp[i] as Double[]))
                     {
                         returnLge += val.ToString() + splitter;
                     }
@@ -149,7 +149,7 @@ namespace KIWI
         internal static String getAdminDataBySerialization(String splitter)
         {
             string returnLge = "";
-            foreach (Int64 val in g_BusinessAvg.getArrData())
+            foreach (Double val in g_BusinessAvg.getArrData())
             {
                 returnLge += val.ToString() + splitter;
             }

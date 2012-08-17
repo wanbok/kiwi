@@ -2062,9 +2062,9 @@
             this.label157.ForeColor = System.Drawing.Color.Black;
             this.label157.Location = new System.Drawing.Point(445, 205);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(354, 11);
+            this.label157.Size = new System.Drawing.Size(360, 11);
             this.label157.TabIndex = 162;
-            this.label157.Text = "*단, LG는 6개월, 삼성은 3개월 단위 지급되므로 월기준으로 환산 적용";
+            this.label157.Text = "※단, LG는 6개월, 삼성은 3개월 단위 지급되므로 월기준으로 환산 적용";
             // 
             // label105
             // 
@@ -2130,9 +2130,9 @@
             this.label34.ForeColor = System.Drawing.Color.Black;
             this.label34.Location = new System.Drawing.Point(836, 324);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(180, 11);
+            this.label34.Size = new System.Drawing.Size(186, 11);
             this.label34.TabIndex = 154;
-            this.label34.Text = "*도매거래를 위한 본점 사무실 기준";
+            this.label34.Text = "※도매거래를 위한 본점 사무실 기준";
             // 
             // label163
             // 
@@ -2141,9 +2141,9 @@
             this.label163.ForeColor = System.Drawing.Color.Black;
             this.label163.Location = new System.Drawing.Point(836, 309);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(313, 11);
+            this.label163.Size = new System.Drawing.Size(319, 11);
             this.label163.TabIndex = 154;
-            this.label163.Text = "*도매거래를 위한 본점 사무실 기준, 대표자 월 급여 포함 기입";
+            this.label163.Text = "※도매거래를 위한 본점 사무실 기준, 대표자 월 급여 포함 기입";
             // 
             // label133
             // 
@@ -3375,14 +3375,15 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1262, 640);
+            this.tabPage1.Size = new System.Drawing.Size(1258, 640);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(1123, 18);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 29);
@@ -4485,7 +4486,7 @@
             this.tabControl1.Location = new System.Drawing.Point(5, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1270, 666);
+            this.tabControl1.Size = new System.Drawing.Size(1266, 666);
             this.tabControl1.TabIndex = 0;
             // 
             // FormUserInput
