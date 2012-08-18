@@ -36,7 +36,6 @@ namespace KIWI
         private List<string[]> selectedData = new List<string[]>();
 
         private int currentIndex = 0;
-        private Boolean isFile = false;
 
         public FormUserSimulateOutput()
         {
@@ -119,8 +118,18 @@ namespace KIWI
             simulRData = new Double[72];
 
             pnlChart.Visible = false;
-            radioButton1.Checked = CommonUtil.isLoadedFromFile;
-            applyData(CommonUtil.isLoadedFromFile);
+            if (CommonUtil.isLoadedDataFromFile)
+            {
+                radioButton1.Enabled = true;
+                radioButton1.Checked = CommonUtil.isSelectExistData;
+                applyData(CommonUtil.isSelectExistData);
+            }
+            else
+            {
+                radioButton1.Enabled = false;
+                radioButton1.Checked = false;
+                applyData(false);
+            }
 
         }
 
@@ -592,10 +601,10 @@ namespace KIWI
                     }
                     else if (saveFileDialog1.FileName.EndsWith("xlsx"))
                     {
-                        FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                        FileInfo fi2 = new FileInfo(CommonUtil.defaultSimulName);
                         fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                        CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                        CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, CommonUtil.파일종류_시뮬레이션);
                     }
                     else
                     {
@@ -612,10 +621,10 @@ namespace KIWI
                 }
                 else if (saveFileDialog1.FileName.EndsWith("xlsx"))
                 {
-                    FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                    FileInfo fi2 = new FileInfo(CommonUtil.defaultSimulName);
                     fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, CommonUtil.파일종류_시뮬레이션);
                 }
             }
         }
@@ -646,10 +655,10 @@ namespace KIWI
                 }
                 else if (saveFileDialog1.FileName.EndsWith("xlsx"))
                 {
-                    FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                    FileInfo fi2 = new FileInfo(CommonUtil.defaultSimulName);
                     fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, CommonUtil.파일종류_시뮬레이션);
                 }
                 else
                 {

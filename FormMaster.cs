@@ -83,14 +83,15 @@ namespace KIWI
                         CommonUtil.deepCopyBusinessData(CDataControl.g_FileDetailInput, CDataControl.g_DetailInput);
 
                         // 파일에서 읽음 체크
-                        CommonUtil.isLoadedFromFile = true;
+                        CommonUtil.isLoadedDataFromFile = true;
+                        CommonUtil.isSelectExistData = true;
                         CommonUtil.isSimulatedOnce = false;
 
                         // 불러온 이름 등록
                         CommonUtil.saveAsName = file;
 
                         // 시뮬레이션 데이터 초기화
-                        CommonUtil.clearSimulData();
+                        CDataControl.clearSimulData();
                     }
                     catch (Exception ex)
                     {
@@ -160,13 +161,14 @@ namespace KIWI
                                     FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
                                     fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false);
+                                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName);
                                 }
                                 else // 엉뚱한 파일의 저장을 막기위함
                                 {
                                     return;
                                 }
 
+                                CommonUtil.isLoadedDataFromFile = true;
                                 CommonUtil.saveAsName = saveFileDialog1.FileName;
                             }
                         }
@@ -181,8 +183,14 @@ namespace KIWI
                                 FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
                                 fi2.CopyTo(CommonUtil.saveAsName, true);
 
-                                CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, false);
+                                CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName);
                             }
+                            else // 엉뚱한 파일의 저장을 막기위함
+                            {
+                                return;
+                            }
+
+                            CommonUtil.isLoadedDataFromFile = true;
                         }
                     }
                 }
@@ -242,13 +250,13 @@ namespace KIWI
                                 FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
                                 fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                                CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false);
+                                CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName);
                             }
                             else // 엉뚱한 파일의 저장을 막기위함
                             {
                                 return;
                             }
-
+                            CommonUtil.isLoadedDataFromFile = true;
                             CommonUtil.saveAsName = saveFileDialog1.FileName;
                         }
                     }
@@ -280,6 +288,7 @@ namespace KIWI
                     try
                     {
                         System.IO.File.Copy(file, CommonUtil.defaultManagerFileName, true);
+                        FormAdmin.setFileNameLabel(file);
                         toolStripButton4_Click(sender, e);  // UserInput으로 보내서 Refresh역할을 함
                     }
                     catch (Exception ex)

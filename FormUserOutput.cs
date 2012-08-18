@@ -140,9 +140,18 @@ namespace KIWI
             //}
             pnlChart.Visible = false;
             // 결과 취득 클래스
-
-            radioButton1.Checked = CommonUtil.isLoadedFromFile;
-            setAllOutFormat(CommonUtil.isLoadedFromFile);
+            if (CommonUtil.isLoadedDataFromFile)
+            {
+                radioButton1.Enabled = true;
+                radioButton1.Checked = CommonUtil.isSelectExistData;
+                setAllOutFormat(CommonUtil.isSelectExistData);
+            }
+            else
+            {
+                radioButton1.Enabled = false;
+                radioButton1.Checked = false;
+                setAllOutFormat(false);
+            }
         }
 
 

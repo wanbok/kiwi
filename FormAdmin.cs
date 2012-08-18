@@ -531,6 +531,7 @@ namespace KIWI
                 System.IO.File.WriteAllText(saveFileDialog1.FileName, CommonUtil.Base64Encode(csv));
                 readFileOfExistedAverage();
                 setFileNameLabel(saveFileDialog1.FileName);
+                applyFileNameLabel();
             }
         }
 
@@ -736,11 +737,10 @@ namespace KIWI
             }
         }
 
-        private void setFileNameLabel(String fileName)
+        internal static void setFileNameLabel(String fileName)
         {
             String[] splitedFileName = fileName.Split('\\');
             System.IO.File.WriteAllText(CommonUtil.fileNameLabelFileName, CommonUtil.Base64Encode(splitedFileName[splitedFileName.Length - 1]));
-            applyFileNameLabel();
         }
 
         private void applyFileNameLabel()

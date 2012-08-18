@@ -652,7 +652,7 @@ namespace KIWI
 
         private void txtInput1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            CommonUtil.isLoadedFromFile = false;
+            CommonUtil.isSelectExistData = false;
             if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != 8)
             {
                 if (e.KeyChar == '-')
@@ -944,8 +944,9 @@ namespace KIWI
         private void button1_Click(object sender, EventArgs e)
         {
             clearInputs();
-            CommonUtil.clearSimulData();
-            CommonUtil.isLoadedFromFile = false;
+            CDataControl.clearAllData();
+            CommonUtil.isLoadedDataFromFile = false;
+            CommonUtil.isSelectExistData = false;
             CommonUtil.isSimulatedOnce = false;
         }
         

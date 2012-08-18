@@ -21,9 +21,11 @@ namespace KIWI
         private static excel.Workbook workBook = null;
         private static excel.ApplicationClass applicationForSimul = null;
         private static excel.Workbook workBookForSimul = null;
-        public static Boolean isLoadedFromFile = false;
+        public static Boolean isSelectExistData = false;
         public static Boolean isSimulatedOnce = false;
+        public static Boolean isLoadedDataFromFile = false;
         public static string defaultName = AppDomain.CurrentDomain.BaseDirectory + "files\\default.xlsx";
+        public static string defaultSimulName = AppDomain.CurrentDomain.BaseDirectory + "files\\defaultSimul.xlsx";
         //public static string openAsName = null;
         public static string dataDirectory = AppDomain.CurrentDomain.BaseDirectory + "data\\";
         public static string 업계평균Directory = AppDomain.CurrentDomain.BaseDirectory + "업계평균\\";
@@ -266,23 +268,25 @@ namespace KIWI
             GetExcel_WorkBook(file);
             excel.Worksheet workSheet1 = workBook.Sheets[1] as excel.Worksheet;
             excel.Worksheet workSheet2 = workBook.Sheets[2] as excel.Worksheet;
-            excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
             ReadExcelFileToDataBasicInput(workSheet1, type);
             ReadExcelFileToDataDetailInput(workSheet1, type);
             ReadExcelFileToDataResultBusiness(workSheet2, type);
             ReadExcelFileToDataResultStore(workSheet2, type);
             ReadExcelFileToDataResultFuture(workSheet2, type);
-            ReadExcelFileToDataReport(workSheet3, type);
+            if (type != 파일종류_시뮬레이션)
+            {
+                excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
+                ReadExcelFileToDataReport(workSheet3, type);
+            }
             GetExcel_WorkBook_CLOSE();
         }
 
-        public static void WriteDataToExcelFile(string fileName, bool isSimul)
+        public static void WriteDataToExcelFile(string fileName, int type = 파일종류_기본)
         {
             GetExcel_WorkBook(fileName);
             excel.Worksheet workSheet1 = workBook.Sheets[1] as excel.Worksheet;
             excel.Worksheet workSheet2 = workBook.Sheets[2] as excel.Worksheet;
-            excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
-            if (isSimul)
+            if (type == 파일종류_시뮬레이션)
             {
                 WriteDataToExcelFileDasicInput(workSheet1, CDataControl.g_SimBasicInput);
                 WriteDataToExcelFileDetailInput(workSheet1, CDataControl.g_SimBasicInput, CDataControl.g_SimDetailInput);
@@ -292,13 +296,14 @@ namespace KIWI
             }
             else
             {
+                excel.Worksheet workSheet3 = workBook.Sheets[3] as excel.Worksheet;
                 WriteDataToExcelFileDasicInput(workSheet1, CDataControl.g_BasicInput);
                 WriteDataToExcelFileDetailInput(workSheet1, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
                 WriteExcelFileToDataResultBusiness(workSheet2, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
                 WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultFutureTotal);
                 WriteExcelFileToDataResultFuture(workSheet2, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture);
+                WriteExcelFileToDataReport(workSheet3);
             }
-            WriteExcelFileToDataReport(workSheet3);
             GetExcel_WorkBook_CLOSE();
         }
 
@@ -1941,19 +1946,6 @@ namespace KIWI
             rd.set전체_비용_기타판매관리비(CommonUtil.Division(rdt.get전체_비용_기타판매관리비(), bi.get월평균판매대수_소계_합계()));
             rd.전체_비용_소계 = CommonUtil.Division(rdt.전체_비용_소계, bi.get월평균판매대수_소계_합계());
             rd.전체손익계 = CommonUtil.Division(rdt.전체손익계, bi.get월평균판매대수_소계_합계());
-        }
-
-        internal static void clearSimulData()
-        {   
-            CDataControl.g_SimBasicInput = new CBasicInput();     //시뮬레이션 기본입력
-            CDataControl.g_SimDetailInput = new CBusinessData();  //시뮬레이션 상세입력
-
-            CDataControl.g_SimResultBusinessTotal = new CResultData();    //시뮬레이션 업계 총계
-            CDataControl.g_SimResultBusiness = new CResultData();         //시뮬레이션 업계 단위금액
-            CDataControl.g_SimResultStoreTotal = new CResultData();       //시뮬레이션 당대리점 총계
-            CDataControl.g_SimResultStore = new CResultData();            //시뮬레이션 당대리점 단위금액
-            CDataControl.g_SimResultFutureTotal = new CResultData();      //시뮬레이션 미래수익 총계
-            CDataControl.g_SimResultFuture = new CResultData();           //시뮬레이션 미래수익 단위금액
         }
     }
 }

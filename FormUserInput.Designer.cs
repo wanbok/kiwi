@@ -886,12 +886,10 @@
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
             this.radioButton6.Location = new System.Drawing.Point(6, 25);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(71, 16);
             this.radioButton6.TabIndex = 264;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "분기총액";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
@@ -3210,12 +3208,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(7, 5);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(47, 16);
             this.radioButton1.TabIndex = 253;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "총액";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -3232,12 +3228,10 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Checked = true;
             this.radioButton4.Location = new System.Drawing.Point(3, 7);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(59, 16);
             this.radioButton4.TabIndex = 260;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "총금액";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
