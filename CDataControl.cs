@@ -105,45 +105,82 @@ namespace KIWI
             return returnLge;
         }
 
-        internal static void setDataFromLGEFile(String lge, String spliter)
+        internal static void setDataFromLGEFile(String lge, String spliter, int type = CommonUtil.파일종류_기본)
         {
             String[] splittedLge = lge.Split(spliter.ToCharArray());
+
+            CReportData reportData = null;
+            CBasicInput basicData = null;
+            CBusinessData detailData = null;
+            CResultData rbt = null;
+            CResultData rb = null;
+            CResultData rst = null;
+            CResultData rs = null;
+            CResultData rft = null;
+            CResultData rf = null;
+
+            switch (type)
+            {
+                case CommonUtil.파일종류_시뮬레이션:
+                    reportData = null;
+                    basicData = CDataControl.g_SimBasicInput;
+                    detailData = CDataControl.g_SimDetailInput;
+                    rbt = CDataControl.g_SimResultBusinessTotal;
+                    rb = CDataControl.g_SimResultBusiness;
+                    rst = CDataControl.g_SimResultStoreTotal;
+                    rs = CDataControl.g_SimResultStore;
+                    rft = CDataControl.g_SimResultFutureTotal;
+                    rf = CDataControl.g_SimResultFuture;
+                    break;
+                default:   // CommonUtil.파일종류_기본
+                    reportData = CDataControl.g_ReportData;
+                    basicData = CDataControl.g_FileBasicInput;
+                    detailData = CDataControl.g_FileDetailInput;
+                    rbt = CDataControl.g_FileResultBusinessTotal;
+                    rb = CDataControl.g_FileResultBusiness;
+                    rst = CDataControl.g_FileResultStoreTotal;
+                    rs = CDataControl.g_FileResultStore;
+                    rft = CDataControl.g_FileResultFutureTotal;
+                    rf = CDataControl.g_FileResultFuture;
+                    break;
+            }
 
             int startIndex = 0;
             int length = 6;
             String[] param = splittedLge.Take(length).ToArray<String>();
-            CDataControl.g_ReportData.setArrData(param);
+            if (reportData != null)
+                reportData.setArrData(param);
             startIndex += length;
             length = 14;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileBasicInput.setArrData(param);
+            basicData.setArrData(param);
             startIndex += length;
             length = 31;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileDetailInput.setArrData(param);
+            detailData.setArrData(param);
             startIndex += length;
             length = 42;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultBusinessTotal.setArrayOutput전체(param);
+            rbt.setArrayOutput전체(param);
             startIndex += length;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultBusiness.setArrayOutput전체(param);
+            rb.setArrayOutput전체(param);
             startIndex += length;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultStoreTotal.setArrayOutput전체(param);
+            rst.setArrayOutput전체(param);
             startIndex += length;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultStore.setArrayOutput전체(param);
+            rs.setArrayOutput전체(param);
             startIndex += length;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultFutureTotal.setArrayOutput전체(param);
+            rft.setArrayOutput전체(param);
             startIndex += length;
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
-            CDataControl.g_FileResultFuture.setArrayOutput전체(param);
+            rf.setArrayOutput전체(param);
 
-            CDataControl.g_FileBasicInput.set지역(CDataControl.g_ReportData.get지역());
-            CDataControl.g_FileBasicInput.set대리점(CDataControl.g_ReportData.get대리점());
-            CDataControl.g_FileBasicInput.set마케터(CDataControl.g_ReportData.get마케터());
+            basicData.set지역(CDataControl.g_ReportData.get지역());
+            basicData.set대리점(CDataControl.g_ReportData.get대리점());
+            basicData.set마케터(CDataControl.g_ReportData.get마케터());
         }
         
         internal static String getAdminDataBySerialization(String splitter)

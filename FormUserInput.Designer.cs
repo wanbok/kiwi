@@ -3609,7 +3609,7 @@
             this.txtInput35.TabIndex = 37;
             this.txtInput35.Text = "0";
             this.txtInput35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput35.TextChanged += new System.EventHandler(this.txtInput35_TextChanged);
+            this.txtInput35.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput32
             // 
@@ -3623,7 +3623,7 @@
             this.txtInput32.TabIndex = 34;
             this.txtInput32.Text = "0";
             this.txtInput32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput32.TextChanged += new System.EventHandler(this.txtInput32_TextChanged);
+            this.txtInput32.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput31
             // 
@@ -3637,6 +3637,7 @@
             this.txtInput31.TabIndex = 33;
             this.txtInput31.Text = "0";
             this.txtInput31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput31.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput21
             // 
@@ -3663,6 +3664,7 @@
             this.txtInput28.TabIndex = 30;
             this.txtInput28.Text = "0";
             this.txtInput28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput28.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput18
             // 
@@ -3689,7 +3691,7 @@
             this.txtInput25.TabIndex = 27;
             this.txtInput25.Text = "0";
             this.txtInput25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput25.TextChanged += new System.EventHandler(this.txtInput25_TextChanged);
+            this.txtInput25.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput13
             // 
@@ -3756,7 +3758,7 @@
             this.txtInput34.TabIndex = 36;
             this.txtInput34.Text = "0";
             this.txtInput34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput34.TextChanged += new System.EventHandler(this.txtInput34_TextChanged);
+            this.txtInput34.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput7
             // 
@@ -3783,6 +3785,7 @@
             this.txtInput30.TabIndex = 32;
             this.txtInput30.Text = "0";
             this.txtInput30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput30.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput4
             // 
@@ -3823,6 +3826,7 @@
             this.txtInput27.TabIndex = 29;
             this.txtInput27.Text = "0";
             this.txtInput27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput27.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput17
             // 
@@ -3850,7 +3854,7 @@
             this.txtInput24.TabIndex = 26;
             this.txtInput24.Text = "0";
             this.txtInput24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput24.TextChanged += new System.EventHandler(this.txtInput24_TextChanged);
+            this.txtInput24.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput12
             // 
@@ -3892,7 +3896,7 @@
             this.txtInput33.TabIndex = 35;
             this.txtInput33.Text = "0";
             this.txtInput33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput33.TextChanged += new System.EventHandler(this.txtInput33_TextChanged);
+            this.txtInput33.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput6
             // 
@@ -3920,6 +3924,7 @@
             this.txtInput29.TabIndex = 31;
             this.txtInput29.Text = "0";
             this.txtInput29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput29.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput19
             // 
@@ -3961,6 +3966,7 @@
             this.txtInput26.TabIndex = 28;
             this.txtInput26.Text = "0";
             this.txtInput26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput26.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput11
             // 
@@ -3988,6 +3994,7 @@
             this.txtInput22.TabIndex = 24;
             this.txtInput22.Text = "0";
             this.txtInput22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInput22.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput8
             // 
@@ -4015,7 +4022,7 @@
             this.txtInput23.TabIndex = 25;
             this.txtInput23.Text = "0";
             this.txtInput23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtInput23.TextChanged += new System.EventHandler(this.txtInput23_TextChanged);
+            this.txtInput23.TextChanged += new System.EventHandler(this.addComma_TextChanged);
             // 
             // txtInput5
             // 

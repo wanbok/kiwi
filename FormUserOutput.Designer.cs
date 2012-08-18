@@ -5994,7 +5994,6 @@
             this.pnlChart3.Size = new System.Drawing.Size(1242, 616);
             this.pnlChart3.TabIndex = 253;
             this.pnlChart3.Visible = false;
-            this.pnlChart3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChart3_Paint);
             // 
             // label113
             // 

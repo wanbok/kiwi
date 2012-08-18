@@ -84,6 +84,8 @@ namespace KIWI
             readFileOfExistedAverage();
 
             refreshList();
+
+            applyFileNameLabel();
         }
 
         //업계평균과 보정계수의 평균을 구하고 보정계수 평균에 적용. 
@@ -528,6 +530,7 @@ namespace KIWI
                 permission.Demand();
                 System.IO.File.WriteAllText(saveFileDialog1.FileName, CommonUtil.Base64Encode(csv));
                 readFileOfExistedAverage();
+                setFileNameLabel(saveFileDialog1.FileName);
             }
         }
 
@@ -730,6 +733,25 @@ namespace KIWI
             foreach (TextBox txt in txtInputAsp)
             {
                 txt.Text = "0";
+            }
+        }
+
+        private void setFileNameLabel(String fileName)
+        {
+            String[] splitedFileName = fileName.Split('\\');
+            System.IO.File.WriteAllText(CommonUtil.fileNameLabelFileName, CommonUtil.Base64Encode(splitedFileName[splitedFileName.Length - 1]));
+            applyFileNameLabel();
+        }
+
+        private void applyFileNameLabel()
+        {
+            try
+            {
+                파일명.Text = CommonUtil.Base64Decode(System.IO.File.ReadAllText(CommonUtil.fileNameLabelFileName));
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                // FileNotFoundException 무시
             }
         }
     }

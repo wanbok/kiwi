@@ -85,6 +85,12 @@ namespace KIWI
                         // 파일에서 읽음 체크
                         CommonUtil.isLoadedFromFile = true;
                         CommonUtil.isSimulatedOnce = false;
+
+                        // 불러온 이름 등록
+                        CommonUtil.saveAsName = file;
+
+                        // 시뮬레이션 데이터 초기화
+                        CommonUtil.clearSimulData();
                     }
                     catch (Exception ex)
                     {
@@ -103,7 +109,7 @@ namespace KIWI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton2_Click(object sender, EventArgs e)
+        private void save_Click(object sender, EventArgs e)
         {
             if (!outOfFormUserInput_Click(sender, e)) return;
             outOfFormUserAnalysis_Click(sender, e);
@@ -111,6 +117,91 @@ namespace KIWI
             if ((this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
             {
                 (this.panel1.Controls[0] as FormUserSimulateOutput).saveSimulateFile();
+                return;
+            }
+
+            if (this.panel1.Controls.Count > 0)
+            {
+                if (this.panel1.Controls[0] is Form)
+                {
+                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                    saveFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx";
+                    saveFileDialog1.Title = "Select a File";
+                    saveFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
+                    saveFileDialog1.DefaultExt = "lge";
+                    saveFileDialog1.AutoUpgradeEnabled = true;
+                    saveFileDialog1.AddExtension = true;
+                    saveFileDialog1.RestoreDirectory = true;
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+
+                    // If the directory doesn't exist, create it.
+                    if (!Directory.Exists(CommonUtil.dataDirectory))
+                    {
+                        Directory.CreateDirectory(CommonUtil.dataDirectory);
+                    }
+                    if ((this.panel1.Controls[0] as Form).Name == "FormUserInput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserOutput" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserAnalysis" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormReport" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormAdmin" ||
+                        (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
+                    {
+
+                        if (CommonUtil.saveAsName == null)
+                        {
+                            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                            {
+                                if (saveFileDialog1.FileName.EndsWith("lge"))
+                                {
+                                    CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|");
+                                }
+                                else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                                {
+                                    FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                                    fi2.CopyTo(saveFileDialog1.FileName, true);
+
+                                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false);
+                                }
+                                else // 엉뚱한 파일의 저장을 막기위함
+                                {
+                                    return;
+                                }
+
+                                CommonUtil.saveAsName = saveFileDialog1.FileName;
+                            }
+                        }
+                        else
+                        {
+                            if (CommonUtil.saveAsName.EndsWith("lge"))
+                            {
+                                CommonUtil.writeLGEFile(CommonUtil.saveAsName, "|");
+                            }
+                            else if (CommonUtil.saveAsName.EndsWith("xlsx"))
+                            {
+                                FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                                fi2.CopyTo(CommonUtil.saveAsName, true);
+
+                                CommonUtil.WriteDataToExcelFile(CommonUtil.saveAsName, false);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 새 이름으로 저장
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if (!outOfFormUserInput_Click(sender, e)) return;
+            outOfFormUserAnalysis_Click(sender, e);
+
+            if ((this.panel1.Controls[0] as Form).Name == "FormUserSimulateOutput")
+            {
+                (this.panel1.Controls[0] as FormUserSimulateOutput).saveAsNewSimulateFile();
                 return;
             }
 
@@ -153,6 +244,12 @@ namespace KIWI
 
                                 CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, false);
                             }
+                            else // 엉뚱한 파일의 저장을 막기위함
+                            {
+                                return;
+                            }
+
+                            CommonUtil.saveAsName = saveFileDialog1.FileName;
                         }
                     }
                 }

@@ -319,6 +319,7 @@
             this.out유통모델_소계 = new System.Windows.Forms.TextBox();
             this.out유통모델_SS = new System.Windows.Forms.TextBox();
             this.out유통모델_LG = new System.Windows.Forms.TextBox();
+            this.파일명 = new System.Windows.Forms.Label();
             this.panel162.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel137.SuspendLayout();
@@ -378,7 +379,7 @@
             this.columnHeader9});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(12, 31);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1057, 156);
             this.listView1.TabIndex = 999;
@@ -443,7 +444,7 @@
             this.txtOut62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut62.Enabled = false;
             this.txtOut62.ForeColor = System.Drawing.Color.Black;
-            this.txtOut62.Location = new System.Drawing.Point(583, 936);
+            this.txtOut62.Location = new System.Drawing.Point(583, 955);
             this.txtOut62.Name = "txtOut62";
             this.txtOut62.ReadOnly = true;
             this.txtOut62.Size = new System.Drawing.Size(108, 14);
@@ -457,7 +458,7 @@
             this.txtInput31.BackColor = System.Drawing.Color.White;
             this.txtInput31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput31.ForeColor = System.Drawing.Color.Black;
-            this.txtInput31.Location = new System.Drawing.Point(757, 931);
+            this.txtInput31.Location = new System.Drawing.Point(757, 950);
             this.txtInput31.Name = "txtInput31";
             this.txtInput31.Size = new System.Drawing.Size(108, 21);
             this.txtInput31.TabIndex = 30;
@@ -472,7 +473,7 @@
             this.txtOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut31.Enabled = false;
             this.txtOut31.ForeColor = System.Drawing.Color.Black;
-            this.txtOut31.Location = new System.Drawing.Point(407, 936);
+            this.txtOut31.Location = new System.Drawing.Point(407, 955);
             this.txtOut31.Name = "txtOut31";
             this.txtOut31.ReadOnly = true;
             this.txtOut31.Size = new System.Drawing.Size(108, 14);
@@ -485,7 +486,7 @@
             // 
             this.label243.AutoSize = true;
             this.label243.ForeColor = System.Drawing.Color.Black;
-            this.label243.Location = new System.Drawing.Point(198, 936);
+            this.label243.Location = new System.Drawing.Point(198, 955);
             this.label243.Name = "label243";
             this.label243.Size = new System.Drawing.Size(29, 12);
             this.label243.TabIndex = 565;
@@ -495,7 +496,7 @@
             // 
             this.label191.AutoSize = true;
             this.label191.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label191.Location = new System.Drawing.Point(26, 894);
+            this.label191.Location = new System.Drawing.Point(26, 913);
             this.label191.Name = "label191";
             this.label191.Size = new System.Drawing.Size(46, 18);
             this.label191.TabIndex = 562;
@@ -505,7 +506,7 @@
             // 
             this.label190.AutoSize = true;
             this.label190.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label190.Location = new System.Drawing.Point(26, 856);
+            this.label190.Location = new System.Drawing.Point(26, 875);
             this.label190.Name = "label190";
             this.label190.Size = new System.Drawing.Size(46, 36);
             this.label190.TabIndex = 561;
@@ -515,7 +516,7 @@
             // 
             this.label170.AutoSize = true;
             this.label170.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label170.Location = new System.Drawing.Point(26, 632);
+            this.label170.Location = new System.Drawing.Point(26, 651);
             this.label170.Name = "label170";
             this.label170.Size = new System.Drawing.Size(46, 18);
             this.label170.TabIndex = 560;
@@ -527,7 +528,7 @@
             this.txtOut59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut59.Enabled = false;
             this.txtOut59.ForeColor = System.Drawing.Color.Black;
-            this.txtOut59.Location = new System.Drawing.Point(583, 905);
+            this.txtOut59.Location = new System.Drawing.Point(583, 924);
             this.txtOut59.Name = "txtOut59";
             this.txtOut59.ReadOnly = true;
             this.txtOut59.Size = new System.Drawing.Size(109, 14);
@@ -541,7 +542,7 @@
             this.txtInput28.BackColor = System.Drawing.Color.White;
             this.txtInput28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput28.ForeColor = System.Drawing.Color.Black;
-            this.txtInput28.Location = new System.Drawing.Point(757, 900);
+            this.txtInput28.Location = new System.Drawing.Point(757, 919);
             this.txtInput28.Name = "txtInput28";
             this.txtInput28.Size = new System.Drawing.Size(109, 21);
             this.txtInput28.TabIndex = 27;
@@ -557,7 +558,7 @@
             this.txtOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut28.Enabled = false;
             this.txtOut28.ForeColor = System.Drawing.Color.Black;
-            this.txtOut28.Location = new System.Drawing.Point(407, 905);
+            this.txtOut28.Location = new System.Drawing.Point(407, 924);
             this.txtOut28.Name = "txtOut28";
             this.txtOut28.ReadOnly = true;
             this.txtOut28.Size = new System.Drawing.Size(109, 14);
@@ -572,7 +573,7 @@
             this.txtOut58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut58.Enabled = false;
             this.txtOut58.ForeColor = System.Drawing.Color.Black;
-            this.txtOut58.Location = new System.Drawing.Point(583, 875);
+            this.txtOut58.Location = new System.Drawing.Point(583, 894);
             this.txtOut58.Name = "txtOut58";
             this.txtOut58.ReadOnly = true;
             this.txtOut58.Size = new System.Drawing.Size(109, 14);
@@ -586,7 +587,7 @@
             this.txtInput27.BackColor = System.Drawing.Color.White;
             this.txtInput27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput27.ForeColor = System.Drawing.Color.Black;
-            this.txtInput27.Location = new System.Drawing.Point(757, 870);
+            this.txtInput27.Location = new System.Drawing.Point(757, 889);
             this.txtInput27.Name = "txtInput27";
             this.txtInput27.Size = new System.Drawing.Size(109, 21);
             this.txtInput27.TabIndex = 26;
@@ -602,7 +603,7 @@
             this.txtOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut27.Enabled = false;
             this.txtOut27.ForeColor = System.Drawing.Color.Black;
-            this.txtOut27.Location = new System.Drawing.Point(407, 875);
+            this.txtOut27.Location = new System.Drawing.Point(407, 894);
             this.txtOut27.Name = "txtOut27";
             this.txtOut27.ReadOnly = true;
             this.txtOut27.Size = new System.Drawing.Size(109, 14);
@@ -617,7 +618,7 @@
             this.txtOut57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut57.Enabled = false;
             this.txtOut57.ForeColor = System.Drawing.Color.Black;
-            this.txtOut57.Location = new System.Drawing.Point(583, 845);
+            this.txtOut57.Location = new System.Drawing.Point(583, 864);
             this.txtOut57.Name = "txtOut57";
             this.txtOut57.ReadOnly = true;
             this.txtOut57.Size = new System.Drawing.Size(109, 14);
@@ -631,7 +632,7 @@
             this.txtInput26.BackColor = System.Drawing.Color.White;
             this.txtInput26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput26.ForeColor = System.Drawing.Color.Black;
-            this.txtInput26.Location = new System.Drawing.Point(757, 840);
+            this.txtInput26.Location = new System.Drawing.Point(757, 859);
             this.txtInput26.Name = "txtInput26";
             this.txtInput26.Size = new System.Drawing.Size(109, 21);
             this.txtInput26.TabIndex = 25;
@@ -647,7 +648,7 @@
             this.txtOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut26.Enabled = false;
             this.txtOut26.ForeColor = System.Drawing.Color.Black;
-            this.txtOut26.Location = new System.Drawing.Point(407, 845);
+            this.txtOut26.Location = new System.Drawing.Point(407, 864);
             this.txtOut26.Name = "txtOut26";
             this.txtOut26.ReadOnly = true;
             this.txtOut26.Size = new System.Drawing.Size(109, 14);
@@ -662,7 +663,7 @@
             this.txtOut56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut56.Enabled = false;
             this.txtOut56.ForeColor = System.Drawing.Color.Black;
-            this.txtOut56.Location = new System.Drawing.Point(583, 815);
+            this.txtOut56.Location = new System.Drawing.Point(583, 834);
             this.txtOut56.Name = "txtOut56";
             this.txtOut56.ReadOnly = true;
             this.txtOut56.Size = new System.Drawing.Size(109, 14);
@@ -676,7 +677,7 @@
             this.txtInput25.BackColor = System.Drawing.Color.White;
             this.txtInput25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput25.ForeColor = System.Drawing.Color.Black;
-            this.txtInput25.Location = new System.Drawing.Point(757, 810);
+            this.txtInput25.Location = new System.Drawing.Point(757, 829);
             this.txtInput25.Name = "txtInput25";
             this.txtInput25.Size = new System.Drawing.Size(109, 21);
             this.txtInput25.TabIndex = 24;
@@ -692,7 +693,7 @@
             this.txtOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut25.Enabled = false;
             this.txtOut25.ForeColor = System.Drawing.Color.Black;
-            this.txtOut25.Location = new System.Drawing.Point(407, 815);
+            this.txtOut25.Location = new System.Drawing.Point(407, 834);
             this.txtOut25.Name = "txtOut25";
             this.txtOut25.ReadOnly = true;
             this.txtOut25.Size = new System.Drawing.Size(109, 14);
@@ -707,7 +708,7 @@
             this.txtOut55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut55.Enabled = false;
             this.txtOut55.ForeColor = System.Drawing.Color.Black;
-            this.txtOut55.Location = new System.Drawing.Point(583, 785);
+            this.txtOut55.Location = new System.Drawing.Point(583, 804);
             this.txtOut55.Name = "txtOut55";
             this.txtOut55.ReadOnly = true;
             this.txtOut55.Size = new System.Drawing.Size(109, 14);
@@ -721,7 +722,7 @@
             this.txtInput24.BackColor = System.Drawing.Color.White;
             this.txtInput24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput24.ForeColor = System.Drawing.Color.Black;
-            this.txtInput24.Location = new System.Drawing.Point(757, 780);
+            this.txtInput24.Location = new System.Drawing.Point(757, 799);
             this.txtInput24.Name = "txtInput24";
             this.txtInput24.Size = new System.Drawing.Size(109, 21);
             this.txtInput24.TabIndex = 23;
@@ -737,7 +738,7 @@
             this.txtOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut24.Enabled = false;
             this.txtOut24.ForeColor = System.Drawing.Color.Black;
-            this.txtOut24.Location = new System.Drawing.Point(407, 785);
+            this.txtOut24.Location = new System.Drawing.Point(407, 804);
             this.txtOut24.Name = "txtOut24";
             this.txtOut24.ReadOnly = true;
             this.txtOut24.Size = new System.Drawing.Size(109, 14);
@@ -752,7 +753,7 @@
             this.txtOut54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut54.Enabled = false;
             this.txtOut54.ForeColor = System.Drawing.Color.Black;
-            this.txtOut54.Location = new System.Drawing.Point(582, 755);
+            this.txtOut54.Location = new System.Drawing.Point(582, 774);
             this.txtOut54.Name = "txtOut54";
             this.txtOut54.ReadOnly = true;
             this.txtOut54.Size = new System.Drawing.Size(108, 14);
@@ -766,7 +767,7 @@
             this.txtInput23.BackColor = System.Drawing.Color.White;
             this.txtInput23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput23.ForeColor = System.Drawing.Color.Black;
-            this.txtInput23.Location = new System.Drawing.Point(757, 750);
+            this.txtInput23.Location = new System.Drawing.Point(757, 769);
             this.txtInput23.Name = "txtInput23";
             this.txtInput23.Size = new System.Drawing.Size(108, 21);
             this.txtInput23.TabIndex = 22;
@@ -782,7 +783,7 @@
             this.txtOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut23.Enabled = false;
             this.txtOut23.ForeColor = System.Drawing.Color.Black;
-            this.txtOut23.Location = new System.Drawing.Point(407, 755);
+            this.txtOut23.Location = new System.Drawing.Point(407, 774);
             this.txtOut23.Name = "txtOut23";
             this.txtOut23.ReadOnly = true;
             this.txtOut23.Size = new System.Drawing.Size(108, 14);
@@ -797,7 +798,7 @@
             this.txtOut53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut53.Enabled = false;
             this.txtOut53.ForeColor = System.Drawing.Color.Black;
-            this.txtOut53.Location = new System.Drawing.Point(582, 725);
+            this.txtOut53.Location = new System.Drawing.Point(582, 744);
             this.txtOut53.Name = "txtOut53";
             this.txtOut53.ReadOnly = true;
             this.txtOut53.Size = new System.Drawing.Size(108, 14);
@@ -811,7 +812,7 @@
             this.txtInput22.BackColor = System.Drawing.Color.White;
             this.txtInput22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput22.ForeColor = System.Drawing.Color.Black;
-            this.txtInput22.Location = new System.Drawing.Point(757, 720);
+            this.txtInput22.Location = new System.Drawing.Point(757, 739);
             this.txtInput22.Name = "txtInput22";
             this.txtInput22.Size = new System.Drawing.Size(108, 21);
             this.txtInput22.TabIndex = 21;
@@ -827,7 +828,7 @@
             this.txtOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut22.Enabled = false;
             this.txtOut22.ForeColor = System.Drawing.Color.Black;
-            this.txtOut22.Location = new System.Drawing.Point(407, 725);
+            this.txtOut22.Location = new System.Drawing.Point(407, 744);
             this.txtOut22.Name = "txtOut22";
             this.txtOut22.ReadOnly = true;
             this.txtOut22.Size = new System.Drawing.Size(108, 14);
@@ -842,7 +843,7 @@
             this.txtOut52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut52.Enabled = false;
             this.txtOut52.ForeColor = System.Drawing.Color.Black;
-            this.txtOut52.Location = new System.Drawing.Point(582, 695);
+            this.txtOut52.Location = new System.Drawing.Point(582, 714);
             this.txtOut52.Name = "txtOut52";
             this.txtOut52.ReadOnly = true;
             this.txtOut52.Size = new System.Drawing.Size(108, 14);
@@ -856,7 +857,7 @@
             this.txtInput21.BackColor = System.Drawing.Color.White;
             this.txtInput21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput21.ForeColor = System.Drawing.Color.Black;
-            this.txtInput21.Location = new System.Drawing.Point(757, 690);
+            this.txtInput21.Location = new System.Drawing.Point(757, 709);
             this.txtInput21.Name = "txtInput21";
             this.txtInput21.Size = new System.Drawing.Size(108, 21);
             this.txtInput21.TabIndex = 20;
@@ -872,7 +873,7 @@
             this.txtOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut21.Enabled = false;
             this.txtOut21.ForeColor = System.Drawing.Color.Black;
-            this.txtOut21.Location = new System.Drawing.Point(407, 695);
+            this.txtOut21.Location = new System.Drawing.Point(407, 714);
             this.txtOut21.Name = "txtOut21";
             this.txtOut21.ReadOnly = true;
             this.txtOut21.Size = new System.Drawing.Size(108, 14);
@@ -887,7 +888,7 @@
             this.txtOut51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut51.Enabled = false;
             this.txtOut51.ForeColor = System.Drawing.Color.Black;
-            this.txtOut51.Location = new System.Drawing.Point(582, 665);
+            this.txtOut51.Location = new System.Drawing.Point(582, 684);
             this.txtOut51.Name = "txtOut51";
             this.txtOut51.ReadOnly = true;
             this.txtOut51.Size = new System.Drawing.Size(108, 14);
@@ -901,7 +902,7 @@
             this.txtInput20.BackColor = System.Drawing.Color.White;
             this.txtInput20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput20.ForeColor = System.Drawing.Color.Black;
-            this.txtInput20.Location = new System.Drawing.Point(757, 660);
+            this.txtInput20.Location = new System.Drawing.Point(757, 679);
             this.txtInput20.Name = "txtInput20";
             this.txtInput20.Size = new System.Drawing.Size(108, 21);
             this.txtInput20.TabIndex = 19;
@@ -917,7 +918,7 @@
             this.txtOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut20.Enabled = false;
             this.txtOut20.ForeColor = System.Drawing.Color.Black;
-            this.txtOut20.Location = new System.Drawing.Point(407, 665);
+            this.txtOut20.Location = new System.Drawing.Point(407, 684);
             this.txtOut20.Name = "txtOut20";
             this.txtOut20.ReadOnly = true;
             this.txtOut20.Size = new System.Drawing.Size(108, 14);
@@ -932,7 +933,7 @@
             this.txtOut50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut50.Enabled = false;
             this.txtOut50.ForeColor = System.Drawing.Color.Black;
-            this.txtOut50.Location = new System.Drawing.Point(582, 639);
+            this.txtOut50.Location = new System.Drawing.Point(582, 658);
             this.txtOut50.Name = "txtOut50";
             this.txtOut50.ReadOnly = true;
             this.txtOut50.Size = new System.Drawing.Size(108, 14);
@@ -946,7 +947,7 @@
             this.txtInput19.BackColor = System.Drawing.Color.White;
             this.txtInput19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput19.ForeColor = System.Drawing.Color.Black;
-            this.txtInput19.Location = new System.Drawing.Point(757, 633);
+            this.txtInput19.Location = new System.Drawing.Point(757, 652);
             this.txtInput19.Name = "txtInput19";
             this.txtInput19.Size = new System.Drawing.Size(108, 21);
             this.txtInput19.TabIndex = 18;
@@ -962,7 +963,7 @@
             this.txtOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut19.Enabled = false;
             this.txtOut19.ForeColor = System.Drawing.Color.Black;
-            this.txtOut19.Location = new System.Drawing.Point(407, 639);
+            this.txtOut19.Location = new System.Drawing.Point(407, 658);
             this.txtOut19.Name = "txtOut19";
             this.txtOut19.ReadOnly = true;
             this.txtOut19.Size = new System.Drawing.Size(108, 14);
@@ -977,7 +978,7 @@
             this.txtOut49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut49.Enabled = false;
             this.txtOut49.ForeColor = System.Drawing.Color.Black;
-            this.txtOut49.Location = new System.Drawing.Point(582, 614);
+            this.txtOut49.Location = new System.Drawing.Point(582, 633);
             this.txtOut49.Name = "txtOut49";
             this.txtOut49.ReadOnly = true;
             this.txtOut49.Size = new System.Drawing.Size(108, 14);
@@ -991,7 +992,7 @@
             this.txtInput18.BackColor = System.Drawing.Color.White;
             this.txtInput18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput18.ForeColor = System.Drawing.Color.Black;
-            this.txtInput18.Location = new System.Drawing.Point(757, 608);
+            this.txtInput18.Location = new System.Drawing.Point(757, 627);
             this.txtInput18.Name = "txtInput18";
             this.txtInput18.Size = new System.Drawing.Size(108, 21);
             this.txtInput18.TabIndex = 17;
@@ -1007,7 +1008,7 @@
             this.txtOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut18.Enabled = false;
             this.txtOut18.ForeColor = System.Drawing.Color.Black;
-            this.txtOut18.Location = new System.Drawing.Point(407, 614);
+            this.txtOut18.Location = new System.Drawing.Point(407, 633);
             this.txtOut18.Name = "txtOut18";
             this.txtOut18.ReadOnly = true;
             this.txtOut18.Size = new System.Drawing.Size(108, 14);
@@ -1022,7 +1023,7 @@
             this.txtOut48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut48.Enabled = false;
             this.txtOut48.ForeColor = System.Drawing.Color.Black;
-            this.txtOut48.Location = new System.Drawing.Point(582, 585);
+            this.txtOut48.Location = new System.Drawing.Point(582, 604);
             this.txtOut48.Name = "txtOut48";
             this.txtOut48.ReadOnly = true;
             this.txtOut48.Size = new System.Drawing.Size(108, 14);
@@ -1036,7 +1037,7 @@
             this.txtInput17.BackColor = System.Drawing.Color.White;
             this.txtInput17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput17.ForeColor = System.Drawing.Color.Black;
-            this.txtInput17.Location = new System.Drawing.Point(757, 580);
+            this.txtInput17.Location = new System.Drawing.Point(757, 599);
             this.txtInput17.Name = "txtInput17";
             this.txtInput17.Size = new System.Drawing.Size(108, 21);
             this.txtInput17.TabIndex = 16;
@@ -1052,7 +1053,7 @@
             this.txtOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut17.Enabled = false;
             this.txtOut17.ForeColor = System.Drawing.Color.Black;
-            this.txtOut17.Location = new System.Drawing.Point(407, 585);
+            this.txtOut17.Location = new System.Drawing.Point(407, 604);
             this.txtOut17.Name = "txtOut17";
             this.txtOut17.ReadOnly = true;
             this.txtOut17.Size = new System.Drawing.Size(108, 14);
@@ -1067,7 +1068,7 @@
             this.txtOut47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut47.Enabled = false;
             this.txtOut47.ForeColor = System.Drawing.Color.Black;
-            this.txtOut47.Location = new System.Drawing.Point(582, 555);
+            this.txtOut47.Location = new System.Drawing.Point(582, 574);
             this.txtOut47.Name = "txtOut47";
             this.txtOut47.ReadOnly = true;
             this.txtOut47.Size = new System.Drawing.Size(108, 14);
@@ -1081,7 +1082,7 @@
             this.txtInput16.BackColor = System.Drawing.Color.White;
             this.txtInput16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput16.ForeColor = System.Drawing.Color.Black;
-            this.txtInput16.Location = new System.Drawing.Point(757, 550);
+            this.txtInput16.Location = new System.Drawing.Point(757, 569);
             this.txtInput16.Name = "txtInput16";
             this.txtInput16.Size = new System.Drawing.Size(108, 21);
             this.txtInput16.TabIndex = 15;
@@ -1097,7 +1098,7 @@
             this.txtOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut16.Enabled = false;
             this.txtOut16.ForeColor = System.Drawing.Color.Black;
-            this.txtOut16.Location = new System.Drawing.Point(407, 555);
+            this.txtOut16.Location = new System.Drawing.Point(407, 574);
             this.txtOut16.Name = "txtOut16";
             this.txtOut16.ReadOnly = true;
             this.txtOut16.Size = new System.Drawing.Size(108, 14);
@@ -1110,7 +1111,7 @@
             // 
             this.label240.AutoSize = true;
             this.label240.ForeColor = System.Drawing.Color.Black;
-            this.label240.Location = new System.Drawing.Point(198, 905);
+            this.label240.Location = new System.Drawing.Point(198, 924);
             this.label240.Name = "label240";
             this.label240.Size = new System.Drawing.Size(53, 12);
             this.label240.TabIndex = 539;
@@ -1120,7 +1121,7 @@
             // 
             this.label241.AutoSize = true;
             this.label241.ForeColor = System.Drawing.Color.Black;
-            this.label241.Location = new System.Drawing.Point(198, 875);
+            this.label241.Location = new System.Drawing.Point(198, 894);
             this.label241.Name = "label241";
             this.label241.Size = new System.Drawing.Size(53, 12);
             this.label241.TabIndex = 538;
@@ -1130,7 +1131,7 @@
             // 
             this.label244.AutoSize = true;
             this.label244.ForeColor = System.Drawing.Color.Black;
-            this.label244.Location = new System.Drawing.Point(198, 845);
+            this.label244.Location = new System.Drawing.Point(198, 864);
             this.label244.Name = "label244";
             this.label244.Size = new System.Drawing.Size(41, 12);
             this.label244.TabIndex = 537;
@@ -1141,7 +1142,7 @@
             this.label245.AutoSize = true;
             this.label245.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label245.ForeColor = System.Drawing.Color.Black;
-            this.label245.Location = new System.Drawing.Point(81, 872);
+            this.label245.Location = new System.Drawing.Point(81, 891);
             this.label245.Name = "label245";
             this.label245.Size = new System.Drawing.Size(42, 16);
             this.label245.TabIndex = 536;
@@ -1151,7 +1152,7 @@
             // 
             this.label246.AutoSize = true;
             this.label246.ForeColor = System.Drawing.Color.Black;
-            this.label246.Location = new System.Drawing.Point(198, 815);
+            this.label246.Location = new System.Drawing.Point(198, 834);
             this.label246.Name = "label246";
             this.label246.Size = new System.Drawing.Size(41, 12);
             this.label246.TabIndex = 534;
@@ -1161,7 +1162,7 @@
             // 
             this.label247.AutoSize = true;
             this.label247.ForeColor = System.Drawing.Color.Black;
-            this.label247.Location = new System.Drawing.Point(198, 785);
+            this.label247.Location = new System.Drawing.Point(198, 804);
             this.label247.Name = "label247";
             this.label247.Size = new System.Drawing.Size(65, 12);
             this.label247.TabIndex = 528;
@@ -1171,7 +1172,7 @@
             // 
             this.label182.AutoSize = true;
             this.label182.ForeColor = System.Drawing.Color.Black;
-            this.label182.Location = new System.Drawing.Point(198, 756);
+            this.label182.Location = new System.Drawing.Point(198, 775);
             this.label182.Name = "label182";
             this.label182.Size = new System.Drawing.Size(65, 12);
             this.label182.TabIndex = 503;
@@ -1181,7 +1182,7 @@
             // 
             this.label183.AutoSize = true;
             this.label183.ForeColor = System.Drawing.Color.Black;
-            this.label183.Location = new System.Drawing.Point(198, 726);
+            this.label183.Location = new System.Drawing.Point(198, 745);
             this.label183.Name = "label183";
             this.label183.Size = new System.Drawing.Size(65, 12);
             this.label183.TabIndex = 502;
@@ -1191,7 +1192,7 @@
             // 
             this.label184.AutoSize = true;
             this.label184.ForeColor = System.Drawing.Color.Black;
-            this.label184.Location = new System.Drawing.Point(198, 696);
+            this.label184.Location = new System.Drawing.Point(198, 715);
             this.label184.Name = "label184";
             this.label184.Size = new System.Drawing.Size(65, 12);
             this.label184.TabIndex = 501;
@@ -1201,7 +1202,7 @@
             // 
             this.label185.AutoSize = true;
             this.label185.ForeColor = System.Drawing.Color.Black;
-            this.label185.Location = new System.Drawing.Point(198, 666);
+            this.label185.Location = new System.Drawing.Point(198, 685);
             this.label185.Name = "label185";
             this.label185.Size = new System.Drawing.Size(65, 12);
             this.label185.TabIndex = 500;
@@ -1211,7 +1212,7 @@
             // 
             this.label186.AutoSize = true;
             this.label186.ForeColor = System.Drawing.Color.Black;
-            this.label186.Location = new System.Drawing.Point(245, 638);
+            this.label186.Location = new System.Drawing.Point(245, 657);
             this.label186.Name = "label186";
             this.label186.Size = new System.Drawing.Size(41, 12);
             this.label186.TabIndex = 499;
@@ -1221,7 +1222,7 @@
             // 
             this.label187.AutoSize = true;
             this.label187.ForeColor = System.Drawing.Color.Black;
-            this.label187.Location = new System.Drawing.Point(245, 613);
+            this.label187.Location = new System.Drawing.Point(245, 632);
             this.label187.Name = "label187";
             this.label187.Size = new System.Drawing.Size(41, 12);
             this.label187.TabIndex = 498;
@@ -1231,7 +1232,7 @@
             // 
             this.label188.AutoSize = true;
             this.label188.ForeColor = System.Drawing.Color.Black;
-            this.label188.Location = new System.Drawing.Point(156, 626);
+            this.label188.Location = new System.Drawing.Point(156, 645);
             this.label188.Name = "label188";
             this.label188.Size = new System.Drawing.Size(53, 12);
             this.label188.TabIndex = 497;
@@ -1242,7 +1243,7 @@
             this.label189.AutoSize = true;
             this.label189.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label189.ForeColor = System.Drawing.Color.Black;
-            this.label189.Location = new System.Drawing.Point(81, 690);
+            this.label189.Location = new System.Drawing.Point(81, 709);
             this.label189.Name = "label189";
             this.label189.Size = new System.Drawing.Size(42, 16);
             this.label189.TabIndex = 496;
@@ -1252,7 +1253,7 @@
             // 
             this.label194.AutoSize = true;
             this.label194.ForeColor = System.Drawing.Color.Black;
-            this.label194.Location = new System.Drawing.Point(157, 586);
+            this.label194.Location = new System.Drawing.Point(157, 605);
             this.label194.Name = "label194";
             this.label194.Size = new System.Drawing.Size(105, 12);
             this.label194.TabIndex = 495;
@@ -1262,7 +1263,7 @@
             // 
             this.label195.AutoSize = true;
             this.label195.ForeColor = System.Drawing.Color.Black;
-            this.label195.Location = new System.Drawing.Point(157, 556);
+            this.label195.Location = new System.Drawing.Point(157, 575);
             this.label195.Name = "label195";
             this.label195.Size = new System.Drawing.Size(129, 12);
             this.label195.TabIndex = 489;
@@ -1273,7 +1274,7 @@
             this.label196.AutoSize = true;
             this.label196.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label196.ForeColor = System.Drawing.Color.Black;
-            this.label196.Location = new System.Drawing.Point(81, 567);
+            this.label196.Location = new System.Drawing.Point(81, 586);
             this.label196.Name = "label196";
             this.label196.Size = new System.Drawing.Size(42, 16);
             this.label196.TabIndex = 486;
@@ -1283,7 +1284,7 @@
             // 
             this.label154.AutoSize = true;
             this.label154.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label154.Location = new System.Drawing.Point(26, 300);
+            this.label154.Location = new System.Drawing.Point(26, 319);
             this.label154.Name = "label154";
             this.label154.Size = new System.Drawing.Size(46, 18);
             this.label154.TabIndex = 480;
@@ -1295,7 +1296,7 @@
             this.txtOut46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut46.Enabled = false;
             this.txtOut46.ForeColor = System.Drawing.Color.Black;
-            this.txtOut46.Location = new System.Drawing.Point(582, 525);
+            this.txtOut46.Location = new System.Drawing.Point(582, 544);
             this.txtOut46.Name = "txtOut46";
             this.txtOut46.ReadOnly = true;
             this.txtOut46.Size = new System.Drawing.Size(108, 14);
@@ -1309,7 +1310,7 @@
             this.txtInput15.BackColor = System.Drawing.Color.White;
             this.txtInput15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput15.ForeColor = System.Drawing.Color.Black;
-            this.txtInput15.Location = new System.Drawing.Point(757, 520);
+            this.txtInput15.Location = new System.Drawing.Point(757, 539);
             this.txtInput15.Name = "txtInput15";
             this.txtInput15.Size = new System.Drawing.Size(108, 21);
             this.txtInput15.TabIndex = 14;
@@ -1325,7 +1326,7 @@
             this.txtOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut15.Enabled = false;
             this.txtOut15.ForeColor = System.Drawing.Color.Black;
-            this.txtOut15.Location = new System.Drawing.Point(407, 525);
+            this.txtOut15.Location = new System.Drawing.Point(407, 544);
             this.txtOut15.Name = "txtOut15";
             this.txtOut15.ReadOnly = true;
             this.txtOut15.Size = new System.Drawing.Size(108, 14);
@@ -1339,7 +1340,7 @@
             this.txtInput14.BackColor = System.Drawing.Color.White;
             this.txtInput14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput14.ForeColor = System.Drawing.Color.Black;
-            this.txtInput14.Location = new System.Drawing.Point(757, 490);
+            this.txtInput14.Location = new System.Drawing.Point(757, 509);
             this.txtInput14.Name = "txtInput14";
             this.txtInput14.Size = new System.Drawing.Size(108, 21);
             this.txtInput14.TabIndex = 13;
@@ -1355,7 +1356,7 @@
             this.txtOut45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut45.Enabled = false;
             this.txtOut45.ForeColor = System.Drawing.Color.Black;
-            this.txtOut45.Location = new System.Drawing.Point(582, 495);
+            this.txtOut45.Location = new System.Drawing.Point(582, 514);
             this.txtOut45.Name = "txtOut45";
             this.txtOut45.ReadOnly = true;
             this.txtOut45.Size = new System.Drawing.Size(108, 14);
@@ -1370,7 +1371,7 @@
             this.txtOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut14.Enabled = false;
             this.txtOut14.ForeColor = System.Drawing.Color.Black;
-            this.txtOut14.Location = new System.Drawing.Point(407, 495);
+            this.txtOut14.Location = new System.Drawing.Point(407, 514);
             this.txtOut14.Name = "txtOut14";
             this.txtOut14.ReadOnly = true;
             this.txtOut14.Size = new System.Drawing.Size(108, 14);
@@ -1384,7 +1385,7 @@
             this.txtInput9.BackColor = System.Drawing.Color.White;
             this.txtInput9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput9.ForeColor = System.Drawing.Color.Black;
-            this.txtInput9.Location = new System.Drawing.Point(757, 343);
+            this.txtInput9.Location = new System.Drawing.Point(757, 362);
             this.txtInput9.Name = "txtInput9";
             this.txtInput9.Size = new System.Drawing.Size(108, 21);
             this.txtInput9.TabIndex = 8;
@@ -1400,7 +1401,7 @@
             this.txtOut40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut40.Enabled = false;
             this.txtOut40.ForeColor = System.Drawing.Color.Black;
-            this.txtOut40.Location = new System.Drawing.Point(582, 348);
+            this.txtOut40.Location = new System.Drawing.Point(582, 367);
             this.txtOut40.Name = "txtOut40";
             this.txtOut40.ReadOnly = true;
             this.txtOut40.Size = new System.Drawing.Size(108, 14);
@@ -1415,7 +1416,7 @@
             this.txtOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut9.Enabled = false;
             this.txtOut9.ForeColor = System.Drawing.Color.Black;
-            this.txtOut9.Location = new System.Drawing.Point(407, 348);
+            this.txtOut9.Location = new System.Drawing.Point(407, 367);
             this.txtOut9.Name = "txtOut9";
             this.txtOut9.ReadOnly = true;
             this.txtOut9.Size = new System.Drawing.Size(108, 14);
@@ -1429,7 +1430,7 @@
             this.txtInput8.BackColor = System.Drawing.Color.White;
             this.txtInput8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput8.ForeColor = System.Drawing.Color.Black;
-            this.txtInput8.Location = new System.Drawing.Point(757, 318);
+            this.txtInput8.Location = new System.Drawing.Point(757, 337);
             this.txtInput8.Name = "txtInput8";
             this.txtInput8.Size = new System.Drawing.Size(108, 21);
             this.txtInput8.TabIndex = 7;
@@ -1445,7 +1446,7 @@
             this.txtOut39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut39.Enabled = false;
             this.txtOut39.ForeColor = System.Drawing.Color.Black;
-            this.txtOut39.Location = new System.Drawing.Point(582, 323);
+            this.txtOut39.Location = new System.Drawing.Point(582, 342);
             this.txtOut39.Name = "txtOut39";
             this.txtOut39.ReadOnly = true;
             this.txtOut39.Size = new System.Drawing.Size(108, 14);
@@ -1460,7 +1461,7 @@
             this.txtOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut8.Enabled = false;
             this.txtOut8.ForeColor = System.Drawing.Color.Black;
-            this.txtOut8.Location = new System.Drawing.Point(407, 323);
+            this.txtOut8.Location = new System.Drawing.Point(407, 342);
             this.txtOut8.Name = "txtOut8";
             this.txtOut8.ReadOnly = true;
             this.txtOut8.Size = new System.Drawing.Size(108, 14);
@@ -1474,7 +1475,7 @@
             this.txtInput7.BackColor = System.Drawing.Color.White;
             this.txtInput7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput7.ForeColor = System.Drawing.Color.Black;
-            this.txtInput7.Location = new System.Drawing.Point(757, 293);
+            this.txtInput7.Location = new System.Drawing.Point(757, 312);
             this.txtInput7.Name = "txtInput7";
             this.txtInput7.Size = new System.Drawing.Size(108, 21);
             this.txtInput7.TabIndex = 8;
@@ -1490,7 +1491,7 @@
             this.txtOut38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut38.Enabled = false;
             this.txtOut38.ForeColor = System.Drawing.Color.Black;
-            this.txtOut38.Location = new System.Drawing.Point(582, 298);
+            this.txtOut38.Location = new System.Drawing.Point(582, 317);
             this.txtOut38.Name = "txtOut38";
             this.txtOut38.ReadOnly = true;
             this.txtOut38.Size = new System.Drawing.Size(108, 14);
@@ -1505,7 +1506,7 @@
             this.txtOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut7.Enabled = false;
             this.txtOut7.ForeColor = System.Drawing.Color.Black;
-            this.txtOut7.Location = new System.Drawing.Point(407, 298);
+            this.txtOut7.Location = new System.Drawing.Point(407, 317);
             this.txtOut7.Name = "txtOut7";
             this.txtOut7.ReadOnly = true;
             this.txtOut7.Size = new System.Drawing.Size(108, 14);
@@ -1519,7 +1520,7 @@
             this.txtInput10.BackColor = System.Drawing.Color.White;
             this.txtInput10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput10.ForeColor = System.Drawing.Color.Black;
-            this.txtInput10.Location = new System.Drawing.Point(757, 370);
+            this.txtInput10.Location = new System.Drawing.Point(757, 389);
             this.txtInput10.Name = "txtInput10";
             this.txtInput10.Size = new System.Drawing.Size(108, 21);
             this.txtInput10.TabIndex = 9;
@@ -1535,7 +1536,7 @@
             this.txtOut41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut41.Enabled = false;
             this.txtOut41.ForeColor = System.Drawing.Color.Black;
-            this.txtOut41.Location = new System.Drawing.Point(582, 375);
+            this.txtOut41.Location = new System.Drawing.Point(582, 394);
             this.txtOut41.Name = "txtOut41";
             this.txtOut41.ReadOnly = true;
             this.txtOut41.Size = new System.Drawing.Size(108, 14);
@@ -1550,7 +1551,7 @@
             this.txtOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut10.Enabled = false;
             this.txtOut10.ForeColor = System.Drawing.Color.Black;
-            this.txtOut10.Location = new System.Drawing.Point(407, 375);
+            this.txtOut10.Location = new System.Drawing.Point(407, 394);
             this.txtOut10.Name = "txtOut10";
             this.txtOut10.ReadOnly = true;
             this.txtOut10.Size = new System.Drawing.Size(108, 14);
@@ -1564,7 +1565,7 @@
             this.txtInput11.BackColor = System.Drawing.Color.White;
             this.txtInput11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput11.ForeColor = System.Drawing.Color.Black;
-            this.txtInput11.Location = new System.Drawing.Point(757, 400);
+            this.txtInput11.Location = new System.Drawing.Point(757, 419);
             this.txtInput11.Name = "txtInput11";
             this.txtInput11.Size = new System.Drawing.Size(108, 21);
             this.txtInput11.TabIndex = 10;
@@ -1580,7 +1581,7 @@
             this.txtOut42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut42.Enabled = false;
             this.txtOut42.ForeColor = System.Drawing.Color.Black;
-            this.txtOut42.Location = new System.Drawing.Point(582, 405);
+            this.txtOut42.Location = new System.Drawing.Point(582, 424);
             this.txtOut42.Name = "txtOut42";
             this.txtOut42.ReadOnly = true;
             this.txtOut42.Size = new System.Drawing.Size(108, 14);
@@ -1595,7 +1596,7 @@
             this.txtOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut11.Enabled = false;
             this.txtOut11.ForeColor = System.Drawing.Color.Black;
-            this.txtOut11.Location = new System.Drawing.Point(407, 405);
+            this.txtOut11.Location = new System.Drawing.Point(407, 424);
             this.txtOut11.Name = "txtOut11";
             this.txtOut11.ReadOnly = true;
             this.txtOut11.Size = new System.Drawing.Size(108, 14);
@@ -1609,7 +1610,7 @@
             this.txtInput12.BackColor = System.Drawing.Color.White;
             this.txtInput12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput12.ForeColor = System.Drawing.Color.Black;
-            this.txtInput12.Location = new System.Drawing.Point(757, 430);
+            this.txtInput12.Location = new System.Drawing.Point(757, 449);
             this.txtInput12.Name = "txtInput12";
             this.txtInput12.Size = new System.Drawing.Size(108, 21);
             this.txtInput12.TabIndex = 11;
@@ -1625,7 +1626,7 @@
             this.txtOut43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut43.Enabled = false;
             this.txtOut43.ForeColor = System.Drawing.Color.Black;
-            this.txtOut43.Location = new System.Drawing.Point(582, 435);
+            this.txtOut43.Location = new System.Drawing.Point(582, 454);
             this.txtOut43.Name = "txtOut43";
             this.txtOut43.ReadOnly = true;
             this.txtOut43.Size = new System.Drawing.Size(108, 14);
@@ -1640,7 +1641,7 @@
             this.txtOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut12.Enabled = false;
             this.txtOut12.ForeColor = System.Drawing.Color.Black;
-            this.txtOut12.Location = new System.Drawing.Point(407, 435);
+            this.txtOut12.Location = new System.Drawing.Point(407, 454);
             this.txtOut12.Name = "txtOut12";
             this.txtOut12.ReadOnly = true;
             this.txtOut12.Size = new System.Drawing.Size(108, 14);
@@ -1654,7 +1655,7 @@
             this.txtInput13.BackColor = System.Drawing.Color.White;
             this.txtInput13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput13.ForeColor = System.Drawing.Color.Black;
-            this.txtInput13.Location = new System.Drawing.Point(757, 460);
+            this.txtInput13.Location = new System.Drawing.Point(757, 479);
             this.txtInput13.Name = "txtInput13";
             this.txtInput13.Size = new System.Drawing.Size(108, 21);
             this.txtInput13.TabIndex = 12;
@@ -1670,7 +1671,7 @@
             this.txtOut44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut44.Enabled = false;
             this.txtOut44.ForeColor = System.Drawing.Color.Black;
-            this.txtOut44.Location = new System.Drawing.Point(582, 465);
+            this.txtOut44.Location = new System.Drawing.Point(582, 484);
             this.txtOut44.Name = "txtOut44";
             this.txtOut44.ReadOnly = true;
             this.txtOut44.Size = new System.Drawing.Size(108, 14);
@@ -1685,7 +1686,7 @@
             this.txtOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut13.Enabled = false;
             this.txtOut13.ForeColor = System.Drawing.Color.Black;
-            this.txtOut13.Location = new System.Drawing.Point(407, 465);
+            this.txtOut13.Location = new System.Drawing.Point(407, 484);
             this.txtOut13.Name = "txtOut13";
             this.txtOut13.ReadOnly = true;
             this.txtOut13.Size = new System.Drawing.Size(108, 14);
@@ -1699,7 +1700,7 @@
             this.txtInput6.BackColor = System.Drawing.Color.White;
             this.txtInput6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput6.ForeColor = System.Drawing.Color.Black;
-            this.txtInput6.Location = new System.Drawing.Point(757, 268);
+            this.txtInput6.Location = new System.Drawing.Point(757, 287);
             this.txtInput6.Name = "txtInput6";
             this.txtInput6.Size = new System.Drawing.Size(108, 21);
             this.txtInput6.TabIndex = 7;
@@ -1715,7 +1716,7 @@
             this.txtOut37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut37.Enabled = false;
             this.txtOut37.ForeColor = System.Drawing.Color.Black;
-            this.txtOut37.Location = new System.Drawing.Point(582, 273);
+            this.txtOut37.Location = new System.Drawing.Point(582, 292);
             this.txtOut37.Name = "txtOut37";
             this.txtOut37.ReadOnly = true;
             this.txtOut37.Size = new System.Drawing.Size(108, 14);
@@ -1730,7 +1731,7 @@
             this.txtOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut6.Enabled = false;
             this.txtOut6.ForeColor = System.Drawing.Color.Black;
-            this.txtOut6.Location = new System.Drawing.Point(407, 273);
+            this.txtOut6.Location = new System.Drawing.Point(407, 292);
             this.txtOut6.Name = "txtOut6";
             this.txtOut6.ReadOnly = true;
             this.txtOut6.Size = new System.Drawing.Size(108, 14);
@@ -1743,7 +1744,7 @@
             // 
             this.txtInput2.BackColor = System.Drawing.Color.White;
             this.txtInput2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInput2.Location = new System.Drawing.Point(757, 238);
+            this.txtInput2.Location = new System.Drawing.Point(757, 257);
             this.txtInput2.Name = "txtInput2";
             this.txtInput2.Size = new System.Drawing.Size(108, 21);
             this.txtInput2.TabIndex = 1;
@@ -1758,7 +1759,7 @@
             this.txtOut33.BackColor = System.Drawing.SystemColors.Control;
             this.txtOut33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut33.Enabled = false;
-            this.txtOut33.Location = new System.Drawing.Point(582, 243);
+            this.txtOut33.Location = new System.Drawing.Point(582, 262);
             this.txtOut33.Name = "txtOut33";
             this.txtOut33.ReadOnly = true;
             this.txtOut33.Size = new System.Drawing.Size(108, 14);
@@ -1772,7 +1773,7 @@
             this.txtOut2.BackColor = System.Drawing.SystemColors.Control;
             this.txtOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut2.Enabled = false;
-            this.txtOut2.Location = new System.Drawing.Point(407, 243);
+            this.txtOut2.Location = new System.Drawing.Point(407, 262);
             this.txtOut2.Name = "txtOut2";
             this.txtOut2.ReadOnly = true;
             this.txtOut2.Size = new System.Drawing.Size(108, 14);
@@ -1786,7 +1787,7 @@
             this.txtInput1.BackColor = System.Drawing.Color.White;
             this.txtInput1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtInput1.Location = new System.Drawing.Point(757, 208);
+            this.txtInput1.Location = new System.Drawing.Point(757, 227);
             this.txtInput1.Name = "txtInput1";
             this.txtInput1.Size = new System.Drawing.Size(108, 21);
             this.txtInput1.TabIndex = 0;
@@ -1801,7 +1802,7 @@
             this.txtOut32.BackColor = System.Drawing.SystemColors.Control;
             this.txtOut32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut32.Enabled = false;
-            this.txtOut32.Location = new System.Drawing.Point(582, 213);
+            this.txtOut32.Location = new System.Drawing.Point(582, 232);
             this.txtOut32.Name = "txtOut32";
             this.txtOut32.ReadOnly = true;
             this.txtOut32.Size = new System.Drawing.Size(108, 14);
@@ -1815,7 +1816,7 @@
             this.txtOut1.BackColor = System.Drawing.SystemColors.Control;
             this.txtOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOut1.Enabled = false;
-            this.txtOut1.Location = new System.Drawing.Point(407, 213);
+            this.txtOut1.Location = new System.Drawing.Point(407, 232);
             this.txtOut1.Name = "txtOut1";
             this.txtOut1.ReadOnly = true;
             this.txtOut1.Size = new System.Drawing.Size(108, 14);
@@ -1830,7 +1831,7 @@
             this.label25.BackColor = System.Drawing.Color.LemonChiffon;
             this.label25.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(580, 184);
+            this.label25.Location = new System.Drawing.Point(580, 203);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(114, 12);
             this.label25.TabIndex = 477;
@@ -1842,7 +1843,7 @@
             this.label136.BackColor = System.Drawing.Color.LemonChiffon;
             this.label136.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label136.ForeColor = System.Drawing.Color.Black;
-            this.label136.Location = new System.Drawing.Point(412, 184);
+            this.label136.Location = new System.Drawing.Point(412, 203);
             this.label136.Name = "label136";
             this.label136.Size = new System.Drawing.Size(101, 12);
             this.label136.TabIndex = 478;
@@ -1854,7 +1855,7 @@
             this.label137.BackColor = System.Drawing.Color.LemonChiffon;
             this.label137.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label137.ForeColor = System.Drawing.Color.Black;
-            this.label137.Location = new System.Drawing.Point(225, 184);
+            this.label137.Location = new System.Drawing.Point(225, 203);
             this.label137.Name = "label137";
             this.label137.Size = new System.Drawing.Size(31, 12);
             this.label137.TabIndex = 476;
@@ -1866,7 +1867,7 @@
             this.label138.BackColor = System.Drawing.Color.LemonChiffon;
             this.label138.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label138.ForeColor = System.Drawing.Color.Black;
-            this.label138.Location = new System.Drawing.Point(73, 184);
+            this.label138.Location = new System.Drawing.Point(73, 203);
             this.label138.Name = "label138";
             this.label138.Size = new System.Drawing.Size(31, 12);
             this.label138.TabIndex = 475;
@@ -1876,7 +1877,7 @@
             // 
             this.label139.AutoSize = true;
             this.label139.ForeColor = System.Drawing.Color.Black;
-            this.label139.Location = new System.Drawing.Point(174, 376);
+            this.label139.Location = new System.Drawing.Point(174, 395);
             this.label139.Name = "label139";
             this.label139.Size = new System.Drawing.Size(65, 12);
             this.label139.TabIndex = 444;
@@ -1886,7 +1887,7 @@
             // 
             this.label140.AutoSize = true;
             this.label140.ForeColor = System.Drawing.Color.Black;
-            this.label140.Location = new System.Drawing.Point(174, 406);
+            this.label140.Location = new System.Drawing.Point(174, 425);
             this.label140.Name = "label140";
             this.label140.Size = new System.Drawing.Size(41, 12);
             this.label140.TabIndex = 443;
@@ -1896,7 +1897,7 @@
             // 
             this.label142.AutoSize = true;
             this.label142.ForeColor = System.Drawing.Color.Black;
-            this.label142.Location = new System.Drawing.Point(174, 496);
+            this.label142.Location = new System.Drawing.Point(174, 515);
             this.label142.Name = "label142";
             this.label142.Size = new System.Drawing.Size(65, 12);
             this.label142.TabIndex = 442;
@@ -1906,7 +1907,7 @@
             // 
             this.label143.AutoSize = true;
             this.label143.ForeColor = System.Drawing.Color.Black;
-            this.label143.Location = new System.Drawing.Point(174, 526);
+            this.label143.Location = new System.Drawing.Point(174, 545);
             this.label143.Name = "label143";
             this.label143.Size = new System.Drawing.Size(65, 12);
             this.label143.TabIndex = 441;
@@ -1916,7 +1917,7 @@
             // 
             this.label144.AutoSize = true;
             this.label144.ForeColor = System.Drawing.Color.Black;
-            this.label144.Location = new System.Drawing.Point(174, 466);
+            this.label144.Location = new System.Drawing.Point(174, 485);
             this.label144.Name = "label144";
             this.label144.Size = new System.Drawing.Size(65, 12);
             this.label144.TabIndex = 440;
@@ -1926,7 +1927,7 @@
             // 
             this.label145.AutoSize = true;
             this.label145.ForeColor = System.Drawing.Color.Black;
-            this.label145.Location = new System.Drawing.Point(258, 345);
+            this.label145.Location = new System.Drawing.Point(258, 364);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(41, 12);
             this.label145.TabIndex = 439;
@@ -1936,7 +1937,7 @@
             // 
             this.label146.AutoSize = true;
             this.label146.ForeColor = System.Drawing.Color.Black;
-            this.label146.Location = new System.Drawing.Point(174, 436);
+            this.label146.Location = new System.Drawing.Point(174, 455);
             this.label146.Name = "label146";
             this.label146.Size = new System.Drawing.Size(65, 12);
             this.label146.TabIndex = 438;
@@ -1946,7 +1947,7 @@
             // 
             this.label147.AutoSize = true;
             this.label147.ForeColor = System.Drawing.Color.Black;
-            this.label147.Location = new System.Drawing.Point(145, 333);
+            this.label147.Location = new System.Drawing.Point(145, 352);
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(53, 12);
             this.label147.TabIndex = 437;
@@ -1956,7 +1957,7 @@
             // 
             this.label148.AutoSize = true;
             this.label148.ForeColor = System.Drawing.Color.Black;
-            this.label148.Location = new System.Drawing.Point(258, 320);
+            this.label148.Location = new System.Drawing.Point(258, 339);
             this.label148.Name = "label148";
             this.label148.Size = new System.Drawing.Size(41, 12);
             this.label148.TabIndex = 436;
@@ -1966,7 +1967,7 @@
             // 
             this.label149.AutoSize = true;
             this.label149.ForeColor = System.Drawing.Color.Black;
-            this.label149.Location = new System.Drawing.Point(257, 272);
+            this.label149.Location = new System.Drawing.Point(257, 291);
             this.label149.Name = "label149";
             this.label149.Size = new System.Drawing.Size(29, 12);
             this.label149.TabIndex = 435;
@@ -1976,7 +1977,7 @@
             // 
             this.label150.AutoSize = true;
             this.label150.ForeColor = System.Drawing.Color.Black;
-            this.label150.Location = new System.Drawing.Point(258, 297);
+            this.label150.Location = new System.Drawing.Point(258, 316);
             this.label150.Name = "label150";
             this.label150.Size = new System.Drawing.Size(29, 12);
             this.label150.TabIndex = 434;
@@ -1986,7 +1987,7 @@
             // 
             this.label151.AutoSize = true;
             this.label151.ForeColor = System.Drawing.Color.Black;
-            this.label151.Location = new System.Drawing.Point(143, 244);
+            this.label151.Location = new System.Drawing.Point(143, 263);
             this.label151.Name = "label151";
             this.label151.Size = new System.Drawing.Size(90, 12);
             this.label151.TabIndex = 430;
@@ -1996,7 +1997,7 @@
             // 
             this.label153.AutoSize = true;
             this.label153.ForeColor = System.Drawing.Color.Black;
-            this.label153.Location = new System.Drawing.Point(143, 287);
+            this.label153.Location = new System.Drawing.Point(143, 306);
             this.label153.Name = "label153";
             this.label153.Size = new System.Drawing.Size(89, 12);
             this.label153.TabIndex = 417;
@@ -2007,7 +2008,7 @@
             this.label164.AutoSize = true;
             this.label164.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label164.ForeColor = System.Drawing.Color.Black;
-            this.label164.Location = new System.Drawing.Point(81, 406);
+            this.label164.Location = new System.Drawing.Point(81, 425);
             this.label164.Name = "label164";
             this.label164.Size = new System.Drawing.Size(42, 16);
             this.label164.TabIndex = 410;
@@ -2017,7 +2018,7 @@
             // 
             this.label165.AutoSize = true;
             this.label165.ForeColor = System.Drawing.Color.Black;
-            this.label165.Location = new System.Drawing.Point(143, 214);
+            this.label165.Location = new System.Drawing.Point(143, 233);
             this.label165.Name = "label165";
             this.label165.Size = new System.Drawing.Size(109, 12);
             this.label165.TabIndex = 409;
@@ -2028,7 +2029,7 @@
             this.label166.AutoSize = true;
             this.label166.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label166.ForeColor = System.Drawing.Color.Black;
-            this.label166.Location = new System.Drawing.Point(81, 227);
+            this.label166.Location = new System.Drawing.Point(81, 246);
             this.label166.Name = "label166";
             this.label166.Size = new System.Drawing.Size(42, 16);
             this.label166.TabIndex = 408;
@@ -2040,7 +2041,7 @@
             this.label1.BackColor = System.Drawing.Color.LemonChiffon;
             this.label1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(768, 184);
+            this.label1.Location = new System.Drawing.Point(768, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 12);
             this.label1.TabIndex = 477;
@@ -2052,7 +2053,7 @@
             this.panel162.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel162.Controls.Add(this.panel163);
             this.panel162.ForeColor = System.Drawing.Color.Black;
-            this.panel162.Location = new System.Drawing.Point(127, 926);
+            this.panel162.Location = new System.Drawing.Point(127, 945);
             this.panel162.Name = "panel162";
             this.panel162.Size = new System.Drawing.Size(935, 1);
             this.panel162.TabIndex = 564;
@@ -2060,7 +2061,7 @@
             // panel163
             // 
             this.panel163.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel163.Location = new System.Drawing.Point(0, 20);
+            this.panel163.Location = new System.Drawing.Point(0, 25);
             this.panel163.Name = "panel163";
             this.panel163.Size = new System.Drawing.Size(698, 5);
             this.panel163.TabIndex = 18;
@@ -2071,7 +2072,7 @@
             this.panel172.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel172.Controls.Add(this.panel173);
             this.panel172.ForeColor = System.Drawing.Color.Black;
-            this.panel172.Location = new System.Drawing.Point(14, 956);
+            this.panel172.Location = new System.Drawing.Point(14, 975);
             this.panel172.Name = "panel172";
             this.panel172.Size = new System.Drawing.Size(1050, 3);
             this.panel172.TabIndex = 563;
@@ -2079,7 +2080,7 @@
             // panel173
             // 
             this.panel173.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel173.Location = new System.Drawing.Point(0, 20);
+            this.panel173.Location = new System.Drawing.Point(0, 25);
             this.panel173.Name = "panel173";
             this.panel173.Size = new System.Drawing.Size(698, 5);
             this.panel173.TabIndex = 18;
@@ -2090,7 +2091,7 @@
             this.panel137.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel137.Controls.Add(this.panel161);
             this.panel137.ForeColor = System.Drawing.Color.Black;
-            this.panel137.Location = new System.Drawing.Point(127, 835);
+            this.panel137.Location = new System.Drawing.Point(127, 854);
             this.panel137.Name = "panel137";
             this.panel137.Size = new System.Drawing.Size(935, 1);
             this.panel137.TabIndex = 535;
@@ -2098,7 +2099,7 @@
             // panel161
             // 
             this.panel161.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel161.Location = new System.Drawing.Point(0, 20);
+            this.panel161.Location = new System.Drawing.Point(0, 25);
             this.panel161.Name = "panel161";
             this.panel161.Size = new System.Drawing.Size(698, 5);
             this.panel161.TabIndex = 18;
@@ -2109,7 +2110,7 @@
             this.panel168.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel168.Controls.Add(this.panel169);
             this.panel168.ForeColor = System.Drawing.Color.Black;
-            this.panel168.Location = new System.Drawing.Point(127, 895);
+            this.panel168.Location = new System.Drawing.Point(127, 914);
             this.panel168.Name = "panel168";
             this.panel168.Size = new System.Drawing.Size(935, 1);
             this.panel168.TabIndex = 527;
@@ -2117,7 +2118,7 @@
             // panel169
             // 
             this.panel169.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel169.Location = new System.Drawing.Point(0, 20);
+            this.panel169.Location = new System.Drawing.Point(0, 25);
             this.panel169.Name = "panel169";
             this.panel169.Size = new System.Drawing.Size(698, 5);
             this.panel169.TabIndex = 18;
@@ -2128,7 +2129,7 @@
             this.panel170.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel170.Controls.Add(this.panel171);
             this.panel170.ForeColor = System.Drawing.Color.Black;
-            this.panel170.Location = new System.Drawing.Point(127, 865);
+            this.panel170.Location = new System.Drawing.Point(127, 884);
             this.panel170.Name = "panel170";
             this.panel170.Size = new System.Drawing.Size(935, 1);
             this.panel170.TabIndex = 526;
@@ -2136,7 +2137,7 @@
             // panel171
             // 
             this.panel171.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel171.Location = new System.Drawing.Point(0, 20);
+            this.panel171.Location = new System.Drawing.Point(0, 25);
             this.panel171.Name = "panel171";
             this.panel171.Size = new System.Drawing.Size(698, 5);
             this.panel171.TabIndex = 18;
@@ -2147,7 +2148,7 @@
             this.panel174.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel174.Controls.Add(this.panel175);
             this.panel174.ForeColor = System.Drawing.Color.Black;
-            this.panel174.Location = new System.Drawing.Point(127, 805);
+            this.panel174.Location = new System.Drawing.Point(127, 824);
             this.panel174.Name = "panel174";
             this.panel174.Size = new System.Drawing.Size(935, 1);
             this.panel174.TabIndex = 525;
@@ -2155,7 +2156,7 @@
             // panel175
             // 
             this.panel175.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel175.Location = new System.Drawing.Point(0, 20);
+            this.panel175.Location = new System.Drawing.Point(0, 25);
             this.panel175.Name = "panel175";
             this.panel175.Size = new System.Drawing.Size(698, 5);
             this.panel175.TabIndex = 18;
@@ -2166,7 +2167,7 @@
             this.panel109.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel109.Controls.Add(this.panel110);
             this.panel109.ForeColor = System.Drawing.Color.Black;
-            this.panel109.Location = new System.Drawing.Point(127, 745);
+            this.panel109.Location = new System.Drawing.Point(127, 764);
             this.panel109.Name = "panel109";
             this.panel109.Size = new System.Drawing.Size(935, 1);
             this.panel109.TabIndex = 494;
@@ -2174,7 +2175,7 @@
             // panel110
             // 
             this.panel110.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel110.Location = new System.Drawing.Point(0, 20);
+            this.panel110.Location = new System.Drawing.Point(0, 25);
             this.panel110.Name = "panel110";
             this.panel110.Size = new System.Drawing.Size(698, 5);
             this.panel110.TabIndex = 18;
@@ -2185,7 +2186,7 @@
             this.panel111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel111.Controls.Add(this.panel112);
             this.panel111.ForeColor = System.Drawing.Color.Black;
-            this.panel111.Location = new System.Drawing.Point(127, 715);
+            this.panel111.Location = new System.Drawing.Point(127, 734);
             this.panel111.Name = "panel111";
             this.panel111.Size = new System.Drawing.Size(935, 1);
             this.panel111.TabIndex = 490;
@@ -2193,7 +2194,7 @@
             // panel112
             // 
             this.panel112.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel112.Location = new System.Drawing.Point(0, 20);
+            this.panel112.Location = new System.Drawing.Point(0, 25);
             this.panel112.Name = "panel112";
             this.panel112.Size = new System.Drawing.Size(698, 5);
             this.panel112.TabIndex = 18;
@@ -2204,7 +2205,7 @@
             this.panel113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel113.Controls.Add(this.panel114);
             this.panel113.ForeColor = System.Drawing.Color.Black;
-            this.panel113.Location = new System.Drawing.Point(127, 685);
+            this.panel113.Location = new System.Drawing.Point(127, 704);
             this.panel113.Name = "panel113";
             this.panel113.Size = new System.Drawing.Size(935, 1);
             this.panel113.TabIndex = 488;
@@ -2212,7 +2213,7 @@
             // panel114
             // 
             this.panel114.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel114.Location = new System.Drawing.Point(0, 20);
+            this.panel114.Location = new System.Drawing.Point(0, 25);
             this.panel114.Name = "panel114";
             this.panel114.Size = new System.Drawing.Size(698, 5);
             this.panel114.TabIndex = 18;
@@ -2223,7 +2224,7 @@
             this.panel115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel115.Controls.Add(this.panel116);
             this.panel115.ForeColor = System.Drawing.Color.Black;
-            this.panel115.Location = new System.Drawing.Point(127, 655);
+            this.panel115.Location = new System.Drawing.Point(127, 674);
             this.panel115.Name = "panel115";
             this.panel115.Size = new System.Drawing.Size(935, 1);
             this.panel115.TabIndex = 487;
@@ -2231,7 +2232,7 @@
             // panel116
             // 
             this.panel116.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel116.Location = new System.Drawing.Point(0, 20);
+            this.panel116.Location = new System.Drawing.Point(0, 25);
             this.panel116.Name = "panel116";
             this.panel116.Size = new System.Drawing.Size(698, 5);
             this.panel116.TabIndex = 18;
@@ -2242,7 +2243,7 @@
             this.panel117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel117.Controls.Add(this.panel118);
             this.panel117.ForeColor = System.Drawing.Color.Black;
-            this.panel117.Location = new System.Drawing.Point(13, 775);
+            this.panel117.Location = new System.Drawing.Point(13, 794);
             this.panel117.Name = "panel117";
             this.panel117.Size = new System.Drawing.Size(1050, 3);
             this.panel117.TabIndex = 485;
@@ -2250,7 +2251,7 @@
             // panel118
             // 
             this.panel118.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel118.Location = new System.Drawing.Point(0, 20);
+            this.panel118.Location = new System.Drawing.Point(0, 25);
             this.panel118.Name = "panel118";
             this.panel118.Size = new System.Drawing.Size(698, 5);
             this.panel118.TabIndex = 18;
@@ -2261,7 +2262,7 @@
             this.panel122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel122.Controls.Add(this.panel123);
             this.panel122.ForeColor = System.Drawing.Color.Black;
-            this.panel122.Location = new System.Drawing.Point(127, 575);
+            this.panel122.Location = new System.Drawing.Point(127, 594);
             this.panel122.Name = "panel122";
             this.panel122.Size = new System.Drawing.Size(935, 1);
             this.panel122.TabIndex = 483;
@@ -2269,7 +2270,7 @@
             // panel123
             // 
             this.panel123.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel123.Location = new System.Drawing.Point(0, 20);
+            this.panel123.Location = new System.Drawing.Point(0, 25);
             this.panel123.Name = "panel123";
             this.panel123.Size = new System.Drawing.Size(698, 5);
             this.panel123.TabIndex = 18;
@@ -2280,7 +2281,7 @@
             this.panel97.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel97.Controls.Add(this.panel98);
             this.panel97.ForeColor = System.Drawing.Color.Black;
-            this.panel97.Location = new System.Drawing.Point(13, 545);
+            this.panel97.Location = new System.Drawing.Point(13, 564);
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(1050, 3);
             this.panel97.TabIndex = 481;
@@ -2288,7 +2289,7 @@
             // panel98
             // 
             this.panel98.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel98.Location = new System.Drawing.Point(0, 20);
+            this.panel98.Location = new System.Drawing.Point(0, 25);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(698, 5);
             this.panel98.TabIndex = 18;
@@ -2299,7 +2300,7 @@
             this.panel80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel80.Controls.Add(this.panel18);
             this.panel80.ForeColor = System.Drawing.Color.Black;
-            this.panel80.Location = new System.Drawing.Point(397, 174);
+            this.panel80.Location = new System.Drawing.Point(397, 193);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(1, 1070);
             this.panel80.TabIndex = 479;
@@ -2309,7 +2310,7 @@
             this.panel18.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel18.ForeColor = System.Drawing.Color.Black;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Location = new System.Drawing.Point(0, 5);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(1, 930);
             this.panel18.TabIndex = 480;
@@ -2320,7 +2321,7 @@
             this.panel81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel81.Controls.Add(this.panel82);
             this.panel81.ForeColor = System.Drawing.Color.Black;
-            this.panel81.Location = new System.Drawing.Point(127, 515);
+            this.panel81.Location = new System.Drawing.Point(127, 534);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(935, 1);
             this.panel81.TabIndex = 403;
@@ -2328,7 +2329,7 @@
             // panel82
             // 
             this.panel82.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel82.Location = new System.Drawing.Point(0, 20);
+            this.panel82.Location = new System.Drawing.Point(0, 25);
             this.panel82.Name = "panel82";
             this.panel82.Size = new System.Drawing.Size(698, 5);
             this.panel82.TabIndex = 18;
@@ -2339,7 +2340,7 @@
             this.panel83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel83.Controls.Add(this.panel84);
             this.panel83.ForeColor = System.Drawing.Color.Black;
-            this.panel83.Location = new System.Drawing.Point(127, 485);
+            this.panel83.Location = new System.Drawing.Point(127, 504);
             this.panel83.Name = "panel83";
             this.panel83.Size = new System.Drawing.Size(935, 1);
             this.panel83.TabIndex = 401;
@@ -2347,7 +2348,7 @@
             // panel84
             // 
             this.panel84.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel84.Location = new System.Drawing.Point(0, 20);
+            this.panel84.Location = new System.Drawing.Point(0, 25);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(698, 5);
             this.panel84.TabIndex = 18;
@@ -2358,7 +2359,7 @@
             this.panel93.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel93.Controls.Add(this.panel94);
             this.panel93.ForeColor = System.Drawing.Color.Black;
-            this.panel93.Location = new System.Drawing.Point(127, 233);
+            this.panel93.Location = new System.Drawing.Point(127, 252);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(935, 1);
             this.panel93.TabIndex = 404;
@@ -2366,7 +2367,7 @@
             // panel94
             // 
             this.panel94.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel94.Location = new System.Drawing.Point(0, 20);
+            this.panel94.Location = new System.Drawing.Point(0, 25);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(698, 5);
             this.panel94.TabIndex = 18;
@@ -2377,7 +2378,7 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(12, 174);
+            this.panel1.Location = new System.Drawing.Point(12, 193);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1050, 3);
             this.panel1.TabIndex = 402;
@@ -2385,7 +2386,7 @@
             // panel2
             // 
             this.panel2.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel2.Location = new System.Drawing.Point(0, 20);
+            this.panel2.Location = new System.Drawing.Point(0, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(698, 5);
             this.panel2.TabIndex = 18;
@@ -2396,7 +2397,7 @@
             this.panel95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel95.Controls.Add(this.panel96);
             this.panel95.ForeColor = System.Drawing.Color.Black;
-            this.panel95.Location = new System.Drawing.Point(12, 201);
+            this.panel95.Location = new System.Drawing.Point(12, 220);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(1050, 3);
             this.panel95.TabIndex = 402;
@@ -2404,7 +2405,7 @@
             // panel96
             // 
             this.panel96.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel96.Location = new System.Drawing.Point(0, 20);
+            this.panel96.Location = new System.Drawing.Point(0, 25);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(698, 5);
             this.panel96.TabIndex = 18;
@@ -2415,7 +2416,7 @@
             this.panel99.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel99.Controls.Add(this.panel100);
             this.panel99.ForeColor = System.Drawing.Color.Black;
-            this.panel99.Location = new System.Drawing.Point(127, 425);
+            this.panel99.Location = new System.Drawing.Point(127, 444);
             this.panel99.Name = "panel99";
             this.panel99.Size = new System.Drawing.Size(935, 1);
             this.panel99.TabIndex = 396;
@@ -2423,7 +2424,7 @@
             // panel100
             // 
             this.panel100.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel100.Location = new System.Drawing.Point(0, 20);
+            this.panel100.Location = new System.Drawing.Point(0, 25);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(698, 5);
             this.panel100.TabIndex = 18;
@@ -2434,7 +2435,7 @@
             this.panel101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel101.Controls.Add(this.panel102);
             this.panel101.ForeColor = System.Drawing.Color.Black;
-            this.panel101.Location = new System.Drawing.Point(127, 395);
+            this.panel101.Location = new System.Drawing.Point(127, 414);
             this.panel101.Name = "panel101";
             this.panel101.Size = new System.Drawing.Size(935, 1);
             this.panel101.TabIndex = 397;
@@ -2442,7 +2443,7 @@
             // panel102
             // 
             this.panel102.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel102.Location = new System.Drawing.Point(0, 20);
+            this.panel102.Location = new System.Drawing.Point(0, 25);
             this.panel102.Name = "panel102";
             this.panel102.Size = new System.Drawing.Size(698, 5);
             this.panel102.TabIndex = 18;
@@ -2453,7 +2454,7 @@
             this.panel103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel103.Controls.Add(this.panel104);
             this.panel103.ForeColor = System.Drawing.Color.Black;
-            this.panel103.Location = new System.Drawing.Point(127, 365);
+            this.panel103.Location = new System.Drawing.Point(127, 384);
             this.panel103.Name = "panel103";
             this.panel103.Size = new System.Drawing.Size(935, 1);
             this.panel103.TabIndex = 399;
@@ -2461,7 +2462,7 @@
             // panel104
             // 
             this.panel104.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel104.Location = new System.Drawing.Point(0, 20);
+            this.panel104.Location = new System.Drawing.Point(0, 25);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(698, 5);
             this.panel104.TabIndex = 18;
@@ -2472,7 +2473,7 @@
             this.panel105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel105.Controls.Add(this.panel106);
             this.panel105.ForeColor = System.Drawing.Color.Black;
-            this.panel105.Location = new System.Drawing.Point(127, 455);
+            this.panel105.Location = new System.Drawing.Point(127, 474);
             this.panel105.Name = "panel105";
             this.panel105.Size = new System.Drawing.Size(935, 1);
             this.panel105.TabIndex = 398;
@@ -2480,7 +2481,7 @@
             // panel106
             // 
             this.panel106.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel106.Location = new System.Drawing.Point(0, 20);
+            this.panel106.Location = new System.Drawing.Point(0, 25);
             this.panel106.Name = "panel106";
             this.panel106.Size = new System.Drawing.Size(698, 5);
             this.panel106.TabIndex = 18;
@@ -2491,7 +2492,7 @@
             this.panel107.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel107.Controls.Add(this.panel108);
             this.panel107.ForeColor = System.Drawing.Color.Black;
-            this.panel107.Location = new System.Drawing.Point(127, 315);
+            this.panel107.Location = new System.Drawing.Point(127, 334);
             this.panel107.Name = "panel107";
             this.panel107.Size = new System.Drawing.Size(935, 1);
             this.panel107.TabIndex = 395;
@@ -2499,7 +2500,7 @@
             // panel108
             // 
             this.panel108.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel108.Location = new System.Drawing.Point(0, 20);
+            this.panel108.Location = new System.Drawing.Point(0, 25);
             this.panel108.Name = "panel108";
             this.panel108.Size = new System.Drawing.Size(698, 5);
             this.panel108.TabIndex = 18;
@@ -2512,7 +2513,7 @@
             this.panel127.Controls.Add(this.panel128);
             this.panel127.Controls.Add(this.panel130);
             this.panel127.ForeColor = System.Drawing.Color.Black;
-            this.panel127.Location = new System.Drawing.Point(125, 205);
+            this.panel127.Location = new System.Drawing.Point(125, 224);
             this.panel127.Name = "panel127";
             this.panel127.Size = new System.Drawing.Size(1, 1039);
             this.panel127.TabIndex = 570;
@@ -2523,7 +2524,7 @@
             this.panel32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel32.Controls.Add(this.panel33);
             this.panel32.ForeColor = System.Drawing.Color.Black;
-            this.panel32.Location = new System.Drawing.Point(0, 935);
+            this.panel32.Location = new System.Drawing.Point(0, 940);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(935, 1);
             this.panel32.TabIndex = 528;
@@ -2531,7 +2532,7 @@
             // panel33
             // 
             this.panel33.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel33.Location = new System.Drawing.Point(0, 20);
+            this.panel33.Location = new System.Drawing.Point(0, 25);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(698, 5);
             this.panel33.TabIndex = 18;
@@ -2542,7 +2543,7 @@
             this.panel128.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel128.Controls.Add(this.panel129);
             this.panel128.ForeColor = System.Drawing.Color.Black;
-            this.panel128.Location = new System.Drawing.Point(-50, 0);
+            this.panel128.Location = new System.Drawing.Point(-50, 5);
             this.panel128.Name = "panel128";
             this.panel128.Size = new System.Drawing.Size(1, 900);
             this.panel128.TabIndex = 166;
@@ -2552,7 +2553,7 @@
             this.panel129.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel129.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel129.ForeColor = System.Drawing.Color.Black;
-            this.panel129.Location = new System.Drawing.Point(-49, 0);
+            this.panel129.Location = new System.Drawing.Point(-49, 5);
             this.panel129.Name = "panel129";
             this.panel129.Size = new System.Drawing.Size(1, 900);
             this.panel129.TabIndex = 165;
@@ -2562,7 +2563,7 @@
             this.panel130.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel130.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel130.ForeColor = System.Drawing.Color.Black;
-            this.panel130.Location = new System.Drawing.Point(-49, 0);
+            this.panel130.Location = new System.Drawing.Point(-49, 5);
             this.panel130.Name = "panel130";
             this.panel130.Size = new System.Drawing.Size(1, 900);
             this.panel130.TabIndex = 165;
@@ -2574,7 +2575,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(75, 205);
+            this.panel3.Location = new System.Drawing.Point(75, 224);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1, 1005);
             this.panel3.TabIndex = 571;
@@ -2584,7 +2585,7 @@
             this.panel4.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.ForeColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(-50, 0);
+            this.panel4.Location = new System.Drawing.Point(-50, 5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1, 900);
             this.panel4.TabIndex = 166;
@@ -2594,7 +2595,7 @@
             this.panel6.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.ForeColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(-49, 0);
+            this.panel6.Location = new System.Drawing.Point(-49, 5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1, 900);
             this.panel6.TabIndex = 165;
@@ -2604,7 +2605,7 @@
             this.panel5.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.ForeColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(12, 205);
+            this.panel5.Location = new System.Drawing.Point(12, 224);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1, 1039);
             this.panel5.TabIndex = 165;
@@ -2615,7 +2616,7 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.ForeColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(75, 605);
+            this.panel7.Location = new System.Drawing.Point(75, 624);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(990, 1);
             this.panel7.TabIndex = 572;
@@ -2623,7 +2624,7 @@
             // panel8
             // 
             this.panel8.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel8.Location = new System.Drawing.Point(0, 20);
+            this.panel8.Location = new System.Drawing.Point(0, 25);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(698, 5);
             this.panel8.TabIndex = 18;
@@ -2634,7 +2635,7 @@
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.Controls.Add(this.panel10);
             this.panel9.ForeColor = System.Drawing.Color.Black;
-            this.panel9.Location = new System.Drawing.Point(75, 265);
+            this.panel9.Location = new System.Drawing.Point(75, 284);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(990, 1);
             this.panel9.TabIndex = 573;
@@ -2642,7 +2643,7 @@
             // panel10
             // 
             this.panel10.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel10.Location = new System.Drawing.Point(0, 20);
+            this.panel10.Location = new System.Drawing.Point(0, 25);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(698, 5);
             this.panel10.TabIndex = 18;
@@ -2652,7 +2653,7 @@
             this.panel29.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel29.ForeColor = System.Drawing.Color.Black;
-            this.panel29.Location = new System.Drawing.Point(237, 264);
+            this.panel29.Location = new System.Drawing.Point(237, 283);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(1, 102);
             this.panel29.TabIndex = 583;
@@ -2663,7 +2664,7 @@
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel11.Controls.Add(this.panel12);
             this.panel11.ForeColor = System.Drawing.Color.Black;
-            this.panel11.Location = new System.Drawing.Point(238, 290);
+            this.panel11.Location = new System.Drawing.Point(238, 309);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(825, 1);
             this.panel11.TabIndex = 396;
@@ -2671,7 +2672,7 @@
             // panel12
             // 
             this.panel12.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel12.Location = new System.Drawing.Point(0, 20);
+            this.panel12.Location = new System.Drawing.Point(0, 25);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(698, 5);
             this.panel12.TabIndex = 18;
@@ -2682,7 +2683,7 @@
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel13.Controls.Add(this.panel14);
             this.panel13.ForeColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(238, 340);
+            this.panel13.Location = new System.Drawing.Point(238, 359);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(825, 1);
             this.panel13.TabIndex = 397;
@@ -2690,7 +2691,7 @@
             // panel14
             // 
             this.panel14.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel14.Location = new System.Drawing.Point(0, 20);
+            this.panel14.Location = new System.Drawing.Point(0, 25);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(698, 5);
             this.panel14.TabIndex = 18;
@@ -2700,7 +2701,7 @@
             this.panel15.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel15.ForeColor = System.Drawing.Color.Black;
-            this.panel15.Location = new System.Drawing.Point(237, 607);
+            this.panel15.Location = new System.Drawing.Point(237, 626);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1, 50);
             this.panel15.TabIndex = 584;
@@ -2711,7 +2712,7 @@
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel16.Controls.Add(this.panel17);
             this.panel16.ForeColor = System.Drawing.Color.Black;
-            this.panel16.Location = new System.Drawing.Point(238, 630);
+            this.panel16.Location = new System.Drawing.Point(238, 649);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(825, 1);
             this.panel16.TabIndex = 398;
@@ -2719,7 +2720,7 @@
             // panel17
             // 
             this.panel17.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel17.Location = new System.Drawing.Point(0, 20);
+            this.panel17.Location = new System.Drawing.Point(0, 25);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(698, 5);
             this.panel17.TabIndex = 18;
@@ -2730,7 +2731,7 @@
             this.label2.BackColor = System.Drawing.Color.LemonChiffon;
             this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(935, 184);
+            this.label2.Location = new System.Drawing.Point(935, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 12);
             this.label2.TabIndex = 585;
@@ -2741,7 +2742,7 @@
             this.txtAOut1.BackColor = System.Drawing.SystemColors.Control;
             this.txtAOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut1.Enabled = false;
-            this.txtAOut1.Location = new System.Drawing.Point(932, 213);
+            this.txtAOut1.Location = new System.Drawing.Point(932, 232);
             this.txtAOut1.Name = "txtAOut1";
             this.txtAOut1.ReadOnly = true;
             this.txtAOut1.Size = new System.Drawing.Size(108, 14);
@@ -2754,7 +2755,7 @@
             this.txtAOut2.BackColor = System.Drawing.SystemColors.Control;
             this.txtAOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut2.Enabled = false;
-            this.txtAOut2.Location = new System.Drawing.Point(932, 243);
+            this.txtAOut2.Location = new System.Drawing.Point(932, 262);
             this.txtAOut2.Name = "txtAOut2";
             this.txtAOut2.ReadOnly = true;
             this.txtAOut2.Size = new System.Drawing.Size(108, 14);
@@ -2768,7 +2769,7 @@
             this.txtAOut6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut6.Enabled = false;
             this.txtAOut6.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut6.Location = new System.Drawing.Point(932, 273);
+            this.txtAOut6.Location = new System.Drawing.Point(932, 292);
             this.txtAOut6.Name = "txtAOut6";
             this.txtAOut6.ReadOnly = true;
             this.txtAOut6.Size = new System.Drawing.Size(108, 14);
@@ -2782,7 +2783,7 @@
             this.txtAOut13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut13.Enabled = false;
             this.txtAOut13.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut13.Location = new System.Drawing.Point(932, 465);
+            this.txtAOut13.Location = new System.Drawing.Point(932, 484);
             this.txtAOut13.Name = "txtAOut13";
             this.txtAOut13.ReadOnly = true;
             this.txtAOut13.Size = new System.Drawing.Size(108, 14);
@@ -2796,7 +2797,7 @@
             this.txtAOut12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut12.Enabled = false;
             this.txtAOut12.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut12.Location = new System.Drawing.Point(932, 435);
+            this.txtAOut12.Location = new System.Drawing.Point(932, 454);
             this.txtAOut12.Name = "txtAOut12";
             this.txtAOut12.ReadOnly = true;
             this.txtAOut12.Size = new System.Drawing.Size(108, 14);
@@ -2810,7 +2811,7 @@
             this.txtAOut11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut11.Enabled = false;
             this.txtAOut11.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut11.Location = new System.Drawing.Point(932, 405);
+            this.txtAOut11.Location = new System.Drawing.Point(932, 424);
             this.txtAOut11.Name = "txtAOut11";
             this.txtAOut11.ReadOnly = true;
             this.txtAOut11.Size = new System.Drawing.Size(108, 14);
@@ -2824,7 +2825,7 @@
             this.txtAOut10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut10.Enabled = false;
             this.txtAOut10.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut10.Location = new System.Drawing.Point(932, 375);
+            this.txtAOut10.Location = new System.Drawing.Point(932, 394);
             this.txtAOut10.Name = "txtAOut10";
             this.txtAOut10.ReadOnly = true;
             this.txtAOut10.Size = new System.Drawing.Size(108, 14);
@@ -2838,7 +2839,7 @@
             this.txtAOut7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut7.Enabled = false;
             this.txtAOut7.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut7.Location = new System.Drawing.Point(932, 298);
+            this.txtAOut7.Location = new System.Drawing.Point(932, 317);
             this.txtAOut7.Name = "txtAOut7";
             this.txtAOut7.ReadOnly = true;
             this.txtAOut7.Size = new System.Drawing.Size(108, 14);
@@ -2852,7 +2853,7 @@
             this.txtAOut8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut8.Enabled = false;
             this.txtAOut8.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut8.Location = new System.Drawing.Point(932, 323);
+            this.txtAOut8.Location = new System.Drawing.Point(932, 342);
             this.txtAOut8.Name = "txtAOut8";
             this.txtAOut8.ReadOnly = true;
             this.txtAOut8.Size = new System.Drawing.Size(108, 14);
@@ -2866,7 +2867,7 @@
             this.txtAOut9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut9.Enabled = false;
             this.txtAOut9.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut9.Location = new System.Drawing.Point(932, 348);
+            this.txtAOut9.Location = new System.Drawing.Point(932, 367);
             this.txtAOut9.Name = "txtAOut9";
             this.txtAOut9.ReadOnly = true;
             this.txtAOut9.Size = new System.Drawing.Size(108, 14);
@@ -2880,7 +2881,7 @@
             this.txtAOut14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut14.Enabled = false;
             this.txtAOut14.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut14.Location = new System.Drawing.Point(932, 495);
+            this.txtAOut14.Location = new System.Drawing.Point(932, 514);
             this.txtAOut14.Name = "txtAOut14";
             this.txtAOut14.ReadOnly = true;
             this.txtAOut14.Size = new System.Drawing.Size(108, 14);
@@ -2894,7 +2895,7 @@
             this.txtAOut15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut15.Enabled = false;
             this.txtAOut15.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut15.Location = new System.Drawing.Point(932, 525);
+            this.txtAOut15.Location = new System.Drawing.Point(932, 544);
             this.txtAOut15.Name = "txtAOut15";
             this.txtAOut15.ReadOnly = true;
             this.txtAOut15.Size = new System.Drawing.Size(108, 14);
@@ -2908,7 +2909,7 @@
             this.txtAOut16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut16.Enabled = false;
             this.txtAOut16.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut16.Location = new System.Drawing.Point(932, 555);
+            this.txtAOut16.Location = new System.Drawing.Point(932, 574);
             this.txtAOut16.Name = "txtAOut16";
             this.txtAOut16.ReadOnly = true;
             this.txtAOut16.Size = new System.Drawing.Size(108, 14);
@@ -2922,7 +2923,7 @@
             this.txtAOut17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut17.Enabled = false;
             this.txtAOut17.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut17.Location = new System.Drawing.Point(932, 585);
+            this.txtAOut17.Location = new System.Drawing.Point(932, 604);
             this.txtAOut17.Name = "txtAOut17";
             this.txtAOut17.ReadOnly = true;
             this.txtAOut17.Size = new System.Drawing.Size(108, 14);
@@ -2936,7 +2937,7 @@
             this.txtAOut18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut18.Enabled = false;
             this.txtAOut18.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut18.Location = new System.Drawing.Point(933, 614);
+            this.txtAOut18.Location = new System.Drawing.Point(933, 633);
             this.txtAOut18.Name = "txtAOut18";
             this.txtAOut18.ReadOnly = true;
             this.txtAOut18.Size = new System.Drawing.Size(108, 14);
@@ -2950,7 +2951,7 @@
             this.txtAOut19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut19.Enabled = false;
             this.txtAOut19.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut19.Location = new System.Drawing.Point(932, 639);
+            this.txtAOut19.Location = new System.Drawing.Point(932, 658);
             this.txtAOut19.Name = "txtAOut19";
             this.txtAOut19.ReadOnly = true;
             this.txtAOut19.Size = new System.Drawing.Size(108, 14);
@@ -2964,7 +2965,7 @@
             this.txtAOut20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut20.Enabled = false;
             this.txtAOut20.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut20.Location = new System.Drawing.Point(933, 665);
+            this.txtAOut20.Location = new System.Drawing.Point(933, 684);
             this.txtAOut20.Name = "txtAOut20";
             this.txtAOut20.ReadOnly = true;
             this.txtAOut20.Size = new System.Drawing.Size(108, 14);
@@ -2978,7 +2979,7 @@
             this.txtAOut21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut21.Enabled = false;
             this.txtAOut21.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut21.Location = new System.Drawing.Point(933, 695);
+            this.txtAOut21.Location = new System.Drawing.Point(933, 714);
             this.txtAOut21.Name = "txtAOut21";
             this.txtAOut21.ReadOnly = true;
             this.txtAOut21.Size = new System.Drawing.Size(108, 14);
@@ -2992,7 +2993,7 @@
             this.txtAOut22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut22.Enabled = false;
             this.txtAOut22.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut22.Location = new System.Drawing.Point(933, 725);
+            this.txtAOut22.Location = new System.Drawing.Point(933, 744);
             this.txtAOut22.Name = "txtAOut22";
             this.txtAOut22.ReadOnly = true;
             this.txtAOut22.Size = new System.Drawing.Size(108, 14);
@@ -3006,7 +3007,7 @@
             this.txtAOut23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut23.Enabled = false;
             this.txtAOut23.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut23.Location = new System.Drawing.Point(933, 755);
+            this.txtAOut23.Location = new System.Drawing.Point(933, 774);
             this.txtAOut23.Name = "txtAOut23";
             this.txtAOut23.ReadOnly = true;
             this.txtAOut23.Size = new System.Drawing.Size(108, 14);
@@ -3020,7 +3021,7 @@
             this.txtAOut24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut24.Enabled = false;
             this.txtAOut24.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut24.Location = new System.Drawing.Point(933, 785);
+            this.txtAOut24.Location = new System.Drawing.Point(933, 804);
             this.txtAOut24.Name = "txtAOut24";
             this.txtAOut24.ReadOnly = true;
             this.txtAOut24.Size = new System.Drawing.Size(109, 14);
@@ -3034,7 +3035,7 @@
             this.txtAOut25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut25.Enabled = false;
             this.txtAOut25.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut25.Location = new System.Drawing.Point(933, 815);
+            this.txtAOut25.Location = new System.Drawing.Point(933, 834);
             this.txtAOut25.Name = "txtAOut25";
             this.txtAOut25.ReadOnly = true;
             this.txtAOut25.Size = new System.Drawing.Size(109, 14);
@@ -3048,7 +3049,7 @@
             this.txtAOut26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut26.Enabled = false;
             this.txtAOut26.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut26.Location = new System.Drawing.Point(933, 845);
+            this.txtAOut26.Location = new System.Drawing.Point(933, 864);
             this.txtAOut26.Name = "txtAOut26";
             this.txtAOut26.ReadOnly = true;
             this.txtAOut26.Size = new System.Drawing.Size(109, 14);
@@ -3062,7 +3063,7 @@
             this.txtAOut27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut27.Enabled = false;
             this.txtAOut27.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut27.Location = new System.Drawing.Point(933, 875);
+            this.txtAOut27.Location = new System.Drawing.Point(933, 894);
             this.txtAOut27.Name = "txtAOut27";
             this.txtAOut27.ReadOnly = true;
             this.txtAOut27.Size = new System.Drawing.Size(109, 14);
@@ -3076,7 +3077,7 @@
             this.txtAOut28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut28.Enabled = false;
             this.txtAOut28.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut28.Location = new System.Drawing.Point(933, 905);
+            this.txtAOut28.Location = new System.Drawing.Point(933, 924);
             this.txtAOut28.Name = "txtAOut28";
             this.txtAOut28.ReadOnly = true;
             this.txtAOut28.Size = new System.Drawing.Size(109, 14);
@@ -3090,7 +3091,7 @@
             this.txtAOut31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAOut31.Enabled = false;
             this.txtAOut31.ForeColor = System.Drawing.Color.Black;
-            this.txtAOut31.Location = new System.Drawing.Point(933, 936);
+            this.txtAOut31.Location = new System.Drawing.Point(933, 955);
             this.txtAOut31.Name = "txtAOut31";
             this.txtAOut31.ReadOnly = true;
             this.txtAOut31.Size = new System.Drawing.Size(108, 14);
@@ -3103,14 +3104,14 @@
             this.panel19.BackgroundImage = global::KIWI.Properties.Resources.세로선;
             this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel19.ForeColor = System.Drawing.Color.Black;
-            this.panel19.Location = new System.Drawing.Point(552, 176);
+            this.panel19.Location = new System.Drawing.Point(552, 195);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(1, 1070);
             this.panel19.TabIndex = 481;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(920, 1252);
+            this.button2.Location = new System.Drawing.Point(920, 1271);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 32);
             this.button2.TabIndex = 31;
@@ -3120,7 +3121,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(991, 1252);
+            this.button1.Location = new System.Drawing.Point(991, 1271);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 32);
             this.button1.TabIndex = 32;
@@ -3140,7 +3141,7 @@
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel20.Controls.Add(this.panel21);
             this.panel20.ForeColor = System.Drawing.Color.Black;
-            this.panel20.Location = new System.Drawing.Point(12, 1207);
+            this.panel20.Location = new System.Drawing.Point(12, 1226);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(1050, 3);
             this.panel20.TabIndex = 402;
@@ -3148,7 +3149,7 @@
             // panel21
             // 
             this.panel21.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel21.Location = new System.Drawing.Point(0, 20);
+            this.panel21.Location = new System.Drawing.Point(0, 25);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(698, 5);
             this.panel21.TabIndex = 18;
@@ -3159,7 +3160,7 @@
             this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel22.Controls.Add(this.panel23);
             this.panel22.ForeColor = System.Drawing.Color.Black;
-            this.panel22.Location = new System.Drawing.Point(12, 1243);
+            this.panel22.Location = new System.Drawing.Point(12, 1262);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(1050, 3);
             this.panel22.TabIndex = 402;
@@ -3167,7 +3168,7 @@
             // panel23
             // 
             this.panel23.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel23.Location = new System.Drawing.Point(0, 20);
+            this.panel23.Location = new System.Drawing.Point(0, 25);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(698, 5);
             this.panel23.TabIndex = 18;
@@ -3177,7 +3178,7 @@
             this.유통모델_LG.BackColor = System.Drawing.Color.White;
             this.유통모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.유통모델_LG.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.유통모델_LG.Location = new System.Drawing.Point(757, 964);
+            this.유통모델_LG.Location = new System.Drawing.Point(757, 983);
             this.유통모델_LG.Name = "유통모델_LG";
             this.유통모델_LG.Size = new System.Drawing.Size(108, 21);
             this.유통모델_LG.TabIndex = 589;
@@ -3192,7 +3193,7 @@
             this.사업자모델_LG.BackColor = System.Drawing.Color.White;
             this.사업자모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.사업자모델_LG.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.사업자모델_LG.Location = new System.Drawing.Point(757, 1072);
+            this.사업자모델_LG.Location = new System.Drawing.Point(757, 1091);
             this.사업자모델_LG.Name = "사업자모델_LG";
             this.사업자모델_LG.Size = new System.Drawing.Size(108, 21);
             this.사업자모델_LG.TabIndex = 590;
@@ -3207,7 +3208,7 @@
             this.사업자모델_SS.BackColor = System.Drawing.Color.White;
             this.사업자모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.사업자모델_SS.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.사업자모델_SS.Location = new System.Drawing.Point(758, 1108);
+            this.사업자모델_SS.Location = new System.Drawing.Point(758, 1127);
             this.사업자모델_SS.Name = "사업자모델_SS";
             this.사업자모델_SS.Size = new System.Drawing.Size(108, 21);
             this.사업자모델_SS.TabIndex = 592;
@@ -3222,7 +3223,7 @@
             this.유통모델_SS.BackColor = System.Drawing.Color.White;
             this.유통모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.유통모델_SS.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.유통모델_SS.Location = new System.Drawing.Point(757, 1000);
+            this.유통모델_SS.Location = new System.Drawing.Point(757, 1019);
             this.유통모델_SS.Name = "유통모델_SS";
             this.유통모델_SS.Size = new System.Drawing.Size(108, 21);
             this.유통모델_SS.TabIndex = 591;
@@ -3237,7 +3238,7 @@
             this.사업자모델_소계.BackColor = System.Drawing.Color.White;
             this.사업자모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.사업자모델_소계.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.사업자모델_소계.Location = new System.Drawing.Point(758, 1144);
+            this.사업자모델_소계.Location = new System.Drawing.Point(758, 1163);
             this.사업자모델_소계.Name = "사업자모델_소계";
             this.사업자모델_소계.Size = new System.Drawing.Size(108, 21);
             this.사업자모델_소계.TabIndex = 596;
@@ -3252,7 +3253,7 @@
             this.유통모델_소계.BackColor = System.Drawing.Color.White;
             this.유통모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.유통모델_소계.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.유통모델_소계.Location = new System.Drawing.Point(757, 1036);
+            this.유통모델_소계.Location = new System.Drawing.Point(757, 1055);
             this.유통모델_소계.Name = "유통모델_소계";
             this.유통모델_소계.Size = new System.Drawing.Size(108, 21);
             this.유통모델_소계.TabIndex = 595;
@@ -3267,7 +3268,7 @@
             this.ASP_전체계.BackColor = System.Drawing.Color.White;
             this.ASP_전체계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ASP_전체계.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ASP_전체계.Location = new System.Drawing.Point(758, 1180);
+            this.ASP_전체계.Location = new System.Drawing.Point(758, 1199);
             this.ASP_전체계.Name = "ASP_전체계";
             this.ASP_전체계.Size = new System.Drawing.Size(108, 21);
             this.ASP_전체계.TabIndex = 597;
@@ -3282,7 +3283,7 @@
             this.리베이트.BackColor = System.Drawing.Color.White;
             this.리베이트.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.리베이트.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.리베이트.Location = new System.Drawing.Point(758, 1216);
+            this.리베이트.Location = new System.Drawing.Point(758, 1235);
             this.리베이트.Name = "리베이트";
             this.리베이트.Size = new System.Drawing.Size(108, 21);
             this.리베이트.TabIndex = 605;
@@ -3298,7 +3299,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(408, 970);
+            this.textBox1.Location = new System.Drawing.Point(408, 989);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(108, 14);
@@ -3313,7 +3314,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Enabled = false;
             this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(408, 1006);
+            this.textBox2.Location = new System.Drawing.Point(408, 1025);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(108, 14);
@@ -3328,7 +3329,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Enabled = false;
             this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(408, 1042);
+            this.textBox3.Location = new System.Drawing.Point(408, 1061);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(108, 14);
@@ -3343,7 +3344,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(408, 1078);
+            this.textBox4.Location = new System.Drawing.Point(408, 1097);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(108, 14);
@@ -3358,7 +3359,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Enabled = false;
             this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(408, 1114);
+            this.textBox5.Location = new System.Drawing.Point(408, 1133);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(108, 14);
@@ -3373,7 +3374,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(408, 1150);
+            this.textBox6.Location = new System.Drawing.Point(408, 1169);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(108, 14);
@@ -3388,7 +3389,7 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Enabled = false;
             this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(408, 1186);
+            this.textBox7.Location = new System.Drawing.Point(408, 1205);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(108, 14);
@@ -3403,7 +3404,7 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(408, 1222);
+            this.textBox8.Location = new System.Drawing.Point(408, 1241);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(108, 14);
@@ -3416,7 +3417,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(21, 1075);
+            this.label12.Location = new System.Drawing.Point(21, 1094);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(45, 18);
             this.label12.TabIndex = 614;
@@ -3426,7 +3427,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(21, 1220);
+            this.label13.Location = new System.Drawing.Point(21, 1239);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(70, 18);
             this.label13.TabIndex = 615;
@@ -3438,7 +3439,7 @@
             this.panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel30.Controls.Add(this.panel31);
             this.panel30.ForeColor = System.Drawing.Color.Black;
-            this.panel30.Location = new System.Drawing.Point(75, 1066);
+            this.panel30.Location = new System.Drawing.Point(75, 1085);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(990, 1);
             this.panel30.TabIndex = 573;
@@ -3446,7 +3447,7 @@
             // panel31
             // 
             this.panel31.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel31.Location = new System.Drawing.Point(0, 20);
+            this.panel31.Location = new System.Drawing.Point(0, 25);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(698, 5);
             this.panel31.TabIndex = 18;
@@ -3458,7 +3459,7 @@
             this.panel34.Controls.Add(this.panel36);
             this.panel34.Controls.Add(this.panel35);
             this.panel34.ForeColor = System.Drawing.Color.Black;
-            this.panel34.Location = new System.Drawing.Point(125, 1027);
+            this.panel34.Location = new System.Drawing.Point(125, 1046);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(935, 1);
             this.panel34.TabIndex = 528;
@@ -3469,7 +3470,7 @@
             this.panel36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel36.Controls.Add(this.panel37);
             this.panel36.ForeColor = System.Drawing.Color.Black;
-            this.panel36.Location = new System.Drawing.Point(0, 0);
+            this.panel36.Location = new System.Drawing.Point(0, 5);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(935, 1);
             this.panel36.TabIndex = 528;
@@ -3477,7 +3478,7 @@
             // panel37
             // 
             this.panel37.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel37.Location = new System.Drawing.Point(0, 20);
+            this.panel37.Location = new System.Drawing.Point(0, 25);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(698, 5);
             this.panel37.TabIndex = 18;
@@ -3485,7 +3486,7 @@
             // panel35
             // 
             this.panel35.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel35.Location = new System.Drawing.Point(0, 20);
+            this.panel35.Location = new System.Drawing.Point(0, 25);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(698, 5);
             this.panel35.TabIndex = 18;
@@ -3496,7 +3497,7 @@
             this.panel38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel38.Controls.Add(this.panel39);
             this.panel38.ForeColor = System.Drawing.Color.Black;
-            this.panel38.Location = new System.Drawing.Point(126, 993);
+            this.panel38.Location = new System.Drawing.Point(126, 1012);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(935, 1);
             this.panel38.TabIndex = 529;
@@ -3504,7 +3505,7 @@
             // panel39
             // 
             this.panel39.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel39.Location = new System.Drawing.Point(0, 20);
+            this.panel39.Location = new System.Drawing.Point(0, 25);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(698, 5);
             this.panel39.TabIndex = 18;
@@ -3515,7 +3516,7 @@
             this.panel40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel40.Controls.Add(this.panel41);
             this.panel40.ForeColor = System.Drawing.Color.Black;
-            this.panel40.Location = new System.Drawing.Point(126, 1101);
+            this.panel40.Location = new System.Drawing.Point(126, 1120);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(935, 1);
             this.panel40.TabIndex = 529;
@@ -3523,7 +3524,7 @@
             // panel41
             // 
             this.panel41.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel41.Location = new System.Drawing.Point(0, 20);
+            this.panel41.Location = new System.Drawing.Point(0, 25);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(698, 5);
             this.panel41.TabIndex = 18;
@@ -3534,7 +3535,7 @@
             this.panel42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel42.Controls.Add(this.panel43);
             this.panel42.ForeColor = System.Drawing.Color.Black;
-            this.panel42.Location = new System.Drawing.Point(126, 1136);
+            this.panel42.Location = new System.Drawing.Point(126, 1155);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(935, 1);
             this.panel42.TabIndex = 530;
@@ -3542,7 +3543,7 @@
             // panel43
             // 
             this.panel43.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel43.Location = new System.Drawing.Point(0, 20);
+            this.panel43.Location = new System.Drawing.Point(0, 25);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(698, 5);
             this.panel43.TabIndex = 18;
@@ -3553,7 +3554,7 @@
             this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel44.Controls.Add(this.panel45);
             this.panel44.ForeColor = System.Drawing.Color.Black;
-            this.panel44.Location = new System.Drawing.Point(76, 1173);
+            this.panel44.Location = new System.Drawing.Point(76, 1192);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(990, 1);
             this.panel44.TabIndex = 574;
@@ -3561,7 +3562,7 @@
             // panel45
             // 
             this.panel45.BackgroundImage = global::KIWI.Properties.Resources.line;
-            this.panel45.Location = new System.Drawing.Point(0, 20);
+            this.panel45.Location = new System.Drawing.Point(0, 25);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(698, 5);
             this.panel45.TabIndex = 18;
@@ -3571,7 +3572,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(81, 993);
+            this.label3.Location = new System.Drawing.Point(81, 1012);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 616;
@@ -3582,7 +3583,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(81, 1013);
+            this.label4.Location = new System.Drawing.Point(81, 1032);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 617;
@@ -3593,7 +3594,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(73, 1086);
+            this.label5.Location = new System.Drawing.Point(73, 1105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 618;
@@ -3604,7 +3605,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(87, 1183);
+            this.label6.Location = new System.Drawing.Point(87, 1202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 16);
             this.label6.TabIndex = 619;
@@ -3615,7 +3616,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(81, 1108);
+            this.label7.Location = new System.Drawing.Point(81, 1127);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 16);
             this.label7.TabIndex = 620;
@@ -3625,7 +3626,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(197, 1221);
+            this.label8.Location = new System.Drawing.Point(197, 1240);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 628;
@@ -3636,7 +3637,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Control;
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(197, 1185);
+            this.label9.Location = new System.Drawing.Point(197, 1204);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 627;
@@ -3647,7 +3648,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Control;
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(197, 1149);
+            this.label10.Location = new System.Drawing.Point(197, 1168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 626;
@@ -3657,7 +3658,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(197, 1113);
+            this.label11.Location = new System.Drawing.Point(197, 1132);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(21, 12);
             this.label11.TabIndex = 625;
@@ -3667,7 +3668,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(197, 1077);
+            this.label14.Location = new System.Drawing.Point(197, 1096);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(21, 12);
             this.label14.TabIndex = 624;
@@ -3678,7 +3679,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.Control;
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(197, 1041);
+            this.label15.Location = new System.Drawing.Point(197, 1060);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(29, 12);
             this.label15.TabIndex = 623;
@@ -3688,7 +3689,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(197, 1005);
+            this.label16.Location = new System.Drawing.Point(197, 1024);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(21, 12);
             this.label16.TabIndex = 622;
@@ -3698,7 +3699,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(197, 969);
+            this.label17.Location = new System.Drawing.Point(197, 988);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(21, 12);
             this.label17.TabIndex = 621;
@@ -3707,7 +3708,7 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel24.Location = new System.Drawing.Point(12, 177);
+            this.panel24.Location = new System.Drawing.Point(12, 196);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(1051, 24);
             this.panel24.TabIndex = 1000;
@@ -3718,7 +3719,7 @@
             this.out리베이트.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out리베이트.Enabled = false;
             this.out리베이트.ForeColor = System.Drawing.Color.Black;
-            this.out리베이트.Location = new System.Drawing.Point(934, 1220);
+            this.out리베이트.Location = new System.Drawing.Point(934, 1239);
             this.out리베이트.Name = "out리베이트";
             this.out리베이트.ReadOnly = true;
             this.out리베이트.Size = new System.Drawing.Size(108, 14);
@@ -3732,7 +3733,7 @@
             this.outASP_전체계.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outASP_전체계.Enabled = false;
             this.outASP_전체계.ForeColor = System.Drawing.Color.Black;
-            this.outASP_전체계.Location = new System.Drawing.Point(934, 1184);
+            this.outASP_전체계.Location = new System.Drawing.Point(934, 1203);
             this.outASP_전체계.Name = "outASP_전체계";
             this.outASP_전체계.ReadOnly = true;
             this.outASP_전체계.Size = new System.Drawing.Size(108, 14);
@@ -3746,7 +3747,7 @@
             this.out사업자모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out사업자모델_소계.Enabled = false;
             this.out사업자모델_소계.ForeColor = System.Drawing.Color.Black;
-            this.out사업자모델_소계.Location = new System.Drawing.Point(934, 1148);
+            this.out사업자모델_소계.Location = new System.Drawing.Point(934, 1167);
             this.out사업자모델_소계.Name = "out사업자모델_소계";
             this.out사업자모델_소계.ReadOnly = true;
             this.out사업자모델_소계.Size = new System.Drawing.Size(108, 14);
@@ -3760,7 +3761,7 @@
             this.out사업자모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out사업자모델_SS.Enabled = false;
             this.out사업자모델_SS.ForeColor = System.Drawing.Color.Black;
-            this.out사업자모델_SS.Location = new System.Drawing.Point(934, 1112);
+            this.out사업자모델_SS.Location = new System.Drawing.Point(934, 1131);
             this.out사업자모델_SS.Name = "out사업자모델_SS";
             this.out사업자모델_SS.ReadOnly = true;
             this.out사업자모델_SS.Size = new System.Drawing.Size(108, 14);
@@ -3774,7 +3775,7 @@
             this.out사업자모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out사업자모델_LG.Enabled = false;
             this.out사업자모델_LG.ForeColor = System.Drawing.Color.Black;
-            this.out사업자모델_LG.Location = new System.Drawing.Point(934, 1076);
+            this.out사업자모델_LG.Location = new System.Drawing.Point(934, 1095);
             this.out사업자모델_LG.Name = "out사업자모델_LG";
             this.out사업자모델_LG.ReadOnly = true;
             this.out사업자모델_LG.Size = new System.Drawing.Size(108, 14);
@@ -3788,7 +3789,7 @@
             this.out유통모델_소계.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out유통모델_소계.Enabled = false;
             this.out유통모델_소계.ForeColor = System.Drawing.Color.Black;
-            this.out유통모델_소계.Location = new System.Drawing.Point(934, 1040);
+            this.out유통모델_소계.Location = new System.Drawing.Point(934, 1059);
             this.out유통모델_소계.Name = "out유통모델_소계";
             this.out유통모델_소계.ReadOnly = true;
             this.out유통모델_소계.Size = new System.Drawing.Size(108, 14);
@@ -3802,7 +3803,7 @@
             this.out유통모델_SS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out유통모델_SS.Enabled = false;
             this.out유통모델_SS.ForeColor = System.Drawing.Color.Black;
-            this.out유통모델_SS.Location = new System.Drawing.Point(934, 1004);
+            this.out유통모델_SS.Location = new System.Drawing.Point(934, 1023);
             this.out유통모델_SS.Name = "out유통모델_SS";
             this.out유통모델_SS.ReadOnly = true;
             this.out유통모델_SS.Size = new System.Drawing.Size(108, 14);
@@ -3816,13 +3817,22 @@
             this.out유통모델_LG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.out유통모델_LG.Enabled = false;
             this.out유통모델_LG.ForeColor = System.Drawing.Color.Black;
-            this.out유통모델_LG.Location = new System.Drawing.Point(934, 968);
+            this.out유통모델_LG.Location = new System.Drawing.Point(934, 987);
             this.out유통모델_LG.Name = "out유통모델_LG";
             this.out유통모델_LG.ReadOnly = true;
             this.out유통모델_LG.Size = new System.Drawing.Size(108, 14);
             this.out유통모델_LG.TabIndex = 1001;
             this.out유통모델_LG.Text = "0";
             this.out유통모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // 파일명
+            // 
+            this.파일명.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.파일명.Location = new System.Drawing.Point(469, 3);
+            this.파일명.Name = "파일명";
+            this.파일명.Size = new System.Drawing.Size(600, 16);
+            this.파일명.TabIndex = 1009;
+            this.파일명.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormAdmin
             // 
@@ -3832,6 +3842,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1121, 740);
             this.ControlBox = false;
+            this.Controls.Add(this.파일명);
             this.Controls.Add(this.out리베이트);
             this.Controls.Add(this.outASP_전체계);
             this.Controls.Add(this.out사업자모델_소계);
@@ -4409,5 +4420,6 @@
         private System.Windows.Forms.TextBox out유통모델_소계;
         private System.Windows.Forms.TextBox out유통모델_SS;
         private System.Windows.Forms.TextBox out유통모델_LG;
+        private System.Windows.Forms.Label 파일명;
     }
 }

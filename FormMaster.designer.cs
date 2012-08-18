@@ -57,6 +57,9 @@
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +69,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(30, 30);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
+            this.toolStripButton10,
             this.toolStripButton2,
+            this.toolStripSeparator7,
             this.toolStripButton3,
             this.toolStripSeparator1,
             this.toolStripButton4,
@@ -103,7 +108,7 @@
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::KIWI.Properties.Resources.save3;
+            this.toolStripButton2.Image = global::KIWI.Properties.Resources.save_as;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 34);
@@ -241,7 +246,7 @@
             // 
             this.label109.AutoSize = true;
             this.label109.Font = new System.Drawing.Font("굴림", 9F);
-            this.label109.Location = new System.Drawing.Point(227, 37);
+            this.label109.Location = new System.Drawing.Point(267, 37);
             this.label109.Name = "label109";
             this.label109.Size = new System.Drawing.Size(41, 24);
             this.label109.TabIndex = 608;
@@ -251,7 +256,7 @@
             // 
             this.label110.AutoSize = true;
             this.label110.Font = new System.Drawing.Font("굴림", 9F);
-            this.label110.Location = new System.Drawing.Point(194, 38);
+            this.label110.Location = new System.Drawing.Point(233, 38);
             this.label110.Name = "label110";
             this.label110.Size = new System.Drawing.Size(29, 12);
             this.label110.TabIndex = 607;
@@ -261,7 +266,7 @@
             // 
             this.label116.AutoSize = true;
             this.label116.Font = new System.Drawing.Font("굴림", 9F);
-            this.label116.Location = new System.Drawing.Point(80, 37);
+            this.label116.Location = new System.Drawing.Point(121, 37);
             this.label116.Name = "label116";
             this.label116.Size = new System.Drawing.Size(29, 12);
             this.label116.TabIndex = 606;
@@ -271,7 +276,7 @@
             // 
             this.label115.AutoSize = true;
             this.label115.Font = new System.Drawing.Font("굴림", 9F);
-            this.label115.Location = new System.Drawing.Point(350, 37);
+            this.label115.Location = new System.Drawing.Point(393, 37);
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(53, 12);
             this.label115.TabIndex = 605;
@@ -281,7 +286,7 @@
             // 
             this.label111.AutoSize = true;
             this.label111.Font = new System.Drawing.Font("굴림", 9F);
-            this.label111.Location = new System.Drawing.Point(153, 37);
+            this.label111.Location = new System.Drawing.Point(193, 37);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(29, 12);
             this.label111.TabIndex = 604;
@@ -291,7 +296,7 @@
             // 
             this.label112.AutoSize = true;
             this.label112.Font = new System.Drawing.Font("굴림", 9F);
-            this.label112.Location = new System.Drawing.Point(118, 37);
+            this.label112.Location = new System.Drawing.Point(158, 37);
             this.label112.Name = "label112";
             this.label112.Size = new System.Drawing.Size(29, 12);
             this.label112.TabIndex = 603;
@@ -301,7 +306,7 @@
             // 
             this.label113.AutoSize = true;
             this.label113.Font = new System.Drawing.Font("굴림", 9F);
-            this.label113.Location = new System.Drawing.Point(45, 37);
+            this.label113.Location = new System.Drawing.Point(42, 37);
             this.label113.Name = "label113";
             this.label113.Size = new System.Drawing.Size(29, 12);
             this.label113.TabIndex = 602;
@@ -321,25 +326,52 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 9F);
-            this.label1.Location = new System.Drawing.Point(405, 37);
+            this.label1.Location = new System.Drawing.Point(447, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 609;
             this.label1.Text = "관리";
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton10.Image = global::KIWI.Properties.Resources.save2;
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.Size = new System.Drawing.Size(34, 34);
+            this.toolStripButton10.Text = "toolStripButton10";
+            this.toolStripButton10.Click += new System.EventHandler(this.save_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F);
+            this.label2.Location = new System.Drawing.Point(66, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 24);
+            this.label2.TabIndex = 610;
+            this.label2.Text = "새 이름\r\n으로 저장";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 37);
             // 
             // FormMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 802);
+            this.Controls.Add(this.label116);
+            this.Controls.Add(this.label113);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label109);
             this.Controls.Add(this.label110);
-            this.Controls.Add(this.label116);
             this.Controls.Add(this.label115);
             this.Controls.Add(this.label111);
             this.Controls.Add(this.label112);
-            this.Controls.Add(this.label113);
             this.Controls.Add(this.label114);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
@@ -387,5 +419,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.Label label2;
     }
 }

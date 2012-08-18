@@ -866,5 +866,62 @@ namespace KIWI
             this.Close();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx|All File|*.*";
+            openFileDialog1.Title = "Select a File";
+            openFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
+            openFileDialog1.DefaultExt = "lge";
+            openFileDialog1.AutoUpgradeEnabled = true;
+            openFileDialog1.AddExtension = true;
+            openFileDialog1.RestoreDirectory = true;
+
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists(openFileDialog1.InitialDirectory))
+            {
+                Directory.CreateDirectory(openFileDialog1.InitialDirectory);
+            }
+
+            // Show the Dialog.
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // Read the files
+                foreach (String file in openFileDialog1.FileNames)
+                {
+                    // Create a PictureBox.
+                    try
+                    {
+                        if (file.EndsWith("lge"))
+                        {
+                            CommonUtil.readLGEFile(file, "|", CommonUtil.파일종류_시뮬레이션);
+                        }
+                        else if (file.EndsWith("xlsx"))
+                        {
+                            CommonUtil.ReadExcelFileToData(file, CommonUtil.파일종류_시뮬레이션);
+                        }
+                        else
+                        {
+                            throw new Exception("지원하지 않는 확장자");
+                        }
+
+                        // 불러온 이름 등록
+                        CommonUtil.saveAsSimulName = file;
+
+                        // 시뮬레이터 정보 있음 여부
+                        CommonUtil.isSimulatedOnce = true;
+
+                        getInput(CommonUtil.isSimulatedOnce);
+                        getDetail(CommonUtil.isSimulatedOnce);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Could not load the image - probably related to Windows file system permissions.
+                        MessageBox.Show("파일을 열 수 없습니다.\n\nReported error: " + ex.Message);
+                    }
+                }
+            }
+        }
+
     }
 }

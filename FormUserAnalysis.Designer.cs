@@ -55,6 +55,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel83 = new System.Windows.Forms.Panel();
+            this.panel84 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -307,13 +309,12 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel78 = new System.Windows.Forms.Panel();
             this.panel79 = new System.Windows.Forms.Panel();
-            this.panel81 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel82 = new System.Windows.Forms.Panel();
-            this.panel83 = new System.Windows.Forms.Panel();
-            this.panel84 = new System.Windows.Forms.Panel();
+            this.panel81 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel83.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -374,7 +375,6 @@
             this.panel2.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.panel83.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -605,7 +605,27 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
-            
+            // 
+            // panel83
+            // 
+            this.panel83.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel83.Controls.Add(this.panel84);
+            this.panel83.ForeColor = System.Drawing.Color.Black;
+            this.panel83.Location = new System.Drawing.Point(1039, 36);
+            this.panel83.Name = "panel83";
+            this.panel83.Size = new System.Drawing.Size(1, 185);
+            this.panel83.TabIndex = 643;
+            // 
+            // panel84
+            // 
+            this.panel84.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel84.ForeColor = System.Drawing.Color.Black;
+            this.panel84.Location = new System.Drawing.Point(-13, 0);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(1, 185);
+            this.panel84.TabIndex = 642;
             // 
             // label38
             // 
@@ -1550,18 +1570,18 @@
             // picCompare13
             // 
             this.picCompare13.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare13.Location = new System.Drawing.Point(718, 423);
+            this.picCompare13.Location = new System.Drawing.Point(728, 429);
             this.picCompare13.Name = "picCompare13";
-            this.picCompare13.Size = new System.Drawing.Size(29, 28);
+            this.picCompare13.Size = new System.Drawing.Size(15, 15);
             this.picCompare13.TabIndex = 761;
             this.picCompare13.TabStop = false;
             // 
             // picCompare12
             // 
             this.picCompare12.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare12.Location = new System.Drawing.Point(718, 393);
+            this.picCompare12.Location = new System.Drawing.Point(728, 399);
             this.picCompare12.Name = "picCompare12";
-            this.picCompare12.Size = new System.Drawing.Size(29, 28);
+            this.picCompare12.Size = new System.Drawing.Size(15, 15);
             this.picCompare12.TabIndex = 760;
             this.picCompare12.TabStop = false;
             // 
@@ -1646,7 +1666,6 @@
             this.textBox72.TabIndex = 759;
             this.textBox72.Text = "0";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            
             // 
             // textBox71
             // 
@@ -1941,9 +1960,9 @@
             // 
             this.picCompare16.BackColor = System.Drawing.Color.Gainsboro;
             this.picCompare16.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare16.Location = new System.Drawing.Point(718, 514);
+            this.picCompare16.Location = new System.Drawing.Point(728, 520);
             this.picCompare16.Name = "picCompare16";
-            this.picCompare16.Size = new System.Drawing.Size(29, 28);
+            this.picCompare16.Size = new System.Drawing.Size(15, 15);
             this.picCompare16.TabIndex = 742;
             this.picCompare16.TabStop = false;
             // 
@@ -1951,27 +1970,27 @@
             // 
             this.picCompare15.BackColor = System.Drawing.Color.Gainsboro;
             this.picCompare15.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare15.Location = new System.Drawing.Point(718, 483);
+            this.picCompare15.Location = new System.Drawing.Point(728, 489);
             this.picCompare15.Name = "picCompare15";
-            this.picCompare15.Size = new System.Drawing.Size(29, 28);
+            this.picCompare15.Size = new System.Drawing.Size(15, 15);
             this.picCompare15.TabIndex = 743;
             this.picCompare15.TabStop = false;
             // 
             // picCompare14
             // 
             this.picCompare14.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare14.Location = new System.Drawing.Point(718, 453);
+            this.picCompare14.Location = new System.Drawing.Point(728, 459);
             this.picCompare14.Name = "picCompare14";
-            this.picCompare14.Size = new System.Drawing.Size(29, 28);
+            this.picCompare14.Size = new System.Drawing.Size(15, 15);
             this.picCompare14.TabIndex = 744;
             this.picCompare14.TabStop = false;
             // 
             // picCompare11
             // 
             this.picCompare11.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare11.Location = new System.Drawing.Point(718, 363);
+            this.picCompare11.Location = new System.Drawing.Point(728, 369);
             this.picCompare11.Name = "picCompare11";
-            this.picCompare11.Size = new System.Drawing.Size(29, 28);
+            this.picCompare11.Size = new System.Drawing.Size(15, 15);
             this.picCompare11.TabIndex = 741;
             this.picCompare11.TabStop = false;
             // 
@@ -1979,90 +1998,90 @@
             // 
             this.picCompare7.BackColor = System.Drawing.Color.Gainsboro;
             this.picCompare7.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare7.Location = new System.Drawing.Point(718, 243);
+            this.picCompare7.Location = new System.Drawing.Point(728, 249);
             this.picCompare7.Name = "picCompare7";
-            this.picCompare7.Size = new System.Drawing.Size(29, 27);
+            this.picCompare7.Size = new System.Drawing.Size(15, 15);
             this.picCompare7.TabIndex = 738;
             this.picCompare7.TabStop = false;
             // 
             // picCompare6
             // 
             this.picCompare6.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare6.Location = new System.Drawing.Point(718, 213);
+            this.picCompare6.Location = new System.Drawing.Point(728, 219);
             this.picCompare6.Name = "picCompare6";
-            this.picCompare6.Size = new System.Drawing.Size(29, 28);
+            this.picCompare6.Size = new System.Drawing.Size(15, 15);
             this.picCompare6.TabIndex = 739;
             this.picCompare6.TabStop = false;
             // 
             // picCompare4
             // 
             this.picCompare4.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare4.Location = new System.Drawing.Point(718, 153);
+            this.picCompare4.Location = new System.Drawing.Point(728, 159);
             this.picCompare4.Name = "picCompare4";
-            this.picCompare4.Size = new System.Drawing.Size(29, 28);
+            this.picCompare4.Size = new System.Drawing.Size(15, 15);
             this.picCompare4.TabIndex = 740;
             this.picCompare4.TabStop = false;
             // 
             // picCompare10
             // 
             this.picCompare10.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare10.Location = new System.Drawing.Point(718, 333);
+            this.picCompare10.Location = new System.Drawing.Point(728, 339);
             this.picCompare10.Name = "picCompare10";
-            this.picCompare10.Size = new System.Drawing.Size(29, 28);
+            this.picCompare10.Size = new System.Drawing.Size(15, 15);
             this.picCompare10.TabIndex = 749;
             this.picCompare10.TabStop = false;
             // 
             // picCompare9
             // 
             this.picCompare9.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare9.Location = new System.Drawing.Point(718, 303);
+            this.picCompare9.Location = new System.Drawing.Point(728, 309);
             this.picCompare9.Name = "picCompare9";
-            this.picCompare9.Size = new System.Drawing.Size(29, 28);
+            this.picCompare9.Size = new System.Drawing.Size(15, 15);
             this.picCompare9.TabIndex = 750;
             this.picCompare9.TabStop = false;
             // 
             // picCompare8
             // 
             this.picCompare8.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare8.Location = new System.Drawing.Point(718, 273);
+            this.picCompare8.Location = new System.Drawing.Point(728, 279);
             this.picCompare8.Name = "picCompare8";
-            this.picCompare8.Size = new System.Drawing.Size(29, 28);
+            this.picCompare8.Size = new System.Drawing.Size(15, 15);
             this.picCompare8.TabIndex = 751;
             this.picCompare8.TabStop = false;
             // 
             // picCompare5
             // 
             this.picCompare5.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare5.Location = new System.Drawing.Point(718, 183);
+            this.picCompare5.Location = new System.Drawing.Point(728, 189);
             this.picCompare5.Name = "picCompare5";
-            this.picCompare5.Size = new System.Drawing.Size(29, 28);
+            this.picCompare5.Size = new System.Drawing.Size(15, 15);
             this.picCompare5.TabIndex = 748;
             this.picCompare5.TabStop = false;
             // 
             // picCompare2
             // 
             this.picCompare2.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare2.Location = new System.Drawing.Point(718, 93);
+            this.picCompare2.Location = new System.Drawing.Point(728, 99);
             this.picCompare2.Name = "picCompare2";
-            this.picCompare2.Size = new System.Drawing.Size(29, 28);
+            this.picCompare2.Size = new System.Drawing.Size(15, 15);
             this.picCompare2.TabIndex = 745;
             this.picCompare2.TabStop = false;
             // 
             // picCompare1
             // 
             this.picCompare1.Image = global::KIWI.Properties.Resources.equal;
-            this.picCompare1.Location = new System.Drawing.Point(718, 64);
+            this.picCompare1.Location = new System.Drawing.Point(728, 70);
             this.picCompare1.Name = "picCompare1";
-            this.picCompare1.Size = new System.Drawing.Size(29, 28);
+            this.picCompare1.Size = new System.Drawing.Size(15, 15);
             this.picCompare1.TabIndex = 746;
             this.picCompare1.TabStop = false;
             // 
             // picCompare3
             // 
             this.picCompare3.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare3.Location = new System.Drawing.Point(718, 123);
+            this.picCompare3.Location = new System.Drawing.Point(728, 129);
             this.picCompare3.Name = "picCompare3";
-            this.picCompare3.Size = new System.Drawing.Size(29, 28);
+            this.picCompare3.Size = new System.Drawing.Size(15, 15);
             this.picCompare3.TabIndex = 747;
             this.picCompare3.TabStop = false;
             // 
@@ -3404,14 +3423,6 @@
             this.panel79.Size = new System.Drawing.Size(460, 25);
             this.panel79.TabIndex = 830;
             // 
-            // panel81
-            // 
-            this.panel81.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel81.Location = new System.Drawing.Point(768, 228);
-            this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(460, 24);
-            this.panel81.TabIndex = 831;
-            // 
             // panel15
             // 
             this.panel15.BackgroundImage = global::KIWI.Properties.Resources.세로선;
@@ -3433,26 +3444,13 @@
             this.panel82.Size = new System.Drawing.Size(1, 185);
             this.panel82.TabIndex = 642;
             // 
-            // panel83
+            // panel81
             // 
-            this.panel83.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel83.Controls.Add(this.panel84);
-            this.panel83.ForeColor = System.Drawing.Color.Black;
-            this.panel83.Location = new System.Drawing.Point(1039, 36);
-            this.panel83.Name = "panel83";
-            this.panel83.Size = new System.Drawing.Size(1, 185);
-            this.panel83.TabIndex = 643;
-            // 
-            // panel84
-            // 
-            this.panel84.BackgroundImage = global::KIWI.Properties.Resources.세로선;
-            this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel84.ForeColor = System.Drawing.Color.Black;
-            this.panel84.Location = new System.Drawing.Point(-13, 0);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(1, 185);
-            this.panel84.TabIndex = 642;
+            this.panel81.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel81.Location = new System.Drawing.Point(768, 228);
+            this.panel81.Name = "panel81";
+            this.panel81.Size = new System.Drawing.Size(460, 24);
+            this.panel81.TabIndex = 831;
             // 
             // FormUserAnalysis
             // 
@@ -3467,6 +3465,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel83.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -3527,7 +3526,6 @@
             this.panel2.ResumeLayout(false);
             this.panel79.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            this.panel83.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

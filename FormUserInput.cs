@@ -138,7 +138,7 @@ namespace KIWI
             getInput();
             getDetail(CDataControl.g_BasicInput);
 
-            radioButton5.Checked = true;
+            radioButton6.Checked = true;
             radioButton2.Checked = true;
             radioButton3.Checked = true;
         }
@@ -148,7 +148,7 @@ namespace KIWI
         {
             CommonUtil.clearTextBox(this.tabPage1);
             CommonUtil.clearTextBox(this.tabPage5);
-            지역.SelectedItem = "";
+            지역.SelectedIndex = -1;
             대리점명.Text = "";
             마케터.Text = "";
         }
@@ -652,6 +652,7 @@ namespace KIWI
 
         private void txtInput1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            CommonUtil.isLoadedFromFile = false;
             if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != 8)
             {
                 if (e.KeyChar == '-')
@@ -904,6 +905,11 @@ namespace KIWI
             setTxtInput_TextChanged(sender);
         }
 
+        private void addComma_TextChanged(object sender, EventArgs e)
+        {
+            setTxtInput_TextChanged(sender);
+        }
+
         private void txtInput1_Click(object sender, EventArgs e)
         {
             TextBox _TextBox = (sender as TextBox);
@@ -938,11 +944,10 @@ namespace KIWI
         private void button1_Click(object sender, EventArgs e)
         {
             clearInputs();
-            
+            CommonUtil.clearSimulData();
             CommonUtil.isLoadedFromFile = false;
             CommonUtil.isSimulatedOnce = false;
         }
-
         
     }
 }

@@ -355,11 +355,6 @@ namespace KIWI
             }
         }
 
-        private void pnlChart3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             setAllOutFormat((sender as RadioButton).Checked);
@@ -402,9 +397,12 @@ namespace KIWI
 
         private void set점별손익추정_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text.EndsWith("점 기준"))
+            if ((sender as TextBox).Text == "")
                 return;
-            (sender as TextBox).Text += "점 기준";
+            (sender as TextBox).Text = "";
+            //if ((sender as TextBox).Text.EndsWith("점 기준"))
+            //    return;
+            //(sender as TextBox).Text += "점 기준";
         }
     }
 }

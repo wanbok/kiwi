@@ -575,6 +575,61 @@ namespace KIWI
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.FileName = "시뮬레이션_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+
+            // If the directory doesn't exist, create it.
+            if (!Directory.Exists(CommonUtil.dataDirectory))
+            {
+                Directory.CreateDirectory(CommonUtil.dataDirectory);
+            }
+            if (CommonUtil.saveAsSimulName == null)
+            {
+                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    if (saveFileDialog1.FileName.EndsWith("lge"))
+                    {
+                        CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|", CommonUtil.파일종류_시뮬레이션);
+                    }
+                    else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                    {
+                        FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                        fi2.CopyTo(saveFileDialog1.FileName, true);
+
+                        CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    CommonUtil.saveAsSimulName = saveFileDialog1.FileName;
+                }
+            }
+            else
+            {
+                if (saveFileDialog1.FileName.EndsWith("lge"))
+                {
+                    CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|", CommonUtil.파일종류_시뮬레이션);
+                }
+                else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                {
+                    FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                    fi2.CopyTo(saveFileDialog1.FileName, true);
+
+                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                }
+            }
+        }
+
+        internal void saveAsNewSimulateFile()
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "LGE File|*.lge|Excel File|*.xlsx";
+            saveFileDialog1.Title = "시뮬레이션 파일 저장";
+            saveFileDialog1.InitialDirectory = CommonUtil.dataDirectory;
+            saveFileDialog1.DefaultExt = "lge";
+            saveFileDialog1.AutoUpgradeEnabled = true;
+            saveFileDialog1.AddExtension = true;
+            saveFileDialog1.RestoreDirectory = true;
             saveFileDialog1.FileName = "시뮬레이션_"+CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
             // If the directory doesn't exist, create it.
@@ -582,25 +637,36 @@ namespace KIWI
             {
                 Directory.CreateDirectory(CommonUtil.dataDirectory);
             }
-
-            saveFileDialog1.ShowDialog();
-
-            if (saveFileDialog1.FileName.EndsWith("lge"))
+            
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|", CommonUtil.파일종류_시뮬레이션);
-            }
-            else if (saveFileDialog1.FileName.EndsWith("xlsx"))
-            {
-                FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
-                fi2.CopyTo(saveFileDialog1.FileName, true);
+                if (saveFileDialog1.FileName.EndsWith("lge"))
+                {
+                    CommonUtil.writeLGEFile(saveFileDialog1.FileName, "|", CommonUtil.파일종류_시뮬레이션);
+                }
+                else if (saveFileDialog1.FileName.EndsWith("xlsx"))
+                {
+                    FileInfo fi2 = new FileInfo(CommonUtil.defaultName);
+                    fi2.CopyTo(saveFileDialog1.FileName, true);
 
-                CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                    CommonUtil.WriteDataToExcelFile(saveFileDialog1.FileName, true);
+                }
+                else
+                {
+                    return;
+                }
+                CommonUtil.saveAsSimulName = saveFileDialog1.FileName;
             }
         }
 
-        private void lblTitle1_Click(object sender, EventArgs e)
+        private void set점별손익추정_TextChanged(object sender, EventArgs e)
         {
-
+            if ((sender as TextBox).Text == "")
+                return;
+            (sender as TextBox).Text = "";
+            //if ((sender as TextBox).Text.EndsWith("점 기준"))
+            //    return;
+            //(sender as TextBox).Text += "점 기준";
         }
     }
 }
