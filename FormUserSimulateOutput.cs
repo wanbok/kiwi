@@ -120,14 +120,14 @@ namespace KIWI
             pnlChart.Visible = false;
             if (CommonUtil.isLoadedDataFromFile)
             {
-                radioButton1.Enabled = true;
-                radioButton1.Checked = CommonUtil.isSelectExistData;
+                radio기존업계평균.Enabled = true;
+                radio기존업계평균.Checked = CommonUtil.isSelectExistData;
                 applyData(CommonUtil.isSelectExistData);
             }
             else
             {
-                radioButton1.Enabled = false;
-                radioButton1.Checked = false;
+                radio기존업계평균.Enabled = false;
+                radio기존업계평균.Checked = false;
                 applyData(false);
             }
 
@@ -437,7 +437,7 @@ namespace KIWI
             lblTitle[currentIndex].Text = names[index];
             lblTitle[currentIndex+3].Text = names[index];
             lblTitle[currentIndex+6].Text = names[index];
-            if (index < 3)
+            if (index < 3)          // 기본 데이터
             {
                 for (int i = 0; i < 32; i++)
                 {
@@ -455,22 +455,43 @@ namespace KIWI
                     txtROut[i + currentIndex * 24].Text = existingRData[i + index * 24].ToString();
                 }
             }
-            else
+            else                    // 시뮬레이션 데이터
             {
-                for (int i = 0; i < 32; i++)
+                if (index == 3 && radio기존업계평균.Checked)  //  index 3: 시뮬레이션 업계평균
                 {
-                    txtOut[i + currentIndex * 32].Enabled = true;
-                    txtOut[i + currentIndex * 32].Text = simulData[i + (index - 3) * 32].ToString();
+                    for (int i = 0; i < 32; i++)
+                    {
+                        txtOut[i + currentIndex * 32].Enabled = true;
+                        txtOut[i + currentIndex * 32].Text = existingData[i + (index - 3) * 32].ToString();
+                    }
+                    for (int i = 0; i < 28; i++)
+                    {
+                        txtWOut[i + currentIndex * 28].Enabled = true;
+                        txtWOut[i + currentIndex * 28].Text = existingData[i + (index - 3) * 28].ToString();
+                    }
+                    for (int i = 0; i < 24; i++)
+                    {
+                        txtROut[i + currentIndex * 24].Enabled = true;
+                        txtROut[i + currentIndex * 24].Text = existingData[i + (index - 3) * 24].ToString();
+                    }
                 }
-                for (int i = 0; i < 28; i++)
+                else
                 {
-                    txtWOut[i + currentIndex * 28].Enabled = true;
-                    txtWOut[i + currentIndex * 28].Text = simulWData[i + (index - 3) * 28].ToString();
-                }
-                for (int i = 0; i < 24; i++)
-                {
-                    txtROut[i + currentIndex * 24].Enabled = true;
-                    txtROut[i + currentIndex * 24].Text = simulRData[i + (index - 3) * 24].ToString();
+                    for (int i = 0; i < 32; i++)
+                    {
+                        txtOut[i + currentIndex * 32].Enabled = true;
+                        txtOut[i + currentIndex * 32].Text = simulData[i + (index - 3) * 32].ToString();
+                    }
+                    for (int i = 0; i < 28; i++)
+                    {
+                        txtWOut[i + currentIndex * 28].Enabled = true;
+                        txtWOut[i + currentIndex * 28].Text = simulWData[i + (index - 3) * 28].ToString();
+                    }
+                    for (int i = 0; i < 24; i++)
+                    {
+                        txtROut[i + currentIndex * 24].Enabled = true;
+                        txtROut[i + currentIndex * 24].Text = simulRData[i + (index - 3) * 24].ToString();
+                    }
                 }
             }
 
@@ -571,7 +592,7 @@ namespace KIWI
 
         internal bool isFileShowing()
         {
-            return radioButton1.Checked;
+            return radio기존업계평균.Checked;
         }
 
         internal void saveSimulateFile()

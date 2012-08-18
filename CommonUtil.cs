@@ -291,7 +291,7 @@ namespace KIWI
                 WriteDataToExcelFileDasicInput(workSheet1, CDataControl.g_SimBasicInput);
                 WriteDataToExcelFileDetailInput(workSheet1, CDataControl.g_SimBasicInput, CDataControl.g_SimDetailInput);
                 WriteExcelFileToDataResultBusiness(workSheet2, CDataControl.g_SimResultBusinessTotal, CDataControl.g_SimResultBusiness);
-                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultFutureTotal);
+                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_SimResultStoreTotal, CDataControl.g_SimResultStore);
                 WriteExcelFileToDataResultFuture(workSheet2, CDataControl.g_SimResultFutureTotal, CDataControl.g_SimResultFuture);
             }
             else
@@ -300,7 +300,7 @@ namespace KIWI
                 WriteDataToExcelFileDasicInput(workSheet1, CDataControl.g_BasicInput);
                 WriteDataToExcelFileDetailInput(workSheet1, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
                 WriteExcelFileToDataResultBusiness(workSheet2, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
-                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultFutureTotal);
+                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_ResultStoreTotal, CDataControl.g_SimResultStore);
                 WriteExcelFileToDataResultFuture(workSheet2, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture);
                 WriteExcelFileToDataReport(workSheet3);
             }

@@ -694,8 +694,8 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radio최근업계평균 = new System.Windows.Forms.RadioButton();
+            this.radio기존업계평균 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pnlChart.SuspendLayout();
@@ -7998,36 +7998,36 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton2
+            // radio최근업계평균
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Location = new System.Drawing.Point(1035, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 16);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "최근 업계 평균";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radio최근업계평균.AutoSize = true;
+            this.radio최근업계평균.Checked = true;
+            this.radio최근업계평균.Location = new System.Drawing.Point(1035, 62);
+            this.radio최근업계평균.Name = "radio최근업계평균";
+            this.radio최근업계평균.Size = new System.Drawing.Size(103, 16);
+            this.radio최근업계평균.TabIndex = 26;
+            this.radio최근업계평균.TabStop = true;
+            this.radio최근업계평균.Text = "최근 업계 평균";
+            this.radio최근업계평균.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radio기존업계평균
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(1148, 62);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 16);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.Text = "기존 업계 평균";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radio기존업계평균.AutoSize = true;
+            this.radio기존업계평균.Location = new System.Drawing.Point(1148, 62);
+            this.radio기존업계평균.Name = "radio기존업계평균";
+            this.radio기존업계평균.Size = new System.Drawing.Size(103, 16);
+            this.radio기존업계평균.TabIndex = 25;
+            this.radio기존업계평균.Text = "기존 업계 평균";
+            this.radio기존업계평균.UseVisualStyleBackColor = true;
+            this.radio기존업계평균.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // FormUserSimulateOutput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 762);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radio최근업계평균);
+            this.Controls.Add(this.radio기존업계평균);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
@@ -8471,8 +8471,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel pnlChart3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radio최근업계평균;
+        private System.Windows.Forms.RadioButton radio기존업계평균;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart6;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label85;
