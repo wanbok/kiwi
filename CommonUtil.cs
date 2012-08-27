@@ -300,7 +300,7 @@ namespace KIWI
                 WriteDataToExcelFileDasicInput(workSheet1, CDataControl.g_BasicInput);
                 WriteDataToExcelFileDetailInput(workSheet1, CDataControl.g_BasicInput, CDataControl.g_DetailInput);
                 WriteExcelFileToDataResultBusiness(workSheet2, CDataControl.g_ResultBusinessTotal, CDataControl.g_ResultBusiness);
-                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_ResultStoreTotal, CDataControl.g_SimResultStore);
+                WriteExcelFileToDataResultStore(workSheet2, CDataControl.g_ResultStoreTotal, CDataControl.g_ResultStore);
                 WriteExcelFileToDataResultFuture(workSheet2, CDataControl.g_ResultFutureTotal, CDataControl.g_ResultFuture);
                 WriteExcelFileToDataReport(workSheet3);
             }
@@ -340,11 +340,13 @@ namespace KIWI
             if (type == 파일종류_시뮬레이션)
                 basicInput = CDataControl.g_SimBasicInput;
 
+            basicInput.set통신사(NullToEmpty(_WorkSheet.get_Range("I63", Type.Missing).Value2));
             basicInput.set지역(NullToEmpty(_WorkSheet.get_Range("C63", Type.Missing).Value2));
             basicInput.set대리점(NullToEmpty(_WorkSheet.get_Range("E63", Type.Missing).Value2));
             basicInput.set마케터(NullToEmpty(_WorkSheet.get_Range("G63", Type.Missing).Value2));
             if (type != 파일종류_시뮬레이션)
             {
+                CDataControl.g_ReportData.set통신사(NullToEmpty(_WorkSheet.get_Range("I63", Type.Missing).Value2));
                 CDataControl.g_ReportData.set지역(NullToEmpty(_WorkSheet.get_Range("C63", Type.Missing).Value2));
                 CDataControl.g_ReportData.set대리점(NullToEmpty(_WorkSheet.get_Range("E63", Type.Missing).Value2));
                 CDataControl.g_ReportData.set마케터(NullToEmpty(_WorkSheet.get_Range("G63", Type.Missing).Value2));
@@ -1098,6 +1100,7 @@ namespace KIWI
         /// <param name="_WorkSheet"></param>
         public static void WriteDataToExcelFileDasicInput(excel.Worksheet _WorkSheet, CBasicInput g_BasicInput)
         {
+            _WorkSheet.get_Range("I63", Type.Missing).Value2 = g_BasicInput.get통신사();
             _WorkSheet.get_Range("C63", Type.Missing).Value2 = g_BasicInput.get지역();
             _WorkSheet.get_Range("E63", Type.Missing).Value2 = g_BasicInput.get대리점();
             _WorkSheet.get_Range("G63", Type.Missing).Value2 = g_BasicInput.get마케터();
@@ -1273,6 +1276,7 @@ namespace KIWI
 
         public static void deepCopyBasicInput(CBasicInput srcBasicInput, CBasicInput dstBasicInput)
         {
+            dstBasicInput.set통신사(srcBasicInput.get통신사());
             dstBasicInput.set지역(srcBasicInput.get지역());
             dstBasicInput.set대리점(srcBasicInput.get대리점());
             dstBasicInput.set마케터(srcBasicInput.get마케터());

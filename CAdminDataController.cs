@@ -51,7 +51,7 @@ namespace KIWI
         }
 
         //OpInspsr 정보를 파일로 저장한다
-        public void AddSaveData(String 지역, String 대리점명, String 마케터, String 단위당손익, String 월capa, String 가입자수,
+        public void AddSaveData(String 통신사, String 지역, String 대리점명, String 마케터, String 단위당손익, String 월capa, String 가입자수,
             String 직영점판매수익, String 선택여부, String mExcelFileName,
             CBasicInput mBI, CBusinessData mDI, CResultData mRD)
         {
@@ -80,6 +80,8 @@ namespace KIWI
             node0.InnerText = getKey();
 
             //리스트 기본 데이터
+            XmlNode node통신사 = mXmlDoc.CreateNode("element", "통신사", "");
+            node통신사.InnerText = 통신사;
             XmlNode node1 = mXmlDoc.CreateNode("element", "지역", "");
             node1.InnerText = 지역;
             XmlNode node2 = mXmlDoc.CreateNode("element", "대리점명", "");
@@ -258,6 +260,7 @@ namespace KIWI
             node79.InnerText = mRD.getstr소매_비용_기타판매관리비();
 
             nodeItem.AppendChild(node0);
+            nodeItem.AppendChild(node통신사);
             nodeItem.AppendChild(node1);
             nodeItem.AppendChild(node2);
             nodeItem.AppendChild(node3);
@@ -382,11 +385,12 @@ namespace KIWI
 
             return -1;
         }
-        public void GetData(int index, out String key, out String 지역, out String 대리점명, out String 마케터, out String 단위당손익, out String 월capa, out String 가입자수,
+        public void GetData(int index, out String key, out String 통신사, out String 지역, out String 대리점명, out String 마케터, out String 단위당손익, out String 월capa, out String 가입자수,
             out String 직영점판매수익, out String 선택여부, out String mExcelFileName,
             out CBasicInput mBI, out CBusinessData mDI, out CResultData mRD)
         {
             key = "";
+            통신사 = "";
             지역 = "";
             대리점명 = "";
             마케터 = "";
@@ -412,9 +416,11 @@ namespace KIWI
                         case "key":
                             key = nodeItem2.InnerText;
                             break;
-
                         case "지역":
                             지역 = nodeItem2.InnerText;
+                            break;
+                        case "통신사":
+                            통신사 = nodeItem2.InnerText;
                             break;
                         case "대리점명":
                             대리점명 = nodeItem2.InnerText;

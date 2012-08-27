@@ -272,6 +272,8 @@
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.통신사 = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -2038,9 +2040,9 @@
             this.label195.ForeColor = System.Drawing.Color.Black;
             this.label195.Location = new System.Drawing.Point(135, 564);
             this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(129, 12);
+            this.label195.Size = new System.Drawing.Size(89, 12);
             this.label195.TabIndex = 174;
-            this.label195.Text = "월평균 업무취급수수료";
+            this.label195.Text = "업무취급수수료";
             // 
             // label196
             // 
@@ -2414,9 +2416,9 @@
             this.label165.ForeColor = System.Drawing.Color.Black;
             this.label165.Location = new System.Drawing.Point(123, 59);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(109, 12);
+            this.label165.Size = new System.Drawing.Size(141, 12);
             this.label165.TabIndex = 107;
-            this.label165.Text = "월평균 관리 수수료";
+            this.label165.Text = "월평균 누적가입자수수료";
             // 
             // label166
             // 
@@ -3278,6 +3280,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.통신사);
+            this.tabPage1.Controls.Add(this.label45);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label43);
             this.tabPage1.Controls.Add(this.label39);
@@ -3371,6 +3375,30 @@
             this.tabPage1.Size = new System.Drawing.Size(1258, 640);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
+            // 
+            // 통신사
+            // 
+            this.통신사.FormattingEnabled = true;
+            this.통신사.Items.AddRange(new object[] {
+            "LGT",
+            "SKT",
+            "KT"});
+            this.통신사.Location = new System.Drawing.Point(68, 19);
+            this.통신사.Name = "통신사";
+            this.통신사.Size = new System.Drawing.Size(120, 20);
+            this.통신사.TabIndex = 834;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label45.ForeColor = System.Drawing.Color.Black;
+            this.label45.Location = new System.Drawing.Point(16, 25);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(44, 12);
+            this.label45.TabIndex = 833;
+            this.label45.Text = "통신사";
             // 
             // button1
             // 
@@ -4910,5 +4938,7 @@
         private System.Windows.Forms.Panel panel78;
         private System.Windows.Forms.Panel panel61;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox 통신사;
+        private System.Windows.Forms.Label label45;
     }
 }

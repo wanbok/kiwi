@@ -2772,9 +2772,9 @@
             this.label195.ForeColor = System.Drawing.Color.Black;
             this.label195.Location = new System.Drawing.Point(201, 540);
             this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(129, 12);
+            this.label195.Size = new System.Drawing.Size(89, 12);
             this.label195.TabIndex = 174;
-            this.label195.Text = "월평균 업무취급수수료";
+            this.label195.Text = "업무취급수수료";
             // 
             // label196
             // 
@@ -3045,9 +3045,9 @@
             this.label165.ForeColor = System.Drawing.Color.Black;
             this.label165.Location = new System.Drawing.Point(199, 50);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(109, 12);
+            this.label165.Size = new System.Drawing.Size(141, 12);
             this.label165.TabIndex = 107;
-            this.label165.Text = "월평균 관리 수수료";
+            this.label165.Text = "월평균 누적가입자수수료";
             // 
             // label166
             // 

@@ -55,6 +55,7 @@ namespace KIWI
 
         private string[] txtMangeInput = null;
 
+        private string 통신사 = "";
         private string area = "";
         private string beanch = "";
         private string name = "";
@@ -261,7 +262,8 @@ namespace KIWI
         //기본입력
         private void getInput(Boolean isSimulated)
         {
-            area =   CDataControl.g_BasicInput.get지역();
+            통신사 = CDataControl.g_BasicInput.get통신사();
+            area = CDataControl.g_BasicInput.get지역();
             beanch = CDataControl.g_BasicInput.get대리점();
             name = CDataControl.g_BasicInput.get마케터();
 
@@ -311,6 +313,7 @@ namespace KIWI
             CResultData rdt = null;
             CResultData rd = null;
 
+            bi.set통신사(통신사);
             bi.set지역(area);
             bi.set대리점(beanch);
             bi.set마케터(name);

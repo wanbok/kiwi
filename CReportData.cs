@@ -7,6 +7,17 @@ namespace KIWI
 {
     public class CReportData
     {
+        //통신사
+        private String 통신사 = "";
+        public void set통신사(String value)
+        {
+            통신사 = value;
+        }
+        public String get통신사()
+        {
+            return 통신사;
+        }
+
         //지역
         private String 지역 = "";
         public void set지역(String value)
@@ -76,6 +87,7 @@ namespace KIWI
         public void setArrData(String[] data)
         {
             int i = 0;
+            통신사 = data[i++];
             지역 = data[i++];
             대리점 = data[i++];
             마케터 = data[i++];
@@ -86,8 +98,9 @@ namespace KIWI
 
         public String[] getArrData()
         {
-            String[] data = new String[6];
+            String[] data = new String[7];
             int i = 0;
+            data[i++] = 통신사;
             data[i++] = 지역;
             data[i++] = 대리점;
             data[i++] = 마케터;

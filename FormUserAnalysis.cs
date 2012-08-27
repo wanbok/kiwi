@@ -65,36 +65,67 @@ namespace KIWI
             setComments(CDataControl.g_ReportData);
             setCompare();
             setReferrence();
+            setReferrence(true);
 
             
             OpenChart(chart1, CDataControl.g_ResultBusiness, CDataControl.g_ResultStore);
             OpenChart(chart5, CDataControl.g_ResultBusiness, CDataControl.g_ResultStore);
         }
 
-        private void setReferrence()
+        private void setReferrence(Boolean 업계평균이다 = false)
         {
-            if (CDataControl.g_ResultBusinessTotal == null ||
-                CDataControl.g_ResultBusiness == null ||
-                CDataControl.g_ResultStoreTotal == null ||
-                CDataControl.g_ResultStore == null) 
+            CResultData rdt = null;
+            CResultData rd = null;
+            CBasicInput bi = null;
+            CBusinessData di = null;
+            if (업계평균이다)
+            {
+                rdt = CDataControl.g_ResultBusinessTotal;
+                rd = CDataControl.g_ResultBusiness;
+                bi = CDataControl.g_BasicInput;
+                di = CDataControl.g_BusinessAvg;
+            }
+            else
+            {
+                rdt = CDataControl.g_ResultStoreTotal;
+                rd = CDataControl.g_ResultStore;
+                bi = CDataControl.g_BasicInput;
+                di = CDataControl.g_DetailInput;
+            }
+
+            if (
+                rdt == null ||
+                rd == null ||
+                bi == null ||
+                di == null)
                 return;
 
-            Double 가입자당ARPU = CommonUtil.Division(CDataControl.g_ResultStoreTotal.get도매_수익_가입자관리수수료()
-                                   , CDataControl.g_BasicInput.get누적가입자수_합계());
+            Double 가입자당ARPU = CommonUtil.Division(rdt.get도매_수익_가입자관리수수료()
+                                   , bi.get누적가입자수_합계());
 
-            Double 월평균인건비 = CommonUtil.Division((CDataControl.g_ResultStoreTotal.get전체_비용_인건비_급여_복리후생비() - CDataControl.g_DetailInput.get도소매_비용_복리후생비()), CDataControl.g_BasicInput.get직원수_소계_합계());
+            Double 월평균인건비 = CommonUtil.Division((rdt.get전체_비용_인건비_급여_복리후생비() - di.get도소매_비용_복리후생비()), bi.get직원수_소계_합계());
 
-            Double 판촉비비중 = CommonUtil.Division(Convert.ToDouble(CDataControl.g_DetailInput.get도매_비용_판매촉진비() + CDataControl.g_DetailInput.get소매_비용_판매촉진비())
-                             , Convert.ToDouble(CDataControl.g_ResultStoreTotal.전체_비용_소계));
+            Double 판촉비비중 = CommonUtil.Division(Convert.ToDouble(di.get도매_비용_판매촉진비() + di.get소매_비용_판매촉진비())
+                             , Convert.ToDouble(rdt.전체_비용_소계));
 
-            Double 인당판매수량 = CommonUtil.Division((CDataControl.g_BasicInput.get도매_월평균판매대수_신규()
-                                    + CDataControl.g_BasicInput.get도매_월평균판매대수_기변())
-                                    , CDataControl.g_BasicInput.get도매_직원수_소계());
-            
-            textBox69.Text = 가입자당ARPU.ToString();
-            textBox71.Text = 월평균인건비.ToString();
-            textBox72.Text = (판촉비비중 * 100).ToString("0.0");
-            textBox74.Text = 인당판매수량.ToString();
+            Double 인당판매수량 = CommonUtil.Division((bi.get도매_월평균판매대수_신규()
+                                    + bi.get도매_월평균판매대수_기변())
+                                    , bi.get도매_직원수_소계());
+
+            if (업계평균이다)
+            {
+                참조_업계평균_ARPU.Text = 가입자당ARPU.ToString();
+                참조_업계평균_인건비.Text = 월평균인건비.ToString();
+                참조_업계평균_판촉비비중.Text = (판촉비비중 * 100).ToString("0.0");
+                참조_업계평균_인당판매수량.Text = 인당판매수량.ToString();
+            }
+            else
+            {
+                참조_당대리점_ARPU.Text = 가입자당ARPU.ToString();
+                참조_당대리점_인건비.Text = 월평균인건비.ToString();
+                참조_당대리점_판촉비비중.Text = (판촉비비중 * 100).ToString("0.0");
+                참조_당대리점_인당판매수량.Text = 인당판매수량.ToString();
+            }
         }
 
         private void setOut()
@@ -181,9 +212,9 @@ namespace KIWI
             for (int i = 0; i < 16; i++) {
                 convertedA = Convert.ToDouble(txtOut[i + 16].Text.Replace(",", ""));
                 convertedB = Convert.ToDouble(txtOut[i + 48].Text.Replace(",", ""));
-                if (convertedA < convertedB) { picCompare[i].Image = KIWI.Properties.Resources.up5; }
-                else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.down1; }
-                else { picCompare[i].Image = KIWI.Properties.Resources.equal; }
+                if (convertedA < convertedB) { picCompare[i].Image = KIWI.Properties.Resources.녹색; }
+                else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.빨강; }
+                else { picCompare[i].Image = KIWI.Properties.Resources.노랑; }
             }
         }
 

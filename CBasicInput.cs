@@ -448,6 +448,16 @@ namespace KIWI
         }
 
 
+        //통신사
+        private String 통신사;
+        public void set통신사(String value)
+        {
+            통신사 = value;
+        }
+        public String get통신사()
+        {
+            return 통신사;
+        }
         //지역
         private String 지역;
         public void set지역(String value)

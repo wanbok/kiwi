@@ -605,7 +605,7 @@ namespace KIWI
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.RestoreDirectory = true;
-            saveFileDialog1.FileName = "시뮬레이션_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+            saveFileDialog1.FileName = "시뮬레이션_" + CDataControl.g_ReportData.get통신사() + "_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
             // If the directory doesn't exist, create it.
             if (!Directory.Exists(CommonUtil.dataDirectory))
@@ -660,7 +660,7 @@ namespace KIWI
             saveFileDialog1.AutoUpgradeEnabled = true;
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.RestoreDirectory = true;
-            saveFileDialog1.FileName = "시뮬레이션_"+CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+            saveFileDialog1.FileName = "시뮬레이션_" + CDataControl.g_ReportData.get통신사() + "_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
             // If the directory doesn't exist, create it.
             if (!Directory.Exists(CommonUtil.dataDirectory))

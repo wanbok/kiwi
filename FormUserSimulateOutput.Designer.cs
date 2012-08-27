@@ -975,7 +975,7 @@
             this.pnlChart.Controls.Add(this.label110);
             this.pnlChart.Controls.Add(this.label109);
             this.pnlChart.Controls.Add(this.chart1);
-            this.pnlChart.Location = new System.Drawing.Point(0, 36);
+            this.pnlChart.Location = new System.Drawing.Point(0, 37);
             this.pnlChart.Name = "pnlChart";
             this.pnlChart.Size = new System.Drawing.Size(1242, 637);
             this.pnlChart.TabIndex = 290;
@@ -3127,9 +3127,9 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(35, 135);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 12);
+            this.label5.Size = new System.Drawing.Size(89, 12);
             this.label5.TabIndex = 92;
-            this.label5.Text = "업무취급 수수료";
+            this.label5.Text = "업무취급수수료";
             // 
             // label16
             // 
@@ -3217,9 +3217,9 @@
             this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.Location = new System.Drawing.Point(35, 75);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 12);
+            this.label26.Size = new System.Drawing.Size(101, 12);
             this.label26.TabIndex = 92;
-            this.label26.Text = "가입자 관리 수수료";
+            this.label26.Text = "누적가입자수수료";
             // 
             // label4
             // 
@@ -5342,9 +5342,9 @@
             this.label39.ForeColor = System.Drawing.Color.Black;
             this.label39.Location = new System.Drawing.Point(35, 75);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(109, 12);
+            this.label39.Size = new System.Drawing.Size(101, 12);
             this.label39.TabIndex = 117;
-            this.label39.Text = "가입자 관리 수수료";
+            this.label39.Text = "누적가입자수수료";
             // 
             // label40
             // 
@@ -7439,9 +7439,9 @@
             this.label52.ForeColor = System.Drawing.Color.Black;
             this.label52.Location = new System.Drawing.Point(35, 75);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(93, 12);
+            this.label52.Size = new System.Drawing.Size(89, 12);
             this.label52.TabIndex = 162;
-            this.label52.Text = "업무취급 수수료";
+            this.label52.Text = "업무취급수수료";
             // 
             // label105
             // 

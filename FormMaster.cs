@@ -133,7 +133,7 @@ namespace KIWI
                     saveFileDialog1.AutoUpgradeEnabled = true;
                     saveFileDialog1.AddExtension = true;
                     saveFileDialog1.RestoreDirectory = true;
-                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get통신사() + "_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
                     // If the directory doesn't exist, create it.
                     if (!Directory.Exists(CommonUtil.dataDirectory))
@@ -148,7 +148,8 @@ namespace KIWI
                         (this.panel1.Controls[0] as Form).Name == "FormUserSimulateInput")
                     {
 
-                        if (CommonUtil.saveAsName == null)
+                        if (CommonUtil.saveAsName == null ||
+                            !CommonUtil.saveAsName.Substring(0, CommonUtil.saveAsName.Length - 8).Contains(saveFileDialog1.FileName.Substring(0, saveFileDialog1.FileName.Length - 9)))
                         {
                             if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                             {
@@ -225,7 +226,7 @@ namespace KIWI
                     saveFileDialog1.AutoUpgradeEnabled = true;
                     saveFileDialog1.AddExtension = true;
                     saveFileDialog1.RestoreDirectory = true;
-                    saveFileDialog1.FileName = CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
+                    saveFileDialog1.FileName = CDataControl.g_ReportData.get통신사() + "_" + CDataControl.g_ReportData.get지역() + "_" + CDataControl.g_ReportData.get대리점() + "_" + CDataControl.g_ReportData.get마케터() + "_" + DateTime.Now.ToString("yyyyMMdd");
 
                     // If the directory doesn't exist, create it.
                     if (!Directory.Exists(CommonUtil.dataDirectory))
@@ -374,7 +375,7 @@ namespace KIWI
                     {
                         if (!(this.panel1.Controls[i] as FormUserInput).validateData())
                         {
-                            MessageBox.Show("지역, 대리점명, 마케터를 반드시 적어야 합니다.");
+                            MessageBox.Show("통신사, 지역, 대리점명, 마케터를 반드시 적어야 합니다.");
                             return false;
                         }
                         (this.panel1.Controls[i] as FormUserInput).saveAsInput();

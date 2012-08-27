@@ -55,6 +55,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserAnalysis));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.참조_업계평균_인당판매수량 = new System.Windows.Forms.TextBox();
+            this.참조_업계평균_판촉비비중 = new System.Windows.Forms.TextBox();
+            this.참조_업계평균_인건비 = new System.Windows.Forms.TextBox();
+            this.참조_업계평균_ARPU = new System.Windows.Forms.TextBox();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.panel86 = new System.Windows.Forms.Panel();
             this.panel83 = new System.Windows.Forms.Panel();
             this.panel84 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -137,10 +147,10 @@
             this.panel121 = new System.Windows.Forms.Panel();
             this.panel118 = new System.Windows.Forms.Panel();
             this.panel119 = new System.Windows.Forms.Panel();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.참조_당대리점_인당판매수량 = new System.Windows.Forms.TextBox();
+            this.참조_당대리점_판촉비비중 = new System.Windows.Forms.TextBox();
+            this.참조_당대리점_인건비 = new System.Windows.Forms.TextBox();
+            this.참조_당대리점_ARPU = new System.Windows.Forms.TextBox();
             this.panel70 = new System.Windows.Forms.Panel();
             this.panel68 = new System.Windows.Forms.Panel();
             this.panel69 = new System.Windows.Forms.Panel();
@@ -226,7 +236,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -312,8 +321,11 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel82 = new System.Windows.Forms.Panel();
             this.panel81 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel85.SuspendLayout();
             this.panel83.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -375,6 +387,7 @@
             this.panel2.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.panel81.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -389,6 +402,15 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label40);
+            this.tabPage1.Controls.Add(this.label41);
+            this.tabPage1.Controls.Add(this.label42);
+            this.tabPage1.Controls.Add(this.label43);
+            this.tabPage1.Controls.Add(this.참조_업계평균_인당판매수량);
+            this.tabPage1.Controls.Add(this.참조_업계평균_판촉비비중);
+            this.tabPage1.Controls.Add(this.참조_업계평균_인건비);
+            this.tabPage1.Controls.Add(this.참조_업계평균_ARPU);
+            this.tabPage1.Controls.Add(this.panel85);
             this.tabPage1.Controls.Add(this.panel83);
             this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Controls.Add(this.label37);
@@ -463,10 +485,10 @@
             this.tabPage1.Controls.Add(this.panel126);
             this.tabPage1.Controls.Add(this.panel120);
             this.tabPage1.Controls.Add(this.panel118);
-            this.tabPage1.Controls.Add(this.textBox74);
-            this.tabPage1.Controls.Add(this.textBox72);
-            this.tabPage1.Controls.Add(this.textBox71);
-            this.tabPage1.Controls.Add(this.textBox69);
+            this.tabPage1.Controls.Add(this.참조_당대리점_인당판매수량);
+            this.tabPage1.Controls.Add(this.참조_당대리점_판촉비비중);
+            this.tabPage1.Controls.Add(this.참조_당대리점_인건비);
+            this.tabPage1.Controls.Add(this.참조_당대리점_ARPU);
             this.tabPage1.Controls.Add(this.panel70);
             this.tabPage1.Controls.Add(this.panel68);
             this.tabPage1.Controls.Add(this.panel66);
@@ -537,7 +559,6 @@
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label31);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.panel24);
             this.tabPage1.Controls.Add(this.panel19);
@@ -605,6 +626,118 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(1063, 350);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(17, 12);
+            this.label40.TabIndex = 841;
+            this.label40.Text = "대";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.ForeColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(1064, 320);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(15, 12);
+            this.label41.TabIndex = 840;
+            this.label41.Text = "%";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.ForeColor = System.Drawing.Color.Black;
+            this.label42.Location = new System.Drawing.Point(1063, 290);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(17, 12);
+            this.label42.TabIndex = 839;
+            this.label42.Text = "원";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.ForeColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(1063, 261);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(17, 12);
+            this.label43.TabIndex = 838;
+            this.label43.Text = "원";
+            // 
+            // 참조_업계평균_인당판매수량
+            // 
+            this.참조_업계평균_인당판매수량.BackColor = System.Drawing.Color.White;
+            this.참조_업계평균_인당판매수량.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_업계평균_인당판매수량.Location = new System.Drawing.Point(944, 350);
+            this.참조_업계평균_인당판매수량.Name = "참조_업계평균_인당판매수량";
+            this.참조_업계평균_인당판매수량.ReadOnly = true;
+            this.참조_업계평균_인당판매수량.Size = new System.Drawing.Size(113, 14);
+            this.참조_업계평균_인당판매수량.TabIndex = 835;
+            this.참조_업계평균_인당판매수량.Text = "0";
+            this.참조_업계평균_인당판매수량.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_업계평균_인당판매수량.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            // 
+            // 참조_업계평균_판촉비비중
+            // 
+            this.참조_업계평균_판촉비비중.BackColor = System.Drawing.Color.White;
+            this.참조_업계평균_판촉비비중.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_업계평균_판촉비비중.Location = new System.Drawing.Point(944, 320);
+            this.참조_업계평균_판촉비비중.Name = "참조_업계평균_판촉비비중";
+            this.참조_업계평균_판촉비비중.ReadOnly = true;
+            this.참조_업계평균_판촉비비중.Size = new System.Drawing.Size(113, 14);
+            this.참조_업계평균_판촉비비중.TabIndex = 836;
+            this.참조_업계평균_판촉비비중.Text = "0";
+            this.참조_업계평균_판촉비비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // 참조_업계평균_인건비
+            // 
+            this.참조_업계평균_인건비.BackColor = System.Drawing.Color.White;
+            this.참조_업계평균_인건비.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_업계평균_인건비.Location = new System.Drawing.Point(944, 290);
+            this.참조_업계평균_인건비.Name = "참조_업계평균_인건비";
+            this.참조_업계평균_인건비.ReadOnly = true;
+            this.참조_업계평균_인건비.Size = new System.Drawing.Size(113, 14);
+            this.참조_업계평균_인건비.TabIndex = 837;
+            this.참조_업계평균_인건비.Text = "0";
+            this.참조_업계평균_인건비.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_업계평균_인건비.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            // 
+            // 참조_업계평균_ARPU
+            // 
+            this.참조_업계평균_ARPU.BackColor = System.Drawing.Color.White;
+            this.참조_업계평균_ARPU.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_업계평균_ARPU.Location = new System.Drawing.Point(944, 261);
+            this.참조_업계평균_ARPU.Name = "참조_업계평균_ARPU";
+            this.참조_업계평균_ARPU.ReadOnly = true;
+            this.참조_업계평균_ARPU.Size = new System.Drawing.Size(113, 14);
+            this.참조_업계평균_ARPU.TabIndex = 834;
+            this.참조_업계평균_ARPU.Text = "0";
+            this.참조_업계평균_ARPU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_업계평균_ARPU.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            // 
+            // panel85
+            // 
+            this.panel85.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel85.Controls.Add(this.panel86);
+            this.panel85.ForeColor = System.Drawing.Color.Black;
+            this.panel85.Location = new System.Drawing.Point(1086, 254);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(1, 121);
+            this.panel85.TabIndex = 644;
+            // 
+            // panel86
+            // 
+            this.panel86.BackgroundImage = global::KIWI.Properties.Resources.세로선;
+            this.panel86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel86.ForeColor = System.Drawing.Color.Black;
+            this.panel86.Location = new System.Drawing.Point(-13, 0);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(1, 185);
+            this.panel86.TabIndex = 642;
             // 
             // panel83
             // 
@@ -1569,19 +1702,19 @@
             // 
             // picCompare13
             // 
-            this.picCompare13.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare13.Location = new System.Drawing.Point(728, 429);
+            this.picCompare13.Image = ((System.Drawing.Image)(resources.GetObject("picCompare13.Image")));
+            this.picCompare13.Location = new System.Drawing.Point(726, 427);
             this.picCompare13.Name = "picCompare13";
-            this.picCompare13.Size = new System.Drawing.Size(15, 15);
+            this.picCompare13.Size = new System.Drawing.Size(20, 20);
             this.picCompare13.TabIndex = 761;
             this.picCompare13.TabStop = false;
             // 
             // picCompare12
             // 
-            this.picCompare12.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare12.Location = new System.Drawing.Point(728, 399);
+            this.picCompare12.Image = ((System.Drawing.Image)(resources.GetObject("picCompare12.Image")));
+            this.picCompare12.Location = new System.Drawing.Point(726, 397);
             this.picCompare12.Name = "picCompare12";
-            this.picCompare12.Size = new System.Drawing.Size(15, 15);
+            this.picCompare12.Size = new System.Drawing.Size(20, 20);
             this.picCompare12.TabIndex = 760;
             this.picCompare12.TabStop = false;
             // 
@@ -1642,56 +1775,56 @@
             this.panel119.Size = new System.Drawing.Size(698, 5);
             this.panel119.TabIndex = 18;
             // 
-            // textBox74
+            // 참조_당대리점_인당판매수량
             // 
-            this.textBox74.BackColor = System.Drawing.Color.White;
-            this.textBox74.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox74.Location = new System.Drawing.Point(937, 350);
-            this.textBox74.Name = "textBox74";
-            this.textBox74.ReadOnly = true;
-            this.textBox74.Size = new System.Drawing.Size(263, 14);
-            this.textBox74.TabIndex = 759;
-            this.textBox74.Text = "0";
-            this.textBox74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox74.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            this.참조_당대리점_인당판매수량.BackColor = System.Drawing.Color.White;
+            this.참조_당대리점_인당판매수량.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_당대리점_인당판매수량.Location = new System.Drawing.Point(1087, 350);
+            this.참조_당대리점_인당판매수량.Name = "참조_당대리점_인당판매수량";
+            this.참조_당대리점_인당판매수량.ReadOnly = true;
+            this.참조_당대리점_인당판매수량.Size = new System.Drawing.Size(113, 14);
+            this.참조_당대리점_인당판매수량.TabIndex = 759;
+            this.참조_당대리점_인당판매수량.Text = "0";
+            this.참조_당대리점_인당판매수량.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_당대리점_인당판매수량.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
-            // textBox72
+            // 참조_당대리점_판촉비비중
             // 
-            this.textBox72.BackColor = System.Drawing.Color.White;
-            this.textBox72.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox72.Location = new System.Drawing.Point(937, 320);
-            this.textBox72.Name = "textBox72";
-            this.textBox72.ReadOnly = true;
-            this.textBox72.Size = new System.Drawing.Size(263, 14);
-            this.textBox72.TabIndex = 759;
-            this.textBox72.Text = "0";
-            this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_당대리점_판촉비비중.BackColor = System.Drawing.Color.White;
+            this.참조_당대리점_판촉비비중.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_당대리점_판촉비비중.Location = new System.Drawing.Point(1087, 320);
+            this.참조_당대리점_판촉비비중.Name = "참조_당대리점_판촉비비중";
+            this.참조_당대리점_판촉비비중.ReadOnly = true;
+            this.참조_당대리점_판촉비비중.Size = new System.Drawing.Size(113, 14);
+            this.참조_당대리점_판촉비비중.TabIndex = 759;
+            this.참조_당대리점_판촉비비중.Text = "0";
+            this.참조_당대리점_판촉비비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox71
+            // 참조_당대리점_인건비
             // 
-            this.textBox71.BackColor = System.Drawing.Color.White;
-            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox71.Location = new System.Drawing.Point(937, 290);
-            this.textBox71.Name = "textBox71";
-            this.textBox71.ReadOnly = true;
-            this.textBox71.Size = new System.Drawing.Size(263, 14);
-            this.textBox71.TabIndex = 759;
-            this.textBox71.Text = "0";
-            this.textBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox71.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            this.참조_당대리점_인건비.BackColor = System.Drawing.Color.White;
+            this.참조_당대리점_인건비.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_당대리점_인건비.Location = new System.Drawing.Point(1087, 290);
+            this.참조_당대리점_인건비.Name = "참조_당대리점_인건비";
+            this.참조_당대리점_인건비.ReadOnly = true;
+            this.참조_당대리점_인건비.Size = new System.Drawing.Size(113, 14);
+            this.참조_당대리점_인건비.TabIndex = 759;
+            this.참조_당대리점_인건비.Text = "0";
+            this.참조_당대리점_인건비.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_당대리점_인건비.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
-            // textBox69
+            // 참조_당대리점_ARPU
             // 
-            this.textBox69.BackColor = System.Drawing.Color.White;
-            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox69.Location = new System.Drawing.Point(937, 261);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.ReadOnly = true;
-            this.textBox69.Size = new System.Drawing.Size(263, 14);
-            this.textBox69.TabIndex = 757;
-            this.textBox69.Text = "0";
-            this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox69.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
+            this.참조_당대리점_ARPU.BackColor = System.Drawing.Color.White;
+            this.참조_당대리점_ARPU.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.참조_당대리점_ARPU.Location = new System.Drawing.Point(1087, 261);
+            this.참조_당대리점_ARPU.Name = "참조_당대리점_ARPU";
+            this.참조_당대리점_ARPU.ReadOnly = true;
+            this.참조_당대리점_ARPU.Size = new System.Drawing.Size(113, 14);
+            this.참조_당대리점_ARPU.TabIndex = 757;
+            this.참조_당대리점_ARPU.Text = "0";
+            this.참조_당대리점_ARPU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.참조_당대리점_ARPU.TextChanged += new System.EventHandler(this.setTxtInput_TextChanged);
             // 
             // panel70
             // 
@@ -1788,9 +1921,9 @@
             this.label30.ForeColor = System.Drawing.Color.Black;
             this.label30.Location = new System.Drawing.Point(774, 352);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(69, 12);
+            this.label30.Size = new System.Drawing.Size(81, 12);
             this.label30.TabIndex = 753;
-            this.label30.Text = "인당 판매량";
+            this.label30.Text = "인당 판매수량";
             // 
             // label29
             // 
@@ -1959,129 +2092,129 @@
             // picCompare16
             // 
             this.picCompare16.BackColor = System.Drawing.Color.Gainsboro;
-            this.picCompare16.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare16.Location = new System.Drawing.Point(728, 520);
+            this.picCompare16.Image = ((System.Drawing.Image)(resources.GetObject("picCompare16.Image")));
+            this.picCompare16.Location = new System.Drawing.Point(726, 518);
             this.picCompare16.Name = "picCompare16";
-            this.picCompare16.Size = new System.Drawing.Size(15, 15);
+            this.picCompare16.Size = new System.Drawing.Size(20, 20);
             this.picCompare16.TabIndex = 742;
             this.picCompare16.TabStop = false;
             // 
             // picCompare15
             // 
             this.picCompare15.BackColor = System.Drawing.Color.Gainsboro;
-            this.picCompare15.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare15.Location = new System.Drawing.Point(728, 489);
+            this.picCompare15.Image = ((System.Drawing.Image)(resources.GetObject("picCompare15.Image")));
+            this.picCompare15.Location = new System.Drawing.Point(726, 487);
             this.picCompare15.Name = "picCompare15";
-            this.picCompare15.Size = new System.Drawing.Size(15, 15);
+            this.picCompare15.Size = new System.Drawing.Size(20, 20);
             this.picCompare15.TabIndex = 743;
             this.picCompare15.TabStop = false;
             // 
             // picCompare14
             // 
-            this.picCompare14.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare14.Location = new System.Drawing.Point(728, 459);
+            this.picCompare14.Image = ((System.Drawing.Image)(resources.GetObject("picCompare14.Image")));
+            this.picCompare14.Location = new System.Drawing.Point(726, 457);
             this.picCompare14.Name = "picCompare14";
-            this.picCompare14.Size = new System.Drawing.Size(15, 15);
+            this.picCompare14.Size = new System.Drawing.Size(20, 20);
             this.picCompare14.TabIndex = 744;
             this.picCompare14.TabStop = false;
             // 
             // picCompare11
             // 
-            this.picCompare11.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare11.Location = new System.Drawing.Point(728, 369);
+            this.picCompare11.Image = ((System.Drawing.Image)(resources.GetObject("picCompare11.Image")));
+            this.picCompare11.Location = new System.Drawing.Point(726, 367);
             this.picCompare11.Name = "picCompare11";
-            this.picCompare11.Size = new System.Drawing.Size(15, 15);
+            this.picCompare11.Size = new System.Drawing.Size(20, 20);
             this.picCompare11.TabIndex = 741;
             this.picCompare11.TabStop = false;
             // 
             // picCompare7
             // 
             this.picCompare7.BackColor = System.Drawing.Color.Gainsboro;
-            this.picCompare7.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare7.Location = new System.Drawing.Point(728, 249);
+            this.picCompare7.Image = ((System.Drawing.Image)(resources.GetObject("picCompare7.Image")));
+            this.picCompare7.Location = new System.Drawing.Point(726, 247);
             this.picCompare7.Name = "picCompare7";
-            this.picCompare7.Size = new System.Drawing.Size(15, 15);
+            this.picCompare7.Size = new System.Drawing.Size(20, 20);
             this.picCompare7.TabIndex = 738;
             this.picCompare7.TabStop = false;
             // 
             // picCompare6
             // 
-            this.picCompare6.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare6.Location = new System.Drawing.Point(728, 219);
+            this.picCompare6.Image = ((System.Drawing.Image)(resources.GetObject("picCompare6.Image")));
+            this.picCompare6.Location = new System.Drawing.Point(726, 217);
             this.picCompare6.Name = "picCompare6";
-            this.picCompare6.Size = new System.Drawing.Size(15, 15);
+            this.picCompare6.Size = new System.Drawing.Size(20, 20);
             this.picCompare6.TabIndex = 739;
             this.picCompare6.TabStop = false;
             // 
             // picCompare4
             // 
-            this.picCompare4.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare4.Location = new System.Drawing.Point(728, 159);
+            this.picCompare4.Image = ((System.Drawing.Image)(resources.GetObject("picCompare4.Image")));
+            this.picCompare4.Location = new System.Drawing.Point(726, 157);
             this.picCompare4.Name = "picCompare4";
-            this.picCompare4.Size = new System.Drawing.Size(15, 15);
+            this.picCompare4.Size = new System.Drawing.Size(20, 20);
             this.picCompare4.TabIndex = 740;
             this.picCompare4.TabStop = false;
             // 
             // picCompare10
             // 
-            this.picCompare10.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare10.Location = new System.Drawing.Point(728, 339);
+            this.picCompare10.Image = ((System.Drawing.Image)(resources.GetObject("picCompare10.Image")));
+            this.picCompare10.Location = new System.Drawing.Point(726, 337);
             this.picCompare10.Name = "picCompare10";
-            this.picCompare10.Size = new System.Drawing.Size(15, 15);
+            this.picCompare10.Size = new System.Drawing.Size(20, 20);
             this.picCompare10.TabIndex = 749;
             this.picCompare10.TabStop = false;
             // 
             // picCompare9
             // 
-            this.picCompare9.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare9.Location = new System.Drawing.Point(728, 309);
+            this.picCompare9.Image = ((System.Drawing.Image)(resources.GetObject("picCompare9.Image")));
+            this.picCompare9.Location = new System.Drawing.Point(726, 307);
             this.picCompare9.Name = "picCompare9";
-            this.picCompare9.Size = new System.Drawing.Size(15, 15);
+            this.picCompare9.Size = new System.Drawing.Size(20, 20);
             this.picCompare9.TabIndex = 750;
             this.picCompare9.TabStop = false;
             // 
             // picCompare8
             // 
-            this.picCompare8.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare8.Location = new System.Drawing.Point(728, 279);
+            this.picCompare8.Image = ((System.Drawing.Image)(resources.GetObject("picCompare8.Image")));
+            this.picCompare8.Location = new System.Drawing.Point(726, 277);
             this.picCompare8.Name = "picCompare8";
-            this.picCompare8.Size = new System.Drawing.Size(15, 15);
+            this.picCompare8.Size = new System.Drawing.Size(20, 20);
             this.picCompare8.TabIndex = 751;
             this.picCompare8.TabStop = false;
             // 
             // picCompare5
             // 
-            this.picCompare5.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare5.Location = new System.Drawing.Point(728, 189);
+            this.picCompare5.Image = ((System.Drawing.Image)(resources.GetObject("picCompare5.Image")));
+            this.picCompare5.Location = new System.Drawing.Point(726, 187);
             this.picCompare5.Name = "picCompare5";
-            this.picCompare5.Size = new System.Drawing.Size(15, 15);
+            this.picCompare5.Size = new System.Drawing.Size(20, 20);
             this.picCompare5.TabIndex = 748;
             this.picCompare5.TabStop = false;
             // 
             // picCompare2
             // 
-            this.picCompare2.Image = global::KIWI.Properties.Resources.down1;
-            this.picCompare2.Location = new System.Drawing.Point(728, 99);
+            this.picCompare2.Image = global::KIWI.Properties.Resources.빨강;
+            this.picCompare2.Location = new System.Drawing.Point(726, 97);
             this.picCompare2.Name = "picCompare2";
-            this.picCompare2.Size = new System.Drawing.Size(15, 15);
+            this.picCompare2.Size = new System.Drawing.Size(20, 20);
             this.picCompare2.TabIndex = 745;
             this.picCompare2.TabStop = false;
             // 
             // picCompare1
             // 
-            this.picCompare1.Image = global::KIWI.Properties.Resources.equal;
-            this.picCompare1.Location = new System.Drawing.Point(728, 70);
+            this.picCompare1.Image = global::KIWI.Properties.Resources.노랑;
+            this.picCompare1.Location = new System.Drawing.Point(726, 68);
             this.picCompare1.Name = "picCompare1";
-            this.picCompare1.Size = new System.Drawing.Size(15, 15);
+            this.picCompare1.Size = new System.Drawing.Size(20, 20);
             this.picCompare1.TabIndex = 746;
             this.picCompare1.TabStop = false;
             // 
             // picCompare3
             // 
-            this.picCompare3.Image = global::KIWI.Properties.Resources.up5;
-            this.picCompare3.Location = new System.Drawing.Point(728, 129);
+            this.picCompare3.Image = global::KIWI.Properties.Resources.녹색;
+            this.picCompare3.Location = new System.Drawing.Point(726, 127);
             this.picCompare3.Name = "picCompare3";
-            this.picCompare3.Size = new System.Drawing.Size(15, 15);
+            this.picCompare3.Size = new System.Drawing.Size(20, 20);
             this.picCompare3.TabIndex = 747;
             this.picCompare3.TabStop = false;
             // 
@@ -2121,11 +2254,11 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(568, 12);
+            this.label25.Location = new System.Drawing.Point(538, 12);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 15);
+            this.label25.Size = new System.Drawing.Size(155, 15);
             this.label25.TabIndex = 733;
-            this.label25.Text = "당대리점";
+            this.label25.Text = "당대리점(현재 손익)";
             // 
             // label24
             // 
@@ -2575,18 +2708,6 @@
             this.label15.Size = new System.Drawing.Size(31, 12);
             this.label15.TabIndex = 712;
             this.label15.Text = "소매";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.LemonChiffon;
-            this.label31.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(1068, 235);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(31, 12);
-            this.label31.TabIndex = 711;
-            this.label31.Text = "총계";
             // 
             // label23
             // 
@@ -3317,7 +3438,7 @@
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(138, 15);
             this.label59.TabIndex = 596;
-            this.label59.Text = "CS관리수수료 포함[B]";
+            this.label59.Text = "CS관리수수료[B]";
             // 
             // label10
             // 
@@ -3447,17 +3568,43 @@
             // panel81
             // 
             this.panel81.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel81.Controls.Add(this.label39);
+            this.panel81.Controls.Add(this.label31);
             this.panel81.Location = new System.Drawing.Point(768, 228);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(460, 24);
             this.panel81.TabIndex = 831;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label39.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(364, 5);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(57, 12);
+            this.label39.TabIndex = 712;
+            this.label39.Text = "당대리점";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label31.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(129)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(216, 6);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(57, 12);
+            this.label31.TabIndex = 711;
+            this.label31.Text = "업계평균";
             // 
             // FormUserAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1281, 700);
+            this.ClientSize = new System.Drawing.Size(1278, 700);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserAnalysis";
@@ -3465,6 +3612,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel85.ResumeLayout(false);
             this.panel83.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -3526,6 +3674,8 @@
             this.panel2.ResumeLayout(false);
             this.panel79.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            this.panel81.ResumeLayout(false);
+            this.panel81.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3625,10 +3775,10 @@
         private System.Windows.Forms.Label label164;
         private System.Windows.Forms.Label label166;
         private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.TextBox textBox74;
-        private System.Windows.Forms.TextBox textBox72;
-        private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox 참조_당대리점_인당판매수량;
+        private System.Windows.Forms.TextBox 참조_당대리점_판촉비비중;
+        private System.Windows.Forms.TextBox 참조_당대리점_인건비;
+        private System.Windows.Forms.TextBox 참조_당대리점_ARPU;
         private System.Windows.Forms.Panel panel70;
         private System.Windows.Forms.Panel panel68;
         private System.Windows.Forms.Panel panel69;
@@ -3791,5 +3941,16 @@
         private System.Windows.Forms.Panel panel84;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel82;
+        private System.Windows.Forms.Panel panel85;
+        private System.Windows.Forms.Panel panel86;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox 참조_업계평균_인당판매수량;
+        private System.Windows.Forms.TextBox 참조_업계평균_판촉비비중;
+        private System.Windows.Forms.TextBox 참조_업계평균_인건비;
+        private System.Windows.Forms.TextBox 참조_업계평균_ARPU;
     }
 }

@@ -148,6 +148,7 @@ namespace KIWI
         {
             CommonUtil.clearTextBox(this.tabPage1);
             CommonUtil.clearTextBox(this.tabPage5);
+            통신사.SelectedIndex = -1;
             지역.SelectedIndex = -1;
             대리점명.Text = "";
             마케터.Text = "";
@@ -156,6 +157,7 @@ namespace KIWI
         //기본입력
         private void getInput()
         {
+            통신사.SelectedItem = CDataControl.g_BasicInput.get통신사();
             지역.SelectedItem = CDataControl.g_BasicInput.get지역();
             대리점명.Text = CDataControl.g_BasicInput.get대리점();
             마케터.Text = CDataControl.g_BasicInput.get마케터();
@@ -191,10 +193,12 @@ namespace KIWI
             CResultData rdt = null;
             CResultData rd = null;
 
+            rptd.set통신사(통신사.SelectedIndex == -1 ? "" : 통신사.Items[통신사.SelectedIndex].ToString());
             rptd.set지역(지역.SelectedIndex == -1 ? "" : 지역.Items[지역.SelectedIndex].ToString());
             rptd.set대리점(대리점명.Text);
             rptd.set마케터(마케터.Text);
 
+            bi.set통신사(통신사.SelectedIndex == -1 ? "" : 통신사.Items[통신사.SelectedIndex].ToString());
             bi.set지역(지역.SelectedIndex == -1 ? "" : 지역.Items[지역.SelectedIndex].ToString());
             bi.set대리점(대리점명.Text);
             bi.set마케터(마케터.Text);
@@ -932,7 +936,8 @@ namespace KIWI
 
         internal bool validateData()
         {
-            if (지역.Text == "" || 지역.Text.Length < 1 ||
+            if (통신사.Text == "" || 통신사.Text.Length < 1 ||
+                지역.Text == "" || 지역.Text.Length < 1 ||
                 대리점명.Text == "" || 대리점명.Text.Length < 1 ||
                 마케터.Text == "" || 마케터.Text.Length < 1)
             {
@@ -948,6 +953,7 @@ namespace KIWI
             CommonUtil.isLoadedDataFromFile = false;
             CommonUtil.isSelectExistData = false;
             CommonUtil.isSimulatedOnce = false;
+            CommonUtil.saveAsName = null;
         }
         
     }

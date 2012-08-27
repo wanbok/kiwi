@@ -58,8 +58,8 @@
             this.label112 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -264,9 +264,9 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(3, 63);
+            this.panel1.Location = new System.Drawing.Point(1, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 770);
+            this.panel1.Size = new System.Drawing.Size(1280, 736);
             this.panel1.TabIndex = 600;
             // 
             // label109
@@ -349,16 +349,6 @@
             this.label114.TabIndex = 601;
             this.label114.Text = "열기";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 9F);
-            this.label1.Location = new System.Drawing.Point(571, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 609;
-            this.label1.Text = "관리";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -369,6 +359,16 @@
             this.label2.TabIndex = 610;
             this.label2.Text = "다른\r\n이름으로 저장";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F);
+            this.label1.Location = new System.Drawing.Point(571, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 609;
+            this.label1.Text = "관리";
             // 
             // FormMaster
             // 
@@ -429,10 +429,10 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton toolStripButton10;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.Label label1;
     }
 }

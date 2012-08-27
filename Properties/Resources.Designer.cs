@@ -543,6 +543,27 @@ namespace KIWI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap 노랑 {
+            get {
+                object obj = ResourceManager.GetObject("노랑", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap 녹색 {
+            get {
+                object obj = ResourceManager.GetObject("녹색", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap 빨강 {
+            get {
+                object obj = ResourceManager.GetObject("빨강", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap 세로선 {
             get {
                 object obj = ResourceManager.GetObject("세로선", resourceCulture);

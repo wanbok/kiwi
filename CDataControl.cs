@@ -14,7 +14,6 @@ namespace KIWI
         //설정된 업계평균은 레지스트리 또는 파일에 항상 가지고 있어야 함.
         //파일 실행시 레지스트리 또는 파일에서 읽어 변수에 세팅
         public static CBusinessData g_BusinessAvg = new CBusinessData();  //업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
-        public static CBusinessData g_BusinessAvgLower = new CBusinessData();  //판매량 2000미만인 경우의 업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
 
         public static CResultData g_ResultBusinessTotal = new CResultData();    //업계 총계
         public static CResultData g_ResultBusiness = new CResultData();         //업계 단위금액
@@ -57,7 +56,6 @@ namespace KIWI
             //설정된 업계평균은 레지스트리 또는 파일에 항상 가지고 있어야 함.
             //파일 실행시 레지스트리 또는 파일에서 읽어 변수에 세팅
             g_BusinessAvg = new CBusinessData();  //업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
-            g_BusinessAvgLower = new CBusinessData();  //판매량 2000미만인 경우의 업계평균, 관리자가 배포한 데이타 및 현재 클라이언트 계산에 적용하는 값
 
             g_ResultBusinessTotal = new CResultData();    //업계 총계
             g_ResultBusiness = new CResultData();         //업계 단위금액
@@ -78,6 +76,9 @@ namespace KIWI
             g_FileResultStore = new CResultData();            //당대리점 단위금액
             g_FileResultFutureTotal = new CResultData();      //미래수익 총계
             g_FileResultFuture = new CResultData();           //미래수익 단위금액
+
+            //보고서용 데이터
+            g_ReportData = new CReportData();         // 리포트에 추가적으로 들어갈 자료(이름, 코멘트 등)
 
             clearSimulData();
         }
@@ -191,7 +192,7 @@ namespace KIWI
             }
 
             int startIndex = 0;
-            int length = 6;
+            int length = 7;
             String[] param = splittedLge.Take(length).ToArray<String>();
             if (reportData != null)
                 reportData.setArrData(param);
@@ -223,6 +224,7 @@ namespace KIWI
             param = splittedLge.Skip(startIndex).Take(length).ToArray<String>();
             rf.setArrayOutput전체(param);
 
+            basicData.set통신사(CDataControl.g_ReportData.get통신사());
             basicData.set지역(CDataControl.g_ReportData.get지역());
             basicData.set대리점(CDataControl.g_ReportData.get대리점());
             basicData.set마케터(CDataControl.g_ReportData.get마케터());

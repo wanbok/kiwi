@@ -147,6 +147,7 @@ namespace KIWI
         private void refreshList()
         {
             String key = null;
+            String 통신사 = null;
             String 지역 = null;
             String 대리점명 = null;
             String 마케터 = null;
@@ -164,10 +165,11 @@ namespace KIWI
             int indexForListViewId = 0;
             for (int i = 0; i < adminDC.getDataLength(); i++)
             {
-                adminDC.GetData(i, out key, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
+                adminDC.GetData(i, out key, out 통신사, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
                 ListViewItem item = new ListViewItem();
                 item.Tag = key;
                 item.SubItems[0].Text = (++indexForListViewId).ToString();
+                item.SubItems.Add(통신사);
                 item.SubItems.Add(지역);
                 item.SubItems.Add(대리점명);
                 item.SubItems.Add(마케터);
@@ -196,7 +198,7 @@ namespace KIWI
             int 분모 = 0;
             for (int i = 0; i < adminDC.getDataLength(); i++)
             {
-                adminDC.GetData(i, out key, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
+                adminDC.GetData(i, out key, out 통신사, out 지역, out 대리점명, out 마케터, out 단위당손익, out 월capa, out 가입자수, out 직영점판매수익, out 선택여부, out mExcelFileName, out mBI, out mDI, out mRD);
 
                 if (선택여부 == "N") continue;
                 분모++;
@@ -252,6 +254,7 @@ namespace KIWI
             setDataForUse(file, "|", out mBI, out mDI, out mRD);
 
             adminDC.AddSaveData(
+                mBI.get통신사(),
                 mBI.get지역(),
                 mBI.get대리점(),
                 mBI.get마케터(),
@@ -280,6 +283,7 @@ namespace KIWI
             CommonUtil.GetExcel_WorkBook_CLOSE();
 
             adminDC.AddSaveData(
+                mBI.get통신사(),
                 mBI.get지역(),
                 mBI.get대리점(),
                 mBI.get마케터(),
@@ -307,10 +311,11 @@ namespace KIWI
             String[] splittedLge = lge.Split(spliter.ToCharArray());
 
             int startIndex = 0;
-            int length = 6;
+            int length = 7;
             String[] param = splittedLge.Take(length).ToArray<String>();
             reportData.setArrData(param);
 
+            mBI.set통신사(reportData.get통신사());
             mBI.set지역(reportData.get지역());
             mBI.set대리점(reportData.get대리점());
             mBI.set마케터(reportData.get마케터());
@@ -353,6 +358,7 @@ namespace KIWI
             if (worksheet1 == null || worksheet2 == null || mBI == null || mDI == null || mRD == null) return;
 
             //*******CBasicInput
+            mBI.set통신사(worksheet1.get_Range("I63", Type.Missing).Value2.ToString());
             mBI.set지역(worksheet1.get_Range("C63", Type.Missing).Value2.ToString());
             mBI.set대리점(worksheet1.get_Range("E63", Type.Missing).Value2.ToString());
             mBI.set마케터(worksheet1.get_Range("G63", Type.Missing).Value2.ToString());

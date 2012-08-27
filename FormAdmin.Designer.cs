@@ -320,6 +320,7 @@
             this.out유통모델_SS = new System.Windows.Forms.TextBox();
             this.out유통모델_LG = new System.Windows.Forms.TextBox();
             this.파일명 = new System.Windows.Forms.Label();
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel162.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel137.SuspendLayout();
@@ -369,6 +370,7 @@
             this.listView1.AllowColumnReorder = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
+            this.columnHeader10,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
@@ -3834,6 +3836,10 @@
             this.파일명.TabIndex = 1009;
             this.파일명.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "통신사";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -4421,5 +4427,6 @@
         private System.Windows.Forms.TextBox out유통모델_SS;
         private System.Windows.Forms.TextBox out유통모델_LG;
         private System.Windows.Forms.Label 파일명;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
     }
 }

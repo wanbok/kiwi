@@ -293,6 +293,9 @@
   <ItemGroup>
     <Content Include="Resources\equal.jpg" />
     <Content Include="Resources\up5.jpg" />
+    <None Include="Resources\빨강.png" />
+    <None Include="Resources\녹색.png" />
+    <None Include="Resources\노랑.png" />
     <None Include="Resources\update.ico" />
     <None Include="Resources\print_pref.ico" />
     <None Include="Resources\Print.ico" />
