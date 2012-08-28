@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -320,7 +321,6 @@
             this.out유통모델_SS = new System.Windows.Forms.TextBox();
             this.out유통모델_LG = new System.Windows.Forms.TextBox();
             this.파일명 = new System.Windows.Forms.Label();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel162.SuspendLayout();
             this.panel172.SuspendLayout();
             this.panel137.SuspendLayout();
@@ -394,6 +394,10 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "순번";
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "통신사";
             // 
             // columnHeader2
             // 
@@ -3836,17 +3840,13 @@
             this.파일명.TabIndex = 1009;
             this.파일명.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "통신사";
-            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1121, 740);
+            this.ClientSize = new System.Drawing.Size(1258, 676);
             this.ControlBox = false;
             this.Controls.Add(this.파일명);
             this.Controls.Add(this.out리베이트);

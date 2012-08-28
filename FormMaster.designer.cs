@@ -90,7 +90,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 26);
-            this.toolStrip1.Size = new System.Drawing.Size(1284, 63);
+            this.toolStrip1.Size = new System.Drawing.Size(1274, 63);
             this.toolStrip1.TabIndex = 576;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -264,9 +264,9 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(1, 64);
+            this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 736);
+            this.panel1.Size = new System.Drawing.Size(1274, 676);
             this.panel1.TabIndex = 600;
             // 
             // label109
@@ -374,7 +374,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 802);
+            this.ClientSize = new System.Drawing.Size(1274, 740);
             this.Controls.Add(this.label116);
             this.Controls.Add(this.label113);
             this.Controls.Add(this.label2);
