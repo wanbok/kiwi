@@ -212,8 +212,12 @@ namespace KIWI
             for (int i = 0; i < 16; i++) {
                 convertedA = Convert.ToDouble(txtOut[i + 16].Text.Replace(",", ""));
                 convertedB = Convert.ToDouble(txtOut[i + 48].Text.Replace(",", ""));
-                if (convertedA < convertedB) { picCompare[i].Image = KIWI.Properties.Resources.녹색; }
-                else if (convertedA > convertedB) { picCompare[i].Image = KIWI.Properties.Resources.빨강; }
+                if (convertedA < convertedB) {
+                    picCompare[i].Image = (i < 7 || i == 15) ? KIWI.Properties.Resources.녹색 : KIWI.Properties.Resources.빨강;
+                }
+                else if (convertedA > convertedB) {
+                    picCompare[i].Image = (i < 7 || i == 15) ? KIWI.Properties.Resources.빨강 : KIWI.Properties.Resources.녹색;
+                }
                 else { picCompare[i].Image = KIWI.Properties.Resources.노랑; }
             }
         }

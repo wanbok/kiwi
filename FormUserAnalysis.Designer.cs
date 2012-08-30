@@ -3447,7 +3447,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 16);
             this.label10.TabIndex = 596;
-            this.label10.Text = "누적 가입자 수수료[A]";
+            this.label10.Text = "누적가입자수수료[A]";
             // 
             // label162
             // 
@@ -3465,9 +3465,9 @@
             this.label165.ForeColor = System.Drawing.Color.Black;
             this.label165.Location = new System.Drawing.Point(60, 132);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(154, 12);
+            this.label165.Size = new System.Drawing.Size(110, 12);
             this.label165.TabIndex = 597;
-            this.label165.Text = "월단위 업무취급 수수료[C]";
+            this.label165.Text = "업무취급수수료[C]";
             // 
             // label164
             // 
@@ -3604,7 +3604,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1258, 676);
+            this.ClientSize = new System.Drawing.Size(1258, 648);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserAnalysis";

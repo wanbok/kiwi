@@ -610,7 +610,7 @@
             this.tabPage5.Controls.Add(this.panel61);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1245, 647);
+            this.tabPage5.Size = new System.Drawing.Size(1245, 619);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "      상세입력      ";
             // 
@@ -3372,7 +3372,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1245, 647);
+            this.tabPage1.Size = new System.Drawing.Size(1245, 619);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "      기본입력      ";
             // 
@@ -4514,14 +4514,14 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1253, 673);
+            this.tabControl1.Size = new System.Drawing.Size(1253, 645);
             this.tabControl1.TabIndex = 0;
             // 
             // FormUserInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 676);
+            this.ClientSize = new System.Drawing.Size(1258, 648);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserInput";

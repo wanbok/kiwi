@@ -3846,7 +3846,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1258, 676);
+            this.ClientSize = new System.Drawing.Size(1258, 648);
             this.ControlBox = false;
             this.Controls.Add(this.파일명);
             this.Controls.Add(this.out리베이트);
