@@ -745,6 +745,8 @@ namespace KIWI
 
         internal static void setFileNameLabel(String fileName)
         {
+            FileIOPermission permission = new FileIOPermission(FileIOPermissionAccess.AllAccess, CommonUtil.fileNameLabelFileName);
+            permission.Demand();
             String[] splitedFileName = fileName.Split('\\');
             System.IO.File.WriteAllText(CommonUtil.fileNameLabelFileName, CommonUtil.Base64Encode(splitedFileName[splitedFileName.Length - 1]));
         }
