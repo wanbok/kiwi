@@ -955,6 +955,11 @@ namespace KIWI
             CommonUtil.isSimulatedOnce = false;
             CommonUtil.saveAsName = null;
         }
+
+        private void ComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
         
     }
 }

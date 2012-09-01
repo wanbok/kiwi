@@ -467,7 +467,7 @@
             this.txtInput31.Location = new System.Drawing.Point(757, 950);
             this.txtInput31.Name = "txtInput31";
             this.txtInput31.Size = new System.Drawing.Size(108, 21);
-            this.txtInput31.TabIndex = 30;
+            this.txtInput31.TabIndex = 25;
             this.txtInput31.Text = "0";
             this.txtInput31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput31.TextChanged += new System.EventHandler(this.txtOut_TextChanged);
@@ -551,7 +551,7 @@
             this.txtInput28.Location = new System.Drawing.Point(757, 919);
             this.txtInput28.Name = "txtInput28";
             this.txtInput28.Size = new System.Drawing.Size(109, 21);
-            this.txtInput28.TabIndex = 27;
+            this.txtInput28.TabIndex = 24;
             this.txtInput28.Text = "0";
             this.txtInput28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput28.Click += new System.EventHandler(this.txtInput1_Click);
@@ -596,7 +596,7 @@
             this.txtInput27.Location = new System.Drawing.Point(757, 889);
             this.txtInput27.Name = "txtInput27";
             this.txtInput27.Size = new System.Drawing.Size(109, 21);
-            this.txtInput27.TabIndex = 26;
+            this.txtInput27.TabIndex = 23;
             this.txtInput27.Text = "0";
             this.txtInput27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput27.Click += new System.EventHandler(this.txtInput1_Click);
@@ -641,7 +641,7 @@
             this.txtInput26.Location = new System.Drawing.Point(757, 859);
             this.txtInput26.Name = "txtInput26";
             this.txtInput26.Size = new System.Drawing.Size(109, 21);
-            this.txtInput26.TabIndex = 25;
+            this.txtInput26.TabIndex = 22;
             this.txtInput26.Text = "0";
             this.txtInput26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput26.Click += new System.EventHandler(this.txtInput1_Click);
@@ -686,7 +686,7 @@
             this.txtInput25.Location = new System.Drawing.Point(757, 829);
             this.txtInput25.Name = "txtInput25";
             this.txtInput25.Size = new System.Drawing.Size(109, 21);
-            this.txtInput25.TabIndex = 24;
+            this.txtInput25.TabIndex = 21;
             this.txtInput25.Text = "0";
             this.txtInput25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput25.Click += new System.EventHandler(this.txtInput1_Click);
@@ -731,7 +731,7 @@
             this.txtInput24.Location = new System.Drawing.Point(757, 799);
             this.txtInput24.Name = "txtInput24";
             this.txtInput24.Size = new System.Drawing.Size(109, 21);
-            this.txtInput24.TabIndex = 23;
+            this.txtInput24.TabIndex = 20;
             this.txtInput24.Text = "0";
             this.txtInput24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput24.Click += new System.EventHandler(this.txtInput1_Click);
@@ -776,7 +776,7 @@
             this.txtInput23.Location = new System.Drawing.Point(757, 769);
             this.txtInput23.Name = "txtInput23";
             this.txtInput23.Size = new System.Drawing.Size(108, 21);
-            this.txtInput23.TabIndex = 22;
+            this.txtInput23.TabIndex = 19;
             this.txtInput23.Text = "0";
             this.txtInput23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput23.Click += new System.EventHandler(this.txtInput1_Click);
@@ -821,7 +821,7 @@
             this.txtInput22.Location = new System.Drawing.Point(757, 739);
             this.txtInput22.Name = "txtInput22";
             this.txtInput22.Size = new System.Drawing.Size(108, 21);
-            this.txtInput22.TabIndex = 21;
+            this.txtInput22.TabIndex = 18;
             this.txtInput22.Text = "0";
             this.txtInput22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput22.Click += new System.EventHandler(this.txtInput1_Click);
@@ -866,7 +866,7 @@
             this.txtInput21.Location = new System.Drawing.Point(757, 709);
             this.txtInput21.Name = "txtInput21";
             this.txtInput21.Size = new System.Drawing.Size(108, 21);
-            this.txtInput21.TabIndex = 20;
+            this.txtInput21.TabIndex = 17;
             this.txtInput21.Text = "0";
             this.txtInput21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput21.Click += new System.EventHandler(this.txtInput1_Click);
@@ -911,7 +911,7 @@
             this.txtInput20.Location = new System.Drawing.Point(757, 679);
             this.txtInput20.Name = "txtInput20";
             this.txtInput20.Size = new System.Drawing.Size(108, 21);
-            this.txtInput20.TabIndex = 19;
+            this.txtInput20.TabIndex = 16;
             this.txtInput20.Text = "0";
             this.txtInput20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput20.Click += new System.EventHandler(this.txtInput1_Click);
@@ -956,7 +956,7 @@
             this.txtInput19.Location = new System.Drawing.Point(757, 652);
             this.txtInput19.Name = "txtInput19";
             this.txtInput19.Size = new System.Drawing.Size(108, 21);
-            this.txtInput19.TabIndex = 18;
+            this.txtInput19.TabIndex = 15;
             this.txtInput19.Text = "0";
             this.txtInput19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput19.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1001,7 +1001,7 @@
             this.txtInput18.Location = new System.Drawing.Point(757, 627);
             this.txtInput18.Name = "txtInput18";
             this.txtInput18.Size = new System.Drawing.Size(108, 21);
-            this.txtInput18.TabIndex = 17;
+            this.txtInput18.TabIndex = 14;
             this.txtInput18.Text = "0";
             this.txtInput18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput18.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1046,7 +1046,7 @@
             this.txtInput17.Location = new System.Drawing.Point(757, 599);
             this.txtInput17.Name = "txtInput17";
             this.txtInput17.Size = new System.Drawing.Size(108, 21);
-            this.txtInput17.TabIndex = 16;
+            this.txtInput17.TabIndex = 13;
             this.txtInput17.Text = "0";
             this.txtInput17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput17.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1091,7 +1091,7 @@
             this.txtInput16.Location = new System.Drawing.Point(757, 569);
             this.txtInput16.Name = "txtInput16";
             this.txtInput16.Size = new System.Drawing.Size(108, 21);
-            this.txtInput16.TabIndex = 15;
+            this.txtInput16.TabIndex = 12;
             this.txtInput16.Text = "0";
             this.txtInput16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput16.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1319,7 +1319,7 @@
             this.txtInput15.Location = new System.Drawing.Point(757, 539);
             this.txtInput15.Name = "txtInput15";
             this.txtInput15.Size = new System.Drawing.Size(108, 21);
-            this.txtInput15.TabIndex = 14;
+            this.txtInput15.TabIndex = 11;
             this.txtInput15.Text = "0";
             this.txtInput15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput15.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1349,7 +1349,7 @@
             this.txtInput14.Location = new System.Drawing.Point(757, 509);
             this.txtInput14.Name = "txtInput14";
             this.txtInput14.Size = new System.Drawing.Size(108, 21);
-            this.txtInput14.TabIndex = 13;
+            this.txtInput14.TabIndex = 10;
             this.txtInput14.Text = "0";
             this.txtInput14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput14.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1394,7 +1394,7 @@
             this.txtInput9.Location = new System.Drawing.Point(757, 362);
             this.txtInput9.Name = "txtInput9";
             this.txtInput9.Size = new System.Drawing.Size(108, 21);
-            this.txtInput9.TabIndex = 8;
+            this.txtInput9.TabIndex = 5;
             this.txtInput9.Text = "0";
             this.txtInput9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput9.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1439,7 +1439,7 @@
             this.txtInput8.Location = new System.Drawing.Point(757, 337);
             this.txtInput8.Name = "txtInput8";
             this.txtInput8.Size = new System.Drawing.Size(108, 21);
-            this.txtInput8.TabIndex = 7;
+            this.txtInput8.TabIndex = 4;
             this.txtInput8.Text = "0";
             this.txtInput8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput8.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1484,7 +1484,7 @@
             this.txtInput7.Location = new System.Drawing.Point(757, 312);
             this.txtInput7.Name = "txtInput7";
             this.txtInput7.Size = new System.Drawing.Size(108, 21);
-            this.txtInput7.TabIndex = 8;
+            this.txtInput7.TabIndex = 3;
             this.txtInput7.Text = "0";
             this.txtInput7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput7.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1529,7 +1529,7 @@
             this.txtInput10.Location = new System.Drawing.Point(757, 389);
             this.txtInput10.Name = "txtInput10";
             this.txtInput10.Size = new System.Drawing.Size(108, 21);
-            this.txtInput10.TabIndex = 9;
+            this.txtInput10.TabIndex = 6;
             this.txtInput10.Text = "0";
             this.txtInput10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput10.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1574,7 +1574,7 @@
             this.txtInput11.Location = new System.Drawing.Point(757, 419);
             this.txtInput11.Name = "txtInput11";
             this.txtInput11.Size = new System.Drawing.Size(108, 21);
-            this.txtInput11.TabIndex = 10;
+            this.txtInput11.TabIndex = 7;
             this.txtInput11.Text = "0";
             this.txtInput11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput11.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1619,7 +1619,7 @@
             this.txtInput12.Location = new System.Drawing.Point(757, 449);
             this.txtInput12.Name = "txtInput12";
             this.txtInput12.Size = new System.Drawing.Size(108, 21);
-            this.txtInput12.TabIndex = 11;
+            this.txtInput12.TabIndex = 8;
             this.txtInput12.Text = "0";
             this.txtInput12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput12.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1664,7 +1664,7 @@
             this.txtInput13.Location = new System.Drawing.Point(757, 479);
             this.txtInput13.Name = "txtInput13";
             this.txtInput13.Size = new System.Drawing.Size(108, 21);
-            this.txtInput13.TabIndex = 12;
+            this.txtInput13.TabIndex = 9;
             this.txtInput13.Text = "0";
             this.txtInput13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput13.Click += new System.EventHandler(this.txtInput1_Click);
@@ -1709,7 +1709,7 @@
             this.txtInput6.Location = new System.Drawing.Point(757, 287);
             this.txtInput6.Name = "txtInput6";
             this.txtInput6.Size = new System.Drawing.Size(108, 21);
-            this.txtInput6.TabIndex = 7;
+            this.txtInput6.TabIndex = 2;
             this.txtInput6.Text = "0";
             this.txtInput6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtInput6.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3120,7 +3120,7 @@
             this.button2.Location = new System.Drawing.Point(920, 1271);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 32);
-            this.button2.TabIndex = 31;
+            this.button2.TabIndex = 34;
             this.button2.Text = "적용";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -3130,7 +3130,7 @@
             this.button1.Location = new System.Drawing.Point(991, 1271);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 32);
-            this.button1.TabIndex = 32;
+            this.button1.TabIndex = 35;
             this.button1.Tag = "";
             this.button1.Text = "취소";
             this.button1.UseVisualStyleBackColor = true;
@@ -3187,7 +3187,7 @@
             this.유통모델_LG.Location = new System.Drawing.Point(757, 983);
             this.유통모델_LG.Name = "유통모델_LG";
             this.유통모델_LG.Size = new System.Drawing.Size(108, 21);
-            this.유통모델_LG.TabIndex = 589;
+            this.유통모델_LG.TabIndex = 26;
             this.유통모델_LG.Text = "0";
             this.유통모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3202,7 +3202,7 @@
             this.사업자모델_LG.Location = new System.Drawing.Point(757, 1091);
             this.사업자모델_LG.Name = "사업자모델_LG";
             this.사업자모델_LG.Size = new System.Drawing.Size(108, 21);
-            this.사업자모델_LG.TabIndex = 590;
+            this.사업자모델_LG.TabIndex = 29;
             this.사업자모델_LG.Text = "0";
             this.사업자모델_LG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_LG.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3217,7 +3217,7 @@
             this.사업자모델_SS.Location = new System.Drawing.Point(758, 1127);
             this.사업자모델_SS.Name = "사업자모델_SS";
             this.사업자모델_SS.Size = new System.Drawing.Size(108, 21);
-            this.사업자모델_SS.TabIndex = 592;
+            this.사업자모델_SS.TabIndex = 30;
             this.사업자모델_SS.Text = "0";
             this.사업자모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3232,7 +3232,7 @@
             this.유통모델_SS.Location = new System.Drawing.Point(757, 1019);
             this.유통모델_SS.Name = "유통모델_SS";
             this.유통모델_SS.Size = new System.Drawing.Size(108, 21);
-            this.유통모델_SS.TabIndex = 591;
+            this.유통모델_SS.TabIndex = 27;
             this.유통모델_SS.Text = "0";
             this.유통모델_SS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_SS.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3247,7 +3247,7 @@
             this.사업자모델_소계.Location = new System.Drawing.Point(758, 1163);
             this.사업자모델_소계.Name = "사업자모델_소계";
             this.사업자모델_소계.Size = new System.Drawing.Size(108, 21);
-            this.사업자모델_소계.TabIndex = 596;
+            this.사업자모델_소계.TabIndex = 31;
             this.사업자모델_소계.Text = "0";
             this.사업자모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.사업자모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3262,7 +3262,7 @@
             this.유통모델_소계.Location = new System.Drawing.Point(757, 1055);
             this.유통모델_소계.Name = "유통모델_소계";
             this.유통모델_소계.Size = new System.Drawing.Size(108, 21);
-            this.유통모델_소계.TabIndex = 595;
+            this.유통모델_소계.TabIndex = 28;
             this.유통모델_소계.Text = "0";
             this.유통모델_소계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.유통모델_소계.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3277,7 +3277,7 @@
             this.ASP_전체계.Location = new System.Drawing.Point(758, 1199);
             this.ASP_전체계.Name = "ASP_전체계";
             this.ASP_전체계.Size = new System.Drawing.Size(108, 21);
-            this.ASP_전체계.TabIndex = 597;
+            this.ASP_전체계.TabIndex = 32;
             this.ASP_전체계.Text = "0";
             this.ASP_전체계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ASP_전체계.Click += new System.EventHandler(this.txtInput1_Click);
@@ -3292,7 +3292,7 @@
             this.리베이트.Location = new System.Drawing.Point(758, 1235);
             this.리베이트.Name = "리베이트";
             this.리베이트.Size = new System.Drawing.Size(108, 21);
-            this.리베이트.TabIndex = 605;
+            this.리베이트.TabIndex = 33;
             this.리베이트.Text = "0";
             this.리베이트.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.리베이트.Click += new System.EventHandler(this.txtInput1_Click);

@@ -130,7 +130,6 @@ namespace KIWI
                 radio기존업계평균.Checked = false;
                 applyData(false);
             }
-
         }
 
         public void applyData(bool isFile) {
@@ -697,6 +696,12 @@ namespace KIWI
             //if ((sender as TextBox).Text.EndsWith("점 기준"))
             //    return;
             //(sender as TextBox).Text += "점 기준";
+        }
+
+        private void FormUserSimulateOutput_Shown(object sender, EventArgs e)
+        {
+            tabControl1.Select();
+            SendKeys.Send("%{UP}");
         }
     }
 }

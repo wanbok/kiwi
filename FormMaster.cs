@@ -102,6 +102,7 @@ namespace KIWI
                 FormUserInput frm = new FormUserInput();
                 panelSet(frm);
             }
+            setTitleBar();
 
         }
 
@@ -196,6 +197,7 @@ namespace KIWI
                     }
                 }
             }
+            setTitleBar();
         }
 
         /// <summary>
@@ -262,6 +264,16 @@ namespace KIWI
                         }
                     }
                 }
+            }
+            setTitleBar();
+        }
+
+        private void setTitleBar()
+        {
+            if (CommonUtil.saveAsName != null)
+            {
+                String[] splitedName = CommonUtil.saveAsName.Split('\\');
+                this.Text = "LGE 대리점 손익관리 - " + splitedName[splitedName.Length - 1];
             }
         }
 
