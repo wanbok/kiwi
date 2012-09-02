@@ -125,7 +125,6 @@ namespace KIWI
             this.txtInput34.ReadOnly = true;
             this.txtInput35.ReadOnly = true;
 
-
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -954,6 +953,13 @@ namespace KIWI
             CommonUtil.isSelectExistData = false;
             CommonUtil.isSimulatedOnce = false;
             CommonUtil.saveAsName = null;
+            try
+            {
+                (this.Parent.Parent as FormMaster).setTitleBar();
+            }
+            catch (Exception exception)
+            {
+            }
         }
 
         private void ComboBox_KeyDown(object sender, KeyEventArgs e)

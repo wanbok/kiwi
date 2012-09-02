@@ -402,6 +402,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.label40);
             this.tabPage1.Controls.Add(this.label41);
             this.tabPage1.Controls.Add(this.label42);
@@ -625,7 +626,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1232, 1038);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "          분석          ";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label40
             // 

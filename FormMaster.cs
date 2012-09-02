@@ -268,12 +268,15 @@ namespace KIWI
             setTitleBar();
         }
 
-        private void setTitleBar()
+        public void setTitleBar()
         {
             if (CommonUtil.saveAsName != null)
             {
                 String[] splitedName = CommonUtil.saveAsName.Split('\\');
                 this.Text = "LGE 대리점 손익관리 - " + splitedName[splitedName.Length - 1];
+            }
+            else {
+                this.Text = "LGE 대리점 손익관리";
             }
         }
 
